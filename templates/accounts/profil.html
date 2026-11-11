@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Einstellungen · FIAE-Lernapp{% endblock %}
+{% block content %}
+<h1>Einstellungen</h1>
+<div class="card" style="max-width:560px">
+  <form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn" type="submit">Speichern</button>
+  </form>
+</div>
+<div class="card" style="max-width:560px">
+  <div class="row">
+    <div class="spacer">Angemeldet als <strong>{{ user.username }}</strong></div>
+    <a class="btn secondary" href="{% url 'password_change' %}">Passwort ändern</a>
+    <form method="post" action="{% url 'logout' %}">{% csrf_token %}<button class="btn link" type="submit">Abmelden</button></form>
+  </div>
+</div>
+{% endblock %}

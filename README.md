@@ -1,6 +1,13 @@
 # FIAE-Lernapp
 
-Lern-Web-App für die Umschulung Fachinformatiker/in Anwendungsentwicklung: Einstufungstest, tägliches Lernen mit verteilter Wiederholung (Leitner-System) und Themen-Training. Konten gibt es nur mit Einladungscode.
+Lern-Web-App für die Umschulung Fachinformatiker/in Anwendungsentwicklung. Konten gibt es nur mit Einladungscode.
+
+- **Einstufungstest** über alle AP1-Themen
+- **Tägliches Lernnugget:** kurze Erklärung (Lektion) im dringendsten Thema, passende Übungen, fällige Wiederholungen (Leitner-System)
+- **Anpassung an den Wissensstand:** Pro Thema wird aus den letzten 20 Antworten ein Niveau (1–3) berechnet. Danach richten sich Schwierigkeit der Fragen und Auswahl der Lektionen. Nach falschen Antworten wird die passende Lektion zum Nachlesen angeboten.
+- **Prüfungssimulation:** 40 Fragen, 60 Minuten, Verteilung nach Prüfungsgewicht, Note nach IHK-Schlüssel
+- **Rangliste** nach aktiver Lernzeit (heute, Woche, Monat), abschaltbar pro Person
+- **XP, Level, Abzeichen** und freischaltbare Farbthemen
 
 Technik: Python 3.12+, Django 5.2, MariaDB (oder SQLite lokal), Gunicorn hinter nginx.
 
@@ -46,13 +53,15 @@ Ist das Repo privat, braucht der Server zum Klonen einen Zugang (z. B. einen Dep
 
 ## Fragen bearbeiten
 
-Die Fragen liegen als JSON in `fragen/`. Jede Frage hat einen festen `schluessel`. `python manage.py fragen_laden` legt neue Fragen an und aktualisiert vorhandene, der Lernstand bleibt erhalten. Fragetypen:
+Fragen und Lektionen liegen als JSON in `fragen/` (Unterordner erlaubt, z. B. `fragen/ap1/03_netzwerk.json`). Dateien werden alphabetisch geladen, Themen stehen in `00_themen.json`. Jede Frage und Lektion hat einen festen `schluessel`. `python manage.py fragen_laden` legt neue Fragen an und aktualisiert vorhandene, der Lernstand bleibt erhalten. Fragetypen:
 
 - `einfach`: eine richtige Antwort
 - `mehrfach`: mehrere richtige Antworten
 - `zahl`: Rechenaufgabe mit `loesung`, `toleranz` und `einheit`
 
-`"einstufung": true` nimmt eine Frage in den Einstufungstest auf.
+`"einstufung": true` nimmt eine Frage in den Einstufungstest auf. `"lektion": "NET-L2"` ordnet eine Frage einer Lektion zu, `"bild": "bilder/datei.svg"` zeigt eine Grafik aus `static/` an.
+
+Lektionen (`"lektionen": [...]`) haben `titel`, `stufe` (1 Grundlagen, 2 Aufbau, 3 Prüfungsniveau), `inhalt`, `merksatz` und optional `bild`. Im Inhalt funktionieren `**fett**`, `` `code` ``, Listen mit `- `, Tabellen mit `|` und Codeblöcke mit drei Backticks.
 
 Alle Fragen sind selbst geschrieben, im Stil der IHK-Prüfungen. Original-Prüfungsaufgaben sind urheberrechtlich geschützt und gehören nicht in dieses Repo.
 

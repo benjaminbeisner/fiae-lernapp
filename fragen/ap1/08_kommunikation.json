@@ -1,0 +1,456 @@
+{
+ "lektionen": [
+  {
+   "schluessel": "KOM-L1",
+   "thema": "kommunikation",
+   "titel": "Wie Kommunikation funktioniert",
+   "stufe": 1,
+   "inhalt": "**Vier Seiten einer Nachricht (Schulz von Thun):** Jede Nachricht enthält gleichzeitig\n- **Sachinhalt:** Worüber informiere ich?\n- **Selbstkundgabe:** Was zeige ich von mir?\n- **Beziehung:** Was halte ich von dir, wie stehen wir zueinander?\n- **Appell:** Wozu möchte ich dich bringen?\n\n„Der Drucker ist schon wieder leer.“ → Sache: kein Papier. Selbstkundgabe: ich bin genervt. Beziehung: du kümmerst dich nicht. Appell: füll nach.\n\n**Eisbergmodell:** Nur ein kleiner Teil der Kommunikation (Sachebene) ist sichtbar. Der größere Teil liegt unter der Oberfläche: Gefühle, Erwartungen, Beziehung. Konflikte entstehen meist dort.\n\n**Ich-Botschaften** statt Du-Vorwürfen: „Ich kann das Ticket nicht bearbeiten, wenn die Fehlerbeschreibung fehlt“ statt „Du schreibst nie, was los ist.“\n\n**Feedback-Regeln:** konkret, zeitnah, in Ich-Form, beschreiben statt bewerten, Verhalten statt Person.",
+   "merksatz": "Jede Nachricht hat vier Seiten. Missverständnisse entstehen, wenn Sender und Empfänger auf verschiedenen Seiten hören.",
+   "bild": "",
+   "reihenfolge": 0
+  },
+  {
+   "schluessel": "KOM-L2",
+   "thema": "kommunikation",
+   "titel": "Kundengespräche und Fragetechniken",
+   "stufe": 1,
+   "inhalt": "**Aktives Zuhören:** Blickkontakt, ausreden lassen, mit eigenen Worten zusammenfassen („Habe ich richtig verstanden, dass …?“), nachfragen, Gefühle ansprechen.\n\n**Fragetechniken:**\n| Art | Beispiel | Wofür |\n|---|---|---|\n| **offen** (W-Fragen) | „Was genau passiert, wenn Sie das Programm starten?“ | Informationen sammeln, Kunde erzählt |\n| **geschlossen** | „Haben Sie den PC schon neu gestartet?“ | Fakten bestätigen, Antwort ja/nein |\n| **Alternativfrage** | „Passt Ihnen Dienstag oder Donnerstag?“ | Entscheidung herbeiführen |\n\n**Verärgerter Kunde:** ruhig bleiben, zuhören, Verständnis zeigen, nicht rechtfertigen oder Schuld zuweisen, dann gemeinsam eine Lösung und nächste Schritte vereinbaren.",
+   "merksatz": "Offene Fragen öffnen das Gespräch, geschlossene Fragen bringen Klarheit.",
+   "bild": "",
+   "reihenfolge": 1
+  },
+  {
+   "schluessel": "KOM-L3",
+   "thema": "kommunikation",
+   "titel": "Arbeitsorganisation, Präsentation und KI im Betrieb",
+   "stufe": 2,
+   "inhalt": "**Eisenhower-Prinzip** zum Priorisieren:\n| | dringend | nicht dringend |\n|---|---|---|\n| **wichtig** | sofort selbst erledigen | terminieren und selbst erledigen |\n| **nicht wichtig** | delegieren | weglassen |\n\n**Präsentationen:** wenige Stichpunkte pro Folie, große Schrift, aussagekräftige Grafiken, Struktur (Einleitung, Hauptteil, Fazit), frei sprechen statt ablesen.\n\n**Homeoffice:** Bildschirmsperre beim Verlassen, VPN, keine Firmendaten auf privaten Geräten ohne Freigabe, vertrauliche Ausdrucke schreddern statt Hausmüll, Gespräche nicht vor Mithörern.\n\n**Change-Management:** Veränderungen (z. B. neue Software) gelingen besser, wenn Betroffene früh informiert, beteiligt und geschult werden. Das schafft Akzeptanz.\n\n**KI im Betrieb:** Keine personenbezogenen oder vertraulichen Daten in öffentliche KI-Dienste kopieren. KI-Ergebnisse immer prüfen: KI kann **halluzinieren**, also überzeugend klingende, aber falsche Aussagen erzeugen. Viele Firmen regeln den Einsatz in einer KI-Richtlinie.",
+   "merksatz": "KI-Ergebnisse sind Entwürfe, keine Fakten. Immer prüfen.",
+   "bild": "",
+   "reihenfolge": 2
+  }
+ ],
+ "fragen": [
+  {
+   "schluessel": "KOM-01",
+   "thema": "kommunikation",
+   "text": "Welche ist KEINE der vier Seiten einer Nachricht nach Schulz von Thun?",
+   "erklaerung": "Die vier Seiten: Sachinhalt, Selbstkundgabe (Selbstoffenbarung), Beziehung und Appell.",
+   "schwierigkeit": 1,
+   "einstufung": true,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Feedback",
+     "richtig": true
+    },
+    {
+     "text": "Sachinhalt",
+     "richtig": false
+    },
+    {
+     "text": "Selbstkundgabe",
+     "richtig": false
+    },
+    {
+     "text": "Appell",
+     "richtig": false
+    }
+   ],
+   "lektion": "KOM-L1"
+  },
+  {
+   "schluessel": "KOM-02",
+   "thema": "kommunikation",
+   "text": "Die Teamleiterin sagt: „Der Drucker ist schon wieder leer.“ Was ist die wahrscheinliche Appell-Seite?",
+   "erklaerung": "Sachinhalt: kein Papier. Selbstkundgabe: ich bin genervt. Beziehung: du kümmerst dich nicht. Appell: mach etwas, also Papier nachfüllen.",
+   "schwierigkeit": 2,
+   "einstufung": true,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "„Füll bitte Papier nach.“",
+     "richtig": true
+    },
+    {
+     "text": "„Im Drucker ist kein Papier.“",
+     "richtig": false
+    },
+    {
+     "text": "„Ich bin genervt.“",
+     "richtig": false
+    },
+    {
+     "text": "„Du kümmerst dich nie um den Drucker.“",
+     "richtig": false
+    }
+   ],
+   "lektion": "KOM-L1"
+  },
+  {
+   "schluessel": "KOM-03",
+   "thema": "kommunikation",
+   "text": "Ein Kollege kopiert Kundendaten mit Namen und Adressen in einen öffentlichen KI-Chatbot, um eine E-Mail formulieren zu lassen. Was ist das Hauptproblem?",
+   "erklaerung": "Ohne Vertrag zur Auftragsverarbeitung und klare Regeln ist das ein Datenschutzverstoß. Viele Firmen haben deshalb KI-Richtlinien oder eigene, datenschutzkonforme KI-Lösungen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Personenbezogene Daten werden ohne Rechtsgrundlage an einen Dritten übermittelt",
+     "richtig": true
+    },
+    {
+     "text": "Die E-Mail wird wahrscheinlich zu lang",
+     "richtig": false
+    },
+    {
+     "text": "KI-Chatbots verstehen keine deutschen Adressen",
+     "richtig": false
+    },
+    {
+     "text": "Das ist unproblematisch, wenn die E-Mail gut wird",
+     "richtig": false
+    }
+   ],
+   "lektion": "KOM-L3"
+  },
+  {
+   "schluessel": "KOM-04",
+   "thema": "kommunikation",
+   "text": "Was gehört zum aktiven Zuhören?",
+   "erklaerung": "Aktives Zuhören: Blickkontakt, paraphrasieren, nachfragen, Gefühle ansprechen. So stellst du sicher, dass du das Problem richtig verstanden hast.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Das Gehörte mit eigenen Worten zusammenfassen und nachfragen",
+     "richtig": true
+    },
+    {
+     "text": "Sofort eine Lösung vorschlagen",
+     "richtig": false
+    },
+    {
+     "text": "Den Kunden unterbrechen, um Zeit zu sparen",
+     "richtig": false
+    },
+    {
+     "text": "Nebenbei das Ticket schließen",
+     "richtig": false
+    }
+   ],
+   "lektion": "KOM-L2"
+  },
+  {
+   "schluessel": "KOM-05",
+   "thema": "kommunikation",
+   "text": "Welche Aussage ist eine Ich-Botschaft?",
+   "erklaerung": "Ich-Botschaften beschreiben die eigene Wahrnehmung, ohne den anderen anzugreifen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "KOM-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "„Ich bin unsicher, wie ich das Ticket bearbeiten soll, wenn die Beschreibung fehlt.“",
+     "richtig": true
+    },
+    {
+     "text": "„Du schreibst nie vernünftige Tickets.“",
+     "richtig": false
+    },
+    {
+     "text": "„Man sollte Tickets ordentlich ausfüllen.“",
+     "richtig": false
+    },
+    {
+     "text": "„Ihr in der Buchhaltung macht immer Chaos.“",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "KOM-06",
+   "thema": "kommunikation",
+   "text": "Was besagt das Eisbergmodell der Kommunikation?",
+   "erklaerung": "Gefühle, Erwartungen und Beziehung sind oft unsichtbar, beeinflussen das Gespräch aber stark.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "KOM-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Der größere Teil der Kommunikation, die Beziehungsebene, liegt unter der Oberfläche",
+     "richtig": true
+    },
+    {
+     "text": "Kommunikation sollte immer kühl und sachlich sein",
+     "richtig": false
+    },
+    {
+     "text": "Nur der Sachinhalt ist wichtig",
+     "richtig": false
+    },
+    {
+     "text": "90 % der Kommunikation sind schriftlich",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "KOM-07",
+   "thema": "kommunikation",
+   "text": "Welche Regel gehört zu gutem Feedback?",
+   "erklaerung": "Weitere Regeln: zeitnah, in Ich-Form, auch Positives nennen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "KOM-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Konkretes Verhalten beschreiben, statt die Person zu bewerten",
+     "richtig": true
+    },
+    {
+     "text": "Feedback möglichst Wochen später geben",
+     "richtig": false
+    },
+    {
+     "text": "Allgemein bleiben, damit sich niemand angegriffen fühlt",
+     "richtig": false
+    },
+    {
+     "text": "Vor dem ganzen Team kritisieren",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "KOM-08",
+   "thema": "kommunikation",
+   "text": "Welche Frage ist eine offene Frage?",
+   "erklaerung": "Offene Fragen beginnen meist mit einem W-Wort und lassen den Kunden erzählen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "KOM-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "„Was genau passiert, wenn Sie das Programm starten?“",
+     "richtig": true
+    },
+    {
+     "text": "„Haben Sie den PC neu gestartet?“",
+     "richtig": false
+    },
+    {
+     "text": "„Ist das Kabel eingesteckt?“",
+     "richtig": false
+    },
+    {
+     "text": "„Möchten Sie den Termin am Dienstag oder Donnerstag?“",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "KOM-09",
+   "thema": "kommunikation",
+   "text": "Wofür eignen sich geschlossene Fragen im Support besonders?",
+   "erklaerung": "„Leuchtet die Netzwerk-LED?“ – ja oder nein. Ideal für die Eingrenzung.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "KOM-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Um konkrete Fakten schnell zu bestätigen",
+     "richtig": true
+    },
+    {
+     "text": "Um den Kunden ausführlich erzählen zu lassen",
+     "richtig": false
+    },
+    {
+     "text": "Um Gefühle anzusprechen",
+     "richtig": false
+    },
+    {
+     "text": "Um ein Gespräch zu eröffnen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "KOM-10",
+   "thema": "kommunikation",
+   "text": "Ein Kunde ruft verärgert an, weil sein System seit dem Morgen ausgefallen ist. Was ist der beste erste Schritt?",
+   "erklaerung": "Erst die Beziehungsebene klären, dann die Sachebene lösen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "KOM-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ruhig zuhören, Verständnis zeigen und das Problem zusammenfassen",
+     "richtig": true
+    },
+    {
+     "text": "Erklären, dass der Fehler nicht bei uns liegt",
+     "richtig": false
+    },
+    {
+     "text": "Den Kunden bitten, sich zu beruhigen und später anzurufen",
+     "richtig": false
+    },
+    {
+     "text": "Sofort technische Fachbegriffe erklären",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "KOM-11",
+   "thema": "kommunikation",
+   "text": "Nach dem Eisenhower-Prinzip: Wie gehst du mit einer Aufgabe um, die wichtig, aber nicht dringend ist?",
+   "erklaerung": "Wichtig und dringend: sofort. Wichtig, nicht dringend: terminieren. Dringend, nicht wichtig: delegieren. Weder noch: weglassen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "KOM-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Einen festen Termin dafür einplanen und selbst erledigen",
+     "richtig": true
+    },
+    {
+     "text": "Sofort alles andere stehen lassen",
+     "richtig": false
+    },
+    {
+     "text": "Delegieren",
+     "richtig": false
+    },
+    {
+     "text": "Streichen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "KOM-12",
+   "thema": "kommunikation",
+   "text": "Was bedeutet es, wenn ein KI-Sprachmodell „halluziniert“?",
+   "erklaerung": "Deshalb müssen Fakten, Quellen und Code aus KI-Tools immer geprüft werden.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "KOM-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Es erzeugt überzeugend klingende, aber falsche Aussagen",
+     "richtig": true
+    },
+    {
+     "text": "Es verweigert jede Antwort",
+     "richtig": false
+    },
+    {
+     "text": "Es antwortet besonders langsam",
+     "richtig": false
+    },
+    {
+     "text": "Es zeigt Bilder statt Text",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "KOM-13",
+   "thema": "kommunikation",
+   "text": "Welche Regeln sind im Homeoffice sinnvoll?",
+   "erklaerung": "Datenschutz und IT-Sicherheit gelten zu Hause genauso wie im Büro.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "KOM-L3",
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Den Bildschirm sperren, wenn man den Platz verlässt",
+     "richtig": true
+    },
+    {
+     "text": "Über VPN auf Firmendaten zugreifen",
+     "richtig": true
+    },
+    {
+     "text": "Vertrauliche Ausdrucke im Hausmüll entsorgen",
+     "richtig": false
+    },
+    {
+     "text": "Firmendaten ohne Absprache auf dem privaten Laptop speichern",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "KOM-14",
+   "thema": "kommunikation",
+   "text": "Eine Firma führt ein neues Ticketsystem ein. Viele Mitarbeiter sind skeptisch. Was erhöht die Akzeptanz am meisten?",
+   "erklaerung": "Gutes Change-Management nimmt Betroffene mit. Wer mitreden durfte, trägt die Veränderung eher mit.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "KOM-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Mitarbeiter früh informieren, beteiligen und schulen",
+     "richtig": true
+    },
+    {
+     "text": "Das System ohne Ankündigung über Nacht umstellen",
+     "richtig": false
+    },
+    {
+     "text": "Kritik ignorieren",
+     "richtig": false
+    },
+    {
+     "text": "Das alte System sofort löschen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "KOM-15",
+   "thema": "kommunikation",
+   "text": "Was macht eine Präsentationsfolie gut lesbar?",
+   "erklaerung": "Die Folie unterstützt den Vortrag, sie ersetzt ihn nicht.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "KOM-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Wenige Stichpunkte, große Schrift und eine klare Grafik",
+     "richtig": true
+    },
+    {
+     "text": "Möglichst viel Text, damit nichts vergessen wird",
+     "richtig": false
+    },
+    {
+     "text": "Viele Animationen auf jeder Folie",
+     "richtig": false
+    },
+    {
+     "text": "Kleine Schrift, damit alles auf eine Folie passt",
+     "richtig": false
+    }
+   ]
+  }
+ ]
+}

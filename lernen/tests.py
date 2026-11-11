@@ -10,7 +10,9 @@ from django.utils import timezone
 
 from accounts.models import InviteCode
 from lernen import logik
-from lernen.models import Frage, Karte, Versuch
+from accounts.models import Profil
+from lernen import belohnung
+from lernen.models import Abzeichen, Frage, Karte, Lektion, LektionGelesen, Lernzeit, Simulation, Versuch
 
 
 class FragenTest(TestCase):
@@ -57,7 +59,7 @@ class FragenTest(TestCase):
         anzahl = Frage.objects.filter(einstufung=True).count()
         for _ in range(anzahl):
             s = self.client.session["lernsitzung"]
-            frage = Frage.objects.get(id=s["ids"][s["pos"]])
+            frage = Frage.objects.get(id=s["items"][s["pos"]]["id"])
             if frage.typ == "zahl":
                 daten = {"aktion": "antworten", "zahl": str(frage.loesung_zahl).replace(".", ",")}
             else:
@@ -69,16 +71,87 @@ class FragenTest(TestCase):
         r = self.client.get(reverse("sitzung_ende"))
         self.assertContains(r, "100 %")
 
-    def test_tagesfragen(self):
-        ids = logik.tagesfragen(self.user)
-        self.assertEqual(len(ids), 10)
-        f = Frage.objects.get(id=ids[0])
+    def test_tagesnugget_mit_lektion(self):
+        items, titel = logik.tagesnugget(self.user)
+        self.assertEqual(items[0]["t"], "lektion")
+        self.assertTrue(titel.startswith("Lernnugget"))
+        fragen = [i for i in items if i["t"] == "frage"]
+        self.assertGreaterEqual(len(fragen), 5)
+        f = Frage.objects.get(id=fragen[0]["id"])
         Karte.objects.create(user=self.user, frage=f, faellig_am=timezone.localdate())
         self.assertIn(f.id, logik.tagesfragen(self.user))
 
+    def test_sitzung_mit_lektion_bucht_xp_und_zeit(self):
+        self.client.post(reverse("taeglich_start"))
+        r = self.client.get(reverse("sitzung"))
+        self.assertContains(r, "Lernnugget")
+        self.client.post(reverse("sitzung"), {"aktion": "weiter"})
+        self.assertEqual(LektionGelesen.objects.filter(user=self.user).count(), 1)
+        self.assertEqual(Profil.objects.get(user=self.user).xp, belohnung.XP_LEKTION)
+        s = self.client.session["lernsitzung"]
+        frage = Frage.objects.get(id=s["items"][s["pos"]]["id"])
+        self.client.get(reverse("sitzung"))
+        self.client.post(reverse("sitzung"), {"aktion": "antworten", "zahl": "0", "antwort": []})
+        self.assertEqual(Versuch.objects.filter(user=self.user).count(), 1)
+        r = self.client.get(reverse("sitzung"))
+        self.assertEqual(r.status_code, 200)
+
+    def test_niveau(self):
+        thema = Frage.objects.first().thema
+        self.assertEqual(logik.niveau(self.user, thema), 1)
+        for f in thema.fragen.all()[:10]:
+            Versuch.objects.create(user=self.user, frage=f, quelle="thema", richtig=True)
+        self.assertEqual(logik.niveau(self.user, thema), 3)
+
+    def test_simulation(self):
+        self.client.post(reverse("simulation_start"))
+        sim = Simulation.objects.get(user=self.user)
+        self.assertEqual(len(sim.fragen_ids), 40)
+        self.assertEqual(self.client.get(reverse("simulation", args=[sim.pk])).status_code, 200)
+        daten = {"aktion": "abgeben"}
+        for f in Frage.objects.filter(id__in=sim.fragen_ids):
+            if f.typ == "zahl":
+                daten[f"f{f.id}-zahl"] = str(f.loesung_zahl).replace(".", ",")
+            else:
+                daten[f"f{f.id}"] = [str(i) for i in f.antworten.filter(richtig=True).values_list("id", flat=True)]
+        self.client.post(reverse("simulation", args=[sim.pk]), daten)
+        sim.refresh_from_db()
+        self.assertEqual(sim.prozent, 100)
+        self.assertEqual(sim.note, 1)
+        r = self.client.get(reverse("simulation_ergebnis", args=[sim.pk]))
+        self.assertContains(r, "Note 1")
+        self.assertTrue(Abzeichen.objects.filter(user=self.user, schluessel="note1").exists())
+
+    def test_rangliste_nur_sichtbare(self):
+        andere = User.objects.create_user("anna", first_name="Anna", password="x-geheim-123")
+        Profil.objects.create(user=andere, in_rangliste=False)
+        Lernzeit.objects.create(user=andere, sekunden=600)
+        Lernzeit.objects.create(user=self.user, sekunden=300)
+        r = self.client.get(reverse("rangliste"))
+        self.assertNotContains(r, "Anna")
+        self.assertContains(r, "5</strong> Min")
+
+    def test_level(self):
+        self.assertEqual(belohnung.level_aus_xp(0), (1, 0, 100))
+        self.assertEqual(belohnung.level_aus_xp(100), (2, 0, 200))
+        self.assertEqual(belohnung.level_aus_xp(350), (3, 50, 300))
+
+    def test_lerntext_escaped(self):
+        from lernen.templatetags.lerntext import lerntext
+        html = lerntext("<script>x</script> **fett**")
+        self.assertNotIn("<script>", html)
+        self.assertIn("<strong>fett</strong>", html)
+
+    def test_alle_bilder_vorhanden(self):
+        from pathlib import Path
+        from django.conf import settings
+        for pfad in list(Frage.objects.exclude(bild="").values_list("bild", flat=True)) + list(Lektion.objects.exclude(bild="").values_list("bild", flat=True)):
+            self.assertTrue((Path(settings.BASE_DIR) / "static" / pfad).exists(), pfad)
+
     def test_seiten(self):
-        self.assertEqual(self.client.get(reverse("dashboard")).status_code, 200)
-        self.assertEqual(self.client.get(reverse("einstufung_start")).status_code, 200)
+        for name in ("dashboard", "einstufung_start", "simulation_start", "rangliste", "abzeichen", "profil"):
+            self.assertEqual(self.client.get(reverse(name)).status_code, 200, name)
+        self.assertEqual(self.client.get(reverse("thema_detail", args=["netzwerk"])).status_code, 200)
 
 
 class RegistrierungTest(TestCase):

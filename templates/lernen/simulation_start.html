@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Prüfungssimulation · FIAE-Lernapp{% endblock %}
+{% block content %}
+<div class="card">
+  <div style="font-size:48px">📝</div>
+  <h1>Prüfungssimulation AP1</h1>
+  <p>{{ anzahl }} Fragen aus allen Themen, verteilt wie in der echten Prüfung, mit einem Zeitlimit von {{ minuten }} Minuten.</p>
+  <ul>
+    <li>Lösungen und Erklärungen siehst du erst nach der Abgabe.</li>
+    <li>Schwierige Fragen bringen mehr Punkte. Die Note berechnet sich nach dem IHK-Schlüssel (ab 50 % bestanden).</li>
+    <li>Du kannst zwischendurch speichern. Läuft die Zeit ab, wird automatisch abgegeben.</li>
+    <li>Die Simulation zählt nicht für die Rangliste, nur die Lernzeit.</li>
+  </ul>
+  <form method="post">{% csrf_token %}
+    <button class="btn gross" type="submit">{% if offen %}Laufende Prüfung fortsetzen{% else %}Prüfung starten{% endif %}</button>
+  </form>
+  <p class="muted small" style="margin-top:12px">Hinweis: Die echte AP1 hat offene Fragen in vier Aufgaben zu einem Unternehmensszenario. Die Simulation übt dieselben Inhalte und Rechenwege.</p>
+</div>
+{% if bisher %}
+<h2>Deine bisherigen Simulationen</h2>
+<div class="card table-wrap">
+  <table>
+    <thead><tr><th>Datum</th><th class="num">Ergebnis</th><th class="num">Note</th><th></th></tr></thead>
+    <tbody>{% for s in bisher %}
+      <tr><td>{{ s.start|date:"d.m.Y H:i" }}</td><td class="num">{{ s.prozent }} %</td><td class="num">{{ s.note }}</td>
+      <td class="num"><a href="{% url 'simulation_ergebnis' s.pk %}">Auswertung</a></td></tr>
+    {% endfor %}</tbody>
+  </table>
+</div>
+{% endif %}
+{% endblock %}

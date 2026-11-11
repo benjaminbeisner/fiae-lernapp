@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Erfolge · FIAE-Lernapp{% endblock %}
+{% block content %}
+<h1>Deine Erfolge</h1>
+<div class="card">
+  <div class="row" style="justify-content:space-between;margin-bottom:8px">
+    <strong>⭐ Level {{ level }}</strong><span class="muted small">{{ xp_im_level }} / {{ xp_level }} XP bis Level {{ level|add:1 }} · {{ profil.xp }} XP gesamt</span>
+  </div>
+  <p class="muted small">XP gibt es für jede Antwort (richtig 10, falsch 3), für jedes Lernnugget (15) und jede Prüfungssimulation (50).</p>
+</div>
+<h2>Abzeichen ({{ anzahl }} von {{ liste|length }})</h2>
+<div class="abzeichen-grid">
+{% for x in liste %}
+  <div class="card abzeichen{% if not x.am %} gesperrt{% endif %}">
+    <div class="symbol">{{ x.a.symbol }}</div>
+    <b>{{ x.a.name }}</b>
+    <div class="muted small">{{ x.a.beschreibung }}</div>
+    {% if x.am %}<div class="small" style="margin-top:4px">{{ x.am|date:"d.m.Y" }}</div>{% endif %}
+  </div>
+{% endfor %}
+</div>
+<h2>Farbthemen</h2>
+<p class="muted">Mit jedem Level schaltest du neue Farbthemen frei. Auswählen kannst du sie in den <a href="{% url 'profil' %}">Einstellungen</a>.</p>
+<div class="abzeichen-grid">
+{% for t in farbthemen %}
+  <div class="card abzeichen{% if not t.frei %} gesperrt{% endif %}">
+    <div class="symbol">{% if t.frei %}🎨{% else %}🔒{% endif %}</div>
+    <b>{{ t.name }}</b><div class="muted small">ab Level {{ t.ab }}</div>
+  </div>
+{% endfor %}
+</div>
+{% endblock %}

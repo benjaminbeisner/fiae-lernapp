@@ -1,0 +1,895 @@
+{
+ "lektionen": [
+  {
+   "schluessel": "NET-L1",
+   "thema": "netzwerk",
+   "titel": "IPv4-Adressen und Subnetzmaske",
+   "stufe": 1,
+   "inhalt": "Eine IPv4-Adresse hat **32 Bit**, geschrieben als vier Dezimalzahlen von 0 bis 255 (je 8 Bit = 1 Oktett), z. B. `192.168.10.25`.\n\nDie **Subnetzmaske** trennt die Adresse in **Netzanteil** und **Hostanteil**. In CIDR-Schreibweise gibt die Zahl hinter dem Schrägstrich an, wie viele Bit zum Netz gehören:\n\n| CIDR | Maske | nutzbare Hosts |\n|---|---|---|\n| /24 | 255.255.255.0 | 254 |\n| /25 | 255.255.255.128 | 126 |\n| /26 | 255.255.255.192 | 62 |\n| /27 | 255.255.255.224 | 30 |\n| /28 | 255.255.255.240 | 14 |\n\nPro Netz sind zwei Adressen reserviert: die **Netzadresse** (alle Hostbits 0) und die **Broadcast-Adresse** (alle Hostbits 1).\n\n**Private Adressbereiche** (im Internet nicht geroutet):\n- `10.0.0.0/8`\n- `172.16.0.0/12` (also 172.16.x.x bis 172.31.x.x)\n- `192.168.0.0/16`",
+   "merksatz": "Hosts = 2^(Hostbits) − 2. Netzadresse und Broadcast sind nicht nutzbar.",
+   "bild": "",
+   "reihenfolge": 0
+  },
+  {
+   "schluessel": "NET-L2",
+   "thema": "netzwerk",
+   "titel": "Subnetting Schritt für Schritt",
+   "stufe": 2,
+   "inhalt": "So rechnest du jede Subnetting-Aufgabe:\n\n- **1. Hostbits:** 32 − Präfix. Bei /26 sind das 6 Bit.\n- **2. Blockgröße:** 2^Hostbits. Bei /26 also 64. Die Netze beginnen bei 0, 64, 128, 192.\n- **3. Netzadresse:** den Block suchen, in dem die IP liegt. 192.168.10.77/27 → Blockgröße 32 → Blöcke 0, 32, 64, 96 … → 77 liegt im Block ab **64**.\n- **4. Broadcast:** Netzadresse + Blockgröße − 1 → 64 + 32 − 1 = **95**.\n- **5. Hostbereich:** .65 bis .94.\n\n**Netz aufteilen:** Für 4 gleich große Subnetze brauchst du 2 zusätzliche Netzbits (2² = 4). Aus /24 wird /26. Für 8 Subnetze 3 Bits → /27.\n\n**Präfix für eine Hostanzahl:** kleinste Zweierpotenz suchen, die Hosts + 2 fasst. 50 Hosts → 64 Adressen → 6 Hostbits → **/26**.",
+   "merksatz": "Blockgröße = 256 − letzte Zahl der Maske. Bei 255.255.255.224 also 32.",
+   "bild": "",
+   "reihenfolge": 1
+  },
+  {
+   "schluessel": "NET-L3",
+   "thema": "netzwerk",
+   "titel": "IPv6 kompakt",
+   "stufe": 2,
+   "inhalt": "Eine IPv6-Adresse hat **128 Bit**: 8 Blöcke à 16 Bit in Hexadezimal, getrennt durch Doppelpunkte.\n\n**Kürzen in zwei Regeln:**\n- Führende Nullen in einem Block weglassen: `0db8` → `db8`, `0000` → `0`\n- **Eine** zusammenhängende Folge von Null-Blöcken durch `::` ersetzen, nur einmal pro Adresse, sinnvollerweise die längste.\n\nBeispiel: `2001:0db8:0000:0000:0000:0000:0000:0001` → `2001:db8::1`\n\n**Wichtige Adressarten:**\n| Präfix | Bedeutung |\n|---|---|\n| `::1` | Loopback (wie 127.0.0.1) |\n| `fe80::/10` | Link-Local, nur im eigenen Netzsegment |\n| `fc00::/7` | Unique Local (wie private IPv4-Adressen) |\n| `2000::/3` | Global Unicast, im Internet erreichbar |\n| `ff00::/8` | Multicast (Broadcast gibt es bei IPv6 nicht) |\n\nTypisch ist ein **/64-Präfix**: 64 Bit Netz, 64 Bit Interface-ID.",
+   "merksatz": "IPv6: 128 Bit, Hex, :: nur einmal, Link-Local beginnt mit fe80.",
+   "bild": "",
+   "reihenfolge": 2
+  },
+  {
+   "schluessel": "NET-L4",
+   "thema": "netzwerk",
+   "titel": "OSI-Modell, Geräte und Protokolle",
+   "stufe": 1,
+   "inhalt": "Das OSI-Modell hat 7 Schichten. Für die Prüfung wichtig:\n\n| Schicht | Name | Beispiele |\n|---|---|---|\n| 7 | Anwendung | HTTP, DNS, SMTP |\n| 4 | Transport | TCP, UDP, Ports |\n| 3 | Vermittlung | IP, Router |\n| 2 | Sicherung | MAC-Adresse, Switch |\n| 1 | Bitübertragung | Kabel, Hub, Funk |\n\n**Geräte:** Ein **Switch** verbindet Geräte im selben Netz anhand der MAC-Adressen (Schicht 2). Ein **Router** verbindet verschiedene Netze anhand der IP-Adressen (Schicht 3).\n\n**TCP vs. UDP:** TCP ist verbindungsorientiert, bestätigt Pakete und sortiert sie (Web, E-Mail, Dateien). UDP ist verbindungslos und schneller, ohne Bestätigung (Telefonie, Video-Streaming, DNS-Anfragen).\n\nEine **MAC-Adresse** hat 48 Bit, z. B. `00:1A:2B:3C:4D:5E`. **PoE** (Power over Ethernet) versorgt Geräte wie Access Points oder IP-Kameras über das Netzwerkkabel mit Strom.",
+   "merksatz": "Switch = Schicht 2 = MAC. Router = Schicht 3 = IP.",
+   "bild": "",
+   "reihenfolge": 3
+  },
+  {
+   "schluessel": "NET-L5",
+   "thema": "netzwerk",
+   "titel": "DHCP, DNS und Fehlersuche",
+   "stufe": 1,
+   "inhalt": "**DHCP** verteilt automatisch IP-Adresse, Subnetzmaske, Standard-Gateway und DNS-Server. Ablauf (DORA): **D**iscover → **O**ffer → **R**equest → **A**cknowledge.\n\nBekommt ein Windows-PC keine Antwort vom DHCP-Server, gibt er sich selbst eine **APIPA-Adresse** aus `169.254.0.0/16`.\n\n**DNS** übersetzt Namen wie `www.ihk.de` in IP-Adressen.\n\nDas **Standard-Gateway** ist der Router im eigenen Netz. Alles, was nicht im eigenen Netz liegt, schickt der PC dorthin. Liegt das Gateway nicht im eigenen Netz, erreicht der PC nur lokale Geräte.\n\n**Wichtige Befehle (Windows):**\n- `ipconfig /all` zeigt IP, Maske, Gateway, DNS-Server, MAC\n- `ping` testet die Erreichbarkeit\n- `tracert` zeigt den Weg über alle Router\n- `nslookup` fragt DNS ab\n- `arp -a` zeigt die Zuordnung IP → MAC\n\n**Wichtige Ports:** 22 SSH, 25 SMTP, 53 DNS, 80 HTTP, 443 HTTPS, 3389 RDP.",
+   "merksatz": "Erst ipconfig, dann ping auf Gateway, dann ping auf eine Internet-IP, dann auf einen Namen. So findest du die Fehlerstelle.",
+   "bild": "",
+   "reihenfolge": 4
+  }
+ ],
+ "fragen": [
+  {
+   "schluessel": "NET-01",
+   "thema": "netzwerk",
+   "text": "Wie viele Hosts kannst du im Netz 192.168.20.0/26 adressieren?",
+   "erklaerung": "/26 → 32 − 26 = 6 Hostbits → 2⁶ = 64 Adressen. Minus Netz- und Broadcast-Adresse = 62.",
+   "schwierigkeit": 2,
+   "einstufung": true,
+   "typ": "zahl",
+   "loesung": 62,
+   "toleranz": 0,
+   "einheit": "Hosts",
+   "lektion": "NET-L2"
+  },
+  {
+   "schluessel": "NET-02",
+   "thema": "netzwerk",
+   "text": "Wie lautet die Broadcast-Adresse des Netzes 192.168.20.0/26?",
+   "erklaerung": "Das Netz hat 64 Adressen: .0 bis .63. Die letzte (.63) ist der Broadcast, .62 der letzte nutzbare Host.",
+   "schwierigkeit": 2,
+   "einstufung": true,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "192.168.20.63",
+     "richtig": true
+    },
+    {
+     "text": "192.168.20.64",
+     "richtig": false
+    },
+    {
+     "text": "192.168.20.255",
+     "richtig": false
+    },
+    {
+     "text": "192.168.20.62",
+     "richtig": false
+    }
+   ],
+   "lektion": "NET-L2"
+  },
+  {
+   "schluessel": "NET-03",
+   "thema": "netzwerk",
+   "text": "Wie lautet die Subnetzmaske /27 in Dezimalschreibweise?",
+   "erklaerung": "/27 = 24 Bit + 3 Bit im letzten Oktett: 11100000 = 128 + 64 + 32 = 224.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "255.255.255.224",
+     "richtig": true
+    },
+    {
+     "text": "255.255.255.192",
+     "richtig": false
+    },
+    {
+     "text": "255.255.255.240",
+     "richtig": false
+    },
+    {
+     "text": "255.255.255.248",
+     "richtig": false
+    }
+   ],
+   "lektion": "NET-L2"
+  },
+  {
+   "schluessel": "NET-04",
+   "thema": "netzwerk",
+   "text": "Wie lautet die korrekt gekürzte Form von 2001:0db8:0000:0000:0000:0000:0000:0001?",
+   "erklaerung": "Führende Nullen je Block weglassen (0db8 → db8). Eine zusammenhängende Folge von Null-Blöcken einmal durch :: ersetzen. :: darf nur einmal vorkommen, und Nullen am Ende eines Blocks bleiben stehen (2001 bleibt 2001).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "2001:db8::1",
+     "richtig": true
+    },
+    {
+     "text": "2001:db8:1",
+     "richtig": false
+    },
+    {
+     "text": "2001::db8::1",
+     "richtig": false
+    },
+    {
+     "text": "21:db8::1",
+     "richtig": false
+    }
+   ],
+   "lektion": "NET-L3"
+  },
+  {
+   "schluessel": "NET-05",
+   "thema": "netzwerk",
+   "text": "Mit welchem Präfix beginnen IPv6-Link-Local-Adressen?",
+   "erklaerung": "fe80::/10 = link-local (nur im eigenen Segment). 2000::/3 = global unicast, fc00::/7 = unique local, ff00::/8 = Multicast.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "fe80::/10",
+     "richtig": true
+    },
+    {
+     "text": "2000::/3",
+     "richtig": false
+    },
+    {
+     "text": "fc00::/7",
+     "richtig": false
+    },
+    {
+     "text": "ff00::/8",
+     "richtig": false
+    }
+   ],
+   "lektion": "NET-L3"
+  },
+  {
+   "schluessel": "NET-06",
+   "thema": "netzwerk",
+   "text": "Ein PC hat die IP-Adresse 169.254.13.7. Was ist die wahrscheinlichste Ursache?",
+   "erklaerung": "169.254.0.0/16 = APIPA (Automatic Private IP Addressing). Prüfen: Kabel, Switch-Port, DHCP-Server.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Er hat keinen DHCP-Server erreicht und sich selbst eine APIPA-Adresse gegeben",
+     "richtig": true
+    },
+    {
+     "text": "Er hat eine öffentliche IP-Adresse vom Provider",
+     "richtig": false
+    },
+    {
+     "text": "Die Adresse wurde manuell als Gateway eingetragen",
+     "richtig": false
+    },
+    {
+     "text": "Es ist eine Loopback-Adresse",
+     "richtig": false
+    }
+   ],
+   "lektion": "NET-L5"
+  },
+  {
+   "schluessel": "NET-07",
+   "thema": "netzwerk",
+   "text": "Auf welcher Schicht des OSI-Modells arbeitet ein Router hauptsächlich?",
+   "erklaerung": "Router leiten anhand von IP-Adressen weiter = Schicht 3. Ein (normaler) Switch arbeitet mit MAC-Adressen auf Schicht 2.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Schicht 3 (Vermittlung / Network)",
+     "richtig": true
+    },
+    {
+     "text": "Schicht 2 (Sicherung / Data Link)",
+     "richtig": false
+    },
+    {
+     "text": "Schicht 4 (Transport)",
+     "richtig": false
+    },
+    {
+     "text": "Schicht 1 (Bitübertragung)",
+     "richtig": false
+    }
+   ],
+   "lektion": "NET-L4"
+  },
+  {
+   "schluessel": "NET-08",
+   "thema": "netzwerk",
+   "text": "Mit welchem Windows-Befehl siehst du, über welche Router ein Paket zum Ziel läuft?",
+   "erklaerung": "tracert (Linux: traceroute) zeigt jeden Hop. ipconfig zeigt die eigene Konfiguration, arp -a die MAC-Tabelle, nslookup fragt DNS ab.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "tracert",
+     "richtig": true
+    },
+    {
+     "text": "ipconfig",
+     "richtig": false
+    },
+    {
+     "text": "arp -a",
+     "richtig": false
+    },
+    {
+     "text": "nslookup",
+     "richtig": false
+    }
+   ],
+   "lektion": "NET-L5"
+  },
+  {
+   "schluessel": "NET-09",
+   "thema": "netzwerk",
+   "text": "Wie viele Bit lang ist eine IPv6-Adresse?",
+   "erklaerung": "IPv6: 128 Bit, geschrieben als 8 Blöcke à 16 Bit in Hex. IPv4: 32 Bit.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 128,
+   "toleranz": 0,
+   "einheit": "Bit",
+   "lektion": "NET-L3"
+  },
+  {
+   "schluessel": "NET-10",
+   "thema": "netzwerk",
+   "text": "Wie viele Hosts kannst du in einem /24-Netz adressieren?",
+   "erklaerung": "8 Hostbits → 256 Adressen − Netz- und Broadcast-Adresse = 254.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "NET-L1",
+   "typ": "zahl",
+   "loesung": 254,
+   "toleranz": 0,
+   "einheit": "Hosts"
+  },
+  {
+   "schluessel": "NET-11",
+   "thema": "netzwerk",
+   "text": "Wie lautet die Netzadresse von 10.0.5.77/16?",
+   "erklaerung": "/16 = die ersten zwei Oktette sind Netzanteil. Hostanteil auf 0 setzen: 10.0.0.0.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "NET-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "10.0.0.0",
+     "richtig": true
+    },
+    {
+     "text": "10.0.5.0",
+     "richtig": false
+    },
+    {
+     "text": "10.0.5.77",
+     "richtig": false
+    },
+    {
+     "text": "10.0.255.255",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-12",
+   "thema": "netzwerk",
+   "text": "Welche dieser Adressen sind private IPv4-Adressen?",
+   "erklaerung": "Privat sind 10.0.0.0/8, 172.16.0.0 bis 172.31.255.255 und 192.168.0.0/16. 172.32.0.1 liegt knapp außerhalb.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "NET-L1",
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "10.1.2.3",
+     "richtig": true
+    },
+    {
+     "text": "172.20.1.5",
+     "richtig": true
+    },
+    {
+     "text": "192.168.0.10",
+     "richtig": true
+    },
+    {
+     "text": "172.32.0.1",
+     "richtig": false
+    },
+    {
+     "text": "8.8.8.8",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-13",
+   "thema": "netzwerk",
+   "text": "Das Netz 192.168.1.0/24 soll in 4 gleich große Subnetze aufgeteilt werden. Welche Präfixlänge haben die Subnetze?",
+   "erklaerung": "4 Subnetze = 2² → 2 zusätzliche Netzbits. 24 + 2 = 26.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "NET-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "/26",
+     "richtig": true
+    },
+    {
+     "text": "/25",
+     "richtig": false
+    },
+    {
+     "text": "/27",
+     "richtig": false
+    },
+    {
+     "text": "/28",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-14",
+   "thema": "netzwerk",
+   "text": "Wie viele /27-Subnetze passen in ein /24-Netz?",
+   "erklaerung": "27 − 24 = 3 zusätzliche Netzbits → 2³ = 8 Subnetze à 32 Adressen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "NET-L2",
+   "typ": "zahl",
+   "loesung": 8,
+   "toleranz": 0,
+   "einheit": "Subnetze"
+  },
+  {
+   "schluessel": "NET-15",
+   "thema": "netzwerk",
+   "text": "Ein Host hat die Adresse 192.168.10.77/27. Wie lautet die Netzadresse?",
+   "erklaerung": "/27 → Blockgröße 32: 0, 32, 64, 96 … 77 liegt im Block ab 64.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "NET-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "192.168.10.64",
+     "richtig": true
+    },
+    {
+     "text": "192.168.10.0",
+     "richtig": false
+    },
+    {
+     "text": "192.168.10.32",
+     "richtig": false
+    },
+    {
+     "text": "192.168.10.96",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-16",
+   "thema": "netzwerk",
+   "text": "Wie lautet die Broadcast-Adresse des Netzes, in dem 192.168.10.77/27 liegt?",
+   "erklaerung": "Netzadresse .64 + Blockgröße 32 − 1 = .95. Der letzte nutzbare Host ist .94.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "NET-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "192.168.10.95",
+     "richtig": true
+    },
+    {
+     "text": "192.168.10.255",
+     "richtig": false
+    },
+    {
+     "text": "192.168.10.94",
+     "richtig": false
+    },
+    {
+     "text": "192.168.10.127",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-17",
+   "thema": "netzwerk",
+   "text": "Eine Abteilung braucht ein eigenes Subnetz für 50 Geräte. Welches ist das kleinste passende Präfix?",
+   "erklaerung": "50 Hosts + 2 = 52 Adressen → nächste Zweierpotenz 64 = 6 Hostbits → /26 (62 Hosts). /27 hätte nur 30.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "NET-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "/26",
+     "richtig": true
+    },
+    {
+     "text": "/27",
+     "richtig": false
+    },
+    {
+     "text": "/25",
+     "richtig": false
+    },
+    {
+     "text": "/28",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-18",
+   "thema": "netzwerk",
+   "text": "Liegen 192.168.5.100/25 und 192.168.5.130/25 im selben Netz?",
+   "erklaerung": "/25 teilt das letzte Oktett in zwei Hälften: 0–127 und 128–255. Die beiden Hosts brauchen einen Router, um sich zu erreichen.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "NET-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Nein: .100 liegt im Netz .0 bis .127, .130 im Netz .128 bis .255",
+     "richtig": true
+    },
+    {
+     "text": "Ja, die ersten drei Oktette sind gleich",
+     "richtig": false
+    },
+    {
+     "text": "Ja, weil beide /25 haben",
+     "richtig": false
+    },
+    {
+     "text": "Das lässt sich ohne Gateway nicht sagen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-19",
+   "thema": "netzwerk",
+   "text": "Wie lautet die maximal gekürzte Form von 2001:0db8:0000:0042:0000:0000:0000:0bad?",
+   "erklaerung": "Führende Nullen weg (0db8 → db8, 0042 → 42, 0bad → bad, 0000 → 0). Die längste Null-Folge (drei Blöcke) wird zu ::. Zweimal :: ist verboten.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "NET-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "2001:db8:0:42::bad",
+     "richtig": true
+    },
+    {
+     "text": "2001:db8::42::bad",
+     "richtig": false
+    },
+    {
+     "text": "2001:db8:42::bad",
+     "richtig": false
+    },
+    {
+     "text": "2001:db8:0:42::0bad",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-20",
+   "thema": "netzwerk",
+   "text": "Ein Netz hat das IPv6-Präfix /64. Wie viele Bit hat die Interface-ID?",
+   "erklaerung": "128 Bit gesamt − 64 Bit Präfix = 64 Bit für die Interface-ID.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "NET-L3",
+   "typ": "zahl",
+   "loesung": 64,
+   "toleranz": 0,
+   "einheit": "Bit"
+  },
+  {
+   "schluessel": "NET-21",
+   "thema": "netzwerk",
+   "text": "Was ist die IPv6-Adresse ::1?",
+   "erklaerung": "::1 = 0:0:0:0:0:0:0:1 = Loopback, also der eigene Rechner.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "NET-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Die Loopback-Adresse, entspricht 127.0.0.1",
+     "richtig": true
+    },
+    {
+     "text": "Das Standard-Gateway",
+     "richtig": false
+    },
+    {
+     "text": "Eine Link-Local-Adresse",
+     "richtig": false
+    },
+    {
+     "text": "Die Multicast-Adresse aller Router",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-22",
+   "thema": "netzwerk",
+   "text": "Auf welcher OSI-Schicht arbeiten TCP und UDP?",
+   "erklaerung": "Transport-Schicht: Ports, Segmentierung, bei TCP Bestätigungen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "NET-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Schicht 4 (Transport)",
+     "richtig": true
+    },
+    {
+     "text": "Schicht 3 (Vermittlung)",
+     "richtig": false
+    },
+    {
+     "text": "Schicht 7 (Anwendung)",
+     "richtig": false
+    },
+    {
+     "text": "Schicht 2 (Sicherung)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-23",
+   "thema": "netzwerk",
+   "text": "Anhand welcher Information leitet ein Switch Datenpakete weiter?",
+   "erklaerung": "Ein Switch lernt, an welchem Port welche MAC-Adresse hängt (MAC-Tabelle), und schickt Frames gezielt dorthin.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "NET-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "MAC-Adresse",
+     "richtig": true
+    },
+    {
+     "text": "IP-Adresse",
+     "richtig": false
+    },
+    {
+     "text": "Portnummer (z. B. 443)",
+     "richtig": false
+    },
+    {
+     "text": "Domainname",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-24",
+   "thema": "netzwerk",
+   "text": "Für Internettelefonie (VoIP) wird meist UDP statt TCP verwendet. Warum?",
+   "erklaerung": "Bei Echtzeit-Anwendungen stört ein erneut gesendetes, verspätetes Paket mehr als ein fehlendes.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "NET-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "UDP ist verbindungslos und ohne Bestätigungen schneller; ein verlorenes Paket ist besser als Verzögerung",
+     "richtig": true
+    },
+    {
+     "text": "UDP verschlüsselt die Daten automatisch",
+     "richtig": false
+    },
+    {
+     "text": "UDP garantiert die Reihenfolge der Pakete",
+     "richtig": false
+    },
+    {
+     "text": "TCP kann keine Audiodaten übertragen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-25",
+   "thema": "netzwerk",
+   "text": "Über welchen Port läuft HTTPS standardmäßig?",
+   "erklaerung": "80 = HTTP, 443 = HTTPS, 22 = SSH, 53 = DNS.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "NET-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "443",
+     "richtig": true
+    },
+    {
+     "text": "80",
+     "richtig": false
+    },
+    {
+     "text": "22",
+     "richtig": false
+    },
+    {
+     "text": "53",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-26",
+   "thema": "netzwerk",
+   "text": "Wofür ist DNS zuständig?",
+   "erklaerung": "DNS = Telefonbuch des Internets. IP-Adressen verteilen macht DHCP, IP→MAC macht ARP.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "NET-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Domainnamen in IP-Adressen auflösen",
+     "richtig": true
+    },
+    {
+     "text": "IP-Adressen automatisch verteilen",
+     "richtig": false
+    },
+    {
+     "text": "Datenpakete verschlüsseln",
+     "richtig": false
+    },
+    {
+     "text": "MAC-Adressen in IP-Adressen umwandeln",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-27",
+   "thema": "netzwerk",
+   "text": "In welcher Reihenfolge läuft eine DHCP-Zuweisung ab?",
+   "erklaerung": "Merkwort DORA: Client sucht (Discover), Server bietet an (Offer), Client fordert an (Request), Server bestätigt (Acknowledge).",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "NET-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Discover, Offer, Request, Acknowledge",
+     "richtig": true
+    },
+    {
+     "text": "Request, Offer, Discover, Acknowledge",
+     "richtig": false
+    },
+    {
+     "text": "Discover, Request, Offer, Acknowledge",
+     "richtig": false
+    },
+    {
+     "text": "Offer, Discover, Acknowledge, Request",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-28",
+   "thema": "netzwerk",
+   "text": "Mit welchem Windows-Befehl siehst du neben der IP-Adresse auch DNS-Server und MAC-Adresse?",
+   "erklaerung": "ipconfig allein zeigt nur IP, Maske und Gateway. /all zeigt alles.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "NET-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "ipconfig /all",
+     "richtig": true
+    },
+    {
+     "text": "ipconfig",
+     "richtig": false
+    },
+    {
+     "text": "ping -a",
+     "richtig": false
+    },
+    {
+     "text": "netstat",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-29",
+   "thema": "netzwerk",
+   "text": "Wie viele Bit hat eine MAC-Adresse?",
+   "erklaerung": "48 Bit = 6 Byte, geschrieben als 6 Hex-Paare.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "NET-L4",
+   "typ": "zahl",
+   "loesung": 48,
+   "toleranz": 0,
+   "einheit": "Bit"
+  },
+  {
+   "schluessel": "NET-30",
+   "thema": "netzwerk",
+   "text": "Ein PC hat die Konfiguration aus der Abbildung. Er erreicht den Drucker im Büro, aber keine Webseiten im Internet. Was ist die Ursache?",
+   "erklaerung": "Der PC liegt in 192.168.10.0/24, das Gateway 192.168.1.1 aber in einem anderen Netz. Richtig wäre 192.168.10.1, die LAN-Adresse des Routers.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "NET-L5",
+   "bild": "bilder/netz_gateway.svg",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Das eingetragene Standard-Gateway liegt nicht im Netz des PCs",
+     "richtig": true
+    },
+    {
+     "text": "Die Subnetzmaske ist zu groß",
+     "richtig": false
+    },
+    {
+     "text": "Der Drucker blockiert das Internet",
+     "richtig": false
+    },
+    {
+     "text": "Die IP-Adresse des PCs ist öffentlich",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-31",
+   "thema": "netzwerk",
+   "text": "Wofür steht PoE und wofür wird es typischerweise genutzt?",
+   "erklaerung": "Mit PoE braucht ein Gerät an der Decke oder Wand kein eigenes Netzteil. Der Switch muss PoE unterstützen und genug Leistung (Budget) haben.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "NET-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Power over Ethernet: Strom über das Netzwerkkabel, z. B. für Access Points und IP-Kameras",
+     "richtig": true
+    },
+    {
+     "text": "Port over Ethernet: Weiterleitung von Ports im Router",
+     "richtig": false
+    },
+    {
+     "text": "Protection of Equipment: Überspannungsschutz im Rack",
+     "richtig": false
+    },
+    {
+     "text": "Point of Entry: Übergabepunkt des Providers",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-32",
+   "thema": "netzwerk",
+   "text": "Welcher WLAN-Sicherheitsstandard sollte heute für ein Firmennetz gewählt werden?",
+   "erklaerung": "WEP und WPA gelten als unsicher. Eine versteckte SSID ist kein Schutz. Stand der Technik ist WPA3 (mindestens WPA2 mit AES).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "NET-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "WPA3",
+     "richtig": true
+    },
+    {
+     "text": "WEP",
+     "richtig": false
+    },
+    {
+     "text": "WPA (erste Version)",
+     "richtig": false
+    },
+    {
+     "text": "Offenes WLAN mit verstecktem Namen (SSID)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "NET-33",
+   "thema": "netzwerk",
+   "text": "Ein PC erreicht per `ping 8.8.8.8` das Internet, aber `ping www.ihk.de` schlägt fehl. Wo liegt der Fehler am wahrscheinlichsten?",
+   "erklaerung": "Eine IP im Internet ist erreichbar, also funktionieren Kabel, Adresse und Gateway. Nur Namen werden nicht aufgelöst: DNS-Server prüfen (ipconfig /all, nslookup).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "NET-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Bei der Namensauflösung (DNS)",
+     "richtig": true
+    },
+    {
+     "text": "Beim Standard-Gateway",
+     "richtig": false
+    },
+    {
+     "text": "Am Netzwerkkabel",
+     "richtig": false
+    },
+    {
+     "text": "Bei der Subnetzmaske",
+     "richtig": false
+    }
+   ]
+  }
+ ]
+}

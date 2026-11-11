@@ -1,22 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="card">
-  <h1>{{ s.titel }}: geschafft</h1>
+<div class="card" style="text-align:center">
+  <div style="font-size:56px">{% if quote >= 80 %}🎉{% elif quote >= 50 %}💪{% else %}🌱{% endif %}</div>
+  <h1>{{ s.titel }}: geschafft!</h1>
   {% if beantwortet %}
     <p><span class="stat">{{ quote }} %</span><br><span class="muted">{{ s.richtig }} von {{ beantwortet }} Fragen richtig</span></p>
-  {% else %}
-    <p class="muted">Du hast keine Frage beantwortet.</p>
   {% endif %}
+  <div class="row" style="justify-content:center">
+    <span class="chip">⭐ +{{ xp }} XP</span>
+    <span class="chip">⏱️ heute {{ minuten }} von {{ ziel }} Min</span>
+  </div>
 </div>
 {% if themen %}
-<h2>Nach Themen</h2>
 <div class="card table-wrap">
   <table>
     <thead><tr><th>Thema</th><th class="num">Richtig</th><th class="num">Quote</th></tr></thead>
     <tbody>{% for t in themen %}<tr><td>{{ t.name }}</td><td class="num">{{ t.richtig }} / {{ t.gesamt }}</td><td class="num">{{ t.quote }} %</td></tr>{% endfor %}</tbody>
   </table>
 </div>
-{% if s.art == "einstufung" %}<p>Deine schwächsten Themen stehen oben. Das tägliche Lernen setzt ab jetzt dort den Schwerpunkt.</p>{% endif %}
+{% if s.art == "einstufung" %}<p>Deine schwächsten Themen stehen oben. Die täglichen Lernnuggets setzen ab jetzt dort den Schwerpunkt.</p>{% endif %}
 {% endif %}
-<form method="post">{% csrf_token %}<button class="btn" type="submit">Zur Übersicht</button></form>
+<form method="post">{% csrf_token %}<button class="btn gross voll" type="submit">Weiter</button></form>
 {% endblock %}

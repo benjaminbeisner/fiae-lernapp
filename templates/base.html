@@ -3,22 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3559e0">
   <title>{% block title %}FIAE-Lernapp{% endblock %}</title>
   <link rel="stylesheet" href="{% static 'app.css' %}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
 </head>
-<body>
-<header class="top"><div class="inner">
-  <a class="brand" href="{% url 'dashboard' %}">FIAE-Lernapp</a>
+<body data-farbthema="{{ farbthema }}">
+{% with url=request.resolver_match.url_name %}
+<header class="top">
+  <div class="inner">
+    <a class="brand" href="{% url 'dashboard' %}"><span class="logo">{&nbsp;}</span>FIAE-Lernapp</a>
+    {% if user.is_authenticated %}
+    <div class="chips">
+      <a class="chip" href="{% url 'abzeichen' %}" title="Lernserie in Tagen">🔥 {{ kopf_serie }}</a>
+      <a class="chip" href="{% url 'abzeichen' %}" title="Dein Level">⭐ <span class="lang">Level&nbsp;</span>{{ kopf_level }}</a>
+    </div>
+    {% endif %}
+  </div>
   {% if user.is_authenticated %}
-  <nav>
-    <a href="{% url 'dashboard' %}">Übersicht</a>
+  <nav class="haupt">
+    <a href="{% url 'dashboard' %}" class="{% if url == 'dashboard' or url == 'thema_detail' %}aktiv{% endif %}">Lernen</a>
+    <a href="{% url 'simulation_start' %}" class="{% if url and 'simulation' in url %}aktiv{% endif %}">Prüfung</a>
+    <a href="{% url 'rangliste' %}" class="{% if url == 'rangliste' %}aktiv{% endif %}">Rangliste</a>
+    <a href="{% url 'abzeichen' %}" class="{% if url == 'abzeichen' %}aktiv{% endif %}">Erfolge</a>
+    <a href="{% url 'profil' %}" class="{% if url == 'profil' %}aktiv{% endif %}">Profil</a>
     {% if user.is_staff %}<a href="/verwaltung/">Verwaltung</a>{% endif %}
-    <form method="post" action="{% url 'logout' %}" style="display:inline">{% csrf_token %}<button class="btn link" type="submit">Abmelden</button></form>
   </nav>
   {% endif %}
-</div></header>
+</header>
+{% endwith %}
 <main>
-  {% if messages %}<ul class="messages">{% for m in messages %}<li>{{ m }}</li>{% endfor %}</ul>{% endif %}
+  {% if messages %}<ul class="messages">{% for m in messages %}<li class="{{ m.tags }}">{{ m }}</li>{% endfor %}</ul>{% endif %}
   {% block content %}{% endblock %}
 </main>
 </body>

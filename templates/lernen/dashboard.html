@@ -1,51 +1,69 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Hallo {{ user.first_name|default:user.username }}!</h1>
-<p class="muted">Noch {{ tage_bis_ap1 }} Tage bis zur AP1.</p>
-
 {% if laufende_sitzung %}
 <div class="card row">
-  <div style="flex:1">Du hast noch eine angefangene Lerneinheit: <strong>{{ laufende_sitzung.titel }}</strong></div>
+  <div class="spacer">Du hast eine angefangene Einheit: <strong>{{ laufende_sitzung.titel }}</strong></div>
   <a class="btn" href="{% url 'sitzung' %}">Weitermachen</a>
 </div>
 {% endif %}
 
-{% if not hat_einstufung %}
-<div class="card">
-  <h2 style="margin-top:0">Starte mit dem Einstufungstest</h2>
-  <p>Der Test zeigt dir, wo du in den AP1-Themen stehst. Danach stellt dir die App jeden Tag passende Fragen zusammen, mit Schwerpunkt auf deinen Lücken.</p>
-  <a class="btn" href="{% url 'einstufung_start' %}">Zum Einstufungstest</a>
-</div>
-{% endif %}
-
-<div class="grid stats">
-  <div class="card"><div class="stat">{{ faellig }}</div><div class="muted small">Wiederholungen fällig</div></div>
-  <div class="card"><div class="stat">{{ heute_beantwortet }}</div><div class="muted small">Fragen heute beantwortet</div></div>
-  <div class="card"><div class="stat">{{ serie }}</div><div class="muted small">{% if serie == 1 %}Tag{% else %}Tage{% endif %} Lernserie</div></div>
-</div>
-
-<div class="card row">
-  <div style="flex:1">
-    <strong>Tägliches Lernen</strong><br>
-    <span class="muted small">Fällige Wiederholungen plus neue Fragen, ca. 15–20 Minuten.</span>
+<div class="card hero">
+  <div class="text">
+    <h1>Hallo {{ profil.anzeigename|default:user.first_name|default:user.username }}!</h1>
+    {% if not hat_einstufung %}
+      <p>Mach zuerst den Einstufungstest. Danach passt die App Lernnuggets und Übungen an deinen Wissensstand an.</p>
+      <a class="btn gross" href="{% url 'einstufung_start' %}">Einstufungstest starten</a>
+    {% else %}
+      <p>{% if minuten >= ziel %}Tagesziel geschafft! Jede weitere Minute zählt für die Rangliste.{% else %}Dein heutiges Lernnugget wartet: eine kurze Erklärung und passende Übungen, ca. 10–15 Minuten.{% endif %}</p>
+      <form method="post" action="{% url 'taeglich_start' %}">{% csrf_token %}<button class="btn gross" type="submit">▶ Heutiges Nugget starten</button></form>
+    {% endif %}
   </div>
-  <form method="post" action="{% url 'taeglich_start' %}">{% csrf_token %}<button class="btn" type="submit">Jetzt lernen</button></form>
+  <div class="ring" style="--p: {{ ziel_prozent }}" title="Tagesziel"><div><span><b>{{ minuten }}</b><small>von {{ ziel }} Min</small></span></div></div>
+</div>
+
+<div class="stats">
+  <div class="card"><div class="stat">🔥 {{ serie }}</div><div class="stat-label">{% if serie == 1 %}Tag{% else %}Tage{% endif %} Serie</div></div>
+  <div class="card"><div class="stat">{{ faellig }}</div><div class="stat-label">Wiederholungen fällig</div></div>
+  <div class="card"><div class="stat">{{ tage_bis_ap1 }}</div><div class="stat-label">Tage bis AP1</div></div>
+</div>
+
+<div class="card">
+  <div class="row" style="justify-content:space-between;margin-bottom:8px">
+    <strong>⭐ Level {{ level }}</strong>
+    <span class="muted small">{{ xp_im_level }} / {{ xp_level }} XP bis Level {{ level|add:1 }}</span>
+  </div>
+  <div class="bar"><span style="width:{{ xp_prozent }}%"></span></div>
+  {% if letzte_abzeichen %}
+  <div class="row" style="margin-top:12px">
+    <span class="muted small">Zuletzt erhalten:</span>
+    <div class="mini-abzeichen">{% for a in letzte_abzeichen %}<span title="{{ a.name }}: {{ a.beschreibung }}">{{ a.symbol }}</span>{% endfor %}</div>
+    <a class="small" href="{% url 'abzeichen' %}">alle Erfolge</a>
+  </div>
+  {% endif %}
+</div>
+
+<div class="aktionen">
+  <a class="card aktion" href="{% url 'simulation_start' %}">
+    <span class="icon">📝</span><span><b>{% if offene_simulation %}Prüfung fortsetzen{% else %}Prüfungssimulation{% endif %}</b><span class="muted small">40 Fragen, 60 Minuten, mit Note</span></span>
+  </a>
+  <a class="card aktion" href="{% url 'rangliste' %}">
+    <span class="icon">🏆</span><span><b>Rangliste</b><span class="muted small">Wer lernt diese Woche am meisten?</span></span>
+  </a>
 </div>
 
 <h2>Deine Themen (AP1)</h2>
-<div class="card themen">
+<div class="themen">
 {% for z in themen %}
-  <div class="thema-zeile">
-    <div class="thema-info">
-      <div><strong>{{ z.thema.name }}</strong></div>
-      <div class="muted small">≈ {{ z.thema.gewicht }} Punkte pro Prüfung · Trefferquote {% if z.quote is not None %}{{ z.quote }} %{% else %}–{% endif %}</div>
-      <div class="bar" title="{{ z.gefestigt }} von {{ z.anzahl }} Fragen gefestigt"><span style="width:{{ z.fortschritt }}%"></span></div>
-      <div class="muted small">{{ z.gefestigt }} von {{ z.anzahl }} Fragen gefestigt</div>
+  <a class="card thema-karte" href="{% url 'thema_detail' z.thema.slug %}">
+    <div class="thema-kopf">
+      <strong>{{ z.thema.name }}</strong>
+      <span class="sterne" title="Dein Niveau: {{ z.niveau }} von 3">{% for i in "123" %}{% if forloop.counter <= z.niveau %}★{% else %}<span class="aus">★</span>{% endif %}{% endfor %}</span>
     </div>
-    <form method="post" action="{% url 'thema_start' z.thema.slug %}">{% csrf_token %}<button class="btn secondary" type="submit"{% if not z.anzahl %} disabled{% endif %}>Üben</button></form>
-  </div>
+    <div class="bar"><span style="width:{{ z.fortschritt }}%"></span></div>
+    <div class="muted small">{{ z.gefestigt }} / {{ z.anzahl }} gefestigt · {% if z.quote is not None %}{{ z.quote }} % richtig{% else %}noch nicht geübt{% endif %} · ≈ {{ z.thema.gewicht }} P.</div>
+  </a>
 {% endfor %}
 </div>
-<p class="muted small">„Gefestigt“ heißt: Du hast die Frage mehrmals hintereinander richtig beantwortet. Sie kommt dann nur noch selten zur Wiederholung.</p>
-{% if hat_einstufung %}<p class="small"><a href="{% url 'einstufung_start' %}">Einstufungstest wiederholen</a> · <a href="{% url 'password_change' %}">Passwort ändern</a></p>{% else %}<p class="small"><a href="{% url 'password_change' %}">Passwort ändern</a></p>{% endif %}
+<p class="muted small">★ zeigt dein Niveau im Thema. Danach richten sich Schwierigkeit der Fragen und welche Lernnuggets du bekommst. „Gefestigt“ heißt: mehrmals hintereinander richtig.</p>
+{% if hat_einstufung %}<p class="small"><a href="{% url 'einstufung_start' %}">Einstufungstest wiederholen</a></p>{% endif %}
 {% endblock %}

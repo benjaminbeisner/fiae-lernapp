@@ -1,0 +1,670 @@
+{
+ "lektionen": [
+  {
+   "schluessel": "DB-L1",
+   "thema": "datenbanken",
+   "titel": "Tabellen, Primär- und Fremdschlüssel",
+   "stufe": 1,
+   "inhalt": "Eine relationale Datenbank speichert Daten in **Tabellen** (Relationen). Jede Zeile ist ein **Datensatz**, jede Spalte ein **Attribut**.\n\n**Primärschlüssel (PK):** identifiziert jeden Datensatz **eindeutig** und darf nicht leer sein, z. B. `KundenID`. Besteht er aus mehreren Spalten, heißt er **zusammengesetzter Primärschlüssel** (typisch in Zwischentabellen).\n\n**Fremdschlüssel (FK):** verweist auf den Primärschlüssel einer anderen Tabelle und stellt so die Beziehung her, z. B. `Bestellung.KundenID → Kunde.KundenID`.\n\n**Referentielle Integrität:** Die Datenbank sorgt dafür, dass ein Fremdschlüssel nur auf existierende Datensätze zeigt. Eine Bestellung für einen nicht vorhandenen Kunden wird abgelehnt.\n\n**SQL-Teilsprachen:**\n- DDL (Struktur): `CREATE`, `ALTER`, `DROP`\n- DML (Daten): `SELECT`, `INSERT`, `UPDATE`, `DELETE`\n- DCL (Rechte): `GRANT`, `REVOKE`",
+   "merksatz": "PK = eindeutig, FK = Verweis auf den PK einer anderen Tabelle.",
+   "bild": "",
+   "reihenfolge": 0
+  },
+  {
+   "schluessel": "DB-L2",
+   "thema": "datenbanken",
+   "titel": "ER-Modell und Kardinalitäten",
+   "stufe": 2,
+   "inhalt": "Ein **Entity-Relationship-Modell (ERM)** beschreibt, welche Dinge (Entitäten) es gibt und wie sie zusammenhängen.\n\n**Kardinalitäten:**\n- **1:1** – ein Mitarbeiter hat genau einen Dienstausweis\n- **1:n** – ein Kunde hat viele Bestellungen, jede Bestellung gehört zu genau einem Kunden\n- **n:m** – eine Bestellung enthält viele Artikel, ein Artikel kommt in vielen Bestellungen vor\n\n**Umsetzung in Tabellen:**\n- **1:n:** Der Fremdschlüssel kommt auf die **n-Seite** (in die Tabelle Bestellung).\n- **n:m:** Es braucht eine **Zwischentabelle** (z. B. Bestellposition) mit den Fremdschlüsseln beider Tabellen als zusammengesetztem Primärschlüssel. Attribute der Beziehung (Menge, Dosierung, Preis zum Bestellzeitpunkt) gehören in diese Zwischentabelle.\n\nAus dem Beispiel in der Abbildung entstehen so **4 Tabellen**: Kunde, Bestellung, Artikel, Bestellposition.",
+   "merksatz": "1:n → FK auf die n-Seite. n:m → Zwischentabelle.",
+   "bild": "bilder/erm_bestellung.svg",
+   "reihenfolge": 1
+  },
+  {
+   "schluessel": "DB-L3",
+   "thema": "datenbanken",
+   "titel": "Normalisierung und Anomalien",
+   "stufe": 2,
+   "inhalt": "Speichert man dieselbe Information mehrfach (**Redundanz**), entstehen **Anomalien**:\n- **Änderungsanomalie:** Die Adresse steht in 50 Zeilen, nur 49 werden geändert → widersprüchliche Daten.\n- **Einfügeanomalie:** Ein neuer Artikel kann nicht angelegt werden, solange niemand ihn bestellt hat.\n- **Löschanomalie:** Wird die letzte Bestellung eines Kunden gelöscht, sind auch seine Kundendaten weg.\n\n**Normalisierung** zerlegt Tabellen, um Redundanz zu vermeiden:\n- **1. Normalform:** Jedes Feld enthält nur **einen** (atomaren) Wert. Also keine Liste „0171…, 030…“ in einer Spalte, Name und Vorname getrennt.\n- **2. Normalform:** 1NF und jedes Nicht-Schlüssel-Attribut hängt vom **ganzen** Primärschlüssel ab (wichtig bei zusammengesetzten Schlüsseln).\n- **3. Normalform:** 2NF und keine Abhängigkeiten zwischen Nicht-Schlüssel-Attributen (z. B. Ort hängt an der PLZ → eigene Tabelle).",
+   "merksatz": "Jede Information nur einmal speichern, dann gibt es keine Anomalien.",
+   "bild": "",
+   "reihenfolge": 2
+  },
+  {
+   "schluessel": "DB-L4",
+   "thema": "datenbanken",
+   "titel": "SQL-Abfragen: SELECT, WHERE, ORDER BY",
+   "stufe": 1,
+   "inhalt": "Grundaufbau einer Abfrage:\n```\nSELECT Spalten\nFROM Tabelle\nWHERE Bedingung\nORDER BY Spalte ASC|DESC;\n```\n\n- `SELECT *` alle Spalten\n- `WHERE Ort = 'Berlin' AND Alter > 30` filtert Zeilen\n- `LIKE 'M%'` = beginnt mit M, `%` steht für beliebig viele Zeichen\n- `BETWEEN 10 AND 20`, `IN ('IT', 'Einkauf')`, `IS NULL`\n- `ORDER BY Gehalt DESC` sortiert absteigend\n- `DISTINCT` entfernt doppelte Ergebnisse\n\nDaten ändern:\n```\nUPDATE Kunde SET Ort = 'Hamburg' WHERE KundenID = 7;\nDELETE FROM Kunde WHERE KundenID = 7;\nINSERT INTO Kunde (Name, Ort) VALUES ('Müller', 'Köln');\n```\n**Achtung:** `UPDATE` oder `DELETE` ohne `WHERE` betrifft **alle** Zeilen.",
+   "merksatz": "UPDATE und DELETE nie ohne WHERE abschicken.",
+   "bild": "",
+   "reihenfolge": 3
+  },
+  {
+   "schluessel": "DB-L5",
+   "thema": "datenbanken",
+   "titel": "Gruppieren, Aggregieren, Verknüpfen",
+   "stufe": 2,
+   "inhalt": "**Aggregatfunktionen:** `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`.\n\nFür Auswertungen „je …“ brauchst du **GROUP BY**:\n```\nSELECT Abteilung, COUNT(*), AVG(Gehalt)\nFROM Mitarbeiter\nGROUP BY Abteilung\nHAVING COUNT(*) > 1;\n```\n- Jede Spalte im SELECT ohne Aggregatfunktion muss im GROUP BY stehen.\n- `WHERE` filtert **Zeilen vor** dem Gruppieren, `HAVING` filtert **Gruppen danach**.\n- Aggregatfunktionen gehören nie ins WHERE.\n\n**JOIN** verbindet Tabellen über Schlüssel:\n```\nSELECT k.Name, b.Datum\nFROM Kunde k\nINNER JOIN Bestellung b ON k.KundenID = b.KundenID;\n```\n`INNER JOIN` liefert nur Datensätze mit Partner in beiden Tabellen. `LEFT JOIN` liefert alle aus der linken Tabelle, auch ohne Partner.",
+   "merksatz": "WHERE vor dem Gruppieren, HAVING danach.",
+   "bild": "",
+   "reihenfolge": 4
+  }
+ ],
+ "fragen": [
+  {
+   "schluessel": "DB-01",
+   "thema": "datenbanken",
+   "text": "Tabelle Ticket(TicketID, KundenID, Prioritaet, Erstellt). Welche Abfrage zeigt die Anzahl der Tickets je Priorität?",
+   "erklaerung": "Für „je …“ brauchst du GROUP BY. Jede Spalte im SELECT ohne Aggregatfunktion muss im GROUP BY stehen. Aggregatfunktionen gehören nie ins WHERE.",
+   "schwierigkeit": 2,
+   "einstufung": true,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "SELECT Prioritaet, COUNT(TicketID) FROM Ticket GROUP BY Prioritaet;",
+     "richtig": true
+    },
+    {
+     "text": "SELECT Prioritaet, COUNT(TicketID) FROM Ticket;",
+     "richtig": false
+    },
+    {
+     "text": "SELECT COUNT(Prioritaet) FROM Ticket ORDER BY Prioritaet;",
+     "richtig": false
+    },
+    {
+     "text": "SELECT Prioritaet FROM Ticket WHERE COUNT(TicketID) > 0;",
+     "richtig": false
+    }
+   ],
+   "lektion": "DB-L5"
+  },
+  {
+   "schluessel": "DB-02",
+   "thema": "datenbanken",
+   "text": "Ein Medikament enthält mehrere Wirkstoffe, ein Wirkstoff steckt in mehreren Medikamenten. Pro Kombination wird die Dosierung gespeichert. Wie setzt du das relational um?",
+   "erklaerung": "n:m wird immer über eine Zwischentabelle aufgelöst. Attribute, die zur Beziehung gehören (Dosierung), wandern in diese Tabelle.",
+   "schwierigkeit": 2,
+   "einstufung": true,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Zwischentabelle mit den Fremdschlüsseln beider Tabellen als zusammengesetztem Primärschlüssel; die Dosierung steht in der Zwischentabelle",
+     "richtig": true
+    },
+    {
+     "text": "Fremdschlüssel WirkstoffID in der Tabelle Medikament; die Dosierung steht beim Wirkstoff",
+     "richtig": false
+    },
+    {
+     "text": "Alle Wirkstoffe kommagetrennt in einer Spalte der Tabelle Medikament",
+     "richtig": false
+    },
+    {
+     "text": "Medikament und Wirkstoff in eine gemeinsame Tabelle zusammenlegen",
+     "richtig": false
+    }
+   ],
+   "lektion": "DB-L2"
+  },
+  {
+   "schluessel": "DB-03",
+   "thema": "datenbanken",
+   "text": "Was ist ein Fremdschlüssel?",
+   "erklaerung": "Fremdschlüssel stellen Beziehungen zwischen Tabellen her und sichern die referentielle Integrität.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ein Attribut, das auf den Primärschlüssel einer anderen (oder derselben) Tabelle verweist",
+     "richtig": true
+    },
+    {
+     "text": "Ein Schlüssel, der Daten verschlüsselt",
+     "richtig": false
+    },
+    {
+     "text": "Jeder Primärschlüssel aus mehreren Spalten",
+     "richtig": false
+    },
+    {
+     "text": "Ein Attribut, das immer eindeutig sein muss",
+     "richtig": false
+    }
+   ],
+   "lektion": "DB-L1"
+  },
+  {
+   "schluessel": "DB-04",
+   "thema": "datenbanken",
+   "text": "Die Adresse eines Kunden steht in jeder seiner 50 Bestellungen. Er zieht um, und nur 49 Zeilen werden geändert. Wie heißt dieses Problem?",
+   "erklaerung": "Redundante Daten führen zu Anomalien. Lösung: normalisieren, also die Adresse nur einmal in der Kundentabelle speichern.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Änderungsanomalie (Update-Anomalie)",
+     "richtig": true
+    },
+    {
+     "text": "Einfügeanomalie",
+     "richtig": false
+    },
+    {
+     "text": "Löschanomalie",
+     "richtig": false
+    },
+    {
+     "text": "Deadlock",
+     "richtig": false
+    }
+   ],
+   "lektion": "DB-L3"
+  },
+  {
+   "schluessel": "DB-05",
+   "thema": "datenbanken",
+   "text": "Gesucht: Abteilungen mit einem Durchschnittsgehalt über 3.000 €. Welche Abfrage ist richtig?",
+   "erklaerung": "WHERE filtert einzelne Zeilen vor dem Gruppieren, HAVING filtert Gruppen danach. Bedingungen auf Aggregate gehören ins HAVING.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "SELECT Abteilung, AVG(Gehalt) FROM Mitarbeiter GROUP BY Abteilung HAVING AVG(Gehalt) > 3000;",
+     "richtig": true
+    },
+    {
+     "text": "SELECT Abteilung, AVG(Gehalt) FROM Mitarbeiter WHERE AVG(Gehalt) > 3000 GROUP BY Abteilung;",
+     "richtig": false
+    },
+    {
+     "text": "SELECT Abteilung, AVG(Gehalt) FROM Mitarbeiter WHERE Gehalt > 3000 GROUP BY Abteilung;",
+     "richtig": false
+    },
+    {
+     "text": "SELECT Abteilung FROM Mitarbeiter HAVING Gehalt > 3000;",
+     "richtig": false
+    }
+   ],
+   "lektion": "DB-L5"
+  },
+  {
+   "schluessel": "DB-06",
+   "thema": "datenbanken",
+   "text": "Was bewirkt SELECT DISTINCT Ort FROM Kunde; ?",
+   "erklaerung": "DISTINCT entfernt doppelte Zeilen aus dem Ergebnis. Zum Zählen: SELECT COUNT(DISTINCT Ort) FROM Kunde;",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Jeder Ort wird nur einmal angezeigt",
+     "richtig": true
+    },
+    {
+     "text": "Die Orte werden alphabetisch sortiert",
+     "richtig": false
+    },
+    {
+     "text": "Es wird die Anzahl der Orte gezählt",
+     "richtig": false
+    },
+    {
+     "text": "Leere Orte werden ausgeblendet",
+     "richtig": false
+    }
+   ],
+   "lektion": "DB-L4"
+  },
+  {
+   "schluessel": "DB-07",
+   "thema": "datenbanken",
+   "text": "Welche Eigenschaften muss ein Primärschlüssel haben?",
+   "erklaerung": "Auch Texte (z. B. eine ISBN) können Primärschlüssel sein, solange sie eindeutig sind.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "DB-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Er ist eindeutig und darf nicht leer (NULL) sein",
+     "richtig": true
+    },
+    {
+     "text": "Er muss eine Zahl sein",
+     "richtig": false
+    },
+    {
+     "text": "Er muss aus mindestens zwei Spalten bestehen",
+     "richtig": false
+    },
+    {
+     "text": "Er darf sich in jeder Zeile wiederholen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "DB-08",
+   "thema": "datenbanken",
+   "text": "Was bedeutet referentielle Integrität?",
+   "erklaerung": "Beispiel: Man kann keine Bestellung für die KundenID 999 anlegen, wenn es diesen Kunden nicht gibt.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "DB-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ein Fremdschlüssel darf nur auf einen existierenden Datensatz verweisen",
+     "richtig": true
+    },
+    {
+     "text": "Jede Tabelle muss mindestens eine Zeile haben",
+     "richtig": false
+    },
+    {
+     "text": "Alle Spalten müssen ausgefüllt sein",
+     "richtig": false
+    },
+    {
+     "text": "Die Datenbank ist verschlüsselt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "DB-09",
+   "thema": "datenbanken",
+   "text": "Zu welcher SQL-Teilsprache gehört `CREATE TABLE`?",
+   "erklaerung": "DDL legt Strukturen an oder ändert sie: CREATE, ALTER, DROP.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "DB-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "DDL (Data Definition Language)",
+     "richtig": true
+    },
+    {
+     "text": "DML (Data Manipulation Language)",
+     "richtig": false
+    },
+    {
+     "text": "DCL (Data Control Language)",
+     "richtig": false
+    },
+    {
+     "text": "DQL (Data Quality Language)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "DB-10",
+   "thema": "datenbanken",
+   "text": "Das ER-Modell aus der Abbildung soll relational umgesetzt werden. Wie viele Tabellen entstehen?",
+   "erklaerung": "Kunde, Bestellung und Artikel als Entitäten. Die n:m-Beziehung zwischen Bestellung und Artikel braucht zusätzlich eine Zwischentabelle (z. B. Bestellposition).",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "DB-L2",
+   "bild": "bilder/erm_bestellung.svg",
+   "typ": "zahl",
+   "loesung": 4,
+   "toleranz": 0,
+   "einheit": "Tabellen"
+  },
+  {
+   "schluessel": "DB-11",
+   "thema": "datenbanken",
+   "text": "In welche Tabelle gehört der Fremdschlüssel für die Beziehung zwischen Kunde und Bestellung aus der Abbildung?",
+   "erklaerung": "Bei 1:n kommt der Fremdschlüssel auf die n-Seite. Ein Kunde hat viele Bestellungen, also bekommt jede Bestellung die KundenID.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "DB-L2",
+   "bild": "bilder/erm_bestellung.svg",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "In die Tabelle Bestellung (KundenID)",
+     "richtig": true
+    },
+    {
+     "text": "In die Tabelle Kunde (BestellID)",
+     "richtig": false
+    },
+    {
+     "text": "In eine eigene Zwischentabelle",
+     "richtig": false
+    },
+    {
+     "text": "In die Tabelle Artikel",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "DB-12",
+   "thema": "datenbanken",
+   "text": "Ein Teilnehmer kann mehrere Kurse belegen, ein Kurs hat mehrere Teilnehmer. Welche Kardinalität liegt vor?",
+   "erklaerung": "Viele auf beiden Seiten = n:m. Umsetzung mit einer Zwischentabelle Belegung(TeilnehmerID, KursID).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "DB-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "n:m",
+     "richtig": true
+    },
+    {
+     "text": "1:1",
+     "richtig": false
+    },
+    {
+     "text": "1:n",
+     "richtig": false
+    },
+    {
+     "text": "0:1",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "DB-13",
+   "thema": "datenbanken",
+   "text": "In der Spalte Telefon einer Kundentabelle steht „0171 1234567, 030 987654“. Gegen welche Normalform verstößt das?",
+   "erklaerung": "Mehrere Werte in einem Feld. Lösung: eigene Tabelle Telefonnummer mit Fremdschlüssel zum Kunden.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "DB-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "1. Normalform: Der Wert ist nicht atomar",
+     "richtig": true
+    },
+    {
+     "text": "2. Normalform",
+     "richtig": false
+    },
+    {
+     "text": "3. Normalform",
+     "richtig": false
+    },
+    {
+     "text": "Gegen keine",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "DB-14",
+   "thema": "datenbanken",
+   "text": "In einer Tabelle stehen Bestellungen zusammen mit den Kundendaten. Die einzige Bestellung eines Kunden wird storniert und gelöscht. Danach sind auch Name und Adresse des Kunden weg. Wie heißt das?",
+   "erklaerung": "Lösung: Kunden und Bestellungen in getrennten Tabellen speichern.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "DB-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Löschanomalie",
+     "richtig": true
+    },
+    {
+     "text": "Einfügeanomalie",
+     "richtig": false
+    },
+    {
+     "text": "Änderungsanomalie",
+     "richtig": false
+    },
+    {
+     "text": "Referentielle Integrität",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "DB-15",
+   "thema": "datenbanken",
+   "text": "Was ist das Hauptziel der Normalisierung?",
+   "erklaerung": "Normalisierte Datenbanken haben eher mehr Tabellen. Für Auswertungen braucht man dann JOINs.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "DB-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Redundanzen und dadurch Anomalien vermeiden",
+     "richtig": true
+    },
+    {
+     "text": "Abfragen grundsätzlich schneller machen",
+     "richtig": false
+    },
+    {
+     "text": "Daten verschlüsseln",
+     "richtig": false
+    },
+    {
+     "text": "Möglichst wenige Tabellen haben",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "DB-16",
+   "thema": "datenbanken",
+   "text": "Welche Abfrage liefert alle Kunden aus Berlin?",
+   "erklaerung": "Reihenfolge: SELECT … FROM … WHERE … ORDER BY.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "DB-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "SELECT * FROM Kunde WHERE Ort = 'Berlin';",
+     "richtig": true
+    },
+    {
+     "text": "SELECT Berlin FROM Kunde;",
+     "richtig": false
+    },
+    {
+     "text": "SELECT * FROM Kunde ORDER BY 'Berlin';",
+     "richtig": false
+    },
+    {
+     "text": "SELECT * WHERE Ort = 'Berlin' FROM Kunde;",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "DB-17",
+   "thema": "datenbanken",
+   "text": "Was bewirkt `ORDER BY Gehalt DESC`?",
+   "erklaerung": "DESC = descending (absteigend), ASC = ascending (aufsteigend, Standard).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "DB-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Sortiert nach Gehalt absteigend, das höchste zuerst",
+     "richtig": true
+    },
+    {
+     "text": "Sortiert nach Gehalt aufsteigend",
+     "richtig": false
+    },
+    {
+     "text": "Löscht die Spalte Gehalt",
+     "richtig": false
+    },
+    {
+     "text": "Zeigt nur das höchste Gehalt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "DB-18",
+   "thema": "datenbanken",
+   "text": "Welche Namen findet `WHERE Name LIKE 'M%'`?",
+   "erklaerung": "% steht für beliebig viele Zeichen. '%M' = endet mit M, '%M%' = enthält M.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "DB-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Alle Namen, die mit M beginnen",
+     "richtig": true
+    },
+    {
+     "text": "Alle Namen, die mit M enden",
+     "richtig": false
+    },
+    {
+     "text": "Nur den Namen „M%“",
+     "richtig": false
+    },
+    {
+     "text": "Alle Namen, die ein M enthalten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "DB-19",
+   "thema": "datenbanken",
+   "text": "Was passiert bei `UPDATE Kunde SET Rabatt = 10;`?",
+   "erklaerung": "Ohne WHERE gilt die Änderung für jede Zeile. Deshalb vor UPDATE/DELETE die Bedingung erst mit SELECT testen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "DB-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Alle Kunden bekommen 10 % Rabatt, weil das WHERE fehlt",
+     "richtig": true
+    },
+    {
+     "text": "Nur der erste Kunde wird geändert",
+     "richtig": false
+    },
+    {
+     "text": "Die Abfrage ist ungültig",
+     "richtig": false
+    },
+    {
+     "text": "Nur Kunden ohne Rabatt werden geändert",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "DB-20",
+   "thema": "datenbanken",
+   "text": "Tabelle **Mitarbeiter**:\n\n| ID | Name | Abteilung | Gehalt |\n|---|---|---|---|\n| 1 | Lena | IT | 3800 |\n| 2 | Max | Vertrieb | 3200 |\n| 3 | Aylin | IT | 4200 |\n| 4 | Tom | Einkauf | 3000 |\n| 5 | Jana | IT | 3500 |\n\nWelches Ergebnis liefert `SELECT COUNT(*) FROM Mitarbeiter WHERE Abteilung = 'IT';`?",
+   "erklaerung": "Lena, Aylin und Jana sind in der IT.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "DB-L4",
+   "typ": "zahl",
+   "loesung": 3,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "DB-21",
+   "thema": "datenbanken",
+   "text": "Tabelle **Mitarbeiter**:\n\n| ID | Name | Abteilung | Gehalt |\n|---|---|---|---|\n| 1 | Lena | IT | 3800 |\n| 2 | Max | Vertrieb | 3200 |\n| 3 | Aylin | IT | 4200 |\n| 4 | Tom | Einkauf | 3000 |\n| 5 | Jana | IT | 3500 |\n\nWelches Ergebnis liefert `SELECT AVG(Gehalt) FROM Mitarbeiter WHERE Abteilung = 'IT';`? (2 Nachkommastellen)",
+   "erklaerung": "(3800 + 4200 + 3500) ÷ 3 = 11500 ÷ 3 ≈ 3833,33.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "DB-L5",
+   "typ": "zahl",
+   "loesung": 3833.33,
+   "toleranz": 0.01,
+   "einheit": ""
+  },
+  {
+   "schluessel": "DB-22",
+   "thema": "datenbanken",
+   "text": "Tabelle **Mitarbeiter**:\n\n| ID | Name | Abteilung | Gehalt |\n|---|---|---|---|\n| 1 | Lena | IT | 3800 |\n| 2 | Max | Vertrieb | 3200 |\n| 3 | Aylin | IT | 4200 |\n| 4 | Tom | Einkauf | 3000 |\n| 5 | Jana | IT | 3500 |\n\nWie viele Zeilen liefert diese Abfrage?\n\n```\nSELECT Abteilung, COUNT(*)\nFROM Mitarbeiter\nGROUP BY Abteilung\nHAVING COUNT(*) > 1;\n```",
+   "erklaerung": "Gruppen: IT (3), Vertrieb (1), Einkauf (1). Nur IT hat mehr als einen Mitarbeiter.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "DB-L5",
+   "typ": "zahl",
+   "loesung": 1,
+   "toleranz": 0,
+   "einheit": "Zeile(n)"
+  },
+  {
+   "schluessel": "DB-23",
+   "thema": "datenbanken",
+   "text": "Was liefert ein INNER JOIN zwischen Kunde und Bestellung über die KundenID?",
+   "erklaerung": "Alle Kunden auch ohne Bestellung: LEFT JOIN. Alle Kombinationen: CROSS JOIN (kartesisches Produkt).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "DB-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Nur Kunden, die mindestens eine Bestellung haben, jeweils mit ihren Bestellungen",
+     "richtig": true
+    },
+    {
+     "text": "Alle Kunden, auch ohne Bestellung",
+     "richtig": false
+    },
+    {
+     "text": "Nur Bestellungen ohne Kunden",
+     "richtig": false
+    },
+    {
+     "text": "Alle möglichen Kombinationen aus Kunden und Bestellungen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "DB-24",
+   "thema": "datenbanken",
+   "text": "Welche Abfrage zeigt zu jeder Bestellung den Namen des Kunden?",
+   "erklaerung": "Die JOIN-Bedingung verbindet Primärschlüssel und Fremdschlüssel. Ohne Bedingung entsteht ein kartesisches Produkt.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "DB-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "SELECT k.Name, b.Datum FROM Kunde k JOIN Bestellung b ON k.KundenID = b.KundenID;",
+     "richtig": true
+    },
+    {
+     "text": "SELECT k.Name, b.Datum FROM Kunde k, Bestellung b;",
+     "richtig": false
+    },
+    {
+     "text": "SELECT Name, Datum FROM Kunde JOIN Bestellung;",
+     "richtig": false
+    },
+    {
+     "text": "SELECT k.Name, b.Datum FROM Kunde k JOIN Bestellung b ON k.Name = b.Datum;",
+     "richtig": false
+    }
+   ]
+  }
+ ]
+}

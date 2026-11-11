@@ -1,0 +1,649 @@
+{
+ "lektionen": [
+  {
+   "schluessel": "PRG-L1",
+   "thema": "programmierung",
+   "titel": "Variablen, Datentypen, Operatoren",
+   "stufe": 1,
+   "inhalt": "Eine **Variable** ist ein benannter Speicherplatz für einen Wert. Wichtige Datentypen in Python:\n\n| Typ | Beispiel | Bedeutung |\n|---|---|---|\n| `int` | `42` | ganze Zahl |\n| `float` | `3.14` | Kommazahl |\n| `str` | `\"Hallo\"` | Text |\n| `bool` | `True`, `False` | Wahrheitswert |\n| `list` | `[1, 2, 3]` | Liste |\n\n**Rechenoperatoren:** `+ - * /` sowie\n- `//` ganzzahlige Division: `17 // 5` ergibt `3`\n- `%` Rest (Modulo): `17 % 5` ergibt `2`\n\n**Vorsicht bei Text:** `\"5\" + \"3\"` ergibt `\"53\"` (Texte werden aneinandergehängt), `5 + 3` ergibt `8`.\n\n**Logik:** `and` (beide wahr), `or` (mindestens einer wahr), `not` (umkehren). Vergleiche: `== != < > <= >=`.",
+   "merksatz": "% liefert den Rest. Damit prüfst du Teilbarkeit: x % 3 == 0.",
+   "bild": "",
+   "reihenfolge": 0
+  },
+  {
+   "schluessel": "PRG-L2",
+   "thema": "programmierung",
+   "titel": "Verzweigungen und Schleifen",
+   "stufe": 1,
+   "inhalt": "**Verzweigung:**\n```\nif punkte >= 50:\n    print(\"bestanden\")\nelse:\n    print(\"nicht bestanden\")\n```\n\n**Zählschleife** (`for`): Die Anzahl der Durchläufe steht fest.\n`range(start, ende, schritt)` zählt von start bis **ausschließlich** ende.\n- `range(5)` → 0, 1, 2, 3, 4\n- `range(2, 10, 3)` → 2, 5, 8\n\n**Kopfgesteuerte Schleife** (`while`): Die Bedingung wird **vor** jedem Durchlauf geprüft. Ist sie gleich falsch, läuft die Schleife nie.\n\n**Fußgesteuerte Schleife** (im Pseudocode „WIEDERHOLE … BIS“): Die Bedingung wird **nach** dem Durchlauf geprüft, also läuft sie **mindestens einmal**.\n\n**Endlosschleife:** Wird die Variable der Bedingung im Schleifenkörper nie verändert, endet die Schleife nie.",
+   "merksatz": "range(a, b) endet bei b − 1. Fußgesteuert = mindestens ein Durchlauf.",
+   "bild": "",
+   "reihenfolge": 1
+  },
+  {
+   "schluessel": "PRG-L3",
+   "thema": "programmierung",
+   "titel": "Code nachvollziehen mit dem Schreibtischtest",
+   "stufe": 2,
+   "inhalt": "In der Prüfung sollst du oft die **Ausgabe** eines Programms ermitteln. Dafür machst du einen **Schreibtischtest**: eine Tabelle mit einer Spalte pro Variable und einer Zeile pro Durchlauf.\n\nBeispiel:\n```\nsumme = 0\nfor i in range(1, 5):\n    summe = summe + i * 2\nprint(summe)\n```\n\n| i | summe danach |\n|---|---|\n| 1 | 2 |\n| 2 | 6 |\n| 3 | 12 |\n| 4 | 20 |\n\nAusgabe: **20**.\n\nTipps:\n- Jede Zuweisung einzeln aufschreiben, nicht im Kopf springen.\n- Bei `range` das Ende prüfen (ausschließlich).\n- Bei Tauschoperationen wie `a, b = b, a + b` rechts zuerst mit den **alten** Werten rechnen.",
+   "merksatz": "Eine Zeile pro Durchlauf, eine Spalte pro Variable. So machst du keine Flüchtigkeitsfehler.",
+   "bild": "",
+   "reihenfolge": 2
+  },
+  {
+   "schluessel": "PRG-L4",
+   "thema": "programmierung",
+   "titel": "Funktionen, Listen und typische Fehler",
+   "stufe": 2,
+   "inhalt": "Eine **Funktion** fasst Code zusammen, bekommt **Parameter** und gibt mit `return` ein Ergebnis zurück. Nach `return` endet die Funktion sofort.\n\n```\ndef note(punkte):\n    if punkte >= 92:\n        return 1\n    return 2\n```\n\n**Listen:** Index beginnt bei **0**. `liste.append(x)` hängt hinten an, `len(liste)` liefert die Anzahl.\n\n**Typische Fehler, die in Prüfungen gesucht werden:**\n- **Off-by-one:** `range(1, 100)` summiert nur bis 99.\n- **Division durch 0**, z. B. Durchschnitt einer leeren Liste\n- **Index außerhalb** der Liste (`IndexError`)\n- **Endlosschleife**, weil die Zählvariable nicht verändert wird\n- `=` (Zuweisung) mit `==` (Vergleich) verwechselt",
+   "merksatz": "Index startet bei 0, letzter Index = len − 1.",
+   "bild": "",
+   "reihenfolge": 3
+  },
+  {
+   "schluessel": "PRG-L5",
+   "thema": "programmierung",
+   "titel": "Wie Programme ausgeführt werden",
+   "stufe": 1,
+   "inhalt": "**Compiler:** übersetzt den gesamten Quelltext vor der Ausführung in Maschinencode (z. B. C, C++, Rust). Fehler fallen beim Übersetzen auf, das Programm läuft schnell.\n\n**Interpreter:** liest den Quelltext und führt ihn während der Laufzeit aus (z. B. Python, JavaScript). Plattformunabhängig, flexibel, meist langsamer.\n\nJava und C# liegen dazwischen: Sie werden in Bytecode übersetzt, der von einer virtuellen Maschine ausgeführt wird.\n\n**Typisierung:**\n- **statisch** (Java, C#): Der Typ einer Variablen steht bei der Deklaration fest: `int alter = 30;`\n- **dynamisch** (Python): Der Typ hängt am Wert und kann wechseln.\n\n**Objektorientierung:** Eine **Klasse** ist der Bauplan (Attribute und Methoden), ein **Objekt** ist ein konkretes Exemplar (Instanz) davon.\n\nIn Python bestimmt die **Einrückung**, welche Zeilen zu einem Block gehören.",
+   "merksatz": "Klasse = Bauplan, Objekt = gebautes Haus.",
+   "bild": "",
+   "reihenfolge": 4
+  }
+ ],
+ "fragen": [
+  {
+   "schluessel": "PRG-01",
+   "thema": "programmierung",
+   "text": "Welchen Wert gibt dieser Pseudocode aus?\n\nsumme ← 0\nFÜR i ← 1 BIS 10\n    WENN i MOD 3 = 0 DANN\n        summe ← summe + i\n    ENDE WENN\nENDE FÜR\nAUSGABE summe",
+   "erklaerung": "Durch 3 teilbar sind 3, 6 und 9. 3 + 6 + 9 = 18.",
+   "schwierigkeit": 2,
+   "einstufung": true,
+   "typ": "zahl",
+   "loesung": 18,
+   "toleranz": 0,
+   "einheit": "",
+   "lektion": "PRG-L3"
+  },
+  {
+   "schluessel": "PRG-02",
+   "thema": "programmierung",
+   "text": "Was gibt dieses Python-Programm aus?\n\nzahlen = [4, 7, 2, 9]\nm = zahlen[0]\nfor z in zahlen:\n    if z > m:\n        m = z\nprint(m)",
+   "erklaerung": "Das Programm sucht das Maximum: m wird immer ersetzt, wenn eine größere Zahl kommt.",
+   "schwierigkeit": 1,
+   "einstufung": true,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "9",
+     "richtig": true
+    },
+    {
+     "text": "4",
+     "richtig": false
+    },
+    {
+     "text": "2",
+     "richtig": false
+    },
+    {
+     "text": "7",
+     "richtig": false
+    }
+   ],
+   "lektion": "PRG-L3"
+  },
+  {
+   "schluessel": "PRG-03",
+   "thema": "programmierung",
+   "text": "Was unterscheidet einen Compiler von einem Interpreter?",
+   "erklaerung": "Compiler: erst komplett übersetzen, dann ausführen (z. B. C, C++). Interpreter: übersetzt und führt während der Laufzeit aus (z. B. Python, vereinfacht gesagt).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Der Compiler übersetzt das ganze Programm vor der Ausführung in Maschinencode",
+     "richtig": true
+    },
+    {
+     "text": "Der Compiler führt den Quelltext Zeile für Zeile direkt aus",
+     "richtig": false
+    },
+    {
+     "text": "Ein Interpreter erzeugt immer eine .exe-Datei",
+     "richtig": false
+    },
+    {
+     "text": "Es gibt keinen Unterschied",
+     "richtig": false
+    }
+   ],
+   "lektion": "PRG-L5"
+  },
+  {
+   "schluessel": "PRG-04",
+   "thema": "programmierung",
+   "text": "Was gibt dieses Python-Programm aus?\n\nx = 5\nwhile x > 0:\n    x = x - 2\nprint(x)",
+   "erklaerung": "x: 5 → 3 → 1 → −1. Bei −1 ist die Bedingung falsch, die Schleife endet, ausgegeben wird −1.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": -1,
+   "toleranz": 0,
+   "einheit": "",
+   "lektion": "PRG-L2"
+  },
+  {
+   "schluessel": "PRG-05",
+   "thema": "programmierung",
+   "text": "Was passiert bei diesem Python-Code?\n\nliste = [1, 2, 3]\nprint(liste[3])",
+   "erklaerung": "Indizes beginnen bei 0. Gültig sind 0, 1, 2. liste[3] liegt außerhalb.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Es gibt einen IndexError",
+     "richtig": true
+    },
+    {
+     "text": "Es wird 3 ausgegeben",
+     "richtig": false
+    },
+    {
+     "text": "Es wird None ausgegeben",
+     "richtig": false
+    },
+    {
+     "text": "Es wird 1 ausgegeben",
+     "richtig": false
+    }
+   ],
+   "lektion": "PRG-L4"
+  },
+  {
+   "schluessel": "PRG-06",
+   "thema": "programmierung",
+   "text": "Wie ist Python typisiert?",
+   "erklaerung": "In Python darf x = 5 und danach x = \"Hallo\" stehen. In Java oder C# legt die Deklaration den Typ fest (statisch).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Dynamisch: Der Typ hängt am Wert und wird zur Laufzeit bestimmt",
+     "richtig": true
+    },
+    {
+     "text": "Statisch: Jede Variable braucht einen festen Typ bei der Deklaration",
+     "richtig": false
+    },
+    {
+     "text": "Python kennt keine Datentypen",
+     "richtig": false
+    },
+    {
+     "text": "Nur Zahlen haben einen Typ",
+     "richtig": false
+    }
+   ],
+   "lektion": "PRG-L5"
+  },
+  {
+   "schluessel": "PRG-07",
+   "thema": "programmierung",
+   "text": "Welchen Wert liefert der Python-Ausdruck `17 // 5`?",
+   "erklaerung": "// ist die ganzzahlige Division: 17 ÷ 5 = 3 Rest 2. Ergebnis 3.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PRG-L1",
+   "typ": "zahl",
+   "loesung": 3,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "PRG-08",
+   "thema": "programmierung",
+   "text": "Welchen Wert liefert der Python-Ausdruck `17 % 5`?",
+   "erklaerung": "% liefert den Rest der Division: 17 = 3 × 5 + 2.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PRG-L1",
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "PRG-09",
+   "thema": "programmierung",
+   "text": "Welchen Datentyp hat der Wert `3.14` in Python?",
+   "erklaerung": "Kommazahlen sind float. Achtung: Python nutzt den Punkt als Dezimaltrennzeichen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PRG-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "float",
+     "richtig": true
+    },
+    {
+     "text": "int",
+     "richtig": false
+    },
+    {
+     "text": "str",
+     "richtig": false
+    },
+    {
+     "text": "bool",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PRG-10",
+   "thema": "programmierung",
+   "text": "Was gibt `print(\"5\" + \"3\")` aus?",
+   "erklaerung": "Beides sind Texte (str). + hängt Texte aneinander.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "PRG-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "53",
+     "richtig": true
+    },
+    {
+     "text": "8",
+     "richtig": false
+    },
+    {
+     "text": "Einen Fehler",
+     "richtig": false
+    },
+    {
+     "text": "5 3",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PRG-11",
+   "thema": "programmierung",
+   "text": "Was ergibt der Ausdruck `(5 > 3) and (2 > 4)`?",
+   "erklaerung": "5 > 3 ist True, 2 > 4 ist False. Bei and müssen beide wahr sein.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PRG-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "False",
+     "richtig": true
+    },
+    {
+     "text": "True",
+     "richtig": false
+    },
+    {
+     "text": "2",
+     "richtig": false
+    },
+    {
+     "text": "Einen Fehler",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PRG-12",
+   "thema": "programmierung",
+   "text": "Welche Zahlen gibt dieser Code aus?\n\n```\nfor i in range(2, 10, 3):\n    print(i)\n```",
+   "erklaerung": "Start 2, Schrittweite 3, Ende 10 ausgeschlossen: 2, 5, 8.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "PRG-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "2, 5, 8",
+     "richtig": true
+    },
+    {
+     "text": "2, 5, 8, 11",
+     "richtig": false
+    },
+    {
+     "text": "2, 3, 4, 5, 6, 7, 8, 9",
+     "richtig": false
+    },
+    {
+     "text": "3, 6, 9",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PRG-13",
+   "thema": "programmierung",
+   "text": "Wie oft wird der Schleifenkörper ausgeführt?\n\n```\nzaehler = 0\nwhile zaehler < 10:\n    zaehler = zaehler + 3\n```",
+   "erklaerung": "zaehler: 0 → 3 → 6 → 9 → 12. Vor jedem Durchlauf wird geprüft: 0, 3, 6, 9 sind < 10 (4 Durchläufe), bei 12 ist Schluss.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "PRG-L2",
+   "typ": "zahl",
+   "loesung": 4,
+   "toleranz": 0,
+   "einheit": "mal"
+  },
+  {
+   "schluessel": "PRG-14",
+   "thema": "programmierung",
+   "text": "Welche Schleifenart wird mindestens einmal durchlaufen?",
+   "erklaerung": "Fußgesteuert (WIEDERHOLE … BIS) prüft die Bedingung erst am Ende.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "PRG-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Die fußgesteuerte Schleife",
+     "richtig": true
+    },
+    {
+     "text": "Die kopfgesteuerte Schleife",
+     "richtig": false
+    },
+    {
+     "text": "Die Zählschleife mit 0 Durchläufen",
+     "richtig": false
+    },
+    {
+     "text": "Keine",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PRG-15",
+   "thema": "programmierung",
+   "text": "Was gibt dieser Code aus?\n\n```\na = 1\nb = 1\nfor i in range(5):\n    a, b = b, a + b\nprint(a)\n```",
+   "erklaerung": "(a, b): (1,1) → (1,2) → (2,3) → (3,5) → (5,8) → (8,13). Nach 5 Durchläufen ist a = 8 (Fibonacci-Folge).",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "PRG-L3",
+   "typ": "zahl",
+   "loesung": 8,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "PRG-16",
+   "thema": "programmierung",
+   "text": "Welchen Wert gibt dieser Pseudocode aus?\n\n```\nergebnis ← 1\nFÜR i ← 1 BIS 5\n    ergebnis ← ergebnis * i\nENDE FÜR\nAUSGABE ergebnis\n```",
+   "erklaerung": "1 × 1 × 2 × 3 × 4 × 5 = 120. Das ist die Fakultät von 5 (5!). Im Pseudocode ist BIS meist einschließlich.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "PRG-L3",
+   "typ": "zahl",
+   "loesung": 120,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "PRG-17",
+   "thema": "programmierung",
+   "text": "Was gibt dieses Programm aus?\n\n```\nwort = \"PROGRAMMIERUNG\"\nanzahl = 0\nfor z in wort:\n    if z in \"AEIOU\":\n        anzahl = anzahl + 1\nprint(anzahl)\n```",
+   "erklaerung": "Es zählt die Vokale: P R **O** G R **A** M M **I** **E** R **U** N G = 5.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "PRG-L3",
+   "typ": "zahl",
+   "loesung": 5,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "PRG-18",
+   "thema": "programmierung",
+   "text": "Wie sieht die Liste [5, 3, 9, 1] nach dem ersten Durchlauf von Bubblesort (aufsteigend) aus?",
+   "erklaerung": "Nachbarn vergleichen und tauschen: 5↔3 → [3,5,9,1]. 5 und 9 bleiben. 9↔1 → [3,5,1,9]. Die größte Zahl ist nach dem ersten Durchlauf hinten.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "PRG-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "[3, 5, 1, 9]",
+     "richtig": true
+    },
+    {
+     "text": "[1, 3, 5, 9]",
+     "richtig": false
+    },
+    {
+     "text": "[3, 5, 9, 1]",
+     "richtig": false
+    },
+    {
+     "text": "[5, 3, 1, 9]",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PRG-19",
+   "thema": "programmierung",
+   "text": "Welches Problem hat diese Funktion?\n\n```\ndef durchschnitt(liste):\n    summe = 0\n    for x in liste:\n        summe = summe + x\n    return summe / len(liste)\n```",
+   "erklaerung": "len([]) ist 0. Vorher prüfen: if not liste: return 0 (oder einen Fehler melden).",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "PRG-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Bei einer leeren Liste kommt es zu einer Division durch 0",
+     "richtig": true
+    },
+    {
+     "text": "Die Summe wird falsch berechnet",
+     "richtig": false
+    },
+    {
+     "text": "return darf nicht am Ende stehen",
+     "richtig": false
+    },
+    {
+     "text": "len() gibt es in Python nicht",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PRG-20",
+   "thema": "programmierung",
+   "text": "Was gibt dieser Code aus?\n\n```\ndef f(x):\n    if x > 10:\n        return \"groß\"\n    return \"klein\"\n\nprint(f(10))\n```",
+   "erklaerung": "10 > 10 ist falsch, also wird das zweite return erreicht.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PRG-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "klein",
+     "richtig": true
+    },
+    {
+     "text": "groß",
+     "richtig": false
+    },
+    {
+     "text": "groß klein",
+     "richtig": false
+    },
+    {
+     "text": "None",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PRG-21",
+   "thema": "programmierung",
+   "text": "Was gibt dieser Code aus?\n\n```\nzahlen = [3, 8, 1]\nzahlen.append(5)\nprint(len(zahlen))\n```",
+   "erklaerung": "append hängt ein Element an. Die Liste hat danach 4 Elemente.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PRG-L4",
+   "typ": "zahl",
+   "loesung": 4,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "PRG-22",
+   "thema": "programmierung",
+   "text": "Der Code soll die Zahlen von 1 bis 100 addieren, liefert aber 4950 statt 5050. Was ist falsch?\n\n```\nsumme = 0\nfor i in range(1, 100):\n    summe = summe + i\n```",
+   "erklaerung": "Klassischer Off-by-one-Fehler: Das Ende von range ist ausgeschlossen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "PRG-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "range(1, 100) endet bei 99; richtig wäre range(1, 101)",
+     "richtig": true
+    },
+    {
+     "text": "summe muss mit 1 starten",
+     "richtig": false
+    },
+    {
+     "text": "Die Schleife muss bei 0 beginnen",
+     "richtig": false
+    },
+    {
+     "text": "+ muss durch * ersetzt werden",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PRG-23",
+   "thema": "programmierung",
+   "text": "Was passiert bei diesem Code?\n\n```\ni = 0\nwhile i < 5:\n    print(i)\n```",
+   "erklaerung": "i wird nie erhöht, die Bedingung bleibt immer wahr. Es fehlt i = i + 1.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PRG-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Endlosschleife: Es wird immer wieder 0 ausgegeben",
+     "richtig": true
+    },
+    {
+     "text": "Es werden 0 bis 4 ausgegeben",
+     "richtig": false
+    },
+    {
+     "text": "Es wird nichts ausgegeben",
+     "richtig": false
+    },
+    {
+     "text": "Ein Syntaxfehler",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PRG-24",
+   "thema": "programmierung",
+   "text": "Was ist der Unterschied zwischen Klasse und Objekt?",
+   "erklaerung": "Beispiel: Klasse Kunde, Objekte „Frau Müller“ und „Herr Yilmaz“.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PRG-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Die Klasse ist der Bauplan, das Objekt ein konkretes Exemplar davon",
+     "richtig": true
+    },
+    {
+     "text": "Ein Objekt ist eine Sammlung von Klassen",
+     "richtig": false
+    },
+    {
+     "text": "Klassen gibt es nur in Python",
+     "richtig": false
+    },
+    {
+     "text": "Es gibt keinen Unterschied",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PRG-25",
+   "thema": "programmierung",
+   "text": "Welche Bedeutung hat die Einrückung in Python?",
+   "erklaerung": "Andere Sprachen nutzen dafür geschweifte Klammern { }.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PRG-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Sie legt fest, welche Anweisungen zu einem Block gehören, z. B. zu einer Schleife",
+     "richtig": true
+    },
+    {
+     "text": "Sie ist nur Kosmetik",
+     "richtig": false
+    },
+    {
+     "text": "Sie markiert Kommentare",
+     "richtig": false
+    },
+    {
+     "text": "Sie erhöht die Ausführungsgeschwindigkeit",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PRG-26",
+   "thema": "programmierung",
+   "text": "Welche Sprache wird klassisch mit einem Compiler direkt in Maschinencode übersetzt?",
+   "erklaerung": "Python, JavaScript und Shell-Skripte werden typischerweise interpretiert.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PRG-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "C",
+     "richtig": true
+    },
+    {
+     "text": "Python",
+     "richtig": false
+    },
+    {
+     "text": "JavaScript",
+     "richtig": false
+    },
+    {
+     "text": "Bash-Skript",
+     "richtig": false
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,694 @@
+{
+ "lektionen": [
+  {
+   "schluessel": "WIR-L1",
+   "thema": "wirtschaft",
+   "titel": "Rabatt, Skonto und Umsatzsteuer",
+   "stufe": 1,
+   "inhalt": "Das **Kalkulationsschema** für den Einkauf (Bezugskalkulation):\n\n| Schritt | Beispiel |\n|---|---|\n| Listeneinkaufspreis | 800,00 € |\n| − Rabatt (15 %) | − 120,00 € |\n| = Zieleinkaufspreis | 680,00 € |\n| − Skonto (2 %) | − 13,60 € |\n| = Bareinkaufspreis | 666,40 € |\n| + Bezugskosten (Versand) | + 20,00 € |\n| = **Bezugspreis** | **686,40 €** |\n\n- **Rabatt** ist ein Preisnachlass (z. B. Mengenrabatt), abgezogen vom Listenpreis.\n- **Skonto** ist ein Nachlass für schnelle Zahlung, abgezogen vom Betrag **nach** dem Rabatt.\n\n**Umsatzsteuer (19 %):**\n- Netto → Brutto: `× 1,19`\n- Brutto → Netto: `÷ 1,19` (nicht 19 % abziehen!)\n- Steueranteil im Bruttobetrag: `Brutto ÷ 1,19 × 0,19`\n\n**Prozentrechnung:** Veränderung in % = (neu − alt) ÷ alt × 100.",
+   "merksatz": "Reihenfolge: erst Rabatt, dann Skonto, dann Bezugskosten. Brutto → Netto immer durch 1,19 teilen.",
+   "bild": "",
+   "reihenfolge": 0
+  },
+  {
+   "schluessel": "WIR-L2",
+   "thema": "wirtschaft",
+   "titel": "Angebotsvergleich und Nutzwertanalyse",
+   "stufe": 2,
+   "inhalt": "Beim **quantitativen Angebotsvergleich** rechnest du für jedes Angebot den Bezugspreis aus und vergleichst.\n\nOft zählen aber auch Dinge, die man nicht in Euro ausdrücken kann: Service, Lieferzeit, Erweiterbarkeit, Energieverbrauch. Dafür gibt es die **Nutzwertanalyse** (Entscheidungsmatrix):\n\n- **1.** Kriterien festlegen und gewichten (Summe der Gewichte = 100 %).\n- **2.** Jedes Angebot pro Kriterium bewerten (z. B. 1 bis 10 Punkte).\n- **3.** Punkte × Gewicht rechnen und pro Angebot aufsummieren.\n- **4.** Das Angebot mit dem höchsten **Nutzwert** gewinnt.\n\nBeispiel: Gewichte Preis 40 %, Leistung 35 %, Service 25 %. Angebot A mit 8, 6, 9 Punkten: 0,4·8 + 0,35·6 + 0,25·9 = **7,55**.\n\nIn der Prüfung oft gefragt: Vorteil (auch qualitative Kriterien, nachvollziehbar dokumentiert) und Nachteil (Gewichtung und Punkte sind subjektiv).",
+   "merksatz": "Nutzwert = Summe aus Gewicht × Punkte. Höchster Wert gewinnt.",
+   "bild": "",
+   "reihenfolge": 1
+  },
+  {
+   "schluessel": "WIR-L3",
+   "thema": "wirtschaft",
+   "titel": "Kauf, Leasing, Abschreibung, Amortisation",
+   "stufe": 2,
+   "inhalt": "**Kauf:** einmalige hohe Ausgabe, das Gerät gehört dir. Über die Nutzungsdauer wird es **abgeschrieben** (AfA).\nLineare Abschreibung: Anschaffungskosten ÷ Nutzungsdauer. Server für 6.000 € über 3 Jahre → 2.000 € pro Jahr.\n\n**Leasing:** monatliche Raten, das Gerät gehört dem Leasinggeber.\n- Vorteile: Liquidität bleibt erhalten, planbare Kosten, einfacher Austausch nach Ablauf\n- Nachteil: über die Laufzeit meist teurer als der Kauf\n\n**Miete/Cloud:** Kosten nach Nutzung, schnell skalierbar, keine Anschaffung, aber Abhängigkeit vom Anbieter und laufende Kosten.\n\n**Amortisationszeit:** Nach welcher Zeit hat sich eine Investition durch Einsparungen bezahlt gemacht?\nAmortisation = Investition ÷ Einsparung pro Zeiteinheit. 12.000 € ÷ 500 € pro Monat = 24 Monate.",
+   "merksatz": "Leasing schont die Liquidität, Kauf ist meist günstiger.",
+   "bild": "",
+   "reihenfolge": 2
+  },
+  {
+   "schluessel": "WIR-L4",
+   "thema": "wirtschaft",
+   "titel": "Verträge und Vertragsstörungen",
+   "stufe": 1,
+   "inhalt": "**Kaufvertrag:** entsteht durch **zwei übereinstimmende Willenserklärungen** (Antrag + Annahme). Schriftform ist nicht nötig.\n- Eine **Anfrage** ist unverbindlich.\n- Ein **Angebot** ist verbindlich (außer mit Freizeichnungsklausel wie „freibleibend“).\n\n**Werkvertrag vs. Dienstvertrag:**\n| | Werkvertrag | Dienstvertrag |\n|---|---|---|\n| geschuldet | ein **Erfolg** (fertiges Werk) | eine **Tätigkeit** |\n| Beispiel | individuelle Software entwickeln | IT-Support nach Stunden |\n| Abnahme | ja | nein |\n\n**Mangelhafte Lieferung:** Zuerst hat der Käufer das Recht auf **Nacherfüllung** (Reparatur oder Ersatz). Erst wenn das scheitert: Rücktritt, Minderung oder Schadensersatz.\n**Gewährleistung** (gesetzlich, gegenüber dem Verkäufer): bei neuen Waren 2 Jahre. **Garantie** ist freiwillig, meist vom Hersteller.\n\n**Lieferverzug:** Ist kein fester Termin vereinbart, braucht es eine Mahnung. Nach einer angemessenen **Nachfrist** kann der Käufer zurücktreten und ggf. Schadensersatz verlangen.",
+   "merksatz": "Werkvertrag = Erfolg. Dienstvertrag = Tätigkeit. Bei Mängeln zuerst Nacherfüllung.",
+   "bild": "",
+   "reihenfolge": 3
+  },
+  {
+   "schluessel": "WIR-L5",
+   "thema": "wirtschaft",
+   "titel": "Kosten und Stundensätze",
+   "stufe": 2,
+   "inhalt": "**Fixe Kosten** fallen unabhängig von der Menge an (Miete, Gehälter, Versicherungen). **Variable Kosten** steigen mit der Menge (Material, Provision, Versand pro Stück).\n\n**Stundensatz kalkulieren:**\n- Selbstkosten je Stunde = Kosten ÷ produktive Stunden\n- oder: Lohnkosten je Stunde + Gemeinkostenzuschlag\n- dann + Gewinnzuschlag\n\nBeispiel: 30 €/h Lohn, 80 % Gemeinkosten, 10 % Gewinn → 30 × 1,8 = 54 € → × 1,1 = **59,40 €**.\n\n**Break-even-Point (Gewinnschwelle):** Ab welcher Menge sind alle Kosten gedeckt?\nMenge = Fixkosten ÷ (Preis − variable Kosten pro Stück).\nFixkosten 6.000 €, Preis 100 €, variable Kosten 40 € → 6.000 ÷ 60 = **100 Stück**.",
+   "merksatz": "Gewinnschwelle = Fixkosten ÷ Deckungsbeitrag pro Stück.",
+   "bild": "",
+   "reihenfolge": 4
+  },
+  {
+   "schluessel": "WIR-L6",
+   "thema": "wirtschaft",
+   "titel": "Markt und Rechtsformen",
+   "stufe": 1,
+   "inhalt": "**Marktformen** nach Anzahl der Anbieter und Nachfrager:\n| | ein Nachfrager | wenige | viele |\n|---|---|---|---|\n| **ein Anbieter** | zweiseitiges Monopol | beschränktes Monopol | **Monopol** |\n| **wenige Anbieter** | beschränktes Monopson | zweiseitiges Oligopol | **Oligopol** |\n| **viele Anbieter** | **Monopson** | Nachfrageoligopol | **Polypol** |\n\n**Rechtsformen** (Auswahl):\n| Rechtsform | Haftung | Mindestkapital |\n|---|---|---|\n| Einzelunternehmen | unbeschränkt mit Privatvermögen | keins |\n| GbR | Gesellschafter unbeschränkt | keins |\n| **GmbH** | beschränkt auf das Gesellschaftsvermögen | 25.000 € Stammkapital |\n| UG (haftungsbeschränkt) | wie GmbH | ab 1 € |\n| **AG** | beschränkt auf das Gesellschaftsvermögen | 50.000 € Grundkapital |",
+   "merksatz": "GmbH: 25.000 € Stammkapital, Haftung nur mit dem Gesellschaftsvermögen.",
+   "bild": "",
+   "reihenfolge": 5
+  }
+ ],
+ "fragen": [
+  {
+   "schluessel": "WIR-01",
+   "thema": "wirtschaft",
+   "text": "Ein Notebook kostet laut Liste 2.000 € netto. Du bekommst 10 % Rabatt und zahlst innerhalb der Skontofrist mit 2 % Skonto. Wie hoch ist der Überweisungsbetrag (netto)?",
+   "erklaerung": "Erst Rabatt, dann Skonto: 2.000 € − 10 % = 1.800 €. 1.800 € − 2 % = 1.764 €.",
+   "schwierigkeit": 2,
+   "einstufung": true,
+   "typ": "zahl",
+   "loesung": 1764,
+   "toleranz": 0.01,
+   "einheit": "€",
+   "lektion": "WIR-L1"
+  },
+  {
+   "schluessel": "WIR-02",
+   "thema": "wirtschaft",
+   "text": "Ein Laptop kostet beim Kauf 1.400 €. Alternativ: Leasing für 36 Monate à 45 €. Um wie viel Euro ist das Leasing über die Laufzeit teurer?",
+   "erklaerung": "36 × 45 € = 1.620 €. 1.620 € − 1.400 € = 220 €. Vorteile des Leasings trotzdem: Liquidität bleibt erhalten, planbare Kosten, einfacher Austausch nach Ablauf.",
+   "schwierigkeit": 1,
+   "einstufung": true,
+   "typ": "zahl",
+   "loesung": 220,
+   "toleranz": 0.01,
+   "einheit": "€",
+   "lektion": "WIR-L3"
+  },
+  {
+   "schluessel": "WIR-03",
+   "thema": "wirtschaft",
+   "text": "Wodurch kommt ein Kaufvertrag zustande?",
+   "erklaerung": "Ein Kaufvertrag braucht keine Schriftform. Angebot (Antrag) + Bestellung (Annahme), oder Bestellung + Auftragsbestätigung, reichen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Durch zwei übereinstimmende Willenserklärungen: Antrag und Annahme",
+     "richtig": true
+    },
+    {
+     "text": "Erst durch die Bezahlung der Ware",
+     "richtig": false
+    },
+    {
+     "text": "Erst durch die Lieferung der Ware",
+     "richtig": false
+    },
+    {
+     "text": "Nur durch einen schriftlichen Vertrag",
+     "richtig": false
+    }
+   ],
+   "lektion": "WIR-L4"
+  },
+  {
+   "schluessel": "WIR-04",
+   "thema": "wirtschaft",
+   "text": "Eine Agentur soll für einen Kunden eine individuelle Software entwickeln, die am Ende abgenommen wird. Welche Vertragsart passt?",
+   "erklaerung": "Werkvertrag: geschuldet ist ein Erfolg (das fertige Werk), mit Abnahme. Dienstvertrag: geschuldet ist nur die Tätigkeit, z. B. Support nach Stunden.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Werkvertrag",
+     "richtig": true
+    },
+    {
+     "text": "Dienstvertrag",
+     "richtig": false
+    },
+    {
+     "text": "Kaufvertrag",
+     "richtig": false
+    },
+    {
+     "text": "Mietvertrag",
+     "richtig": false
+    }
+   ],
+   "lektion": "WIR-L4"
+  },
+  {
+   "schluessel": "WIR-05",
+   "thema": "wirtschaft",
+   "text": "Nutzwertanalyse: Preis 40 %, Leistung 35 %, Service 25 %. Angebot A bekommt 8, 6 und 9 Punkte (von 10). Wie hoch ist der gewichtete Nutzwert von A?",
+   "erklaerung": "0,40 × 8 + 0,35 × 6 + 0,25 × 9 = 3,2 + 2,1 + 2,25 = 7,55",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 7.55,
+   "toleranz": 0.001,
+   "einheit": "",
+   "lektion": "WIR-L2"
+  },
+  {
+   "schluessel": "WIR-06",
+   "thema": "wirtschaft",
+   "text": "Ein Monitor kostet 1.190 € brutto inklusive 19 % Umsatzsteuer. Wie hoch ist der Nettopreis?",
+   "erklaerung": "Brutto = 119 %. 1.190 € ÷ 1,19 = 1.000 €. Häufiger Fehler: 19 % von 1.190 € abziehen (ergibt 963,90 € und ist falsch).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1000,
+   "toleranz": 0.01,
+   "einheit": "€",
+   "lektion": "WIR-L1"
+  },
+  {
+   "schluessel": "WIR-07",
+   "thema": "wirtschaft",
+   "text": "Der Lieferant liefert nicht, ein fester Liefertermin war nicht vereinbart. Was musst du in der Regel tun, bevor du vom Vertrag zurücktreten kannst?",
+   "erklaerung": "Ohne kalendermäßig bestimmten Termin kommt der Lieferant erst durch eine Mahnung in Verzug. Nach erfolglosem Ablauf einer angemessenen Nachfrist: Rücktritt und ggf. Schadensersatz.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Den Lieferanten mahnen und ihm eine angemessene Nachfrist setzen",
+     "richtig": true
+    },
+    {
+     "text": "Nichts, du kannst sofort zurücktreten",
+     "richtig": false
+    },
+    {
+     "text": "Den Kaufpreis vorab zurückfordern",
+     "richtig": false
+    },
+    {
+     "text": "Erst den Kaufpreis zahlen",
+     "richtig": false
+    }
+   ],
+   "lektion": "WIR-L4"
+  },
+  {
+   "schluessel": "WIR-08",
+   "thema": "wirtschaft",
+   "text": "Ein Mitarbeiter kostet die Firma 5.600 € im Monat und arbeitet 140 Stunden produktiv beim Kunden. Auf die Selbstkosten kommen 25 % Gewinnzuschlag. Welcher Stundensatz wird berechnet?",
+   "erklaerung": "Selbstkosten je Stunde: 5.600 € ÷ 140 h = 40 €. Mit 25 % Gewinn: 40 € × 1,25 = 50 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 50,
+   "toleranz": 0.01,
+   "einheit": "€",
+   "lektion": "WIR-L5"
+  },
+  {
+   "schluessel": "WIR-09",
+   "thema": "wirtschaft",
+   "text": "Listenpreis 800 €, 15 % Rabatt, 2 % Skonto, 20 € Versandkosten. Wie hoch ist der Bezugspreis?",
+   "erklaerung": "800 × 0,85 = 680 €. 680 × 0,98 = 666,40 €. + 20 € = 686,40 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "WIR-L1",
+   "typ": "zahl",
+   "loesung": 686.4,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "WIR-10",
+   "thema": "wirtschaft",
+   "text": "Eine Rechnung lautet über 595 € brutto (19 % USt). Wie viel Umsatzsteuer ist darin enthalten?",
+   "erklaerung": "595 ÷ 1,19 = 500 € netto. 595 − 500 = 95 € Umsatzsteuer.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "WIR-L1",
+   "typ": "zahl",
+   "loesung": 95,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "WIR-11",
+   "thema": "wirtschaft",
+   "text": "Eine Dienstleistung kostet 250 € netto. Wie hoch ist der Bruttobetrag bei 19 % Umsatzsteuer?",
+   "erklaerung": "250 × 1,19 = 297,50 €.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "WIR-L1",
+   "typ": "zahl",
+   "loesung": 297.5,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "WIR-12",
+   "thema": "wirtschaft",
+   "text": "Ein Lieferant gewährt auf eine Rechnung über 5.000 € bei Zahlung innerhalb von 10 Tagen 2 % Skonto. Wie viel Euro sparst du?",
+   "erklaerung": "5.000 × 0,02 = 100 €.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "WIR-L1",
+   "typ": "zahl",
+   "loesung": 100,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "WIR-13",
+   "thema": "wirtschaft",
+   "text": "Zahlungsziel: 2 % Skonto bei Zahlung in 10 Tagen, sonst netto in 30 Tagen. Lohnt es sich, für die Skontozahlung einen Kontokorrentkredit mit 10 % Jahreszins zu nutzen?",
+   "erklaerung": "Man zahlt 20 Tage früher und spart 2 %. Hochgerechnet aufs Jahr: 2 ÷ 98 × 360 ÷ 20 ≈ 36,7 %. Das ist viel mehr als 10 % Kreditzins.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "WIR-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ja, der Skontosatz entspricht einem Jahreszins von etwa 37 %",
+     "richtig": true
+    },
+    {
+     "text": "Nein, 10 % Zinsen sind mehr als 2 % Skonto",
+     "richtig": false
+    },
+    {
+     "text": "Nein, Skonto darf nicht mit Kredit bezahlt werden",
+     "richtig": false
+    },
+    {
+     "text": "Das hängt nur vom Rechnungsbetrag ab",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "WIR-14",
+   "thema": "wirtschaft",
+   "text": "Der Preis einer Softwarelizenz steigt von 80 € auf 92 €. Um wie viel Prozent ist er gestiegen?",
+   "erklaerung": "(92 − 80) ÷ 80 × 100 = 15 %.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "WIR-L1",
+   "typ": "zahl",
+   "loesung": 15,
+   "toleranz": 0.01,
+   "einheit": "%"
+  },
+  {
+   "schluessel": "WIR-15",
+   "thema": "wirtschaft",
+   "text": "Nutzwertanalyse mit Preis 40 %, Leistung 35 %, Service 25 %. Angebot A: 8, 6, 9 Punkte. Angebot B: 7, 9, 6 Punkte. Welches Angebot hat den höheren Nutzwert?",
+   "erklaerung": "A: 3,2 + 2,1 + 2,25 = 7,55. B: 2,8 + 3,15 + 1,5 = 7,45. Knapp, aber A gewinnt.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "WIR-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Angebot A (7,55 gegenüber 7,45)",
+     "richtig": true
+    },
+    {
+     "text": "Angebot B (7,45 gegenüber 7,25)",
+     "richtig": false
+    },
+    {
+     "text": "Beide sind gleich gut",
+     "richtig": false
+    },
+    {
+     "text": "Angebot B, weil es die meisten Punkte bei der Leistung hat",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "WIR-16",
+   "thema": "wirtschaft",
+   "text": "Was ist der größte Vorteil einer Nutzwertanalyse gegenüber einem reinen Preisvergleich?",
+   "erklaerung": "Nachteil: Gewichte und Punkte beruhen auf Einschätzungen und sind damit subjektiv.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "WIR-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Auch Kriterien ohne Euro-Wert, z. B. Service oder Lieferzeit, fließen nachvollziehbar ein",
+     "richtig": true
+    },
+    {
+     "text": "Sie ist völlig objektiv",
+     "richtig": false
+    },
+    {
+     "text": "Sie ermittelt automatisch den günstigsten Preis",
+     "richtig": false
+    },
+    {
+     "text": "Sie braucht keine Gewichtung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "WIR-17",
+   "thema": "wirtschaft",
+   "text": "Ein Server kostet 6.000 € und wird linear über 3 Jahre abgeschrieben. Wie hoch ist die jährliche Abschreibung?",
+   "erklaerung": "6.000 € ÷ 3 Jahre = 2.000 € pro Jahr.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "WIR-L3",
+   "typ": "zahl",
+   "loesung": 2000,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "WIR-18",
+   "thema": "wirtschaft",
+   "text": "Eine neue Software kostet 12.000 € und spart monatlich 500 € Personalkosten. Nach wie vielen Monaten hat sie sich amortisiert?",
+   "erklaerung": "12.000 € ÷ 500 € pro Monat = 24 Monate.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "WIR-L3",
+   "typ": "zahl",
+   "loesung": 24,
+   "toleranz": 0,
+   "einheit": "Monate"
+  },
+  {
+   "schluessel": "WIR-19",
+   "thema": "wirtschaft",
+   "text": "Welche Aussagen zum Leasing von IT-Geräten stimmen?",
+   "erklaerung": "Das Gerät bleibt Eigentum des Leasinggebers. Insgesamt zahlt man meist mehr als beim Kauf.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "WIR-L3",
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Die Liquidität des Unternehmens wird geschont",
+     "richtig": true
+    },
+    {
+     "text": "Die monatlichen Kosten sind gut planbar",
+     "richtig": true
+    },
+    {
+     "text": "Nach Ablauf gehört das Gerät automatisch dem Leasingnehmer",
+     "richtig": false
+    },
+    {
+     "text": "Leasing ist über die Laufzeit immer günstiger als Kauf",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "WIR-20",
+   "thema": "wirtschaft",
+   "text": "Ein Unternehmen überlegt, seinen Mailserver durch einen Cloud-Dienst zu ersetzen. Was ist ein typischer Vorteil der Cloud?",
+   "erklaerung": "Nachteile: laufende Kosten, Abhängigkeit vom Anbieter, Datenschutz prüfen (AVV, Serverstandort).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "WIR-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Keine hohe Anschaffung, Leistung lässt sich flexibel anpassen",
+     "richtig": true
+    },
+    {
+     "text": "Man ist von keinem Anbieter abhängig",
+     "richtig": false
+    },
+    {
+     "text": "Es fallen keine laufenden Kosten an",
+     "richtig": false
+    },
+    {
+     "text": "Die DSGVO gilt dann nicht mehr",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "WIR-21",
+   "thema": "wirtschaft",
+   "text": "Ein gelieferter Monitor hat Pixelfehler. Welches Recht hat der Käufer zuerst?",
+   "erklaerung": "Der Verkäufer bekommt zuerst eine zweite Chance. Erst wenn die Nacherfüllung scheitert, sind Rücktritt oder Minderung möglich.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "WIR-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Nacherfüllung: Reparatur oder Ersatzlieferung",
+     "richtig": true
+    },
+    {
+     "text": "Sofortiger Rücktritt vom Vertrag",
+     "richtig": false
+    },
+    {
+     "text": "Sofortige Minderung des Preises um 50 %",
+     "richtig": false
+    },
+    {
+     "text": "Schadensersatz für entgangenen Gewinn",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "WIR-22",
+   "thema": "wirtschaft",
+   "text": "Wie lange beträgt die gesetzliche Gewährleistungsfrist bei neuen Waren für Verbraucher?",
+   "erklaerung": "2 Jahre ab Übergabe. Bei gebrauchten Waren kann sie auf 1 Jahr verkürzt werden.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "WIR-L4",
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": "Jahre"
+  },
+  {
+   "schluessel": "WIR-23",
+   "thema": "wirtschaft",
+   "text": "Was unterscheidet Garantie von Gewährleistung?",
+   "erklaerung": "Die Garantiebedingungen legt der Garantiegeber selbst fest.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "WIR-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Gewährleistung ist gesetzlich und richtet sich gegen den Verkäufer; Garantie ist eine freiwillige Zusage, meist vom Hersteller",
+     "richtig": true
+    },
+    {
+     "text": "Beides ist dasselbe",
+     "richtig": false
+    },
+    {
+     "text": "Garantie ist gesetzlich vorgeschrieben, Gewährleistung freiwillig",
+     "richtig": false
+    },
+    {
+     "text": "Gewährleistung gilt nur für Software",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "WIR-24",
+   "thema": "wirtschaft",
+   "text": "Welcher Vertrag ist ein Dienstvertrag?",
+   "erklaerung": "Beim Dienstvertrag wird die Tätigkeit geschuldet, kein bestimmter Erfolg.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "WIR-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "IT-Support, abgerechnet nach geleisteten Stunden",
+     "richtig": true
+    },
+    {
+     "text": "Entwicklung einer individuellen App mit Abnahme",
+     "richtig": false
+    },
+    {
+     "text": "Kauf von 10 Notebooks",
+     "richtig": false
+    },
+    {
+     "text": "Einrichtung eines Netzwerks mit Abnahmeprotokoll",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "WIR-25",
+   "thema": "wirtschaft",
+   "text": "Ein Kunde schickt eine Anfrage nach Preisen für 20 Monitore. Welche rechtliche Wirkung hat das?",
+   "erklaerung": "Erst das Angebot des Händlers ist verbindlich. Bestellt der Kunde dann, ist der Kaufvertrag geschlossen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "WIR-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Keine, eine Anfrage ist unverbindlich",
+     "richtig": true
+    },
+    {
+     "text": "Der Kunde muss die Monitore abnehmen",
+     "richtig": false
+    },
+    {
+     "text": "Es ist bereits ein Kaufvertrag entstanden",
+     "richtig": false
+    },
+    {
+     "text": "Der Händler muss liefern",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "WIR-26",
+   "thema": "wirtschaft",
+   "text": "Lohnkosten 30 € pro Stunde, Gemeinkostenzuschlag 80 %, Gewinnzuschlag 10 %. Welcher Stundensatz ergibt sich?",
+   "erklaerung": "30 × 1,8 = 54 € Selbstkosten. 54 × 1,1 = 59,40 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "WIR-L5",
+   "typ": "zahl",
+   "loesung": 59.4,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "WIR-27",
+   "thema": "wirtschaft",
+   "text": "Welche Kosten sind fixe Kosten?",
+   "erklaerung": "Fixe Kosten fallen auch an, wenn nichts verkauft wird.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "WIR-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Die monatliche Büromiete",
+     "richtig": true
+    },
+    {
+     "text": "Materialkosten pro Auftrag",
+     "richtig": false
+    },
+    {
+     "text": "Provision je verkaufter Lizenz",
+     "richtig": false
+    },
+    {
+     "text": "Versandkosten pro Lieferung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "WIR-28",
+   "thema": "wirtschaft",
+   "text": "Fixkosten 6.000 € pro Monat. Eine Lizenz kostet 100 €, die variablen Kosten je Lizenz betragen 40 €. Ab wie vielen verkauften Lizenzen ist die Gewinnschwelle erreicht?",
+   "erklaerung": "Deckungsbeitrag je Lizenz: 100 − 40 = 60 €. 6.000 ÷ 60 = 100 Lizenzen.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "WIR-L5",
+   "typ": "zahl",
+   "loesung": 100,
+   "toleranz": 0,
+   "einheit": "Lizenzen"
+  },
+  {
+   "schluessel": "WIR-29",
+   "thema": "wirtschaft",
+   "text": "Viele Anbieter stehen vielen Nachfragern gegenüber, z. B. auf dem Markt für USB-Sticks. Wie heißt diese Marktform?",
+   "erklaerung": "Poly = viele. Oligo = wenige. Mono = einer.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "WIR-L6",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Polypol",
+     "richtig": true
+    },
+    {
+     "text": "Monopol",
+     "richtig": false
+    },
+    {
+     "text": "Oligopol",
+     "richtig": false
+    },
+    {
+     "text": "Monopson",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "WIR-30",
+   "thema": "wirtschaft",
+   "text": "Wie haften die Gesellschafter einer GmbH für Schulden der Gesellschaft?",
+   "erklaerung": "Daher „mit beschränkter Haftung“. Mindest-Stammkapital: 25.000 €.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "WIR-L6",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Nur mit dem Gesellschaftsvermögen, nicht mit ihrem Privatvermögen",
+     "richtig": true
+    },
+    {
+     "text": "Unbeschränkt mit ihrem Privatvermögen",
+     "richtig": false
+    },
+    {
+     "text": "Gar nicht, die GmbH kann keine Schulden haben",
+     "richtig": false
+    },
+    {
+     "text": "Bis zur doppelten Höhe ihrer Einlage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "WIR-31",
+   "thema": "wirtschaft",
+   "text": "Wie hoch ist das Mindest-Stammkapital einer GmbH?",
+   "erklaerung": "25.000 €, davon mindestens die Hälfte bei Gründung eingezahlt. Bei der UG reicht 1 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "WIR-L6",
+   "typ": "zahl",
+   "loesung": 25000,
+   "toleranz": 0,
+   "einheit": "€"
+  }
+ ]
+}

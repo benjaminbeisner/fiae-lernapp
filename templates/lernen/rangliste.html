@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Rangliste · FIAE-Lernapp{% endblock %}
+{% block content %}
+<h1>🏆 Rangliste</h1>
+<p class="muted">Gezählt wird nur die aktive Lernzeit: beim Lesen der Lernnuggets, beim Beantworten der Fragen und in der Prüfungssimulation. Prüfungsergebnisse fließen nicht ein.</p>
+<div class="tabs">
+  <a href="?zeitraum=heute" class="{% if zeitraum == 'heute' %}aktiv{% endif %}">Heute</a>
+  <a href="?zeitraum=woche" class="{% if zeitraum == 'woche' %}aktiv{% endif %}">Diese Woche</a>
+  <a href="?zeitraum=monat" class="{% if zeitraum == 'monat' %}aktiv{% endif %}">Dieser Monat</a>
+</div>
+<div class="card">
+{% for z in zeilen %}
+  <div class="rang{% if z.ich %} ich{% endif %}">
+    <span class="platz">{% if z.platz == 1 %}🥇{% elif z.platz == 2 %}🥈{% elif z.platz == 3 %}🥉{% else %}{{ z.platz }}{% endif %}</span>
+    <span><strong>{{ z.name }}</strong>{% if z.ich %} (du){% endif %}</span>
+    <span><strong>{{ z.minuten }}</strong> Min</span>
+    <div class="bar"><span style="width:{{ z.balken }}%"></span></div>
+  </div>
+{% empty %}
+  <p class="muted">{{ titel }} hat noch niemand gelernt. Sei die erste Person!</p>
+{% endfor %}
+</div>
+{% if not sichtbar %}<p class="muted small">Du bist ausgeblendet. In den <a href="{% url 'profil' %}">Einstellungen</a> kannst du das ändern.</p>
+{% else %}<p class="muted small">Du willst nicht in der Rangliste stehen? In den <a href="{% url 'profil' %}">Einstellungen</a> ausblenden.</p>{% endif %}
+{% endblock %}

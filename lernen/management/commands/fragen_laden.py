@@ -12,7 +12,7 @@ from django.conf import settings
 from django.core.management.base import BaseCommand, CommandError
 from django.db import transaction
 
-from lernen.models import Antwort, Frage, Thema
+from lernen.models import Antwort, Frage, Lektion, Thema
 
 
 class Command(BaseCommand):
@@ -23,7 +23,7 @@ class Command(BaseCommand):
 
     @transaction.atomic
     def handle(self, *args, dateien, **opts):
-        pfade = [Path(d) for d in dateien] or sorted((Path(settings.BASE_DIR) / "fragen").glob("*.json"))
+        pfade = [Path(d) for d in dateien] or sorted((Path(settings.BASE_DIR) / "fragen").rglob("*.json"))
         if not pfade:
             raise CommandError("Keine Fragendateien gefunden.")
         for pfad in pfade:
@@ -32,6 +32,11 @@ class Command(BaseCommand):
                 Thema.objects.update_or_create(slug=t["slug"], defaults={
                     "name": t["name"], "gewicht": t.get("gewicht", 5),
                     "pruefung": t.get("pruefung", "AP1"), "reihenfolge": t.get("reihenfolge", 0)})
+            for l in daten.get("lektionen", []):
+                Lektion.objects.update_or_create(schluessel=l["schluessel"], defaults={
+                    "thema": Thema.objects.get(slug=l["thema"]), "titel": l["titel"], "inhalt": l["inhalt"],
+                    "merksatz": l.get("merksatz", ""), "bild": l.get("bild", ""), "stufe": l.get("stufe", 1),
+                    "reihenfolge": l.get("reihenfolge", 0), "aktiv": l.get("aktiv", True)})
             neu = geaendert = 0
             for f in daten.get("fragen", []):
                 try:
@@ -43,6 +48,8 @@ class Command(BaseCommand):
                     "schwierigkeit": f.get("schwierigkeit", 2), "einstufung": f.get("einstufung", False),
                     "loesung_zahl": Decimal(str(f["loesung"])) if f["typ"] == "zahl" else None,
                     "toleranz": Decimal(str(f.get("toleranz", 0))), "einheit": f.get("einheit", ""), "aktiv": f.get("aktiv", True),
+                    "bild": f.get("bild", ""), "punkte": f.get("punkte", 0),
+                    "lektion": Lektion.objects.get(schluessel=f["lektion"]) if f.get("lektion") else None,
                 }
                 frage, erstellt = Frage.objects.update_or_create(schluessel=f["schluessel"], defaults=werte)
                 neu += erstellt
@@ -54,4 +61,6 @@ class Command(BaseCommand):
                     geaendert += not erstellt
                 if f["typ"] != "zahl" and not any(r for _, r in soll):
                     raise CommandError(f"Frage {f['schluessel']} hat keine richtige Antwort.")
-            self.stdout.write(self.style.SUCCESS(f"{pfad.name}: {len(daten.get('fragen', []))} Fragen ({neu} neu, {geaendert} mit geänderten Antworten)"))
+            self.stdout.write(self.style.SUCCESS(
+                f"{pfad.name}: {len(daten.get('lektionen', []))} Lektionen, {len(daten.get('fragen', []))} Fragen "
+                f"({neu} neu, {geaendert} mit geänderten Antworten)"))
