@@ -1,0 +1,16 @@
+[Unit]
+Description=FIAE-Lernapp (Django/Gunicorn)
+After=network.target mariadb.service
+
+[Service]
+User=lernapp
+Group=lernapp
+WorkingDirectory=/opt/fiae-lernapp/app
+ExecStart=/opt/fiae-lernapp/venv/bin/gunicorn config.wsgi:application --bind 127.0.0.1:8002 --workers 3 --access-logfile -
+Restart=on-failure
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+
+[Install]
+WantedBy=multi-user.target

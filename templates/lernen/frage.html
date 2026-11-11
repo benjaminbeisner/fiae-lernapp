@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}{{ s.titel }} · FIAE-Lernapp{% endblock %}
+{% block content %}
+<div class="row" style="justify-content:space-between;margin-bottom:8px">
+  <strong>{{ s.titel }}</strong>
+  <span class="muted small">Frage {{ nummer }} von {{ gesamt }}</span>
+</div>
+<div class="bar" style="margin-bottom:16px"><span style="width:{{ fortschritt }}%"></span></div>
+
+<div class="card">
+  <div class="thema-tag">{{ frage.thema.name }}</div>
+  <div class="frage-text">{{ frage.text }}</div>
+
+  <form method="post">{% csrf_token %}
+  {% if frage.typ == "zahl" %}
+    <div class="zahl-eingabe">
+      <input type="text" name="zahl" inputmode="decimal" autocomplete="off" {% if s.beantwortet %}value="{{ s.beantwortet.eingabe }}" disabled{% else %}autofocus required{% endif %}>
+      {% if frage.einheit %}<span>{{ frage.einheit }}</span>{% endif %}
+    </div>
+    <p></p>
+  {% else %}
+    {% if frage.typ == "mehrfach" and not s.beantwortet %}<p class="muted small">Mehrere Antworten können richtig sein.</p>{% endif %}
+    <div class="optionen">
+    {% for a in antworten %}
+      <label class="option{% if s.beantwortet %}{% if a.richtig %} richtig{% elif a.id in gewaehlt %} falsch{% endif %}{% endif %}">
+        <input type="{% if frage.typ == 'mehrfach' %}checkbox{% else %}radio{% endif %}" name="antwort" value="{{ a.id }}"
+          {% if a.id in gewaehlt %}checked{% endif %} {% if s.beantwortet %}disabled{% endif %}>
+        <span>{{ a.text }}</span>
+      </label>
+    {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if s.beantwortet %}
+    <div class="feedback {% if s.beantwortet.richtig %}ok{% else %}bad{% endif %}">
+      <strong>{% if s.beantwortet.richtig %}Richtig!{% else %}Leider falsch.{% endif %}</strong>
+      {% if frage.typ == "zahl" %}<div>Lösung: {{ frage.loesung_zahl.normalize }} {{ frage.einheit }}</div>{% endif %}
+      {% if frage.erklaerung %}<div class="erklaerung">{{ frage.erklaerung }}</div>{% endif %}
+    </div>
+    <div class="row">
+      <button class="btn" name="aktion" value="weiter" autofocus>{% if nummer == gesamt %}Zur Auswertung{% else %}Weiter{% endif %}</button>
+      <button class="btn link" name="aktion" value="abbrechen" formnovalidate>Beenden</button>
+    </div>
+  {% else %}
+    <div class="row">
+      <button class="btn" name="aktion" value="antworten">Antworten</button>
+      <button class="btn link" name="aktion" value="abbrechen" formnovalidate>Beenden</button>
+    </div>
+  {% endif %}
+  </form>
+</div>
+{% endblock %}

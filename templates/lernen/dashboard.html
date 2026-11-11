@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Hallo {{ user.first_name|default:user.username }}!</h1>
+<p class="muted">Noch {{ tage_bis_ap1 }} Tage bis zur AP1.</p>
+
+{% if laufende_sitzung %}
+<div class="card row">
+  <div style="flex:1">Du hast noch eine angefangene Lerneinheit: <strong>{{ laufende_sitzung.titel }}</strong></div>
+  <a class="btn" href="{% url 'sitzung' %}">Weitermachen</a>
+</div>
+{% endif %}
+
+{% if not hat_einstufung %}
+<div class="card">
+  <h2 style="margin-top:0">Starte mit dem Einstufungstest</h2>
+  <p>Der Test zeigt dir, wo du in den AP1-Themen stehst. Danach stellt dir die App jeden Tag passende Fragen zusammen, mit Schwerpunkt auf deinen Lücken.</p>
+  <a class="btn" href="{% url 'einstufung_start' %}">Zum Einstufungstest</a>
+</div>
+{% endif %}
+
+<div class="grid stats">
+  <div class="card"><div class="stat">{{ faellig }}</div><div class="muted small">Wiederholungen fällig</div></div>
+  <div class="card"><div class="stat">{{ heute_beantwortet }}</div><div class="muted small">Fragen heute beantwortet</div></div>
+  <div class="card"><div class="stat">{{ serie }}</div><div class="muted small">{% if serie == 1 %}Tag{% else %}Tage{% endif %} Lernserie</div></div>
+</div>
+
+<div class="card row">
+  <div style="flex:1">
+    <strong>Tägliches Lernen</strong><br>
+    <span class="muted small">Fällige Wiederholungen plus neue Fragen, ca. 15–20 Minuten.</span>
+  </div>
+  <form method="post" action="{% url 'taeglich_start' %}">{% csrf_token %}<button class="btn" type="submit">Jetzt lernen</button></form>
+</div>
+
+<h2>Deine Themen (AP1)</h2>
+<div class="card themen">
+{% for z in themen %}
+  <div class="thema-zeile">
+    <div class="thema-info">
+      <div><strong>{{ z.thema.name }}</strong></div>
+      <div class="muted small">≈ {{ z.thema.gewicht }} Punkte pro Prüfung · Trefferquote {% if z.quote is not None %}{{ z.quote }} %{% else %}–{% endif %}</div>
+      <div class="bar" title="{{ z.gefestigt }} von {{ z.anzahl }} Fragen gefestigt"><span style="width:{{ z.fortschritt }}%"></span></div>
+      <div class="muted small">{{ z.gefestigt }} von {{ z.anzahl }} Fragen gefestigt</div>
+    </div>
+    <form method="post" action="{% url 'thema_start' z.thema.slug %}">{% csrf_token %}<button class="btn secondary" type="submit"{% if not z.anzahl %} disabled{% endif %}>Üben</button></form>
+  </div>
+{% endfor %}
+</div>
+<p class="muted small">„Gefestigt“ heißt: Du hast die Frage mehrmals hintereinander richtig beantwortet. Sie kommt dann nur noch selten zur Wiederholung.</p>
+{% if hat_einstufung %}<p class="small"><a href="{% url 'einstufung_start' %}">Einstufungstest wiederholen</a> · <a href="{% url 'password_change' %}">Passwort ändern</a></p>{% else %}<p class="small"><a href="{% url 'password_change' %}">Passwort ändern</a></p>{% endif %}
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h1>Einstufungstest AP1</h1>
+  <p>{{ anzahl }} Fragen aus allen AP1-Themen. Das dauert etwa {{ anzahl|add:"0" }} Minuten, eine Minute pro Frage reicht.</p>
+  <ul>
+    <li>Nach jeder Frage siehst du die Lösung mit Erklärung.</li>
+    <li>Rate nicht wild. Wenn du etwas nicht weißt, ist das ein wertvolles Ergebnis.</li>
+    <li>Du kannst jederzeit unterbrechen und später weitermachen.</li>
+  </ul>
+  <form method="post">{% csrf_token %}<button class="btn" type="submit"{% if not anzahl %} disabled{% endif %}>Test starten</button></form>
+</div>
+{% endblock %}

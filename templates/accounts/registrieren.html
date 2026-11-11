@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Registrieren · FIAE-Lernapp{% endblock %}
+{% block content %}
+<div class="auth card">
+  <h1>Konto anlegen</h1>
+  <p class="muted small">Du brauchst einen Einladungscode. Den bekommst du von der Person, die die App betreut.</p>
+  <form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn" type="submit">Konto anlegen</button>
+  </form>
+  <p class="muted small" style="margin-top:16px">Schon registriert? <a href="{% url 'login' %}">Anmelden</a></p>
+</div>
+{% endblock %}

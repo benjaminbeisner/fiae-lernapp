@@ -1,0 +1,25 @@
+{% load static %}<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}FIAE-Lernapp{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'app.css' %}">
+</head>
+<body>
+<header class="top"><div class="inner">
+  <a class="brand" href="{% url 'dashboard' %}">FIAE-Lernapp</a>
+  {% if user.is_authenticated %}
+  <nav>
+    <a href="{% url 'dashboard' %}">Übersicht</a>
+    {% if user.is_staff %}<a href="/verwaltung/">Verwaltung</a>{% endif %}
+    <form method="post" action="{% url 'logout' %}" style="display:inline">{% csrf_token %}<button class="btn link" type="submit">Abmelden</button></form>
+  </nav>
+  {% endif %}
+</div></header>
+<main>
+  {% if messages %}<ul class="messages">{% for m in messages %}<li>{{ m }}</li>{% endfor %}</ul>{% endif %}
+  {% block content %}{% endblock %}
+</main>
+</body>
+</html>
