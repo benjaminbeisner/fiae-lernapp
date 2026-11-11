@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static lerntext %}
+{% block title %}Auswertung · FIAE-Lernapp{% endblock %}
+{% block content %}
+<div class="card" style="text-align:center">
+  <div class="muted">Prüfungssimulation vom {{ sim.start|date:"d.m.Y, H:i" }} Uhr</div>
+  <div class="note">Note {{ sim.note }}</div>
+  <p><span class="stat">{{ sim.prozent }} %</span><br>
+  <span class="muted">{% if sim.prozent >= 50 %}Bestanden{% else %}Nicht bestanden, ab 50 % hättest du bestanden{% endif %}</span></p>
+  <a class="btn" href="{% url 'simulation_start' %}">Zur Übersicht</a>
+</div>
+<h2>Nach Themen</h2>
+<div class="card table-wrap">
+  <table><thead><tr><th>Thema</th><th class="num">Richtig</th><th class="num">Quote</th></tr></thead>
+  <tbody>{% for t in themen %}<tr><td>{{ t.name }}</td><td class="num">{{ t.richtig }} / {{ t.gesamt }}</td><td class="num">{{ t.quote }} %</td></tr>{% endfor %}</tbody></table>
+</div>
+<h2>Alle Aufgaben mit Lösung</h2>
+{% for z in zeilen %}
+<div class="card">
+  <span class="punkte-tag">{% if z.richtig %}{{ z.p }}{% else %}0{% endif %} / {{ z.p }} P.</span>
+  <div class="thema-tag">Aufgabe {{ forloop.counter }} · {{ z.f.thema.name }}</div>
+  <div class="frage-text">{{ z.f.text|lerntext }}</div>
+  {% if z.f.bild %}<div class="frage-bild"><img src="{% static z.f.bild %}" alt="Abbildung zur Aufgabe" loading="lazy"></div>{% endif %}
+  {% if z.f.typ == "zahl" %}
+    <p>Deine Antwort: <strong>{{ z.eingabe|default:"–" }}</strong> · Lösung: <strong>{{ z.f.loesung_zahl.normalize }} {{ z.f.einheit }}</strong></p>
+  {% else %}
+    <div class="optionen">{% for a in z.f.antworten.all %}
+      <div class="option{% if a.richtig %} richtig{% elif a.id in z.gewaehlt %} falsch{% endif %}">{% if a.id in z.gewaehlt %}☑{% else %}☐{% endif %} {{ a.text }}</div>
+    {% endfor %}</div>
+  {% endif %}
+  <div class="feedback {% if z.richtig %}ok{% else %}bad{% endif %}">
+    <div class="titel">{% if z.richtig %}✔ Richtig{% else %}✘ Falsch oder nicht beantwortet{% endif %}</div>
+    {{ z.f.erklaerung|lerntext }}
+  </div>
+</div>
+{% endfor %}
+{% endblock %}

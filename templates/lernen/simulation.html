@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static lerntext %}
+{% block title %}Prüfung läuft · FIAE-Lernapp{% endblock %}
+{% block content %}
+<form method="post" id="sim">{% csrf_token %}
+<div class="timer" id="timer"><span>⏱️ Restzeit: <span id="rest">–</span></span><span class="muted small" id="beantwortet"></span></div>
+{% for f in fragen %}
+<div class="card sim-frage" id="f{{ f.id }}">
+  <span class="punkte-tag">{{ f.p }} P.</span>
+  <div class="thema-tag">Aufgabe {{ forloop.counter }} · {{ f.thema.name }}</div>
+  <div class="frage-text">{{ f.text|lerntext }}</div>
+  {% if f.bild %}<div class="frage-bild"><img src="{% static f.bild %}" alt="Abbildung zur Aufgabe" loading="lazy"></div>{% endif %}
+  {% if f.typ == "zahl" %}
+    <div class="zahl-eingabe"><input type="text" name="f{{ f.id }}-zahl" inputmode="decimal" autocomplete="off" value="{{ f.zahl_wert }}" placeholder="Antwort">{% if f.einheit %}<span>{{ f.einheit }}</span>{% endif %}</div>
+  {% else %}
+    {% if f.typ == "mehrfach" %}<p class="muted small">Mehrere Antworten können richtig sein.</p>{% endif %}
+    <div class="optionen">
+    {% for a in f.gemischt %}
+      <label class="option"><input type="{% if f.typ == 'mehrfach' %}checkbox{% else %}radio{% endif %}" name="f{{ f.id }}" value="{{ a.id }}" {% if a.id in f.gewaehlt %}checked{% endif %}><span>{{ a.text }}</span></label>
+    {% endfor %}
+    </div>
+  {% endif %}
+</div>
+{% endfor %}
+<div class="card row">
+  <button class="btn secondary" name="aktion" value="speichern">Zwischenstand speichern</button>
+  <span class="spacer"></span>
+  <button class="btn gross" name="aktion" value="abgeben" onclick="return confirm('Prüfung jetzt abgeben?')">Abgeben</button>
+</div>
+<input type="hidden" name="aktion" value="" id="auto-aktion" disabled>
+</form>
+<script>
+(function () {
+  var ende = Date.now() + {{ rest_sek }} * 1000, el = document.getElementById("rest"), box = document.getElementById("timer");
+  var form = document.getElementById("sim"), abgegeben = false;
+  function tick() {
+    var s = Math.max(0, Math.round((ende - Date.now()) / 1000));
+    el.textContent = Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
+    if (s <= 300) box.classList.add("knapp");
+    if (s === 0 && !abgegeben) {
+      abgegeben = true;
+      var h = document.getElementById("auto-aktion"); h.disabled = false; h.value = "abgeben"; form.submit();
+    }
+  }
+  function zaehlen() {
+    var n = 0;
+    document.querySelectorAll(".sim-frage").forEach(function (d) {
+      if (d.querySelector("input:checked") || Array.from(d.querySelectorAll("input[type=text]")).some(function (i) { return i.value.trim(); })) n++;
+    });
+    document.getElementById("beantwortet").textContent = n + " von {{ fragen|length }} beantwortet";
+  }
+  form.addEventListener("input", zaehlen); zaehlen(); tick(); setInterval(tick, 1000);
+})();
+</script>
+{% endblock %}

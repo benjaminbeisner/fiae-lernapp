@@ -1,0 +1,1067 @@
+{
+ "lektionen": [
+  {
+   "schluessel": "SEC-L1",
+   "thema": "sicherheit",
+   "titel": "Die Schutzziele der IT-Sicherheit",
+   "stufe": 1,
+   "inhalt": "Fast jede Sicherheitsaufgabe in der AP1 lässt sich auf drei Schutzziele zurückführen:\n\n| Schutzziel | Frage | Beispiele für Maßnahmen |\n|---|---|---|\n| **Vertraulichkeit** | Können nur Berechtigte die Daten lesen? | Verschlüsselung, Zugriffsrechte, Bildschirmsperre |\n| **Integrität** | Sind die Daten unverändert und korrekt? | Hashwerte, digitale Signatur, Protokollierung |\n| **Verfügbarkeit** | Sind Daten und Systeme nutzbar, wenn man sie braucht? | Backup, RAID, USV, redundante Server |\n\nOft kommt noch **Authentizität** dazu: Ist der Absender bzw. die Quelle echt? Das sichert z. B. eine digitale Signatur oder ein Zertifikat.\n\nIn der Prüfung heißt es häufig: „Ordnen Sie jeder Maßnahme ein Schutzziel zu.“ Frag dich dann: **Was soll die Maßnahme verhindern?** Mitlesen → Vertraulichkeit. Verfälschen → Integrität. Ausfall → Verfügbarkeit.",
+   "merksatz": "Lesen verhindern = Vertraulichkeit, Ändern verhindern = Integrität, Ausfall verhindern = Verfügbarkeit.",
+   "bild": "",
+   "reihenfolge": 0
+  },
+  {
+   "schluessel": "SEC-L2",
+   "thema": "sicherheit",
+   "titel": "Symmetrisch, asymmetrisch, hybrid",
+   "stufe": 2,
+   "inhalt": "**Symmetrische Verschlüsselung** (z. B. AES): Ein gemeinsamer geheimer Schlüssel zum Ver- und Entschlüsseln. Sehr schnell. Problem: Der Schlüssel muss sicher ausgetauscht werden, und jedes Paar braucht einen eigenen. Bei n Personen: n·(n−1)/2 Schlüssel.\n\n**Asymmetrische Verschlüsselung** (z. B. RSA): Jede Person hat ein Schlüsselpaar.\n- Der **öffentliche Schlüssel** darf jeder kennen.\n- Der **private Schlüssel** bleibt geheim.\n- Bei n Personen: 2·n Schlüssel.\n\n**Verschlüsseln:** mit dem **öffentlichen Schlüssel des Empfängers**. Entschlüsseln kann nur der Empfänger mit seinem privaten Schlüssel.\n\n**Hybride Verschlüsselung** (z. B. TLS/HTTPS, VPN): Die Daten werden schnell symmetrisch mit einem zufälligen **Sitzungsschlüssel** verschlüsselt. Nur dieser Sitzungsschlüssel wird asymmetrisch mit dem öffentlichen Schlüssel des Empfängers übertragen. Das verbindet die Geschwindigkeit von symmetrisch mit dem einfachen Schlüsselaustausch von asymmetrisch.\n\nEin **VPN** baut so einen verschlüsselten Tunnel über ein unsicheres Netz, z. B. vom Homeoffice ins Firmennetz.",
+   "merksatz": "Verschlüsseln für jemanden = sein öffentlicher Schlüssel. Signieren = mein privater Schlüssel.",
+   "bild": "",
+   "reihenfolge": 1
+  },
+  {
+   "schluessel": "SEC-L3",
+   "thema": "sicherheit",
+   "titel": "Hashwerte, Signaturen und Zertifikate",
+   "stufe": 2,
+   "inhalt": "Eine **Hashfunktion** (z. B. SHA-256) berechnet aus beliebigen Daten einen Wert fester Länge.\n- Gleiche Eingabe → immer gleicher Hash\n- Kleinste Änderung → völlig anderer Hash\n- Aus dem Hash lässt sich die Eingabe **nicht** zurückrechnen (Einwegfunktion)\n\nDamit prüft man **Integrität**, z. B. bei Downloads.\n\n**Passwörter** speichert man nie im Klartext und nicht verschlüsselt, sondern als Hash mit **Salt** (zufälliger Zusatzwert) und einem langsamen Verfahren wie bcrypt oder Argon2.\n\n**Digitale Signatur:**\n- Absender bildet den Hash der Nachricht und verschlüsselt ihn mit seinem **privaten** Schlüssel.\n- Empfänger entschlüsselt die Signatur mit dem **öffentlichen** Schlüssel des Absenders und vergleicht mit dem selbst berechneten Hash.\n- Sichert **Integrität** und **Authentizität**, aber nicht Vertraulichkeit.\n\nEin **Zertifikat** bestätigt, dass ein öffentlicher Schlüssel wirklich zu einer Person oder einem Server gehört. Ausgestellt und signiert wird es von einer **Zertifizierungsstelle (CA)**.",
+   "merksatz": "Hash = Fingerabdruck. Signatur = mit privatem Schlüssel verschlüsselter Hash.",
+   "bild": "",
+   "reihenfolge": 2
+  },
+  {
+   "schluessel": "SEC-L4",
+   "thema": "sicherheit",
+   "titel": "Anmeldung, Passwörter und 2FA",
+   "stufe": 1,
+   "inhalt": "**Gute Passwörter** sind vor allem **lang**. Eine Passphrase aus mehreren zufälligen Wörtern (z. B. `Kaffee-Tasse-Wolke-Fahrrad-42`) ist stärker und leichter zu merken als `P@ssw0rd!`.\n\n- Für jeden Dienst ein eigenes Passwort, am besten mit einem **Passwortmanager**\n- Kein regelmäßiger Zwangswechsel ohne Anlass (Empfehlung des BSI), aber sofort wechseln bei Verdacht\n\n**Zwei-Faktor-Authentisierung (2FA)** kombiniert zwei **verschiedene** Faktoren:\n| Faktor | Beispiele |\n|---|---|\n| Wissen | Passwort, PIN |\n| Besitz | Smartphone mit Authenticator-App, Chipkarte, Security-Key |\n| Sein (Inhärenz) | Fingerabdruck, Gesicht |\n\nZwei Dinge aus derselben Kategorie (Passwort + Sicherheitsfrage) sind **keine** echte 2FA.",
+   "merksatz": "2FA = zwei verschiedene Kategorien: Wissen, Besitz, Sein.",
+   "bild": "",
+   "reihenfolge": 3
+  },
+  {
+   "schluessel": "SEC-L5",
+   "thema": "sicherheit",
+   "titel": "Datensicherung: Arten und Strategien",
+   "stufe": 2,
+   "inhalt": "| Art | Was wird gesichert? | Wiederherstellung braucht |\n|---|---|---|\n| **Vollsicherung** | alles | nur die Vollsicherung |\n| **Differenziell** | alle Änderungen seit der letzten **Vollsicherung** | Vollsicherung + letzte differenzielle |\n| **Inkrementell** | alle Änderungen seit der letzten **Sicherung (egal welcher)** | Vollsicherung + **alle** Inkremente danach |\n\nInkrementell ist am schnellsten und kleinsten beim Sichern, aber aufwendiger beim Wiederherstellen.\n\n**3-2-1-Regel:** 3 Kopien der Daten, auf 2 verschiedenen Medien, 1 Kopie außer Haus (oder offline). Das schützt auch gegen Brand, Diebstahl und Ransomware.\n\n**Generationenprinzip (Großvater-Vater-Sohn):** Tägliche Sicherungen (Sohn) werden wöchentlich überschrieben, eine Wochensicherung (Vater) wird aufgehoben, die Monatssicherung (Großvater) noch länger. So kommt man auch an ältere Stände.\n\nWichtig: **RAID ist kein Backup.** Gelöschte oder verschlüsselte Dateien sind auf allen Platten gleichzeitig weg. Und: Backups regelmäßig per Test-Wiederherstellung prüfen.",
+   "merksatz": "Differenziell = seit der letzten Vollsicherung. Inkrementell = seit der letzten Sicherung.",
+   "bild": "",
+   "reihenfolge": 4
+  },
+  {
+   "schluessel": "SEC-L6",
+   "thema": "sicherheit",
+   "titel": "Datenschutz nach DSGVO",
+   "stufe": 1,
+   "inhalt": "Die **DSGVO** schützt **personenbezogene Daten**: alle Informationen, die sich einer bestimmten oder bestimmbaren Person zuordnen lassen (Name, E-Mail, IP-Adresse, Personalnummer, Standort, Fotos …).\n\n**Besondere Kategorien** (Art. 9) sind besonders geschützt: Gesundheit, Religion, ethnische Herkunft, Biometrie, Gewerkschaft, Sexualleben.\n\n**Grundsätze** (Art. 5), u. a.:\n- Rechtmäßigkeit (es braucht eine Rechtsgrundlage, z. B. Vertrag oder Einwilligung)\n- Zweckbindung\n- **Datenminimierung**: nur so viele Daten wie nötig\n- Speicherbegrenzung: löschen, wenn nicht mehr nötig\n\n**Rechte der Betroffenen:** Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch.\n\n**Pflichten des Unternehmens:** Datenpannen innerhalb von **72 Stunden** der Aufsichtsbehörde melden. Arbeitet ein Dienstleister im Auftrag mit personenbezogenen Daten (z. B. Cloud-Hosting, externe Lohnabrechnung), braucht es einen **Auftragsverarbeitungsvertrag (AVV)**.\n\n**Pseudonymisiert** (z. B. Kundennummer statt Name, Zuordnungstabelle existiert) bleibt personenbezogen. **Anonymisiert** ist es erst, wenn niemand mehr zurückschließen kann.",
+   "merksatz": "Personenbezogen ist alles, was auf eine Person zurückführbar ist. Pseudonym ist nicht anonym.",
+   "bild": "",
+   "reihenfolge": 5
+  },
+  {
+   "schluessel": "SEC-L7",
+   "thema": "sicherheit",
+   "titel": "Schadsoftware, Phishing und Schutzmaßnahmen",
+   "stufe": 1,
+   "inhalt": "| Begriff | Bedeutung |\n|---|---|\n| **Virus** | hängt sich an Dateien und verbreitet sich, wenn diese ausgeführt werden |\n| **Wurm** | verbreitet sich **selbstständig** über Netzwerke |\n| **Trojaner** | tarnt sich als nützliches Programm und öffnet heimlich Zugang |\n| **Ransomware** | verschlüsselt Daten und fordert Lösegeld |\n| **Spyware** | spioniert Nutzer aus |\n\n**Phishing** sind gefälschte Nachrichten, die zur Eingabe von Zugangsdaten verleiten. Typische Merkmale: unpassende Absenderadresse, Zeitdruck oder Drohung, Links auf fremde Domains, unpersönliche Anrede, Rechtschreibfehler.\n\n**Social Engineering** nutzt Hilfsbereitschaft oder Autorität aus, z. B. ein Anruf vom angeblichen IT-Support, der nach dem Passwort fragt.\n\n**Schutz:** Updates einspielen, Virenschutz, **Firewall** (filtert Datenverkehr nach Regeln), Mitarbeiterschulungen, Rechte nach dem Prinzip der minimalen Rechte, Offline-Backups.",
+   "merksatz": "Kein seriöser Support fragt nach deinem Passwort.",
+   "bild": "",
+   "reihenfolge": 6
+  }
+ ],
+ "fragen": [
+  {
+   "schluessel": "SEC-01",
+   "thema": "sicherheit",
+   "text": "Nach dem Download einer ISO-Datei vergleichst du ihren SHA-256-Hashwert mit dem Wert auf der Herstellerseite. Welches Schutzziel prüfst du damit?",
+   "erklaerung": "Ein gleicher Hashwert zeigt, dass die Datei unverändert ist. Unveränderte, vollständige Daten = Integrität.",
+   "schwierigkeit": 1,
+   "einstufung": true,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Integrität",
+     "richtig": true
+    },
+    {
+     "text": "Vertraulichkeit",
+     "richtig": false
+    },
+    {
+     "text": "Verfügbarkeit",
+     "richtig": false
+    },
+    {
+     "text": "Anonymität",
+     "richtig": false
+    }
+   ],
+   "lektion": "SEC-L1"
+  },
+  {
+   "schluessel": "SEC-02",
+   "thema": "sicherheit",
+   "text": "Anna möchte Ben eine E-Mail asymmetrisch verschlüsselt schicken. Mit welchem Schlüssel verschlüsselt Anna?",
+   "erklaerung": "Verschlüsselt wird immer mit dem öffentlichen Schlüssel des Empfängers. Nur Ben kann dann mit seinem privaten Schlüssel entschlüsseln.",
+   "schwierigkeit": 2,
+   "einstufung": true,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Mit Bens öffentlichem Schlüssel",
+     "richtig": true
+    },
+    {
+     "text": "Mit Bens privatem Schlüssel",
+     "richtig": false
+    },
+    {
+     "text": "Mit Annas privatem Schlüssel",
+     "richtig": false
+    },
+    {
+     "text": "Mit Annas öffentlichem Schlüssel",
+     "richtig": false
+    }
+   ],
+   "lektion": "SEC-L2"
+  },
+  {
+   "schluessel": "SEC-03",
+   "thema": "sicherheit",
+   "text": "Wie wird eine digitale Signatur erzeugt?",
+   "erklaerung": "Signieren = Hash bilden und mit dem eigenen privaten Schlüssel verschlüsseln. Jeder kann mit dem öffentlichen Schlüssel des Absenders prüfen. Das sichert Integrität und Authentizität.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Der Hashwert der Nachricht wird mit dem privaten Schlüssel des Absenders verschlüsselt",
+     "richtig": true
+    },
+    {
+     "text": "Die Nachricht wird mit dem öffentlichen Schlüssel des Empfängers verschlüsselt",
+     "richtig": false
+    },
+    {
+     "text": "Der Hashwert wird mit dem öffentlichen Schlüssel des Absenders verschlüsselt",
+     "richtig": false
+    },
+    {
+     "text": "Absender und Empfänger nutzen einen gemeinsamen geheimen Schlüssel",
+     "richtig": false
+    }
+   ],
+   "lektion": "SEC-L3"
+  },
+  {
+   "schluessel": "SEC-04",
+   "thema": "sicherheit",
+   "text": "Welche Kombinationen sind echte Zwei-Faktor-Authentisierung?",
+   "erklaerung": "2FA braucht zwei verschiedene Faktor-Arten: Wissen (Passwort, PIN), Besitz (Smartphone, Karte), Sein (Biometrie). Passwort + Sicherheitsfrage sind beides Wissen, Finger + Gesicht beides Sein.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Passwort und Code aus einer Authenticator-App auf dem Smartphone",
+     "richtig": true
+    },
+    {
+     "text": "Chipkarte und PIN",
+     "richtig": true
+    },
+    {
+     "text": "Passwort und Sicherheitsfrage",
+     "richtig": false
+    },
+    {
+     "text": "Fingerabdruck und Gesichtserkennung",
+     "richtig": false
+    }
+   ],
+   "lektion": "SEC-L4"
+  },
+  {
+   "schluessel": "SEC-05",
+   "thema": "sicherheit",
+   "text": "Montag Vollsicherung, Dienstag bis Donnerstag jeweils inkrementelle Sicherung. Freitag früh fällt der Server aus. Was brauchst du zur Wiederherstellung?",
+   "erklaerung": "Inkrementell sichert nur die Änderungen seit der letzten Sicherung (egal welcher Art). Deshalb brauchst du die Vollsicherung plus alle Inkremente in der richtigen Reihenfolge.",
+   "schwierigkeit": 2,
+   "einstufung": true,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Vollsicherung Montag und die inkrementellen Sicherungen von Dienstag, Mittwoch und Donnerstag",
+     "richtig": true
+    },
+    {
+     "text": "Vollsicherung Montag und nur die Sicherung vom Donnerstag",
+     "richtig": false
+    },
+    {
+     "text": "Nur die Sicherung vom Donnerstag",
+     "richtig": false
+    },
+    {
+     "text": "Nur die Vollsicherung vom Montag",
+     "richtig": false
+    }
+   ],
+   "lektion": "SEC-L5"
+  },
+  {
+   "schluessel": "SEC-06",
+   "thema": "sicherheit",
+   "text": "Montag Vollsicherung, Dienstag bis Donnerstag jeweils differenzielle Sicherung. Freitag früh fällt der Server aus. Was brauchst du zur Wiederherstellung?",
+   "erklaerung": "Differenziell sichert alle Änderungen seit der letzten Vollsicherung. Die letzte differenzielle Sicherung enthält also alles, was du zusätzlich zur Vollsicherung brauchst.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Vollsicherung Montag und die Sicherung vom Donnerstag",
+     "richtig": true
+    },
+    {
+     "text": "Vollsicherung Montag und alle Sicherungen Dienstag bis Donnerstag",
+     "richtig": false
+    },
+    {
+     "text": "Nur die Sicherung vom Donnerstag",
+     "richtig": false
+    },
+    {
+     "text": "Nur die Vollsicherung vom Montag",
+     "richtig": false
+    }
+   ],
+   "lektion": "SEC-L5"
+  },
+  {
+   "schluessel": "SEC-07",
+   "thema": "sicherheit",
+   "text": "Wie heißt Schadsoftware, die Daten auf einem System verschlüsselt und für die Entschlüsselung Geld verlangt?",
+   "erklaerung": "Ransom = Lösegeld. Bester Schutz: aktuelle Offline- bzw. unveränderliche Backups.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ransomware",
+     "richtig": true
+    },
+    {
+     "text": "Spyware",
+     "richtig": false
+    },
+    {
+     "text": "Wurm",
+     "richtig": false
+    },
+    {
+     "text": "Rootkit",
+     "richtig": false
+    }
+   ],
+   "lektion": "SEC-L7"
+  },
+  {
+   "schluessel": "SEC-08",
+   "thema": "sicherheit",
+   "text": "Welche dieser Angaben sind personenbezogene Daten im Sinne der DSGVO?",
+   "erklaerung": "Personenbezogen ist alles, was sich einer bestimmten oder bestimmbaren Person zuordnen lässt. IP-Adresse und Personalnummer machen eine Person bestimmbar. Unternehmenszahlen und anonyme Durchschnitte nicht.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Die IP-Adresse eines Kunden",
+     "richtig": true
+    },
+    {
+     "text": "Die Personalnummer einer Mitarbeiterin",
+     "richtig": true
+    },
+    {
+     "text": "Der Jahresumsatz des Unternehmens",
+     "richtig": false
+    },
+    {
+     "text": "Das Durchschnittsalter aller 300 Beschäftigten",
+     "richtig": false
+    }
+   ],
+   "lektion": "SEC-L6"
+  },
+  {
+   "schluessel": "SEC-09",
+   "thema": "sicherheit",
+   "text": "Eine Arztpraxis speichert Diagnosen ihrer Patienten. Wie stuft die DSGVO diese Daten ein?",
+   "erklaerung": "Gesundheitsdaten, aber auch z. B. biometrische Daten, Religion oder Gewerkschaftszugehörigkeit sind besondere Kategorien. Ihre Verarbeitung ist grundsätzlich verboten, außer es greift eine Ausnahme wie die Behandlung durch Ärzte.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Als besondere Kategorie personenbezogener Daten mit erhöhtem Schutz (Art. 9)",
+     "richtig": true
+    },
+    {
+     "text": "Als öffentliche Daten",
+     "richtig": false
+    },
+    {
+     "text": "Als anonyme Daten",
+     "richtig": false
+    },
+    {
+     "text": "Als gewöhnliche Stammdaten ohne besondere Regeln",
+     "richtig": false
+    }
+   ],
+   "lektion": "SEC-L6"
+  },
+  {
+   "schluessel": "SEC-10",
+   "thema": "sicherheit",
+   "text": "Was ist das Hauptproblem rein symmetrischer Verschlüsselung?",
+   "erklaerung": "Symmetrisch ist schnell, aber beide brauchen denselben geheimen Schlüssel. Deshalb kombiniert man in der Praxis (z. B. TLS): asymmetrisch für den Schlüsselaustausch, symmetrisch für die Daten = hybride Verschlüsselung.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Der gemeinsame Schlüssel muss sicher zwischen den Partnern ausgetauscht werden",
+     "richtig": true
+    },
+    {
+     "text": "Sie ist deutlich langsamer als asymmetrische Verschlüsselung",
+     "richtig": false
+    },
+    {
+     "text": "Sie lässt sich grundsätzlich nicht für große Dateien nutzen",
+     "richtig": false
+    },
+    {
+     "text": "Sie braucht immer ein Zertifikat einer CA",
+     "richtig": false
+    }
+   ],
+   "lektion": "SEC-L2"
+  },
+  {
+   "schluessel": "SEC-11",
+   "thema": "sicherheit",
+   "text": "Ein Server bekommt ein RAID 1. Welches Schutzziel wird damit vor allem verbessert?",
+   "erklaerung": "Fällt eine Platte aus, läuft der Server mit der gespiegelten weiter. Das sichert die Verfügbarkeit.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "SEC-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Verfügbarkeit",
+     "richtig": true
+    },
+    {
+     "text": "Vertraulichkeit",
+     "richtig": false
+    },
+    {
+     "text": "Integrität",
+     "richtig": false
+    },
+    {
+     "text": "Authentizität",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-12",
+   "thema": "sicherheit",
+   "text": "Die Festplatten aller Notebooks werden mit BitLocker verschlüsselt. Welches Schutzziel steht im Vordergrund, wenn ein Notebook gestohlen wird?",
+   "erklaerung": "Der Dieb kann die Daten nicht lesen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "SEC-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Vertraulichkeit",
+     "richtig": true
+    },
+    {
+     "text": "Verfügbarkeit",
+     "richtig": false
+    },
+    {
+     "text": "Integrität",
+     "richtig": false
+    },
+    {
+     "text": "Wirtschaftlichkeit",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-13",
+   "thema": "sicherheit",
+   "text": "Ein Serverraum bekommt eine USV (unterbrechungsfreie Stromversorgung). Welches Schutzziel wird gestärkt?",
+   "erklaerung": "Die USV überbrückt kurze Stromausfälle und ermöglicht ein sauberes Herunterfahren. Nebeneffekt: weniger Datenverlust durch abruptes Ausschalten.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "SEC-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Verfügbarkeit",
+     "richtig": true
+    },
+    {
+     "text": "Vertraulichkeit",
+     "richtig": false
+    },
+    {
+     "text": "Integrität",
+     "richtig": false
+    },
+    {
+     "text": "Datenminimierung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-14",
+   "thema": "sicherheit",
+   "text": "Was bedeutet das Schutzziel Authentizität?",
+   "erklaerung": "Authentizität beantwortet: Kommt das wirklich von dem, der es behauptet?",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "SEC-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Die Echtheit einer Quelle oder eines Absenders ist nachweisbar",
+     "richtig": true
+    },
+    {
+     "text": "Daten sind jederzeit abrufbar",
+     "richtig": false
+    },
+    {
+     "text": "Nur Berechtigte können Daten lesen",
+     "richtig": false
+    },
+    {
+     "text": "Daten werden möglichst sparsam erhoben",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-15",
+   "thema": "sicherheit",
+   "text": "Wie funktioniert hybride Verschlüsselung, z. B. bei HTTPS?",
+   "erklaerung": "So kombiniert man schnellen Datentransfer (symmetrisch) mit sicherem Schlüsselaustausch (asymmetrisch).",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "SEC-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Die Daten werden symmetrisch verschlüsselt; der Sitzungsschlüssel wird asymmetrisch übertragen",
+     "richtig": true
+    },
+    {
+     "text": "Die Daten werden zuerst gehasht und dann asymmetrisch verschlüsselt",
+     "richtig": false
+    },
+    {
+     "text": "Jedes Datenpaket wird abwechselnd symmetrisch und asymmetrisch verschlüsselt",
+     "richtig": false
+    },
+    {
+     "text": "Beide Seiten nutzen dauerhaft denselben, fest vereinbarten Schlüssel",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-16",
+   "thema": "sicherheit",
+   "text": "10 Personen wollen paarweise vertraulich kommunizieren, und zwar nur symmetrisch. Wie viele Schlüssel werden insgesamt benötigt?",
+   "erklaerung": "Jedes Paar braucht einen eigenen Schlüssel: n·(n−1)/2 = 10·9/2 = 45.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "SEC-L2",
+   "typ": "zahl",
+   "loesung": 45,
+   "toleranz": 0,
+   "einheit": "Schlüssel"
+  },
+  {
+   "schluessel": "SEC-17",
+   "thema": "sicherheit",
+   "text": "Dieselben 10 Personen nutzen stattdessen asymmetrische Verschlüsselung. Wie viele Schlüssel gibt es insgesamt?",
+   "erklaerung": "Jede Person hat ein Schlüsselpaar: 2·n = 20. Das skaliert viel besser.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "SEC-L2",
+   "typ": "zahl",
+   "loesung": 20,
+   "toleranz": 0,
+   "einheit": "Schlüssel"
+  },
+  {
+   "schluessel": "SEC-18",
+   "thema": "sicherheit",
+   "text": "Ben hat von Anna eine Mail bekommen, die mit Bens öffentlichem Schlüssel verschlüsselt ist. Womit entschlüsselt Ben?",
+   "erklaerung": "Was mit einem öffentlichen Schlüssel verschlüsselt wurde, kann nur der passende private Schlüssel entschlüsseln.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "SEC-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Mit seinem eigenen privaten Schlüssel",
+     "richtig": true
+    },
+    {
+     "text": "Mit Annas öffentlichem Schlüssel",
+     "richtig": false
+    },
+    {
+     "text": "Mit Annas privatem Schlüssel",
+     "richtig": false
+    },
+    {
+     "text": "Mit seinem eigenen öffentlichen Schlüssel",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-19",
+   "thema": "sicherheit",
+   "text": "Welche Aussagen über Hashfunktionen wie SHA-256 stimmen?",
+   "erklaerung": "Hashen ist eine Einwegfunktion, keine Verschlüsselung. Es gibt kein Entschlüsseln.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "SEC-L3",
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Gleiche Eingabe ergibt immer den gleichen Hashwert",
+     "richtig": true
+    },
+    {
+     "text": "Der Hashwert hat immer die gleiche Länge",
+     "richtig": true
+    },
+    {
+     "text": "Aus dem Hashwert lässt sich die Eingabe zurückrechnen",
+     "richtig": false
+    },
+    {
+     "text": "Hashfunktionen eignen sich, um vertrauliche Daten für den Versand zu verschlüsseln",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-20",
+   "thema": "sicherheit",
+   "text": "Womit prüft der Empfänger eine digitale Signatur?",
+   "erklaerung": "Signiert wurde mit dem privaten Schlüssel des Absenders, geprüft wird mit dessen öffentlichem Schlüssel.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "SEC-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Mit dem öffentlichen Schlüssel des Absenders",
+     "richtig": true
+    },
+    {
+     "text": "Mit seinem eigenen privaten Schlüssel",
+     "richtig": false
+    },
+    {
+     "text": "Mit dem privaten Schlüssel des Absenders",
+     "richtig": false
+    },
+    {
+     "text": "Mit einem gemeinsamen symmetrischen Schlüssel",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-21",
+   "thema": "sicherheit",
+   "text": "Was bestätigt ein digitales Zertifikat (z. B. für einen Webserver)?",
+   "erklaerung": "Ohne Zertifikat könnte ein Angreifer seinen eigenen öffentlichen Schlüssel unterschieben (Man-in-the-Middle).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "SEC-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Dass ein öffentlicher Schlüssel zu einer bestimmten Identität gehört, bestätigt durch eine Zertifizierungsstelle",
+     "richtig": true
+    },
+    {
+     "text": "Dass der Server virenfrei ist",
+     "richtig": false
+    },
+    {
+     "text": "Dass die Webseite DSGVO-konform ist",
+     "richtig": false
+    },
+    {
+     "text": "Dass der private Schlüssel öffentlich hinterlegt ist",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-22",
+   "thema": "sicherheit",
+   "text": "Wie sollten Passwörter in einer Datenbank gespeichert werden?",
+   "erklaerung": "Ein Salt verhindert vorberechnete Tabellen (Rainbow Tables). Langsame Verfahren bremsen Brute-Force-Angriffe.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "SEC-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Als Hash mit Salt, berechnet mit einem langsamen Verfahren wie bcrypt oder Argon2",
+     "richtig": true
+    },
+    {
+     "text": "Im Klartext, damit der Support helfen kann",
+     "richtig": false
+    },
+    {
+     "text": "Mit AES verschlüsselt, der Schlüssel liegt auf demselben Server",
+     "richtig": false
+    },
+    {
+     "text": "Als einfacher MD5-Hash ohne Salt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-23",
+   "thema": "sicherheit",
+   "text": "Welches Passwort ist am sichersten?",
+   "erklaerung": "Länge schlägt Komplexität. Bekannte Muster wie P@ssw0rd, Namen mit Geburtsjahr oder Tastaturfolgen stehen in jeder Angriffsliste.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "SEC-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Kaffee-Tasse-Wolke-Fahrrad-42",
+     "richtig": true
+    },
+    {
+     "text": "P@ssw0rd!",
+     "richtig": false
+    },
+    {
+     "text": "Benny1990",
+     "richtig": false
+    },
+    {
+     "text": "qwertz123",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-24",
+   "thema": "sicherheit",
+   "text": "Was ist der wichtigste Vorteil eines Passwortmanagers?",
+   "erklaerung": "Wird ein Dienst gehackt, sind die anderen Konten nicht betroffen. Den Manager selbst mit starkem Master-Passwort und 2FA schützen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "SEC-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Man kann für jeden Dienst ein eigenes langes Passwort nutzen, ohne es sich zu merken",
+     "richtig": true
+    },
+    {
+     "text": "Man braucht überhaupt kein Passwort mehr",
+     "richtig": false
+    },
+    {
+     "text": "Passwörter werden automatisch an Kollegen verteilt",
+     "richtig": false
+    },
+    {
+     "text": "Er ersetzt die Firewall",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-25",
+   "thema": "sicherheit",
+   "text": "Woran erkennst du eine Phishing-Mail?",
+   "erklaerung": "Im Zweifel nicht klicken, sondern über einen bekannten Weg (Telefon, Lesezeichen) nachfragen und die IT informieren.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "SEC-L7",
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Die Absenderadresse passt nicht zum angeblichen Unternehmen",
+     "richtig": true
+    },
+    {
+     "text": "Es wird Zeitdruck oder eine Drohung aufgebaut",
+     "richtig": true
+    },
+    {
+     "text": "Der Link führt auf eine fremde, ähnlich klingende Domain",
+     "richtig": true
+    },
+    {
+     "text": "Die Mail kommt von deinem Chef aus dem internen Ticketsystem, das du täglich nutzt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-26",
+   "thema": "sicherheit",
+   "text": "Was unterscheidet einen Wurm von einem Virus?",
+   "erklaerung": "Viren brauchen eine Wirtsdatei, die ausgeführt wird. Würmer nutzen Sicherheitslücken im Netz.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "SEC-L7",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ein Wurm verbreitet sich selbstständig über Netzwerke, ohne dass ein Programm gestartet werden muss",
+     "richtig": true
+    },
+    {
+     "text": "Ein Wurm befällt nur Smartphones",
+     "richtig": false
+    },
+    {
+     "text": "Ein Wurm verschlüsselt immer Daten",
+     "richtig": false
+    },
+    {
+     "text": "Ein Wurm ist harmlos",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-27",
+   "thema": "sicherheit",
+   "text": "Eine Person ruft an, gibt sich als IT-Support aus und bittet um dein Passwort, um ein „dringendes Problem“ zu lösen. Wie nennt man das?",
+   "erklaerung": "Social Engineering greift den Menschen an, nicht die Technik. Richtig: Passwort nie herausgeben, Rückruf über bekannte Nummer.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "SEC-L7",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Social Engineering",
+     "richtig": true
+    },
+    {
+     "text": "Brute-Force-Angriff",
+     "richtig": false
+    },
+    {
+     "text": "Denial of Service",
+     "richtig": false
+    },
+    {
+     "text": "SQL-Injection",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-28",
+   "thema": "sicherheit",
+   "text": "Was besagt die 3-2-1-Backup-Regel?",
+   "erklaerung": "Die externe (oder offline) Kopie schützt vor Brand, Diebstahl und Ransomware.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "SEC-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "3 Kopien der Daten, auf 2 verschiedenen Medien, 1 davon außer Haus",
+     "richtig": true
+    },
+    {
+     "text": "3 Backups pro Tag, 2 pro Woche, 1 pro Monat",
+     "richtig": false
+    },
+    {
+     "text": "3 Festplatten im RAID, 2 Server, 1 Cloud",
+     "richtig": false
+    },
+    {
+     "text": "Backups 3 Jahre aufbewahren, 2-mal prüfen, 1-mal löschen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-29",
+   "thema": "sicherheit",
+   "text": "Was beschreibt das Generationenprinzip (Großvater-Vater-Sohn) bei der Datensicherung?",
+   "erklaerung": "So kann man auch auf Stände von vor Wochen oder Monaten zurückgreifen, ohne unendlich viele Medien zu brauchen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "SEC-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Tages-, Wochen- und Monatssicherungen werden rotiert und unterschiedlich lange aufbewahrt",
+     "richtig": true
+    },
+    {
+     "text": "Alte Server werden an jüngere Mitarbeiter weitergegeben",
+     "richtig": false
+    },
+    {
+     "text": "Es wird nur die jeweils neueste Sicherung aufgehoben",
+     "richtig": false
+    },
+    {
+     "text": "Drei Personen müssen jedes Backup freigeben",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-30",
+   "thema": "sicherheit",
+   "text": "Was ist ein Vorteil der inkrementellen gegenüber der differenziellen Sicherung?",
+   "erklaerung": "Inkrementell sichert nur die Änderungen seit dem letzten Backup. Der Preis: Bei der Wiederherstellung braucht man alle Inkremente.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "SEC-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Die einzelnen Sicherungen sind kleiner und schneller erstellt",
+     "richtig": true
+    },
+    {
+     "text": "Die Wiederherstellung ist einfacher",
+     "richtig": false
+    },
+    {
+     "text": "Man braucht keine Vollsicherung",
+     "richtig": false
+    },
+    {
+     "text": "Sie ist automatisch verschlüsselt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-31",
+   "thema": "sicherheit",
+   "text": "Welche Rechte haben betroffene Personen nach der DSGVO?",
+   "erklaerung": "Weitere Rechte: Einschränkung der Verarbeitung, Datenübertragbarkeit, Widerspruch.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "SEC-L6",
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Auskunft über die gespeicherten Daten",
+     "richtig": true
+    },
+    {
+     "text": "Löschung der Daten",
+     "richtig": true
+    },
+    {
+     "text": "Berichtigung falscher Daten",
+     "richtig": true
+    },
+    {
+     "text": "Einsicht in die Personalakten von Kollegen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-32",
+   "thema": "sicherheit",
+   "text": "Innerhalb wie vieler Stunden muss ein Unternehmen eine Datenpanne mit Risiko für Betroffene der Aufsichtsbehörde melden?",
+   "erklaerung": "Art. 33 DSGVO: unverzüglich, möglichst innerhalb von 72 Stunden nach Bekanntwerden.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "SEC-L6",
+   "typ": "zahl",
+   "loesung": 72,
+   "toleranz": 0,
+   "einheit": "Stunden"
+  },
+  {
+   "schluessel": "SEC-33",
+   "thema": "sicherheit",
+   "text": "Wann braucht eine Firma einen Auftragsverarbeitungsvertrag (AVV)?",
+   "erklaerung": "Der AVV regelt u. a. Zweck, Sicherheitsmaßnahmen und Weisungsrecht. Beispiele: Hosting, Fernwartung, externe Lohnabrechnung, E-Mail-Dienst.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "SEC-L6",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Wenn ein externer Dienstleister in ihrem Auftrag personenbezogene Daten verarbeitet, z. B. ein Cloud-Hoster",
+     "richtig": true
+    },
+    {
+     "text": "Bei jedem Kaufvertrag über Hardware",
+     "richtig": false
+    },
+    {
+     "text": "Wenn Mitarbeiter im Homeoffice arbeiten",
+     "richtig": false
+    },
+    {
+     "text": "Nur bei Verträgen mit Behörden",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-34",
+   "thema": "sicherheit",
+   "text": "Ein Onlineshop fragt bei der Newsletter-Anmeldung nach Geburtsdatum, Telefonnummer und Familienstand. Gegen welchen DSGVO-Grundsatz verstößt das am deutlichsten?",
+   "erklaerung": "Für einen Newsletter reicht die E-Mail-Adresse. Es dürfen nur die Daten erhoben werden, die für den Zweck nötig sind.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "SEC-L6",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Datenminimierung",
+     "richtig": true
+    },
+    {
+     "text": "Verfügbarkeit",
+     "richtig": false
+    },
+    {
+     "text": "Integrität",
+     "richtig": false
+    },
+    {
+     "text": "Recht auf Datenübertragbarkeit",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-35",
+   "thema": "sicherheit",
+   "text": "In einer Auswertung werden Namen durch Kundennummern ersetzt. Die Zuordnungstabelle liegt in der Buchhaltung. Wie sind die Daten einzustufen?",
+   "erklaerung": "Mit der Zuordnungstabelle lassen sich die Personen wieder bestimmen. Anonym wäre es erst, wenn das niemandem mehr möglich ist.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "SEC-L6",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Pseudonymisiert, also weiterhin personenbezogen",
+     "richtig": true
+    },
+    {
+     "text": "Anonymisiert, die DSGVO gilt nicht mehr",
+     "richtig": false
+    },
+    {
+     "text": "Verschlüsselt",
+     "richtig": false
+    },
+    {
+     "text": "Öffentlich",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-36",
+   "thema": "sicherheit",
+   "text": "Was ist die Hauptaufgabe einer Firewall?",
+   "erklaerung": "Eine Firewall kontrolliert, welche Verbindungen zwischen Netzen (z. B. Internet und LAN) erlaubt sind.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "SEC-L7",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Datenverkehr anhand von Regeln erlauben oder blockieren",
+     "richtig": true
+    },
+    {
+     "text": "Viren aus Dateien entfernen",
+     "richtig": false
+    },
+    {
+     "text": "Daten auf eine zweite Festplatte spiegeln",
+     "richtig": false
+    },
+    {
+     "text": "IP-Adressen automatisch vergeben",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "SEC-37",
+   "thema": "sicherheit",
+   "text": "Eine Mitarbeiterin arbeitet im Homeoffice und soll sicher auf den Dateiserver der Firma zugreifen. Welche Lösung ist geeignet?",
+   "erklaerung": "Ein VPN schützt die Verbindung über das unsichere Internet (Vertraulichkeit und Integrität).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "SEC-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ein VPN, das einen verschlüsselten Tunnel ins Firmennetz aufbaut",
+     "richtig": true
+    },
+    {
+     "text": "Den Dateiserver direkt ins Internet freigeben",
+     "richtig": false
+    },
+    {
+     "text": "Dateien per unverschlüsselter E-Mail schicken",
+     "richtig": false
+    },
+    {
+     "text": "Das WLAN-Passwort der Firma weitergeben",
+     "richtig": false
+    }
+   ]
+  }
+ ]
+}

@@ -1,9 +1,11 @@
+from django.contrib import messages
 from django.contrib.auth import login
+from django.contrib.auth.decorators import login_required
 from django.db import transaction
 from django.db.models import F
 from django.shortcuts import redirect, render
 
-from .forms import RegistrierungsForm
+from .forms import ProfilForm, RegistrierungsForm
 from .models import InviteCode, Profil
 
 
@@ -24,3 +26,15 @@ def registrieren(request):
         login(request, user)
         return redirect("einstufung_start")
     return render(request, "accounts/registrieren.html", {"form": form})
+
+
+@login_required
+def profil(request):
+    from lernen.belohnung import level_aus_xp
+    p, _ = Profil.objects.get_or_create(user=request.user)
+    form = ProfilForm(request.POST or None, instance=p, level=level_aus_xp(p.xp)[0])
+    if request.method == "POST" and form.is_valid():
+        form.save()
+        messages.success(request, "Einstellungen gespeichert.")
+        return redirect("profil")
+    return render(request, "accounts/profil.html", {"form": form})

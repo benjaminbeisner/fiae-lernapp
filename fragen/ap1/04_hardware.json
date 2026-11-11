@@ -1,0 +1,638 @@
+{
+ "lektionen": [
+  {
+   "schluessel": "HW-L1",
+   "thema": "hardware",
+   "titel": "Schnittstellen am Arbeitsplatz",
+   "stufe": 1,
+   "inhalt": "| Anschluss | Wofür | Merkmale |\n|---|---|---|\n| **USB-C** | Daten, Laden, oft Bild | verdrehsicher; Bild nur mit DisplayPort Alt Mode, Laden mit Power Delivery (bis 240 W) |\n| **Thunderbolt 4** | Daten, Bild, Laden, Docking | USB-C-Stecker, 40 Gbit/s |\n| **HDMI** | Bild + Ton | Monitore, Beamer, TVs |\n| **DisplayPort** | Bild + Ton | Monitore, Daisy-Chaining mehrerer Monitore möglich |\n| **RJ45** | Netzwerk (Ethernet) | Kupferkabel, z. B. Cat 6 |\n\nEine **Dockingstation** verbindet ein Notebook über ein einziges Kabel mit Monitoren, Netzwerk, Tastatur, Maus und Netzteil.\n\nGängige Auflösungen: Full HD = 1920 × 1080, WQHD = 2560 × 1440, 4K/UHD = 3840 × 2160.",
+   "merksatz": "USB-C ist nur der Stecker. Was darüber geht (Bild, Laden, Tempo), hängt vom Gerät und Kabel ab.",
+   "bild": "",
+   "reihenfolge": 0
+  },
+  {
+   "schluessel": "HW-L2",
+   "thema": "hardware",
+   "titel": "CPU, Arbeitsspeicher und Massenspeicher",
+   "stufe": 1,
+   "inhalt": "**CPU:** Mehr **Kerne** bearbeiten mehr Aufgaben gleichzeitig. Mit Hyper-Threading (SMT) kann jeder Kern zwei **Threads** bearbeiten: 8 Kerne → 16 Threads.\n\n**RAM (Arbeitsspeicher):** schnell, aber **flüchtig**: ohne Strom sind die Daten weg.\n- Typen sind nicht kompatibel: DDR5 passt nicht in einen DDR4-Steckplatz.\n- Unterschiedlich schnelle Riegel laufen gemeinsam im **langsamsten** Takt.\n- **Dual-Channel:** Zwei gleiche Riegel (2 × 8 GB) sind schneller als einer (1 × 16 GB), weil zwei Speicherkanäle parallel arbeiten.\n\n**Massenspeicher:**\n| | HDD | SATA-SSD | NVMe-SSD |\n|---|---|---|---|\n| Technik | Magnetscheiben, Mechanik | Flash | Flash, über PCIe angebunden |\n| Tempo | langsam | ca. 550 MB/s | mehrere GB/s |\n| Vorteil | günstig pro TB | leise, robust | sehr schnell |",
+   "merksatz": "RAM flüchtig, SSD/HDD nicht. Gemischte RAM-Riegel → langsamster Takt.",
+   "bild": "",
+   "reihenfolge": 1
+  },
+  {
+   "schluessel": "HW-L3",
+   "thema": "hardware",
+   "titel": "RAID-Level",
+   "stufe": 2,
+   "inhalt": "RAID kombiniert mehrere Festplatten für mehr **Ausfallsicherheit** und/oder **Tempo**. RAID ersetzt **kein** Backup.\n\n| Level | Prinzip | min. Platten | nutzbar | darf ausfallen |\n|---|---|---|---|---|\n| **RAID 0** | Striping | 2 | n × Größe | keine |\n| **RAID 1** | Spiegelung | 2 | 1 × Größe | 1 |\n| **RAID 5** | Striping + verteilte Parität | 3 | (n − 1) × Größe | 1 |\n| **RAID 6** | doppelte Parität | 4 | (n − 2) × Größe | 2 |\n| **RAID 10** | Spiegel, dann Striping | 4 | n ÷ 2 × Größe | 1 je Spiegelpaar |\n\nBeispiel: 4 Platten à 4 TB in RAID 5 → 3 × 4 TB = **12 TB** nutzbar.",
+   "merksatz": "RAID 5: eine Platte für Parität. RAID 6: zwei. RAID 1/10: die Hälfte.",
+   "bild": "",
+   "reihenfolge": 2
+  },
+  {
+   "schluessel": "HW-L4",
+   "thema": "hardware",
+   "titel": "Strom und Energiekosten rechnen",
+   "stufe": 2,
+   "inhalt": "**Leistung:** P = U × I (Watt = Volt × Ampere). Umgestellt: I = P ÷ U.\n\n**Energie:** kWh = Leistung in **kW** × Stunden. Erst Watt durch 1.000 teilen!\n\n**Kosten:** kWh × Preis pro kWh.\n\nBeispiel: Server mit 400 W läuft rund um die Uhr ein Jahr lang:\n0,4 kW × 24 h × 365 = 3.504 kWh. × 0,30 € = **1.051,20 €**.\n\n**Einsparung:** Differenz der Leistungen × Betriebsstunden × Preis.\n\n**Netzteil dimensionieren:** Summe der Leistungsaufnahme aller Komponenten + Reserve (oft 20–30 %), dann das nächstgrößere übliche Netzteil wählen. Ein Netzteil arbeitet bei mittlerer Last am effizientesten (80-PLUS-Zertifikat beachten).",
+   "merksatz": "Watt ÷ 1.000 = kW. kW × Stunden = kWh. kWh × Preis = Kosten.",
+   "bild": "",
+   "reihenfolge": 3
+  },
+  {
+   "schluessel": "HW-L5",
+   "thema": "hardware",
+   "titel": "Ergonomie und Green IT",
+   "stufe": 1,
+   "inhalt": "**Ergonomischer Bildschirmarbeitsplatz** (Arbeitsstättenverordnung):\n- Bildschirm etwa eine Armlänge entfernt (ca. 50–70 cm), Oberkante auf oder leicht unter Augenhöhe\n- Seitlich zum Fenster aufstellen, um Blendung und Spiegelungen zu vermeiden\n- Höhenverstellbarer Tisch und Stuhl, Unterarme etwa waagerecht\n- Bildschirmarbeit regelmäßig durch andere Tätigkeiten oder Pausen unterbrechen\n\n**Green IT** heißt: IT über den ganzen Lebenszyklus umweltfreundlich nutzen.\n- Energiesparende Geräte kaufen (Energy Star, Blauer Engel, TCO Certified)\n- Energiesparmodus und automatisches Abschalten nutzen. Ein Bildschirmschoner spart **keine** Energie.\n- Geräte länger nutzen, reparieren, fachgerecht recyceln (Elektroschrott, Datenträger vorher sicher löschen)\n- Virtualisierung: weniger physische Server",
+   "merksatz": "Bildschirm seitlich zum Fenster, Oberkante auf Augenhöhe, eine Armlänge Abstand.",
+   "bild": "",
+   "reihenfolge": 4
+  }
+ ],
+ "fragen": [
+  {
+   "schluessel": "HW-01",
+   "thema": "hardware",
+   "text": "Du baust einen DDR4-3200- und einen DDR4-2666-Riegel zusammen in einen PC ein. Was passiert normalerweise?",
+   "erklaerung": "Der Speichercontroller stellt alle Module auf den gemeinsamen, langsamsten Takt ein. DDR5 dagegen passt gar nicht in einen DDR4-Steckplatz.",
+   "schwierigkeit": 2,
+   "einstufung": true,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Beide laufen mit dem langsameren Takt (2666)",
+     "richtig": true
+    },
+    {
+     "text": "Jeder Riegel läuft mit seinem eigenen Takt",
+     "richtig": false
+    },
+    {
+     "text": "Beide laufen mit 3200",
+     "richtig": false
+    },
+    {
+     "text": "Der PC startet grundsätzlich nicht",
+     "richtig": false
+    }
+   ],
+   "lektion": "HW-L2"
+  },
+  {
+   "schluessel": "HW-02",
+   "thema": "hardware",
+   "text": "15 PCs mit je 120 W laufen 8 Stunden am Tag an 220 Tagen im Jahr. 1 kWh kostet 0,30 €. Wie hoch sind die Stromkosten pro Jahr?",
+   "erklaerung": "15 × 0,12 kW × 8 h × 220 = 3.168 kWh. 3.168 kWh × 0,30 € = 950,40 €. Tipp: W zuerst in kW umrechnen.",
+   "schwierigkeit": 2,
+   "einstufung": true,
+   "typ": "zahl",
+   "loesung": 950.4,
+   "toleranz": 0.01,
+   "einheit": "€",
+   "lektion": "HW-L4"
+  },
+  {
+   "schluessel": "HW-03",
+   "thema": "hardware",
+   "text": "Was beschreibt RAID 1?",
+   "erklaerung": "RAID 1 spiegelt. Nutzbar ist die Kapazität einer Platte. Wichtig: RAID erhöht die Verfügbarkeit, ersetzt aber kein Backup (gelöschte Dateien sind auf beiden Platten weg).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Spiegelung: Daten liegen identisch auf zwei Platten",
+     "richtig": true
+    },
+    {
+     "text": "Striping ohne Redundanz",
+     "richtig": false
+    },
+    {
+     "text": "Striping mit verteilter Parität",
+     "richtig": false
+    },
+    {
+     "text": "Ein Ersatz für ein Backup",
+     "richtig": false
+    }
+   ],
+   "lektion": "HW-L3"
+  },
+  {
+   "schluessel": "HW-04",
+   "thema": "hardware",
+   "text": "Ein RAID 5 besteht aus 4 Festplatten mit je 4 TB. Wie viel Speicher ist nutzbar?",
+   "erklaerung": "RAID 5: (n − 1) × Kapazität = 3 × 4 TB = 12 TB. Eine Platte darf ausfallen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 12,
+   "toleranz": 0,
+   "einheit": "TB",
+   "lektion": "HW-L3"
+  },
+  {
+   "schluessel": "HW-05",
+   "thema": "hardware",
+   "text": "Ein Gerät mit 2.300 W Leistung hängt an 230 V. Welche Stromstärke fließt?",
+   "erklaerung": "P = U × I → I = P ÷ U = 2.300 W ÷ 230 V = 10 A.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 10,
+   "toleranz": 0,
+   "einheit": "A",
+   "lektion": "HW-L4"
+  },
+  {
+   "schluessel": "HW-06",
+   "thema": "hardware",
+   "text": "Was ist der wichtigste Vorteil einer SSD gegenüber einer HDD?",
+   "erklaerung": "SSDs haben keine beweglichen Teile: schneller, leiser, stoßfester, sparsamer. HDDs sind pro TB günstiger.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Viel kürzere Zugriffszeiten, weil keine Mechanik bewegt wird",
+     "richtig": true
+    },
+    {
+     "text": "Deutlich günstigerer Preis pro TB",
+     "richtig": false
+    },
+    {
+     "text": "Unbegrenzte Schreibzyklen",
+     "richtig": false
+    },
+    {
+     "text": "Gelöschte Daten sind leichter wiederherstellbar",
+     "richtig": false
+    }
+   ],
+   "lektion": "HW-L2"
+  },
+  {
+   "schluessel": "HW-07",
+   "thema": "hardware",
+   "text": "Über welche Anschlüsse kann ein Monitor ein Bildsignal bekommen?",
+   "erklaerung": "RJ45 ist für Netzwerk, SATA für Laufwerke. USB-C überträgt Bild nur, wenn Gerät und Kabel den Alt Mode (oder Thunderbolt) unterstützen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "HDMI",
+     "richtig": true
+    },
+    {
+     "text": "DisplayPort",
+     "richtig": true
+    },
+    {
+     "text": "USB-C mit DisplayPort Alt Mode",
+     "richtig": true
+    },
+    {
+     "text": "RJ45",
+     "richtig": false
+    },
+    {
+     "text": "SATA",
+     "richtig": false
+    }
+   ],
+   "lektion": "HW-L1"
+  },
+  {
+   "schluessel": "HW-08",
+   "thema": "hardware",
+   "text": "Welche Datenrate bietet Thunderbolt 4?",
+   "erklaerung": "480 Mbit/s = USB 2.0, 5 Gbit/s = USB 3.0, 1 Gbit/s = Gigabit-Ethernet.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "HW-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "40 Gbit/s",
+     "richtig": true
+    },
+    {
+     "text": "480 Mbit/s",
+     "richtig": false
+    },
+    {
+     "text": "5 Gbit/s",
+     "richtig": false
+    },
+    {
+     "text": "1 Gbit/s",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "HW-09",
+   "thema": "hardware",
+   "text": "Ein Notebook soll über ein einziges Kabel mit Monitor, Netzwerk und Strom verbunden werden. Was ist die passende Lösung?",
+   "erklaerung": "Über USB-C/Thunderbolt laufen Bild, Daten und Strom (Power Delivery) gleichzeitig.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "HW-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Eine USB-C- bzw. Thunderbolt-Dockingstation",
+     "richtig": true
+    },
+    {
+     "text": "Ein HDMI-Kabel",
+     "richtig": false
+    },
+    {
+     "text": "Ein VGA-Adapter",
+     "richtig": false
+    },
+    {
+     "text": "Ein RJ45-Patchkabel",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "HW-10",
+   "thema": "hardware",
+   "text": "Welche Auflösung hat ein 4K-UHD-Monitor?",
+   "erklaerung": "1920 × 1080 = Full HD, 2560 × 1440 = WQHD.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "HW-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "3840 × 2160",
+     "richtig": true
+    },
+    {
+     "text": "1920 × 1080",
+     "richtig": false
+    },
+    {
+     "text": "2560 × 1440",
+     "richtig": false
+    },
+    {
+     "text": "4096 × 4096",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "HW-11",
+   "thema": "hardware",
+   "text": "Ein Prozessor hat 8 Kerne und unterstützt Hyper-Threading. Wie viele Threads kann er gleichzeitig bearbeiten?",
+   "erklaerung": "Mit Hyper-Threading bearbeitet jeder Kern 2 Threads: 8 × 2 = 16.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "HW-L2",
+   "typ": "zahl",
+   "loesung": 16,
+   "toleranz": 0,
+   "einheit": "Threads"
+  },
+  {
+   "schluessel": "HW-12",
+   "thema": "hardware",
+   "text": "Was passiert mit den Daten im Arbeitsspeicher (RAM), wenn der PC ausgeschaltet wird?",
+   "erklaerung": "Deshalb muss man Dokumente speichern, also auf die SSD/HDD schreiben.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "HW-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Sie gehen verloren, RAM ist flüchtig",
+     "richtig": true
+    },
+    {
+     "text": "Sie werden automatisch auf die SSD geschrieben",
+     "richtig": false
+    },
+    {
+     "text": "Sie bleiben im RAM erhalten",
+     "richtig": false
+    },
+    {
+     "text": "Sie werden in die Cloud hochgeladen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "HW-13",
+   "thema": "hardware",
+   "text": "Was ist der Vorteil einer NVMe-SSD gegenüber einer SATA-SSD?",
+   "erklaerung": "SATA ist auf ca. 600 MB/s begrenzt, NVMe über PCIe schafft mehrere GB/s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "HW-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Deutlich höhere Datenraten durch die Anbindung über PCIe",
+     "richtig": true
+    },
+    {
+     "text": "Sie ist immer günstiger",
+     "richtig": false
+    },
+    {
+     "text": "Sie speichert Daten auch ohne Flash-Speicher",
+     "richtig": false
+    },
+    {
+     "text": "Sie passt in jeden alten PC",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "HW-14",
+   "thema": "hardware",
+   "text": "Ein PC braucht 16 GB RAM. Warum sind 2 × 8 GB oft besser als 1 × 16 GB?",
+   "erklaerung": "Dual-Channel: Der Speichercontroller greift parallel auf zwei Kanäle zu. Nachteil: Es bleiben weniger freie Steckplätze für Aufrüstungen.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "HW-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Zwei Riegel nutzen Dual-Channel und erhöhen die Speicherbandbreite",
+     "richtig": true
+    },
+    {
+     "text": "Zwei Riegel verbrauchen weniger Strom",
+     "richtig": false
+    },
+    {
+     "text": "Ein 16-GB-Riegel wird vom Betriebssystem nicht erkannt",
+     "richtig": false
+    },
+    {
+     "text": "Es gibt keinen Unterschied",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "HW-15",
+   "thema": "hardware",
+   "text": "Was beschreibt RAID 0?",
+   "erklaerung": "RAID 0 ist schnell und nutzt die volle Kapazität, aber fällt eine Platte aus, sind alle Daten weg.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "HW-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Striping: Daten werden auf mehrere Platten verteilt, ohne Redundanz",
+     "richtig": true
+    },
+    {
+     "text": "Spiegelung auf zwei Platten",
+     "richtig": false
+    },
+    {
+     "text": "Striping mit Parität",
+     "richtig": false
+    },
+    {
+     "text": "Ein RAID ohne Festplatten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "HW-16",
+   "thema": "hardware",
+   "text": "Wie viele Festplatten braucht ein RAID 5 mindestens?",
+   "erklaerung": "Zwei für die Daten, eine (verteilt) für die Parität.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "HW-L3",
+   "typ": "zahl",
+   "loesung": 3,
+   "toleranz": 0,
+   "einheit": "Platten"
+  },
+  {
+   "schluessel": "HW-17",
+   "thema": "hardware",
+   "text": "Ein RAID 10 besteht aus 4 Platten à 2 TB. Wie viel Speicher ist nutzbar?",
+   "erklaerung": "RAID 10 spiegelt jeweils zwei Platten, die Hälfte ist nutzbar: 4 × 2 TB ÷ 2 = 4 TB.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "HW-L3",
+   "typ": "zahl",
+   "loesung": 4,
+   "toleranz": 0,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "HW-18",
+   "thema": "hardware",
+   "text": "Wie viele Festplatten dürfen in einem RAID 6 gleichzeitig ausfallen, ohne dass Daten verloren gehen?",
+   "erklaerung": "RAID 6 speichert zwei unabhängige Paritätsinformationen.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "HW-L3",
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": "Platten"
+  },
+  {
+   "schluessel": "HW-19",
+   "thema": "hardware",
+   "text": "Ein Server mit 400 W Leistungsaufnahme läuft ein Jahr lang rund um die Uhr (365 Tage). 1 kWh kostet 0,30 €. Wie hoch sind die Stromkosten?",
+   "erklaerung": "0,4 kW × 24 h × 365 = 3.504 kWh. × 0,30 € = 1.051,20 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "HW-L4",
+   "typ": "zahl",
+   "loesung": 1051.2,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "HW-20",
+   "thema": "hardware",
+   "text": "Die Komponenten eines PCs brauchen zusammen 350 W. Es soll eine Reserve von 30 % eingeplant werden. Welches Netzteil ist am besten geeignet?",
+   "erklaerung": "350 W × 1,3 = 455 W. Das nächstgrößere übliche Netzteil hat 500 W. 1.200 W wäre überdimensioniert und arbeitet ineffizient.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "HW-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "500 W",
+     "richtig": true
+    },
+    {
+     "text": "350 W",
+     "richtig": false
+    },
+    {
+     "text": "400 W",
+     "richtig": false
+    },
+    {
+     "text": "1.200 W",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "HW-21",
+   "thema": "hardware",
+   "text": "Ein alter PC braucht 150 W, ein neuer nur 60 W. Beide laufen 8 Stunden an 220 Tagen im Jahr, 1 kWh kostet 0,30 €. Wie viel Euro spart der neue PC pro Jahr?",
+   "erklaerung": "Differenz 90 W = 0,09 kW. 0,09 × 8 × 220 = 158,4 kWh. × 0,30 € = 47,52 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "HW-L4",
+   "typ": "zahl",
+   "loesung": 47.52,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "HW-22",
+   "thema": "hardware",
+   "text": "Ein Notebook-Netzteil liefert 20 V bei 3,25 A. Welche Leistung hat es?",
+   "erklaerung": "P = U × I = 20 V × 3,25 A = 65 W.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "HW-L4",
+   "typ": "zahl",
+   "loesung": 65,
+   "toleranz": 0.01,
+   "einheit": "W"
+  },
+  {
+   "schluessel": "HW-23",
+   "thema": "hardware",
+   "text": "Wie sollte ein Bildschirm am Arbeitsplatz aufgestellt sein?",
+   "erklaerung": "So vermeidet man Blendung, Spiegelungen und Nackenverspannungen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "HW-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Seitlich zum Fenster, Oberkante auf oder leicht unter Augenhöhe, ca. eine Armlänge entfernt",
+     "richtig": true
+    },
+    {
+     "text": "Mit dem Rücken zum Fenster, damit viel Licht auf den Bildschirm fällt",
+     "richtig": false
+    },
+    {
+     "text": "Möglichst nah, ca. 20 cm, damit man alles gut erkennt",
+     "richtig": false
+    },
+    {
+     "text": "Oberkante deutlich über Augenhöhe",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "HW-24",
+   "thema": "hardware",
+   "text": "Welche Maßnahmen sparen im Büro tatsächlich Energie?",
+   "erklaerung": "Bildschirmschoner halten Monitor und Grafikkarte aktiv. Stand-by verbraucht weiter Strom, besser schaltbare Steckdosenleisten.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "HW-L5",
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Energiesparmodus nach kurzer Inaktivität aktivieren",
+     "richtig": true
+    },
+    {
+     "text": "Geräte mit Energielabel wie Energy Star anschaffen",
+     "richtig": true
+    },
+    {
+     "text": "Einen animierten Bildschirmschoner einrichten",
+     "richtig": false
+    },
+    {
+     "text": "Alle Geräte nachts im Stand-by lassen statt sie auszuschalten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "HW-25",
+   "thema": "hardware",
+   "text": "Wofür steht ein Siegel wie „Blauer Engel“ oder „TCO Certified“ bei IT-Geräten?",
+   "erklaerung": "Solche Siegel helfen bei einer nachhaltigen Beschaffung (Green IT).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "HW-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Umweltfreundlichkeit, geringer Energieverbrauch und teils Ergonomie",
+     "richtig": true
+    },
+    {
+     "text": "Besonders hohe Rechenleistung",
+     "richtig": false
+    },
+    {
+     "text": "Einen Virenschutz ab Werk",
+     "richtig": false
+    },
+    {
+     "text": "Die Herkunft aus Deutschland",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "HW-26",
+   "thema": "hardware",
+   "text": "Ein Notebook wird ausgemustert. Was muss vor der Entsorgung mit der SSD passieren?",
+   "erklaerung": "Gelöschte oder schnell formatierte Daten lassen sich oft wiederherstellen. Sonst droht ein Datenschutzverstoß.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "HW-L5",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Sie muss sicher gelöscht oder physisch zerstört werden",
+     "richtig": true
+    },
+    {
+     "text": "Nichts, das Löschen der Dateien im Papierkorb reicht",
+     "richtig": false
+    },
+    {
+     "text": "Sie wird einfach formatiert, damit ist alles weg",
+     "richtig": false
+    },
+    {
+     "text": "Sie wird an Mitarbeiter verschenkt",
+     "richtig": false
+    }
+   ]
+  }
+ ]
+}

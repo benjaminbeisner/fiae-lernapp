@@ -1,0 +1,212 @@
+{
+ "lektionen": [
+  {
+   "schluessel": "EIN-L1",
+   "thema": "einheiten",
+   "titel": "Bit, Byte und Präfixe",
+   "stufe": 1,
+   "inhalt": "1 **Byte** = 8 **Bit**.\n\nEs gibt zwei Arten von Präfixen, und die Prüfung fragt genau den Unterschied ab:\n\n| dezimal (SI, Hersteller) | | binär (IEC, Betriebssystem) | |\n|---|---|---|---|\n| kB | 1.000 Byte | KiB | 1.024 Byte |\n| MB | 1.000² | MiB | 1.024² |\n| GB | 1.000³ | GiB | 1.024³ = 1.073.741.824 |\n| TB | 1.000⁴ | TiB | 1.024⁴ |\n\nDeshalb zeigt Windows bei einer 2-TB-Festplatte nur ca. 1,82 „TB“ an: Es rechnet in TiB, der Hersteller in TB.\n\n**Zahlensysteme:**\n- Binär (Basis 2): `1010` = 8 + 2 = 10\n- Hexadezimal (Basis 16, Ziffern 0–9 und A–F): `FF` = 15 · 16 + 15 = 255",
+   "merksatz": "Hersteller rechnen mit 1.000, Betriebssysteme mit 1.024.",
+   "bild": "",
+   "reihenfolge": 6
+  },
+  {
+   "schluessel": "EIN-L2",
+   "thema": "einheiten",
+   "titel": "Datenraten und Speicherbedarf",
+   "stufe": 2,
+   "inhalt": "**Datenraten** werden in **Bit** pro Sekunde angegeben (Mbit/s), Dateigrößen in **Byte**. Deshalb immer mit 8 umrechnen!\n\n**Übertragungszeit** = Datenmenge in Bit ÷ Datenrate in Bit/s.\nBeispiel: 1,5 GB über 100 Mbit/s → 1,5 · 10⁹ · 8 Bit ÷ 10⁸ Bit/s = **120 s**.\n\n**Speicherbedarf Video/Kamera** = Bitrate ÷ 8 × Sekunden.\n8 Mbit/s → 1 MB/s → pro Tag 86.400 MB = 86,4 GB.\n\n**Speicherbedarf Bild (unkomprimiert)** = Breite × Höhe × Farbtiefe in Byte.\n4000 × 3000 Pixel × 3 Byte (24 Bit) = 36.000.000 Byte = **36 MB**.\n\nMerke: 1 Tag = 86.400 s, 1 Stunde = 3.600 s.",
+   "merksatz": "Bit ÷ 8 = Byte. Netzwerk in Bit, Dateien in Byte.",
+   "bild": "",
+   "reihenfolge": 7
+  }
+ ],
+ "fragen": [
+  {
+   "schluessel": "EIN-01",
+   "thema": "einheiten",
+   "text": "Eine Festplatte hat laut Hersteller 3.000.000.000 Byte. Wie viele GiB sind das? (2 Nachkommastellen)",
+   "erklaerung": "1 GiB = 1024³ Byte = 1.073.741.824 Byte. 3.000.000.000 ÷ 1.073.741.824 ≈ 2,79 GiB. Deshalb zeigt das Betriebssystem weniger an, als auf der Packung steht (Hersteller rechnen mit 1000er-Einheiten).",
+   "schwierigkeit": 2,
+   "einstufung": true,
+   "typ": "zahl",
+   "loesung": 2.79,
+   "toleranz": 0.011,
+   "einheit": "GiB",
+   "lektion": "EIN-L1"
+  },
+  {
+   "schluessel": "EIN-02",
+   "thema": "einheiten",
+   "text": "Eine Überwachungskamera erzeugt einen Datenstrom von 8 Mbit/s. Wie viele GB (1 GB = 10⁹ Byte) entstehen an einem Tag?",
+   "erklaerung": "8 Mbit/s ÷ 8 = 1 MB/s. 1 MB/s × 86.400 s = 86.400 MB = 86,4 GB.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 86.4,
+   "toleranz": 0.01,
+   "einheit": "GB",
+   "lektion": "EIN-L2"
+  },
+  {
+   "schluessel": "EIN-03",
+   "thema": "einheiten",
+   "text": "Wie viel Byte sind 1 KiB?",
+   "erklaerung": "Kibi = 2¹⁰ = 1024. Kilo (kB) = 1000.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "1.024 Byte",
+     "richtig": true
+    },
+    {
+     "text": "1.000 Byte",
+     "richtig": false
+    },
+    {
+     "text": "1.000.000 Byte",
+     "richtig": false
+    },
+    {
+     "text": "8 Byte",
+     "richtig": false
+    }
+   ],
+   "lektion": "EIN-L1"
+  },
+  {
+   "schluessel": "EIN-04",
+   "thema": "einheiten",
+   "text": "Wie viele Byte sind 1 MB nach der dezimalen (SI-)Definition?",
+   "erklaerung": "1 MB = 1.000² Byte. 1.048.576 Byte = 1 MiB.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "EIN-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "1.000.000",
+     "richtig": true
+    },
+    {
+     "text": "1.048.576",
+     "richtig": false
+    },
+    {
+     "text": "1.024",
+     "richtig": false
+    },
+    {
+     "text": "8.000.000",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "EIN-05",
+   "thema": "einheiten",
+   "text": "Wie viele MiB sind 1 GiB?",
+   "erklaerung": "Binäre Präfixe gehen in 1.024er-Schritten.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "EIN-L1",
+   "typ": "zahl",
+   "loesung": 1024,
+   "toleranz": 0,
+   "einheit": "MiB"
+  },
+  {
+   "schluessel": "EIN-06",
+   "thema": "einheiten",
+   "text": "Eine Festplatte hat laut Hersteller 2 TB. Wie viele TiB zeigt das Betriebssystem an? (2 Nachkommastellen)",
+   "erklaerung": "2 · 10¹² ÷ 1.024⁴ = 2.000.000.000.000 ÷ 1.099.511.627.776 ≈ 1,82 TiB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "EIN-L1",
+   "typ": "zahl",
+   "loesung": 1.82,
+   "toleranz": 0.011,
+   "einheit": "TiB"
+  },
+  {
+   "schluessel": "EIN-07",
+   "thema": "einheiten",
+   "text": "Welchen Dezimalwert hat die Hexadezimalzahl FF?",
+   "erklaerung": "F = 15. 15 · 16 + 15 = 255.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "EIN-L1",
+   "typ": "zahl",
+   "loesung": 255,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "EIN-08",
+   "thema": "einheiten",
+   "text": "Welchen Dezimalwert hat die Binärzahl 1010?",
+   "erklaerung": "1·8 + 0·4 + 1·2 + 0·1 = 10.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "EIN-L1",
+   "typ": "zahl",
+   "loesung": 10,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "EIN-09",
+   "thema": "einheiten",
+   "text": "Wie lange dauert die Übertragung einer 1,5-GB-Datei (1 GB = 10⁹ Byte) über eine 100-Mbit/s-Leitung, ohne Overhead?",
+   "erklaerung": "1,5 · 10⁹ Byte · 8 = 1,2 · 10¹⁰ Bit. ÷ 10⁸ Bit/s = 120 s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "EIN-L2",
+   "typ": "zahl",
+   "loesung": 120,
+   "toleranz": 0,
+   "einheit": "Sekunden"
+  },
+  {
+   "schluessel": "EIN-10",
+   "thema": "einheiten",
+   "text": "Ein Foto hat 4000 × 3000 Pixel bei 24 Bit Farbtiefe. Wie groß ist es unkomprimiert in MB (1 MB = 10⁶ Byte)?",
+   "erklaerung": "12.000.000 Pixel × 3 Byte = 36.000.000 Byte = 36 MB.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "EIN-L2",
+   "typ": "zahl",
+   "loesung": 36,
+   "toleranz": 0,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "EIN-11",
+   "thema": "einheiten",
+   "text": "Ein Backup von 500 GB (10⁹ Byte) soll über eine 1-Gbit/s-Verbindung übertragen werden. Wie viele Minuten dauert das theoretisch? (2 Nachkommastellen)",
+   "erklaerung": "500 · 10⁹ · 8 Bit ÷ 10⁹ Bit/s = 4.000 s. ÷ 60 = 66,67 Minuten.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "EIN-L2",
+   "typ": "zahl",
+   "loesung": 66.67,
+   "toleranz": 0.01,
+   "einheit": "Minuten"
+  },
+  {
+   "schluessel": "EIN-12",
+   "thema": "einheiten",
+   "text": "Eine Kamera zeichnet mit 4 Mbit/s rund um die Uhr auf. Wie viel Speicher in TB (10¹² Byte) braucht sie für 30 Tage? (3 Nachkommastellen)",
+   "erklaerung": "4 Mbit/s ÷ 8 = 0,5 MB/s. × 86.400 s × 30 = 1.296.000 MB = 1,296 TB.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "EIN-L2",
+   "typ": "zahl",
+   "loesung": 1.296,
+   "toleranz": 0.001,
+   "einheit": "TB"
+  }
+ ]
+}

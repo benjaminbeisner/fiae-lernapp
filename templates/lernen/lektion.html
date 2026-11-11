@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static lerntext %}
+{% block title %}{{ lektion.titel }} · FIAE-Lernapp{% endblock %}
+{% block content %}
+<form method="post">{% csrf_token %}
+<div class="lern-kopf">
+  <button class="x" name="aktion" value="abbrechen" title="Beenden">✕</button>
+  <div class="bar"><span style="width:{{ fortschritt }}%"></span></div>
+  <span class="muted small">{{ nummer }}/{{ gesamt }}</span>
+</div>
+<div class="card">
+  <div class="thema-tag">📘 Lernnugget · {{ lektion.thema.name }}</div>
+  <h1>{{ lektion.titel }}</h1>
+  {% if lektion.bild %}<div class="frage-bild"><img src="{% static lektion.bild %}" alt="Grafik zu {{ lektion.titel }}"></div>{% endif %}
+  <div class="lektion-inhalt">{{ lektion.inhalt|lerntext }}</div>
+  {% if lektion.merksatz %}<div class="merksatz">💡 {{ lektion.merksatz }}</div>{% endif %}
+  <button class="btn gross voll" name="aktion" value="weiter" autofocus>Verstanden, jetzt üben</button>
+</div>
+</form>
+{% endblock %}

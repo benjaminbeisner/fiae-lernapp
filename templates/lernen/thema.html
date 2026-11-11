@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load lerntext %}
+{% block title %}{{ thema.name }} · FIAE-Lernapp{% endblock %}
+{% block content %}
+<p class="small"><a href="{% url 'dashboard' %}">← Übersicht</a></p>
+<div class="card">
+  <div class="thema-tag">{{ thema.get_pruefung_display }}</div>
+  <h1>{{ thema.name }}</h1>
+  <p class="muted">≈ {{ thema.gewicht }} Punkte pro Prüfung · Dein Niveau: <span class="sterne">{% for i in "123" %}{% if forloop.counter <= niveau %}★{% else %}<span class="aus">★</span>{% endif %}{% endfor %}</span>
+  {% if stat %} · {{ stat.gefestigt }} von {{ stat.anzahl }} Fragen gefestigt{% endif %}</p>
+  <form method="post" action="{% url 'thema_start' thema.slug %}">{% csrf_token %}<button class="btn" type="submit">10 Fragen passend zu meinem Niveau</button></form>
+</div>
+<h2>Lernnuggets</h2>
+{% for x in lektionen %}
+<div class="card row">
+  <div class="spacer">
+    <strong>{% if x.gelesen %}✅{% else %}📘{% endif %} {{ x.l.titel }}</strong><br>
+    <span class="muted small">{% if x.l.stufe == 1 %}Grundlagen{% elif x.l.stufe == 2 %}Aufbau{% else %}Prüfungsniveau{% endif %} · {{ x.fragen }} Übungsfragen</span>
+  </div>
+  <form method="post" action="{% url 'lektion_start' x.l.pk %}">{% csrf_token %}<button class="btn secondary" type="submit">{% if x.gelesen %}Wiederholen{% else %}Lernen{% endif %}</button></form>
+</div>
+{% empty %}
+<p class="muted">Für dieses Thema gibt es noch keine Lernnuggets.</p>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 250" width="460" height="250" font-family="Arial, Helvetica, sans-serif" font-size="15">
+  <rect width="460" height="250" fill="#fff"/>
+  <g fill="#eef2ff" stroke="#3559e0" stroke-width="2">
+    <rect x="40" y="20" width="90" height="36"/><rect x="330" y="20" width="90" height="36"/>
+    <rect x="40" y="75" width="90" height="36"/><rect x="330" y="75" width="90" height="36"/>
+    <rect x="40" y="130" width="90" height="36"/><rect x="330" y="130" width="90" height="36"/>
+    <rect x="40" y="185" width="90" height="36"/><rect x="330" y="185" width="90" height="36"/>
+  </g>
+  <g fill="#1b2232" text-anchor="middle"><text x="85" y="43">X</text><text x="375" y="43">Y</text><text x="85" y="98">X</text><text x="375" y="98">Y</text>
+    <text x="85" y="153">X</text><text x="375" y="153">Y</text><text x="85" y="208">X</text><text x="375" y="208">Y</text></g>
+  <g stroke="#333" stroke-width="2">
+    <line x1="130" y1="38" x2="312" y2="38"/><polygon points="312,28 330,38 312,48" fill="#fff"/>
+    <line x1="130" y1="93" x2="310" y2="93"/><polygon points="330,93 320,86 310,93 320,100" fill="#333"/>
+    <line x1="130" y1="148" x2="310" y2="148"/><polygon points="330,148 320,141 310,148 320,155" fill="#fff"/>
+    <line x1="130" y1="203" x2="330" y2="203"/>
+  </g>
+  <g fill="#c4392d" font-weight="bold" font-size="18" text-anchor="middle">
+    <text x="15" y="44">1</text><text x="15" y="99">2</text><text x="15" y="154">3</text><text x="15" y="209">4</text>
+  </g>
+</svg>

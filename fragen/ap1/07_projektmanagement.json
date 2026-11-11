@@ -1,0 +1,561 @@
+{
+ "lektionen": [
+  {
+   "schluessel": "PM-L1",
+   "thema": "projektmanagement",
+   "titel": "Projekte, Ziele und Stakeholder",
+   "stufe": 1,
+   "inhalt": "Ein **Projekt** ist ein Vorhaben, das **einmalig**, **zeitlich begrenzt** und meist **neuartig und komplex** ist, mit eigenen Zielen, Ressourcen und Budget. Eine Routineaufgabe ist kein Projekt.\n\n**Magisches Dreieck:** Zeit, Kosten und Leistung (Qualität/Umfang) beeinflussen sich gegenseitig. Wer mehr Leistung will, braucht mehr Zeit oder Geld.\n\n**SMART-Ziele:**\n- **S**pezifisch – eindeutig formuliert\n- **M**essbar – überprüfbar\n- **A**ttraktiv/akzeptiert\n- **R**ealistisch\n- **T**erminiert – mit Termin\n\nBeispiel: „Bis 31.03. sind alle 25 Arbeitsplätze auf Windows 11 umgestellt.“\n\n**Stakeholder** sind alle, die am Projekt beteiligt, davon betroffen oder daran interessiert sind: Auftraggeber, Nutzer, Projektteam, Betriebsrat, Datenschutzbeauftragte …\n\n**Typische Phasen:** Initialisierung → Planung → Durchführung → Abschluss (mit Abnahme und Lessons Learned).",
+   "merksatz": "SMART: spezifisch, messbar, attraktiv, realistisch, terminiert.",
+   "bild": "",
+   "reihenfolge": 0
+  },
+  {
+   "schluessel": "PM-L2",
+   "thema": "projektmanagement",
+   "titel": "Lastenheft und Pflichtenheft",
+   "stufe": 1,
+   "inhalt": "| | Lastenheft | Pflichtenheft |\n|---|---|---|\n| **Wer schreibt es?** | Auftraggeber (Kunde) | Auftragnehmer (Dienstleister) |\n| **Inhalt** | **Was** soll erreicht werden und **wofür**? Anforderungen aus Kundensicht | **Wie** und **womit** werden die Anforderungen umgesetzt? |\n| **Zeitpunkt** | zuerst, Grundlage für Angebote | danach, Grundlage für Umsetzung und Abnahme |\n\nMerksatz: **Die Last trägt der Kunde.**\n\nTypische Inhalte des Lastenhefts: Ausgangssituation, Ziele, funktionale und nicht-funktionale Anforderungen, Rahmenbedingungen, Termine.",
+   "merksatz": "Lastenheft = Kunde = Was. Pflichtenheft = Dienstleister = Wie.",
+   "bild": "",
+   "reihenfolge": 1
+  },
+  {
+   "schluessel": "PM-L3",
+   "thema": "projektmanagement",
+   "titel": "Netzplan berechnen",
+   "stufe": 2,
+   "inhalt": "Jeder Vorgang bekommt einen Knoten mit diesen Werten (siehe Abbildung):\n- **FAZ/FEZ:** frühester Anfangs-/Endzeitpunkt\n- **SAZ/SEZ:** spätester Anfangs-/Endzeitpunkt\n- **GP:** Gesamtpuffer, **FP:** freier Puffer\n\n**Vorwärtsrechnung:** FEZ = FAZ + Dauer. Ein Vorgang startet, wenn **alle** Vorgänger fertig sind → FAZ = **größter** FEZ der Vorgänger.\n\n**Rückwärtsrechnung:** Beim letzten Vorgang ist SEZ = FEZ. SAZ = SEZ − Dauer. Ein Vorgang muss fertig sein, wenn der **früheste** Nachfolger startet → SEZ = **kleinster** SAZ der Nachfolger.\n\n**Gesamtpuffer:** GP = SAZ − FAZ (= SEZ − FEZ). So lange darf sich der Vorgang verschieben, ohne dass sich das Projektende verschiebt.\n\n**Freier Puffer:** FP = kleinster FAZ der Nachfolger − eigener FEZ. So lange darf sich der Vorgang verschieben, ohne dass sich ein Nachfolger verschiebt.\n\n**Kritischer Pfad:** alle Vorgänge mit GP = 0. Jede Verzögerung dort verschiebt das Projektende.",
+   "merksatz": "Vorwärts: größter FEZ der Vorgänger. Rückwärts: kleinster SAZ der Nachfolger.",
+   "bild": "bilder/netzplan_knoten.svg",
+   "reihenfolge": 2
+  },
+  {
+   "schluessel": "PM-L4",
+   "thema": "projektmanagement",
+   "titel": "Gantt, Meilensteine und agile Methoden",
+   "stufe": 2,
+   "inhalt": "Ein **Gantt-Diagramm** (Balkendiagramm) zeigt Vorgänge als Balken auf einer Zeitachse. Gut für Termine und Überschneidungen, Abhängigkeiten sieht man im Netzplan besser.\n\nEin **Meilenstein** ist ein wichtiges Zwischenereignis ohne eigene Dauer, z. B. „Pflichtenheft abgenommen“.\n\n**Klassisch (Wasserfall):** Phasen nacheinander, Anforderungen stehen am Anfang fest. Gut bei klaren, stabilen Anforderungen.\n\n**Agil (z. B. Scrum):** in kurzen Zyklen arbeiten, früh Ergebnisse zeigen, Anforderungen dürfen sich ändern.\n- **Sprint:** fester Zeitraum von 1 bis 4 Wochen, am Ende steht ein nutzbares Ergebnis (Inkrement)\n- **Product Owner:** verantwortet das Product Backlog und die Prioritäten\n- **Scrum Master:** sorgt dafür, dass Scrum funktioniert, räumt Hindernisse aus dem Weg\n- **Entwicklungsteam:** setzt um, organisiert sich selbst\n- **Daily Scrum:** tägliches Kurztreffen, max. 15 Minuten\n- **Sprint Review** (Ergebnis zeigen) und **Retrospektive** (Zusammenarbeit verbessern)",
+   "merksatz": "Agil passt, wenn sich Anforderungen ändern. Wasserfall, wenn sie von Anfang an feststehen.",
+   "bild": "",
+   "reihenfolge": 3
+  }
+ ],
+ "fragen": [
+  {
+   "schluessel": "PM-01",
+   "thema": "projektmanagement",
+   "text": "Netzplan: A dauert 3 Tage. B (4 Tage) und C (2 Tage) beginnen nach A. D (5 Tage) beginnt, wenn B und C fertig sind.\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "A: 0–3, B: 3–7, C: 3–5, D startet nach dem späteren Vorgänger (B, Tag 7): 7–12. Kritischer Pfad: A – B – D.",
+   "schwierigkeit": 2,
+   "einstufung": true,
+   "typ": "zahl",
+   "loesung": 12,
+   "toleranz": 0,
+   "einheit": "Tage",
+   "lektion": "PM-L3",
+   "bild": "bilder/netzplan_abcd.svg"
+  },
+  {
+   "schluessel": "PM-02",
+   "thema": "projektmanagement",
+   "text": "Netzplan: A dauert 3 Tage. B (4 Tage) und C (2 Tage) beginnen nach A. D (5 Tage) beginnt, wenn B und C fertig sind.\n\nWie groß ist der Gesamtpuffer von C?",
+   "erklaerung": "C endet frühestens an Tag 5 (FEZ), muss aber erst an Tag 7 fertig sein (SEZ, weil D erst bei 7 startet). Puffer = SEZ − FEZ = 2.",
+   "schwierigkeit": 2,
+   "einstufung": true,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": "Tage",
+   "lektion": "PM-L3",
+   "bild": "bilder/netzplan_abcd.svg"
+  },
+  {
+   "schluessel": "PM-03",
+   "thema": "projektmanagement",
+   "text": "Wer erstellt das Pflichtenheft?",
+   "erklaerung": "Lastenheft = Auftraggeber, WAS und WOFÜR. Pflichtenheft = Auftragnehmer, WIE und WOMIT. Merksatz: Die Last trägt der Kunde.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Der Auftragnehmer: Er beschreibt, wie und womit er die Anforderungen umsetzt",
+     "richtig": true
+    },
+    {
+     "text": "Der Auftraggeber: Er beschreibt, was er will",
+     "richtig": false
+    },
+    {
+     "text": "Der Projektsponsor zum Projektabschluss",
+     "richtig": false
+    },
+    {
+     "text": "Ein externer Gutachter",
+     "richtig": false
+    }
+   ],
+   "lektion": "PM-L2"
+  },
+  {
+   "schluessel": "PM-04",
+   "thema": "projektmanagement",
+   "text": "Wofür steht das „M“ in SMART?",
+   "erklaerung": "SMART: spezifisch, messbar, attraktiv/akzeptiert, realistisch, terminiert.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Messbar",
+     "richtig": true
+    },
+    {
+     "text": "Motivierend",
+     "richtig": false
+    },
+    {
+     "text": "Machbar im Budget",
+     "richtig": false
+    },
+    {
+     "text": "Modular",
+     "richtig": false
+    }
+   ],
+   "lektion": "PM-L1"
+  },
+  {
+   "schluessel": "PM-05",
+   "thema": "projektmanagement",
+   "text": "Was ist der kritische Pfad?",
+   "erklaerung": "Kritischer Pfad = längster Weg = Vorgänge mit Gesamtpuffer 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Die Folge von Vorgängen ohne Puffer; jede Verzögerung verschiebt das Projektende",
+     "richtig": true
+    },
+    {
+     "text": "Die Vorgänge mit den höchsten Kosten",
+     "richtig": false
+    },
+    {
+     "text": "Der kürzeste Weg durch den Netzplan",
+     "richtig": false
+    },
+    {
+     "text": "Alle Vorgänge mit einem Risiko",
+     "richtig": false
+    }
+   ],
+   "lektion": "PM-L3"
+  },
+  {
+   "schluessel": "PM-06",
+   "thema": "projektmanagement",
+   "text": "Welche Merkmale hat ein Projekt?",
+   "erklaerung": "Projekte haben Anfang und Ende, eigene Ziele und begrenzte Ressourcen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PM-L1",
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Es ist einmalig",
+     "richtig": true
+    },
+    {
+     "text": "Es ist zeitlich begrenzt",
+     "richtig": true
+    },
+    {
+     "text": "Es ist eine wiederkehrende Routineaufgabe",
+     "richtig": false
+    },
+    {
+     "text": "Es hat grundsätzlich ein unbegrenztes Budget",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PM-07",
+   "thema": "projektmanagement",
+   "text": "Wer gehört zu den Stakeholdern eines Projekts?",
+   "erklaerung": "Auch Nutzer, Betriebsrat oder Datenschutzbeauftragte können Stakeholder sein.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PM-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Alle, die am Projekt beteiligt, davon betroffen oder daran interessiert sind",
+     "richtig": true
+    },
+    {
+     "text": "Nur die Geldgeber",
+     "richtig": false
+    },
+    {
+     "text": "Nur die Projektleitung",
+     "richtig": false
+    },
+    {
+     "text": "Nur externe Lieferanten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PM-08",
+   "thema": "projektmanagement",
+   "text": "Welches Projektziel ist SMART formuliert?",
+   "erklaerung": "Spezifisch (Windows 11), messbar (25 Plätze), terminiert (31.03.).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "PM-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Bis 31.03. sind alle 25 Arbeitsplätze auf Windows 11 umgestellt",
+     "richtig": true
+    },
+    {
+     "text": "Wir verbessern die IT-Ausstattung",
+     "richtig": false
+    },
+    {
+     "text": "Die Mitarbeiter sollen zufriedener sein",
+     "richtig": false
+    },
+    {
+     "text": "Möglichst bald neue Rechner einführen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PM-09",
+   "thema": "projektmanagement",
+   "text": "Was beschreibt das magische Dreieck des Projektmanagements?",
+   "erklaerung": "Wird ein Eckpunkt verändert, wirkt das auf die anderen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "PM-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Die gegenseitige Abhängigkeit von Zeit, Kosten und Leistung",
+     "richtig": true
+    },
+    {
+     "text": "Die drei Schutzziele der IT-Sicherheit",
+     "richtig": false
+    },
+    {
+     "text": "Die drei Phasen Planung, Umsetzung, Abschluss",
+     "richtig": false
+    },
+    {
+     "text": "Die drei Rollen in Scrum",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PM-10",
+   "thema": "projektmanagement",
+   "text": "Was beschreibt der Auftraggeber im Lastenheft?",
+   "erklaerung": "Das Wie steht im Pflichtenheft des Auftragnehmers.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PM-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Was erreicht werden soll und welche Anforderungen er hat",
+     "richtig": true
+    },
+    {
+     "text": "Wie die technische Umsetzung aussieht",
+     "richtig": false
+    },
+    {
+     "text": "Welche Programmiersprache verwendet wird",
+     "richtig": false
+    },
+    {
+     "text": "Den Stundenplan des Projektteams",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PM-11",
+   "thema": "projektmanagement",
+   "text": "Welches Dokument entsteht in einem Projekt typischerweise zuerst?",
+   "erklaerung": "Erst beschreibt der Kunde seine Anforderungen (Lastenheft), dann antwortet der Dienstleister mit dem Pflichtenheft.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PM-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Das Lastenheft",
+     "richtig": true
+    },
+    {
+     "text": "Das Pflichtenheft",
+     "richtig": false
+    },
+    {
+     "text": "Das Abnahmeprotokoll",
+     "richtig": false
+    },
+    {
+     "text": "Der Projektabschlussbericht",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PM-12",
+   "thema": "projektmanagement",
+   "text": "Vorgangsliste:\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 3 | A |\n| C | 4 | A |\n| D | 2 | B |\n| E | 3 | C, D |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "A 0–2, B 2–5, C 2–6, D 5–7, E startet nach C (6) und D (7), also bei 7: 7–10.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "PM-L3",
+   "typ": "zahl",
+   "loesung": 10,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "PM-13",
+   "thema": "projektmanagement",
+   "text": "Vorgangsliste:\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 3 | A |\n| C | 4 | A |\n| D | 2 | B |\n| E | 3 | C, D |\n\nWelche Vorgänge bilden den kritischen Pfad?",
+   "erklaerung": "A–B–D–E dauert 2+3+2+3 = 10 Tage, A–C–E nur 2+4+3 = 9 Tage. Der längste Weg ist kritisch.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "PM-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "A – B – D – E",
+     "richtig": true
+    },
+    {
+     "text": "A – C – E",
+     "richtig": false
+    },
+    {
+     "text": "A – B – C – D – E",
+     "richtig": false
+    },
+    {
+     "text": "A – C – D – E",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PM-14",
+   "thema": "projektmanagement",
+   "text": "Vorgangsliste:\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 3 | A |\n| C | 4 | A |\n| D | 2 | B |\n| E | 3 | C, D |\n\nWie groß ist der Gesamtpuffer von Vorgang C?",
+   "erklaerung": "C: FAZ 2, FEZ 6. E muss spätestens bei 7 starten, also SEZ von C = 7. GP = 7 − 6 = 1.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "PM-L3",
+   "typ": "zahl",
+   "loesung": 1,
+   "toleranz": 0,
+   "einheit": "Tag(e)"
+  },
+  {
+   "schluessel": "PM-15",
+   "thema": "projektmanagement",
+   "text": "Vorgangsliste:\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 3 | A |\n| C | 4 | A |\n| D | 2 | B |\n| E | 3 | C, D |\n\nVorgang C verzögert sich um 2 Tage. Wann ist das Projekt frühestens fertig?",
+   "erklaerung": "C hat nur 1 Tag Puffer. Mit 2 Tagen Verzögerung endet C bei 8, E läuft dann von 8 bis 11. Das Projekt verlängert sich um 1 Tag.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "PM-L3",
+   "typ": "zahl",
+   "loesung": 11,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "PM-16",
+   "thema": "projektmanagement",
+   "text": "Was gibt der freie Puffer eines Vorgangs an?",
+   "erklaerung": "Die zweite Antwort beschreibt den Gesamtpuffer. Der freie Puffer ist immer kleiner oder gleich dem Gesamtpuffer.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "PM-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Wie lange er sich verschieben darf, ohne dass sich ein Nachfolger verschiebt",
+     "richtig": true
+    },
+    {
+     "text": "Wie lange er sich verschieben darf, ohne dass sich das Projektende verschiebt",
+     "richtig": false
+    },
+    {
+     "text": "Seine Dauer",
+     "richtig": false
+    },
+    {
+     "text": "Die Zeit zwischen Projektstart und erstem Meilenstein",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PM-17",
+   "thema": "projektmanagement",
+   "text": "Was zeigt ein Gantt-Diagramm?",
+   "erklaerung": "Gantt = Balkenplan. Gut, um Termine, Dauer und Überschneidungen auf einen Blick zu sehen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PM-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Vorgänge als Balken auf einer Zeitachse",
+     "richtig": true
+    },
+    {
+     "text": "Die Kardinalitäten zwischen Tabellen",
+     "richtig": false
+    },
+    {
+     "text": "Den Aufbau eines Netzwerks",
+     "richtig": false
+    },
+    {
+     "text": "Die Klassen eines Programms",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PM-18",
+   "thema": "projektmanagement",
+   "text": "Was ist ein Meilenstein?",
+   "erklaerung": "Beispiel: „Pflichtenheft abgenommen“ oder „Go-Live“.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PM-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ein wichtiges Zwischenereignis ohne eigene Dauer",
+     "richtig": true
+    },
+    {
+     "text": "Der längste Vorgang im Projekt",
+     "richtig": false
+    },
+    {
+     "text": "Ein Vorgang mit Puffer",
+     "richtig": false
+    },
+    {
+     "text": "Eine Projektphase von genau einem Monat",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PM-19",
+   "thema": "projektmanagement",
+   "text": "Welche Aufgabe hat der Product Owner in Scrum?",
+   "erklaerung": "Hindernisse ausräumen ist Aufgabe des Scrum Masters. Scrum kennt keine klassische Hierarchie im Team.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "PM-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Er verantwortet das Product Backlog und legt die Prioritäten fest",
+     "richtig": true
+    },
+    {
+     "text": "Er programmiert die meisten Funktionen",
+     "richtig": false
+    },
+    {
+     "text": "Er moderiert das Daily Scrum und räumt Hindernisse aus dem Weg",
+     "richtig": false
+    },
+    {
+     "text": "Er ist der Vorgesetzte des Teams",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PM-20",
+   "thema": "projektmanagement",
+   "text": "Was ist das Daily Scrum?",
+   "erklaerung": "Fragen: Was habe ich geschafft? Was mache ich als Nächstes? Was behindert mich?",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "PM-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ein tägliches Kurztreffen des Teams von höchstens 15 Minuten",
+     "richtig": true
+    },
+    {
+     "text": "Die tägliche Abgabe von Code beim Kunden",
+     "richtig": false
+    },
+    {
+     "text": "Ein ganztägiger Workshop zu Sprintbeginn",
+     "richtig": false
+    },
+    {
+     "text": "Ein täglicher Bericht an die Geschäftsführung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "PM-21",
+   "thema": "projektmanagement",
+   "text": "Wann ist ein agiles Vorgehen wie Scrum besonders geeignet?",
+   "erklaerung": "Agil heißt: kurze Zyklen, frühes Feedback, Anpassung möglich. Bei festen Anforderungen passt auch Wasserfall gut.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "PM-L4",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Wenn sich Anforderungen im Projektverlauf voraussichtlich ändern",
+     "richtig": true
+    },
+    {
+     "text": "Wenn alle Anforderungen von Anfang an vollständig und fest sind",
+     "richtig": false
+    },
+    {
+     "text": "Wenn der Kunde keinen Kontakt zum Team will",
+     "richtig": false
+    },
+    {
+     "text": "Nur bei Hardware-Projekten",
+     "richtig": false
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+{
+ "themen": [
+  {
+   "slug": "sicherheit",
+   "name": "IT-Sicherheit & Datenschutz",
+   "gewicht": 17,
+   "pruefung": "AP1",
+   "reihenfolge": 0
+  },
+  {
+   "slug": "wirtschaft",
+   "name": "Wirtschaft & Kalkulation",
+   "gewicht": 16,
+   "pruefung": "AP1",
+   "reihenfolge": 1
+  },
+  {
+   "slug": "netzwerk",
+   "name": "Netzwerk",
+   "gewicht": 13,
+   "pruefung": "AP1",
+   "reihenfolge": 2
+  },
+  {
+   "slug": "hardware",
+   "name": "Hardware & Arbeitsplatz",
+   "gewicht": 11,
+   "pruefung": "AP1",
+   "reihenfolge": 3
+  },
+  {
+   "slug": "programmierung",
+   "name": "Programmierung (Pseudocode/Python)",
+   "gewicht": 9,
+   "pruefung": "AP1",
+   "reihenfolge": 4
+  },
+  {
+   "slug": "datenbanken",
+   "name": "Datenbanken (ERM, SQL)",
+   "gewicht": 9,
+   "pruefung": "AP1",
+   "reihenfolge": 5
+  },
+  {
+   "slug": "projektmanagement",
+   "name": "Projektmanagement",
+   "gewicht": 8,
+   "pruefung": "AP1",
+   "reihenfolge": 6
+  },
+  {
+   "slug": "kommunikation",
+   "name": "Kommunikation & Arbeitsorganisation",
+   "gewicht": 8,
+   "pruefung": "AP1",
+   "reihenfolge": 7
+  },
+  {
+   "slug": "uml",
+   "name": "UML/Modellierung",
+   "gewicht": 5,
+   "pruefung": "AP1",
+   "reihenfolge": 8
+  },
+  {
+   "slug": "einheiten",
+   "name": "Datenmengen & Einheiten",
+   "gewicht": 4,
+   "pruefung": "AP1",
+   "reihenfolge": 9
+  }
+ ]
+}

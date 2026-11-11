@@ -1,23 +1,24 @@
 {% extends "base.html" %}
+{% load static lerntext %}
 {% block title %}{{ s.titel }} · FIAE-Lernapp{% endblock %}
 {% block content %}
-<div class="row" style="justify-content:space-between;margin-bottom:8px">
-  <strong>{{ s.titel }}</strong>
-  <span class="muted small">Frage {{ nummer }} von {{ gesamt }}</span>
+<form method="post">{% csrf_token %}
+<div class="lern-kopf">
+  <button class="x" name="aktion" value="abbrechen" formnovalidate title="Beenden">✕</button>
+  <div class="bar"><span style="width:{{ fortschritt }}%"></span></div>
+  <span class="muted small">{{ nummer }}/{{ gesamt }}</span>
 </div>
-<div class="bar" style="margin-bottom:16px"><span style="width:{{ fortschritt }}%"></span></div>
 
 <div class="card">
-  <div class="thema-tag">{{ frage.thema.name }}</div>
-  <div class="frage-text">{{ frage.text }}</div>
+  <div class="thema-tag">{{ frage.thema.name }}{% if frage.schwierigkeit == 3 %} · Prüfungsniveau{% endif %}</div>
+  <div class="frage-text">{{ frage.text|lerntext }}</div>
+  {% if frage.bild %}<div class="frage-bild"><img src="{% static frage.bild %}" alt="Abbildung zur Aufgabe"></div>{% endif %}
 
-  <form method="post">{% csrf_token %}
   {% if frage.typ == "zahl" %}
     <div class="zahl-eingabe">
-      <input type="text" name="zahl" inputmode="decimal" autocomplete="off" {% if s.beantwortet %}value="{{ s.beantwortet.eingabe }}" disabled{% else %}autofocus required{% endif %}>
+      <input type="text" name="zahl" inputmode="decimal" autocomplete="off" placeholder="Deine Antwort" {% if s.beantwortet %}value="{{ s.beantwortet.eingabe }}" disabled{% else %}autofocus required{% endif %}>
       {% if frage.einheit %}<span>{{ frage.einheit }}</span>{% endif %}
     </div>
-    <p></p>
   {% else %}
     {% if frage.typ == "mehrfach" and not s.beantwortet %}<p class="muted small">Mehrere Antworten können richtig sein.</p>{% endif %}
     <div class="optionen">
@@ -33,20 +34,20 @@
 
   {% if s.beantwortet %}
     <div class="feedback {% if s.beantwortet.richtig %}ok{% else %}bad{% endif %}">
-      <strong>{% if s.beantwortet.richtig %}Richtig!{% else %}Leider falsch.{% endif %}</strong>
-      {% if frage.typ == "zahl" %}<div>Lösung: {{ frage.loesung_zahl.normalize }} {{ frage.einheit }}</div>{% endif %}
-      {% if frage.erklaerung %}<div class="erklaerung">{{ frage.erklaerung }}</div>{% endif %}
+      <div class="titel">{% if s.beantwortet.richtig %}✔ Richtig! +10 XP{% else %}✘ Noch nicht ganz.{% endif %}</div>
+      {% if frage.typ == "zahl" %}<p>Lösung: <strong>{{ frage.loesung_zahl.normalize }} {{ frage.einheit }}</strong></p>{% endif %}
+      {% if frage.erklaerung %}{{ frage.erklaerung|lerntext }}{% endif %}
+      {% if not s.beantwortet.richtig and frage.lektion %}
+      <details class="nachlesen"><summary>📘 Nochmal erklärt: {{ frage.lektion.titel }}</summary>
+        <div class="lektion-inhalt">{{ frage.lektion.inhalt|lerntext }}</div>
+        {% if frage.lektion.merksatz %}<div class="merksatz">💡 {{ frage.lektion.merksatz }}</div>{% endif %}
+      </details>
+      {% endif %}
     </div>
-    <div class="row">
-      <button class="btn" name="aktion" value="weiter" autofocus>{% if nummer == gesamt %}Zur Auswertung{% else %}Weiter{% endif %}</button>
-      <button class="btn link" name="aktion" value="abbrechen" formnovalidate>Beenden</button>
-    </div>
+    <button class="btn gross voll" name="aktion" value="weiter" autofocus>{% if nummer == gesamt %}Zur Auswertung{% else %}Weiter{% endif %}</button>
   {% else %}
-    <div class="row">
-      <button class="btn" name="aktion" value="antworten">Antworten</button>
-      <button class="btn link" name="aktion" value="abbrechen" formnovalidate>Beenden</button>
-    </div>
+    <button class="btn gross voll" name="aktion" value="antworten">Prüfen</button>
   {% endif %}
-  </form>
 </div>
+</form>
 {% endblock %}

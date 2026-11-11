@@ -38,6 +38,10 @@ class Profil(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="profil")
     eingeladen_mit = models.ForeignKey(InviteCode, null=True, blank=True, on_delete=models.SET_NULL)
     tagesziel_minuten = models.PositiveIntegerField("Tagesziel (Minuten)", default=20)
+    in_rangliste = models.BooleanField("In der Rangliste anzeigen", default=True)
+    anzeigename = models.CharField("Name in der Rangliste", max_length=30, blank=True)
+    xp = models.PositiveIntegerField("Erfahrungspunkte", default=0)
+    farbthema = models.CharField("Farbthema", max_length=20, default="standard")
 
     class Meta:
         verbose_name = "Profil"

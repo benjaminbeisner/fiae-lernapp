@@ -1,0 +1,403 @@
+{
+ "lektionen": [
+  {
+   "schluessel": "UML-L1",
+   "thema": "uml",
+   "titel": "Das Klassendiagramm",
+   "stufe": 1,
+   "inhalt": "Eine Klasse wird als Kasten mit drei Bereichen gezeichnet: **Name**, **Attribute**, **Methoden** (siehe Abbildung).\n\n**Sichtbarkeiten:**\n| Zeichen | Bedeutung | sichtbar für |\n|---|---|---|\n| `+` | public | alle |\n| `-` | private | nur die Klasse selbst |\n| `#` | protected | die Klasse und ihre Unterklassen |\n| `~` | package | Klassen im selben Paket |\n\nSchreibweise: `- kundenNr : int` (Attribut mit Typ), `+ getName() : String` (Methode mit Rückgabetyp). `void` heißt: kein Rückgabewert.\n\n**Abstrakte Klassen** werden kursiv (oder mit {abstract}) geschrieben. Von ihnen gibt es keine Objekte, nur von ihren Unterklassen.\n\nTypisch: Attribute **private**, Zugriff über öffentliche **Getter und Setter** (Datenkapselung).",
+   "merksatz": "+ public, - private, # protected.",
+   "bild": "bilder/uml_klasse.svg",
+   "reihenfolge": 3
+  },
+  {
+   "schluessel": "UML-L2",
+   "thema": "uml",
+   "titel": "Beziehungen zwischen Klassen",
+   "stufe": 2,
+   "inhalt": "| Beziehung | Symbol | Bedeutung | Beispiel |\n|---|---|---|---|\n| **Assoziation** | einfache Linie | Klassen kennen sich | Kunde – Bestellung |\n| **Aggregation** | Linie mit **hohler** Raute am Ganzen | „hat“, Teile können ohne das Ganze existieren | Team – Mitarbeiter |\n| **Komposition** | Linie mit **gefüllter** Raute am Ganzen | „besteht aus“, Teile existieren nicht ohne das Ganze | Rechnung – Rechnungsposition |\n| **Vererbung** | Linie mit **hohlem Dreieck** zur Oberklasse | „ist ein“ | Notebook ist ein Computer |\n\n**Multiplizitäten** stehen an den Enden der Linie:\n- `1` genau eins, `0..1` keins oder eins\n- `*` oder `0..*` beliebig viele, `1..*` mindestens eins",
+   "merksatz": "Gefüllte Raute = Komposition = Teil stirbt mit dem Ganzen.",
+   "bild": "bilder/uml_beziehungen.svg",
+   "reihenfolge": 4
+  },
+  {
+   "schluessel": "UML-L3",
+   "thema": "uml",
+   "titel": "Use-Case- und Aktivitätsdiagramm",
+   "stufe": 1,
+   "inhalt": "**Use-Case-Diagramm** (Anwendungsfalldiagramm): zeigt, **was** ein System für wen leistet.\n- **Akteur** (Strichmännchen): eine Rolle außerhalb des Systems, z. B. Kunde, Administrator, auch ein anderes System\n- **Use-Case** (Ellipse): eine Funktion, z. B. „Bestellung aufgeben“\n- **Systemgrenze** (Rechteck)\n- **«include»:** Der Basis-Use-Case bindet den anderen **immer** ein („Bestellung aufgeben“ includes „Anmelden“).\n- **«extend»:** Der erweiternde Use-Case wird nur **unter einer Bedingung** ausgeführt („Gutschein einlösen“).\n\n**Aktivitätsdiagramm:** zeigt einen **Ablauf**.\n- gefüllter Kreis = Start, Kreis mit Punkt = Ende\n- abgerundetes Rechteck = Aktion\n- **Raute** = Verzweigung (Entscheidung) mit Bedingungen in eckigen Klammern, z. B. `[Betrag > 100]`\n- dicker Balken = Aufteilung in parallele Abläufe und deren Zusammenführung",
+   "merksatz": "include = immer, extend = manchmal.",
+   "bild": "",
+   "reihenfolge": 5
+  }
+ ],
+ "fragen": [
+  {
+   "schluessel": "UML-01",
+   "thema": "uml",
+   "text": "Was bedeutet ein „-“ vor einem Attribut im UML-Klassendiagramm?",
+   "erklaerung": "+ public, - private, # protected, ~ package.",
+   "schwierigkeit": 1,
+   "einstufung": true,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "private",
+     "richtig": true
+    },
+    {
+     "text": "public",
+     "richtig": false
+    },
+    {
+     "text": "protected",
+     "richtig": false
+    },
+    {
+     "text": "static",
+     "richtig": false
+    }
+   ],
+   "lektion": "UML-L1"
+  },
+  {
+   "schluessel": "UML-02",
+   "thema": "uml",
+   "text": "Was bedeutet ein Pfeil mit hohler, dreieckiger Spitze im Klassendiagramm?",
+   "erklaerung": "Hohles Dreieck = Vererbung, zeigt zur Oberklasse. Raute gefüllt = Komposition, Raute hohl = Aggregation.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Vererbung (Generalisierung)",
+     "richtig": true
+    },
+    {
+     "text": "Komposition",
+     "richtig": false
+    },
+    {
+     "text": "Aggregation",
+     "richtig": false
+    },
+    {
+     "text": "Abhängigkeit",
+     "richtig": false
+    }
+   ],
+   "lektion": "UML-L2"
+  },
+  {
+   "schluessel": "UML-03",
+   "thema": "uml",
+   "text": "Was bedeutet «include» zwischen zwei Use-Cases?",
+   "erklaerung": "include = immer. extend = optional, nur unter einer Bedingung (Erweiterungspunkt).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Der Basis-Use-Case bindet den anderen Use-Case immer mit ein",
+     "richtig": true
+    },
+    {
+     "text": "Der andere Use-Case wird nur unter einer Bedingung ausgeführt",
+     "richtig": false
+    },
+    {
+     "text": "Die beiden Use-Cases schließen sich aus",
+     "richtig": false
+    },
+    {
+     "text": "Ein Akteur erbt von einem anderen",
+     "richtig": false
+    }
+   ],
+   "lektion": "UML-L3"
+  },
+  {
+   "schluessel": "UML-04",
+   "thema": "uml",
+   "text": "Was bedeutet ein „#“ vor einer Methode im Klassendiagramm?",
+   "erklaerung": "+ public, - private, # protected, ~ package.",
+   "schwierigkeit": 2,
+   "einstufung": true,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "protected: sichtbar in der Klasse und ihren Unterklassen",
+     "richtig": true
+    },
+    {
+     "text": "private: nur in der Klasse sichtbar",
+     "richtig": false
+    },
+    {
+     "text": "public: überall sichtbar",
+     "richtig": false
+    },
+    {
+     "text": "Die Methode ist abstrakt",
+     "richtig": false
+    }
+   ],
+   "lektion": "UML-L1"
+  },
+  {
+   "schluessel": "UML-05",
+   "thema": "uml",
+   "text": "Welche Elemente der abgebildeten Klasse Kunde sind von außerhalb der Klasse direkt zugreifbar?",
+   "erklaerung": "Nur public (+) ist von überall zugreifbar. kundenNr ist private (-), name ist protected (#), also nur in Kunde und deren Unterklassen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "UML-L1",
+   "bild": "bilder/uml_klasse.svg",
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "getName()",
+     "richtig": true
+    },
+    {
+     "text": "setName(n)",
+     "richtig": true
+    },
+    {
+     "text": "kundenNr",
+     "richtig": false
+    },
+    {
+     "text": "name",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "UML-06",
+   "thema": "uml",
+   "text": "Welchen Rückgabetyp hat die Methode getName() in der abgebildeten Klasse?",
+   "erklaerung": "Der Typ steht nach dem Doppelpunkt hinter der Methode: getName() : String.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "UML-L1",
+   "bild": "bilder/uml_klasse.svg",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "String",
+     "richtig": true
+    },
+    {
+     "text": "void",
+     "richtig": false
+    },
+    {
+     "text": "int",
+     "richtig": false
+    },
+    {
+     "text": "Kunde",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "UML-07",
+   "thema": "uml",
+   "text": "Wie wird eine abstrakte Klasse im UML-Klassendiagramm gekennzeichnet?",
+   "erklaerung": "Von abstrakten Klassen werden keine Objekte erzeugt. Unterstrichen werden statische Elemente.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "lektion": "UML-L1",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Der Klassenname steht kursiv oder mit {abstract}",
+     "richtig": true
+    },
+    {
+     "text": "Der Name wird unterstrichen",
+     "richtig": false
+    },
+    {
+     "text": "Mit einem # vor dem Namen",
+     "richtig": false
+    },
+    {
+     "text": "Mit einer gefüllten Raute",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "UML-08",
+   "thema": "uml",
+   "text": "Welche Nummer in der Abbildung zeigt eine Komposition?",
+   "erklaerung": "1 = Vererbung (hohles Dreieck), 2 = Komposition (gefüllte Raute), 3 = Aggregation (hohle Raute), 4 = Assoziation (einfache Linie).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "UML-L2",
+   "bild": "bilder/uml_beziehungen.svg",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "2",
+     "richtig": true
+    },
+    {
+     "text": "1",
+     "richtig": false
+    },
+    {
+     "text": "3",
+     "richtig": false
+    },
+    {
+     "text": "4",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "UML-09",
+   "thema": "uml",
+   "text": "Eine Rechnung besteht aus Rechnungspositionen. Wird die Rechnung gelöscht, gibt es auch die Positionen nicht mehr. Welche Beziehung ist das?",
+   "erklaerung": "Die Teile existieren nicht ohne das Ganze: Komposition, gefüllte Raute an der Rechnung.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "UML-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Komposition",
+     "richtig": true
+    },
+    {
+     "text": "Aggregation",
+     "richtig": false
+    },
+    {
+     "text": "Vererbung",
+     "richtig": false
+    },
+    {
+     "text": "Abhängigkeit",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "UML-10",
+   "thema": "uml",
+   "text": "Was bedeutet die Multiplizität 1..* an einem Assoziationsende?",
+   "erklaerung": "Beispiel: Eine Bestellung enthält 1..* Positionen, also mindestens eine.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "UML-L2",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Mindestens eins, nach oben unbegrenzt",
+     "richtig": true
+    },
+    {
+     "text": "Genau eins",
+     "richtig": false
+    },
+    {
+     "text": "Keins oder eins",
+     "richtig": false
+    },
+    {
+     "text": "Höchstens eins",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "UML-11",
+   "thema": "uml",
+   "text": "Was stellt eine Raute im Aktivitätsdiagramm dar?",
+   "erklaerung": "An den ausgehenden Pfeilen stehen die Bedingungen in eckigen Klammern, z. B. [Lager leer].",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "UML-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Eine Verzweigung bzw. Entscheidung",
+     "richtig": true
+    },
+    {
+     "text": "Den Startpunkt",
+     "richtig": false
+    },
+    {
+     "text": "Eine Klasse",
+     "richtig": false
+    },
+    {
+     "text": "Einen Akteur",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "UML-12",
+   "thema": "uml",
+   "text": "Was ist ein Akteur im Use-Case-Diagramm?",
+   "erklaerung": "Akteure können Personen (Kunde) oder andere Systeme (Zahlungsdienst) sein.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "lektion": "UML-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Eine Rolle außerhalb des Systems, die mit dem System interagiert",
+     "richtig": true
+    },
+    {
+     "text": "Eine Methode einer Klasse",
+     "richtig": false
+    },
+    {
+     "text": "Ein Datenbankfeld",
+     "richtig": false
+    },
+    {
+     "text": "Ein Entwickler im Projektteam",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "UML-13",
+   "thema": "uml",
+   "text": "Der Use-Case „Gutschein einlösen“ wird beim Bestellen nur ausgeführt, wenn der Kunde einen Gutschein hat. Welche Beziehung zu „Bestellung aufgeben“ passt?",
+   "erklaerung": "extend = optional unter einer Bedingung. include = immer.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "lektion": "UML-L3",
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "«extend»",
+     "richtig": true
+    },
+    {
+     "text": "«include»",
+     "richtig": false
+    },
+    {
+     "text": "Vererbung",
+     "richtig": false
+    },
+    {
+     "text": "Komposition",
+     "richtig": false
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 250" width="680" height="250" font-family="Arial, Helvetica, sans-serif" font-size="14">
+  <rect width="680" height="250" fill="#fff"/>
+  <g stroke="#333" stroke-width="2"><line x1="170" y1="70" x2="300" y2="125"/><line x1="170" y1="190" x2="300" y2="125"/><line x1="380" y1="125" x2="470" y2="125"/><line x1="560" y1="125" x2="610" y2="125"/></g>
+  <g fill="#eef2ff" stroke="#3559e0" stroke-width="2">
+    <rect x="20" y="30" width="150" height="80" rx="8"/>
+    <rect x="20" y="160" width="150" height="70" rx="8"/>
+    <rect x="300" y="100" width="80" height="50" rx="8"/>
+    <rect x="470" y="95" width="90" height="60" rx="8"/>
+  </g>
+  <ellipse cx="640" cy="125" rx="34" ry="24" fill="#f4f6fb" stroke="#5f6880" stroke-width="2"/>
+  <g fill="#1b2232">
+    <text x="95" y="50" text-anchor="middle" font-weight="bold">PC</text>
+    <text x="30" y="70" font-size="12">IP: 192.168.10.25/24</text>
+    <text x="30" y="86" font-size="12" fill="#c4392d">Gateway: 192.168.1.1</text>
+    <text x="30" y="102" font-size="12">DNS: 192.168.10.1</text>
+    <text x="95" y="182" text-anchor="middle" font-weight="bold">Drucker</text>
+    <text x="30" y="205" font-size="12">IP: 192.168.10.50/24</text>
+    <text x="340" y="130" text-anchor="middle" font-weight="bold">Switch</text>
+    <text x="515" y="120" text-anchor="middle" font-weight="bold">Router</text>
+    <text x="515" y="140" text-anchor="middle" font-size="12">LAN: 192.168.10.1</text>
+    <text x="640" y="130" text-anchor="middle" font-size="12">Internet</text>
+  </g>
+</svg>
