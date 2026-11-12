@@ -8,16 +8,18 @@
   <h1>{{ thema.name }}</h1>
   <p class="muted">≈ {{ thema.gewicht }} Punkte pro Prüfung · Dein Niveau: <span class="sterne">{% for i in "123" %}{% if forloop.counter <= niveau %}★{% else %}<span class="aus">★</span>{% endif %}{% endfor %}</span>
   {% if stat %} · {{ stat.gefestigt }} von {{ stat.anzahl }} Fragen gefestigt{% endif %}</p>
-  <form method="post" action="{% url 'thema_start' thema.slug %}">{% csrf_token %}<button class="btn" type="submit">10 Fragen passend zu meinem Niveau</button></form>
+  <form method="post" action="{% url 'thema_start' thema.slug %}">{% csrf_token %}<button class="btn secondary" type="submit">10 gemischte Fragen aus dem ganzen Thema</button></form>
 </div>
-<h2>Lernnuggets</h2>
+<h2>Abschnitte</h2>
+<p class="muted small">Jeder Abschnitt: kurze Erklärung, danach 8 Fragen genau zu diesem Abschnitt.</p>
 {% for x in lektionen %}
 <div class="card row">
   <div class="spacer">
     <strong>{% if x.gelesen %}✅{% else %}📘{% endif %} {{ x.l.titel }}</strong><br>
-    <span class="muted small">{% if x.l.stufe == 1 %}Grundlagen{% elif x.l.stufe == 2 %}Aufbau{% else %}Prüfungsniveau{% endif %} · {{ x.fragen }} Übungsfragen</span>
+    <span class="muted small">{% if x.l.stufe == 1 %}Grundlagen{% elif x.l.stufe == 2 %}Aufbau{% else %}Prüfungsniveau{% endif %} · {{ x.fest }} von {{ x.fragen }} Fragen gefestigt</span>
+    <div class="bar" style="margin-top:6px;max-width:320px"><span style="width:{{ x.prozent }}%"></span></div>
   </div>
-  <form method="post" action="{% url 'lektion_start' x.l.pk %}">{% csrf_token %}<button class="btn secondary" type="submit">{% if x.gelesen %}Wiederholen{% else %}Lernen{% endif %}</button></form>
+  <form method="post" action="{% url 'lektion_start' x.l.pk %}">{% csrf_token %}<button class="btn secondary" type="submit">{% if x.gelesen %}Üben{% else %}Lernen{% endif %}</button></form>
 </div>
 {% empty %}
 <p class="muted">Für dieses Thema gibt es noch keine Lernnuggets.</p>

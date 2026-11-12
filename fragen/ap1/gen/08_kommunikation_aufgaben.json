@@ -1,0 +1,4426 @@
+{
+ "fragen": [
+  {
+   "schluessel": "G-KOM-4OHR01-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-4OHR01",
+   "text": "Welche Seite der Nachricht (Schulz von Thun) steht hier im Vordergrund? „Der Drucker ist schon wieder leer.“ – Information, dass kein Papier/Toner da ist",
+   "erklaerung": "Vier Seiten: Sachinhalt (worüber ich informiere), Selbstoffenbarung (was ich von mir zeige), Beziehung (was ich von dir halte), Appell (wozu ich dich bringen will).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Sachinhalt",
+     "richtig": true
+    },
+    {
+     "text": "Selbstoffenbarung",
+     "richtig": false
+    },
+    {
+     "text": "Beziehung",
+     "richtig": false
+    },
+    {
+     "text": "Appell",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-4OHR02-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-4OHR02",
+   "text": "Welche Seite der Nachricht (Schulz von Thun) steht hier im Vordergrund? „Ich bin total gestresst heute.“ – was der Sprecher über sich verrät",
+   "erklaerung": "Vier Seiten: Sachinhalt (worüber ich informiere), Selbstoffenbarung (was ich von mir zeige), Beziehung (was ich von dir halte), Appell (wozu ich dich bringen will).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Selbstoffenbarung",
+     "richtig": true
+    },
+    {
+     "text": "Sachinhalt",
+     "richtig": false
+    },
+    {
+     "text": "Beziehung",
+     "richtig": false
+    },
+    {
+     "text": "Appell",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-4OHR03-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-4OHR03",
+   "text": "Welche Seite der Nachricht (Schulz von Thun) steht hier im Vordergrund? „Kannst du das nicht einmal richtig machen?“ – was der Sprecher vom anderen hält",
+   "erklaerung": "Vier Seiten: Sachinhalt (worüber ich informiere), Selbstoffenbarung (was ich von mir zeige), Beziehung (was ich von dir halte), Appell (wozu ich dich bringen will).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Beziehung",
+     "richtig": true
+    },
+    {
+     "text": "Sachinhalt",
+     "richtig": false
+    },
+    {
+     "text": "Selbstoffenbarung",
+     "richtig": false
+    },
+    {
+     "text": "Appell",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-4OHR04-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-4OHR04",
+   "text": "Welche Seite der Nachricht (Schulz von Thun) steht hier im Vordergrund? „Die Ampel ist grün.“ – gemeint: Fahr los!",
+   "erklaerung": "Vier Seiten: Sachinhalt (worüber ich informiere), Selbstoffenbarung (was ich von mir zeige), Beziehung (was ich von dir halte), Appell (wozu ich dich bringen will).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Appell",
+     "richtig": true
+    },
+    {
+     "text": "Sachinhalt",
+     "richtig": false
+    },
+    {
+     "text": "Selbstoffenbarung",
+     "richtig": false
+    },
+    {
+     "text": "Beziehung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-4OHR05-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-4OHR05",
+   "text": "Welche Seite der Nachricht (Schulz von Thun) steht hier im Vordergrund? „Das Meeting beginnt um 10 Uhr.“ – reine Information",
+   "erklaerung": "Vier Seiten: Sachinhalt (worüber ich informiere), Selbstoffenbarung (was ich von mir zeige), Beziehung (was ich von dir halte), Appell (wozu ich dich bringen will).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Sachinhalt",
+     "richtig": true
+    },
+    {
+     "text": "Selbstoffenbarung",
+     "richtig": false
+    },
+    {
+     "text": "Beziehung",
+     "richtig": false
+    },
+    {
+     "text": "Appell",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-4OHR06-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-4OHR06",
+   "text": "Welche Seite der Nachricht (Schulz von Thun) steht hier im Vordergrund? „Du kennst dich ja mit Excel aus …“ – Wertschätzung oder Abwertung zwischen den Zeilen",
+   "erklaerung": "Vier Seiten: Sachinhalt (worüber ich informiere), Selbstoffenbarung (was ich von mir zeige), Beziehung (was ich von dir halte), Appell (wozu ich dich bringen will).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Beziehung",
+     "richtig": true
+    },
+    {
+     "text": "Sachinhalt",
+     "richtig": false
+    },
+    {
+     "text": "Selbstoffenbarung",
+     "richtig": false
+    },
+    {
+     "text": "Appell",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-4OHR07-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-4OHR07",
+   "text": "Welche Seite der Nachricht (Schulz von Thun) steht hier im Vordergrund? „Mir ist kalt.“ – gemeint: Mach bitte das Fenster zu!",
+   "erklaerung": "Vier Seiten: Sachinhalt (worüber ich informiere), Selbstoffenbarung (was ich von mir zeige), Beziehung (was ich von dir halte), Appell (wozu ich dich bringen will).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Appell",
+     "richtig": true
+    },
+    {
+     "text": "Sachinhalt",
+     "richtig": false
+    },
+    {
+     "text": "Selbstoffenbarung",
+     "richtig": false
+    },
+    {
+     "text": "Beziehung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-4OHR08-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-4OHR08",
+   "text": "Welche Seite der Nachricht (Schulz von Thun) steht hier im Vordergrund? „Ich habe das Ticket schon dreimal bearbeitet.“ – der Sprecher zeigt seinen Frust",
+   "erklaerung": "Vier Seiten: Sachinhalt (worüber ich informiere), Selbstoffenbarung (was ich von mir zeige), Beziehung (was ich von dir halte), Appell (wozu ich dich bringen will).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Selbstoffenbarung",
+     "richtig": true
+    },
+    {
+     "text": "Sachinhalt",
+     "richtig": false
+    },
+    {
+     "text": "Beziehung",
+     "richtig": false
+    },
+    {
+     "text": "Appell",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-4OHR09-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-4OHR09",
+   "text": "Welche Seite der Nachricht (Schulz von Thun) steht hier im Vordergrund? „Könnten Sie mir bis Freitag das Angebot schicken?“ – Aufforderung",
+   "erklaerung": "Vier Seiten: Sachinhalt (worüber ich informiere), Selbstoffenbarung (was ich von mir zeige), Beziehung (was ich von dir halte), Appell (wozu ich dich bringen will).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Appell",
+     "richtig": true
+    },
+    {
+     "text": "Sachinhalt",
+     "richtig": false
+    },
+    {
+     "text": "Selbstoffenbarung",
+     "richtig": false
+    },
+    {
+     "text": "Beziehung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-4OHR10-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-4OHR10",
+   "text": "Welche Seite der Nachricht (Schulz von Thun) steht hier im Vordergrund? „Der Server lief 99,9 % der Zeit.“ – Daten und Fakten",
+   "erklaerung": "Vier Seiten: Sachinhalt (worüber ich informiere), Selbstoffenbarung (was ich von mir zeige), Beziehung (was ich von dir halte), Appell (wozu ich dich bringen will).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Sachinhalt",
+     "richtig": true
+    },
+    {
+     "text": "Selbstoffenbarung",
+     "richtig": false
+    },
+    {
+     "text": "Beziehung",
+     "richtig": false
+    },
+    {
+     "text": "Appell",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EBENE01-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-EBENE01",
+   "text": "Zu welcher Kommunikationsebene gehört: **Wortwahl und Inhalt der Sätze**?",
+   "erklaerung": "Verbal = Worte; paraverbal = wie gesprochen wird (Stimme); nonverbal = Körpersprache.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "verbal",
+     "richtig": true
+    },
+    {
+     "text": "paraverbal",
+     "richtig": false
+    },
+    {
+     "text": "nonverbal",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EBENE02-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-EBENE02",
+   "text": "Zu welcher Kommunikationsebene gehört: **Lautstärke, Sprechtempo und Betonung**?",
+   "erklaerung": "Verbal = Worte; paraverbal = wie gesprochen wird (Stimme); nonverbal = Körpersprache.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "paraverbal",
+     "richtig": true
+    },
+    {
+     "text": "verbal",
+     "richtig": false
+    },
+    {
+     "text": "nonverbal",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EBENE03-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-EBENE03",
+   "text": "Zu welcher Kommunikationsebene gehört: **Mimik, Gestik und Körperhaltung**?",
+   "erklaerung": "Verbal = Worte; paraverbal = wie gesprochen wird (Stimme); nonverbal = Körpersprache.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "nonverbal",
+     "richtig": true
+    },
+    {
+     "text": "verbal",
+     "richtig": false
+    },
+    {
+     "text": "paraverbal",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EBENE04-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-EBENE04",
+   "text": "Zu welcher Kommunikationsebene gehört: **Blickkontakt**?",
+   "erklaerung": "Verbal = Worte; paraverbal = wie gesprochen wird (Stimme); nonverbal = Körpersprache.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "nonverbal",
+     "richtig": true
+    },
+    {
+     "text": "verbal",
+     "richtig": false
+    },
+    {
+     "text": "paraverbal",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EBENE05-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-EBENE05",
+   "text": "Zu welcher Kommunikationsebene gehört: **Tonfall (freundlich oder gereizt)**?",
+   "erklaerung": "Verbal = Worte; paraverbal = wie gesprochen wird (Stimme); nonverbal = Körpersprache.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "paraverbal",
+     "richtig": true
+    },
+    {
+     "text": "verbal",
+     "richtig": false
+    },
+    {
+     "text": "nonverbal",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EBENE06-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-EBENE06",
+   "text": "Zu welcher Kommunikationsebene gehört: **Fachbegriffe in einer E-Mail**?",
+   "erklaerung": "Verbal = Worte; paraverbal = wie gesprochen wird (Stimme); nonverbal = Körpersprache.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "verbal",
+     "richtig": true
+    },
+    {
+     "text": "paraverbal",
+     "richtig": false
+    },
+    {
+     "text": "nonverbal",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EBENE07-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-EBENE07",
+   "text": "Zu welcher Kommunikationsebene gehört: **verschränkte Arme**?",
+   "erklaerung": "Verbal = Worte; paraverbal = wie gesprochen wird (Stimme); nonverbal = Körpersprache.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "nonverbal",
+     "richtig": true
+    },
+    {
+     "text": "verbal",
+     "richtig": false
+    },
+    {
+     "text": "paraverbal",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EBENE08-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-EBENE08",
+   "text": "Zu welcher Kommunikationsebene gehört: **Pausen beim Sprechen**?",
+   "erklaerung": "Verbal = Worte; paraverbal = wie gesprochen wird (Stimme); nonverbal = Körpersprache.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "paraverbal",
+     "richtig": true
+    },
+    {
+     "text": "verbal",
+     "richtig": false
+    },
+    {
+     "text": "nonverbal",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-MODELL01-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-MODELL01",
+   "text": "Was bezeichnet **Sender** im Kommunikationsmodell?",
+   "erklaerung": "Sender → **verschlüsselt (codiert) eine Nachricht**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "verschlüsselt (codiert) eine Nachricht",
+     "richtig": true
+    },
+    {
+     "text": "Weg der Übertragung, z. B. Telefon, E-Mail, persönlich",
+     "richtig": false
+    },
+    {
+     "text": "beeinträchtigt die Übertragung, z. B. Lärm oder Missverständnisse",
+     "richtig": false
+    },
+    {
+     "text": "entschlüsselt (decodiert) und interpretiert die Nachricht",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-MODELL01-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-MODELL01",
+   "text": "Welcher Begriff passt: verschlüsselt (codiert) eine Nachricht?",
+   "erklaerung": "Sender → **verschlüsselt (codiert) eine Nachricht**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Sender",
+     "richtig": true
+    },
+    {
+     "text": "Feedback",
+     "richtig": false
+    },
+    {
+     "text": "Kanal",
+     "richtig": false
+    },
+    {
+     "text": "Empfänger",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-MODELL02-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-MODELL02",
+   "text": "Was bezeichnet **Empfänger** im Kommunikationsmodell?",
+   "erklaerung": "Empfänger → **entschlüsselt (decodiert) und interpretiert die Nachricht**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "entschlüsselt (decodiert) und interpretiert die Nachricht",
+     "richtig": true
+    },
+    {
+     "text": "Rückmeldung des Empfängers an den Sender",
+     "richtig": false
+    },
+    {
+     "text": "beeinträchtigt die Übertragung, z. B. Lärm oder Missverständnisse",
+     "richtig": false
+    },
+    {
+     "text": "nur ein kleiner Teil der Kommunikation (Sachebene) ist sichtbar, der größere Teil (Beziehungsebene) liegt darunter",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-MODELL02-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-MODELL02",
+   "text": "Welcher Begriff passt: entschlüsselt (decodiert) und interpretiert die Nachricht?",
+   "erklaerung": "Empfänger → **entschlüsselt (decodiert) und interpretiert die Nachricht**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Empfänger",
+     "richtig": true
+    },
+    {
+     "text": "Störung / Rauschen",
+     "richtig": false
+    },
+    {
+     "text": "Kanal",
+     "richtig": false
+    },
+    {
+     "text": "Eisbergmodell",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-MODELL03-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-MODELL03",
+   "text": "Was bezeichnet **Kanal** im Kommunikationsmodell?",
+   "erklaerung": "Kanal → **Weg der Übertragung, z. B. Telefon, E-Mail, persönlich**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Weg der Übertragung, z. B. Telefon, E-Mail, persönlich",
+     "richtig": true
+    },
+    {
+     "text": "verschlüsselt (codiert) eine Nachricht",
+     "richtig": false
+    },
+    {
+     "text": "entschlüsselt (decodiert) und interpretiert die Nachricht",
+     "richtig": false
+    },
+    {
+     "text": "nur ein kleiner Teil der Kommunikation (Sachebene) ist sichtbar, der größere Teil (Beziehungsebene) liegt darunter",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-MODELL03-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-MODELL03",
+   "text": "Welcher Begriff passt: Weg der Übertragung, z. B. Telefon, E-Mail, persönlich?",
+   "erklaerung": "Kanal → **Weg der Übertragung, z. B. Telefon, E-Mail, persönlich**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Kanal",
+     "richtig": true
+    },
+    {
+     "text": "Sender",
+     "richtig": false
+    },
+    {
+     "text": "Empfänger",
+     "richtig": false
+    },
+    {
+     "text": "Störung / Rauschen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-MODELL04-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-MODELL04",
+   "text": "Was bezeichnet **Störung / Rauschen** im Kommunikationsmodell?",
+   "erklaerung": "Störung / Rauschen → **beeinträchtigt die Übertragung, z. B. Lärm oder Missverständnisse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "beeinträchtigt die Übertragung, z. B. Lärm oder Missverständnisse",
+     "richtig": true
+    },
+    {
+     "text": "entschlüsselt (decodiert) und interpretiert die Nachricht",
+     "richtig": false
+    },
+    {
+     "text": "Rückmeldung des Empfängers an den Sender",
+     "richtig": false
+    },
+    {
+     "text": "Weg der Übertragung, z. B. Telefon, E-Mail, persönlich",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-MODELL04-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-MODELL04",
+   "text": "Welcher Begriff passt: beeinträchtigt die Übertragung, z. B. Lärm oder Missverständnisse?",
+   "erklaerung": "Störung / Rauschen → **beeinträchtigt die Übertragung, z. B. Lärm oder Missverständnisse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Störung / Rauschen",
+     "richtig": true
+    },
+    {
+     "text": "Feedback",
+     "richtig": false
+    },
+    {
+     "text": "Empfänger",
+     "richtig": false
+    },
+    {
+     "text": "Eisbergmodell",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-MODELL05-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-MODELL05",
+   "text": "Was bezeichnet **Feedback** im Kommunikationsmodell?",
+   "erklaerung": "Feedback → **Rückmeldung des Empfängers an den Sender**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Rückmeldung des Empfängers an den Sender",
+     "richtig": true
+    },
+    {
+     "text": "nur ein kleiner Teil der Kommunikation (Sachebene) ist sichtbar, der größere Teil (Beziehungsebene) liegt darunter",
+     "richtig": false
+    },
+    {
+     "text": "beeinträchtigt die Übertragung, z. B. Lärm oder Missverständnisse",
+     "richtig": false
+    },
+    {
+     "text": "Weg der Übertragung, z. B. Telefon, E-Mail, persönlich",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-MODELL05-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-MODELL05",
+   "text": "Welcher Begriff passt: Rückmeldung des Empfängers an den Sender?",
+   "erklaerung": "Feedback → **Rückmeldung des Empfängers an den Sender**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Feedback",
+     "richtig": true
+    },
+    {
+     "text": "Störung / Rauschen",
+     "richtig": false
+    },
+    {
+     "text": "Eisbergmodell",
+     "richtig": false
+    },
+    {
+     "text": "Sender",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-MODELL06-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-MODELL06",
+   "text": "Was bezeichnet **Eisbergmodell** im Kommunikationsmodell?",
+   "erklaerung": "Eisbergmodell → **nur ein kleiner Teil der Kommunikation (Sachebene) ist sichtbar, der größere Teil (Beziehungsebene) liegt darunter**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "nur ein kleiner Teil der Kommunikation (Sachebene) ist sichtbar, der größere Teil (Beziehungsebene) liegt darunter",
+     "richtig": true
+    },
+    {
+     "text": "verschlüsselt (codiert) eine Nachricht",
+     "richtig": false
+    },
+    {
+     "text": "Rückmeldung des Empfängers an den Sender",
+     "richtig": false
+    },
+    {
+     "text": "Weg der Übertragung, z. B. Telefon, E-Mail, persönlich",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-MODELL06-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-MODELL06",
+   "text": "Welcher Begriff passt: nur ein kleiner Teil der Kommunikation (Sachebene) ist sichtbar, der größere Teil (Beziehungsebene) liegt darunter?",
+   "erklaerung": "Eisbergmodell → **nur ein kleiner Teil der Kommunikation (Sachebene) ist sichtbar, der größere Teil (Beziehungsebene) liegt darunter**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Eisbergmodell",
+     "richtig": true
+    },
+    {
+     "text": "Feedback",
+     "richtig": false
+    },
+    {
+     "text": "Kanal",
+     "richtig": false
+    },
+    {
+     "text": "Sender",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-WATZ-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-WATZ",
+   "text": "Welche Aussagen sind Axiome von Paul Watzlawick?",
+   "erklaerung": "Richtig sind: Jede Kommunikation hat einen Inhalts- und einen Beziehungsaspekt..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Jede Kommunikation hat einen Inhalts- und einen Beziehungsaspekt.",
+     "richtig": true
+    },
+    {
+     "text": "Eine Nachricht hat genau eine Bedeutung.",
+     "richtig": false
+    },
+    {
+     "text": "Wer schweigt, kommuniziert nicht.",
+     "richtig": false
+    },
+    {
+     "text": "Nur der Sachinhalt einer Nachricht ist wichtig.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-WATZ-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-WATZ",
+   "text": "Welche Aussagen sind Axiome von Paul Watzlawick?",
+   "erklaerung": "Richtig sind: Kommunikation ist immer Ursache und Wirkung (Interpunktion).; Jede Kommunikation hat einen Inhalts- und einen Beziehungsaspekt..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Kommunikation ist immer Ursache und Wirkung (Interpunktion).",
+     "richtig": true
+    },
+    {
+     "text": "Jede Kommunikation hat einen Inhalts- und einen Beziehungsaspekt.",
+     "richtig": true
+    },
+    {
+     "text": "Eine Nachricht hat genau eine Bedeutung.",
+     "richtig": false
+    },
+    {
+     "text": "Kommunikation findet nur verbal statt.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-WATZ-003",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-WATZ",
+   "text": "Welche Aussagen sind Axiome von Paul Watzlawick?",
+   "erklaerung": "Richtig sind: Kommunikation ist immer Ursache und Wirkung (Interpunktion).; Kommunikation ist symmetrisch oder komplementär.; Man kann nicht nicht kommunizieren..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Kommunikation ist immer Ursache und Wirkung (Interpunktion).",
+     "richtig": true
+    },
+    {
+     "text": "Kommunikation ist symmetrisch oder komplementär.",
+     "richtig": true
+    },
+    {
+     "text": "Man kann nicht nicht kommunizieren.",
+     "richtig": true
+    },
+    {
+     "text": "Eine Nachricht hat genau eine Bedeutung.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-WATZ-004",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-WATZ",
+   "text": "Welche Aussagen sind Axiome von Paul Watzlawick?",
+   "erklaerung": "Richtig sind: Menschliche Kommunikation bedient sich analoger und digitaler Modalitäten.; Kommunikation ist symmetrisch oder komplementär..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Menschliche Kommunikation bedient sich analoger und digitaler Modalitäten.",
+     "richtig": true
+    },
+    {
+     "text": "Kommunikation ist symmetrisch oder komplementär.",
+     "richtig": true
+    },
+    {
+     "text": "Wer schweigt, kommuniziert nicht.",
+     "richtig": false
+    },
+    {
+     "text": "Kommunikation findet nur verbal statt.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-WATZ-005",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-WATZ",
+   "text": "Welche Aussagen sind Axiome von Paul Watzlawick?",
+   "erklaerung": "Richtig sind: Kommunikation ist immer Ursache und Wirkung (Interpunktion).; Jede Kommunikation hat einen Inhalts- und einen Beziehungsaspekt.; Man kann nicht nicht kommunizieren..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Kommunikation ist immer Ursache und Wirkung (Interpunktion).",
+     "richtig": true
+    },
+    {
+     "text": "Jede Kommunikation hat einen Inhalts- und einen Beziehungsaspekt.",
+     "richtig": true
+    },
+    {
+     "text": "Man kann nicht nicht kommunizieren.",
+     "richtig": true
+    },
+    {
+     "text": "Nur der Sachinhalt einer Nachricht ist wichtig.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-WATZ-006",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-WATZ",
+   "text": "Welche Aussagen sind Axiome von Paul Watzlawick?",
+   "erklaerung": "Richtig sind: Kommunikation ist symmetrisch oder komplementär.; Man kann nicht nicht kommunizieren..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Kommunikation ist symmetrisch oder komplementär.",
+     "richtig": true
+    },
+    {
+     "text": "Man kann nicht nicht kommunizieren.",
+     "richtig": true
+    },
+    {
+     "text": "Wer schweigt, kommuniziert nicht.",
+     "richtig": false
+    },
+    {
+     "text": "Eine Nachricht hat genau eine Bedeutung.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-WATZ-007",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-WATZ",
+   "text": "Welche Aussagen sind Axiome von Paul Watzlawick?",
+   "erklaerung": "Richtig sind: Jede Kommunikation hat einen Inhalts- und einen Beziehungsaspekt.; Kommunikation ist symmetrisch oder komplementär.; Kommunikation ist immer Ursache und Wirkung (Interpunktion)..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Jede Kommunikation hat einen Inhalts- und einen Beziehungsaspekt.",
+     "richtig": true
+    },
+    {
+     "text": "Kommunikation ist symmetrisch oder komplementär.",
+     "richtig": true
+    },
+    {
+     "text": "Kommunikation ist immer Ursache und Wirkung (Interpunktion).",
+     "richtig": true
+    },
+    {
+     "text": "Wer schweigt, kommuniziert nicht.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-WATZ-008",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-WATZ",
+   "text": "Welche Aussagen sind Axiome von Paul Watzlawick?",
+   "erklaerung": "Richtig sind: Jede Kommunikation hat einen Inhalts- und einen Beziehungsaspekt.; Menschliche Kommunikation bedient sich analoger und digitaler Modalitäten.; Man kann nicht nicht kommunizieren..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Jede Kommunikation hat einen Inhalts- und einen Beziehungsaspekt.",
+     "richtig": true
+    },
+    {
+     "text": "Menschliche Kommunikation bedient sich analoger und digitaler Modalitäten.",
+     "richtig": true
+    },
+    {
+     "text": "Man kann nicht nicht kommunizieren.",
+     "richtig": true
+    },
+    {
+     "text": "Wer schweigt, kommuniziert nicht.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-ICHDU01-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-ICHDU01",
+   "text": "Ich- oder Du-Botschaft? „Du hörst mir nie zu!“",
+   "erklaerung": "Ich-Botschaften beschreiben die eigene Wahrnehmung und wirken weniger angreifend als Du-Botschaften.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Du-Botschaft",
+     "richtig": true
+    },
+    {
+     "text": "Ich-Botschaft",
+     "richtig": false
+    },
+    {
+     "text": "Appell-Botschaft",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-ICHDU02-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-ICHDU02",
+   "text": "Ich- oder Du-Botschaft? „Ich fühle mich übergangen, wenn meine Idee nicht besprochen wird.“",
+   "erklaerung": "Ich-Botschaften beschreiben die eigene Wahrnehmung und wirken weniger angreifend als Du-Botschaften.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ich-Botschaft",
+     "richtig": true
+    },
+    {
+     "text": "Du-Botschaft",
+     "richtig": false
+    },
+    {
+     "text": "Appell-Botschaft",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-ICHDU03-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-ICHDU03",
+   "text": "Ich- oder Du-Botschaft? „Du machst immer alles falsch.“",
+   "erklaerung": "Ich-Botschaften beschreiben die eigene Wahrnehmung und wirken weniger angreifend als Du-Botschaften.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Du-Botschaft",
+     "richtig": true
+    },
+    {
+     "text": "Ich-Botschaft",
+     "richtig": false
+    },
+    {
+     "text": "Appell-Botschaft",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-ICHDU04-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-ICHDU04",
+   "text": "Ich- oder Du-Botschaft? „Ich brauche die Zahlen bis 12 Uhr, damit ich den Bericht abschließen kann.“",
+   "erklaerung": "Ich-Botschaften beschreiben die eigene Wahrnehmung und wirken weniger angreifend als Du-Botschaften.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ich-Botschaft",
+     "richtig": true
+    },
+    {
+     "text": "Du-Botschaft",
+     "richtig": false
+    },
+    {
+     "text": "Appell-Botschaft",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-ICHDU05-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-ICHDU05",
+   "text": "Ich- oder Du-Botschaft? „Sie haben schon wieder vergessen, das Ticket zu schließen.“",
+   "erklaerung": "Ich-Botschaften beschreiben die eigene Wahrnehmung und wirken weniger angreifend als Du-Botschaften.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Du-Botschaft",
+     "richtig": true
+    },
+    {
+     "text": "Ich-Botschaft",
+     "richtig": false
+    },
+    {
+     "text": "Appell-Botschaft",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-ICHDU06-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L1",
+   "gruppe": "KOM-ICHDU06",
+   "text": "Ich- oder Du-Botschaft? „Mir ist wichtig, dass wir pünktlich anfangen.“",
+   "erklaerung": "Ich-Botschaften beschreiben die eigene Wahrnehmung und wirken weniger angreifend als Du-Botschaften.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ich-Botschaft",
+     "richtig": true
+    },
+    {
+     "text": "Du-Botschaft",
+     "richtig": false
+    },
+    {
+     "text": "Appell-Botschaft",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGE01-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGE01",
+   "text": "Welche Fragetechnik wird verwendet? „Wie arbeiten Sie aktuell mit dem System?“",
+   "erklaerung": "„Wie arbeiten Sie aktuell mit dem System?“ → **offene Frage**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "offene Frage",
+     "richtig": true
+    },
+    {
+     "text": "Kontrollfrage",
+     "richtig": false
+    },
+    {
+     "text": "rhetorische Frage",
+     "richtig": false
+    },
+    {
+     "text": "Suggestivfrage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGE02-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGE02",
+   "text": "Welche Fragetechnik wird verwendet? „Nutzen Sie Windows 11?“",
+   "erklaerung": "„Nutzen Sie Windows 11?“ → **geschlossene Frage**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "geschlossene Frage",
+     "richtig": true
+    },
+    {
+     "text": "Alternativfrage",
+     "richtig": false
+    },
+    {
+     "text": "offene Frage",
+     "richtig": false
+    },
+    {
+     "text": "rhetorische Frage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGE03-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGE03",
+   "text": "Welche Fragetechnik wird verwendet? „Möchten Sie den Termin am Dienstag oder am Donnerstag?“",
+   "erklaerung": "„Möchten Sie den Termin am Dienstag oder am Donnerstag?“ → **Alternativfrage**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Alternativfrage",
+     "richtig": true
+    },
+    {
+     "text": "geschlossene Frage",
+     "richtig": false
+    },
+    {
+     "text": "offene Frage",
+     "richtig": false
+    },
+    {
+     "text": "Suggestivfrage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGE04-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGE04",
+   "text": "Welche Fragetechnik wird verwendet? „Sie wollen doch sicher auch die Premium-Version, oder?“",
+   "erklaerung": "„Sie wollen doch sicher auch die Premium-Version, oder?“ → **Suggestivfrage**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Suggestivfrage",
+     "richtig": true
+    },
+    {
+     "text": "rhetorische Frage",
+     "richtig": false
+    },
+    {
+     "text": "Gegenfrage",
+     "richtig": false
+    },
+    {
+     "text": "Alternativfrage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGE05-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGE05",
+   "text": "Welche Fragetechnik wird verwendet? „Wer möchte schon Daten verlieren?“",
+   "erklaerung": "„Wer möchte schon Daten verlieren?“ → **rhetorische Frage**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "rhetorische Frage",
+     "richtig": true
+    },
+    {
+     "text": "Gegenfrage",
+     "richtig": false
+    },
+    {
+     "text": "Suggestivfrage",
+     "richtig": false
+    },
+    {
+     "text": "geschlossene Frage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGE06-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGE06",
+   "text": "Welche Fragetechnik wird verwendet? „Was genau meinen Sie mit ‚langsam‘?“",
+   "erklaerung": "„Was genau meinen Sie mit ‚langsam‘?“ → **offene Frage**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "offene Frage",
+     "richtig": true
+    },
+    {
+     "text": "geschlossene Frage",
+     "richtig": false
+    },
+    {
+     "text": "rhetorische Frage",
+     "richtig": false
+    },
+    {
+     "text": "Suggestivfrage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGE07-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGE07",
+   "text": "Welche Fragetechnik wird verwendet? „Habe ich Sie richtig verstanden, dass der Fehler nur morgens auftritt?“",
+   "erklaerung": "„Habe ich Sie richtig verstanden, dass der Fehler nur morgens auftritt?“ → **Kontrollfrage**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Kontrollfrage",
+     "richtig": true
+    },
+    {
+     "text": "offene Frage",
+     "richtig": false
+    },
+    {
+     "text": "rhetorische Frage",
+     "richtig": false
+    },
+    {
+     "text": "Suggestivfrage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGE08-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGE08",
+   "text": "Welche Fragetechnik wird verwendet? „Wann ist der Fehler zum ersten Mal aufgetreten?“",
+   "erklaerung": "„Wann ist der Fehler zum ersten Mal aufgetreten?“ → **offene Frage**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "offene Frage",
+     "richtig": true
+    },
+    {
+     "text": "rhetorische Frage",
+     "richtig": false
+    },
+    {
+     "text": "geschlossene Frage",
+     "richtig": false
+    },
+    {
+     "text": "Alternativfrage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGE09-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGE09",
+   "text": "Welche Fragetechnik wird verwendet? „Ist der Drucker eingeschaltet?“",
+   "erklaerung": "„Ist der Drucker eingeschaltet?“ → **geschlossene Frage**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "geschlossene Frage",
+     "richtig": true
+    },
+    {
+     "text": "Suggestivfrage",
+     "richtig": false
+    },
+    {
+     "text": "Gegenfrage",
+     "richtig": false
+    },
+    {
+     "text": "Alternativfrage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGE10-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGE10",
+   "text": "Welche Fragetechnik wird verwendet? „Warum fragen Sie das?“ als Antwort auf eine Frage",
+   "erklaerung": "„Warum fragen Sie das?“ als Antwort auf eine Frage → **Gegenfrage**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Gegenfrage",
+     "richtig": true
+    },
+    {
+     "text": "Kontrollfrage",
+     "richtig": false
+    },
+    {
+     "text": "Alternativfrage",
+     "richtig": false
+    },
+    {
+     "text": "Suggestivfrage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGE11-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGE11",
+   "text": "Welche Fragetechnik wird verwendet? „Sie sind doch bestimmt auch der Meinung, dass das zu teuer ist?“",
+   "erklaerung": "„Sie sind doch bestimmt auch der Meinung, dass das zu teuer ist?“ → **Suggestivfrage**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Suggestivfrage",
+     "richtig": true
+    },
+    {
+     "text": "offene Frage",
+     "richtig": false
+    },
+    {
+     "text": "Alternativfrage",
+     "richtig": false
+    },
+    {
+     "text": "rhetorische Frage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGE12-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGE12",
+   "text": "Welche Fragetechnik wird verwendet? „Sollen wir das per E-Mail oder telefonisch klären?“",
+   "erklaerung": "„Sollen wir das per E-Mail oder telefonisch klären?“ → **Alternativfrage**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Alternativfrage",
+     "richtig": true
+    },
+    {
+     "text": "rhetorische Frage",
+     "richtig": false
+    },
+    {
+     "text": "offene Frage",
+     "richtig": false
+    },
+    {
+     "text": "geschlossene Frage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGEZW01-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGEZW01",
+   "text": "Wofür eignet sich eine **offene Frage** am besten?",
+   "erklaerung": "offene Frage → **Informationen sammeln, der Kunde erzählt ausführlich**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Informationen sammeln, der Kunde erzählt ausführlich",
+     "richtig": true
+    },
+    {
+     "text": "sicherstellen, dass man richtig verstanden hat",
+     "richtig": false
+    },
+    {
+     "text": "beeinflusst den Gesprächspartner in eine Richtung (vermeiden!)",
+     "richtig": false
+    },
+    {
+     "text": "schnelle Bestätigung mit Ja/Nein",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGEZW01-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGEZW01",
+   "text": "Welche Frageart dient dazu: Informationen sammeln, der Kunde erzählt ausführlich?",
+   "erklaerung": "offene Frage → **Informationen sammeln, der Kunde erzählt ausführlich**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "offene Frage",
+     "richtig": true
+    },
+    {
+     "text": "Kontrollfrage",
+     "richtig": false
+    },
+    {
+     "text": "Suggestivfrage",
+     "richtig": false
+    },
+    {
+     "text": "geschlossene Frage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGEZW02-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGEZW02",
+   "text": "Wofür eignet sich eine **geschlossene Frage** am besten?",
+   "erklaerung": "geschlossene Frage → **schnelle Bestätigung mit Ja/Nein**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "schnelle Bestätigung mit Ja/Nein",
+     "richtig": true
+    },
+    {
+     "text": "beeinflusst den Gesprächspartner in eine Richtung (vermeiden!)",
+     "richtig": false
+    },
+    {
+     "text": "Entscheidung zwischen vorgegebenen Möglichkeiten herbeiführen",
+     "richtig": false
+    },
+    {
+     "text": "sicherstellen, dass man richtig verstanden hat",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGEZW02-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGEZW02",
+   "text": "Welche Frageart dient dazu: schnelle Bestätigung mit Ja/Nein?",
+   "erklaerung": "geschlossene Frage → **schnelle Bestätigung mit Ja/Nein**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "geschlossene Frage",
+     "richtig": true
+    },
+    {
+     "text": "Suggestivfrage",
+     "richtig": false
+    },
+    {
+     "text": "offene Frage",
+     "richtig": false
+    },
+    {
+     "text": "Kontrollfrage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGEZW03-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGEZW03",
+   "text": "Wofür eignet sich eine **Alternativfrage** am besten?",
+   "erklaerung": "Alternativfrage → **Entscheidung zwischen vorgegebenen Möglichkeiten herbeiführen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Entscheidung zwischen vorgegebenen Möglichkeiten herbeiführen",
+     "richtig": true
+    },
+    {
+     "text": "beeinflusst den Gesprächspartner in eine Richtung (vermeiden!)",
+     "richtig": false
+    },
+    {
+     "text": "sicherstellen, dass man richtig verstanden hat",
+     "richtig": false
+    },
+    {
+     "text": "schnelle Bestätigung mit Ja/Nein",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGEZW03-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGEZW03",
+   "text": "Welche Frageart dient dazu: Entscheidung zwischen vorgegebenen Möglichkeiten herbeiführen?",
+   "erklaerung": "Alternativfrage → **Entscheidung zwischen vorgegebenen Möglichkeiten herbeiführen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Alternativfrage",
+     "richtig": true
+    },
+    {
+     "text": "Kontrollfrage",
+     "richtig": false
+    },
+    {
+     "text": "offene Frage",
+     "richtig": false
+    },
+    {
+     "text": "geschlossene Frage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGEZW04-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGEZW04",
+   "text": "Wofür eignet sich eine **Kontrollfrage** am besten?",
+   "erklaerung": "Kontrollfrage → **sicherstellen, dass man richtig verstanden hat**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "sicherstellen, dass man richtig verstanden hat",
+     "richtig": true
+    },
+    {
+     "text": "Entscheidung zwischen vorgegebenen Möglichkeiten herbeiführen",
+     "richtig": false
+    },
+    {
+     "text": "Informationen sammeln, der Kunde erzählt ausführlich",
+     "richtig": false
+    },
+    {
+     "text": "beeinflusst den Gesprächspartner in eine Richtung (vermeiden!)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGEZW04-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGEZW04",
+   "text": "Welche Frageart dient dazu: sicherstellen, dass man richtig verstanden hat?",
+   "erklaerung": "Kontrollfrage → **sicherstellen, dass man richtig verstanden hat**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Kontrollfrage",
+     "richtig": true
+    },
+    {
+     "text": "Suggestivfrage",
+     "richtig": false
+    },
+    {
+     "text": "Alternativfrage",
+     "richtig": false
+    },
+    {
+     "text": "offene Frage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGEZW05-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGEZW05",
+   "text": "Wofür eignet sich eine **Suggestivfrage** am besten?",
+   "erklaerung": "Suggestivfrage → **beeinflusst den Gesprächspartner in eine Richtung (vermeiden!)**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "beeinflusst den Gesprächspartner in eine Richtung (vermeiden!)",
+     "richtig": true
+    },
+    {
+     "text": "Informationen sammeln, der Kunde erzählt ausführlich",
+     "richtig": false
+    },
+    {
+     "text": "sicherstellen, dass man richtig verstanden hat",
+     "richtig": false
+    },
+    {
+     "text": "Entscheidung zwischen vorgegebenen Möglichkeiten herbeiführen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-FRAGEZW05-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-FRAGEZW05",
+   "text": "Welche Frageart dient dazu: beeinflusst den Gesprächspartner in eine Richtung (vermeiden!)?",
+   "erklaerung": "Suggestivfrage → **beeinflusst den Gesprächspartner in eine Richtung (vermeiden!)**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Suggestivfrage",
+     "richtig": true
+    },
+    {
+     "text": "Kontrollfrage",
+     "richtig": false
+    },
+    {
+     "text": "Alternativfrage",
+     "richtig": false
+    },
+    {
+     "text": "offene Frage",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-ZUHOER01-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-ZUHOER01",
+   "text": "Aktives Zuhören: Was bedeutet **Paraphrasieren**?",
+   "erklaerung": "Paraphrasieren → **das Gehörte mit eigenen Worten wiederholen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "das Gehörte mit eigenen Worten wiederholen",
+     "richtig": true
+    },
+    {
+     "text": "Nicken, Blickkontakt und zugewandte Haltung",
+     "richtig": false
+    },
+    {
+     "text": "die wichtigsten Punkte am Ende bündeln",
+     "richtig": false
+    },
+    {
+     "text": "unklare Punkte gezielt klären",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-ZUHOER01-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-ZUHOER01",
+   "text": "Welche Technik des aktiven Zuhörens: das Gehörte mit eigenen Worten wiederholen?",
+   "erklaerung": "Paraphrasieren → **das Gehörte mit eigenen Worten wiederholen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Paraphrasieren",
+     "richtig": true
+    },
+    {
+     "text": "Nonverbale Signale",
+     "richtig": false
+    },
+    {
+     "text": "Verbalisieren",
+     "richtig": false
+    },
+    {
+     "text": "Zusammenfassen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-ZUHOER02-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-ZUHOER02",
+   "text": "Aktives Zuhören: Was bedeutet **Verbalisieren**?",
+   "erklaerung": "Verbalisieren → **die Gefühle des Gegenübers ansprechen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "die Gefühle des Gegenübers ansprechen",
+     "richtig": true
+    },
+    {
+     "text": "das Gehörte mit eigenen Worten wiederholen",
+     "richtig": false
+    },
+    {
+     "text": "unklare Punkte gezielt klären",
+     "richtig": false
+    },
+    {
+     "text": "die wichtigsten Punkte am Ende bündeln",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-ZUHOER02-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-ZUHOER02",
+   "text": "Welche Technik des aktiven Zuhörens: die Gefühle des Gegenübers ansprechen?",
+   "erklaerung": "Verbalisieren → **die Gefühle des Gegenübers ansprechen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Verbalisieren",
+     "richtig": true
+    },
+    {
+     "text": "Nonverbale Signale",
+     "richtig": false
+    },
+    {
+     "text": "Nachfragen",
+     "richtig": false
+    },
+    {
+     "text": "Paraphrasieren",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-ZUHOER03-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-ZUHOER03",
+   "text": "Aktives Zuhören: Was bedeutet **Nachfragen**?",
+   "erklaerung": "Nachfragen → **unklare Punkte gezielt klären**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "unklare Punkte gezielt klären",
+     "richtig": true
+    },
+    {
+     "text": "die wichtigsten Punkte am Ende bündeln",
+     "richtig": false
+    },
+    {
+     "text": "Nicken, Blickkontakt und zugewandte Haltung",
+     "richtig": false
+    },
+    {
+     "text": "das Gehörte mit eigenen Worten wiederholen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-ZUHOER03-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-ZUHOER03",
+   "text": "Welche Technik des aktiven Zuhörens: unklare Punkte gezielt klären?",
+   "erklaerung": "Nachfragen → **unklare Punkte gezielt klären**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Nachfragen",
+     "richtig": true
+    },
+    {
+     "text": "Verbalisieren",
+     "richtig": false
+    },
+    {
+     "text": "Nonverbale Signale",
+     "richtig": false
+    },
+    {
+     "text": "Zusammenfassen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-ZUHOER04-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-ZUHOER04",
+   "text": "Aktives Zuhören: Was bedeutet **Zusammenfassen**?",
+   "erklaerung": "Zusammenfassen → **die wichtigsten Punkte am Ende bündeln**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "die wichtigsten Punkte am Ende bündeln",
+     "richtig": true
+    },
+    {
+     "text": "unklare Punkte gezielt klären",
+     "richtig": false
+    },
+    {
+     "text": "Nicken, Blickkontakt und zugewandte Haltung",
+     "richtig": false
+    },
+    {
+     "text": "die Gefühle des Gegenübers ansprechen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-ZUHOER04-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-ZUHOER04",
+   "text": "Welche Technik des aktiven Zuhörens: die wichtigsten Punkte am Ende bündeln?",
+   "erklaerung": "Zusammenfassen → **die wichtigsten Punkte am Ende bündeln**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Zusammenfassen",
+     "richtig": true
+    },
+    {
+     "text": "Nonverbale Signale",
+     "richtig": false
+    },
+    {
+     "text": "Nachfragen",
+     "richtig": false
+    },
+    {
+     "text": "Paraphrasieren",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-ZUHOER05-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-ZUHOER05",
+   "text": "Aktives Zuhören: Was bedeutet **Nonverbale Signale**?",
+   "erklaerung": "Nonverbale Signale → **Nicken, Blickkontakt und zugewandte Haltung**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Nicken, Blickkontakt und zugewandte Haltung",
+     "richtig": true
+    },
+    {
+     "text": "die Gefühle des Gegenübers ansprechen",
+     "richtig": false
+    },
+    {
+     "text": "das Gehörte mit eigenen Worten wiederholen",
+     "richtig": false
+    },
+    {
+     "text": "unklare Punkte gezielt klären",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-ZUHOER05-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-ZUHOER05",
+   "text": "Welche Technik des aktiven Zuhörens: Nicken, Blickkontakt und zugewandte Haltung?",
+   "erklaerung": "Nonverbale Signale → **Nicken, Blickkontakt und zugewandte Haltung**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Nonverbale Signale",
+     "richtig": true
+    },
+    {
+     "text": "Nachfragen",
+     "richtig": false
+    },
+    {
+     "text": "Zusammenfassen",
+     "richtig": false
+    },
+    {
+     "text": "Verbalisieren",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-BESCHW-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-BESCHW",
+   "text": "Ein verärgerter Kunde ruft wegen eines Ausfalls an. Wie verhältst du dich professionell?",
+   "erklaerung": "Richtig sind: sachlich bleiben, auch wenn der Kunde laut wird; konkrete nächste Schritte und einen Termin nennen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "sachlich bleiben, auch wenn der Kunde laut wird",
+     "richtig": true
+    },
+    {
+     "text": "konkrete nächste Schritte und einen Termin nennen",
+     "richtig": true
+    },
+    {
+     "text": "dem Kunden die Schuld geben",
+     "richtig": false
+    },
+    {
+     "text": "mit Fachbegriffen beeindrucken",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-BESCHW-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-BESCHW",
+   "text": "Ein verärgerter Kunde ruft wegen eines Ausfalls an. Wie verhältst du dich professionell?",
+   "erklaerung": "Richtig sind: Verständnis zeigen und das Problem zusammenfassen; sachlich bleiben, auch wenn der Kunde laut wird.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Verständnis zeigen und das Problem zusammenfassen",
+     "richtig": true
+    },
+    {
+     "text": "sachlich bleiben, auch wenn der Kunde laut wird",
+     "richtig": true
+    },
+    {
+     "text": "auflegen, wenn er laut wird",
+     "richtig": false
+    },
+    {
+     "text": "den Kunden unterbrechen und das Problem herunterspielen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-BESCHW-003",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-BESCHW",
+   "text": "Ein verärgerter Kunde ruft wegen eines Ausfalls an. Wie verhältst du dich professionell?",
+   "erklaerung": "Richtig sind: Verständnis zeigen und das Problem zusammenfassen; ruhig bleiben und ausreden lassen; sachlich bleiben, auch wenn der Kunde laut wird.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Verständnis zeigen und das Problem zusammenfassen",
+     "richtig": true
+    },
+    {
+     "text": "ruhig bleiben und ausreden lassen",
+     "richtig": true
+    },
+    {
+     "text": "sachlich bleiben, auch wenn der Kunde laut wird",
+     "richtig": true
+    },
+    {
+     "text": "Versprechen machen, die nicht eingehalten werden können",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-BESCHW-004",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-BESCHW",
+   "text": "Ein verärgerter Kunde ruft wegen eines Ausfalls an. Wie verhältst du dich professionell?",
+   "erklaerung": "Richtig sind: das Gespräch und die Lösung dokumentieren; ruhig bleiben und ausreden lassen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "das Gespräch und die Lösung dokumentieren",
+     "richtig": true
+    },
+    {
+     "text": "ruhig bleiben und ausreden lassen",
+     "richtig": true
+    },
+    {
+     "text": "mit Fachbegriffen beeindrucken",
+     "richtig": false
+    },
+    {
+     "text": "Versprechen machen, die nicht eingehalten werden können",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-BESCHW-005",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-BESCHW",
+   "text": "Ein verärgerter Kunde ruft wegen eines Ausfalls an. Wie verhältst du dich professionell?",
+   "erklaerung": "Richtig sind: das Gespräch und die Lösung dokumentieren; konkrete nächste Schritte und einen Termin nennen; ruhig bleiben und ausreden lassen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "das Gespräch und die Lösung dokumentieren",
+     "richtig": true
+    },
+    {
+     "text": "konkrete nächste Schritte und einen Termin nennen",
+     "richtig": true
+    },
+    {
+     "text": "ruhig bleiben und ausreden lassen",
+     "richtig": true
+    },
+    {
+     "text": "Versprechen machen, die nicht eingehalten werden können",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-BESCHW-006",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-BESCHW",
+   "text": "Ein verärgerter Kunde ruft wegen eines Ausfalls an. Wie verhältst du dich professionell?",
+   "erklaerung": "Richtig sind: ruhig bleiben und ausreden lassen; Verständnis zeigen und das Problem zusammenfassen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "ruhig bleiben und ausreden lassen",
+     "richtig": true
+    },
+    {
+     "text": "Verständnis zeigen und das Problem zusammenfassen",
+     "richtig": true
+    },
+    {
+     "text": "Versprechen machen, die nicht eingehalten werden können",
+     "richtig": false
+    },
+    {
+     "text": "auflegen, wenn er laut wird",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-BESCHW-007",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-BESCHW",
+   "text": "Ein verärgerter Kunde ruft wegen eines Ausfalls an. Wie verhältst du dich professionell?",
+   "erklaerung": "Richtig sind: ruhig bleiben und ausreden lassen; Verständnis zeigen und das Problem zusammenfassen; konkrete nächste Schritte und einen Termin nennen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "ruhig bleiben und ausreden lassen",
+     "richtig": true
+    },
+    {
+     "text": "Verständnis zeigen und das Problem zusammenfassen",
+     "richtig": true
+    },
+    {
+     "text": "konkrete nächste Schritte und einen Termin nennen",
+     "richtig": true
+    },
+    {
+     "text": "dem Kunden die Schuld geben",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-BESCHW-008",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-BESCHW",
+   "text": "Ein verärgerter Kunde ruft wegen eines Ausfalls an. Wie verhältst du dich professionell?",
+   "erklaerung": "Richtig sind: ruhig bleiben und ausreden lassen; konkrete nächste Schritte und einen Termin nennen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "ruhig bleiben und ausreden lassen",
+     "richtig": true
+    },
+    {
+     "text": "konkrete nächste Schritte und einen Termin nennen",
+     "richtig": true
+    },
+    {
+     "text": "Versprechen machen, die nicht eingehalten werden können",
+     "richtig": false
+    },
+    {
+     "text": "den Kunden unterbrechen und das Problem herunterspielen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-BESCHW-009",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-BESCHW",
+   "text": "Ein verärgerter Kunde ruft wegen eines Ausfalls an. Wie verhältst du dich professionell?",
+   "erklaerung": "Richtig sind: das Gespräch und die Lösung dokumentieren; ruhig bleiben und ausreden lassen; sachlich bleiben, auch wenn der Kunde laut wird.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "das Gespräch und die Lösung dokumentieren",
+     "richtig": true
+    },
+    {
+     "text": "ruhig bleiben und ausreden lassen",
+     "richtig": true
+    },
+    {
+     "text": "sachlich bleiben, auch wenn der Kunde laut wird",
+     "richtig": true
+    },
+    {
+     "text": "mit Fachbegriffen beeindrucken",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-BESCHW-010",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-BESCHW",
+   "text": "Ein verärgerter Kunde ruft wegen eines Ausfalls an. Wie verhältst du dich professionell?",
+   "erklaerung": "Richtig sind: Verständnis zeigen und das Problem zusammenfassen; sachlich bleiben, auch wenn der Kunde laut wird; konkrete nächste Schritte und einen Termin nennen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Verständnis zeigen und das Problem zusammenfassen",
+     "richtig": true
+    },
+    {
+     "text": "sachlich bleiben, auch wenn der Kunde laut wird",
+     "richtig": true
+    },
+    {
+     "text": "konkrete nächste Schritte und einen Termin nennen",
+     "richtig": true
+    },
+    {
+     "text": "den Kunden unterbrechen und das Problem herunterspielen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-PHASE-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-PHASE",
+   "text": "Ein Beratungsgespräch läuft typischerweise in 5 Phasen ab. An welcher Stelle steht **Begrüßung und Kontaktaufnahme**?",
+   "erklaerung": "Begrüßung → Bedarfsermittlung → Lösung/Angebot → Einwandbehandlung → Abschluss.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-KOM-PHASE-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-PHASE",
+   "text": "Ein Beratungsgespräch läuft typischerweise in 5 Phasen ab. An welcher Stelle steht **Bedarfsermittlung**?",
+   "erklaerung": "Begrüßung → Bedarfsermittlung → Lösung/Angebot → Einwandbehandlung → Abschluss.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-KOM-PHASE-003",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-PHASE",
+   "text": "Ein Beratungsgespräch läuft typischerweise in 5 Phasen ab. An welcher Stelle steht **Lösungsvorschlag / Angebot**?",
+   "erklaerung": "Begrüßung → Bedarfsermittlung → Lösung/Angebot → Einwandbehandlung → Abschluss.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-KOM-PHASE-004",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-PHASE",
+   "text": "Ein Beratungsgespräch läuft typischerweise in 5 Phasen ab. An welcher Stelle steht **Einwandbehandlung**?",
+   "erklaerung": "Begrüßung → Bedarfsermittlung → Lösung/Angebot → Einwandbehandlung → Abschluss.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-KOM-PHASE-005",
+   "thema": "kommunikation",
+   "lektion": "KOM-L2",
+   "gruppe": "KOM-PHASE",
+   "text": "Ein Beratungsgespräch läuft typischerweise in 5 Phasen ab. An welcher Stelle steht **Abschluss und Verabschiedung**?",
+   "erklaerung": "Begrüßung → Bedarfsermittlung → Lösung/Angebot → Einwandbehandlung → Abschluss.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 5,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-KOM-EISEN01-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-EISEN01",
+   "text": "Eisenhower-Matrix: Wie behandelst du diese Aufgabe? Der Mailserver ist ausgefallen, alle warten.",
+   "erklaerung": "Der Mailserver ist ausgefallen, alle warten → **wichtig und dringend → sofort selbst erledigen**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "wichtig und dringend → sofort selbst erledigen",
+     "richtig": true
+    },
+    {
+     "text": "weder wichtig noch dringend → nicht bearbeiten (Papierkorb)",
+     "richtig": false
+    },
+    {
+     "text": "dringend, nicht wichtig → delegieren",
+     "richtig": false
+    },
+    {
+     "text": "wichtig, nicht dringend → planen und terminieren",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EISEN02-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-EISEN02",
+   "text": "Eisenhower-Matrix: Wie behandelst du diese Aufgabe? Schulungskonzept für das nächste Quartal erstellen",
+   "erklaerung": "Schulungskonzept für das nächste Quartal erstellen → **wichtig, nicht dringend → planen und terminieren**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "wichtig, nicht dringend → planen und terminieren",
+     "richtig": true
+    },
+    {
+     "text": "weder wichtig noch dringend → nicht bearbeiten (Papierkorb)",
+     "richtig": false
+    },
+    {
+     "text": "dringend, nicht wichtig → delegieren",
+     "richtig": false
+    },
+    {
+     "text": "wichtig und dringend → sofort selbst erledigen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EISEN03-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-EISEN03",
+   "text": "Eisenhower-Matrix: Wie behandelst du diese Aufgabe? Ein Kollege bittet um Toner für den Etagendrucker",
+   "erklaerung": "Ein Kollege bittet um Toner für den Etagendrucker → **dringend, nicht wichtig → delegieren**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "dringend, nicht wichtig → delegieren",
+     "richtig": true
+    },
+    {
+     "text": "wichtig und dringend → sofort selbst erledigen",
+     "richtig": false
+    },
+    {
+     "text": "weder wichtig noch dringend → nicht bearbeiten (Papierkorb)",
+     "richtig": false
+    },
+    {
+     "text": "wichtig, nicht dringend → planen und terminieren",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EISEN04-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-EISEN04",
+   "text": "Eisenhower-Matrix: Wie behandelst du diese Aufgabe? Newsletter von Anbietern durchlesen, die man nicht braucht",
+   "erklaerung": "Newsletter von Anbietern durchlesen, die man nicht braucht → **weder wichtig noch dringend → nicht bearbeiten (Papierkorb)**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "weder wichtig noch dringend → nicht bearbeiten (Papierkorb)",
+     "richtig": true
+    },
+    {
+     "text": "wichtig und dringend → sofort selbst erledigen",
+     "richtig": false
+    },
+    {
+     "text": "wichtig, nicht dringend → planen und terminieren",
+     "richtig": false
+    },
+    {
+     "text": "dringend, nicht wichtig → delegieren",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EISEN05-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-EISEN05",
+   "text": "Eisenhower-Matrix: Wie behandelst du diese Aufgabe? Die Lizenz der Firewall läuft heute Nacht ab",
+   "erklaerung": "Die Lizenz der Firewall läuft heute Nacht ab → **wichtig und dringend → sofort selbst erledigen**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "wichtig und dringend → sofort selbst erledigen",
+     "richtig": true
+    },
+    {
+     "text": "weder wichtig noch dringend → nicht bearbeiten (Papierkorb)",
+     "richtig": false
+    },
+    {
+     "text": "wichtig, nicht dringend → planen und terminieren",
+     "richtig": false
+    },
+    {
+     "text": "dringend, nicht wichtig → delegieren",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EISEN06-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-EISEN06",
+   "text": "Eisenhower-Matrix: Wie behandelst du diese Aufgabe? Dokumentation des Netzwerks aktualisieren (kein akuter Anlass)",
+   "erklaerung": "Dokumentation des Netzwerks aktualisieren (kein akuter Anlass) → **wichtig, nicht dringend → planen und terminieren**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "wichtig, nicht dringend → planen und terminieren",
+     "richtig": true
+    },
+    {
+     "text": "weder wichtig noch dringend → nicht bearbeiten (Papierkorb)",
+     "richtig": false
+    },
+    {
+     "text": "dringend, nicht wichtig → delegieren",
+     "richtig": false
+    },
+    {
+     "text": "wichtig und dringend → sofort selbst erledigen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EISEN07-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-EISEN07",
+   "text": "Eisenhower-Matrix: Wie behandelst du diese Aufgabe? Ein Anruf, der nur Kaffeebestellungen für das Team betrifft",
+   "erklaerung": "Ein Anruf, der nur Kaffeebestellungen für das Team betrifft → **dringend, nicht wichtig → delegieren**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "dringend, nicht wichtig → delegieren",
+     "richtig": true
+    },
+    {
+     "text": "weder wichtig noch dringend → nicht bearbeiten (Papierkorb)",
+     "richtig": false
+    },
+    {
+     "text": "wichtig und dringend → sofort selbst erledigen",
+     "richtig": false
+    },
+    {
+     "text": "wichtig, nicht dringend → planen und terminieren",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EISEN08-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-EISEN08",
+   "text": "Eisenhower-Matrix: Wie behandelst du diese Aufgabe? Sicherheitsupdate für eine aktiv ausgenutzte Lücke einspielen",
+   "erklaerung": "Sicherheitsupdate für eine aktiv ausgenutzte Lücke einspielen → **wichtig und dringend → sofort selbst erledigen**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "wichtig und dringend → sofort selbst erledigen",
+     "richtig": true
+    },
+    {
+     "text": "dringend, nicht wichtig → delegieren",
+     "richtig": false
+    },
+    {
+     "text": "wichtig, nicht dringend → planen und terminieren",
+     "richtig": false
+    },
+    {
+     "text": "weder wichtig noch dringend → nicht bearbeiten (Papierkorb)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EISEN09-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-EISEN09",
+   "text": "Eisenhower-Matrix: Wie behandelst du diese Aufgabe? Weiterbildung zur Cloud-Zertifizierung planen",
+   "erklaerung": "Weiterbildung zur Cloud-Zertifizierung planen → **wichtig, nicht dringend → planen und terminieren**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "wichtig, nicht dringend → planen und terminieren",
+     "richtig": true
+    },
+    {
+     "text": "wichtig und dringend → sofort selbst erledigen",
+     "richtig": false
+    },
+    {
+     "text": "weder wichtig noch dringend → nicht bearbeiten (Papierkorb)",
+     "richtig": false
+    },
+    {
+     "text": "dringend, nicht wichtig → delegieren",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-EISEN10-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-EISEN10",
+   "text": "Eisenhower-Matrix: Wie behandelst du diese Aufgabe? Bunte Diagramme für eine interne Präsentation ohne Termin aufhübschen",
+   "erklaerung": "Bunte Diagramme für eine interne Präsentation ohne Termin aufhübschen → **weder wichtig noch dringend → nicht bearbeiten (Papierkorb)**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "weder wichtig noch dringend → nicht bearbeiten (Papierkorb)",
+     "richtig": true
+    },
+    {
+     "text": "dringend, nicht wichtig → delegieren",
+     "richtig": false
+    },
+    {
+     "text": "wichtig, nicht dringend → planen und terminieren",
+     "richtig": false
+    },
+    {
+     "text": "wichtig und dringend → sofort selbst erledigen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-METHODE01-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-METHODE01",
+   "text": "Was beschreibt die Methode **Pareto-Prinzip**?",
+   "erklaerung": "Pareto-Prinzip → **mit 20 % des Aufwands lassen sich oft 80 % des Ergebnisses erreichen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "mit 20 % des Aufwands lassen sich oft 80 % des Ergebnisses erreichen",
+     "richtig": true
+    },
+    {
+     "text": "Aufgaben nach Wichtigkeit in A, B und C einteilen",
+     "richtig": false
+    },
+    {
+     "text": "Ideen um ein zentrales Thema verzweigt darstellen",
+     "richtig": false
+    },
+    {
+     "text": "25 Minuten konzentriert arbeiten, dann kurze Pause",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-METHODE01-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-METHODE01",
+   "text": "Welche Methode: mit 20 % des Aufwands lassen sich oft 80 % des Ergebnisses erreichen?",
+   "erklaerung": "Pareto-Prinzip → **mit 20 % des Aufwands lassen sich oft 80 % des Ergebnisses erreichen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Pareto-Prinzip",
+     "richtig": true
+    },
+    {
+     "text": "Pomodoro-Technik",
+     "richtig": false
+    },
+    {
+     "text": "Kanban (persönlich)",
+     "richtig": false
+    },
+    {
+     "text": "ALPEN-Methode",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-METHODE02-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-METHODE02",
+   "text": "Was beschreibt die Methode **ALPEN-Methode**?",
+   "erklaerung": "ALPEN-Methode → **Aufgaben notieren, Länge schätzen, Pufferzeit, Entscheidungen, Nachkontrolle**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Aufgaben notieren, Länge schätzen, Pufferzeit, Entscheidungen, Nachkontrolle",
+     "richtig": true
+    },
+    {
+     "text": "Ideen um ein zentrales Thema verzweigt darstellen",
+     "richtig": false
+    },
+    {
+     "text": "25 Minuten konzentriert arbeiten, dann kurze Pause",
+     "richtig": false
+    },
+    {
+     "text": "Aufgaben nach Wichtigkeit in A, B und C einteilen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-METHODE02-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-METHODE02",
+   "text": "Welche Methode: Aufgaben notieren, Länge schätzen, Pufferzeit, Entscheidungen, Nachkontrolle?",
+   "erklaerung": "ALPEN-Methode → **Aufgaben notieren, Länge schätzen, Pufferzeit, Entscheidungen, Nachkontrolle**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "ALPEN-Methode",
+     "richtig": true
+    },
+    {
+     "text": "Pomodoro-Technik",
+     "richtig": false
+    },
+    {
+     "text": "Mindmap",
+     "richtig": false
+    },
+    {
+     "text": "ABC-Analyse",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-METHODE03-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-METHODE03",
+   "text": "Was beschreibt die Methode **ABC-Analyse**?",
+   "erklaerung": "ABC-Analyse → **Aufgaben nach Wichtigkeit in A, B und C einteilen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Aufgaben nach Wichtigkeit in A, B und C einteilen",
+     "richtig": true
+    },
+    {
+     "text": "zunächst viele Ideen ohne Bewertung sammeln",
+     "richtig": false
+    },
+    {
+     "text": "25 Minuten konzentriert arbeiten, dann kurze Pause",
+     "richtig": false
+    },
+    {
+     "text": "Ideen um ein zentrales Thema verzweigt darstellen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-METHODE03-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-METHODE03",
+   "text": "Welche Methode: Aufgaben nach Wichtigkeit in A, B und C einteilen?",
+   "erklaerung": "ABC-Analyse → **Aufgaben nach Wichtigkeit in A, B und C einteilen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "ABC-Analyse",
+     "richtig": true
+    },
+    {
+     "text": "Brainstorming",
+     "richtig": false
+    },
+    {
+     "text": "ALPEN-Methode",
+     "richtig": false
+    },
+    {
+     "text": "Pomodoro-Technik",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-METHODE04-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-METHODE04",
+   "text": "Was beschreibt die Methode **Pomodoro-Technik**?",
+   "erklaerung": "Pomodoro-Technik → **25 Minuten konzentriert arbeiten, dann kurze Pause**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "25 Minuten konzentriert arbeiten, dann kurze Pause",
+     "richtig": true
+    },
+    {
+     "text": "mit 20 % des Aufwands lassen sich oft 80 % des Ergebnisses erreichen",
+     "richtig": false
+    },
+    {
+     "text": "Aufgaben sammeln und abhaken",
+     "richtig": false
+    },
+    {
+     "text": "Aufgaben nach Wichtigkeit in A, B und C einteilen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-METHODE04-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-METHODE04",
+   "text": "Welche Methode: 25 Minuten konzentriert arbeiten, dann kurze Pause?",
+   "erklaerung": "Pomodoro-Technik → **25 Minuten konzentriert arbeiten, dann kurze Pause**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Pomodoro-Technik",
+     "richtig": true
+    },
+    {
+     "text": "ALPEN-Methode",
+     "richtig": false
+    },
+    {
+     "text": "To-do-Liste",
+     "richtig": false
+    },
+    {
+     "text": "ABC-Analyse",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-METHODE05-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-METHODE05",
+   "text": "Was beschreibt die Methode **To-do-Liste**?",
+   "erklaerung": "To-do-Liste → **Aufgaben sammeln und abhaken**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Aufgaben sammeln und abhaken",
+     "richtig": true
+    },
+    {
+     "text": "mit 20 % des Aufwands lassen sich oft 80 % des Ergebnisses erreichen",
+     "richtig": false
+    },
+    {
+     "text": "Ideen um ein zentrales Thema verzweigt darstellen",
+     "richtig": false
+    },
+    {
+     "text": "Aufgaben in Spalten To Do, Doing, Done visualisieren",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-METHODE05-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-METHODE05",
+   "text": "Welche Methode: Aufgaben sammeln und abhaken?",
+   "erklaerung": "To-do-Liste → **Aufgaben sammeln und abhaken**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "To-do-Liste",
+     "richtig": true
+    },
+    {
+     "text": "ABC-Analyse",
+     "richtig": false
+    },
+    {
+     "text": "Brainstorming",
+     "richtig": false
+    },
+    {
+     "text": "Pareto-Prinzip",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-METHODE06-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-METHODE06",
+   "text": "Was beschreibt die Methode **Mindmap**?",
+   "erklaerung": "Mindmap → **Ideen um ein zentrales Thema verzweigt darstellen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ideen um ein zentrales Thema verzweigt darstellen",
+     "richtig": true
+    },
+    {
+     "text": "Aufgaben notieren, Länge schätzen, Pufferzeit, Entscheidungen, Nachkontrolle",
+     "richtig": false
+    },
+    {
+     "text": "Aufgaben in Spalten To Do, Doing, Done visualisieren",
+     "richtig": false
+    },
+    {
+     "text": "mit 20 % des Aufwands lassen sich oft 80 % des Ergebnisses erreichen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-METHODE06-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-METHODE06",
+   "text": "Welche Methode: Ideen um ein zentrales Thema verzweigt darstellen?",
+   "erklaerung": "Mindmap → **Ideen um ein zentrales Thema verzweigt darstellen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Mindmap",
+     "richtig": true
+    },
+    {
+     "text": "Kanban (persönlich)",
+     "richtig": false
+    },
+    {
+     "text": "ABC-Analyse",
+     "richtig": false
+    },
+    {
+     "text": "Pareto-Prinzip",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-METHODE07-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-METHODE07",
+   "text": "Was beschreibt die Methode **Brainstorming**?",
+   "erklaerung": "Brainstorming → **zunächst viele Ideen ohne Bewertung sammeln**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "zunächst viele Ideen ohne Bewertung sammeln",
+     "richtig": true
+    },
+    {
+     "text": "Aufgaben sammeln und abhaken",
+     "richtig": false
+    },
+    {
+     "text": "Ideen um ein zentrales Thema verzweigt darstellen",
+     "richtig": false
+    },
+    {
+     "text": "mit 20 % des Aufwands lassen sich oft 80 % des Ergebnisses erreichen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-METHODE07-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-METHODE07",
+   "text": "Welche Methode: zunächst viele Ideen ohne Bewertung sammeln?",
+   "erklaerung": "Brainstorming → **zunächst viele Ideen ohne Bewertung sammeln**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Brainstorming",
+     "richtig": true
+    },
+    {
+     "text": "To-do-Liste",
+     "richtig": false
+    },
+    {
+     "text": "Kanban (persönlich)",
+     "richtig": false
+    },
+    {
+     "text": "Pomodoro-Technik",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-METHODE08-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-METHODE08",
+   "text": "Was beschreibt die Methode **Kanban (persönlich)**?",
+   "erklaerung": "Kanban (persönlich) → **Aufgaben in Spalten To Do, Doing, Done visualisieren**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Aufgaben in Spalten To Do, Doing, Done visualisieren",
+     "richtig": true
+    },
+    {
+     "text": "25 Minuten konzentriert arbeiten, dann kurze Pause",
+     "richtig": false
+    },
+    {
+     "text": "Ideen um ein zentrales Thema verzweigt darstellen",
+     "richtig": false
+    },
+    {
+     "text": "Aufgaben notieren, Länge schätzen, Pufferzeit, Entscheidungen, Nachkontrolle",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-METHODE08-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-METHODE08",
+   "text": "Welche Methode: Aufgaben in Spalten To Do, Doing, Done visualisieren?",
+   "erklaerung": "Kanban (persönlich) → **Aufgaben in Spalten To Do, Doing, Done visualisieren**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Kanban (persönlich)",
+     "richtig": true
+    },
+    {
+     "text": "Mindmap",
+     "richtig": false
+    },
+    {
+     "text": "Pareto-Prinzip",
+     "richtig": false
+    },
+    {
+     "text": "ALPEN-Methode",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-PRAES01-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-PRAES01",
+   "text": "Präsentation: Was gehört zu **Einleitung**?",
+   "erklaerung": "Einleitung → **Begrüßung, Thema, Ziel und Ablauf nennen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Begrüßung, Thema, Ziel und Ablauf nennen",
+     "richtig": true
+    },
+    {
+     "text": "Zusammenfassung, Fazit und Raum für Fragen",
+     "richtig": false
+    },
+    {
+     "text": "Inhalte strukturiert und mit Beispielen darstellen",
+     "richtig": false
+    },
+    {
+     "text": "Vorwissen und Erwartungen des Publikums klären",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-PRAES01-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-PRAES01",
+   "text": "Welcher Teil/Schritt der Präsentation: Begrüßung, Thema, Ziel und Ablauf nennen?",
+   "erklaerung": "Einleitung → **Begrüßung, Thema, Ziel und Ablauf nennen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Einleitung",
+     "richtig": true
+    },
+    {
+     "text": "Schluss",
+     "richtig": false
+    },
+    {
+     "text": "Hauptteil",
+     "richtig": false
+    },
+    {
+     "text": "Zielgruppenanalyse",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-PRAES02-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-PRAES02",
+   "text": "Präsentation: Was gehört zu **Hauptteil**?",
+   "erklaerung": "Hauptteil → **Inhalte strukturiert und mit Beispielen darstellen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Inhalte strukturiert und mit Beispielen darstellen",
+     "richtig": true
+    },
+    {
+     "text": "Zusammenfassung, Fazit und Raum für Fragen",
+     "richtig": false
+    },
+    {
+     "text": "Begrüßung, Thema, Ziel und Ablauf nennen",
+     "richtig": false
+    },
+    {
+     "text": "wenig Text, gut lesbare Schrift, aussagekräftige Grafiken",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-PRAES02-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-PRAES02",
+   "text": "Welcher Teil/Schritt der Präsentation: Inhalte strukturiert und mit Beispielen darstellen?",
+   "erklaerung": "Hauptteil → **Inhalte strukturiert und mit Beispielen darstellen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Hauptteil",
+     "richtig": true
+    },
+    {
+     "text": "Einleitung",
+     "richtig": false
+    },
+    {
+     "text": "Zielgruppenanalyse",
+     "richtig": false
+    },
+    {
+     "text": "Foliengestaltung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-PRAES03-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-PRAES03",
+   "text": "Präsentation: Was gehört zu **Schluss**?",
+   "erklaerung": "Schluss → **Zusammenfassung, Fazit und Raum für Fragen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Zusammenfassung, Fazit und Raum für Fragen",
+     "richtig": true
+    },
+    {
+     "text": "Inhalte strukturiert und mit Beispielen darstellen",
+     "richtig": false
+    },
+    {
+     "text": "Begrüßung, Thema, Ziel und Ablauf nennen",
+     "richtig": false
+    },
+    {
+     "text": "Vorwissen und Erwartungen des Publikums klären",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-PRAES03-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-PRAES03",
+   "text": "Welcher Teil/Schritt der Präsentation: Zusammenfassung, Fazit und Raum für Fragen?",
+   "erklaerung": "Schluss → **Zusammenfassung, Fazit und Raum für Fragen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Schluss",
+     "richtig": true
+    },
+    {
+     "text": "Einleitung",
+     "richtig": false
+    },
+    {
+     "text": "Hauptteil",
+     "richtig": false
+    },
+    {
+     "text": "Zielgruppenanalyse",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-PRAES04-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-PRAES04",
+   "text": "Präsentation: Was gehört zu **Foliengestaltung**?",
+   "erklaerung": "Foliengestaltung → **wenig Text, gut lesbare Schrift, aussagekräftige Grafiken**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "wenig Text, gut lesbare Schrift, aussagekräftige Grafiken",
+     "richtig": true
+    },
+    {
+     "text": "Vorwissen und Erwartungen des Publikums klären",
+     "richtig": false
+    },
+    {
+     "text": "Inhalte strukturiert und mit Beispielen darstellen",
+     "richtig": false
+    },
+    {
+     "text": "Zusammenfassung, Fazit und Raum für Fragen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-PRAES04-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-PRAES04",
+   "text": "Welcher Teil/Schritt der Präsentation: wenig Text, gut lesbare Schrift, aussagekräftige Grafiken?",
+   "erklaerung": "Foliengestaltung → **wenig Text, gut lesbare Schrift, aussagekräftige Grafiken**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Foliengestaltung",
+     "richtig": true
+    },
+    {
+     "text": "Einleitung",
+     "richtig": false
+    },
+    {
+     "text": "Schluss",
+     "richtig": false
+    },
+    {
+     "text": "Zielgruppenanalyse",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-PRAES05-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-PRAES05",
+   "text": "Präsentation: Was gehört zu **Zielgruppenanalyse**?",
+   "erklaerung": "Zielgruppenanalyse → **Vorwissen und Erwartungen des Publikums klären**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Vorwissen und Erwartungen des Publikums klären",
+     "richtig": true
+    },
+    {
+     "text": "Begrüßung, Thema, Ziel und Ablauf nennen",
+     "richtig": false
+    },
+    {
+     "text": "Inhalte strukturiert und mit Beispielen darstellen",
+     "richtig": false
+    },
+    {
+     "text": "Zusammenfassung, Fazit und Raum für Fragen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-PRAES05-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-PRAES05",
+   "text": "Welcher Teil/Schritt der Präsentation: Vorwissen und Erwartungen des Publikums klären?",
+   "erklaerung": "Zielgruppenanalyse → **Vorwissen und Erwartungen des Publikums klären**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Zielgruppenanalyse",
+     "richtig": true
+    },
+    {
+     "text": "Schluss",
+     "richtig": false
+    },
+    {
+     "text": "Foliengestaltung",
+     "richtig": false
+    },
+    {
+     "text": "Hauptteil",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KI-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KI",
+   "text": "Welche Aussagen zum Einsatz von KI-Werkzeugen im Betrieb treffen zu?",
+   "erklaerung": "Richtig sind: Ergebnisse von KI-Werkzeugen auf Richtigkeit prüfen; betriebliche Regeln zur KI-Nutzung einhalten; Urheberrechte und Lizenzen generierter Inhalte beachten.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Ergebnisse von KI-Werkzeugen auf Richtigkeit prüfen",
+     "richtig": true
+    },
+    {
+     "text": "betriebliche Regeln zur KI-Nutzung einhalten",
+     "richtig": true
+    },
+    {
+     "text": "Urheberrechte und Lizenzen generierter Inhalte beachten",
+     "richtig": true
+    },
+    {
+     "text": "Personenbezogene Daten dürfen ohne Weiteres in jeden KI-Chat kopiert werden",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KI-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KI",
+   "text": "Welche Aussagen zum Einsatz von KI-Werkzeugen im Betrieb treffen zu?",
+   "erklaerung": "Richtig sind: betriebliche Regeln zur KI-Nutzung einhalten; Urheberrechte und Lizenzen generierter Inhalte beachten; Ergebnisse von KI-Werkzeugen auf Richtigkeit prüfen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "betriebliche Regeln zur KI-Nutzung einhalten",
+     "richtig": true
+    },
+    {
+     "text": "Urheberrechte und Lizenzen generierter Inhalte beachten",
+     "richtig": true
+    },
+    {
+     "text": "Ergebnisse von KI-Werkzeugen auf Richtigkeit prüfen",
+     "richtig": true
+    },
+    {
+     "text": "Generierter Code ist automatisch sicher",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KI-003",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KI",
+   "text": "Welche Aussagen zum Einsatz von KI-Werkzeugen im Betrieb treffen zu?",
+   "erklaerung": "Richtig sind: Urheberrechte und Lizenzen generierter Inhalte beachten; Ergebnisse von KI-Werkzeugen auf Richtigkeit prüfen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Urheberrechte und Lizenzen generierter Inhalte beachten",
+     "richtig": true
+    },
+    {
+     "text": "Ergebnisse von KI-Werkzeugen auf Richtigkeit prüfen",
+     "richtig": true
+    },
+    {
+     "text": "Für KI-Ergebnisse ist niemand verantwortlich",
+     "richtig": false
+    },
+    {
+     "text": "KI-Ausgaben sind immer korrekt und müssen nicht geprüft werden",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KI-004",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KI",
+   "text": "Welche Aussagen zum Einsatz von KI-Werkzeugen im Betrieb treffen zu?",
+   "erklaerung": "Richtig sind: betriebliche Regeln zur KI-Nutzung einhalten; KI-Ausgaben können erfundene Fakten enthalten (Halluzinationen).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "betriebliche Regeln zur KI-Nutzung einhalten",
+     "richtig": true
+    },
+    {
+     "text": "KI-Ausgaben können erfundene Fakten enthalten (Halluzinationen)",
+     "richtig": true
+    },
+    {
+     "text": "Für KI-Ergebnisse ist niemand verantwortlich",
+     "richtig": false
+    },
+    {
+     "text": "Generierter Code ist automatisch sicher",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KI-005",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KI",
+   "text": "Welche Aussagen zum Einsatz von KI-Werkzeugen im Betrieb treffen zu?",
+   "erklaerung": "Richtig sind: Urheberrechte und Lizenzen generierter Inhalte beachten; betriebliche Regeln zur KI-Nutzung einhalten.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Urheberrechte und Lizenzen generierter Inhalte beachten",
+     "richtig": true
+    },
+    {
+     "text": "betriebliche Regeln zur KI-Nutzung einhalten",
+     "richtig": true
+    },
+    {
+     "text": "Für KI-Ergebnisse ist niemand verantwortlich",
+     "richtig": false
+    },
+    {
+     "text": "Personenbezogene Daten dürfen ohne Weiteres in jeden KI-Chat kopiert werden",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KI-006",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KI",
+   "text": "Welche Aussagen zum Einsatz von KI-Werkzeugen im Betrieb treffen zu?",
+   "erklaerung": "Richtig sind: Urheberrechte und Lizenzen generierter Inhalte beachten; KI-Ausgaben können erfundene Fakten enthalten (Halluzinationen).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Urheberrechte und Lizenzen generierter Inhalte beachten",
+     "richtig": true
+    },
+    {
+     "text": "KI-Ausgaben können erfundene Fakten enthalten (Halluzinationen)",
+     "richtig": true
+    },
+    {
+     "text": "KI-Ausgaben sind immer korrekt und müssen nicht geprüft werden",
+     "richtig": false
+    },
+    {
+     "text": "Für KI-Ergebnisse ist niemand verantwortlich",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KI-007",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KI",
+   "text": "Welche Aussagen zum Einsatz von KI-Werkzeugen im Betrieb treffen zu?",
+   "erklaerung": "Richtig sind: keine vertraulichen Kunden- oder Personaldaten in öffentliche KI-Dienste eingeben; KI-Ausgaben können erfundene Fakten enthalten (Halluzinationen).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "keine vertraulichen Kunden- oder Personaldaten in öffentliche KI-Dienste eingeben",
+     "richtig": true
+    },
+    {
+     "text": "KI-Ausgaben können erfundene Fakten enthalten (Halluzinationen)",
+     "richtig": true
+    },
+    {
+     "text": "Generierter Code ist automatisch sicher",
+     "richtig": false
+    },
+    {
+     "text": "Für KI-Ergebnisse ist niemand verantwortlich",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KI-008",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KI",
+   "text": "Welche Aussagen zum Einsatz von KI-Werkzeugen im Betrieb treffen zu?",
+   "erklaerung": "Richtig sind: KI-Ausgaben können erfundene Fakten enthalten (Halluzinationen); Ergebnisse von KI-Werkzeugen auf Richtigkeit prüfen; betriebliche Regeln zur KI-Nutzung einhalten.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "KI-Ausgaben können erfundene Fakten enthalten (Halluzinationen)",
+     "richtig": true
+    },
+    {
+     "text": "Ergebnisse von KI-Werkzeugen auf Richtigkeit prüfen",
+     "richtig": true
+    },
+    {
+     "text": "betriebliche Regeln zur KI-Nutzung einhalten",
+     "richtig": true
+    },
+    {
+     "text": "KI-Ausgaben sind immer korrekt und müssen nicht geprüft werden",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KI-009",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KI",
+   "text": "Welche Aussagen zum Einsatz von KI-Werkzeugen im Betrieb treffen zu?",
+   "erklaerung": "Richtig sind: KI-Ausgaben können erfundene Fakten enthalten (Halluzinationen); betriebliche Regeln zur KI-Nutzung einhalten.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "KI-Ausgaben können erfundene Fakten enthalten (Halluzinationen)",
+     "richtig": true
+    },
+    {
+     "text": "betriebliche Regeln zur KI-Nutzung einhalten",
+     "richtig": true
+    },
+    {
+     "text": "Generierter Code ist automatisch sicher",
+     "richtig": false
+    },
+    {
+     "text": "KI-Ausgaben sind immer korrekt und müssen nicht geprüft werden",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KI-010",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KI",
+   "text": "Welche Aussagen zum Einsatz von KI-Werkzeugen im Betrieb treffen zu?",
+   "erklaerung": "Richtig sind: Urheberrechte und Lizenzen generierter Inhalte beachten; betriebliche Regeln zur KI-Nutzung einhalten.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Urheberrechte und Lizenzen generierter Inhalte beachten",
+     "richtig": true
+    },
+    {
+     "text": "betriebliche Regeln zur KI-Nutzung einhalten",
+     "richtig": true
+    },
+    {
+     "text": "Generierter Code ist automatisch sicher",
+     "richtig": false
+    },
+    {
+     "text": "Personenbezogene Daten dürfen ohne Weiteres in jeden KI-Chat kopiert werden",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-TEAM01-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-TEAM01",
+   "text": "Teamphasen nach Tuckman: Was kennzeichnet **Forming**?",
+   "erklaerung": "Forming → **Orientierung: Teammitglieder lernen sich kennen, sind höflich und vorsichtig**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Orientierung: Teammitglieder lernen sich kennen, sind höflich und vorsichtig",
+     "richtig": true
+    },
+    {
+     "text": "Regeln und Rollen werden vereinbart, Zusammenhalt wächst",
+     "richtig": false
+    },
+    {
+     "text": "Konflikte um Rollen und Vorgehen treten auf",
+     "richtig": false
+    },
+    {
+     "text": "das Team arbeitet effektiv auf das Ziel hin",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-TEAM01-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-TEAM01",
+   "text": "Welche Teamphase: Orientierung: Teammitglieder lernen sich kennen, sind höflich und vorsichtig?",
+   "erklaerung": "Forming → **Orientierung: Teammitglieder lernen sich kennen, sind höflich und vorsichtig**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Forming",
+     "richtig": true
+    },
+    {
+     "text": "Norming",
+     "richtig": false
+    },
+    {
+     "text": "Performing",
+     "richtig": false
+    },
+    {
+     "text": "Adjourning",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-TEAM02-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-TEAM02",
+   "text": "Teamphasen nach Tuckman: Was kennzeichnet **Storming**?",
+   "erklaerung": "Storming → **Konflikte um Rollen und Vorgehen treten auf**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Konflikte um Rollen und Vorgehen treten auf",
+     "richtig": true
+    },
+    {
+     "text": "Regeln und Rollen werden vereinbart, Zusammenhalt wächst",
+     "richtig": false
+    },
+    {
+     "text": "das Team arbeitet effektiv auf das Ziel hin",
+     "richtig": false
+    },
+    {
+     "text": "Orientierung: Teammitglieder lernen sich kennen, sind höflich und vorsichtig",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-TEAM02-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-TEAM02",
+   "text": "Welche Teamphase: Konflikte um Rollen und Vorgehen treten auf?",
+   "erklaerung": "Storming → **Konflikte um Rollen und Vorgehen treten auf**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Storming",
+     "richtig": true
+    },
+    {
+     "text": "Performing",
+     "richtig": false
+    },
+    {
+     "text": "Norming",
+     "richtig": false
+    },
+    {
+     "text": "Adjourning",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-TEAM03-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-TEAM03",
+   "text": "Teamphasen nach Tuckman: Was kennzeichnet **Norming**?",
+   "erklaerung": "Norming → **Regeln und Rollen werden vereinbart, Zusammenhalt wächst**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Regeln und Rollen werden vereinbart, Zusammenhalt wächst",
+     "richtig": true
+    },
+    {
+     "text": "das Team arbeitet effektiv auf das Ziel hin",
+     "richtig": false
+    },
+    {
+     "text": "Auflösung des Teams nach Projektende",
+     "richtig": false
+    },
+    {
+     "text": "Konflikte um Rollen und Vorgehen treten auf",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-TEAM03-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-TEAM03",
+   "text": "Welche Teamphase: Regeln und Rollen werden vereinbart, Zusammenhalt wächst?",
+   "erklaerung": "Norming → **Regeln und Rollen werden vereinbart, Zusammenhalt wächst**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Norming",
+     "richtig": true
+    },
+    {
+     "text": "Forming",
+     "richtig": false
+    },
+    {
+     "text": "Adjourning",
+     "richtig": false
+    },
+    {
+     "text": "Storming",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-TEAM04-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-TEAM04",
+   "text": "Teamphasen nach Tuckman: Was kennzeichnet **Performing**?",
+   "erklaerung": "Performing → **das Team arbeitet effektiv auf das Ziel hin**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "das Team arbeitet effektiv auf das Ziel hin",
+     "richtig": true
+    },
+    {
+     "text": "Konflikte um Rollen und Vorgehen treten auf",
+     "richtig": false
+    },
+    {
+     "text": "Auflösung des Teams nach Projektende",
+     "richtig": false
+    },
+    {
+     "text": "Orientierung: Teammitglieder lernen sich kennen, sind höflich und vorsichtig",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-TEAM04-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-TEAM04",
+   "text": "Welche Teamphase: das Team arbeitet effektiv auf das Ziel hin?",
+   "erklaerung": "Performing → **das Team arbeitet effektiv auf das Ziel hin**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Performing",
+     "richtig": true
+    },
+    {
+     "text": "Forming",
+     "richtig": false
+    },
+    {
+     "text": "Norming",
+     "richtig": false
+    },
+    {
+     "text": "Storming",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-TEAM05-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-TEAM05",
+   "text": "Teamphasen nach Tuckman: Was kennzeichnet **Adjourning**?",
+   "erklaerung": "Adjourning → **Auflösung des Teams nach Projektende**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Auflösung des Teams nach Projektende",
+     "richtig": true
+    },
+    {
+     "text": "Orientierung: Teammitglieder lernen sich kennen, sind höflich und vorsichtig",
+     "richtig": false
+    },
+    {
+     "text": "Regeln und Rollen werden vereinbart, Zusammenhalt wächst",
+     "richtig": false
+    },
+    {
+     "text": "Konflikte um Rollen und Vorgehen treten auf",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-TEAM05-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-TEAM05",
+   "text": "Welche Teamphase: Auflösung des Teams nach Projektende?",
+   "erklaerung": "Adjourning → **Auflösung des Teams nach Projektende**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Adjourning",
+     "richtig": true
+    },
+    {
+     "text": "Storming",
+     "richtig": false
+    },
+    {
+     "text": "Forming",
+     "richtig": false
+    },
+    {
+     "text": "Norming",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KONFL01-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KONFL01",
+   "text": "Konfliktlösung: Was bedeutet **Win-win (Kooperation)**?",
+   "erklaerung": "Win-win (Kooperation) → **beide Seiten erreichen ihre Interessen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "beide Seiten erreichen ihre Interessen",
+     "richtig": true
+    },
+    {
+     "text": "eine Seite verzichtet zugunsten der anderen",
+     "richtig": false
+    },
+    {
+     "text": "beide geben teilweise nach",
+     "richtig": false
+    },
+    {
+     "text": "der Konflikt wird nicht angesprochen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KONFL01-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KONFL01",
+   "text": "Welche Strategie: beide Seiten erreichen ihre Interessen?",
+   "erklaerung": "Win-win (Kooperation) → **beide Seiten erreichen ihre Interessen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Win-win (Kooperation)",
+     "richtig": true
+    },
+    {
+     "text": "Nachgeben",
+     "richtig": false
+    },
+    {
+     "text": "Kompromiss",
+     "richtig": false
+    },
+    {
+     "text": "Vermeiden",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KONFL02-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KONFL02",
+   "text": "Konfliktlösung: Was bedeutet **Kompromiss**?",
+   "erklaerung": "Kompromiss → **beide geben teilweise nach**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "beide geben teilweise nach",
+     "richtig": true
+    },
+    {
+     "text": "eine Seite verzichtet zugunsten der anderen",
+     "richtig": false
+    },
+    {
+     "text": "beide Seiten erreichen ihre Interessen",
+     "richtig": false
+    },
+    {
+     "text": "eine Seite gewinnt auf Kosten der anderen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KONFL02-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KONFL02",
+   "text": "Welche Strategie: beide geben teilweise nach?",
+   "erklaerung": "Kompromiss → **beide geben teilweise nach**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Kompromiss",
+     "richtig": true
+    },
+    {
+     "text": "Durchsetzen",
+     "richtig": false
+    },
+    {
+     "text": "Vermeiden",
+     "richtig": false
+    },
+    {
+     "text": "Nachgeben",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KONFL03-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KONFL03",
+   "text": "Konfliktlösung: Was bedeutet **Durchsetzen**?",
+   "erklaerung": "Durchsetzen → **eine Seite gewinnt auf Kosten der anderen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "eine Seite gewinnt auf Kosten der anderen",
+     "richtig": true
+    },
+    {
+     "text": "der Konflikt wird nicht angesprochen",
+     "richtig": false
+    },
+    {
+     "text": "beide geben teilweise nach",
+     "richtig": false
+    },
+    {
+     "text": "beide Seiten erreichen ihre Interessen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KONFL03-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KONFL03",
+   "text": "Welche Strategie: eine Seite gewinnt auf Kosten der anderen?",
+   "erklaerung": "Durchsetzen → **eine Seite gewinnt auf Kosten der anderen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Durchsetzen",
+     "richtig": true
+    },
+    {
+     "text": "Win-win (Kooperation)",
+     "richtig": false
+    },
+    {
+     "text": "Nachgeben",
+     "richtig": false
+    },
+    {
+     "text": "Vermeiden",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KONFL04-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KONFL04",
+   "text": "Konfliktlösung: Was bedeutet **Vermeiden**?",
+   "erklaerung": "Vermeiden → **der Konflikt wird nicht angesprochen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "der Konflikt wird nicht angesprochen",
+     "richtig": true
+    },
+    {
+     "text": "beide Seiten erreichen ihre Interessen",
+     "richtig": false
+    },
+    {
+     "text": "eine Seite gewinnt auf Kosten der anderen",
+     "richtig": false
+    },
+    {
+     "text": "eine Seite verzichtet zugunsten der anderen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KONFL04-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KONFL04",
+   "text": "Welche Strategie: der Konflikt wird nicht angesprochen?",
+   "erklaerung": "Vermeiden → **der Konflikt wird nicht angesprochen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Vermeiden",
+     "richtig": true
+    },
+    {
+     "text": "Win-win (Kooperation)",
+     "richtig": false
+    },
+    {
+     "text": "Nachgeben",
+     "richtig": false
+    },
+    {
+     "text": "Kompromiss",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KONFL05-001",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KONFL05",
+   "text": "Konfliktlösung: Was bedeutet **Nachgeben**?",
+   "erklaerung": "Nachgeben → **eine Seite verzichtet zugunsten der anderen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "eine Seite verzichtet zugunsten der anderen",
+     "richtig": true
+    },
+    {
+     "text": "beide Seiten erreichen ihre Interessen",
+     "richtig": false
+    },
+    {
+     "text": "beide geben teilweise nach",
+     "richtig": false
+    },
+    {
+     "text": "eine Seite gewinnt auf Kosten der anderen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-KOM-KONFL05-002",
+   "thema": "kommunikation",
+   "lektion": "KOM-L3",
+   "gruppe": "KOM-KONFL05",
+   "text": "Welche Strategie: eine Seite verzichtet zugunsten der anderen?",
+   "erklaerung": "Nachgeben → **eine Seite verzichtet zugunsten der anderen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Nachgeben",
+     "richtig": true
+    },
+    {
+     "text": "Kompromiss",
+     "richtig": false
+    },
+    {
+     "text": "Vermeiden",
+     "richtig": false
+    },
+    {
+     "text": "Win-win (Kooperation)",
+     "richtig": false
+    }
+   ]
+  }
+ ]
+}

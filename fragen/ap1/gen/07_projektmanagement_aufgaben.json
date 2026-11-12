@@ -1,0 +1,5546 @@
+{
+ "fragen": [
+  {
+   "schluessel": "G-PM-NPDAUER-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPDAUER",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 7 | A |\n| C | 8 | A, B |\n| D | 8 | B |\n| E | 4 | C, D |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 2, SAZ 0, SEZ 2, GP 0; B: FAZ 2, FEZ 9, SAZ 2, SEZ 9, GP 0; C: FAZ 9, FEZ 17, SAZ 9, SEZ 17, GP 0; D: FAZ 9, FEZ 17, SAZ 9, SEZ 17, GP 0; E: FAZ 17, FEZ 21, SAZ 17, SEZ 21, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 21,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFAZ-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 5 | – |\n| B | 6 | A |\n| C | 2 | B |\n| D | 5 | A |\n| E | 3 | C |\n| F | 8 | D, E |\n\nWie lautet der **frühestmögliche Anfangszeitpunkt (FAZ)** von Vorgang **D**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 5, SAZ 0, SEZ 5, GP 0; B: FAZ 5, FEZ 11, SAZ 5, SEZ 11, GP 0; C: FAZ 11, FEZ 13, SAZ 11, SEZ 13, GP 0; D: FAZ 5, FEZ 10, SAZ 11, SEZ 16, GP 6; E: FAZ 13, FEZ 16, SAZ 13, SEZ 16, GP 0; F: FAZ 16, FEZ 24, SAZ 16, SEZ 24, GP 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 5,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPSAZ-003",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPSAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 6 | A |\n| C | 2 | B |\n| D | 8 | B, C |\n| E | 5 | D |\n| F | 5 | C, E |\n\nWie lautet der **spätestmögliche Anfangszeitpunkt (SAZ)** von Vorgang **E**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 2, SAZ 0, SEZ 2, GP 0; B: FAZ 2, FEZ 8, SAZ 2, SEZ 8, GP 0; C: FAZ 8, FEZ 10, SAZ 8, SEZ 10, GP 0; D: FAZ 10, FEZ 18, SAZ 10, SEZ 18, GP 0; E: FAZ 18, FEZ 23, SAZ 18, SEZ 23, GP 0; F: FAZ 23, FEZ 28, SAZ 23, SEZ 28, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 18,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPGP-004",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPGP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 5 | – |\n| B | 5 | A |\n| C | 2 | A, B |\n| D | 6 | A, C |\n| E | 6 | B, D |\n\nWie groß ist der **Gesamtpuffer** von Vorgang **B** in Tagen?",
+   "erklaerung": "Gesamtpuffer = SAZ − FAZ (bzw. SEZ − FEZ). A: FAZ 0, FEZ 5, SAZ 0, SEZ 5, GP 0; B: FAZ 5, FEZ 10, SAZ 5, SEZ 10, GP 0; C: FAZ 10, FEZ 12, SAZ 10, SEZ 12, GP 0; D: FAZ 12, FEZ 18, SAZ 12, SEZ 18, GP 0; E: FAZ 18, FEZ 24, SAZ 18, SEZ 24, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFP-005",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 3 | – |\n| B | 1 | A |\n| C | 1 | B |\n| D | 2 | B |\n| E | 6 | B, C |\n| F | 7 | D, E |\n\nWie groß ist der **freie Puffer** von Vorgang **B** in Tagen?",
+   "erklaerung": "Freier Puffer = kleinstes FAZ der Nachfolger − eigenes FEZ. Für B: FEZ 4, freier Puffer 0. A: FAZ 0, FEZ 3, SAZ 0, SEZ 3, GP 0; B: FAZ 3, FEZ 4, SAZ 3, SEZ 4, GP 0; C: FAZ 4, FEZ 5, SAZ 4, SEZ 5, GP 0; D: FAZ 4, FEZ 6, SAZ 9, SEZ 11, GP 5; E: FAZ 5, FEZ 11, SAZ 5, SEZ 11, GP 0; F: FAZ 11, FEZ 18, SAZ 11, SEZ 18, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPKRIT-006",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPKRIT",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 7 | – |\n| B | 3 | A |\n| C | 4 | A |\n| D | 8 | A |\n| E | 8 | B, C |\n| F | 7 | C, D, E |\n\nWelcher Weg ist der **kritische Pfad**?",
+   "erklaerung": "Der kritische Pfad besteht aus Vorgängen mit Gesamtpuffer 0 und ist der längste Weg. A: FAZ 0, FEZ 7, SAZ 0, SEZ 7, GP 0; B: FAZ 7, FEZ 10, SAZ 8, SEZ 11, GP 1; C: FAZ 7, FEZ 11, SAZ 7, SEZ 11, GP 0; D: FAZ 7, FEZ 15, SAZ 11, SEZ 19, GP 4; E: FAZ 11, FEZ 19, SAZ 11, SEZ 19, GP 0; F: FAZ 19, FEZ 26, SAZ 19, SEZ 26, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "A → C → E → F",
+     "richtig": true
+    },
+    {
+     "text": "A → B → E → F",
+     "richtig": false
+    },
+    {
+     "text": "A → D → F",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPDAUER-007",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPDAUER",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 5 | – |\n| B | 5 | A |\n| C | 2 | A, B |\n| D | 5 | B |\n| E | 2 | C, D |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 5, SAZ 0, SEZ 5, GP 0; B: FAZ 5, FEZ 10, SAZ 5, SEZ 10, GP 0; C: FAZ 10, FEZ 12, SAZ 13, SEZ 15, GP 3; D: FAZ 10, FEZ 15, SAZ 10, SEZ 15, GP 0; E: FAZ 15, FEZ 17, SAZ 15, SEZ 17, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 17,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFAZ-008",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 7 | – |\n| B | 7 | A |\n| C | 1 | A |\n| D | 3 | A |\n| E | 3 | B, C, D |\n\nWie lautet der **frühestmögliche Anfangszeitpunkt (FAZ)** von Vorgang **B**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 7, SAZ 0, SEZ 7, GP 0; B: FAZ 7, FEZ 14, SAZ 7, SEZ 14, GP 0; C: FAZ 7, FEZ 8, SAZ 13, SEZ 14, GP 6; D: FAZ 7, FEZ 10, SAZ 11, SEZ 14, GP 4; E: FAZ 14, FEZ 17, SAZ 14, SEZ 17, GP 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 7,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPSAZ-009",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPSAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 7 | – |\n| B | 6 | A |\n| C | 3 | B |\n| D | 8 | C |\n| E | 1 | D |\n| F | 8 | C, E |\n\nWie lautet der **spätestmögliche Anfangszeitpunkt (SAZ)** von Vorgang **B**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 7, SAZ 0, SEZ 7, GP 0; B: FAZ 7, FEZ 13, SAZ 7, SEZ 13, GP 0; C: FAZ 13, FEZ 16, SAZ 13, SEZ 16, GP 0; D: FAZ 16, FEZ 24, SAZ 16, SEZ 24, GP 0; E: FAZ 24, FEZ 25, SAZ 24, SEZ 25, GP 0; F: FAZ 25, FEZ 33, SAZ 25, SEZ 33, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 7,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPGP-010",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPGP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 6 | – |\n| B | 7 | A |\n| C | 7 | A |\n| D | 7 | C |\n| E | 8 | B, C, D |\n\nWie groß ist der **Gesamtpuffer** von Vorgang **B** in Tagen?",
+   "erklaerung": "Gesamtpuffer = SAZ − FAZ (bzw. SEZ − FEZ). A: FAZ 0, FEZ 6, SAZ 0, SEZ 6, GP 0; B: FAZ 6, FEZ 13, SAZ 13, SEZ 20, GP 7; C: FAZ 6, FEZ 13, SAZ 6, SEZ 13, GP 0; D: FAZ 13, FEZ 20, SAZ 13, SEZ 20, GP 0; E: FAZ 20, FEZ 28, SAZ 20, SEZ 28, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 7,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFP-011",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 4 | – |\n| B | 7 | A |\n| C | 8 | A |\n| D | 2 | A, B |\n| E | 6 | B, D |\n| F | 2 | C, E |\n\nWie groß ist der **freie Puffer** von Vorgang **E** in Tagen?",
+   "erklaerung": "Freier Puffer = kleinstes FAZ der Nachfolger − eigenes FEZ. Für E: FEZ 19, freier Puffer 0. A: FAZ 0, FEZ 4, SAZ 0, SEZ 4, GP 0; B: FAZ 4, FEZ 11, SAZ 4, SEZ 11, GP 0; C: FAZ 4, FEZ 12, SAZ 11, SEZ 19, GP 7; D: FAZ 11, FEZ 13, SAZ 11, SEZ 13, GP 0; E: FAZ 13, FEZ 19, SAZ 13, SEZ 19, GP 0; F: FAZ 19, FEZ 21, SAZ 19, SEZ 21, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPDAUER-013",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPDAUER",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 4 | – |\n| B | 7 | A |\n| C | 5 | A, B |\n| D | 4 | A |\n| E | 1 | B |\n| F | 3 | C, D, E |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 4, SAZ 0, SEZ 4, GP 0; B: FAZ 4, FEZ 11, SAZ 4, SEZ 11, GP 0; C: FAZ 11, FEZ 16, SAZ 11, SEZ 16, GP 0; D: FAZ 4, FEZ 8, SAZ 12, SEZ 16, GP 8; E: FAZ 11, FEZ 12, SAZ 15, SEZ 16, GP 4; F: FAZ 16, FEZ 19, SAZ 16, SEZ 19, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 19,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFAZ-014",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 8 | – |\n| B | 2 | A |\n| C | 6 | A |\n| D | 5 | B |\n| E | 2 | C |\n| F | 1 | D, E |\n\nWie lautet der **frühestmögliche Anfangszeitpunkt (FAZ)** von Vorgang **B**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 8, SAZ 0, SEZ 8, GP 0; B: FAZ 8, FEZ 10, SAZ 9, SEZ 11, GP 1; C: FAZ 8, FEZ 14, SAZ 8, SEZ 14, GP 0; D: FAZ 10, FEZ 15, SAZ 11, SEZ 16, GP 1; E: FAZ 14, FEZ 16, SAZ 14, SEZ 16, GP 0; F: FAZ 16, FEZ 17, SAZ 16, SEZ 17, GP 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 8,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPSAZ-015",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPSAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 1 | – |\n| B | 1 | A |\n| C | 2 | A, B |\n| D | 4 | A, B |\n| E | 6 | B, C, D |\n\nWie lautet der **spätestmögliche Anfangszeitpunkt (SAZ)** von Vorgang **B**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 1, SAZ 0, SEZ 1, GP 0; B: FAZ 1, FEZ 2, SAZ 1, SEZ 2, GP 0; C: FAZ 2, FEZ 4, SAZ 4, SEZ 6, GP 2; D: FAZ 2, FEZ 6, SAZ 2, SEZ 6, GP 0; E: FAZ 6, FEZ 12, SAZ 6, SEZ 12, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPGP-016",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPGP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 1 | – |\n| B | 1 | A |\n| C | 6 | A |\n| D | 3 | C |\n| E | 2 | B, D |\n\nWie groß ist der **Gesamtpuffer** von Vorgang **C** in Tagen?",
+   "erklaerung": "Gesamtpuffer = SAZ − FAZ (bzw. SEZ − FEZ). A: FAZ 0, FEZ 1, SAZ 0, SEZ 1, GP 0; B: FAZ 1, FEZ 2, SAZ 9, SEZ 10, GP 8; C: FAZ 1, FEZ 7, SAZ 1, SEZ 7, GP 0; D: FAZ 7, FEZ 10, SAZ 7, SEZ 10, GP 0; E: FAZ 10, FEZ 12, SAZ 10, SEZ 12, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFP-017",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 6 | – |\n| B | 4 | A |\n| C | 8 | B |\n| D | 3 | A |\n| E | 7 | C, D |\n\nWie groß ist der **freie Puffer** von Vorgang **D** in Tagen?",
+   "erklaerung": "Freier Puffer = kleinstes FAZ der Nachfolger − eigenes FEZ. Für D: FEZ 9, freier Puffer 9. A: FAZ 0, FEZ 6, SAZ 0, SEZ 6, GP 0; B: FAZ 6, FEZ 10, SAZ 6, SEZ 10, GP 0; C: FAZ 10, FEZ 18, SAZ 10, SEZ 18, GP 0; D: FAZ 6, FEZ 9, SAZ 15, SEZ 18, GP 9; E: FAZ 18, FEZ 25, SAZ 18, SEZ 25, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 9,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPDAUER-019",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPDAUER",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 8 | A |\n| C | 4 | B |\n| D | 7 | C |\n| E | 6 | D |\n| F | 4 | C |\n| G | 7 | E, F |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 2, SAZ 0, SEZ 2, GP 0; B: FAZ 2, FEZ 10, SAZ 2, SEZ 10, GP 0; C: FAZ 10, FEZ 14, SAZ 10, SEZ 14, GP 0; D: FAZ 14, FEZ 21, SAZ 14, SEZ 21, GP 0; E: FAZ 21, FEZ 27, SAZ 21, SEZ 27, GP 0; F: FAZ 14, FEZ 18, SAZ 23, SEZ 27, GP 9; G: FAZ 27, FEZ 34, SAZ 27, SEZ 34, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 34,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFAZ-020",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 5 | – |\n| B | 4 | A |\n| C | 6 | A |\n| D | 7 | C |\n| E | 2 | D |\n| F | 8 | B, C, D, E |\n\nWie lautet der **frühestmögliche Anfangszeitpunkt (FAZ)** von Vorgang **C**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 5, SAZ 0, SEZ 5, GP 0; B: FAZ 5, FEZ 9, SAZ 16, SEZ 20, GP 11; C: FAZ 5, FEZ 11, SAZ 5, SEZ 11, GP 0; D: FAZ 11, FEZ 18, SAZ 11, SEZ 18, GP 0; E: FAZ 18, FEZ 20, SAZ 18, SEZ 20, GP 0; F: FAZ 20, FEZ 28, SAZ 20, SEZ 28, GP 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 5,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPSAZ-021",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPSAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 5 | – |\n| B | 2 | A |\n| C | 2 | A |\n| D | 2 | B |\n| E | 7 | C, D |\n\nWie lautet der **spätestmögliche Anfangszeitpunkt (SAZ)** von Vorgang **C**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 5, SAZ 0, SEZ 5, GP 0; B: FAZ 5, FEZ 7, SAZ 5, SEZ 7, GP 0; C: FAZ 5, FEZ 7, SAZ 7, SEZ 9, GP 2; D: FAZ 7, FEZ 9, SAZ 7, SEZ 9, GP 0; E: FAZ 9, FEZ 16, SAZ 9, SEZ 16, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 7,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPGP-022",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPGP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 4 | A |\n| C | 5 | A |\n| D | 1 | B |\n| E | 2 | B |\n| F | 3 | C, D, E |\n\nWie groß ist der **Gesamtpuffer** von Vorgang **B** in Tagen?",
+   "erklaerung": "Gesamtpuffer = SAZ − FAZ (bzw. SEZ − FEZ). A: FAZ 0, FEZ 2, SAZ 0, SEZ 2, GP 0; B: FAZ 2, FEZ 6, SAZ 2, SEZ 6, GP 0; C: FAZ 2, FEZ 7, SAZ 3, SEZ 8, GP 1; D: FAZ 6, FEZ 7, SAZ 7, SEZ 8, GP 1; E: FAZ 6, FEZ 8, SAZ 6, SEZ 8, GP 0; F: FAZ 8, FEZ 11, SAZ 8, SEZ 11, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFP-023",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 1 | – |\n| B | 5 | A |\n| C | 4 | A, B |\n| D | 5 | A, C |\n| E | 6 | B, C |\n| F | 7 | C, D, E |\n\nWie groß ist der **freie Puffer** von Vorgang **C** in Tagen?",
+   "erklaerung": "Freier Puffer = kleinstes FAZ der Nachfolger − eigenes FEZ. Für C: FEZ 10, freier Puffer 0. A: FAZ 0, FEZ 1, SAZ 0, SEZ 1, GP 0; B: FAZ 1, FEZ 6, SAZ 1, SEZ 6, GP 0; C: FAZ 6, FEZ 10, SAZ 6, SEZ 10, GP 0; D: FAZ 10, FEZ 15, SAZ 11, SEZ 16, GP 1; E: FAZ 10, FEZ 16, SAZ 10, SEZ 16, GP 0; F: FAZ 16, FEZ 23, SAZ 16, SEZ 23, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPDAUER-025",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPDAUER",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 8 | – |\n| B | 7 | A |\n| C | 3 | A, B |\n| D | 3 | A, B |\n| E | 2 | B, D |\n| F | 6 | C, E |\n| G | 6 | F |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 8, SAZ 0, SEZ 8, GP 0; B: FAZ 8, FEZ 15, SAZ 8, SEZ 15, GP 0; C: FAZ 15, FEZ 18, SAZ 17, SEZ 20, GP 2; D: FAZ 15, FEZ 18, SAZ 15, SEZ 18, GP 0; E: FAZ 18, FEZ 20, SAZ 18, SEZ 20, GP 0; F: FAZ 20, FEZ 26, SAZ 20, SEZ 26, GP 0; G: FAZ 26, FEZ 32, SAZ 26, SEZ 32, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 32,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFAZ-026",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 6 | A |\n| C | 3 | A |\n| D | 3 | B, C |\n| E | 8 | B |\n| F | 7 | D, E |\n\nWie lautet der **frühestmögliche Anfangszeitpunkt (FAZ)** von Vorgang **B**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 2, SAZ 0, SEZ 2, GP 0; B: FAZ 2, FEZ 8, SAZ 2, SEZ 8, GP 0; C: FAZ 2, FEZ 5, SAZ 10, SEZ 13, GP 8; D: FAZ 8, FEZ 11, SAZ 13, SEZ 16, GP 5; E: FAZ 8, FEZ 16, SAZ 8, SEZ 16, GP 0; F: FAZ 16, FEZ 23, SAZ 16, SEZ 23, GP 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPSAZ-027",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPSAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 1 | – |\n| B | 4 | A |\n| C | 6 | B |\n| D | 2 | B, C |\n| E | 6 | B |\n| F | 8 | D, E |\n\nWie lautet der **spätestmögliche Anfangszeitpunkt (SAZ)** von Vorgang **D**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 1, SAZ 0, SEZ 1, GP 0; B: FAZ 1, FEZ 5, SAZ 1, SEZ 5, GP 0; C: FAZ 5, FEZ 11, SAZ 5, SEZ 11, GP 0; D: FAZ 11, FEZ 13, SAZ 11, SEZ 13, GP 0; E: FAZ 5, FEZ 11, SAZ 7, SEZ 13, GP 2; F: FAZ 13, FEZ 21, SAZ 13, SEZ 21, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 11,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPGP-028",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPGP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 5 | – |\n| B | 8 | A |\n| C | 6 | A, B |\n| D | 6 | A, B |\n| E | 7 | D |\n| F | 3 | C, E |\n\nWie groß ist der **Gesamtpuffer** von Vorgang **B** in Tagen?",
+   "erklaerung": "Gesamtpuffer = SAZ − FAZ (bzw. SEZ − FEZ). A: FAZ 0, FEZ 5, SAZ 0, SEZ 5, GP 0; B: FAZ 5, FEZ 13, SAZ 5, SEZ 13, GP 0; C: FAZ 13, FEZ 19, SAZ 20, SEZ 26, GP 7; D: FAZ 13, FEZ 19, SAZ 13, SEZ 19, GP 0; E: FAZ 19, FEZ 26, SAZ 19, SEZ 26, GP 0; F: FAZ 26, FEZ 29, SAZ 26, SEZ 29, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFP-029",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 1 | – |\n| B | 7 | A |\n| C | 8 | B |\n| D | 2 | B |\n| E | 8 | B |\n| F | 8 | C, D, E |\n\nWie groß ist der **freie Puffer** von Vorgang **B** in Tagen?",
+   "erklaerung": "Freier Puffer = kleinstes FAZ der Nachfolger − eigenes FEZ. Für B: FEZ 8, freier Puffer 0. A: FAZ 0, FEZ 1, SAZ 0, SEZ 1, GP 0; B: FAZ 1, FEZ 8, SAZ 1, SEZ 8, GP 0; C: FAZ 8, FEZ 16, SAZ 8, SEZ 16, GP 0; D: FAZ 8, FEZ 10, SAZ 14, SEZ 16, GP 6; E: FAZ 8, FEZ 16, SAZ 8, SEZ 16, GP 0; F: FAZ 16, FEZ 24, SAZ 16, SEZ 24, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPKRIT-030",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPKRIT",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 1 | – |\n| B | 7 | A |\n| C | 3 | A, B |\n| D | 8 | A |\n| E | 5 | D |\n| F | 3 | C, D, E |\n\nWelcher Weg ist der **kritische Pfad**?",
+   "erklaerung": "Der kritische Pfad besteht aus Vorgängen mit Gesamtpuffer 0 und ist der längste Weg. A: FAZ 0, FEZ 1, SAZ 0, SEZ 1, GP 0; B: FAZ 1, FEZ 8, SAZ 4, SEZ 11, GP 3; C: FAZ 8, FEZ 11, SAZ 11, SEZ 14, GP 3; D: FAZ 1, FEZ 9, SAZ 1, SEZ 9, GP 0; E: FAZ 9, FEZ 14, SAZ 9, SEZ 14, GP 0; F: FAZ 14, FEZ 17, SAZ 14, SEZ 17, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "A → D → E → F",
+     "richtig": true
+    },
+    {
+     "text": "A → B → C → F",
+     "richtig": false
+    },
+    {
+     "text": "A → C → F",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPDAUER-031",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPDAUER",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 4 | – |\n| B | 2 | A |\n| C | 7 | A |\n| D | 1 | B |\n| E | 5 | B |\n| F | 3 | C, D, E |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 4, SAZ 0, SEZ 4, GP 0; B: FAZ 4, FEZ 6, SAZ 4, SEZ 6, GP 0; C: FAZ 4, FEZ 11, SAZ 4, SEZ 11, GP 0; D: FAZ 6, FEZ 7, SAZ 10, SEZ 11, GP 4; E: FAZ 6, FEZ 11, SAZ 6, SEZ 11, GP 0; F: FAZ 11, FEZ 14, SAZ 11, SEZ 14, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 14,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFAZ-032",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 3 | – |\n| B | 1 | A |\n| C | 4 | A |\n| D | 5 | A |\n| E | 8 | B |\n| F | 3 | C, D, E |\n\nWie lautet der **frühestmögliche Anfangszeitpunkt (FAZ)** von Vorgang **E**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 3, SAZ 0, SEZ 3, GP 0; B: FAZ 3, FEZ 4, SAZ 3, SEZ 4, GP 0; C: FAZ 3, FEZ 7, SAZ 8, SEZ 12, GP 5; D: FAZ 3, FEZ 8, SAZ 7, SEZ 12, GP 4; E: FAZ 4, FEZ 12, SAZ 4, SEZ 12, GP 0; F: FAZ 12, FEZ 15, SAZ 12, SEZ 15, GP 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPSAZ-033",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPSAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 6 | – |\n| B | 7 | A |\n| C | 6 | A, B |\n| D | 7 | A |\n| E | 2 | C |\n| F | 5 | D, E |\n\nWie lautet der **spätestmögliche Anfangszeitpunkt (SAZ)** von Vorgang **D**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 6, SAZ 0, SEZ 6, GP 0; B: FAZ 6, FEZ 13, SAZ 6, SEZ 13, GP 0; C: FAZ 13, FEZ 19, SAZ 13, SEZ 19, GP 0; D: FAZ 6, FEZ 13, SAZ 14, SEZ 21, GP 8; E: FAZ 19, FEZ 21, SAZ 19, SEZ 21, GP 0; F: FAZ 21, FEZ 26, SAZ 21, SEZ 26, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 14,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPGP-034",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPGP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 3 | – |\n| B | 8 | A |\n| C | 3 | A, B |\n| D | 4 | C |\n| E | 8 | B, D |\n| F | 7 | D, E |\n\nWie groß ist der **Gesamtpuffer** von Vorgang **C** in Tagen?",
+   "erklaerung": "Gesamtpuffer = SAZ − FAZ (bzw. SEZ − FEZ). A: FAZ 0, FEZ 3, SAZ 0, SEZ 3, GP 0; B: FAZ 3, FEZ 11, SAZ 3, SEZ 11, GP 0; C: FAZ 11, FEZ 14, SAZ 11, SEZ 14, GP 0; D: FAZ 14, FEZ 18, SAZ 14, SEZ 18, GP 0; E: FAZ 18, FEZ 26, SAZ 18, SEZ 26, GP 0; F: FAZ 26, FEZ 33, SAZ 26, SEZ 33, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFP-035",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 5 | – |\n| B | 3 | A |\n| C | 2 | A, B |\n| D | 3 | C |\n| E | 2 | D |\n| F | 7 | C |\n| G | 2 | D, E, F |\n\nWie groß ist der **freie Puffer** von Vorgang **B** in Tagen?",
+   "erklaerung": "Freier Puffer = kleinstes FAZ der Nachfolger − eigenes FEZ. Für B: FEZ 8, freier Puffer 0. A: FAZ 0, FEZ 5, SAZ 0, SEZ 5, GP 0; B: FAZ 5, FEZ 8, SAZ 5, SEZ 8, GP 0; C: FAZ 8, FEZ 10, SAZ 8, SEZ 10, GP 0; D: FAZ 10, FEZ 13, SAZ 12, SEZ 15, GP 2; E: FAZ 13, FEZ 15, SAZ 15, SEZ 17, GP 2; F: FAZ 10, FEZ 17, SAZ 10, SEZ 17, GP 0; G: FAZ 17, FEZ 19, SAZ 17, SEZ 19, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPDAUER-037",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPDAUER",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 7 | – |\n| B | 4 | A |\n| C | 7 | B |\n| D | 3 | A |\n| E | 7 | C, D |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 7, SAZ 0, SEZ 7, GP 0; B: FAZ 7, FEZ 11, SAZ 7, SEZ 11, GP 0; C: FAZ 11, FEZ 18, SAZ 11, SEZ 18, GP 0; D: FAZ 7, FEZ 10, SAZ 15, SEZ 18, GP 8; E: FAZ 18, FEZ 25, SAZ 18, SEZ 25, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 25,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFAZ-038",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 8 | – |\n| B | 3 | A |\n| C | 7 | B |\n| D | 6 | A, B |\n| E | 2 | B, C |\n| F | 4 | C, D, E |\n\nWie lautet der **frühestmögliche Anfangszeitpunkt (FAZ)** von Vorgang **E**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 8, SAZ 0, SEZ 8, GP 0; B: FAZ 8, FEZ 11, SAZ 8, SEZ 11, GP 0; C: FAZ 11, FEZ 18, SAZ 11, SEZ 18, GP 0; D: FAZ 11, FEZ 17, SAZ 14, SEZ 20, GP 3; E: FAZ 18, FEZ 20, SAZ 18, SEZ 20, GP 0; F: FAZ 20, FEZ 24, SAZ 20, SEZ 24, GP 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 18,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPSAZ-039",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPSAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 4 | – |\n| B | 5 | A |\n| C | 7 | A, B |\n| D | 6 | A, B |\n| E | 2 | D |\n| F | 3 | E |\n| G | 4 | C, D, F |\n\nWie lautet der **spätestmögliche Anfangszeitpunkt (SAZ)** von Vorgang **B**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 4, SAZ 0, SEZ 4, GP 0; B: FAZ 4, FEZ 9, SAZ 4, SEZ 9, GP 0; C: FAZ 9, FEZ 16, SAZ 13, SEZ 20, GP 4; D: FAZ 9, FEZ 15, SAZ 9, SEZ 15, GP 0; E: FAZ 15, FEZ 17, SAZ 15, SEZ 17, GP 0; F: FAZ 17, FEZ 20, SAZ 17, SEZ 20, GP 0; G: FAZ 20, FEZ 24, SAZ 20, SEZ 24, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPGP-040",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPGP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 8 | – |\n| B | 1 | A |\n| C | 8 | A |\n| D | 4 | A, C |\n| E | 6 | B, D |\n\nWie groß ist der **Gesamtpuffer** von Vorgang **D** in Tagen?",
+   "erklaerung": "Gesamtpuffer = SAZ − FAZ (bzw. SEZ − FEZ). A: FAZ 0, FEZ 8, SAZ 0, SEZ 8, GP 0; B: FAZ 8, FEZ 9, SAZ 19, SEZ 20, GP 11; C: FAZ 8, FEZ 16, SAZ 8, SEZ 16, GP 0; D: FAZ 16, FEZ 20, SAZ 16, SEZ 20, GP 0; E: FAZ 20, FEZ 26, SAZ 20, SEZ 26, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFP-041",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 6 | – |\n| B | 4 | A |\n| C | 6 | A |\n| D | 2 | A, B |\n| E | 4 | B, C, D |\n\nWie groß ist der **freie Puffer** von Vorgang **D** in Tagen?",
+   "erklaerung": "Freier Puffer = kleinstes FAZ der Nachfolger − eigenes FEZ. Für D: FEZ 12, freier Puffer 0. A: FAZ 0, FEZ 6, SAZ 0, SEZ 6, GP 0; B: FAZ 6, FEZ 10, SAZ 6, SEZ 10, GP 0; C: FAZ 6, FEZ 12, SAZ 6, SEZ 12, GP 0; D: FAZ 10, FEZ 12, SAZ 10, SEZ 12, GP 0; E: FAZ 12, FEZ 16, SAZ 12, SEZ 16, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPKRIT-042",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPKRIT",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 8 | – |\n| B | 2 | A |\n| C | 5 | A, B |\n| D | 8 | A, B |\n| E | 4 | B |\n| F | 4 | C, D, E |\n\nWelcher Weg ist der **kritische Pfad**?",
+   "erklaerung": "Der kritische Pfad besteht aus Vorgängen mit Gesamtpuffer 0 und ist der längste Weg. A: FAZ 0, FEZ 8, SAZ 0, SEZ 8, GP 0; B: FAZ 8, FEZ 10, SAZ 8, SEZ 10, GP 0; C: FAZ 10, FEZ 15, SAZ 13, SEZ 18, GP 3; D: FAZ 10, FEZ 18, SAZ 10, SEZ 18, GP 0; E: FAZ 10, FEZ 14, SAZ 14, SEZ 18, GP 4; F: FAZ 18, FEZ 22, SAZ 18, SEZ 22, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "A → B → D → F",
+     "richtig": true
+    },
+    {
+     "text": "A → B → C → F",
+     "richtig": false
+    },
+    {
+     "text": "A → B → E → F",
+     "richtig": false
+    },
+    {
+     "text": "A → C → F",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPDAUER-043",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPDAUER",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 7 | A |\n| C | 7 | B |\n| D | 7 | B, C |\n| E | 1 | C |\n| F | 1 | D, E |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 2, SAZ 0, SEZ 2, GP 0; B: FAZ 2, FEZ 9, SAZ 2, SEZ 9, GP 0; C: FAZ 9, FEZ 16, SAZ 9, SEZ 16, GP 0; D: FAZ 16, FEZ 23, SAZ 16, SEZ 23, GP 0; E: FAZ 16, FEZ 17, SAZ 22, SEZ 23, GP 6; F: FAZ 23, FEZ 24, SAZ 23, SEZ 24, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 24,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFAZ-044",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 3 | – |\n| B | 8 | A |\n| C | 5 | A |\n| D | 4 | A, C |\n| E | 1 | C, D |\n| F | 4 | D |\n| G | 7 | B, E, F |\n\nWie lautet der **frühestmögliche Anfangszeitpunkt (FAZ)** von Vorgang **E**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 3, SAZ 0, SEZ 3, GP 0; B: FAZ 3, FEZ 11, SAZ 8, SEZ 16, GP 5; C: FAZ 3, FEZ 8, SAZ 3, SEZ 8, GP 0; D: FAZ 8, FEZ 12, SAZ 8, SEZ 12, GP 0; E: FAZ 12, FEZ 13, SAZ 15, SEZ 16, GP 3; F: FAZ 12, FEZ 16, SAZ 12, SEZ 16, GP 0; G: FAZ 16, FEZ 23, SAZ 16, SEZ 23, GP 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 12,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPSAZ-045",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPSAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 7 | A |\n| C | 1 | A, B |\n| D | 1 | C |\n| E | 2 | B, D |\n| F | 4 | C, E |\n\nWie lautet der **spätestmögliche Anfangszeitpunkt (SAZ)** von Vorgang **B**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 2, SAZ 0, SEZ 2, GP 0; B: FAZ 2, FEZ 9, SAZ 2, SEZ 9, GP 0; C: FAZ 9, FEZ 10, SAZ 9, SEZ 10, GP 0; D: FAZ 10, FEZ 11, SAZ 10, SEZ 11, GP 0; E: FAZ 11, FEZ 13, SAZ 11, SEZ 13, GP 0; F: FAZ 13, FEZ 17, SAZ 13, SEZ 17, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPGP-046",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPGP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 8 | – |\n| B | 5 | A |\n| C | 7 | B |\n| D | 5 | A, C |\n| E | 8 | B, C |\n| F | 2 | D, E |\n| G | 3 | D, F |\n\nWie groß ist der **Gesamtpuffer** von Vorgang **D** in Tagen?",
+   "erklaerung": "Gesamtpuffer = SAZ − FAZ (bzw. SEZ − FEZ). A: FAZ 0, FEZ 8, SAZ 0, SEZ 8, GP 0; B: FAZ 8, FEZ 13, SAZ 8, SEZ 13, GP 0; C: FAZ 13, FEZ 20, SAZ 13, SEZ 20, GP 0; D: FAZ 20, FEZ 25, SAZ 23, SEZ 28, GP 3; E: FAZ 20, FEZ 28, SAZ 20, SEZ 28, GP 0; F: FAZ 28, FEZ 30, SAZ 28, SEZ 30, GP 0; G: FAZ 30, FEZ 33, SAZ 30, SEZ 33, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFP-047",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 1 | – |\n| B | 1 | A |\n| C | 3 | A, B |\n| D | 1 | B |\n| E | 5 | D |\n| F | 4 | C, E |\n\nWie groß ist der **freie Puffer** von Vorgang **D** in Tagen?",
+   "erklaerung": "Freier Puffer = kleinstes FAZ der Nachfolger − eigenes FEZ. Für D: FEZ 3, freier Puffer 0. A: FAZ 0, FEZ 1, SAZ 0, SEZ 1, GP 0; B: FAZ 1, FEZ 2, SAZ 1, SEZ 2, GP 0; C: FAZ 2, FEZ 5, SAZ 5, SEZ 8, GP 3; D: FAZ 2, FEZ 3, SAZ 2, SEZ 3, GP 0; E: FAZ 3, FEZ 8, SAZ 3, SEZ 8, GP 0; F: FAZ 8, FEZ 12, SAZ 8, SEZ 12, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPKRIT-048",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPKRIT",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 3 | – |\n| B | 6 | A |\n| C | 6 | B |\n| D | 1 | A, B |\n| E | 1 | B |\n| F | 1 | C, D, E |\n\nWelcher Weg ist der **kritische Pfad**?",
+   "erklaerung": "Der kritische Pfad besteht aus Vorgängen mit Gesamtpuffer 0 und ist der längste Weg. A: FAZ 0, FEZ 3, SAZ 0, SEZ 3, GP 0; B: FAZ 3, FEZ 9, SAZ 3, SEZ 9, GP 0; C: FAZ 9, FEZ 15, SAZ 9, SEZ 15, GP 0; D: FAZ 9, FEZ 10, SAZ 14, SEZ 15, GP 5; E: FAZ 9, FEZ 10, SAZ 14, SEZ 15, GP 5; F: FAZ 15, FEZ 16, SAZ 15, SEZ 16, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "A → B → C → F",
+     "richtig": true
+    },
+    {
+     "text": "A → B → D → F",
+     "richtig": false
+    },
+    {
+     "text": "A → B → E → F",
+     "richtig": false
+    },
+    {
+     "text": "A → D → F",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPDAUER-049",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPDAUER",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 8 | A |\n| C | 4 | A, B |\n| D | 1 | B, C |\n| E | 3 | B, C |\n| F | 7 | C |\n| G | 6 | D, E, F |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 2, SAZ 0, SEZ 2, GP 0; B: FAZ 2, FEZ 10, SAZ 2, SEZ 10, GP 0; C: FAZ 10, FEZ 14, SAZ 10, SEZ 14, GP 0; D: FAZ 14, FEZ 15, SAZ 20, SEZ 21, GP 6; E: FAZ 14, FEZ 17, SAZ 18, SEZ 21, GP 4; F: FAZ 14, FEZ 21, SAZ 14, SEZ 21, GP 0; G: FAZ 21, FEZ 27, SAZ 21, SEZ 27, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 27,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFAZ-050",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 4 | – |\n| B | 3 | A |\n| C | 5 | A, B |\n| D | 5 | A, C |\n| E | 7 | B, D |\n\nWie lautet der **frühestmögliche Anfangszeitpunkt (FAZ)** von Vorgang **C**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 4, SAZ 0, SEZ 4, GP 0; B: FAZ 4, FEZ 7, SAZ 4, SEZ 7, GP 0; C: FAZ 7, FEZ 12, SAZ 7, SEZ 12, GP 0; D: FAZ 12, FEZ 17, SAZ 12, SEZ 17, GP 0; E: FAZ 17, FEZ 24, SAZ 17, SEZ 24, GP 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 7,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPSAZ-051",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPSAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 1 | – |\n| B | 1 | A |\n| C | 2 | B |\n| D | 5 | A |\n| E | 7 | B, C |\n| F | 4 | C, D, E |\n\nWie lautet der **spätestmögliche Anfangszeitpunkt (SAZ)** von Vorgang **C**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 1, SAZ 0, SEZ 1, GP 0; B: FAZ 1, FEZ 2, SAZ 1, SEZ 2, GP 0; C: FAZ 2, FEZ 4, SAZ 2, SEZ 4, GP 0; D: FAZ 1, FEZ 6, SAZ 6, SEZ 11, GP 5; E: FAZ 4, FEZ 11, SAZ 4, SEZ 11, GP 0; F: FAZ 11, FEZ 15, SAZ 11, SEZ 15, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPGP-052",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPGP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 6 | – |\n| B | 3 | A |\n| C | 3 | A |\n| D | 1 | B, C |\n| E | 6 | C, D |\n\nWie groß ist der **Gesamtpuffer** von Vorgang **D** in Tagen?",
+   "erklaerung": "Gesamtpuffer = SAZ − FAZ (bzw. SEZ − FEZ). A: FAZ 0, FEZ 6, SAZ 0, SEZ 6, GP 0; B: FAZ 6, FEZ 9, SAZ 6, SEZ 9, GP 0; C: FAZ 6, FEZ 9, SAZ 6, SEZ 9, GP 0; D: FAZ 9, FEZ 10, SAZ 9, SEZ 10, GP 0; E: FAZ 10, FEZ 16, SAZ 10, SEZ 16, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFP-053",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 3 | – |\n| B | 3 | A |\n| C | 7 | A |\n| D | 7 | A, C |\n| E | 1 | B, C |\n| F | 8 | D, E |\n\nWie groß ist der **freie Puffer** von Vorgang **E** in Tagen?",
+   "erklaerung": "Freier Puffer = kleinstes FAZ der Nachfolger − eigenes FEZ. Für E: FEZ 11, freier Puffer 6. A: FAZ 0, FEZ 3, SAZ 0, SEZ 3, GP 0; B: FAZ 3, FEZ 6, SAZ 13, SEZ 16, GP 10; C: FAZ 3, FEZ 10, SAZ 3, SEZ 10, GP 0; D: FAZ 10, FEZ 17, SAZ 10, SEZ 17, GP 0; E: FAZ 10, FEZ 11, SAZ 16, SEZ 17, GP 6; F: FAZ 17, FEZ 25, SAZ 17, SEZ 25, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 6,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPKRIT-054",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPKRIT",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 5 | – |\n| B | 4 | A |\n| C | 3 | A |\n| D | 6 | A, C |\n| E | 8 | D |\n| F | 7 | D |\n| G | 3 | B, E, F |\n\nWelcher Weg ist der **kritische Pfad**?",
+   "erklaerung": "Der kritische Pfad besteht aus Vorgängen mit Gesamtpuffer 0 und ist der längste Weg. A: FAZ 0, FEZ 5, SAZ 0, SEZ 5, GP 0; B: FAZ 5, FEZ 9, SAZ 18, SEZ 22, GP 13; C: FAZ 5, FEZ 8, SAZ 5, SEZ 8, GP 0; D: FAZ 8, FEZ 14, SAZ 8, SEZ 14, GP 0; E: FAZ 14, FEZ 22, SAZ 14, SEZ 22, GP 0; F: FAZ 14, FEZ 21, SAZ 15, SEZ 22, GP 1; G: FAZ 22, FEZ 25, SAZ 22, SEZ 25, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "A → C → D → E → G",
+     "richtig": true
+    },
+    {
+     "text": "A → B → G",
+     "richtig": false
+    },
+    {
+     "text": "A → C → D → F → G",
+     "richtig": false
+    },
+    {
+     "text": "A → D → F → G",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPDAUER-055",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPDAUER",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 6 | – |\n| B | 3 | A |\n| C | 4 | A |\n| D | 1 | C |\n| E | 8 | B |\n| F | 8 | C |\n| G | 1 | D, E, F |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 6, SAZ 0, SEZ 6, GP 0; B: FAZ 6, FEZ 9, SAZ 7, SEZ 10, GP 1; C: FAZ 6, FEZ 10, SAZ 6, SEZ 10, GP 0; D: FAZ 10, FEZ 11, SAZ 17, SEZ 18, GP 7; E: FAZ 9, FEZ 17, SAZ 10, SEZ 18, GP 1; F: FAZ 10, FEZ 18, SAZ 10, SEZ 18, GP 0; G: FAZ 18, FEZ 19, SAZ 18, SEZ 19, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 19,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFAZ-056",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 4 | – |\n| B | 7 | A |\n| C | 5 | A |\n| D | 8 | A |\n| E | 2 | B, C, D |\n\nWie lautet der **frühestmögliche Anfangszeitpunkt (FAZ)** von Vorgang **B**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 4, SAZ 0, SEZ 4, GP 0; B: FAZ 4, FEZ 11, SAZ 5, SEZ 12, GP 1; C: FAZ 4, FEZ 9, SAZ 7, SEZ 12, GP 3; D: FAZ 4, FEZ 12, SAZ 4, SEZ 12, GP 0; E: FAZ 12, FEZ 14, SAZ 12, SEZ 14, GP 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPSAZ-057",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPSAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 7 | – |\n| B | 2 | A |\n| C | 3 | B |\n| D | 3 | A, C |\n| E | 8 | B |\n| F | 7 | D |\n| G | 7 | D, E, F |\n\nWie lautet der **spätestmögliche Anfangszeitpunkt (SAZ)** von Vorgang **E**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 7, SAZ 0, SEZ 7, GP 0; B: FAZ 7, FEZ 9, SAZ 7, SEZ 9, GP 0; C: FAZ 9, FEZ 12, SAZ 9, SEZ 12, GP 0; D: FAZ 12, FEZ 15, SAZ 12, SEZ 15, GP 0; E: FAZ 9, FEZ 17, SAZ 14, SEZ 22, GP 5; F: FAZ 15, FEZ 22, SAZ 15, SEZ 22, GP 0; G: FAZ 22, FEZ 29, SAZ 22, SEZ 29, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 14,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPGP-058",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPGP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 5 | – |\n| B | 2 | A |\n| C | 5 | A, B |\n| D | 5 | C |\n| E | 2 | C |\n| F | 5 | C, D, E |\n\nWie groß ist der **Gesamtpuffer** von Vorgang **B** in Tagen?",
+   "erklaerung": "Gesamtpuffer = SAZ − FAZ (bzw. SEZ − FEZ). A: FAZ 0, FEZ 5, SAZ 0, SEZ 5, GP 0; B: FAZ 5, FEZ 7, SAZ 5, SEZ 7, GP 0; C: FAZ 7, FEZ 12, SAZ 7, SEZ 12, GP 0; D: FAZ 12, FEZ 17, SAZ 12, SEZ 17, GP 0; E: FAZ 12, FEZ 14, SAZ 15, SEZ 17, GP 3; F: FAZ 17, FEZ 22, SAZ 17, SEZ 22, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFP-059",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 8 | – |\n| B | 3 | A |\n| C | 3 | A, B |\n| D | 6 | A, B |\n| E | 6 | D |\n| F | 5 | E |\n| G | 1 | C, E, F |\n\nWie groß ist der **freie Puffer** von Vorgang **B** in Tagen?",
+   "erklaerung": "Freier Puffer = kleinstes FAZ der Nachfolger − eigenes FEZ. Für B: FEZ 11, freier Puffer 0. A: FAZ 0, FEZ 8, SAZ 0, SEZ 8, GP 0; B: FAZ 8, FEZ 11, SAZ 8, SEZ 11, GP 0; C: FAZ 11, FEZ 14, SAZ 25, SEZ 28, GP 14; D: FAZ 11, FEZ 17, SAZ 11, SEZ 17, GP 0; E: FAZ 17, FEZ 23, SAZ 17, SEZ 23, GP 0; F: FAZ 23, FEZ 28, SAZ 23, SEZ 28, GP 0; G: FAZ 28, FEZ 29, SAZ 28, SEZ 29, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPDAUER-061",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPDAUER",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 8 | – |\n| B | 5 | A |\n| C | 4 | A |\n| D | 8 | A |\n| E | 1 | C |\n| F | 3 | B, C, D, E |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 8, SAZ 0, SEZ 8, GP 0; B: FAZ 8, FEZ 13, SAZ 11, SEZ 16, GP 3; C: FAZ 8, FEZ 12, SAZ 11, SEZ 15, GP 3; D: FAZ 8, FEZ 16, SAZ 8, SEZ 16, GP 0; E: FAZ 12, FEZ 13, SAZ 15, SEZ 16, GP 3; F: FAZ 16, FEZ 19, SAZ 16, SEZ 19, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 19,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFAZ-062",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 5 | – |\n| B | 1 | A |\n| C | 1 | A |\n| D | 6 | A, B |\n| E | 4 | B |\n| F | 8 | C, D, E |\n\nWie lautet der **frühestmögliche Anfangszeitpunkt (FAZ)** von Vorgang **B**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 5, SAZ 0, SEZ 5, GP 0; B: FAZ 5, FEZ 6, SAZ 5, SEZ 6, GP 0; C: FAZ 5, FEZ 6, SAZ 11, SEZ 12, GP 6; D: FAZ 6, FEZ 12, SAZ 6, SEZ 12, GP 0; E: FAZ 6, FEZ 10, SAZ 8, SEZ 12, GP 2; F: FAZ 12, FEZ 20, SAZ 12, SEZ 20, GP 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 5,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPSAZ-063",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPSAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 4 | – |\n| B | 8 | A |\n| C | 1 | A |\n| D | 5 | C |\n| E | 4 | C, D |\n| F | 3 | B, C, E |\n\nWie lautet der **spätestmögliche Anfangszeitpunkt (SAZ)** von Vorgang **B**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 4, SAZ 0, SEZ 4, GP 0; B: FAZ 4, FEZ 12, SAZ 6, SEZ 14, GP 2; C: FAZ 4, FEZ 5, SAZ 4, SEZ 5, GP 0; D: FAZ 5, FEZ 10, SAZ 5, SEZ 10, GP 0; E: FAZ 10, FEZ 14, SAZ 10, SEZ 14, GP 0; F: FAZ 14, FEZ 17, SAZ 14, SEZ 17, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 6,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPGP-064",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPGP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 4 | – |\n| B | 5 | A |\n| C | 6 | A, B |\n| D | 8 | C |\n| E | 5 | B |\n| F | 5 | C, D, E |\n\nWie groß ist der **Gesamtpuffer** von Vorgang **C** in Tagen?",
+   "erklaerung": "Gesamtpuffer = SAZ − FAZ (bzw. SEZ − FEZ). A: FAZ 0, FEZ 4, SAZ 0, SEZ 4, GP 0; B: FAZ 4, FEZ 9, SAZ 4, SEZ 9, GP 0; C: FAZ 9, FEZ 15, SAZ 9, SEZ 15, GP 0; D: FAZ 15, FEZ 23, SAZ 15, SEZ 23, GP 0; E: FAZ 9, FEZ 14, SAZ 18, SEZ 23, GP 9; F: FAZ 23, FEZ 28, SAZ 23, SEZ 28, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFP-065",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 8 | – |\n| B | 2 | A |\n| C | 2 | A |\n| D | 7 | C |\n| E | 6 | D |\n| F | 6 | B, C, E |\n\nWie groß ist der **freie Puffer** von Vorgang **E** in Tagen?",
+   "erklaerung": "Freier Puffer = kleinstes FAZ der Nachfolger − eigenes FEZ. Für E: FEZ 23, freier Puffer 0. A: FAZ 0, FEZ 8, SAZ 0, SEZ 8, GP 0; B: FAZ 8, FEZ 10, SAZ 21, SEZ 23, GP 13; C: FAZ 8, FEZ 10, SAZ 8, SEZ 10, GP 0; D: FAZ 10, FEZ 17, SAZ 10, SEZ 17, GP 0; E: FAZ 17, FEZ 23, SAZ 17, SEZ 23, GP 0; F: FAZ 23, FEZ 29, SAZ 23, SEZ 29, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPDAUER-067",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPDAUER",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 2 | A |\n| C | 8 | A, B |\n| D | 8 | A |\n| E | 2 | B |\n| F | 1 | C, D, E |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 2, SAZ 0, SEZ 2, GP 0; B: FAZ 2, FEZ 4, SAZ 2, SEZ 4, GP 0; C: FAZ 4, FEZ 12, SAZ 4, SEZ 12, GP 0; D: FAZ 2, FEZ 10, SAZ 4, SEZ 12, GP 2; E: FAZ 4, FEZ 6, SAZ 10, SEZ 12, GP 6; F: FAZ 12, FEZ 13, SAZ 12, SEZ 13, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 13,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFAZ-068",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 1 | – |\n| B | 4 | A |\n| C | 6 | A |\n| D | 2 | A, C |\n| E | 1 | D |\n| F | 2 | D |\n| G | 6 | B, E, F |\n\nWie lautet der **frühestmögliche Anfangszeitpunkt (FAZ)** von Vorgang **F**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 1, SAZ 0, SEZ 1, GP 0; B: FAZ 1, FEZ 5, SAZ 7, SEZ 11, GP 6; C: FAZ 1, FEZ 7, SAZ 1, SEZ 7, GP 0; D: FAZ 7, FEZ 9, SAZ 7, SEZ 9, GP 0; E: FAZ 9, FEZ 10, SAZ 10, SEZ 11, GP 1; F: FAZ 9, FEZ 11, SAZ 9, SEZ 11, GP 0; G: FAZ 11, FEZ 17, SAZ 11, SEZ 17, GP 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 9,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPSAZ-069",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPSAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 7 | – |\n| B | 7 | A |\n| C | 8 | A, B |\n| D | 3 | A |\n| E | 3 | C |\n| F | 3 | C, D, E |\n\nWie lautet der **spätestmögliche Anfangszeitpunkt (SAZ)** von Vorgang **B**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 7, SAZ 0, SEZ 7, GP 0; B: FAZ 7, FEZ 14, SAZ 7, SEZ 14, GP 0; C: FAZ 14, FEZ 22, SAZ 14, SEZ 22, GP 0; D: FAZ 7, FEZ 10, SAZ 22, SEZ 25, GP 15; E: FAZ 22, FEZ 25, SAZ 22, SEZ 25, GP 0; F: FAZ 25, FEZ 28, SAZ 25, SEZ 28, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 7,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPGP-070",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPGP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 4 | – |\n| B | 7 | A |\n| C | 3 | A, B |\n| D | 2 | B, C |\n| E | 8 | B, D |\n| F | 5 | C |\n| G | 2 | D, E, F |\n\nWie groß ist der **Gesamtpuffer** von Vorgang **E** in Tagen?",
+   "erklaerung": "Gesamtpuffer = SAZ − FAZ (bzw. SEZ − FEZ). A: FAZ 0, FEZ 4, SAZ 0, SEZ 4, GP 0; B: FAZ 4, FEZ 11, SAZ 4, SEZ 11, GP 0; C: FAZ 11, FEZ 14, SAZ 11, SEZ 14, GP 0; D: FAZ 14, FEZ 16, SAZ 14, SEZ 16, GP 0; E: FAZ 16, FEZ 24, SAZ 16, SEZ 24, GP 0; F: FAZ 14, FEZ 19, SAZ 19, SEZ 24, GP 5; G: FAZ 24, FEZ 26, SAZ 24, SEZ 26, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFP-071",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 3 | – |\n| B | 3 | A |\n| C | 2 | A, B |\n| D | 8 | C |\n| E | 2 | C, D |\n| F | 4 | C, E |\n\nWie groß ist der **freie Puffer** von Vorgang **E** in Tagen?",
+   "erklaerung": "Freier Puffer = kleinstes FAZ der Nachfolger − eigenes FEZ. Für E: FEZ 18, freier Puffer 0. A: FAZ 0, FEZ 3, SAZ 0, SEZ 3, GP 0; B: FAZ 3, FEZ 6, SAZ 3, SEZ 6, GP 0; C: FAZ 6, FEZ 8, SAZ 6, SEZ 8, GP 0; D: FAZ 8, FEZ 16, SAZ 8, SEZ 16, GP 0; E: FAZ 16, FEZ 18, SAZ 16, SEZ 18, GP 0; F: FAZ 18, FEZ 22, SAZ 18, SEZ 22, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPKRIT-072",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPKRIT",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 8 | – |\n| B | 3 | A |\n| C | 2 | A |\n| D | 5 | C |\n| E | 6 | C |\n| F | 7 | D |\n| G | 7 | B, E, F |\n\nWelcher Weg ist der **kritische Pfad**?",
+   "erklaerung": "Der kritische Pfad besteht aus Vorgängen mit Gesamtpuffer 0 und ist der längste Weg. A: FAZ 0, FEZ 8, SAZ 0, SEZ 8, GP 0; B: FAZ 8, FEZ 11, SAZ 19, SEZ 22, GP 11; C: FAZ 8, FEZ 10, SAZ 8, SEZ 10, GP 0; D: FAZ 10, FEZ 15, SAZ 10, SEZ 15, GP 0; E: FAZ 10, FEZ 16, SAZ 16, SEZ 22, GP 6; F: FAZ 15, FEZ 22, SAZ 15, SEZ 22, GP 0; G: FAZ 22, FEZ 29, SAZ 22, SEZ 29, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "A → C → D → F → G",
+     "richtig": true
+    },
+    {
+     "text": "A → B → G",
+     "richtig": false
+    },
+    {
+     "text": "A → C → E → G",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPDAUER-073",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPDAUER",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 4 | – |\n| B | 2 | A |\n| C | 4 | A, B |\n| D | 6 | A |\n| E | 6 | D |\n| F | 1 | C |\n| G | 7 | E, F |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 4, SAZ 0, SEZ 4, GP 0; B: FAZ 4, FEZ 6, SAZ 9, SEZ 11, GP 5; C: FAZ 6, FEZ 10, SAZ 11, SEZ 15, GP 5; D: FAZ 4, FEZ 10, SAZ 4, SEZ 10, GP 0; E: FAZ 10, FEZ 16, SAZ 10, SEZ 16, GP 0; F: FAZ 10, FEZ 11, SAZ 15, SEZ 16, GP 5; G: FAZ 16, FEZ 23, SAZ 16, SEZ 23, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 23,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFAZ-074",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 1 | – |\n| B | 8 | A |\n| C | 7 | B |\n| D | 4 | B |\n| E | 3 | B, D |\n| F | 6 | C, E |\n\nWie lautet der **frühestmögliche Anfangszeitpunkt (FAZ)** von Vorgang **B**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 1, SAZ 0, SEZ 1, GP 0; B: FAZ 1, FEZ 9, SAZ 1, SEZ 9, GP 0; C: FAZ 9, FEZ 16, SAZ 9, SEZ 16, GP 0; D: FAZ 9, FEZ 13, SAZ 9, SEZ 13, GP 0; E: FAZ 13, FEZ 16, SAZ 13, SEZ 16, GP 0; F: FAZ 16, FEZ 22, SAZ 16, SEZ 22, GP 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPSAZ-075",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPSAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 1 | – |\n| B | 2 | A |\n| C | 5 | A |\n| D | 1 | A |\n| E | 7 | C |\n| F | 1 | C |\n| G | 1 | B, D, E, F |\n\nWie lautet der **spätestmögliche Anfangszeitpunkt (SAZ)** von Vorgang **F**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 1, SAZ 0, SEZ 1, GP 0; B: FAZ 1, FEZ 3, SAZ 11, SEZ 13, GP 10; C: FAZ 1, FEZ 6, SAZ 1, SEZ 6, GP 0; D: FAZ 1, FEZ 2, SAZ 12, SEZ 13, GP 11; E: FAZ 6, FEZ 13, SAZ 6, SEZ 13, GP 0; F: FAZ 6, FEZ 7, SAZ 12, SEZ 13, GP 6; G: FAZ 13, FEZ 14, SAZ 13, SEZ 14, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 12,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPGP-076",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPGP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 1 | – |\n| B | 2 | A |\n| C | 1 | A |\n| D | 3 | C |\n| E | 6 | B, D |\n| F | 1 | C, E |\n\nWie groß ist der **Gesamtpuffer** von Vorgang **E** in Tagen?",
+   "erklaerung": "Gesamtpuffer = SAZ − FAZ (bzw. SEZ − FEZ). A: FAZ 0, FEZ 1, SAZ 0, SEZ 1, GP 0; B: FAZ 1, FEZ 3, SAZ 3, SEZ 5, GP 2; C: FAZ 1, FEZ 2, SAZ 1, SEZ 2, GP 0; D: FAZ 2, FEZ 5, SAZ 2, SEZ 5, GP 0; E: FAZ 5, FEZ 11, SAZ 5, SEZ 11, GP 0; F: FAZ 11, FEZ 12, SAZ 11, SEZ 12, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFP-077",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 8 | – |\n| B | 6 | A |\n| C | 5 | B |\n| D | 8 | B, C |\n| E | 8 | C |\n| F | 8 | D, E |\n\nWie groß ist der **freie Puffer** von Vorgang **B** in Tagen?",
+   "erklaerung": "Freier Puffer = kleinstes FAZ der Nachfolger − eigenes FEZ. Für B: FEZ 14, freier Puffer 0. A: FAZ 0, FEZ 8, SAZ 0, SEZ 8, GP 0; B: FAZ 8, FEZ 14, SAZ 8, SEZ 14, GP 0; C: FAZ 14, FEZ 19, SAZ 14, SEZ 19, GP 0; D: FAZ 19, FEZ 27, SAZ 19, SEZ 27, GP 0; E: FAZ 19, FEZ 27, SAZ 19, SEZ 27, GP 0; F: FAZ 27, FEZ 35, SAZ 27, SEZ 35, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPKRIT-078",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPKRIT",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 4 | – |\n| B | 7 | A |\n| C | 5 | A, B |\n| D | 6 | C |\n| E | 4 | D |\n| F | 3 | D |\n| G | 1 | E, F |\n\nWelcher Weg ist der **kritische Pfad**?",
+   "erklaerung": "Der kritische Pfad besteht aus Vorgängen mit Gesamtpuffer 0 und ist der längste Weg. A: FAZ 0, FEZ 4, SAZ 0, SEZ 4, GP 0; B: FAZ 4, FEZ 11, SAZ 4, SEZ 11, GP 0; C: FAZ 11, FEZ 16, SAZ 11, SEZ 16, GP 0; D: FAZ 16, FEZ 22, SAZ 16, SEZ 22, GP 0; E: FAZ 22, FEZ 26, SAZ 22, SEZ 26, GP 0; F: FAZ 22, FEZ 25, SAZ 23, SEZ 26, GP 1; G: FAZ 26, FEZ 27, SAZ 26, SEZ 27, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "A → B → C → D → E → G",
+     "richtig": true
+    },
+    {
+     "text": "A → B → C → D → F → G",
+     "richtig": false
+    },
+    {
+     "text": "A → C → D → F → G",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPDAUER-079",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPDAUER",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 8 | – |\n| B | 2 | A |\n| C | 5 | B |\n| D | 8 | C |\n| E | 1 | B, D |\n| F | 4 | C, E |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 8, SAZ 0, SEZ 8, GP 0; B: FAZ 8, FEZ 10, SAZ 8, SEZ 10, GP 0; C: FAZ 10, FEZ 15, SAZ 10, SEZ 15, GP 0; D: FAZ 15, FEZ 23, SAZ 15, SEZ 23, GP 0; E: FAZ 23, FEZ 24, SAZ 23, SEZ 24, GP 0; F: FAZ 24, FEZ 28, SAZ 24, SEZ 28, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 28,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFAZ-080",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 7 | A |\n| C | 7 | B |\n| D | 6 | A |\n| E | 8 | C |\n| F | 2 | D, E |\n\nWie lautet der **frühestmögliche Anfangszeitpunkt (FAZ)** von Vorgang **E**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 2, SAZ 0, SEZ 2, GP 0; B: FAZ 2, FEZ 9, SAZ 2, SEZ 9, GP 0; C: FAZ 9, FEZ 16, SAZ 9, SEZ 16, GP 0; D: FAZ 2, FEZ 8, SAZ 18, SEZ 24, GP 16; E: FAZ 16, FEZ 24, SAZ 16, SEZ 24, GP 0; F: FAZ 24, FEZ 26, SAZ 24, SEZ 26, GP 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 16,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPSAZ-081",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPSAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 7 | A |\n| C | 3 | A, B |\n| D | 6 | A |\n| E | 7 | B |\n| F | 1 | C, D, E |\n\nWie lautet der **spätestmögliche Anfangszeitpunkt (SAZ)** von Vorgang **E**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 2, SAZ 0, SEZ 2, GP 0; B: FAZ 2, FEZ 9, SAZ 2, SEZ 9, GP 0; C: FAZ 9, FEZ 12, SAZ 13, SEZ 16, GP 4; D: FAZ 2, FEZ 8, SAZ 10, SEZ 16, GP 8; E: FAZ 9, FEZ 16, SAZ 9, SEZ 16, GP 0; F: FAZ 16, FEZ 17, SAZ 16, SEZ 17, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 9,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPGP-082",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPGP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 1 | – |\n| B | 3 | A |\n| C | 7 | B |\n| D | 2 | A |\n| E | 1 | B, D |\n| F | 4 | C |\n| G | 5 | D, E, F |\n\nWie groß ist der **Gesamtpuffer** von Vorgang **C** in Tagen?",
+   "erklaerung": "Gesamtpuffer = SAZ − FAZ (bzw. SEZ − FEZ). A: FAZ 0, FEZ 1, SAZ 0, SEZ 1, GP 0; B: FAZ 1, FEZ 4, SAZ 1, SEZ 4, GP 0; C: FAZ 4, FEZ 11, SAZ 4, SEZ 11, GP 0; D: FAZ 1, FEZ 3, SAZ 12, SEZ 14, GP 11; E: FAZ 4, FEZ 5, SAZ 14, SEZ 15, GP 10; F: FAZ 11, FEZ 15, SAZ 11, SEZ 15, GP 0; G: FAZ 15, FEZ 20, SAZ 15, SEZ 20, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFP-083",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 6 | – |\n| B | 5 | A |\n| C | 1 | A, B |\n| D | 4 | C |\n| E | 3 | B |\n| F | 6 | D |\n| G | 3 | E, F |\n\nWie groß ist der **freie Puffer** von Vorgang **B** in Tagen?",
+   "erklaerung": "Freier Puffer = kleinstes FAZ der Nachfolger − eigenes FEZ. Für B: FEZ 11, freier Puffer 0. A: FAZ 0, FEZ 6, SAZ 0, SEZ 6, GP 0; B: FAZ 6, FEZ 11, SAZ 6, SEZ 11, GP 0; C: FAZ 11, FEZ 12, SAZ 11, SEZ 12, GP 0; D: FAZ 12, FEZ 16, SAZ 12, SEZ 16, GP 0; E: FAZ 11, FEZ 14, SAZ 19, SEZ 22, GP 8; F: FAZ 16, FEZ 22, SAZ 16, SEZ 22, GP 0; G: FAZ 22, FEZ 25, SAZ 22, SEZ 25, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPKRIT-084",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPKRIT",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 6 | – |\n| B | 2 | A |\n| C | 6 | B |\n| D | 2 | B, C |\n| E | 4 | B |\n| F | 5 | C |\n| G | 3 | D, E, F |\n\nWelcher Weg ist der **kritische Pfad**?",
+   "erklaerung": "Der kritische Pfad besteht aus Vorgängen mit Gesamtpuffer 0 und ist der längste Weg. A: FAZ 0, FEZ 6, SAZ 0, SEZ 6, GP 0; B: FAZ 6, FEZ 8, SAZ 6, SEZ 8, GP 0; C: FAZ 8, FEZ 14, SAZ 8, SEZ 14, GP 0; D: FAZ 14, FEZ 16, SAZ 17, SEZ 19, GP 3; E: FAZ 8, FEZ 12, SAZ 15, SEZ 19, GP 7; F: FAZ 14, FEZ 19, SAZ 14, SEZ 19, GP 0; G: FAZ 19, FEZ 22, SAZ 19, SEZ 22, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "A → B → C → F → G",
+     "richtig": true
+    },
+    {
+     "text": "A → B → C → D → G",
+     "richtig": false
+    },
+    {
+     "text": "A → B → D → G",
+     "richtig": false
+    },
+    {
+     "text": "A → B → E → G",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPDAUER-085",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPDAUER",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 1 | – |\n| B | 4 | A |\n| C | 4 | A |\n| D | 5 | C |\n| E | 8 | B |\n| F | 1 | D, E |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 1, SAZ 0, SEZ 1, GP 0; B: FAZ 1, FEZ 5, SAZ 1, SEZ 5, GP 0; C: FAZ 1, FEZ 5, SAZ 4, SEZ 8, GP 3; D: FAZ 5, FEZ 10, SAZ 8, SEZ 13, GP 3; E: FAZ 5, FEZ 13, SAZ 5, SEZ 13, GP 0; F: FAZ 13, FEZ 14, SAZ 13, SEZ 14, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 14,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFAZ-086",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 1 | – |\n| B | 1 | A |\n| C | 2 | A |\n| D | 2 | C |\n| E | 6 | B |\n| F | 6 | C |\n| G | 1 | D, E, F |\n\nWie lautet der **frühestmögliche Anfangszeitpunkt (FAZ)** von Vorgang **B**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 1, SAZ 0, SEZ 1, GP 0; B: FAZ 1, FEZ 2, SAZ 2, SEZ 3, GP 1; C: FAZ 1, FEZ 3, SAZ 1, SEZ 3, GP 0; D: FAZ 3, FEZ 5, SAZ 7, SEZ 9, GP 4; E: FAZ 2, FEZ 8, SAZ 3, SEZ 9, GP 1; F: FAZ 3, FEZ 9, SAZ 3, SEZ 9, GP 0; G: FAZ 9, FEZ 10, SAZ 9, SEZ 10, GP 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPSAZ-087",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPSAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 3 | A |\n| C | 8 | A |\n| D | 6 | A, C |\n| E | 4 | B |\n| F | 8 | D, E |\n\nWie lautet der **spätestmögliche Anfangszeitpunkt (SAZ)** von Vorgang **C**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 2, SAZ 0, SEZ 2, GP 0; B: FAZ 2, FEZ 5, SAZ 9, SEZ 12, GP 7; C: FAZ 2, FEZ 10, SAZ 2, SEZ 10, GP 0; D: FAZ 10, FEZ 16, SAZ 10, SEZ 16, GP 0; E: FAZ 5, FEZ 9, SAZ 12, SEZ 16, GP 7; F: FAZ 16, FEZ 24, SAZ 16, SEZ 24, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPGP-088",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPGP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 5 | – |\n| B | 1 | A |\n| C | 5 | B |\n| D | 8 | B, C |\n| E | 6 | B |\n| F | 2 | E |\n| G | 3 | D, E, F |\n\nWie groß ist der **Gesamtpuffer** von Vorgang **D** in Tagen?",
+   "erklaerung": "Gesamtpuffer = SAZ − FAZ (bzw. SEZ − FEZ). A: FAZ 0, FEZ 5, SAZ 0, SEZ 5, GP 0; B: FAZ 5, FEZ 6, SAZ 5, SEZ 6, GP 0; C: FAZ 6, FEZ 11, SAZ 6, SEZ 11, GP 0; D: FAZ 11, FEZ 19, SAZ 11, SEZ 19, GP 0; E: FAZ 6, FEZ 12, SAZ 11, SEZ 17, GP 5; F: FAZ 12, FEZ 14, SAZ 17, SEZ 19, GP 5; G: FAZ 19, FEZ 22, SAZ 19, SEZ 22, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFP-089",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 8 | – |\n| B | 3 | A |\n| C | 6 | B |\n| D | 7 | B |\n| E | 7 | C, D |\n\nWie groß ist der **freie Puffer** von Vorgang **B** in Tagen?",
+   "erklaerung": "Freier Puffer = kleinstes FAZ der Nachfolger − eigenes FEZ. Für B: FEZ 11, freier Puffer 0. A: FAZ 0, FEZ 8, SAZ 0, SEZ 8, GP 0; B: FAZ 8, FEZ 11, SAZ 8, SEZ 11, GP 0; C: FAZ 11, FEZ 17, SAZ 12, SEZ 18, GP 1; D: FAZ 11, FEZ 18, SAZ 11, SEZ 18, GP 0; E: FAZ 18, FEZ 25, SAZ 18, SEZ 25, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPKRIT-090",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPKRIT",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 8 | A |\n| C | 3 | A |\n| D | 6 | B, C |\n| E | 6 | B |\n| F | 3 | C, D, E |\n\nWelcher Weg ist der **kritische Pfad**?",
+   "erklaerung": "Der kritische Pfad besteht aus Vorgängen mit Gesamtpuffer 0 und ist der längste Weg. A: FAZ 0, FEZ 2, SAZ 0, SEZ 2, GP 0; B: FAZ 2, FEZ 10, SAZ 2, SEZ 10, GP 0; C: FAZ 2, FEZ 5, SAZ 7, SEZ 10, GP 5; D: FAZ 10, FEZ 16, SAZ 10, SEZ 16, GP 0; E: FAZ 10, FEZ 16, SAZ 10, SEZ 16, GP 0; F: FAZ 16, FEZ 19, SAZ 16, SEZ 19, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "A → B → D → F",
+     "richtig": true
+    },
+    {
+     "text": "A → C → D → F",
+     "richtig": false
+    },
+    {
+     "text": "A → C → F",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPDAUER-091",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPDAUER",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 2 | – |\n| B | 3 | A |\n| C | 1 | B |\n| D | 3 | A, C |\n| E | 5 | B |\n| F | 2 | C, D, E |\n\nWie viele Tage dauert das Projekt mindestens?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 2, SAZ 0, SEZ 2, GP 0; B: FAZ 2, FEZ 5, SAZ 2, SEZ 5, GP 0; C: FAZ 5, FEZ 6, SAZ 6, SEZ 7, GP 1; D: FAZ 6, FEZ 9, SAZ 7, SEZ 10, GP 1; E: FAZ 5, FEZ 10, SAZ 5, SEZ 10, GP 0; F: FAZ 10, FEZ 12, SAZ 10, SEZ 12, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 12,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFAZ-092",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 5 | – |\n| B | 8 | A |\n| C | 2 | A, B |\n| D | 2 | C |\n| E | 7 | B, D |\n\nWie lautet der **frühestmögliche Anfangszeitpunkt (FAZ)** von Vorgang **C**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 5, SAZ 0, SEZ 5, GP 0; B: FAZ 5, FEZ 13, SAZ 5, SEZ 13, GP 0; C: FAZ 13, FEZ 15, SAZ 13, SEZ 15, GP 0; D: FAZ 15, FEZ 17, SAZ 15, SEZ 17, GP 0; E: FAZ 17, FEZ 24, SAZ 17, SEZ 24, GP 0.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 13,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPSAZ-093",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPSAZ",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 8 | – |\n| B | 6 | A |\n| C | 2 | A |\n| D | 5 | A, C |\n| E | 5 | B, D |\n\nWie lautet der **spätestmögliche Anfangszeitpunkt (SAZ)** von Vorgang **B**?",
+   "erklaerung": "Vorwärtsrechnung: FAZ = größtes FEZ der Vorgänger, FEZ = FAZ + Dauer. Rückwärtsrechnung: SEZ = kleinstes SAZ der Nachfolger, SAZ = SEZ − Dauer. A: FAZ 0, FEZ 8, SAZ 0, SEZ 8, GP 0; B: FAZ 8, FEZ 14, SAZ 9, SEZ 15, GP 1; C: FAZ 8, FEZ 10, SAZ 8, SEZ 10, GP 0; D: FAZ 10, FEZ 15, SAZ 10, SEZ 15, GP 0; E: FAZ 15, FEZ 20, SAZ 15, SEZ 20, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 9,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPGP-094",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPGP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 6 | – |\n| B | 4 | A |\n| C | 3 | A |\n| D | 8 | B |\n| E | 4 | B, D |\n| F | 2 | C, D, E |\n\nWie groß ist der **Gesamtpuffer** von Vorgang **C** in Tagen?",
+   "erklaerung": "Gesamtpuffer = SAZ − FAZ (bzw. SEZ − FEZ). A: FAZ 0, FEZ 6, SAZ 0, SEZ 6, GP 0; B: FAZ 6, FEZ 10, SAZ 6, SEZ 10, GP 0; C: FAZ 6, FEZ 9, SAZ 19, SEZ 22, GP 13; D: FAZ 10, FEZ 18, SAZ 10, SEZ 18, GP 0; E: FAZ 18, FEZ 22, SAZ 18, SEZ 22, GP 0; F: FAZ 22, FEZ 24, SAZ 22, SEZ 24, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 13,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPFP-095",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPFP",
+   "text": "Gegeben ist folgende Vorgangsliste (Start bei Tag 0):\n\n| Vorgang | Dauer (Tage) | Vorgänger |\n|---|---|---|\n| A | 8 | – |\n| B | 2 | A |\n| C | 3 | A |\n| D | 3 | B, C |\n| E | 2 | C |\n| F | 4 | D, E |\n\nWie groß ist der **freie Puffer** von Vorgang **B** in Tagen?",
+   "erklaerung": "Freier Puffer = kleinstes FAZ der Nachfolger − eigenes FEZ. Für B: FEZ 10, freier Puffer 1. A: FAZ 0, FEZ 8, SAZ 0, SEZ 8, GP 0; B: FAZ 8, FEZ 10, SAZ 9, SEZ 11, GP 1; C: FAZ 8, FEZ 11, SAZ 8, SEZ 11, GP 0; D: FAZ 11, FEZ 14, SAZ 11, SEZ 14, GP 0; E: FAZ 11, FEZ 13, SAZ 12, SEZ 14, GP 1; F: FAZ 14, FEZ 18, SAZ 14, SEZ 18, GP 0.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1,
+   "toleranz": 0,
+   "einheit": "Tage"
+  },
+  {
+   "schluessel": "G-PM-NPBEGR01-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPBEGR01",
+   "text": "Was bedeutet **FAZ** im Netzplan?",
+   "erklaerung": "FAZ → **frühester Anfangszeitpunkt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "frühester Anfangszeitpunkt",
+     "richtig": true
+    },
+    {
+     "text": "spätester Endzeitpunkt",
+     "richtig": false
+    },
+    {
+     "text": "Zeit, um die ein Vorgang verschoben werden kann, ohne den nächsten Vorgang zu verschieben",
+     "richtig": false
+    },
+    {
+     "text": "Zeit, um die ein Vorgang verschoben werden kann, ohne das Projektende zu gefährden",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPBEGR01-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPBEGR01",
+   "text": "Welcher Begriff passt: frühester Anfangszeitpunkt?",
+   "erklaerung": "FAZ → **frühester Anfangszeitpunkt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "FAZ",
+     "richtig": true
+    },
+    {
+     "text": "GP (Gesamtpuffer)",
+     "richtig": false
+    },
+    {
+     "text": "SAZ",
+     "richtig": false
+    },
+    {
+     "text": "FP (freier Puffer)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPBEGR02-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPBEGR02",
+   "text": "Was bedeutet **FEZ** im Netzplan?",
+   "erklaerung": "FEZ → **frühester Endzeitpunkt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "frühester Endzeitpunkt",
+     "richtig": true
+    },
+    {
+     "text": "spätester Anfangszeitpunkt",
+     "richtig": false
+    },
+    {
+     "text": "Zeit, um die ein Vorgang verschoben werden kann, ohne den nächsten Vorgang zu verschieben",
+     "richtig": false
+    },
+    {
+     "text": "Folge von Vorgängen ohne Puffer; Verzögerung verschiebt das Projektende",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPBEGR02-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPBEGR02",
+   "text": "Welcher Begriff passt: frühester Endzeitpunkt?",
+   "erklaerung": "FEZ → **frühester Endzeitpunkt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "FEZ",
+     "richtig": true
+    },
+    {
+     "text": "SAZ",
+     "richtig": false
+    },
+    {
+     "text": "kritischer Pfad",
+     "richtig": false
+    },
+    {
+     "text": "FP (freier Puffer)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPBEGR03-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPBEGR03",
+   "text": "Was bedeutet **SAZ** im Netzplan?",
+   "erklaerung": "SAZ → **spätester Anfangszeitpunkt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "spätester Anfangszeitpunkt",
+     "richtig": true
+    },
+    {
+     "text": "Zeit, um die ein Vorgang verschoben werden kann, ohne den nächsten Vorgang zu verschieben",
+     "richtig": false
+    },
+    {
+     "text": "Folge von Vorgängen ohne Puffer; Verzögerung verschiebt das Projektende",
+     "richtig": false
+    },
+    {
+     "text": "Zeit, um die ein Vorgang verschoben werden kann, ohne das Projektende zu gefährden",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPBEGR03-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPBEGR03",
+   "text": "Welcher Begriff passt: spätester Anfangszeitpunkt?",
+   "erklaerung": "SAZ → **spätester Anfangszeitpunkt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "SAZ",
+     "richtig": true
+    },
+    {
+     "text": "FEZ",
+     "richtig": false
+    },
+    {
+     "text": "FP (freier Puffer)",
+     "richtig": false
+    },
+    {
+     "text": "kritischer Pfad",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPBEGR04-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPBEGR04",
+   "text": "Was bedeutet **SEZ** im Netzplan?",
+   "erklaerung": "SEZ → **spätester Endzeitpunkt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "spätester Endzeitpunkt",
+     "richtig": true
+    },
+    {
+     "text": "Folge von Vorgängen ohne Puffer; Verzögerung verschiebt das Projektende",
+     "richtig": false
+    },
+    {
+     "text": "frühester Endzeitpunkt",
+     "richtig": false
+    },
+    {
+     "text": "Zeit, um die ein Vorgang verschoben werden kann, ohne den nächsten Vorgang zu verschieben",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPBEGR04-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPBEGR04",
+   "text": "Welcher Begriff passt: spätester Endzeitpunkt?",
+   "erklaerung": "SEZ → **spätester Endzeitpunkt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "SEZ",
+     "richtig": true
+    },
+    {
+     "text": "kritischer Pfad",
+     "richtig": false
+    },
+    {
+     "text": "FP (freier Puffer)",
+     "richtig": false
+    },
+    {
+     "text": "FAZ",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPBEGR05-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPBEGR05",
+   "text": "Was bedeutet **GP (Gesamtpuffer)** im Netzplan?",
+   "erklaerung": "GP (Gesamtpuffer) → **Zeit, um die ein Vorgang verschoben werden kann, ohne das Projektende zu gefährden**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Zeit, um die ein Vorgang verschoben werden kann, ohne das Projektende zu gefährden",
+     "richtig": true
+    },
+    {
+     "text": "spätester Endzeitpunkt",
+     "richtig": false
+    },
+    {
+     "text": "frühester Endzeitpunkt",
+     "richtig": false
+    },
+    {
+     "text": "Zeit, um die ein Vorgang verschoben werden kann, ohne den nächsten Vorgang zu verschieben",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPBEGR05-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPBEGR05",
+   "text": "Welcher Begriff passt: Zeit, um die ein Vorgang verschoben werden kann, ohne das Projektende zu gefährden?",
+   "erklaerung": "GP (Gesamtpuffer) → **Zeit, um die ein Vorgang verschoben werden kann, ohne das Projektende zu gefährden**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "GP (Gesamtpuffer)",
+     "richtig": true
+    },
+    {
+     "text": "FAZ",
+     "richtig": false
+    },
+    {
+     "text": "kritischer Pfad",
+     "richtig": false
+    },
+    {
+     "text": "SAZ",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPBEGR06-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPBEGR06",
+   "text": "Was bedeutet **FP (freier Puffer)** im Netzplan?",
+   "erklaerung": "FP (freier Puffer) → **Zeit, um die ein Vorgang verschoben werden kann, ohne den nächsten Vorgang zu verschieben**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Zeit, um die ein Vorgang verschoben werden kann, ohne den nächsten Vorgang zu verschieben",
+     "richtig": true
+    },
+    {
+     "text": "Zeit, um die ein Vorgang verschoben werden kann, ohne das Projektende zu gefährden",
+     "richtig": false
+    },
+    {
+     "text": "spätester Anfangszeitpunkt",
+     "richtig": false
+    },
+    {
+     "text": "Folge von Vorgängen ohne Puffer; Verzögerung verschiebt das Projektende",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPBEGR06-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPBEGR06",
+   "text": "Welcher Begriff passt: Zeit, um die ein Vorgang verschoben werden kann, ohne den nächsten Vorgang zu verschieben?",
+   "erklaerung": "FP (freier Puffer) → **Zeit, um die ein Vorgang verschoben werden kann, ohne den nächsten Vorgang zu verschieben**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "FP (freier Puffer)",
+     "richtig": true
+    },
+    {
+     "text": "kritischer Pfad",
+     "richtig": false
+    },
+    {
+     "text": "FEZ",
+     "richtig": false
+    },
+    {
+     "text": "SEZ",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPBEGR07-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPBEGR07",
+   "text": "Was bedeutet **kritischer Pfad** im Netzplan?",
+   "erklaerung": "kritischer Pfad → **Folge von Vorgängen ohne Puffer; Verzögerung verschiebt das Projektende**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Folge von Vorgängen ohne Puffer; Verzögerung verschiebt das Projektende",
+     "richtig": true
+    },
+    {
+     "text": "Zeit, um die ein Vorgang verschoben werden kann, ohne den nächsten Vorgang zu verschieben",
+     "richtig": false
+    },
+    {
+     "text": "spätester Anfangszeitpunkt",
+     "richtig": false
+    },
+    {
+     "text": "spätester Endzeitpunkt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPBEGR07-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPBEGR07",
+   "text": "Welcher Begriff passt: Folge von Vorgängen ohne Puffer; Verzögerung verschiebt das Projektende?",
+   "erklaerung": "kritischer Pfad → **Folge von Vorgängen ohne Puffer; Verzögerung verschiebt das Projektende**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "kritischer Pfad",
+     "richtig": true
+    },
+    {
+     "text": "SEZ",
+     "richtig": false
+    },
+    {
+     "text": "FP (freier Puffer)",
+     "richtig": false
+    },
+    {
+     "text": "SAZ",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-NPEINF-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPEINF",
+   "text": "Ein Vorgang hat SEZ = 29 und dauert 7 Tage. Wie lautet sein SAZ?",
+   "erklaerung": "SAZ = SEZ − Dauer.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 22,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPEINF-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPEINF",
+   "text": "Ein Vorgang hat SEZ = 10 und dauert 7 Tage. Wie lautet sein SAZ?",
+   "erklaerung": "SAZ = SEZ − Dauer.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPEINF-003",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPEINF",
+   "text": "Ein Vorgang hat SEZ = 26 und dauert 6 Tage. Wie lautet sein SAZ?",
+   "erklaerung": "SAZ = SEZ − Dauer.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 20,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPEINF-004",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPEINF",
+   "text": "Ein Vorgang hat SEZ = 20 und dauert 4 Tage. Wie lautet sein SAZ?",
+   "erklaerung": "SAZ = SEZ − Dauer.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 16,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPEINF-005",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPEINF",
+   "text": "Ein Vorgang hat FAZ = 14 und dauert 9 Tage. Wie lautet sein FEZ?",
+   "erklaerung": "FEZ = FAZ + Dauer.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 23,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPEINF-006",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPEINF",
+   "text": "Ein Vorgang hat SEZ = 21 und dauert 5 Tage. Wie lautet sein SAZ?",
+   "erklaerung": "SAZ = SEZ − Dauer.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 16,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPEINF-007",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPEINF",
+   "text": "Ein Vorgang hat SEZ = 15 und dauert 3 Tage. Wie lautet sein SAZ?",
+   "erklaerung": "SAZ = SEZ − Dauer.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 12,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPEINF-008",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPEINF",
+   "text": "Ein Vorgang hat FAZ = 7 und dauert 9 Tage. Wie lautet sein FEZ?",
+   "erklaerung": "FEZ = FAZ + Dauer.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 16,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPEINF-010",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPEINF",
+   "text": "Ein Vorgang hat SEZ = 10 und dauert 3 Tage. Wie lautet sein SAZ?",
+   "erklaerung": "SAZ = SEZ − Dauer.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 7,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPEINF-011",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPEINF",
+   "text": "Ein Vorgang hat SEZ = 19 und dauert 9 Tage. Wie lautet sein SAZ?",
+   "erklaerung": "SAZ = SEZ − Dauer.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 10,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-NPEINF-012",
+   "thema": "projektmanagement",
+   "lektion": "PM-L3",
+   "gruppe": "PM-NPEINF",
+   "text": "Ein Vorgang hat FAZ = 2 und dauert 8 Tage. Wie lautet sein FEZ?",
+   "erklaerung": "FEZ = FAZ + Dauer.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 10,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-MERKMAL-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-MERKMAL",
+   "text": "Welche Merkmale kennzeichnen ein Projekt?",
+   "erklaerung": "Richtig sind: begrenzte Ressourcen; klares Ziel.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "begrenzte Ressourcen",
+     "richtig": true
+    },
+    {
+     "text": "klares Ziel",
+     "richtig": true
+    },
+    {
+     "text": "regelmäßige Wiederholung derselben Tätigkeit",
+     "richtig": false
+    },
+    {
+     "text": "Routineaufgabe im Tagesgeschäft",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MERKMAL-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-MERKMAL",
+   "text": "Welche Merkmale kennzeichnen ein Projekt?",
+   "erklaerung": "Richtig sind: begrenzte Ressourcen; klares Ziel; zeitliche Begrenzung (Anfang und Ende).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "begrenzte Ressourcen",
+     "richtig": true
+    },
+    {
+     "text": "klares Ziel",
+     "richtig": true
+    },
+    {
+     "text": "zeitliche Begrenzung (Anfang und Ende)",
+     "richtig": true
+    },
+    {
+     "text": "regelmäßige Wiederholung derselben Tätigkeit",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MERKMAL-003",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-MERKMAL",
+   "text": "Welche Merkmale kennzeichnen ein Projekt?",
+   "erklaerung": "Richtig sind: klares Ziel; zeitliche Begrenzung (Anfang und Ende).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "klares Ziel",
+     "richtig": true
+    },
+    {
+     "text": "zeitliche Begrenzung (Anfang und Ende)",
+     "richtig": true
+    },
+    {
+     "text": "unbegrenzte Laufzeit",
+     "richtig": false
+    },
+    {
+     "text": "regelmäßige Wiederholung derselben Tätigkeit",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MERKMAL-004",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-MERKMAL",
+   "text": "Welche Merkmale kennzeichnen ein Projekt?",
+   "erklaerung": "Richtig sind: Einmaligkeit; zeitliche Begrenzung (Anfang und Ende); Komplexität und Risiko.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Einmaligkeit",
+     "richtig": true
+    },
+    {
+     "text": "zeitliche Begrenzung (Anfang und Ende)",
+     "richtig": true
+    },
+    {
+     "text": "Komplexität und Risiko",
+     "richtig": true
+    },
+    {
+     "text": "Routineaufgabe im Tagesgeschäft",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MERKMAL-005",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-MERKMAL",
+   "text": "Welche Merkmale kennzeichnen ein Projekt?",
+   "erklaerung": "Richtig sind: eigene Projektorganisation; Komplexität und Risiko; begrenzte Ressourcen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "eigene Projektorganisation",
+     "richtig": true
+    },
+    {
+     "text": "Komplexität und Risiko",
+     "richtig": true
+    },
+    {
+     "text": "begrenzte Ressourcen",
+     "richtig": true
+    },
+    {
+     "text": "kein festes Budget",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MERKMAL-006",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-MERKMAL",
+   "text": "Welche Merkmale kennzeichnen ein Projekt?",
+   "erklaerung": "Richtig sind: Einmaligkeit; begrenzte Ressourcen; Komplexität und Risiko.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Einmaligkeit",
+     "richtig": true
+    },
+    {
+     "text": "begrenzte Ressourcen",
+     "richtig": true
+    },
+    {
+     "text": "Komplexität und Risiko",
+     "richtig": true
+    },
+    {
+     "text": "Routineaufgabe im Tagesgeschäft",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MERKMAL-007",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-MERKMAL",
+   "text": "Welche Merkmale kennzeichnen ein Projekt?",
+   "erklaerung": "Richtig sind: begrenzte Ressourcen; Einmaligkeit.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "begrenzte Ressourcen",
+     "richtig": true
+    },
+    {
+     "text": "Einmaligkeit",
+     "richtig": true
+    },
+    {
+     "text": "unbegrenzte Laufzeit",
+     "richtig": false
+    },
+    {
+     "text": "kein festes Budget",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MERKMAL-008",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-MERKMAL",
+   "text": "Welche Merkmale kennzeichnen ein Projekt?",
+   "erklaerung": "Richtig sind: klares Ziel; begrenzte Ressourcen; eigene Projektorganisation.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "klares Ziel",
+     "richtig": true
+    },
+    {
+     "text": "begrenzte Ressourcen",
+     "richtig": true
+    },
+    {
+     "text": "eigene Projektorganisation",
+     "richtig": true
+    },
+    {
+     "text": "Routineaufgabe im Tagesgeschäft",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MERKMAL-009",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-MERKMAL",
+   "text": "Welche Merkmale kennzeichnen ein Projekt?",
+   "erklaerung": "Richtig sind: eigene Projektorganisation; Komplexität und Risiko; klares Ziel.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "eigene Projektorganisation",
+     "richtig": true
+    },
+    {
+     "text": "Komplexität und Risiko",
+     "richtig": true
+    },
+    {
+     "text": "klares Ziel",
+     "richtig": true
+    },
+    {
+     "text": "unbegrenzte Laufzeit",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MERKMAL-010",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-MERKMAL",
+   "text": "Welche Merkmale kennzeichnen ein Projekt?",
+   "erklaerung": "Richtig sind: klares Ziel; eigene Projektorganisation.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "klares Ziel",
+     "richtig": true
+    },
+    {
+     "text": "eigene Projektorganisation",
+     "richtig": true
+    },
+    {
+     "text": "regelmäßige Wiederholung derselben Tätigkeit",
+     "richtig": false
+    },
+    {
+     "text": "unbegrenzte Laufzeit",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-ISTPROJ01-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-ISTPROJ01",
+   "text": "Ist das ein Projekt? **Einführung eines neuen ERP-Systems**",
+   "erklaerung": "Projekte sind einmalig, zeitlich begrenzt und zielgerichtet; wiederkehrende Aufgaben sind Routine.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Projekt",
+     "richtig": true
+    },
+    {
+     "text": "kein Projekt (Routine)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-ISTPROJ02-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-ISTPROJ02",
+   "text": "Ist das ein Projekt? **Umzug des Rechenzentrums**",
+   "erklaerung": "Projekte sind einmalig, zeitlich begrenzt und zielgerichtet; wiederkehrende Aufgaben sind Routine.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Projekt",
+     "richtig": true
+    },
+    {
+     "text": "kein Projekt (Routine)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-ISTPROJ03-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-ISTPROJ03",
+   "text": "Ist das ein Projekt? **tägliche Datensicherung**",
+   "erklaerung": "Projekte sind einmalig, zeitlich begrenzt und zielgerichtet; wiederkehrende Aufgaben sind Routine.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "kein Projekt (Routine)",
+     "richtig": true
+    },
+    {
+     "text": "Projekt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-ISTPROJ04-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-ISTPROJ04",
+   "text": "Ist das ein Projekt? **Monatliche Gehaltsabrechnung**",
+   "erklaerung": "Projekte sind einmalig, zeitlich begrenzt und zielgerichtet; wiederkehrende Aufgaben sind Routine.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "kein Projekt (Routine)",
+     "richtig": true
+    },
+    {
+     "text": "Projekt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-ISTPROJ05-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-ISTPROJ05",
+   "text": "Ist das ein Projekt? **Entwicklung einer neuen Kunden-App**",
+   "erklaerung": "Projekte sind einmalig, zeitlich begrenzt und zielgerichtet; wiederkehrende Aufgaben sind Routine.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Projekt",
+     "richtig": true
+    },
+    {
+     "text": "kein Projekt (Routine)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-ISTPROJ06-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-ISTPROJ06",
+   "text": "Ist das ein Projekt? **Passwort eines Nutzers zurücksetzen**",
+   "erklaerung": "Projekte sind einmalig, zeitlich begrenzt und zielgerichtet; wiederkehrende Aufgaben sind Routine.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "kein Projekt (Routine)",
+     "richtig": true
+    },
+    {
+     "text": "Projekt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-ISTPROJ07-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-ISTPROJ07",
+   "text": "Ist das ein Projekt? **Migration aller Clients auf ein neues Betriebssystem**",
+   "erklaerung": "Projekte sind einmalig, zeitlich begrenzt und zielgerichtet; wiederkehrende Aufgaben sind Routine.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Projekt",
+     "richtig": true
+    },
+    {
+     "text": "kein Projekt (Routine)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-ISTPROJ08-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-ISTPROJ08",
+   "text": "Ist das ein Projekt? **Wöchentliches Einspielen von Updates**",
+   "erklaerung": "Projekte sind einmalig, zeitlich begrenzt und zielgerichtet; wiederkehrende Aufgaben sind Routine.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "kein Projekt (Routine)",
+     "richtig": true
+    },
+    {
+     "text": "Projekt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SMART01-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-SMART01",
+   "text": "Wofür steht das **S** in SMART?",
+   "erklaerung": "S → **spezifisch**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "spezifisch",
+     "richtig": true
+    },
+    {
+     "text": "realistisch",
+     "richtig": false
+    },
+    {
+     "text": "terminiert",
+     "richtig": false
+    },
+    {
+     "text": "messbar",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SMART01-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-SMART01",
+   "text": "Welcher Buchstabe von SMART steht für **spezifisch**?",
+   "erklaerung": "S → **spezifisch**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "S",
+     "richtig": true
+    },
+    {
+     "text": "M",
+     "richtig": false
+    },
+    {
+     "text": "R",
+     "richtig": false
+    },
+    {
+     "text": "T",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SMART02-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-SMART02",
+   "text": "Wofür steht das **M** in SMART?",
+   "erklaerung": "M → **messbar**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "messbar",
+     "richtig": true
+    },
+    {
+     "text": "spezifisch",
+     "richtig": false
+    },
+    {
+     "text": "terminiert",
+     "richtig": false
+    },
+    {
+     "text": "realistisch",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SMART02-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-SMART02",
+   "text": "Welcher Buchstabe von SMART steht für **messbar**?",
+   "erklaerung": "M → **messbar**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "M",
+     "richtig": true
+    },
+    {
+     "text": "A",
+     "richtig": false
+    },
+    {
+     "text": "R",
+     "richtig": false
+    },
+    {
+     "text": "T",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SMART03-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-SMART03",
+   "text": "Wofür steht das **A** in SMART?",
+   "erklaerung": "A → **attraktiv / akzeptiert**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "attraktiv / akzeptiert",
+     "richtig": true
+    },
+    {
+     "text": "terminiert",
+     "richtig": false
+    },
+    {
+     "text": "realistisch",
+     "richtig": false
+    },
+    {
+     "text": "spezifisch",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SMART03-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-SMART03",
+   "text": "Welcher Buchstabe von SMART steht für **attraktiv / akzeptiert**?",
+   "erklaerung": "A → **attraktiv / akzeptiert**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "A",
+     "richtig": true
+    },
+    {
+     "text": "M",
+     "richtig": false
+    },
+    {
+     "text": "S",
+     "richtig": false
+    },
+    {
+     "text": "R",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SMART04-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-SMART04",
+   "text": "Wofür steht das **R** in SMART?",
+   "erklaerung": "R → **realistisch**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "realistisch",
+     "richtig": true
+    },
+    {
+     "text": "spezifisch",
+     "richtig": false
+    },
+    {
+     "text": "terminiert",
+     "richtig": false
+    },
+    {
+     "text": "attraktiv / akzeptiert",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SMART04-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-SMART04",
+   "text": "Welcher Buchstabe von SMART steht für **realistisch**?",
+   "erklaerung": "R → **realistisch**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "R",
+     "richtig": true
+    },
+    {
+     "text": "T",
+     "richtig": false
+    },
+    {
+     "text": "A",
+     "richtig": false
+    },
+    {
+     "text": "S",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SMART05-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-SMART05",
+   "text": "Wofür steht das **T** in SMART?",
+   "erklaerung": "T → **terminiert**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "terminiert",
+     "richtig": true
+    },
+    {
+     "text": "realistisch",
+     "richtig": false
+    },
+    {
+     "text": "attraktiv / akzeptiert",
+     "richtig": false
+    },
+    {
+     "text": "spezifisch",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SMART05-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-SMART05",
+   "text": "Welcher Buchstabe von SMART steht für **terminiert**?",
+   "erklaerung": "T → **terminiert**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "T",
+     "richtig": true
+    },
+    {
+     "text": "M",
+     "richtig": false
+    },
+    {
+     "text": "R",
+     "richtig": false
+    },
+    {
+     "text": "S",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SMARTBSP01-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-SMARTBSP01",
+   "text": "Wie ist dieses Ziel zu bewerten? „Die Seite soll schneller werden.“",
+   "erklaerung": "„Die Seite soll schneller werden.“ → **nicht SMART – weder messbar noch terminiert**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "nicht SMART – weder messbar noch terminiert",
+     "richtig": true
+    },
+    {
+     "text": "SMART formuliert",
+     "richtig": false
+    },
+    {
+     "text": "nicht SMART – nicht terminiert und unspezifisch",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SMARTBSP02-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-SMARTBSP02",
+   "text": "Wie ist dieses Ziel zu bewerten? „Bis 30.06. sinkt die Ladezeit der Startseite auf unter 2 Sekunden.“",
+   "erklaerung": "„Bis 30.06. sinkt die Ladezeit der Startseite auf unter 2 Sekunden.“ → **SMART formuliert**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "SMART formuliert",
+     "richtig": true
+    },
+    {
+     "text": "nicht SMART – weder messbar noch terminiert",
+     "richtig": false
+    },
+    {
+     "text": "nicht SMART – nicht terminiert und unspezifisch",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SMARTBSP03-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-SMARTBSP03",
+   "text": "Wie ist dieses Ziel zu bewerten? „Wir wollen irgendwann papierlos arbeiten.“",
+   "erklaerung": "„Wir wollen irgendwann papierlos arbeiten.“ → **nicht SMART – nicht terminiert und unspezifisch**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "nicht SMART – nicht terminiert und unspezifisch",
+     "richtig": true
+    },
+    {
+     "text": "nicht SMART – weder messbar noch terminiert",
+     "richtig": false
+    },
+    {
+     "text": "SMART formuliert",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SMARTBSP04-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-SMARTBSP04",
+   "text": "Wie ist dieses Ziel zu bewerten? „Bis Ende Q3 sind 100 % der 40 Clients auf Windows 11 migriert.“",
+   "erklaerung": "„Bis Ende Q3 sind 100 % der 40 Clients auf Windows 11 migriert.“ → **SMART formuliert**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "SMART formuliert",
+     "richtig": true
+    },
+    {
+     "text": "nicht SMART – weder messbar noch terminiert",
+     "richtig": false
+    },
+    {
+     "text": "nicht SMART – nicht terminiert und unspezifisch",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-STAKE01-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-STAKE01",
+   "text": "Welche Rolle hat **Auftraggeber** im Projekt?",
+   "erklaerung": "Auftraggeber → **beauftragt und finanziert das Projekt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "beauftragt und finanziert das Projekt",
+     "richtig": true
+    },
+    {
+     "text": "prüft den Umgang mit personenbezogenen Daten",
+     "richtig": false
+    },
+    {
+     "text": "muss z. B. bei Systemen zur Leistungskontrolle mitbestimmen",
+     "richtig": false
+    },
+    {
+     "text": "arbeitet später mit dem Ergebnis",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-STAKE01-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-STAKE01",
+   "text": "Wer beauftragt und finanziert das Projekt?",
+   "erklaerung": "Auftraggeber → **beauftragt und finanziert das Projekt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Auftraggeber",
+     "richtig": true
+    },
+    {
+     "text": "Endanwender",
+     "richtig": false
+    },
+    {
+     "text": "Lenkungsausschuss",
+     "richtig": false
+    },
+    {
+     "text": "Datenschutzbeauftragter",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-STAKE02-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-STAKE02",
+   "text": "Welche Rolle hat **Projektleiter** im Projekt?",
+   "erklaerung": "Projektleiter → **plant, steuert und überwacht das Projekt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "plant, steuert und überwacht das Projekt",
+     "richtig": true
+    },
+    {
+     "text": "arbeitet später mit dem Ergebnis",
+     "richtig": false
+    },
+    {
+     "text": "muss z. B. bei Systemen zur Leistungskontrolle mitbestimmen",
+     "richtig": false
+    },
+    {
+     "text": "beauftragt und finanziert das Projekt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-STAKE02-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-STAKE02",
+   "text": "Wer plant, steuert und überwacht das Projekt?",
+   "erklaerung": "Projektleiter → **plant, steuert und überwacht das Projekt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Projektleiter",
+     "richtig": true
+    },
+    {
+     "text": "Endanwender",
+     "richtig": false
+    },
+    {
+     "text": "Datenschutzbeauftragter",
+     "richtig": false
+    },
+    {
+     "text": "Betriebsrat",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-STAKE03-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-STAKE03",
+   "text": "Welche Rolle hat **Lenkungsausschuss** im Projekt?",
+   "erklaerung": "Lenkungsausschuss → **trifft übergeordnete Entscheidungen und genehmigt Meilensteine**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "trifft übergeordnete Entscheidungen und genehmigt Meilensteine",
+     "richtig": true
+    },
+    {
+     "text": "plant, steuert und überwacht das Projekt",
+     "richtig": false
+    },
+    {
+     "text": "beauftragt und finanziert das Projekt",
+     "richtig": false
+    },
+    {
+     "text": "prüft den Umgang mit personenbezogenen Daten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-STAKE03-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-STAKE03",
+   "text": "Wer trifft übergeordnete Entscheidungen und genehmigt Meilensteine?",
+   "erklaerung": "Lenkungsausschuss → **trifft übergeordnete Entscheidungen und genehmigt Meilensteine**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Lenkungsausschuss",
+     "richtig": true
+    },
+    {
+     "text": "Projektleiter",
+     "richtig": false
+    },
+    {
+     "text": "Datenschutzbeauftragter",
+     "richtig": false
+    },
+    {
+     "text": "Betriebsrat",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-STAKE04-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-STAKE04",
+   "text": "Welche Rolle hat **Endanwender** im Projekt?",
+   "erklaerung": "Endanwender → **arbeitet später mit dem Ergebnis**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "arbeitet später mit dem Ergebnis",
+     "richtig": true
+    },
+    {
+     "text": "muss z. B. bei Systemen zur Leistungskontrolle mitbestimmen",
+     "richtig": false
+    },
+    {
+     "text": "beauftragt und finanziert das Projekt",
+     "richtig": false
+    },
+    {
+     "text": "plant, steuert und überwacht das Projekt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-STAKE04-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-STAKE04",
+   "text": "Wer arbeitet später mit dem Ergebnis?",
+   "erklaerung": "Endanwender → **arbeitet später mit dem Ergebnis**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Endanwender",
+     "richtig": true
+    },
+    {
+     "text": "Auftraggeber",
+     "richtig": false
+    },
+    {
+     "text": "Betriebsrat",
+     "richtig": false
+    },
+    {
+     "text": "Projektleiter",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-STAKE05-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-STAKE05",
+   "text": "Welche Rolle hat **Betriebsrat** im Projekt?",
+   "erklaerung": "Betriebsrat → **muss z. B. bei Systemen zur Leistungskontrolle mitbestimmen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "muss z. B. bei Systemen zur Leistungskontrolle mitbestimmen",
+     "richtig": true
+    },
+    {
+     "text": "trifft übergeordnete Entscheidungen und genehmigt Meilensteine",
+     "richtig": false
+    },
+    {
+     "text": "plant, steuert und überwacht das Projekt",
+     "richtig": false
+    },
+    {
+     "text": "prüft den Umgang mit personenbezogenen Daten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-STAKE05-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-STAKE05",
+   "text": "Wer muss z. B. bei Systemen zur Leistungskontrolle mitbestimmen?",
+   "erklaerung": "Betriebsrat → **muss z. B. bei Systemen zur Leistungskontrolle mitbestimmen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Betriebsrat",
+     "richtig": true
+    },
+    {
+     "text": "Projektleiter",
+     "richtig": false
+    },
+    {
+     "text": "Auftraggeber",
+     "richtig": false
+    },
+    {
+     "text": "Endanwender",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-STAKE06-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-STAKE06",
+   "text": "Welche Rolle hat **Datenschutzbeauftragter** im Projekt?",
+   "erklaerung": "Datenschutzbeauftragter → **prüft den Umgang mit personenbezogenen Daten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "prüft den Umgang mit personenbezogenen Daten",
+     "richtig": true
+    },
+    {
+     "text": "arbeitet später mit dem Ergebnis",
+     "richtig": false
+    },
+    {
+     "text": "plant, steuert und überwacht das Projekt",
+     "richtig": false
+    },
+    {
+     "text": "beauftragt und finanziert das Projekt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-STAKE06-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-STAKE06",
+   "text": "Wer prüft den Umgang mit personenbezogenen Daten?",
+   "erklaerung": "Datenschutzbeauftragter → **prüft den Umgang mit personenbezogenen Daten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Datenschutzbeauftragter",
+     "richtig": true
+    },
+    {
+     "text": "Auftraggeber",
+     "richtig": false
+    },
+    {
+     "text": "Lenkungsausschuss",
+     "richtig": false
+    },
+    {
+     "text": "Endanwender",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-DREIECK01-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-DREIECK01",
+   "text": "Magisches Dreieck (Zeit, Kosten, Qualität/Umfang): Der Funktionsumfang steigt, Termin bleibt fest. Was folgt typischerweise?",
+   "erklaerung": "Der Funktionsumfang steigt, Termin bleibt fest → **Kosten steigen oder Qualität sinkt**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Kosten steigen oder Qualität sinkt",
+     "richtig": true
+    },
+    {
+     "text": "mehr Kosten (Ressourcen) oder weniger Umfang/Qualität",
+     "richtig": false
+    },
+    {
+     "text": "Umfang/Qualität sinkt oder Termin verschiebt sich",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-DREIECK02-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-DREIECK02",
+   "text": "Magisches Dreieck (Zeit, Kosten, Qualität/Umfang): Das Budget wird gekürzt. Was folgt typischerweise?",
+   "erklaerung": "Das Budget wird gekürzt → **Umfang/Qualität sinkt oder Termin verschiebt sich**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Umfang/Qualität sinkt oder Termin verschiebt sich",
+     "richtig": true
+    },
+    {
+     "text": "Kosten steigen oder Qualität sinkt",
+     "richtig": false
+    },
+    {
+     "text": "mehr Kosten (Ressourcen) oder weniger Umfang/Qualität",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-DREIECK03-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-DREIECK03",
+   "text": "Magisches Dreieck (Zeit, Kosten, Qualität/Umfang): Der Termin wird vorgezogen. Was folgt typischerweise?",
+   "erklaerung": "Der Termin wird vorgezogen → **mehr Kosten (Ressourcen) oder weniger Umfang/Qualität**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "mehr Kosten (Ressourcen) oder weniger Umfang/Qualität",
+     "richtig": true
+    },
+    {
+     "text": "Kosten steigen oder Qualität sinkt",
+     "richtig": false
+    },
+    {
+     "text": "Umfang/Qualität sinkt oder Termin verschiebt sich",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-PHASE-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-PHASE",
+   "text": "Klassische Projektphasen: Initialisierung, Planung, Durchführung, Abschluss. An welcher Stelle (1–4) steht **Initialisierung**?",
+   "erklaerung": "Reihenfolge: Initialisierung → Planung → Durchführung (mit Controlling) → Abschluss.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-PHASE-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-PHASE",
+   "text": "Klassische Projektphasen: Initialisierung, Planung, Durchführung, Abschluss. An welcher Stelle (1–4) steht **Definition / Planung**?",
+   "erklaerung": "Reihenfolge: Initialisierung → Planung → Durchführung (mit Controlling) → Abschluss.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-PHASE-003",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-PHASE",
+   "text": "Klassische Projektphasen: Initialisierung, Planung, Durchführung, Abschluss. An welcher Stelle (1–4) steht **Durchführung**?",
+   "erklaerung": "Reihenfolge: Initialisierung → Planung → Durchführung (mit Controlling) → Abschluss.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-PHASE-004",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-PHASE",
+   "text": "Klassische Projektphasen: Initialisierung, Planung, Durchführung, Abschluss. An welcher Stelle (1–4) steht **Abschluss**?",
+   "erklaerung": "Reihenfolge: Initialisierung → Planung → Durchführung (mit Controlling) → Abschluss.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-RISIKO-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-RISIKO",
+   "text": "Risikoanalyse: Eintrittswahrscheinlichkeit 20 %, Schaden 50.000 €. Wie hoch ist der Risikowert (Erwartungswert) in €?",
+   "erklaerung": "Risikowert = Eintrittswahrscheinlichkeit × Schadenshöhe.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 10000,
+   "toleranz": 0,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-PM-RISIKO-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-RISIKO",
+   "text": "Risikoanalyse: Eintrittswahrscheinlichkeit 5 %, Schaden 200.000 €. Wie hoch ist der Risikowert (Erwartungswert) in €?",
+   "erklaerung": "Risikowert = Eintrittswahrscheinlichkeit × Schadenshöhe.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 10000,
+   "toleranz": 0,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-PM-RISIKO-003",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-RISIKO",
+   "text": "Risikoanalyse: Eintrittswahrscheinlichkeit 40 %, Schaden 8.000 €. Wie hoch ist der Risikowert (Erwartungswert) in €?",
+   "erklaerung": "Risikowert = Eintrittswahrscheinlichkeit × Schadenshöhe.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3200,
+   "toleranz": 0,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-PM-RISIKO-004",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-RISIKO",
+   "text": "Risikoanalyse: Eintrittswahrscheinlichkeit 10 %, Schaden 75.000 €. Wie hoch ist der Risikowert (Erwartungswert) in €?",
+   "erklaerung": "Risikowert = Eintrittswahrscheinlichkeit × Schadenshöhe.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 7500,
+   "toleranz": 0,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-PM-RISIKO-005",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-RISIKO",
+   "text": "Risikoanalyse: Eintrittswahrscheinlichkeit 25 %, Schaden 12.000 €. Wie hoch ist der Risikowert (Erwartungswert) in €?",
+   "erklaerung": "Risikowert = Eintrittswahrscheinlichkeit × Schadenshöhe.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3000,
+   "toleranz": 0,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-PM-RISIKO-006",
+   "thema": "projektmanagement",
+   "lektion": "PM-L1",
+   "gruppe": "PM-RISIKO",
+   "text": "Risikoanalyse: Eintrittswahrscheinlichkeit 60 %, Schaden 4.500 €. Wie hoch ist der Risikowert (Erwartungswert) in €?",
+   "erklaerung": "Risikowert = Eintrittswahrscheinlichkeit × Schadenshöhe.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2700,
+   "toleranz": 0,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-PM-LASTPFL01-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-LASTPFL01",
+   "text": "Lastenheft oder Pflichtenheft? Das Dokument **wird vom Auftraggeber erstellt**.",
+   "erklaerung": "Lastenheft = Was/Wofür (Auftraggeber). Pflichtenheft = Wie/Womit (Auftragnehmer).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Lastenheft",
+     "richtig": true
+    },
+    {
+     "text": "Pflichtenheft",
+     "richtig": false
+    },
+    {
+     "text": "Projekthandbuch",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-LASTPFL02-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-LASTPFL02",
+   "text": "Lastenheft oder Pflichtenheft? Das Dokument **beschreibt, WAS und WOFÜR gefordert ist**.",
+   "erklaerung": "Lastenheft = Was/Wofür (Auftraggeber). Pflichtenheft = Wie/Womit (Auftragnehmer).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Lastenheft",
+     "richtig": true
+    },
+    {
+     "text": "Pflichtenheft",
+     "richtig": false
+    },
+    {
+     "text": "Projekthandbuch",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-LASTPFL03-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-LASTPFL03",
+   "text": "Lastenheft oder Pflichtenheft? Das Dokument **wird vom Auftragnehmer erstellt**.",
+   "erklaerung": "Lastenheft = Was/Wofür (Auftraggeber). Pflichtenheft = Wie/Womit (Auftragnehmer).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Pflichtenheft",
+     "richtig": true
+    },
+    {
+     "text": "Lastenheft",
+     "richtig": false
+    },
+    {
+     "text": "Projekthandbuch",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-LASTPFL04-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-LASTPFL04",
+   "text": "Lastenheft oder Pflichtenheft? Das Dokument **beschreibt, WIE und WOMIT die Anforderungen umgesetzt werden**.",
+   "erklaerung": "Lastenheft = Was/Wofür (Auftraggeber). Pflichtenheft = Wie/Womit (Auftragnehmer).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Pflichtenheft",
+     "richtig": true
+    },
+    {
+     "text": "Lastenheft",
+     "richtig": false
+    },
+    {
+     "text": "Projekthandbuch",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-LASTPFL05-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-LASTPFL05",
+   "text": "Lastenheft oder Pflichtenheft? Das Dokument **ist Grundlage für die Angebotserstellung durch Lieferanten**.",
+   "erklaerung": "Lastenheft = Was/Wofür (Auftraggeber). Pflichtenheft = Wie/Womit (Auftragnehmer).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Lastenheft",
+     "richtig": true
+    },
+    {
+     "text": "Pflichtenheft",
+     "richtig": false
+    },
+    {
+     "text": "Projekthandbuch",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-LASTPFL06-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-LASTPFL06",
+   "text": "Lastenheft oder Pflichtenheft? Das Dokument **ist Grundlage für die spätere Abnahme der Umsetzung**.",
+   "erklaerung": "Lastenheft = Was/Wofür (Auftraggeber). Pflichtenheft = Wie/Womit (Auftragnehmer).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Pflichtenheft",
+     "richtig": true
+    },
+    {
+     "text": "Lastenheft",
+     "richtig": false
+    },
+    {
+     "text": "Projekthandbuch",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-LASTPFL07-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-LASTPFL07",
+   "text": "Lastenheft oder Pflichtenheft? Das Dokument **enthält die Systemarchitektur und gewählte Technologien**.",
+   "erklaerung": "Lastenheft = Was/Wofür (Auftraggeber). Pflichtenheft = Wie/Womit (Auftragnehmer).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Pflichtenheft",
+     "richtig": true
+    },
+    {
+     "text": "Lastenheft",
+     "richtig": false
+    },
+    {
+     "text": "Projekthandbuch",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-LASTPFL08-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-LASTPFL08",
+   "text": "Lastenheft oder Pflichtenheft? Das Dokument **enthält die Anforderungen aus Sicht der Fachabteilung**.",
+   "erklaerung": "Lastenheft = Was/Wofür (Auftraggeber). Pflichtenheft = Wie/Womit (Auftragnehmer).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Lastenheft",
+     "richtig": true
+    },
+    {
+     "text": "Pflichtenheft",
+     "richtig": false
+    },
+    {
+     "text": "Projekthandbuch",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-ANFART01-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-ANFART01",
+   "text": "Welche Art von Anforderung ist das? „Das System soll Rechnungen als PDF exportieren.“",
+   "erklaerung": "Funktional = WAS das System tun soll. Nicht-funktional = WIE GUT (Leistung, Sicherheit, Verfügbarkeit, Bedienbarkeit, Plattform).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "funktionale Anforderung",
+     "richtig": true
+    },
+    {
+     "text": "nicht-funktionale Anforderung",
+     "richtig": false
+    },
+    {
+     "text": "Rahmenbedingung des Budgets",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-ANFART02-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-ANFART02",
+   "text": "Welche Art von Anforderung ist das? „Die Suche liefert Ergebnisse in unter 1 Sekunde.“",
+   "erklaerung": "Funktional = WAS das System tun soll. Nicht-funktional = WIE GUT (Leistung, Sicherheit, Verfügbarkeit, Bedienbarkeit, Plattform).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "nicht-funktionale Anforderung",
+     "richtig": true
+    },
+    {
+     "text": "funktionale Anforderung",
+     "richtig": false
+    },
+    {
+     "text": "Rahmenbedingung des Budgets",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-ANFART03-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-ANFART03",
+   "text": "Welche Art von Anforderung ist das? „Nutzer können ihr Passwort zurücksetzen.“",
+   "erklaerung": "Funktional = WAS das System tun soll. Nicht-funktional = WIE GUT (Leistung, Sicherheit, Verfügbarkeit, Bedienbarkeit, Plattform).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "funktionale Anforderung",
+     "richtig": true
+    },
+    {
+     "text": "nicht-funktionale Anforderung",
+     "richtig": false
+    },
+    {
+     "text": "Rahmenbedingung des Budgets",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-ANFART04-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-ANFART04",
+   "text": "Welche Art von Anforderung ist das? „Die Anwendung ist zu 99,9 % verfügbar.“",
+   "erklaerung": "Funktional = WAS das System tun soll. Nicht-funktional = WIE GUT (Leistung, Sicherheit, Verfügbarkeit, Bedienbarkeit, Plattform).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "nicht-funktionale Anforderung",
+     "richtig": true
+    },
+    {
+     "text": "funktionale Anforderung",
+     "richtig": false
+    },
+    {
+     "text": "Rahmenbedingung des Budgets",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-ANFART05-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-ANFART05",
+   "text": "Welche Art von Anforderung ist das? „Die Oberfläche ist barrierefrei nach WCAG 2.1 AA.“",
+   "erklaerung": "Funktional = WAS das System tun soll. Nicht-funktional = WIE GUT (Leistung, Sicherheit, Verfügbarkeit, Bedienbarkeit, Plattform).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "nicht-funktionale Anforderung",
+     "richtig": true
+    },
+    {
+     "text": "funktionale Anforderung",
+     "richtig": false
+    },
+    {
+     "text": "Rahmenbedingung des Budgets",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-ANFART06-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-ANFART06",
+   "text": "Welche Art von Anforderung ist das? „Ein Admin kann Benutzer sperren.“",
+   "erklaerung": "Funktional = WAS das System tun soll. Nicht-funktional = WIE GUT (Leistung, Sicherheit, Verfügbarkeit, Bedienbarkeit, Plattform).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "funktionale Anforderung",
+     "richtig": true
+    },
+    {
+     "text": "nicht-funktionale Anforderung",
+     "richtig": false
+    },
+    {
+     "text": "Rahmenbedingung des Budgets",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-ANFART07-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-ANFART07",
+   "text": "Welche Art von Anforderung ist das? „Die Software läuft auf Windows und Linux.“",
+   "erklaerung": "Funktional = WAS das System tun soll. Nicht-funktional = WIE GUT (Leistung, Sicherheit, Verfügbarkeit, Bedienbarkeit, Plattform).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "nicht-funktionale Anforderung",
+     "richtig": true
+    },
+    {
+     "text": "funktionale Anforderung",
+     "richtig": false
+    },
+    {
+     "text": "Rahmenbedingung des Budgets",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-ANFART08-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-ANFART08",
+   "text": "Welche Art von Anforderung ist das? „Das System versendet eine Bestellbestätigung per E-Mail.“",
+   "erklaerung": "Funktional = WAS das System tun soll. Nicht-funktional = WIE GUT (Leistung, Sicherheit, Verfügbarkeit, Bedienbarkeit, Plattform).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "funktionale Anforderung",
+     "richtig": true
+    },
+    {
+     "text": "nicht-funktionale Anforderung",
+     "richtig": false
+    },
+    {
+     "text": "Rahmenbedingung des Budgets",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MOSCOW01-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-MOSCOW01",
+   "text": "Was bedeutet **Must have** bei der MoSCoW-Priorisierung?",
+   "erklaerung": "Must have → **zwingend erforderlich**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "zwingend erforderlich",
+     "richtig": true
+    },
+    {
+     "text": "wichtig, aber nicht zwingend für den Start",
+     "richtig": false
+    },
+    {
+     "text": "wird bewusst in dieser Version nicht umgesetzt",
+     "richtig": false
+    },
+    {
+     "text": "wünschenswert, wenn Zeit bleibt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MOSCOW01-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-MOSCOW01",
+   "text": "Welche MoSCoW-Kategorie: zwingend erforderlich?",
+   "erklaerung": "Must have → **zwingend erforderlich**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Must have",
+     "richtig": true
+    },
+    {
+     "text": "Could have",
+     "richtig": false
+    },
+    {
+     "text": "Should have",
+     "richtig": false
+    },
+    {
+     "text": "Won't have (this time)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MOSCOW02-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-MOSCOW02",
+   "text": "Was bedeutet **Should have** bei der MoSCoW-Priorisierung?",
+   "erklaerung": "Should have → **wichtig, aber nicht zwingend für den Start**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "wichtig, aber nicht zwingend für den Start",
+     "richtig": true
+    },
+    {
+     "text": "wünschenswert, wenn Zeit bleibt",
+     "richtig": false
+    },
+    {
+     "text": "zwingend erforderlich",
+     "richtig": false
+    },
+    {
+     "text": "wird bewusst in dieser Version nicht umgesetzt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MOSCOW02-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-MOSCOW02",
+   "text": "Welche MoSCoW-Kategorie: wichtig, aber nicht zwingend für den Start?",
+   "erklaerung": "Should have → **wichtig, aber nicht zwingend für den Start**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Should have",
+     "richtig": true
+    },
+    {
+     "text": "Could have",
+     "richtig": false
+    },
+    {
+     "text": "Must have",
+     "richtig": false
+    },
+    {
+     "text": "Won't have (this time)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MOSCOW03-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-MOSCOW03",
+   "text": "Was bedeutet **Could have** bei der MoSCoW-Priorisierung?",
+   "erklaerung": "Could have → **wünschenswert, wenn Zeit bleibt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "wünschenswert, wenn Zeit bleibt",
+     "richtig": true
+    },
+    {
+     "text": "zwingend erforderlich",
+     "richtig": false
+    },
+    {
+     "text": "wichtig, aber nicht zwingend für den Start",
+     "richtig": false
+    },
+    {
+     "text": "wird bewusst in dieser Version nicht umgesetzt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MOSCOW03-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-MOSCOW03",
+   "text": "Welche MoSCoW-Kategorie: wünschenswert, wenn Zeit bleibt?",
+   "erklaerung": "Could have → **wünschenswert, wenn Zeit bleibt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Could have",
+     "richtig": true
+    },
+    {
+     "text": "Won't have (this time)",
+     "richtig": false
+    },
+    {
+     "text": "Must have",
+     "richtig": false
+    },
+    {
+     "text": "Should have",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MOSCOW04-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-MOSCOW04",
+   "text": "Was bedeutet **Won't have (this time)** bei der MoSCoW-Priorisierung?",
+   "erklaerung": "Won't have (this time) → **wird bewusst in dieser Version nicht umgesetzt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "wird bewusst in dieser Version nicht umgesetzt",
+     "richtig": true
+    },
+    {
+     "text": "wünschenswert, wenn Zeit bleibt",
+     "richtig": false
+    },
+    {
+     "text": "wichtig, aber nicht zwingend für den Start",
+     "richtig": false
+    },
+    {
+     "text": "zwingend erforderlich",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MOSCOW04-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L2",
+   "gruppe": "PM-MOSCOW04",
+   "text": "Welche MoSCoW-Kategorie: wird bewusst in dieser Version nicht umgesetzt?",
+   "erklaerung": "Won't have (this time) → **wird bewusst in dieser Version nicht umgesetzt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Won't have (this time)",
+     "richtig": true
+    },
+    {
+     "text": "Must have",
+     "richtig": false
+    },
+    {
+     "text": "Could have",
+     "richtig": false
+    },
+    {
+     "text": "Should have",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM01-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM01",
+   "text": "Was ist bzw. macht **Product Owner** in Scrum?",
+   "erklaerung": "Product Owner → **verantwortet und priorisiert das Product Backlog**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "verantwortet und priorisiert das Product Backlog",
+     "richtig": true
+    },
+    {
+     "text": "tägliches 15-Minuten-Treffen des Teams",
+     "richtig": false
+    },
+    {
+     "text": "gemeinsames Verständnis, wann ein Eintrag fertig ist",
+     "richtig": false
+    },
+    {
+     "text": "geordnete Liste aller Anforderungen an das Produkt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM01-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM01",
+   "text": "Welches Scrum-Element: verantwortet und priorisiert das Product Backlog?",
+   "erklaerung": "Product Owner → **verantwortet und priorisiert das Product Backlog**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Product Owner",
+     "richtig": true
+    },
+    {
+     "text": "Sprint Planning",
+     "richtig": false
+    },
+    {
+     "text": "Daily Scrum",
+     "richtig": false
+    },
+    {
+     "text": "Scrum Master",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM02-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM02",
+   "text": "Was ist bzw. macht **Scrum Master** in Scrum?",
+   "erklaerung": "Scrum Master → **sorgt dafür, dass Scrum verstanden und gelebt wird, beseitigt Hindernisse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "sorgt dafür, dass Scrum verstanden und gelebt wird, beseitigt Hindernisse",
+     "richtig": true
+    },
+    {
+     "text": "tägliches 15-Minuten-Treffen des Teams",
+     "richtig": false
+    },
+    {
+     "text": "Auswahl an Einträgen plus Plan für den aktuellen Sprint",
+     "richtig": false
+    },
+    {
+     "text": "nutzbares Ergebnis am Ende eines Sprints",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM02-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM02",
+   "text": "Welches Scrum-Element: sorgt dafür, dass Scrum verstanden und gelebt wird, beseitigt Hindernisse?",
+   "erklaerung": "Scrum Master → **sorgt dafür, dass Scrum verstanden und gelebt wird, beseitigt Hindernisse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Scrum Master",
+     "richtig": true
+    },
+    {
+     "text": "Sprint Planning",
+     "richtig": false
+    },
+    {
+     "text": "Daily Scrum",
+     "richtig": false
+    },
+    {
+     "text": "Sprint Retrospektive",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM03-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM03",
+   "text": "Was ist bzw. macht **Developers** in Scrum?",
+   "erklaerung": "Developers → **setzen die Backlog-Einträge im Sprint um**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "setzen die Backlog-Einträge im Sprint um",
+     "richtig": true
+    },
+    {
+     "text": "Ergebnis wird mit Stakeholdern begutachtet",
+     "richtig": false
+    },
+    {
+     "text": "Team verbessert seine Zusammenarbeit",
+     "richtig": false
+    },
+    {
+     "text": "Anforderung aus Nutzersicht: Als … möchte ich … damit …",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM03-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM03",
+   "text": "Welches Scrum-Element: setzen die Backlog-Einträge im Sprint um?",
+   "erklaerung": "Developers → **setzen die Backlog-Einträge im Sprint um**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Developers",
+     "richtig": true
+    },
+    {
+     "text": "Inkrement",
+     "richtig": false
+    },
+    {
+     "text": "Daily Scrum",
+     "richtig": false
+    },
+    {
+     "text": "Sprint Review",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM04-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM04",
+   "text": "Was ist bzw. macht **Sprint** in Scrum?",
+   "erklaerung": "Sprint → **fester Zeitraum von höchstens einem Monat, in dem ein Inkrement entsteht**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "fester Zeitraum von höchstens einem Monat, in dem ein Inkrement entsteht",
+     "richtig": true
+    },
+    {
+     "text": "Ergebnis wird mit Stakeholdern begutachtet",
+     "richtig": false
+    },
+    {
+     "text": "geordnete Liste aller Anforderungen an das Produkt",
+     "richtig": false
+    },
+    {
+     "text": "Auswahl an Einträgen plus Plan für den aktuellen Sprint",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM04-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM04",
+   "text": "Welches Scrum-Element: fester Zeitraum von höchstens einem Monat, in dem ein Inkrement entsteht?",
+   "erklaerung": "Sprint → **fester Zeitraum von höchstens einem Monat, in dem ein Inkrement entsteht**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Sprint",
+     "richtig": true
+    },
+    {
+     "text": "Sprint Retrospektive",
+     "richtig": false
+    },
+    {
+     "text": "Scrum Master",
+     "richtig": false
+    },
+    {
+     "text": "Inkrement",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM05-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM05",
+   "text": "Was ist bzw. macht **Daily Scrum** in Scrum?",
+   "erklaerung": "Daily Scrum → **tägliches 15-Minuten-Treffen des Teams**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "tägliches 15-Minuten-Treffen des Teams",
+     "richtig": true
+    },
+    {
+     "text": "nutzbares Ergebnis am Ende eines Sprints",
+     "richtig": false
+    },
+    {
+     "text": "Team verbessert seine Zusammenarbeit",
+     "richtig": false
+    },
+    {
+     "text": "geordnete Liste aller Anforderungen an das Produkt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM05-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM05",
+   "text": "Welches Scrum-Element: tägliches 15-Minuten-Treffen des Teams?",
+   "erklaerung": "Daily Scrum → **tägliches 15-Minuten-Treffen des Teams**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Daily Scrum",
+     "richtig": true
+    },
+    {
+     "text": "Sprint",
+     "richtig": false
+    },
+    {
+     "text": "Product Owner",
+     "richtig": false
+    },
+    {
+     "text": "Sprint Backlog",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM06-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM06",
+   "text": "Was ist bzw. macht **Sprint Review** in Scrum?",
+   "erklaerung": "Sprint Review → **Ergebnis wird mit Stakeholdern begutachtet**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ergebnis wird mit Stakeholdern begutachtet",
+     "richtig": true
+    },
+    {
+     "text": "geordnete Liste aller Anforderungen an das Produkt",
+     "richtig": false
+    },
+    {
+     "text": "fester Zeitraum von höchstens einem Monat, in dem ein Inkrement entsteht",
+     "richtig": false
+    },
+    {
+     "text": "Team verbessert seine Zusammenarbeit",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM06-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM06",
+   "text": "Welches Scrum-Element: Ergebnis wird mit Stakeholdern begutachtet?",
+   "erklaerung": "Sprint Review → **Ergebnis wird mit Stakeholdern begutachtet**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Sprint Review",
+     "richtig": true
+    },
+    {
+     "text": "Sprint Retrospektive",
+     "richtig": false
+    },
+    {
+     "text": "User Story",
+     "richtig": false
+    },
+    {
+     "text": "Product Backlog",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM07-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM07",
+   "text": "Was ist bzw. macht **Sprint Retrospektive** in Scrum?",
+   "erklaerung": "Sprint Retrospektive → **Team verbessert seine Zusammenarbeit**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Team verbessert seine Zusammenarbeit",
+     "richtig": true
+    },
+    {
+     "text": "sorgt dafür, dass Scrum verstanden und gelebt wird, beseitigt Hindernisse",
+     "richtig": false
+    },
+    {
+     "text": "Ergebnis wird mit Stakeholdern begutachtet",
+     "richtig": false
+    },
+    {
+     "text": "nutzbares Ergebnis am Ende eines Sprints",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM07-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM07",
+   "text": "Welches Scrum-Element: Team verbessert seine Zusammenarbeit?",
+   "erklaerung": "Sprint Retrospektive → **Team verbessert seine Zusammenarbeit**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Sprint Retrospektive",
+     "richtig": true
+    },
+    {
+     "text": "Sprint",
+     "richtig": false
+    },
+    {
+     "text": "Product Backlog",
+     "richtig": false
+    },
+    {
+     "text": "Sprint Review",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM08-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM08",
+   "text": "Was ist bzw. macht **Sprint Planning** in Scrum?",
+   "erklaerung": "Sprint Planning → **Team plant Ziel und Arbeit des Sprints**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Team plant Ziel und Arbeit des Sprints",
+     "richtig": true
+    },
+    {
+     "text": "fester Zeitraum von höchstens einem Monat, in dem ein Inkrement entsteht",
+     "richtig": false
+    },
+    {
+     "text": "Auswahl an Einträgen plus Plan für den aktuellen Sprint",
+     "richtig": false
+    },
+    {
+     "text": "verantwortet und priorisiert das Product Backlog",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM08-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM08",
+   "text": "Welches Scrum-Element: Team plant Ziel und Arbeit des Sprints?",
+   "erklaerung": "Sprint Planning → **Team plant Ziel und Arbeit des Sprints**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Sprint Planning",
+     "richtig": true
+    },
+    {
+     "text": "Scrum Master",
+     "richtig": false
+    },
+    {
+     "text": "Definition of Done",
+     "richtig": false
+    },
+    {
+     "text": "Sprint Backlog",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM09-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM09",
+   "text": "Was ist bzw. macht **Product Backlog** in Scrum?",
+   "erklaerung": "Product Backlog → **geordnete Liste aller Anforderungen an das Produkt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "geordnete Liste aller Anforderungen an das Produkt",
+     "richtig": true
+    },
+    {
+     "text": "Anforderung aus Nutzersicht: Als … möchte ich … damit …",
+     "richtig": false
+    },
+    {
+     "text": "Team plant Ziel und Arbeit des Sprints",
+     "richtig": false
+    },
+    {
+     "text": "gemeinsames Verständnis, wann ein Eintrag fertig ist",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM09-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM09",
+   "text": "Welches Scrum-Element: geordnete Liste aller Anforderungen an das Produkt?",
+   "erklaerung": "Product Backlog → **geordnete Liste aller Anforderungen an das Produkt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Product Backlog",
+     "richtig": true
+    },
+    {
+     "text": "Sprint",
+     "richtig": false
+    },
+    {
+     "text": "Definition of Done",
+     "richtig": false
+    },
+    {
+     "text": "Scrum Master",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM10-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM10",
+   "text": "Was ist bzw. macht **Sprint Backlog** in Scrum?",
+   "erklaerung": "Sprint Backlog → **Auswahl an Einträgen plus Plan für den aktuellen Sprint**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Auswahl an Einträgen plus Plan für den aktuellen Sprint",
+     "richtig": true
+    },
+    {
+     "text": "setzen die Backlog-Einträge im Sprint um",
+     "richtig": false
+    },
+    {
+     "text": "tägliches 15-Minuten-Treffen des Teams",
+     "richtig": false
+    },
+    {
+     "text": "nutzbares Ergebnis am Ende eines Sprints",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM10-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM10",
+   "text": "Welches Scrum-Element: Auswahl an Einträgen plus Plan für den aktuellen Sprint?",
+   "erklaerung": "Sprint Backlog → **Auswahl an Einträgen plus Plan für den aktuellen Sprint**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Sprint Backlog",
+     "richtig": true
+    },
+    {
+     "text": "Sprint",
+     "richtig": false
+    },
+    {
+     "text": "Product Owner",
+     "richtig": false
+    },
+    {
+     "text": "Definition of Done",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM11-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM11",
+   "text": "Was ist bzw. macht **Inkrement** in Scrum?",
+   "erklaerung": "Inkrement → **nutzbares Ergebnis am Ende eines Sprints**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "nutzbares Ergebnis am Ende eines Sprints",
+     "richtig": true
+    },
+    {
+     "text": "sorgt dafür, dass Scrum verstanden und gelebt wird, beseitigt Hindernisse",
+     "richtig": false
+    },
+    {
+     "text": "Ergebnis wird mit Stakeholdern begutachtet",
+     "richtig": false
+    },
+    {
+     "text": "tägliches 15-Minuten-Treffen des Teams",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM11-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM11",
+   "text": "Welches Scrum-Element: nutzbares Ergebnis am Ende eines Sprints?",
+   "erklaerung": "Inkrement → **nutzbares Ergebnis am Ende eines Sprints**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Inkrement",
+     "richtig": true
+    },
+    {
+     "text": "Definition of Done",
+     "richtig": false
+    },
+    {
+     "text": "User Story",
+     "richtig": false
+    },
+    {
+     "text": "Sprint Planning",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM12-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM12",
+   "text": "Was ist bzw. macht **User Story** in Scrum?",
+   "erklaerung": "User Story → **Anforderung aus Nutzersicht: Als … möchte ich … damit …**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Anforderung aus Nutzersicht: Als … möchte ich … damit …",
+     "richtig": true
+    },
+    {
+     "text": "Ergebnis wird mit Stakeholdern begutachtet",
+     "richtig": false
+    },
+    {
+     "text": "verantwortet und priorisiert das Product Backlog",
+     "richtig": false
+    },
+    {
+     "text": "Auswahl an Einträgen plus Plan für den aktuellen Sprint",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM12-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM12",
+   "text": "Welches Scrum-Element: Anforderung aus Nutzersicht: Als … möchte ich … damit …?",
+   "erklaerung": "User Story → **Anforderung aus Nutzersicht: Als … möchte ich … damit …**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "User Story",
+     "richtig": true
+    },
+    {
+     "text": "Sprint Planning",
+     "richtig": false
+    },
+    {
+     "text": "Sprint Retrospektive",
+     "richtig": false
+    },
+    {
+     "text": "Sprint Backlog",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM13-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM13",
+   "text": "Was ist bzw. macht **Definition of Done** in Scrum?",
+   "erklaerung": "Definition of Done → **gemeinsames Verständnis, wann ein Eintrag fertig ist**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "gemeinsames Verständnis, wann ein Eintrag fertig ist",
+     "richtig": true
+    },
+    {
+     "text": "Team plant Ziel und Arbeit des Sprints",
+     "richtig": false
+    },
+    {
+     "text": "Auswahl an Einträgen plus Plan für den aktuellen Sprint",
+     "richtig": false
+    },
+    {
+     "text": "Anforderung aus Nutzersicht: Als … möchte ich … damit …",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-SCRUM13-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-SCRUM13",
+   "text": "Welches Scrum-Element: gemeinsames Verständnis, wann ein Eintrag fertig ist?",
+   "erklaerung": "Definition of Done → **gemeinsames Verständnis, wann ein Eintrag fertig ist**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Definition of Done",
+     "richtig": true
+    },
+    {
+     "text": "Daily Scrum",
+     "richtig": false
+    },
+    {
+     "text": "Sprint Review",
+     "richtig": false
+    },
+    {
+     "text": "Inkrement",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MODELL01-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-MODELL01",
+   "text": "Was kennzeichnet das Vorgehensmodell **Wasserfallmodell**?",
+   "erklaerung": "Wasserfallmodell → **Phasen nacheinander, Rücksprünge kaum vorgesehen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Phasen nacheinander, Rücksprünge kaum vorgesehen",
+     "richtig": true
+    },
+    {
+     "text": "jeder Entwicklungsphase steht eine Testphase gegenüber",
+     "richtig": false
+    },
+    {
+     "text": "iterative Zyklen mit expliziter Risikoanalyse",
+     "richtig": false
+    },
+    {
+     "text": "frühe lauffähige Muster zur Klärung der Anforderungen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MODELL01-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-MODELL01",
+   "text": "Welches Modell: Phasen nacheinander, Rücksprünge kaum vorgesehen?",
+   "erklaerung": "Wasserfallmodell → **Phasen nacheinander, Rücksprünge kaum vorgesehen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Wasserfallmodell",
+     "richtig": true
+    },
+    {
+     "text": "Kanban",
+     "richtig": false
+    },
+    {
+     "text": "Scrum",
+     "richtig": false
+    },
+    {
+     "text": "V-Modell",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MODELL02-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-MODELL02",
+   "text": "Was kennzeichnet das Vorgehensmodell **V-Modell**?",
+   "erklaerung": "V-Modell → **jeder Entwicklungsphase steht eine Testphase gegenüber**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "jeder Entwicklungsphase steht eine Testphase gegenüber",
+     "richtig": true
+    },
+    {
+     "text": "iterative Zyklen mit expliziter Risikoanalyse",
+     "richtig": false
+    },
+    {
+     "text": "frühe lauffähige Muster zur Klärung der Anforderungen",
+     "richtig": false
+    },
+    {
+     "text": "visualisiert Arbeit auf einem Board und begrenzt parallele Aufgaben (WIP-Limit)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MODELL02-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-MODELL02",
+   "text": "Welches Modell: jeder Entwicklungsphase steht eine Testphase gegenüber?",
+   "erklaerung": "V-Modell → **jeder Entwicklungsphase steht eine Testphase gegenüber**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "V-Modell",
+     "richtig": true
+    },
+    {
+     "text": "Wasserfallmodell",
+     "richtig": false
+    },
+    {
+     "text": "Scrum",
+     "richtig": false
+    },
+    {
+     "text": "Kanban",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MODELL03-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-MODELL03",
+   "text": "Was kennzeichnet das Vorgehensmodell **Scrum**?",
+   "erklaerung": "Scrum → **iterativ in Sprints mit festen Rollen und Events**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "iterativ in Sprints mit festen Rollen und Events",
+     "richtig": true
+    },
+    {
+     "text": "Phasen nacheinander, Rücksprünge kaum vorgesehen",
+     "richtig": false
+    },
+    {
+     "text": "iterative Zyklen mit expliziter Risikoanalyse",
+     "richtig": false
+    },
+    {
+     "text": "frühe lauffähige Muster zur Klärung der Anforderungen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MODELL03-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-MODELL03",
+   "text": "Welches Modell: iterativ in Sprints mit festen Rollen und Events?",
+   "erklaerung": "Scrum → **iterativ in Sprints mit festen Rollen und Events**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Scrum",
+     "richtig": true
+    },
+    {
+     "text": "V-Modell",
+     "richtig": false
+    },
+    {
+     "text": "Prototyping",
+     "richtig": false
+    },
+    {
+     "text": "Spiralmodell",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MODELL04-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-MODELL04",
+   "text": "Was kennzeichnet das Vorgehensmodell **Kanban**?",
+   "erklaerung": "Kanban → **visualisiert Arbeit auf einem Board und begrenzt parallele Aufgaben (WIP-Limit)**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "visualisiert Arbeit auf einem Board und begrenzt parallele Aufgaben (WIP-Limit)",
+     "richtig": true
+    },
+    {
+     "text": "iterativ in Sprints mit festen Rollen und Events",
+     "richtig": false
+    },
+    {
+     "text": "jeder Entwicklungsphase steht eine Testphase gegenüber",
+     "richtig": false
+    },
+    {
+     "text": "Phasen nacheinander, Rücksprünge kaum vorgesehen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MODELL04-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-MODELL04",
+   "text": "Welches Modell: visualisiert Arbeit auf einem Board und begrenzt parallele Aufgaben (WIP-Limit)?",
+   "erklaerung": "Kanban → **visualisiert Arbeit auf einem Board und begrenzt parallele Aufgaben (WIP-Limit)**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Kanban",
+     "richtig": true
+    },
+    {
+     "text": "Spiralmodell",
+     "richtig": false
+    },
+    {
+     "text": "Prototyping",
+     "richtig": false
+    },
+    {
+     "text": "V-Modell",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MODELL05-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-MODELL05",
+   "text": "Was kennzeichnet das Vorgehensmodell **Spiralmodell**?",
+   "erklaerung": "Spiralmodell → **iterative Zyklen mit expliziter Risikoanalyse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "iterative Zyklen mit expliziter Risikoanalyse",
+     "richtig": true
+    },
+    {
+     "text": "visualisiert Arbeit auf einem Board und begrenzt parallele Aufgaben (WIP-Limit)",
+     "richtig": false
+    },
+    {
+     "text": "iterativ in Sprints mit festen Rollen und Events",
+     "richtig": false
+    },
+    {
+     "text": "frühe lauffähige Muster zur Klärung der Anforderungen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MODELL05-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-MODELL05",
+   "text": "Welches Modell: iterative Zyklen mit expliziter Risikoanalyse?",
+   "erklaerung": "Spiralmodell → **iterative Zyklen mit expliziter Risikoanalyse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Spiralmodell",
+     "richtig": true
+    },
+    {
+     "text": "Kanban",
+     "richtig": false
+    },
+    {
+     "text": "Wasserfallmodell",
+     "richtig": false
+    },
+    {
+     "text": "Scrum",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MODELL06-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-MODELL06",
+   "text": "Was kennzeichnet das Vorgehensmodell **Prototyping**?",
+   "erklaerung": "Prototyping → **frühe lauffähige Muster zur Klärung der Anforderungen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "frühe lauffähige Muster zur Klärung der Anforderungen",
+     "richtig": true
+    },
+    {
+     "text": "iterativ in Sprints mit festen Rollen und Events",
+     "richtig": false
+    },
+    {
+     "text": "jeder Entwicklungsphase steht eine Testphase gegenüber",
+     "richtig": false
+    },
+    {
+     "text": "visualisiert Arbeit auf einem Board und begrenzt parallele Aufgaben (WIP-Limit)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-MODELL06-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-MODELL06",
+   "text": "Welches Modell: frühe lauffähige Muster zur Klärung der Anforderungen?",
+   "erklaerung": "Prototyping → **frühe lauffähige Muster zur Klärung der Anforderungen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Prototyping",
+     "richtig": true
+    },
+    {
+     "text": "Kanban",
+     "richtig": false
+    },
+    {
+     "text": "Wasserfallmodell",
+     "richtig": false
+    },
+    {
+     "text": "V-Modell",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-PLAN01-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-PLAN01",
+   "text": "Was ist ein(e) **Gantt-Diagramm**?",
+   "erklaerung": "Gantt-Diagramm → **Balkendiagramm der Vorgänge auf einer Zeitachse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Balkendiagramm der Vorgänge auf einer Zeitachse",
+     "richtig": true
+    },
+    {
+     "text": "zerlegt das Projekt hierarchisch in Teilaufgaben und Arbeitspakete",
+     "richtig": false
+    },
+    {
+     "text": "zeigt die verbleibende Arbeit im Sprint über die Zeit",
+     "richtig": false
+    },
+    {
+     "text": "Ereignis ohne Dauer, markiert ein wichtiges Zwischenergebnis",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-PLAN01-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-PLAN01",
+   "text": "Welches Planungsinstrument: Balkendiagramm der Vorgänge auf einer Zeitachse?",
+   "erklaerung": "Gantt-Diagramm → **Balkendiagramm der Vorgänge auf einer Zeitachse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Gantt-Diagramm",
+     "richtig": true
+    },
+    {
+     "text": "Netzplan",
+     "richtig": false
+    },
+    {
+     "text": "Arbeitspaket",
+     "richtig": false
+    },
+    {
+     "text": "Kanban-Board",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-PLAN02-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-PLAN02",
+   "text": "Was ist ein(e) **Meilenstein**?",
+   "erklaerung": "Meilenstein → **Ereignis ohne Dauer, markiert ein wichtiges Zwischenergebnis**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ereignis ohne Dauer, markiert ein wichtiges Zwischenergebnis",
+     "richtig": true
+    },
+    {
+     "text": "kleinste Einheit im PSP mit Verantwortlichem, Dauer und Kosten",
+     "richtig": false
+    },
+    {
+     "text": "Balkendiagramm der Vorgänge auf einer Zeitachse",
+     "richtig": false
+    },
+    {
+     "text": "zeigt Abhängigkeiten der Vorgänge und den kritischen Pfad",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-PLAN02-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-PLAN02",
+   "text": "Welches Planungsinstrument: Ereignis ohne Dauer, markiert ein wichtiges Zwischenergebnis?",
+   "erklaerung": "Meilenstein → **Ereignis ohne Dauer, markiert ein wichtiges Zwischenergebnis**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Meilenstein",
+     "richtig": true
+    },
+    {
+     "text": "Gantt-Diagramm",
+     "richtig": false
+    },
+    {
+     "text": "Netzplan",
+     "richtig": false
+    },
+    {
+     "text": "Burndown-Chart",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-PLAN03-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-PLAN03",
+   "text": "Was ist ein(e) **Projektstrukturplan (PSP)**?",
+   "erklaerung": "Projektstrukturplan (PSP) → **zerlegt das Projekt hierarchisch in Teilaufgaben und Arbeitspakete**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "zerlegt das Projekt hierarchisch in Teilaufgaben und Arbeitspakete",
+     "richtig": true
+    },
+    {
+     "text": "kleinste Einheit im PSP mit Verantwortlichem, Dauer und Kosten",
+     "richtig": false
+    },
+    {
+     "text": "zeigt Abhängigkeiten der Vorgänge und den kritischen Pfad",
+     "richtig": false
+    },
+    {
+     "text": "Ereignis ohne Dauer, markiert ein wichtiges Zwischenergebnis",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-PLAN03-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-PLAN03",
+   "text": "Welches Planungsinstrument: zerlegt das Projekt hierarchisch in Teilaufgaben und Arbeitspakete?",
+   "erklaerung": "Projektstrukturplan (PSP) → **zerlegt das Projekt hierarchisch in Teilaufgaben und Arbeitspakete**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Projektstrukturplan (PSP)",
+     "richtig": true
+    },
+    {
+     "text": "Netzplan",
+     "richtig": false
+    },
+    {
+     "text": "Arbeitspaket",
+     "richtig": false
+    },
+    {
+     "text": "Kanban-Board",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-PLAN04-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-PLAN04",
+   "text": "Was ist ein(e) **Arbeitspaket**?",
+   "erklaerung": "Arbeitspaket → **kleinste Einheit im PSP mit Verantwortlichem, Dauer und Kosten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "kleinste Einheit im PSP mit Verantwortlichem, Dauer und Kosten",
+     "richtig": true
+    },
+    {
+     "text": "zeigt Abhängigkeiten der Vorgänge und den kritischen Pfad",
+     "richtig": false
+    },
+    {
+     "text": "Balkendiagramm der Vorgänge auf einer Zeitachse",
+     "richtig": false
+    },
+    {
+     "text": "Spalten wie To Do, In Arbeit, Erledigt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-PLAN04-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-PLAN04",
+   "text": "Welches Planungsinstrument: kleinste Einheit im PSP mit Verantwortlichem, Dauer und Kosten?",
+   "erklaerung": "Arbeitspaket → **kleinste Einheit im PSP mit Verantwortlichem, Dauer und Kosten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Arbeitspaket",
+     "richtig": true
+    },
+    {
+     "text": "Gantt-Diagramm",
+     "richtig": false
+    },
+    {
+     "text": "Meilenstein",
+     "richtig": false
+    },
+    {
+     "text": "Burndown-Chart",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-PLAN05-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-PLAN05",
+   "text": "Was ist ein(e) **Netzplan**?",
+   "erklaerung": "Netzplan → **zeigt Abhängigkeiten der Vorgänge und den kritischen Pfad**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "zeigt Abhängigkeiten der Vorgänge und den kritischen Pfad",
+     "richtig": true
+    },
+    {
+     "text": "zerlegt das Projekt hierarchisch in Teilaufgaben und Arbeitspakete",
+     "richtig": false
+    },
+    {
+     "text": "Spalten wie To Do, In Arbeit, Erledigt",
+     "richtig": false
+    },
+    {
+     "text": "zeigt die verbleibende Arbeit im Sprint über die Zeit",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-PLAN05-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-PLAN05",
+   "text": "Welches Planungsinstrument: zeigt Abhängigkeiten der Vorgänge und den kritischen Pfad?",
+   "erklaerung": "Netzplan → **zeigt Abhängigkeiten der Vorgänge und den kritischen Pfad**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Netzplan",
+     "richtig": true
+    },
+    {
+     "text": "Gantt-Diagramm",
+     "richtig": false
+    },
+    {
+     "text": "Arbeitspaket",
+     "richtig": false
+    },
+    {
+     "text": "Burndown-Chart",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-PLAN06-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-PLAN06",
+   "text": "Was ist ein(e) **Burndown-Chart**?",
+   "erklaerung": "Burndown-Chart → **zeigt die verbleibende Arbeit im Sprint über die Zeit**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "zeigt die verbleibende Arbeit im Sprint über die Zeit",
+     "richtig": true
+    },
+    {
+     "text": "Ereignis ohne Dauer, markiert ein wichtiges Zwischenergebnis",
+     "richtig": false
+    },
+    {
+     "text": "Spalten wie To Do, In Arbeit, Erledigt",
+     "richtig": false
+    },
+    {
+     "text": "Balkendiagramm der Vorgänge auf einer Zeitachse",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-PLAN06-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-PLAN06",
+   "text": "Welches Planungsinstrument: zeigt die verbleibende Arbeit im Sprint über die Zeit?",
+   "erklaerung": "Burndown-Chart → **zeigt die verbleibende Arbeit im Sprint über die Zeit**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Burndown-Chart",
+     "richtig": true
+    },
+    {
+     "text": "Netzplan",
+     "richtig": false
+    },
+    {
+     "text": "Kanban-Board",
+     "richtig": false
+    },
+    {
+     "text": "Arbeitspaket",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-PLAN07-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-PLAN07",
+   "text": "Was ist ein(e) **Kanban-Board**?",
+   "erklaerung": "Kanban-Board → **Spalten wie To Do, In Arbeit, Erledigt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Spalten wie To Do, In Arbeit, Erledigt",
+     "richtig": true
+    },
+    {
+     "text": "zeigt die verbleibende Arbeit im Sprint über die Zeit",
+     "richtig": false
+    },
+    {
+     "text": "Ereignis ohne Dauer, markiert ein wichtiges Zwischenergebnis",
+     "richtig": false
+    },
+    {
+     "text": "kleinste Einheit im PSP mit Verantwortlichem, Dauer und Kosten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-PLAN07-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-PLAN07",
+   "text": "Welches Planungsinstrument: Spalten wie To Do, In Arbeit, Erledigt?",
+   "erklaerung": "Kanban-Board → **Spalten wie To Do, In Arbeit, Erledigt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Kanban-Board",
+     "richtig": true
+    },
+    {
+     "text": "Meilenstein",
+     "richtig": false
+    },
+    {
+     "text": "Netzplan",
+     "richtig": false
+    },
+    {
+     "text": "Arbeitspaket",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-PM-VELO-001",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-VELO",
+   "text": "Ein Team hat in den letzten drei Sprints 28, 30 und 32 Story Points geschafft. Mit wie vielen Story Points (Durchschnitt) sollte es den nächsten Sprint planen?",
+   "erklaerung": "Velocity = Durchschnitt = (28 + 30 + 32) ÷ 3 = 30.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 30,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-VELO-002",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-VELO",
+   "text": "Ein Team hat in den letzten drei Sprints 30, 32 und 34 Story Points geschafft. Mit wie vielen Story Points (Durchschnitt) sollte es den nächsten Sprint planen?",
+   "erklaerung": "Velocity = Durchschnitt = (30 + 32 + 34) ÷ 3 = 32.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 32,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-VELO-003",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-VELO",
+   "text": "Ein Team hat in den letzten drei Sprints 18, 20 und 22 Story Points geschafft. Mit wie vielen Story Points (Durchschnitt) sollte es den nächsten Sprint planen?",
+   "erklaerung": "Velocity = Durchschnitt = (18 + 20 + 22) ÷ 3 = 20.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 20,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-VELO-005",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-VELO",
+   "text": "Ein Team hat in den letzten drei Sprints 38, 40 und 42 Story Points geschafft. Mit wie vielen Story Points (Durchschnitt) sollte es den nächsten Sprint planen?",
+   "erklaerung": "Velocity = Durchschnitt = (38 + 40 + 42) ÷ 3 = 40.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 40,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-PM-VELO-007",
+   "thema": "projektmanagement",
+   "lektion": "PM-L4",
+   "gruppe": "PM-VELO",
+   "text": "Ein Team hat in den letzten drei Sprints 22, 24 und 26 Story Points geschafft. Mit wie vielen Story Points (Durchschnitt) sollte es den nächsten Sprint planen?",
+   "erklaerung": "Velocity = Durchschnitt = (22 + 24 + 26) ÷ 3 = 24.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 24,
+   "toleranz": 0,
+   "einheit": ""
+  }
+ ]
+}

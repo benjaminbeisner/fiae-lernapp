@@ -54,3 +54,12 @@ def lerntext(wert: str) -> str:
             teile.append("<p>" + _inline("<br>".join(absatz)) + "</p>")
         i += 1
     return mark_safe("".join(teile))
+
+
+@register.filter
+def zahl_de(wert) -> str:
+    """Decimal ohne überflüssige Nullen in deutscher Schreibweise (1.234,5)."""
+    if wert is None:
+        return ""
+    text = f"{wert:,.4f}".rstrip("0").rstrip(".")
+    return text.replace(",", "X").replace(".", ",").replace("X", ".")

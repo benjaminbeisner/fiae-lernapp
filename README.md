@@ -70,3 +70,16 @@ Alle Fragen sind selbst geschrieben, im Stil der IHK-Prüfungen. Original-Prüfu
 ```bash
 DJANGO_DEBUG=1 python manage.py test
 ```
+
+## Erzeugte Aufgaben (Version 3)
+
+Neben den handgeschriebenen Fragen in `fragen/ap1/*.json` gibt es rund 2.800 erzeugte Aufgaben in `fragen/ap1/gen/`.
+Sie stammen aus `lernen/generator/` (Rechenvorlagen mit festem Zufalls-Seed, SQL-Aufgaben auf echten Tabellen,
+Netzpläne, ausgeführter Beispielcode, Faktentabellen). Neu erzeugen:
+
+    python -m lernen.generator
+    python manage.py fragen_laden
+
+Varianten einer Vorlage teilen sich eine `gruppe`; pro Sitzung kommt höchstens eine Variante je Gruppe dran.
+Der Generator hängt außerdem die Abschnitte „Vertiefung“ (`lernen/generator/vertiefung.py`) an die Lektionen an,
+damit jede Frage im zugehörigen Abschnitt erklärt ist. Fragen, die aus den Dateien verschwinden, werden deaktiviert.

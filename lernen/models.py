@@ -68,6 +68,8 @@ class Frage(models.Model):
     einstufung = models.BooleanField("Im Einstufungstest", default=False)
     lektion = models.ForeignKey(Lektion, null=True, blank=True, on_delete=models.SET_NULL, related_name="fragen")
     bild = models.CharField(max_length=120, blank=True, help_text="Pfad unter static/, z. B. bilder/netzplan.svg")
+    gruppe = models.CharField(max_length=60, blank=True, db_index=True,
+                              help_text="Varianten derselben Aufgabenvorlage; davon kommt pro Sitzung nur eine")
     punkte = models.PositiveSmallIntegerField(default=0, help_text="Punkte in der Prüfungssimulation (0 = nach Schwierigkeit)")
     aktiv = models.BooleanField(default=True)
 
@@ -135,10 +137,11 @@ class Versuch(models.Model):
         TAEGLICH = "taeglich", "Tägliches Lernen"
         THEMA = "thema", "Themen-Training"
         PRUEFUNG = "pruefung", "Prüfungssimulation"
+        WIEDERHOLUNG = "wiederholung", "Wiederholung"
 
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="versuche")
     frage = models.ForeignKey(Frage, on_delete=models.CASCADE, related_name="versuche")
-    quelle = models.CharField(max_length=12, choices=Quelle.choices)
+    quelle = models.CharField(max_length=14, choices=Quelle.choices)
     richtig = models.BooleanField()
     eingabe = models.CharField(max_length=200, blank=True)
     dauer_sek = models.PositiveIntegerField(default=0)

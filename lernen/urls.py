@@ -6,6 +6,7 @@ urlpatterns = [
     path("", views.dashboard, name="dashboard"),
     path("einstufung/", views.einstufung_start, name="einstufung_start"),
     path("heute/", views.taeglich_start, name="taeglich_start"),
+    path("wiederholen/", views.wiederholung_start, name="wiederholung_start"),
     path("thema/<slug:slug>/", views.thema_detail, name="thema_detail"),
     path("thema/<slug:slug>/ueben/", views.thema_start, name="thema_start"),
     path("lektion/<int:pk>/", views.lektion_start, name="lektion_start"),

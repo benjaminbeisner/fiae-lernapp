@@ -106,18 +106,24 @@ def thema_start(request, slug):
 @require_POST
 def lektion_start(request, pk):
     lektion = get_object_or_404(Lektion, pk=pk, aktiv=True)
-    fragen = list(lektion.fragen.filter(aktiv=True).values_list("id", flat=True))
-    random.shuffle(fragen)
-    items = [{"t": "lektion", "id": lektion.id}] + [{"t": "frage", "id": i} for i in fragen[:6]]
-    return _starte(request, Versuch.Quelle.THEMA, items, f"Lernnugget: {lektion.titel}")
+    return _starte(request, Versuch.Quelle.THEMA, logik.lektion_items(request.user, lektion), f"Lernnugget: {lektion.titel}")
+
+
+@login_required
+@require_POST
+def wiederholung_start(request):
+    return _starte(request, Versuch.Quelle.WIEDERHOLUNG, logik.wiederholung(request.user), "Wiederholung")
 
 
 @login_required
 def thema_detail(request, slug):
     thema = get_object_or_404(Thema, slug=slug)
     gelesen = set(LektionGelesen.objects.filter(user=request.user).values_list("lektion_id", flat=True))
-    lektionen = [{"l": l, "gelesen": l.id in gelesen, "fragen": l.fragen.filter(aktiv=True).count()}
-                 for l in thema.lektionen.filter(aktiv=True)]
+    lektionen = []
+    for l in thema.lektionen.filter(aktiv=True):
+        fest, gesamt = logik.lektion_fortschritt(request.user, l)
+        lektionen.append({"l": l, "gelesen": l.id in gelesen, "fragen": gesamt, "fest": fest,
+                          "prozent": round(100 * fest / gesamt) if gesamt else 0})
     stat = next((z for z in logik.themen_statistik(request.user) if z["thema"].id == thema.id), None)
     return render(request, "lernen/thema.html", {
         "thema": thema, "lektionen": lektionen, "stat": stat, "niveau": logik.niveau(request.user, thema)})

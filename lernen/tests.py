@@ -75,11 +75,30 @@ class FragenTest(TestCase):
         items, titel = logik.tagesnugget(self.user)
         self.assertEqual(items[0]["t"], "lektion")
         self.assertTrue(titel.startswith("Lernnugget"))
-        fragen = [i for i in items if i["t"] == "frage"]
-        self.assertGreaterEqual(len(fragen), 5)
-        f = Frage.objects.get(id=fragen[0]["id"])
+        lektion = Lektion.objects.get(id=items[0]["id"])
+        fragen = Frage.objects.filter(id__in=[i["id"] for i in items if i["t"] == "frage"])
+        self.assertEqual(fragen.count(), 8)
+        # nur Fragen genau zu diesem Abschnitt, jede Vorlage höchstens einmal
+        self.assertEqual(set(fragen.values_list("lektion_id", flat=True)), {lektion.id})
+        gruppen = [f.gruppe or f.schluessel for f in fragen]
+        self.assertEqual(len(gruppen), len(set(gruppen)))
+
+    def test_wiederholung_nur_faellige(self):
+        self.assertEqual(logik.wiederholung(self.user), [])
+        f = Frage.objects.filter(lektion__isnull=False).first()
         Karte.objects.create(user=self.user, frage=f, faellig_am=timezone.localdate())
-        self.assertIn(f.id, logik.tagesfragen(self.user))
+        self.assertEqual(logik.wiederholung(self.user), [{"t": "frage", "id": f.id}])
+
+    def test_zahlenfragen_mit_deutscher_eingabe_loesbar(self):
+        from lernen.templatetags.lerntext import zahl_de
+        for f in Frage.objects.filter(typ="zahl"):
+            ok, _ = logik.pruefe_antwort(f, QueryDict(f"zahl={zahl_de(f.loesung_zahl)}"))
+            self.assertTrue(ok, f.schluessel)
+
+    def test_genug_fragen_pro_abschnitt(self):
+        self.assertGreaterEqual(Frage.objects.filter(aktiv=True).count(), 2400)
+        for l in Lektion.objects.filter(aktiv=True):
+            self.assertGreaterEqual(l.fragen.filter(aktiv=True).count(), 25, l.schluessel)
 
     def test_sitzung_mit_lektion_bucht_xp_und_zeit(self):
         self.client.post(reverse("taeglich_start"))

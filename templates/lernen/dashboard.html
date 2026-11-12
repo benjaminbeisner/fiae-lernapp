@@ -14,7 +14,7 @@
       <p>Mach zuerst den Einstufungstest. Danach passt die App Lernnuggets und Übungen an deinen Wissensstand an.</p>
       <a class="btn gross" href="{% url 'einstufung_start' %}">Einstufungstest starten</a>
     {% else %}
-      <p>{% if minuten >= ziel %}Tagesziel geschafft! Jede weitere Minute zählt für die Rangliste.{% else %}Dein heutiges Lernnugget wartet: eine kurze Erklärung und passende Übungen, ca. 10–15 Minuten.{% endif %}</p>
+      <p>{% if minuten >= ziel %}Tagesziel geschafft! Jede weitere Minute zählt für die Rangliste.{% else %}Dein nächstes Lernnugget: ein Abschnitt wird erklärt, danach 8 Fragen genau dazu.{% endif %}</p>
       <form method="post" action="{% url 'taeglich_start' %}">{% csrf_token %}<button class="btn gross" type="submit">▶ Heutiges Nugget starten</button></form>
     {% endif %}
   </div>
@@ -43,6 +43,11 @@
 </div>
 
 <div class="aktionen">
+  <form method="post" action="{% url 'wiederholung_start' %}" style="margin:0">{% csrf_token %}
+    <button class="card aktion" type="submit"{% if not faellig %} disabled{% endif %}>
+      <span class="icon">🔁</span><span><b>Wiederholen</b><span class="muted small">{% if faellig %}{{ faellig }} Fragen sind heute fällig{% else %}Heute ist nichts fällig{% endif %}</span></span>
+    </button>
+  </form>
   <a class="card aktion" href="{% url 'simulation_start' %}">
     <span class="icon">📝</span><span><b>{% if offene_simulation %}Prüfung fortsetzen{% else %}Prüfungssimulation{% endif %}</b><span class="muted small">40 Fragen, 60 Minuten, mit Note</span></span>
   </a>

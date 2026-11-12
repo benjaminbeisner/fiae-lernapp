@@ -1,0 +1,3491 @@
+{
+ "fragen": [
+  {
+   "schluessel": "G-EIN-DEZ-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ",
+   "text": "Rechne um (Dezimalpräfixe, Faktor 1000): **5 GB** = ? MB",
+   "erklaerung": "Von GB nach MB: eine Stufe mit Faktor 1000, also 5 × 1.000 = 5.000.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 5000,
+   "toleranz": 0,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-DEZ-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ",
+   "text": "Rechne um (Dezimalpräfixe, Faktor 1000): **250 TB** = ? MB",
+   "erklaerung": "Von TB nach MB: 2 Stufen mit Faktor 1000, also 250 × 1.000.000 = 250.000.000.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 250000000,
+   "toleranz": 0,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-DEZ-003",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ",
+   "text": "Rechne um (Dezimalpräfixe, Faktor 1000): **2.500 TB** = ? GB",
+   "erklaerung": "Von TB nach GB: eine Stufe mit Faktor 1000, also 2.500 × 1.000 = 2.500.000.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2500000,
+   "toleranz": 0,
+   "einheit": "GB"
+  },
+  {
+   "schluessel": "G-EIN-DEZ-004",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ",
+   "text": "Rechne um (Dezimalpräfixe, Faktor 1000): **16 TB** = ? GB",
+   "erklaerung": "Von TB nach GB: eine Stufe mit Faktor 1000, also 16 × 1.000 = 16.000.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 16000,
+   "toleranz": 0,
+   "einheit": "GB"
+  },
+  {
+   "schluessel": "G-EIN-DEZ-005",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ",
+   "text": "Rechne um (Dezimalpräfixe, Faktor 1000): **1.500 GB** = ? MB",
+   "erklaerung": "Von GB nach MB: eine Stufe mit Faktor 1000, also 1.500 × 1.000 = 1.500.000.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1500000,
+   "toleranz": 0,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-DEZ-006",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ",
+   "text": "Rechne um (Dezimalpräfixe, Faktor 1000): **64 GB** = ? KB",
+   "erklaerung": "Von GB nach KB: 2 Stufen mit Faktor 1000, also 64 × 1.000.000 = 64.000.000.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 64000000,
+   "toleranz": 0,
+   "einheit": "KB"
+  },
+  {
+   "schluessel": "G-EIN-DEZ-007",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ",
+   "text": "Rechne um (Dezimalpräfixe, Faktor 1000): **2 TB** = ? MB",
+   "erklaerung": "Von TB nach MB: 2 Stufen mit Faktor 1000, also 2 × 1.000.000 = 2.000.000.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2000000,
+   "toleranz": 0,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-DEZ-008",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ",
+   "text": "Rechne um (Dezimalpräfixe, Faktor 1000): **25 TB** = ? MB",
+   "erklaerung": "Von TB nach MB: 2 Stufen mit Faktor 1000, also 25 × 1.000.000 = 25.000.000.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 25000000,
+   "toleranz": 0,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-DEZ-009",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ",
+   "text": "Rechne um (Dezimalpräfixe, Faktor 1000): **16 MB** = ? KB",
+   "erklaerung": "Von MB nach KB: eine Stufe mit Faktor 1000, also 16 × 1.000 = 16.000.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 16000,
+   "toleranz": 0,
+   "einheit": "KB"
+  },
+  {
+   "schluessel": "G-EIN-DEZ-010",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ",
+   "text": "Rechne um (Dezimalpräfixe, Faktor 1000): **8 TB** = ? MB",
+   "erklaerung": "Von TB nach MB: 2 Stufen mit Faktor 1000, also 8 × 1.000.000 = 8.000.000.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 8000000,
+   "toleranz": 0,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-DEZ-011",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ",
+   "text": "Rechne um (Dezimalpräfixe, Faktor 1000): **8 MB** = ? Byte",
+   "erklaerung": "Von MB nach Byte: 2 Stufen mit Faktor 1000, also 8 × 1.000.000 = 8.000.000.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 8000000,
+   "toleranz": 0,
+   "einheit": "Byte"
+  },
+  {
+   "schluessel": "G-EIN-DEZ-012",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ",
+   "text": "Rechne um (Dezimalpräfixe, Faktor 1000): **25 GB** = ? TB",
+   "erklaerung": "Von GB nach TB: eine Stufe mit Faktor 1000, also 25 ÷ 1.000 = 0,025.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.025,
+   "toleranz": 0,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-EIN-DEZ-013",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ",
+   "text": "Rechne um (Dezimalpräfixe, Faktor 1000): **20 KB** = ? MB",
+   "erklaerung": "Von KB nach MB: eine Stufe mit Faktor 1000, also 20 ÷ 1.000 = 0,02.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.02,
+   "toleranz": 0,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-DEZ-014",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ",
+   "text": "Rechne um (Dezimalpräfixe, Faktor 1000): **250 GB** = ? TB",
+   "erklaerung": "Von GB nach TB: eine Stufe mit Faktor 1000, also 250 ÷ 1.000 = 0,25.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.25,
+   "toleranz": 0,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-EIN-DEZ-015",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ",
+   "text": "Rechne um (Dezimalpräfixe, Faktor 1000): **4 GB** = ? MB",
+   "erklaerung": "Von GB nach MB: eine Stufe mit Faktor 1000, also 4 × 1.000 = 4.000.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4000,
+   "toleranz": 0,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-BIN-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN",
+   "text": "Rechne um (Binärpräfixe, Faktor 1024): **256 TiB** = ? MiB",
+   "erklaerung": "Je Stufe Faktor 1024: 256 × 1024^2 = 268.435.456.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 268435456,
+   "toleranz": 0,
+   "einheit": "MiB"
+  },
+  {
+   "schluessel": "G-EIN-BIN-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN",
+   "text": "Rechne um (Binärpräfixe, Faktor 1024): **8.192 GiB** = ? MiB",
+   "erklaerung": "Je Stufe Faktor 1024: 8.192 × 1024 = 8.388.608.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 8388608,
+   "toleranz": 0,
+   "einheit": "MiB"
+  },
+  {
+   "schluessel": "G-EIN-BIN-003",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN",
+   "text": "Rechne um (Binärpräfixe, Faktor 1024): **16 GiB** = ? MiB",
+   "erklaerung": "Je Stufe Faktor 1024: 16 × 1024 = 16.384.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 16384,
+   "toleranz": 0,
+   "einheit": "MiB"
+  },
+  {
+   "schluessel": "G-EIN-BIN-004",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN",
+   "text": "Rechne um (Binärpräfixe, Faktor 1024): **64 TiB** = ? GiB",
+   "erklaerung": "Je Stufe Faktor 1024: 64 × 1024 = 65.536.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 65536,
+   "toleranz": 0,
+   "einheit": "GiB"
+  },
+  {
+   "schluessel": "G-EIN-BIN-005",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN",
+   "text": "Rechne um (Binärpräfixe, Faktor 1024): **4 GiB** = ? MiB",
+   "erklaerung": "Je Stufe Faktor 1024: 4 × 1024 = 4.096.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4096,
+   "toleranz": 0,
+   "einheit": "MiB"
+  },
+  {
+   "schluessel": "G-EIN-BIN-006",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN",
+   "text": "Rechne um (Binärpräfixe, Faktor 1024): **4 TiB** = ? MiB",
+   "erklaerung": "Je Stufe Faktor 1024: 4 × 1024^2 = 4.194.304.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4194304,
+   "toleranz": 0,
+   "einheit": "MiB"
+  },
+  {
+   "schluessel": "G-EIN-BIN-007",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN",
+   "text": "Rechne um (Binärpräfixe, Faktor 1024): **8.192 MiB** = ? Byte",
+   "erklaerung": "Je Stufe Faktor 1024: 8.192 × 1024^2 = 8.589.934.592.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 8589934592,
+   "toleranz": 0,
+   "einheit": "Byte"
+  },
+  {
+   "schluessel": "G-EIN-BIN-008",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN",
+   "text": "Rechne um (Binärpräfixe, Faktor 1024): **8.192 TiB** = ? GiB",
+   "erklaerung": "Je Stufe Faktor 1024: 8.192 × 1024 = 8.388.608.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 8388608,
+   "toleranz": 0,
+   "einheit": "GiB"
+  },
+  {
+   "schluessel": "G-EIN-BIN-009",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN",
+   "text": "Rechne um (Binärpräfixe, Faktor 1024): **2 KiB** = ? Byte",
+   "erklaerung": "Je Stufe Faktor 1024: 2 × 1024 = 2.048.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2048,
+   "toleranz": 0,
+   "einheit": "Byte"
+  },
+  {
+   "schluessel": "G-EIN-BIN-010",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN",
+   "text": "Rechne um (Binärpräfixe, Faktor 1024): **5.120 MiB** = ? Byte",
+   "erklaerung": "Je Stufe Faktor 1024: 5.120 × 1024^2 = 5.368.709.120.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 5368709120,
+   "toleranz": 0,
+   "einheit": "Byte"
+  },
+  {
+   "schluessel": "G-EIN-BIN-011",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN",
+   "text": "Rechne um (Binärpräfixe, Faktor 1024): **8.192 GiB** = ? TiB",
+   "erklaerung": "Je Stufe Faktor 1024: 8.192 ÷ 1024 = 8.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 8,
+   "toleranz": 0,
+   "einheit": "TiB"
+  },
+  {
+   "schluessel": "G-EIN-BIN-012",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN",
+   "text": "Rechne um (Binärpräfixe, Faktor 1024): **1.024 MiB** = ? Byte",
+   "erklaerung": "Je Stufe Faktor 1024: 1.024 × 1024^2 = 1.073.741.824.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1073741824,
+   "toleranz": 0,
+   "einheit": "Byte"
+  },
+  {
+   "schluessel": "G-EIN-BIN-014",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN",
+   "text": "Rechne um (Binärpräfixe, Faktor 1024): **2.048 KiB** = ? MiB",
+   "erklaerung": "Je Stufe Faktor 1024: 2.048 ÷ 1024 = 2.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": "MiB"
+  },
+  {
+   "schluessel": "G-EIN-BIN-015",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN",
+   "text": "Rechne um (Binärpräfixe, Faktor 1024): **8 TiB** = ? MiB",
+   "erklaerung": "Je Stufe Faktor 1024: 8 × 1024^2 = 8.388.608.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 8388608,
+   "toleranz": 0,
+   "einheit": "MiB"
+  },
+  {
+   "schluessel": "G-EIN-HERSTELLER-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HERSTELLER",
+   "text": "Eine Festplatte wird mit **250 GB** verkauft. Wie viele **GiB** zeigt das Betriebssystem an? (auf 2 Nachkommastellen)",
+   "erklaerung": "250 × 1000^3 Byte ÷ 1024^3 = 232,83 GiB. Hersteller rechnen dezimal, viele Betriebssysteme binär.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 232.83,
+   "toleranz": 0.01,
+   "einheit": "GiB"
+  },
+  {
+   "schluessel": "G-EIN-HERSTELLER-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HERSTELLER",
+   "text": "Eine Festplatte wird mit **512 GB** verkauft. Wie viele **GiB** zeigt das Betriebssystem an? (auf 2 Nachkommastellen)",
+   "erklaerung": "512 × 1000^3 Byte ÷ 1024^3 = 476,84 GiB. Hersteller rechnen dezimal, viele Betriebssysteme binär.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 476.84,
+   "toleranz": 0.01,
+   "einheit": "GiB"
+  },
+  {
+   "schluessel": "G-EIN-HERSTELLER-003",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HERSTELLER",
+   "text": "Eine Festplatte wird mit **256 TB** verkauft. Wie viele **TiB** zeigt das Betriebssystem an? (auf 2 Nachkommastellen)",
+   "erklaerung": "256 × 1000^4 Byte ÷ 1024^4 = 232,83 TiB. Hersteller rechnen dezimal, viele Betriebssysteme binär.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 232.83,
+   "toleranz": 0.01,
+   "einheit": "TiB"
+  },
+  {
+   "schluessel": "G-EIN-HERSTELLER-005",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HERSTELLER",
+   "text": "Eine Festplatte wird mit **2.000 GB** verkauft. Wie viele **GiB** zeigt das Betriebssystem an? (auf 2 Nachkommastellen)",
+   "erklaerung": "2.000 × 1000^3 Byte ÷ 1024^3 = 1.862,65 GiB. Hersteller rechnen dezimal, viele Betriebssysteme binär.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1862.65,
+   "toleranz": 0.01,
+   "einheit": "GiB"
+  },
+  {
+   "schluessel": "G-EIN-HERSTELLER-006",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HERSTELLER",
+   "text": "Eine Festplatte wird mit **2.000 TB** verkauft. Wie viele **TiB** zeigt das Betriebssystem an? (auf 2 Nachkommastellen)",
+   "erklaerung": "2.000 × 1000^4 Byte ÷ 1024^4 = 1.818,99 TiB. Hersteller rechnen dezimal, viele Betriebssysteme binär.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1818.99,
+   "toleranz": 0.01,
+   "einheit": "TiB"
+  },
+  {
+   "schluessel": "G-EIN-HERSTELLER-007",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HERSTELLER",
+   "text": "Eine Festplatte wird mit **1.000 GB** verkauft. Wie viele **GiB** zeigt das Betriebssystem an? (auf 2 Nachkommastellen)",
+   "erklaerung": "1.000 × 1000^3 Byte ÷ 1024^3 = 931,32 GiB. Hersteller rechnen dezimal, viele Betriebssysteme binär.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 931.32,
+   "toleranz": 0.01,
+   "einheit": "GiB"
+  },
+  {
+   "schluessel": "G-EIN-HERSTELLER-008",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HERSTELLER",
+   "text": "Eine Festplatte wird mit **128 GB** verkauft. Wie viele **GiB** zeigt das Betriebssystem an? (auf 2 Nachkommastellen)",
+   "erklaerung": "128 × 1000^3 Byte ÷ 1024^3 = 119,21 GiB. Hersteller rechnen dezimal, viele Betriebssysteme binär.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 119.21,
+   "toleranz": 0.01,
+   "einheit": "GiB"
+  },
+  {
+   "schluessel": "G-EIN-HERSTELLER-009",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HERSTELLER",
+   "text": "Eine Festplatte wird mit **250 TB** verkauft. Wie viele **TiB** zeigt das Betriebssystem an? (auf 2 Nachkommastellen)",
+   "erklaerung": "250 × 1000^4 Byte ÷ 1024^4 = 227,37 TiB. Hersteller rechnen dezimal, viele Betriebssysteme binär.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 227.37,
+   "toleranz": 0.01,
+   "einheit": "TiB"
+  },
+  {
+   "schluessel": "G-EIN-HERSTELLER-011",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HERSTELLER",
+   "text": "Eine Festplatte wird mit **8.000 TB** verkauft. Wie viele **TiB** zeigt das Betriebssystem an? (auf 2 Nachkommastellen)",
+   "erklaerung": "8.000 × 1000^4 Byte ÷ 1024^4 = 7.275,96 TiB. Hersteller rechnen dezimal, viele Betriebssysteme binär.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 7275.96,
+   "toleranz": 0.01,
+   "einheit": "TiB"
+  },
+  {
+   "schluessel": "G-EIN-BIN2DEZ-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN2DEZ",
+   "text": "Wandle die Binärzahl `1111011` in eine Dezimalzahl um.",
+   "erklaerung": "1111011₂ = 64 + 32 + 16 + 8 + 2 + 1 = 123.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 123,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-BIN2DEZ-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN2DEZ",
+   "text": "Wandle die Binärzahl `10101` in eine Dezimalzahl um.",
+   "erklaerung": "10101₂ = 16 + 4 + 1 = 21.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 21,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-BIN2DEZ-003",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN2DEZ",
+   "text": "Wandle die Binärzahl `11001100` in eine Dezimalzahl um.",
+   "erklaerung": "11001100₂ = 128 + 64 + 8 + 4 = 204.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 204,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-BIN2DEZ-004",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN2DEZ",
+   "text": "Wandle die Binärzahl `1100111` in eine Dezimalzahl um.",
+   "erklaerung": "1100111₂ = 64 + 32 + 4 + 2 + 1 = 103.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 103,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-BIN2DEZ-005",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN2DEZ",
+   "text": "Wandle die Binärzahl `11101010` in eine Dezimalzahl um.",
+   "erklaerung": "11101010₂ = 128 + 64 + 32 + 8 + 2 = 234.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 234,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-BIN2DEZ-006",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN2DEZ",
+   "text": "Wandle die Binärzahl `1011101` in eine Dezimalzahl um.",
+   "erklaerung": "1011101₂ = 64 + 16 + 8 + 4 + 1 = 93.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 93,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-BIN2DEZ-007",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN2DEZ",
+   "text": "Wandle die Binärzahl `11010000` in eine Dezimalzahl um.",
+   "erklaerung": "11010000₂ = 128 + 64 + 16 = 208.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 208,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-BIN2DEZ-008",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN2DEZ",
+   "text": "Wandle die Binärzahl `101101` in eine Dezimalzahl um.",
+   "erklaerung": "101101₂ = 32 + 8 + 4 + 1 = 45.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 45,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-BIN2DEZ-009",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN2DEZ",
+   "text": "Wandle die Binärzahl `11100101` in eine Dezimalzahl um.",
+   "erklaerung": "11100101₂ = 128 + 64 + 32 + 4 + 1 = 229.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 229,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-BIN2DEZ-010",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN2DEZ",
+   "text": "Wandle die Binärzahl `110101` in eine Dezimalzahl um.",
+   "erklaerung": "110101₂ = 32 + 16 + 4 + 1 = 53.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 53,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-BIN2DEZ-011",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN2DEZ",
+   "text": "Wandle die Binärzahl `1001000` in eine Dezimalzahl um.",
+   "erklaerung": "1001000₂ = 64 + 8 = 72.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 72,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-BIN2DEZ-012",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-BIN2DEZ",
+   "text": "Wandle die Binärzahl `11101100` in eine Dezimalzahl um.",
+   "erklaerung": "11101100₂ = 128 + 64 + 32 + 8 + 4 = 236.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 236,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-DEZ2BIN-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2BIN",
+   "text": "Welche Binärzahl entspricht der Dezimalzahl **205**?",
+   "erklaerung": "205 = 128 + 64 + 8 + 4 + 1 → 11001101.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "11001101",
+     "richtig": true
+    },
+    {
+     "text": "10001101",
+     "richtig": false
+    },
+    {
+     "text": "11001110",
+     "richtig": false
+    },
+    {
+     "text": "10110011",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2BIN-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2BIN",
+   "text": "Welche Binärzahl entspricht der Dezimalzahl **242**?",
+   "erklaerung": "242 = 128 + 64 + 32 + 16 + 2 → 11110010.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "11110010",
+     "richtig": true
+    },
+    {
+     "text": "11110110",
+     "richtig": false
+    },
+    {
+     "text": "11110011",
+     "richtig": false
+    },
+    {
+     "text": "01001111",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2BIN-003",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2BIN",
+   "text": "Welche Binärzahl entspricht der Dezimalzahl **137**?",
+   "erklaerung": "137 = 128 + 8 + 1 → 10001001.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "10001001",
+     "richtig": true
+    },
+    {
+     "text": "10011001",
+     "richtig": false
+    },
+    {
+     "text": "10001010",
+     "richtig": false
+    },
+    {
+     "text": "10010001",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2BIN-004",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2BIN",
+   "text": "Welche Binärzahl entspricht der Dezimalzahl **182**?",
+   "erklaerung": "182 = 128 + 32 + 16 + 4 + 2 → 10110110.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "10110110",
+     "richtig": true
+    },
+    {
+     "text": "10110100",
+     "richtig": false
+    },
+    {
+     "text": "10110111",
+     "richtig": false
+    },
+    {
+     "text": "01101101",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2BIN-005",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2BIN",
+   "text": "Welche Binärzahl entspricht der Dezimalzahl **191**?",
+   "erklaerung": "191 = 128 + 32 + 16 + 8 + 4 + 2 + 1 → 10111111.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "10111111",
+     "richtig": true
+    },
+    {
+     "text": "11111111",
+     "richtig": false
+    },
+    {
+     "text": "11000000",
+     "richtig": false
+    },
+    {
+     "text": "11111101",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2BIN-006",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2BIN",
+   "text": "Welche Binärzahl entspricht der Dezimalzahl **215**?",
+   "erklaerung": "215 = 128 + 64 + 16 + 4 + 2 + 1 → 11010111.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "11010111",
+     "richtig": true
+    },
+    {
+     "text": "10010111",
+     "richtig": false
+    },
+    {
+     "text": "11011000",
+     "richtig": false
+    },
+    {
+     "text": "11101011",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2BIN-007",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2BIN",
+   "text": "Welche Binärzahl entspricht der Dezimalzahl **224**?",
+   "erklaerung": "224 = 128 + 64 + 32 → 11100000.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "11100000",
+     "richtig": true
+    },
+    {
+     "text": "11101000",
+     "richtig": false
+    },
+    {
+     "text": "11100001",
+     "richtig": false
+    },
+    {
+     "text": "00000111",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2BIN-008",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2BIN",
+   "text": "Welche Binärzahl entspricht der Dezimalzahl **228**?",
+   "erklaerung": "228 = 128 + 64 + 32 + 4 → 11100100.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "11100100",
+     "richtig": true
+    },
+    {
+     "text": "11100000",
+     "richtig": false
+    },
+    {
+     "text": "11100101",
+     "richtig": false
+    },
+    {
+     "text": "00100111",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2BIN-009",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2BIN",
+   "text": "Welche Binärzahl entspricht der Dezimalzahl **203**?",
+   "erklaerung": "203 = 128 + 64 + 8 + 2 + 1 → 11001011.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "11001011",
+     "richtig": true
+    },
+    {
+     "text": "11101011",
+     "richtig": false
+    },
+    {
+     "text": "11001100",
+     "richtig": false
+    },
+    {
+     "text": "11010011",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2BIN-010",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2BIN",
+   "text": "Welche Binärzahl entspricht der Dezimalzahl **181**?",
+   "erklaerung": "181 = 128 + 32 + 16 + 4 + 1 → 10110101.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "10110101",
+     "richtig": true
+    },
+    {
+     "text": "10111101",
+     "richtig": false
+    },
+    {
+     "text": "10110110",
+     "richtig": false
+    },
+    {
+     "text": "10101101",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2BIN-011",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2BIN",
+   "text": "Welche Binärzahl entspricht der Dezimalzahl **122**?",
+   "erklaerung": "122 = 64 + 32 + 16 + 8 + 2 → 01111010.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "01111010",
+     "richtig": true
+    },
+    {
+     "text": "11111010",
+     "richtig": false
+    },
+    {
+     "text": "01111011",
+     "richtig": false
+    },
+    {
+     "text": "01011110",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2BIN-012",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2BIN",
+   "text": "Welche Binärzahl entspricht der Dezimalzahl **40**?",
+   "erklaerung": "40 = 32 + 8 → 00101000.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "00101000",
+     "richtig": true
+    },
+    {
+     "text": "00111000",
+     "richtig": false
+    },
+    {
+     "text": "00101001",
+     "richtig": false
+    },
+    {
+     "text": "00010100",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-HEX2DEZ-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2DEZ",
+   "text": "Wandle die Hexadezimalzahl `1DD` in eine Dezimalzahl um.",
+   "erklaerung": "1DD₁₆ = 1×16^2 + 13×16^1 + 13×16^0 = 477.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 477,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-HEX2DEZ-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2DEZ",
+   "text": "Wandle die Hexadezimalzahl `C47` in eine Dezimalzahl um.",
+   "erklaerung": "C47₁₆ = 12×16^2 + 4×16^1 + 7×16^0 = 3143.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3143,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-HEX2DEZ-003",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2DEZ",
+   "text": "Wandle die Hexadezimalzahl `BF` in eine Dezimalzahl um.",
+   "erklaerung": "BF₁₆ = 11×16^1 + 15×16^0 = 191.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 191,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-HEX2DEZ-004",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2DEZ",
+   "text": "Wandle die Hexadezimalzahl `BF4` in eine Dezimalzahl um.",
+   "erklaerung": "BF4₁₆ = 11×16^2 + 15×16^1 + 4×16^0 = 3060.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3060,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-HEX2DEZ-005",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2DEZ",
+   "text": "Wandle die Hexadezimalzahl `9EA` in eine Dezimalzahl um.",
+   "erklaerung": "9EA₁₆ = 9×16^2 + 14×16^1 + 10×16^0 = 2538.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2538,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-HEX2DEZ-006",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2DEZ",
+   "text": "Wandle die Hexadezimalzahl `E24` in eine Dezimalzahl um.",
+   "erklaerung": "E24₁₆ = 14×16^2 + 2×16^1 + 4×16^0 = 3620.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3620,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-HEX2DEZ-007",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2DEZ",
+   "text": "Wandle die Hexadezimalzahl `B52` in eine Dezimalzahl um.",
+   "erklaerung": "B52₁₆ = 11×16^2 + 5×16^1 + 2×16^0 = 2898.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2898,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-HEX2DEZ-008",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2DEZ",
+   "text": "Wandle die Hexadezimalzahl `B6` in eine Dezimalzahl um.",
+   "erklaerung": "B6₁₆ = 11×16^1 + 6×16^0 = 182.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 182,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-HEX2DEZ-009",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2DEZ",
+   "text": "Wandle die Hexadezimalzahl `CD7` in eine Dezimalzahl um.",
+   "erklaerung": "CD7₁₆ = 12×16^2 + 13×16^1 + 7×16^0 = 3287.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3287,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-HEX2DEZ-010",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2DEZ",
+   "text": "Wandle die Hexadezimalzahl `797` in eine Dezimalzahl um.",
+   "erklaerung": "797₁₆ = 7×16^2 + 9×16^1 + 7×16^0 = 1943.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1943,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-HEX2DEZ-011",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2DEZ",
+   "text": "Wandle die Hexadezimalzahl `A52` in eine Dezimalzahl um.",
+   "erklaerung": "A52₁₆ = 10×16^2 + 5×16^1 + 2×16^0 = 2642.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2642,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-HEX2DEZ-012",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2DEZ",
+   "text": "Wandle die Hexadezimalzahl `D83` in eine Dezimalzahl um.",
+   "erklaerung": "D83₁₆ = 13×16^2 + 8×16^1 + 3×16^0 = 3459.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3459,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-DEZ2HEX-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2HEX",
+   "text": "Welche Hexadezimalzahl entspricht der Dezimalzahl **109**?",
+   "erklaerung": "109 ÷ 16 = 6 Rest 13 → 6D.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "6D",
+     "richtig": true
+    },
+    {
+     "text": "D6",
+     "richtig": false
+    },
+    {
+     "text": "6E",
+     "richtig": false
+    },
+    {
+     "text": "5D",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2HEX-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2HEX",
+   "text": "Welche Hexadezimalzahl entspricht der Dezimalzahl **103**?",
+   "erklaerung": "103 ÷ 16 = 6 Rest 7 → 67.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "67",
+     "richtig": true
+    },
+    {
+     "text": "76",
+     "richtig": false
+    },
+    {
+     "text": "68",
+     "richtig": false
+    },
+    {
+     "text": "57",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2HEX-003",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2HEX",
+   "text": "Welche Hexadezimalzahl entspricht der Dezimalzahl **104**?",
+   "erklaerung": "104 ÷ 16 = 6 Rest 8 → 68.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "68",
+     "richtig": true
+    },
+    {
+     "text": "86",
+     "richtig": false
+    },
+    {
+     "text": "69",
+     "richtig": false
+    },
+    {
+     "text": "58",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2HEX-004",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2HEX",
+   "text": "Welche Hexadezimalzahl entspricht der Dezimalzahl **185**?",
+   "erklaerung": "185 ÷ 16 = 11 Rest 9 → B9.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "B9",
+     "richtig": true
+    },
+    {
+     "text": "9B",
+     "richtig": false
+    },
+    {
+     "text": "BA",
+     "richtig": false
+    },
+    {
+     "text": "A9",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2HEX-005",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2HEX",
+   "text": "Welche Hexadezimalzahl entspricht der Dezimalzahl **31**?",
+   "erklaerung": "31 ÷ 16 = 1 Rest 15 → 1F.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "1F",
+     "richtig": true
+    },
+    {
+     "text": "F1",
+     "richtig": false
+    },
+    {
+     "text": "20",
+     "richtig": false
+    },
+    {
+     "text": "F",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2HEX-006",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2HEX",
+   "text": "Welche Hexadezimalzahl entspricht der Dezimalzahl **197**?",
+   "erklaerung": "197 ÷ 16 = 12 Rest 5 → C5.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "C5",
+     "richtig": true
+    },
+    {
+     "text": "5C",
+     "richtig": false
+    },
+    {
+     "text": "C6",
+     "richtig": false
+    },
+    {
+     "text": "B5",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2HEX-007",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2HEX",
+   "text": "Welche Hexadezimalzahl entspricht der Dezimalzahl **30**?",
+   "erklaerung": "30 ÷ 16 = 1 Rest 14 → 1E.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "1E",
+     "richtig": true
+    },
+    {
+     "text": "E1",
+     "richtig": false
+    },
+    {
+     "text": "1F",
+     "richtig": false
+    },
+    {
+     "text": "E",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2HEX-008",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2HEX",
+   "text": "Welche Hexadezimalzahl entspricht der Dezimalzahl **62**?",
+   "erklaerung": "62 ÷ 16 = 3 Rest 14 → 3E.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "3E",
+     "richtig": true
+    },
+    {
+     "text": "E3",
+     "richtig": false
+    },
+    {
+     "text": "3F",
+     "richtig": false
+    },
+    {
+     "text": "2E",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2HEX-009",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2HEX",
+   "text": "Welche Hexadezimalzahl entspricht der Dezimalzahl **81**?",
+   "erklaerung": "81 ÷ 16 = 5 Rest 1 → 51.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "51",
+     "richtig": true
+    },
+    {
+     "text": "15",
+     "richtig": false
+    },
+    {
+     "text": "52",
+     "richtig": false
+    },
+    {
+     "text": "41",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2HEX-010",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2HEX",
+   "text": "Welche Hexadezimalzahl entspricht der Dezimalzahl **163**?",
+   "erklaerung": "163 ÷ 16 = 10 Rest 3 → A3.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "A3",
+     "richtig": true
+    },
+    {
+     "text": "3A",
+     "richtig": false
+    },
+    {
+     "text": "A4",
+     "richtig": false
+    },
+    {
+     "text": "93",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DEZ2HEX-011",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-DEZ2HEX",
+   "text": "Welche Hexadezimalzahl entspricht der Dezimalzahl **198**?",
+   "erklaerung": "198 ÷ 16 = 12 Rest 6 → C6.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "C6",
+     "richtig": true
+    },
+    {
+     "text": "6C",
+     "richtig": false
+    },
+    {
+     "text": "C7",
+     "richtig": false
+    },
+    {
+     "text": "B6",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-HEX2BIN-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2BIN",
+   "text": "Welche Binärdarstellung hat `0x22`?",
+   "erklaerung": "Jede Hex-Ziffer entspricht genau 4 Bit (einem Nibble).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "0010 0010",
+     "richtig": true
+    },
+    {
+     "text": "0011 0010",
+     "richtig": false
+    },
+    {
+     "text": "0011 0011",
+     "richtig": false
+    },
+    {
+     "text": "0010 0011",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-HEX2BIN-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2BIN",
+   "text": "Welche Binärdarstellung hat `0xA9`?",
+   "erklaerung": "Jede Hex-Ziffer entspricht genau 4 Bit (einem Nibble).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "1010 1001",
+     "richtig": true
+    },
+    {
+     "text": "1001 1010",
+     "richtig": false
+    },
+    {
+     "text": "1011 1000",
+     "richtig": false
+    },
+    {
+     "text": "1010 1010",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-HEX2BIN-003",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2BIN",
+   "text": "Welche Binärdarstellung hat `0xE4`?",
+   "erklaerung": "Jede Hex-Ziffer entspricht genau 4 Bit (einem Nibble).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "1110 0100",
+     "richtig": true
+    },
+    {
+     "text": "0100 1110",
+     "richtig": false
+    },
+    {
+     "text": "1111 0101",
+     "richtig": false
+    },
+    {
+     "text": "1110 0101",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-HEX2BIN-004",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2BIN",
+   "text": "Welche Binärdarstellung hat `0xFC`?",
+   "erklaerung": "Jede Hex-Ziffer entspricht genau 4 Bit (einem Nibble).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "1111 1100",
+     "richtig": true
+    },
+    {
+     "text": "1100 1111",
+     "richtig": false
+    },
+    {
+     "text": "1110 1101",
+     "richtig": false
+    },
+    {
+     "text": "1111 1101",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-HEX2BIN-005",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2BIN",
+   "text": "Welche Binärdarstellung hat `0xCA`?",
+   "erklaerung": "Jede Hex-Ziffer entspricht genau 4 Bit (einem Nibble).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "1100 1010",
+     "richtig": true
+    },
+    {
+     "text": "1010 1100",
+     "richtig": false
+    },
+    {
+     "text": "1101 1011",
+     "richtig": false
+    },
+    {
+     "text": "1100 1011",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-HEX2BIN-006",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2BIN",
+   "text": "Welche Binärdarstellung hat `0x11`?",
+   "erklaerung": "Jede Hex-Ziffer entspricht genau 4 Bit (einem Nibble).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "0001 0001",
+     "richtig": true
+    },
+    {
+     "text": "0000 0001",
+     "richtig": false
+    },
+    {
+     "text": "0000 0000",
+     "richtig": false
+    },
+    {
+     "text": "0001 0010",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-HEX2BIN-007",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2BIN",
+   "text": "Welche Binärdarstellung hat `0x4F`?",
+   "erklaerung": "Jede Hex-Ziffer entspricht genau 4 Bit (einem Nibble).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "0100 1111",
+     "richtig": true
+    },
+    {
+     "text": "1111 0100",
+     "richtig": false
+    },
+    {
+     "text": "0101 1110",
+     "richtig": false
+    },
+    {
+     "text": "0101 0000",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-HEX2BIN-008",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2BIN",
+   "text": "Welche Binärdarstellung hat `0x5C`?",
+   "erklaerung": "Jede Hex-Ziffer entspricht genau 4 Bit (einem Nibble).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "0101 1100",
+     "richtig": true
+    },
+    {
+     "text": "1100 0101",
+     "richtig": false
+    },
+    {
+     "text": "0100 1101",
+     "richtig": false
+    },
+    {
+     "text": "0101 1101",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-HEX2BIN-009",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2BIN",
+   "text": "Welche Binärdarstellung hat `0xBB`?",
+   "erklaerung": "Jede Hex-Ziffer entspricht genau 4 Bit (einem Nibble).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "1011 1011",
+     "richtig": true
+    },
+    {
+     "text": "1010 1011",
+     "richtig": false
+    },
+    {
+     "text": "1010 1010",
+     "richtig": false
+    },
+    {
+     "text": "1011 1100",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-HEX2BIN-010",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-HEX2BIN",
+   "text": "Welche Binärdarstellung hat `0xC2`?",
+   "erklaerung": "Jede Hex-Ziffer entspricht genau 4 Bit (einem Nibble).",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "1100 0010",
+     "richtig": true
+    },
+    {
+     "text": "0010 1100",
+     "richtig": false
+    },
+    {
+     "text": "1101 0011",
+     "richtig": false
+    },
+    {
+     "text": "1100 0011",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-WERTE-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-WERTE",
+   "text": "Wie viele verschiedene Werte lassen sich mit **12 Bit** darstellen?",
+   "erklaerung": "2^12 = 4.096.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4096,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-WERTE-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-WERTE",
+   "text": "Wie viele verschiedene Werte lassen sich mit **6 Bit** darstellen?",
+   "erklaerung": "2^6 = 64.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 64,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-WERTE-003",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-WERTE",
+   "text": "Wie viele verschiedene Werte lassen sich mit **8 Bit** darstellen?",
+   "erklaerung": "2^8 = 256.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 256,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-WERTE-005",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-WERTE",
+   "text": "Wie viele verschiedene Werte lassen sich mit **16 Bit** darstellen?",
+   "erklaerung": "2^16 = 65.536.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 65536,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-WERTE-007",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-WERTE",
+   "text": "Wie viele verschiedene Werte lassen sich mit **32 Bit** darstellen?",
+   "erklaerung": "2^32 = 4.294.967.296.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4294967296,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-WERTE-008",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-WERTE",
+   "text": "Wie viele verschiedene Werte lassen sich mit **4 Bit** darstellen?",
+   "erklaerung": "2^4 = 16.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 16,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX01-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX01",
+   "text": "Für welchen Faktor steht der Präfix **Kilo (k)**?",
+   "erklaerung": "Kilo (k) → **10³ = 1.000**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "10³ = 1.000",
+     "richtig": true
+    },
+    {
+     "text": "2³⁰",
+     "richtig": false
+    },
+    {
+     "text": "10⁻⁹",
+     "richtig": false
+    },
+    {
+     "text": "10⁹",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX01-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX01",
+   "text": "Welcher Präfix steht für den Faktor **10³ = 1.000**?",
+   "erklaerung": "Kilo (k) → **10³ = 1.000**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Kilo (k)",
+     "richtig": true
+    },
+    {
+     "text": "Peta (P)",
+     "richtig": false
+    },
+    {
+     "text": "Tebi (Ti)",
+     "richtig": false
+    },
+    {
+     "text": "Mega (M)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX02-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX02",
+   "text": "Für welchen Faktor steht der Präfix **Mega (M)**?",
+   "erklaerung": "Mega (M) → **10⁶ = 1.000.000**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "10⁶ = 1.000.000",
+     "richtig": true
+    },
+    {
+     "text": "2¹⁰ = 1.024",
+     "richtig": false
+    },
+    {
+     "text": "2⁴⁰",
+     "richtig": false
+    },
+    {
+     "text": "2³⁰",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX02-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX02",
+   "text": "Welcher Präfix steht für den Faktor **10⁶ = 1.000.000**?",
+   "erklaerung": "Mega (M) → **10⁶ = 1.000.000**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Mega (M)",
+     "richtig": true
+    },
+    {
+     "text": "Tera (T)",
+     "richtig": false
+    },
+    {
+     "text": "Kilo (k)",
+     "richtig": false
+    },
+    {
+     "text": "Milli (m)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX03-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX03",
+   "text": "Für welchen Faktor steht der Präfix **Giga (G)**?",
+   "erklaerung": "Giga (G) → **10⁹**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "10⁹",
+     "richtig": true
+    },
+    {
+     "text": "10⁻⁶",
+     "richtig": false
+    },
+    {
+     "text": "10⁶ = 1.000.000",
+     "richtig": false
+    },
+    {
+     "text": "2⁴⁰",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX03-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX03",
+   "text": "Welcher Präfix steht für den Faktor **10⁹**?",
+   "erklaerung": "Giga (G) → **10⁹**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Giga (G)",
+     "richtig": true
+    },
+    {
+     "text": "Gibi (Gi)",
+     "richtig": false
+    },
+    {
+     "text": "Mebi (Mi)",
+     "richtig": false
+    },
+    {
+     "text": "Peta (P)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX04-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX04",
+   "text": "Für welchen Faktor steht der Präfix **Tera (T)**?",
+   "erklaerung": "Tera (T) → **10¹²**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "10¹²",
+     "richtig": true
+    },
+    {
+     "text": "2³⁰",
+     "richtig": false
+    },
+    {
+     "text": "2⁴⁰",
+     "richtig": false
+    },
+    {
+     "text": "10⁹",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX04-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX04",
+   "text": "Welcher Präfix steht für den Faktor **10¹²**?",
+   "erklaerung": "Tera (T) → **10¹²**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Tera (T)",
+     "richtig": true
+    },
+    {
+     "text": "Tebi (Ti)",
+     "richtig": false
+    },
+    {
+     "text": "Peta (P)",
+     "richtig": false
+    },
+    {
+     "text": "Mikro (µ)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX05-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX05",
+   "text": "Für welchen Faktor steht der Präfix **Peta (P)**?",
+   "erklaerung": "Peta (P) → **10¹⁵**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "10¹⁵",
+     "richtig": true
+    },
+    {
+     "text": "10⁻³",
+     "richtig": false
+    },
+    {
+     "text": "2³⁰",
+     "richtig": false
+    },
+    {
+     "text": "10³ = 1.000",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX05-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX05",
+   "text": "Welcher Präfix steht für den Faktor **10¹⁵**?",
+   "erklaerung": "Peta (P) → **10¹⁵**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Peta (P)",
+     "richtig": true
+    },
+    {
+     "text": "Kibi (Ki)",
+     "richtig": false
+    },
+    {
+     "text": "Nano (n)",
+     "richtig": false
+    },
+    {
+     "text": "Mega (M)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX06-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX06",
+   "text": "Für welchen Faktor steht der Präfix **Kibi (Ki)**?",
+   "erklaerung": "Kibi (Ki) → **2¹⁰ = 1.024**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "2¹⁰ = 1.024",
+     "richtig": true
+    },
+    {
+     "text": "10⁹",
+     "richtig": false
+    },
+    {
+     "text": "2²⁰ = 1.048.576",
+     "richtig": false
+    },
+    {
+     "text": "10¹⁵",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX06-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX06",
+   "text": "Welcher Präfix steht für den Faktor **2¹⁰ = 1.024**?",
+   "erklaerung": "Kibi (Ki) → **2¹⁰ = 1.024**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Kibi (Ki)",
+     "richtig": true
+    },
+    {
+     "text": "Peta (P)",
+     "richtig": false
+    },
+    {
+     "text": "Milli (m)",
+     "richtig": false
+    },
+    {
+     "text": "Mebi (Mi)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX07-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX07",
+   "text": "Für welchen Faktor steht der Präfix **Mebi (Mi)**?",
+   "erklaerung": "Mebi (Mi) → **2²⁰ = 1.048.576**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "2²⁰ = 1.048.576",
+     "richtig": true
+    },
+    {
+     "text": "10¹⁵",
+     "richtig": false
+    },
+    {
+     "text": "2³⁰",
+     "richtig": false
+    },
+    {
+     "text": "10⁶ = 1.000.000",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX07-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX07",
+   "text": "Welcher Präfix steht für den Faktor **2²⁰ = 1.048.576**?",
+   "erklaerung": "Mebi (Mi) → **2²⁰ = 1.048.576**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Mebi (Mi)",
+     "richtig": true
+    },
+    {
+     "text": "Mikro (µ)",
+     "richtig": false
+    },
+    {
+     "text": "Tera (T)",
+     "richtig": false
+    },
+    {
+     "text": "Mega (M)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX08-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX08",
+   "text": "Für welchen Faktor steht der Präfix **Gibi (Gi)**?",
+   "erklaerung": "Gibi (Gi) → **2³⁰**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "2³⁰",
+     "richtig": true
+    },
+    {
+     "text": "2²⁰ = 1.048.576",
+     "richtig": false
+    },
+    {
+     "text": "10⁹",
+     "richtig": false
+    },
+    {
+     "text": "10³ = 1.000",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX08-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX08",
+   "text": "Welcher Präfix steht für den Faktor **2³⁰**?",
+   "erklaerung": "Gibi (Gi) → **2³⁰**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Gibi (Gi)",
+     "richtig": true
+    },
+    {
+     "text": "Peta (P)",
+     "richtig": false
+    },
+    {
+     "text": "Tera (T)",
+     "richtig": false
+    },
+    {
+     "text": "Tebi (Ti)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX09-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX09",
+   "text": "Für welchen Faktor steht der Präfix **Tebi (Ti)**?",
+   "erklaerung": "Tebi (Ti) → **2⁴⁰**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "2⁴⁰",
+     "richtig": true
+    },
+    {
+     "text": "10¹⁵",
+     "richtig": false
+    },
+    {
+     "text": "2³⁰",
+     "richtig": false
+    },
+    {
+     "text": "10⁶ = 1.000.000",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX09-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX09",
+   "text": "Welcher Präfix steht für den Faktor **2⁴⁰**?",
+   "erklaerung": "Tebi (Ti) → **2⁴⁰**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Tebi (Ti)",
+     "richtig": true
+    },
+    {
+     "text": "Mega (M)",
+     "richtig": false
+    },
+    {
+     "text": "Giga (G)",
+     "richtig": false
+    },
+    {
+     "text": "Mikro (µ)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX10-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX10",
+   "text": "Für welchen Faktor steht der Präfix **Milli (m)**?",
+   "erklaerung": "Milli (m) → **10⁻³**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "10⁻³",
+     "richtig": true
+    },
+    {
+     "text": "2³⁰",
+     "richtig": false
+    },
+    {
+     "text": "10⁶ = 1.000.000",
+     "richtig": false
+    },
+    {
+     "text": "10¹⁵",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX10-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX10",
+   "text": "Welcher Präfix steht für den Faktor **10⁻³**?",
+   "erklaerung": "Milli (m) → **10⁻³**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Milli (m)",
+     "richtig": true
+    },
+    {
+     "text": "Kilo (k)",
+     "richtig": false
+    },
+    {
+     "text": "Gibi (Gi)",
+     "richtig": false
+    },
+    {
+     "text": "Kibi (Ki)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX11-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX11",
+   "text": "Für welchen Faktor steht der Präfix **Mikro (µ)**?",
+   "erklaerung": "Mikro (µ) → **10⁻⁶**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "10⁻⁶",
+     "richtig": true
+    },
+    {
+     "text": "2⁴⁰",
+     "richtig": false
+    },
+    {
+     "text": "10⁶ = 1.000.000",
+     "richtig": false
+    },
+    {
+     "text": "10¹⁵",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX11-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX11",
+   "text": "Welcher Präfix steht für den Faktor **10⁻⁶**?",
+   "erklaerung": "Mikro (µ) → **10⁻⁶**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Mikro (µ)",
+     "richtig": true
+    },
+    {
+     "text": "Kilo (k)",
+     "richtig": false
+    },
+    {
+     "text": "Peta (P)",
+     "richtig": false
+    },
+    {
+     "text": "Milli (m)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX12-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX12",
+   "text": "Für welchen Faktor steht der Präfix **Nano (n)**?",
+   "erklaerung": "Nano (n) → **10⁻⁹**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "10⁻⁹",
+     "richtig": true
+    },
+    {
+     "text": "10⁶ = 1.000.000",
+     "richtig": false
+    },
+    {
+     "text": "2¹⁰ = 1.024",
+     "richtig": false
+    },
+    {
+     "text": "10⁻³",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-PRAEFIX12-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L1",
+   "gruppe": "EIN-PRAEFIX12",
+   "text": "Welcher Präfix steht für den Faktor **10⁻⁹**?",
+   "erklaerung": "Nano (n) → **10⁻⁹**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Nano (n)",
+     "richtig": true
+    },
+    {
+     "text": "Tera (T)",
+     "richtig": false
+    },
+    {
+     "text": "Mebi (Mi)",
+     "richtig": false
+    },
+    {
+     "text": "Peta (P)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-EIN-DAUER-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-DAUER",
+   "text": "Eine Datei mit **2.000 MB** wird über eine Leitung mit **16 Mbit/s** übertragen. Wie viele **Sekunden** dauert das (ohne Overhead, auf 1 Nachkommastelle)?",
+   "erklaerung": "2.000 MB × 8 = 16.000 Mbit; ÷ 16 Mbit/s = 1.000 s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1000,
+   "toleranz": 0.1,
+   "einheit": "s"
+  },
+  {
+   "schluessel": "G-EIN-DAUER-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-DAUER",
+   "text": "Eine Datei mit **1.500 MB** wird über eine Leitung mit **16 Mbit/s** übertragen. Wie viele **Sekunden** dauert das (ohne Overhead, auf 1 Nachkommastelle)?",
+   "erklaerung": "1.500 MB × 8 = 12.000 Mbit; ÷ 16 Mbit/s = 750 s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 750,
+   "toleranz": 0.1,
+   "einheit": "s"
+  },
+  {
+   "schluessel": "G-EIN-DAUER-003",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-DAUER",
+   "text": "Eine Datei mit **100 MB** wird über eine Leitung mit **250 Mbit/s** übertragen. Wie viele **Sekunden** dauert das (ohne Overhead, auf 1 Nachkommastelle)?",
+   "erklaerung": "100 MB × 8 = 800 Mbit; ÷ 250 Mbit/s = 3,2 s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3.2,
+   "toleranz": 0.1,
+   "einheit": "s"
+  },
+  {
+   "schluessel": "G-EIN-DAUER-004",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-DAUER",
+   "text": "Eine Datei mit **500 MB** wird über eine Leitung mit **100 Mbit/s** übertragen. Wie viele **Sekunden** dauert das (ohne Overhead, auf 1 Nachkommastelle)?",
+   "erklaerung": "500 MB × 8 = 4.000 Mbit; ÷ 100 Mbit/s = 40 s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 40,
+   "toleranz": 0.1,
+   "einheit": "s"
+  },
+  {
+   "schluessel": "G-EIN-DAUER-006",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-DAUER",
+   "text": "Eine Datei mit **8.000 MB** wird über eine Leitung mit **50 Mbit/s** übertragen. Wie viele **Sekunden** dauert das (ohne Overhead, auf 1 Nachkommastelle)?",
+   "erklaerung": "8.000 MB × 8 = 64.000 Mbit; ÷ 50 Mbit/s = 1.280 s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1280,
+   "toleranz": 0.1,
+   "einheit": "s"
+  },
+  {
+   "schluessel": "G-EIN-DAUER-007",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-DAUER",
+   "text": "Eine Datei mit **1.000 MB** wird über eine Leitung mit **100 Mbit/s** übertragen. Wie viele **Sekunden** dauert das (ohne Overhead, auf 1 Nachkommastelle)?",
+   "erklaerung": "1.000 MB × 8 = 8.000 Mbit; ÷ 100 Mbit/s = 80 s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 80,
+   "toleranz": 0.1,
+   "einheit": "s"
+  },
+  {
+   "schluessel": "G-EIN-DAUER-008",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-DAUER",
+   "text": "Eine Datei mit **4.000 MB** wird über eine Leitung mit **50 Mbit/s** übertragen. Wie viele **Sekunden** dauert das (ohne Overhead, auf 1 Nachkommastelle)?",
+   "erklaerung": "4.000 MB × 8 = 32.000 Mbit; ÷ 50 Mbit/s = 640 s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 640,
+   "toleranz": 0.1,
+   "einheit": "s"
+  },
+  {
+   "schluessel": "G-EIN-DAUER-009",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-DAUER",
+   "text": "Eine Datei mit **1.000 MB** wird über eine Leitung mit **250 Mbit/s** übertragen. Wie viele **Sekunden** dauert das (ohne Overhead, auf 1 Nachkommastelle)?",
+   "erklaerung": "1.000 MB × 8 = 8.000 Mbit; ÷ 250 Mbit/s = 32 s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 32,
+   "toleranz": 0.1,
+   "einheit": "s"
+  },
+  {
+   "schluessel": "G-EIN-DAUER-010",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-DAUER",
+   "text": "Eine Datei mit **2.000 MB** wird über eine Leitung mit **250 Mbit/s** übertragen. Wie viele **Sekunden** dauert das (ohne Overhead, auf 1 Nachkommastelle)?",
+   "erklaerung": "2.000 MB × 8 = 16.000 Mbit; ÷ 250 Mbit/s = 64 s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 64,
+   "toleranz": 0.1,
+   "einheit": "s"
+  },
+  {
+   "schluessel": "G-EIN-DAUER-011",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-DAUER",
+   "text": "Eine Datei mit **1.000 MB** wird über eine Leitung mit **25 Mbit/s** übertragen. Wie viele **Sekunden** dauert das (ohne Overhead, auf 1 Nachkommastelle)?",
+   "erklaerung": "1.000 MB × 8 = 8.000 Mbit; ÷ 25 Mbit/s = 320 s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 320,
+   "toleranz": 0.1,
+   "einheit": "s"
+  },
+  {
+   "schluessel": "G-EIN-DAUER-012",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-DAUER",
+   "text": "Eine Datei mit **8.000 MB** wird über eine Leitung mit **100 Mbit/s** übertragen. Wie viele **Sekunden** dauert das (ohne Overhead, auf 1 Nachkommastelle)?",
+   "erklaerung": "8.000 MB × 8 = 64.000 Mbit; ÷ 100 Mbit/s = 640 s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 640,
+   "toleranz": 0.1,
+   "einheit": "s"
+  },
+  {
+   "schluessel": "G-EIN-DAUER-013",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-DAUER",
+   "text": "Eine Datei mit **10.000 MB** wird über eine Leitung mit **1000 Mbit/s** übertragen. Wie viele **Sekunden** dauert das (ohne Overhead, auf 1 Nachkommastelle)?",
+   "erklaerung": "10.000 MB × 8 = 80.000 Mbit; ÷ 1000 Mbit/s = 80 s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 80,
+   "toleranz": 0.1,
+   "einheit": "s"
+  },
+  {
+   "schluessel": "G-EIN-RATE-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-RATE",
+   "text": "**5 GB** sollen in **16 Minuten** übertragen werden. Welche Datenrate in **Mbit/s** ist mindestens nötig? (1 GB = 1.000 MB, auf 2 Nachkommastellen)",
+   "erklaerung": "5 GB = 40.000 Mbit; ÷ 960 s = 41,67 Mbit/s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 41.67,
+   "toleranz": 0.01,
+   "einheit": "Mbit/s"
+  },
+  {
+   "schluessel": "G-EIN-RATE-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-RATE",
+   "text": "**20 GB** sollen in **8 Minuten** übertragen werden. Welche Datenrate in **Mbit/s** ist mindestens nötig? (1 GB = 1.000 MB, auf 2 Nachkommastellen)",
+   "erklaerung": "20 GB = 160.000 Mbit; ÷ 480 s = 333,33 Mbit/s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 333.33,
+   "toleranz": 0.01,
+   "einheit": "Mbit/s"
+  },
+  {
+   "schluessel": "G-EIN-RATE-003",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-RATE",
+   "text": "**10 GB** sollen in **5 Minuten** übertragen werden. Welche Datenrate in **Mbit/s** ist mindestens nötig? (1 GB = 1.000 MB, auf 2 Nachkommastellen)",
+   "erklaerung": "10 GB = 80.000 Mbit; ÷ 300 s = 266,67 Mbit/s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 266.67,
+   "toleranz": 0.01,
+   "einheit": "Mbit/s"
+  },
+  {
+   "schluessel": "G-EIN-RATE-004",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-RATE",
+   "text": "**4 GB** sollen in **4 Minuten** übertragen werden. Welche Datenrate in **Mbit/s** ist mindestens nötig? (1 GB = 1.000 MB, auf 2 Nachkommastellen)",
+   "erklaerung": "4 GB = 32.000 Mbit; ÷ 240 s = 133,33 Mbit/s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 133.33,
+   "toleranz": 0.01,
+   "einheit": "Mbit/s"
+  },
+  {
+   "schluessel": "G-EIN-RATE-005",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-RATE",
+   "text": "**4 GB** sollen in **10 Minuten** übertragen werden. Welche Datenrate in **Mbit/s** ist mindestens nötig? (1 GB = 1.000 MB, auf 2 Nachkommastellen)",
+   "erklaerung": "4 GB = 32.000 Mbit; ÷ 600 s = 53,33 Mbit/s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 53.33,
+   "toleranz": 0.01,
+   "einheit": "Mbit/s"
+  },
+  {
+   "schluessel": "G-EIN-RATE-006",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-RATE",
+   "text": "**20 GB** sollen in **20 Minuten** übertragen werden. Welche Datenrate in **Mbit/s** ist mindestens nötig? (1 GB = 1.000 MB, auf 2 Nachkommastellen)",
+   "erklaerung": "20 GB = 160.000 Mbit; ÷ 1200 s = 133,33 Mbit/s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 133.33,
+   "toleranz": 0.01,
+   "einheit": "Mbit/s"
+  },
+  {
+   "schluessel": "G-EIN-RATE-007",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-RATE",
+   "text": "**5 GB** sollen in **20 Minuten** übertragen werden. Welche Datenrate in **Mbit/s** ist mindestens nötig? (1 GB = 1.000 MB, auf 2 Nachkommastellen)",
+   "erklaerung": "5 GB = 40.000 Mbit; ÷ 1200 s = 33,33 Mbit/s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 33.33,
+   "toleranz": 0.01,
+   "einheit": "Mbit/s"
+  },
+  {
+   "schluessel": "G-EIN-RATE-010",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-RATE",
+   "text": "**5 GB** sollen in **10 Minuten** übertragen werden. Welche Datenrate in **Mbit/s** ist mindestens nötig? (1 GB = 1.000 MB, auf 2 Nachkommastellen)",
+   "erklaerung": "5 GB = 40.000 Mbit; ÷ 600 s = 66,67 Mbit/s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 66.67,
+   "toleranz": 0.01,
+   "einheit": "Mbit/s"
+  },
+  {
+   "schluessel": "G-EIN-RATE-011",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-RATE",
+   "text": "**4 GB** sollen in **5 Minuten** übertragen werden. Welche Datenrate in **Mbit/s** ist mindestens nötig? (1 GB = 1.000 MB, auf 2 Nachkommastellen)",
+   "erklaerung": "4 GB = 32.000 Mbit; ÷ 300 s = 106,67 Mbit/s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 106.67,
+   "toleranz": 0.01,
+   "einheit": "Mbit/s"
+  },
+  {
+   "schluessel": "G-EIN-RATE-012",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-RATE",
+   "text": "**5 GB** sollen in **1 Minuten** übertragen werden. Welche Datenrate in **Mbit/s** ist mindestens nötig? (1 GB = 1.000 MB, auf 2 Nachkommastellen)",
+   "erklaerung": "5 GB = 40.000 Mbit; ÷ 60 s = 666,67 Mbit/s.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 666.67,
+   "toleranz": 0.01,
+   "einheit": "Mbit/s"
+  },
+  {
+   "schluessel": "G-EIN-BILD-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BILD",
+   "text": "Ein unkomprimiertes Bild hat **2560 × 1440 Pixel** und eine Farbtiefe von **32 Bit**. Wie groß ist es in **MB** (1 MB = 1.000.000 Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "2560 × 1440 = 3.686.400 Pixel × 32 Bit ÷ 8 = 14.745.600 Byte ≈ 14,75 MB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 14.75,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-BILD-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BILD",
+   "text": "Ein unkomprimiertes Bild hat **2560 × 1440 Pixel** und eine Farbtiefe von **8 Bit**. Wie groß ist es in **MB** (1 MB = 1.000.000 Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "2560 × 1440 = 3.686.400 Pixel × 8 Bit ÷ 8 = 3.686.400 Byte ≈ 3,69 MB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3.69,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-BILD-003",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BILD",
+   "text": "Ein unkomprimiertes Bild hat **1920 × 1080 Pixel** und eine Farbtiefe von **32 Bit**. Wie groß ist es in **MB** (1 MB = 1.000.000 Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "1920 × 1080 = 2.073.600 Pixel × 32 Bit ÷ 8 = 8.294.400 Byte ≈ 8,29 MB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 8.29,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-BILD-004",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BILD",
+   "text": "Ein unkomprimiertes Bild hat **800 × 600 Pixel** und eine Farbtiefe von **32 Bit**. Wie groß ist es in **MB** (1 MB = 1.000.000 Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "800 × 600 = 480.000 Pixel × 32 Bit ÷ 8 = 1.920.000 Byte ≈ 1,92 MB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1.92,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-BILD-006",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BILD",
+   "text": "Ein unkomprimiertes Bild hat **2560 × 1440 Pixel** und eine Farbtiefe von **24 Bit**. Wie groß ist es in **MB** (1 MB = 1.000.000 Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "2560 × 1440 = 3.686.400 Pixel × 24 Bit ÷ 8 = 11.059.200 Byte ≈ 11,06 MB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 11.06,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-BILD-007",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BILD",
+   "text": "Ein unkomprimiertes Bild hat **1280 × 720 Pixel** und eine Farbtiefe von **16 Bit**. Wie groß ist es in **MB** (1 MB = 1.000.000 Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "1280 × 720 = 921.600 Pixel × 16 Bit ÷ 8 = 1.843.200 Byte ≈ 1,84 MB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1.84,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-BILD-008",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BILD",
+   "text": "Ein unkomprimiertes Bild hat **1024 × 768 Pixel** und eine Farbtiefe von **32 Bit**. Wie groß ist es in **MB** (1 MB = 1.000.000 Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "1024 × 768 = 786.432 Pixel × 32 Bit ÷ 8 = 3.145.728 Byte ≈ 3,15 MB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3.15,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-BILD-009",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BILD",
+   "text": "Ein unkomprimiertes Bild hat **1280 × 720 Pixel** und eine Farbtiefe von **32 Bit**. Wie groß ist es in **MB** (1 MB = 1.000.000 Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "1280 × 720 = 921.600 Pixel × 32 Bit ÷ 8 = 3.686.400 Byte ≈ 3,69 MB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3.69,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-BILD-010",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BILD",
+   "text": "Ein unkomprimiertes Bild hat **1920 × 1080 Pixel** und eine Farbtiefe von **8 Bit**. Wie groß ist es in **MB** (1 MB = 1.000.000 Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "1920 × 1080 = 2.073.600 Pixel × 8 Bit ÷ 8 = 2.073.600 Byte ≈ 2,07 MB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2.07,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-BILD-011",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BILD",
+   "text": "Ein unkomprimiertes Bild hat **800 × 600 Pixel** und eine Farbtiefe von **8 Bit**. Wie groß ist es in **MB** (1 MB = 1.000.000 Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "800 × 600 = 480.000 Pixel × 8 Bit ÷ 8 = 480.000 Byte ≈ 0,48 MB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.48,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-AUDIO-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-AUDIO",
+   "text": "Eine unkomprimierte Audioaufnahme: **44.100 Hz**, **16 Bit**, **Stereo**, **5 min**. Wie groß ist sie in **MB** (1 MB = 10⁶ Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "44.100 × 16 × 2 × 300 s ÷ 8 = 52.920.000 Byte ≈ 52,92 MB.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 52.92,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-AUDIO-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-AUDIO",
+   "text": "Eine unkomprimierte Audioaufnahme: **48.000 Hz**, **24 Bit**, **Stereo**, **1 min**. Wie groß ist sie in **MB** (1 MB = 10⁶ Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "48.000 × 24 × 2 × 60 s ÷ 8 = 17.280.000 Byte ≈ 17,28 MB.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 17.28,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-AUDIO-003",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-AUDIO",
+   "text": "Eine unkomprimierte Audioaufnahme: **48.000 Hz**, **24 Bit**, **Mono**, **1 min**. Wie groß ist sie in **MB** (1 MB = 10⁶ Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "48.000 × 24 × 1 × 60 s ÷ 8 = 8.640.000 Byte ≈ 8,64 MB.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 8.64,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-AUDIO-004",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-AUDIO",
+   "text": "Eine unkomprimierte Audioaufnahme: **44.100 Hz**, **16 Bit**, **Mono**, **5 min**. Wie groß ist sie in **MB** (1 MB = 10⁶ Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "44.100 × 16 × 1 × 300 s ÷ 8 = 26.460.000 Byte ≈ 26,46 MB.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 26.46,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-AUDIO-005",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-AUDIO",
+   "text": "Eine unkomprimierte Audioaufnahme: **48.000 Hz**, **24 Bit**, **Stereo**, **3 min**. Wie groß ist sie in **MB** (1 MB = 10⁶ Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "48.000 × 24 × 2 × 180 s ÷ 8 = 51.840.000 Byte ≈ 51,84 MB.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 51.84,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-AUDIO-006",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-AUDIO",
+   "text": "Eine unkomprimierte Audioaufnahme: **44.100 Hz**, **24 Bit**, **Stereo**, **3 min**. Wie groß ist sie in **MB** (1 MB = 10⁶ Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "44.100 × 24 × 2 × 180 s ÷ 8 = 47.628.000 Byte ≈ 47,63 MB.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 47.63,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-AUDIO-007",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-AUDIO",
+   "text": "Eine unkomprimierte Audioaufnahme: **48.000 Hz**, **16 Bit**, **Mono**, **10 min**. Wie groß ist sie in **MB** (1 MB = 10⁶ Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "48.000 × 16 × 1 × 600 s ÷ 8 = 57.600.000 Byte ≈ 57,6 MB.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 57.6,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-AUDIO-008",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-AUDIO",
+   "text": "Eine unkomprimierte Audioaufnahme: **44.100 Hz**, **16 Bit**, **Mono**, **10 min**. Wie groß ist sie in **MB** (1 MB = 10⁶ Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "44.100 × 16 × 1 × 600 s ÷ 8 = 52.920.000 Byte ≈ 52,92 MB.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 52.92,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-AUDIO-009",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-AUDIO",
+   "text": "Eine unkomprimierte Audioaufnahme: **44.100 Hz**, **16 Bit**, **Stereo**, **10 min**. Wie groß ist sie in **MB** (1 MB = 10⁶ Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "44.100 × 16 × 2 × 600 s ÷ 8 = 105.840.000 Byte ≈ 105,84 MB.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 105.84,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-AUDIO-010",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-AUDIO",
+   "text": "Eine unkomprimierte Audioaufnahme: **44.100 Hz**, **24 Bit**, **Mono**, **1 min**. Wie groß ist sie in **MB** (1 MB = 10⁶ Byte, auf 2 Nachkommastellen)?",
+   "erklaerung": "44.100 × 24 × 1 × 60 s ÷ 8 = 7.938.000 Byte ≈ 7,94 MB.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 7.94,
+   "toleranz": 0.01,
+   "einheit": "MB"
+  },
+  {
+   "schluessel": "G-EIN-SPEICHER-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-SPEICHER",
+   "text": "Ein Archiv soll **1.000 Dokumente** mit durchschnittlich **400 KB** speichern. Wie viel Speicher in **GB** wird benötigt (dezimal, auf 3 Nachkommastellen)?",
+   "erklaerung": "1.000 × 400 KB = 400.000 KB = 0,4 GB.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.4,
+   "toleranz": 0.001,
+   "einheit": "GB"
+  },
+  {
+   "schluessel": "G-EIN-SPEICHER-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-SPEICHER",
+   "text": "Ein Archiv soll **10.000 Dokumente** mit durchschnittlich **150 KB** speichern. Wie viel Speicher in **GB** wird benötigt (dezimal, auf 3 Nachkommastellen)?",
+   "erklaerung": "10.000 × 150 KB = 1.500.000 KB = 1,5 GB.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1.5,
+   "toleranz": 0.001,
+   "einheit": "GB"
+  },
+  {
+   "schluessel": "G-EIN-SPEICHER-003",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-SPEICHER",
+   "text": "Ein Archiv soll **200 Dokumente** mit durchschnittlich **500 KB** speichern. Wie viel Speicher in **GB** wird benötigt (dezimal, auf 3 Nachkommastellen)?",
+   "erklaerung": "200 × 500 KB = 100.000 KB = 0,1 GB.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.1,
+   "toleranz": 0.001,
+   "einheit": "GB"
+  },
+  {
+   "schluessel": "G-EIN-SPEICHER-004",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-SPEICHER",
+   "text": "Ein Archiv soll **1.000 Dokumente** mit durchschnittlich **150 KB** speichern. Wie viel Speicher in **GB** wird benötigt (dezimal, auf 3 Nachkommastellen)?",
+   "erklaerung": "1.000 × 150 KB = 150.000 KB = 0,15 GB.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.15,
+   "toleranz": 0.001,
+   "einheit": "GB"
+  },
+  {
+   "schluessel": "G-EIN-SPEICHER-005",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-SPEICHER",
+   "text": "Ein Archiv soll **2.500 Dokumente** mit durchschnittlich **150 KB** speichern. Wie viel Speicher in **GB** wird benötigt (dezimal, auf 3 Nachkommastellen)?",
+   "erklaerung": "2.500 × 150 KB = 375.000 KB = 0,375 GB.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.375,
+   "toleranz": 0.001,
+   "einheit": "GB"
+  },
+  {
+   "schluessel": "G-EIN-SPEICHER-006",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-SPEICHER",
+   "text": "Ein Archiv soll **5.000 Dokumente** mit durchschnittlich **250 KB** speichern. Wie viel Speicher in **GB** wird benötigt (dezimal, auf 3 Nachkommastellen)?",
+   "erklaerung": "5.000 × 250 KB = 1.250.000 KB = 1,25 GB.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1.25,
+   "toleranz": 0.001,
+   "einheit": "GB"
+  },
+  {
+   "schluessel": "G-EIN-SPEICHER-007",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-SPEICHER",
+   "text": "Ein Archiv soll **500 Dokumente** mit durchschnittlich **150 KB** speichern. Wie viel Speicher in **GB** wird benötigt (dezimal, auf 3 Nachkommastellen)?",
+   "erklaerung": "500 × 150 KB = 75.000 KB = 0,075 GB.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.075,
+   "toleranz": 0.001,
+   "einheit": "GB"
+  },
+  {
+   "schluessel": "G-EIN-SPEICHER-008",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-SPEICHER",
+   "text": "Ein Archiv soll **2.500 Dokumente** mit durchschnittlich **300 KB** speichern. Wie viel Speicher in **GB** wird benötigt (dezimal, auf 3 Nachkommastellen)?",
+   "erklaerung": "2.500 × 300 KB = 750.000 KB = 0,75 GB.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.75,
+   "toleranz": 0.001,
+   "einheit": "GB"
+  },
+  {
+   "schluessel": "G-EIN-SPEICHER-009",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-SPEICHER",
+   "text": "Ein Archiv soll **200 Dokumente** mit durchschnittlich **250 KB** speichern. Wie viel Speicher in **GB** wird benötigt (dezimal, auf 3 Nachkommastellen)?",
+   "erklaerung": "200 × 250 KB = 50.000 KB = 0,05 GB.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.05,
+   "toleranz": 0.001,
+   "einheit": "GB"
+  },
+  {
+   "schluessel": "G-EIN-SPEICHER-010",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-SPEICHER",
+   "text": "Ein Archiv soll **200 Dokumente** mit durchschnittlich **150 KB** speichern. Wie viel Speicher in **GB** wird benötigt (dezimal, auf 3 Nachkommastellen)?",
+   "erklaerung": "200 × 150 KB = 30.000 KB = 0,03 GB.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.03,
+   "toleranz": 0.001,
+   "einheit": "GB"
+  },
+  {
+   "schluessel": "G-EIN-MBITMB-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-MBITMB",
+   "text": "Ein Anschluss hat **100 Mbit/s**. Wie viele **MB pro Sekunde** sind das maximal?",
+   "erklaerung": "100 ÷ 8 = 12,5 MB/s (8 Bit = 1 Byte).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 12.5,
+   "toleranz": 0.01,
+   "einheit": "MB/s"
+  },
+  {
+   "schluessel": "G-EIN-MBITMB-002",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-MBITMB",
+   "text": "Ein Anschluss hat **50 Mbit/s**. Wie viele **MB pro Sekunde** sind das maximal?",
+   "erklaerung": "50 ÷ 8 = 6,25 MB/s (8 Bit = 1 Byte).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 6.25,
+   "toleranz": 0.01,
+   "einheit": "MB/s"
+  },
+  {
+   "schluessel": "G-EIN-MBITMB-003",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-MBITMB",
+   "text": "Ein Anschluss hat **250 Mbit/s**. Wie viele **MB pro Sekunde** sind das maximal?",
+   "erklaerung": "250 ÷ 8 = 31,25 MB/s (8 Bit = 1 Byte).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 31.25,
+   "toleranz": 0.01,
+   "einheit": "MB/s"
+  },
+  {
+   "schluessel": "G-EIN-MBITMB-005",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-MBITMB",
+   "text": "Ein Anschluss hat **16 Mbit/s**. Wie viele **MB pro Sekunde** sind das maximal?",
+   "erklaerung": "16 ÷ 8 = 2 MB/s (8 Bit = 1 Byte).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0.01,
+   "einheit": "MB/s"
+  },
+  {
+   "schluessel": "G-EIN-BACKUPZEIT-001",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BACKUPZEIT",
+   "text": "Ein Online-Backup von **50 GB** wird mit einem Upload von **40 Mbit/s** hochgeladen. Wie viele **Stunden** dauert das (auf 2 Nachkommastellen)?",
+   "erklaerung": "50 GB × 8.000 = 400.000 Mbit ÷ 40 = 10.000 s ÷ 3.600 = 2,78 h.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2.78,
+   "toleranz": 0.01,
+   "einheit": "h"
+  },
+  {
+   "schluessel": "G-EIN-BACKUPZEIT-003",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BACKUPZEIT",
+   "text": "Ein Online-Backup von **50 GB** wird mit einem Upload von **50 Mbit/s** hochgeladen. Wie viele **Stunden** dauert das (auf 2 Nachkommastellen)?",
+   "erklaerung": "50 GB × 8.000 = 400.000 Mbit ÷ 50 = 8.000 s ÷ 3.600 = 2,22 h.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2.22,
+   "toleranz": 0.01,
+   "einheit": "h"
+  },
+  {
+   "schluessel": "G-EIN-BACKUPZEIT-004",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BACKUPZEIT",
+   "text": "Ein Online-Backup von **200 GB** wird mit einem Upload von **100 Mbit/s** hochgeladen. Wie viele **Stunden** dauert das (auf 2 Nachkommastellen)?",
+   "erklaerung": "200 GB × 8.000 = 1.600.000 Mbit ÷ 100 = 16.000 s ÷ 3.600 = 4,44 h.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4.44,
+   "toleranz": 0.01,
+   "einheit": "h"
+  },
+  {
+   "schluessel": "G-EIN-BACKUPZEIT-005",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BACKUPZEIT",
+   "text": "Ein Online-Backup von **200 GB** wird mit einem Upload von **50 Mbit/s** hochgeladen. Wie viele **Stunden** dauert das (auf 2 Nachkommastellen)?",
+   "erklaerung": "200 GB × 8.000 = 1.600.000 Mbit ÷ 50 = 32.000 s ÷ 3.600 = 8,89 h.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 8.89,
+   "toleranz": 0.01,
+   "einheit": "h"
+  },
+  {
+   "schluessel": "G-EIN-BACKUPZEIT-006",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BACKUPZEIT",
+   "text": "Ein Online-Backup von **100 GB** wird mit einem Upload von **10 Mbit/s** hochgeladen. Wie viele **Stunden** dauert das (auf 2 Nachkommastellen)?",
+   "erklaerung": "100 GB × 8.000 = 800.000 Mbit ÷ 10 = 80.000 s ÷ 3.600 = 22,22 h.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 22.22,
+   "toleranz": 0.01,
+   "einheit": "h"
+  },
+  {
+   "schluessel": "G-EIN-BACKUPZEIT-007",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BACKUPZEIT",
+   "text": "Ein Online-Backup von **20 GB** wird mit einem Upload von **10 Mbit/s** hochgeladen. Wie viele **Stunden** dauert das (auf 2 Nachkommastellen)?",
+   "erklaerung": "20 GB × 8.000 = 160.000 Mbit ÷ 10 = 16.000 s ÷ 3.600 = 4,44 h.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4.44,
+   "toleranz": 0.01,
+   "einheit": "h"
+  },
+  {
+   "schluessel": "G-EIN-BACKUPZEIT-008",
+   "thema": "einheiten",
+   "lektion": "EIN-L2",
+   "gruppe": "EIN-BACKUPZEIT",
+   "text": "Ein Online-Backup von **50 GB** wird mit einem Upload von **10 Mbit/s** hochgeladen. Wie viele **Stunden** dauert das (auf 2 Nachkommastellen)?",
+   "erklaerung": "50 GB × 8.000 = 400.000 Mbit ÷ 10 = 40.000 s ÷ 3.600 = 11,11 h.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 11.11,
+   "toleranz": 0.01,
+   "einheit": "h"
+  }
+ ]
+}

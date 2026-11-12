@@ -22,7 +22,7 @@
   <div class="frage-text">{{ z.f.text|lerntext }}</div>
   {% if z.f.bild %}<div class="frage-bild"><img src="{% static z.f.bild %}" alt="Abbildung zur Aufgabe" loading="lazy"></div>{% endif %}
   {% if z.f.typ == "zahl" %}
-    <p>Deine Antwort: <strong>{{ z.eingabe|default:"–" }}</strong> · Lösung: <strong>{{ z.f.loesung_zahl.normalize }} {{ z.f.einheit }}</strong></p>
+    <p>Deine Antwort: <strong>{{ z.eingabe|default:"–" }}</strong> · Lösung: <strong>{{ z.f.loesung_zahl|zahl_de }} {{ z.f.einheit }}</strong></p>
   {% else %}
     <div class="optionen">{% for a in z.f.antworten.all %}
       <div class="option{% if a.richtig %} richtig{% elif a.id in z.gewaehlt %} falsch{% endif %}">{% if a.id in z.gewaehlt %}☑{% else %}☐{% endif %} {{ a.text }}</div>
