@@ -3,7 +3,7 @@
 {% block content %}
 <div class="card">
   <div style="font-size:48px">📝</div>
-  <h1>Prüfungssimulation AP1</h1>
+  <h1>Prüfungssimulation AP1 (online)</h1>
   <p>{{ anzahl }} Fragen aus allen Themen, verteilt wie in der echten Prüfung, mit einem Zeitlimit von {{ minuten }} Minuten.</p>
   <ul>
     <li>Lösungen und Erklärungen siehst du erst nach der Abgabe.</li>
@@ -15,6 +15,30 @@
     <button class="btn gross" type="submit">{% if offen %}Laufende Prüfung fortsetzen{% else %}Prüfung starten{% endif %}</button>
   </form>
   <p class="muted small" style="margin-top:12px">Hinweis: Die echte AP1 hat offene Fragen in vier Aufgaben zu einem Unternehmensszenario. Die Simulation übt dieselben Inhalte und Rechenwege.</p>
+</div>
+<div class="card">
+  <div style="font-size:48px">📄</div>
+  <h2 style="margin-top:0">Übungsprüfung als PDF – wie die echte AP1</h2>
+  <p>Deckblatt, Ausgangssituation, 4 Aufgaben mit je 25 Punkten, offene Fragen, Rechenkästchen und Tabellen. 90 Minuten.
+     Jede Prüfung wird neu zusammengestellt, Rechenaufgaben bekommen neue Zahlen.</p>
+  <ul>
+    <li>Die PDF ist ausfüllbar (z. B. Edge, Firefox, Acrobat, Tablet) oder zum Ausdrucken.</li>
+    <li>Danach korrigierst du mit den Lösungshinweisen selbst und trägst deine Punkte hier ein.</li>
+  </ul>
+  <form method="post" action="{% url 'pdf_pruefung_neu' %}">{% csrf_token %}
+    <button class="btn gross" type="submit">Neue PDF-Prüfung erstellen</button>
+  </form>
+  {% if pdf_bisher %}
+  <div class="table-wrap" style="margin-top:16px">
+    <table>
+      <thead><tr><th>Erstellt</th><th>Nr.</th><th class="num">Punkte</th><th class="num">Note</th><th></th></tr></thead>
+      <tbody>{% for p in pdf_bisher %}
+        <tr><td>{{ p.erstellt|date:"d.m.Y H:i" }}</td><td>{{ p.nummer }}</td><td class="num">{{ p.gesamt|default:"–" }}</td>
+        <td class="num">{{ p.note|default:"–" }}</td><td class="num"><a href="{% url 'pdf_pruefung' p.pk %}">Öffnen</a></td></tr>
+      {% endfor %}</tbody>
+    </table>
+  </div>
+  {% endif %}
 </div>
 {% if bisher %}
 <h2>Deine bisherigen Simulationen</h2>

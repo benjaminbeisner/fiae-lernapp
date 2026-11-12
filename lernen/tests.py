@@ -173,6 +173,36 @@ class FragenTest(TestCase):
         self.assertEqual(self.client.get(reverse("thema_detail", args=["netzwerk"])).status_code, 200)
 
 
+class PdfPruefungTest(TestCase):
+    def test_viele_pruefungen_genau_100_punkte(self):
+        from lernen.pruefung import zusammenstellen
+        for seed in range(1, 60):
+            p = zusammenstellen.pruefung(seed)
+            self.assertEqual([sum(zusammenstellen.punkte(b) for b in a["bausteine"]) for a in p["aufgaben"]], [25, 25, 25, 25])
+        self.assertEqual(zusammenstellen.pruefung(5), zusammenstellen.pruefung(5))  # reproduzierbar
+
+    def test_pdfs_und_bewertung(self):
+        user = User.objects.create_user("pdf", password="x")
+        self.client.force_login(user)
+        r = self.client.post(reverse("pdf_pruefung_neu"))
+        pp = user.pdf_pruefungen.get()
+        self.assertRedirects(r, reverse("pdf_pruefung", args=[pp.pk]))
+        for art in ("aufgaben", "loesung"):
+            r = self.client.get(reverse("pdf_pruefung_datei", args=[pp.pk, art]))
+            self.assertEqual(r["Content-Type"], "application/pdf")
+            self.assertTrue(r.content.startswith(b"%PDF"))
+        self.assertIn(b"/AcroForm", self.client.get(reverse("pdf_pruefung_datei", args=[pp.pk, "aufgaben"])).content)
+        self.client.post(reverse("pdf_pruefung", args=[pp.pk]), {"a1": 20, "a2": 18, "a3": 25, "a4": 10})
+        pp.refresh_from_db()
+        self.assertEqual((pp.gesamt, pp.note), (73, 3))
+        self.client.post(reverse("pdf_pruefung", args=[pp.pk]), {"a1": 30, "a2": 18, "a3": 25, "a4": 10})
+        pp.refresh_from_db()
+        self.assertEqual(pp.gesamt, 73)  # ungültige Eingabe ändert nichts
+        andere = User.objects.create_user("andere", password="x")
+        self.client.force_login(andere)
+        self.assertEqual(self.client.get(reverse("pdf_pruefung", args=[pp.pk])).status_code, 404)
+
+
 class RegistrierungTest(TestCase):
     def daten(self, code):
         return {"einladungscode": code, "username": "lena", "first_name": "Lena", "email": "lena@example.org",

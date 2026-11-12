@@ -216,3 +216,36 @@ class Simulation(models.Model):
             if p >= grenze:
                 return note
         return 6
+
+
+class PdfPruefung(models.Model):
+    """Übungsprüfung im Aufbau der AP1 als ausfüllbare PDF; Punkte trägt der Nutzer nach der Selbstkorrektur ein."""
+
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="pdf_pruefungen")
+    seed = models.PositiveIntegerField()
+    erstellt = models.DateTimeField(auto_now_add=True)
+    punkte = models.JSONField(null=True, blank=True, help_text="Punkte je Aufgabe, z. B. [20, 18, 22, 15]")
+    bewertet_am = models.DateTimeField(null=True, blank=True)
+
+    class Meta:
+        ordering = ["-erstellt"]
+        verbose_name = "PDF-Übungsprüfung"
+        verbose_name_plural = "PDF-Übungsprüfungen"
+
+    @property
+    def nummer(self):
+        return f"{self.seed:06d}"
+
+    @property
+    def gesamt(self):
+        return sum(self.punkte) if self.punkte else None
+
+    @property
+    def note(self):
+        g = self.gesamt
+        if g is None:
+            return None
+        for grenze, note in ((92, 1), (81, 2), (67, 3), (50, 4), (30, 5)):
+            if g >= grenze:
+                return note
+        return 6

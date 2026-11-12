@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}PDF-Übungsprüfung {{ pp.nummer }} · FIAE-Lernapp{% endblock %}
+{% block content %}
+<p><a href="{% url 'simulation_start' %}">← Prüfung</a></p>
+<div class="card">
+  <h1>Übungsprüfung AP1 · Nr. {{ pp.nummer }}</h1>
+  <p class="muted">Erstellt am {{ pp.erstellt|date:"d.m.Y H:i" }}</p>
+  <h2>1. Prüfung bearbeiten</h2>
+  <p>Lade die PDF herunter und bearbeite sie in <strong>90 Minuten</strong> ohne Hilfsmittel außer einem Taschenrechner.
+     Du kannst direkt in die Felder schreiben (z. B. mit Edge, Firefox, Acrobat oder auf dem Tablet) oder sie ausdrucken.</p>
+  <a class="btn gross" href="{% url 'pdf_pruefung_datei' pp.pk 'aufgaben' %}">⬇ Aufgaben (PDF)</a>
+</div>
+<div class="card">
+  <h2>2. Selbst korrigieren</h2>
+  <p>Öffne die Lösungshinweise erst, wenn du fertig bist. Andere fachlich richtige Antworten zählen auch.</p>
+  <a class="btn" href="{% url 'pdf_pruefung_datei' pp.pk 'loesung' %}">⬇ Lösungshinweise (PDF)</a>
+</div>
+<div class="card">
+  <h2>3. Punkte eintragen</h2>
+  <form method="post">{% csrf_token %}
+    <div class="punkte-raster">
+      {% for i in aufgaben %}
+      <label>{{ i }}. Aufgabe<br>
+        <input type="number" name="a{{ i }}" min="0" max="25" step="1" required inputmode="numeric"
+               value="{% if pp.punkte %}{% for w in pp.punkte %}{% if forloop.counter == i %}{{ w }}{% endif %}{% endfor %}{% endif %}"> / 25
+      </label>
+      {% endfor %}
+    </div>
+    <button class="btn" type="submit" style="margin-top:12px">Speichern</button>
+  </form>
+  {% if pp.punkte %}
+  <p style="margin-top:16px;font-size:1.2rem">Ergebnis: <strong>{{ pp.gesamt }} von 100 Punkten</strong> · Note <strong>{{ pp.note }}</strong>
+    {% if pp.gesamt >= 50 %}✅{% endif %}</p>
+  {% endif %}
+</div>
+{% endblock %}
