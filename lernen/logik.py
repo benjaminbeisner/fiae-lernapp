@@ -87,75 +87,111 @@ def niveau(user, thema) -> int:
     return 1 if quote < 0.6 else 2 if quote < 0.85 else 3
 
 
-def _passend_zum_niveau(fragen: list[Frage], stufe: int, anzahl: int) -> list[Frage]:
-    """Zieht Fragen gewichtet: gleiche Schwierigkeit wie das Niveau bevorzugt."""
-    pool = list(fragen)
+def _passend_zum_niveau(fragen: list[Frage], stufe: int, anzahl: int, gesperrt=None) -> list[Frage]:
+    """Zieht Fragen gewichtet (gleiche Schwierigkeit wie das Niveau bevorzugt).
+    Von Varianten derselben Aufgabenvorlage (gruppe) kommt nur eine."""
+    gesperrt = set(gesperrt or ())
+    pool = [f for f in fragen if not f.gruppe or f.gruppe not in gesperrt]
     auswahl = []
     while pool and len(auswahl) < anzahl:
         gewichte = [3.0 if f.schwierigkeit == stufe else 1.0 if abs(f.schwierigkeit - stufe) == 1 else 0.3 for f in pool]
         f = random.choices(pool, weights=gewichte, k=1)[0]
-        pool.remove(f)
         auswahl.append(f)
+        if f.gruppe:
+            gesperrt.add(f.gruppe)
+            pool = [x for x in pool if x.gruppe != f.gruppe]
+        else:
+            pool.remove(f)
     return auswahl
 
 
+def lektion_fortschritt(user, lektion) -> tuple[int, int]:
+    """(gefestigte Fragen, Fragen gesamt) einer Lektion."""
+    gesamt = lektion.fragen.filter(aktiv=True).count()
+    fest = Karte.objects.filter(user=user, frage__lektion=lektion, frage__aktiv=True, box__gte=4).count()
+    return fest, gesamt
+
+
 def naechste_lektion(user, thema) -> Lektion | None:
-    gelesen = LektionGelesen.objects.filter(user=user).values_list("lektion_id", flat=True)
+    """Erst ungelesene Abschnitte passend zum Niveau, danach den am wenigsten gefestigten."""
+    gelesen = set(LektionGelesen.objects.filter(user=user).values_list("lektion_id", flat=True))
     stufe = niveau(user, thema)
-    offen = thema.lektionen.filter(aktiv=True).exclude(id__in=gelesen)
-    return offen.filter(stufe__lte=stufe + 1).order_by("stufe", "reihenfolge").first() or offen.order_by("stufe", "reihenfolge").first()
+    alle = list(thema.lektionen.filter(aktiv=True).order_by("stufe", "reihenfolge"))
+    offen = [l for l in alle if l.id not in gelesen]
+    for l in offen:
+        if l.stufe <= stufe + 1:
+            return l
+    if offen:
+        return offen[0]
+    if not alle:
+        return None
+
+    def quote(l):
+        fest, gesamt = lektion_fortschritt(user, l)
+        return fest / gesamt if gesamt else 1
+    return min(alle, key=lambda l: (quote(l), random.random()))
 
 
-def _neue_fragen(user, thema, anzahl: int, lektion=None, ausser=()) -> list[int]:
-    bekannt = set(Karte.objects.filter(user=user).values_list("frage_id", flat=True)) | set(ausser)
-    basis = Frage.objects.filter(aktiv=True, thema=thema).exclude(id__in=bekannt)
-    erst = list(basis.filter(lektion=lektion)) if lektion else []
-    auswahl = _passend_zum_niveau(erst, niveau(user, thema), anzahl)
+def lektion_fragen(user, lektion, anzahl: int = 8) -> list[int]:
+    """Fragen genau zu diesem Abschnitt: zuerst neue, dann fällige, dann am wenigsten gefestigte."""
+    fragen = list(lektion.fragen.filter(aktiv=True))
+    karten = {k.frage_id: k for k in Karte.objects.filter(user=user, frage__in=fragen)}
+    stufe = niveau(user, lektion.thema)
+    heute = timezone.localdate()
+    neu = [f for f in fragen if f.id not in karten]
+    faellig = [f for f in fragen if f.id in karten and karten[f.id].faellig_am <= heute]
+    rest = sorted((f for f in fragen if f.id in karten and karten[f.id].faellig_am > heute),
+                  key=lambda f: (karten[f.id].box, karten[f.id].faellig_am))
+    auswahl = _passend_zum_niveau(neu, stufe, anzahl)
+    gruppen = {f.gruppe for f in auswahl if f.gruppe}
     if len(auswahl) < anzahl:
-        rest = [f for f in basis if f not in auswahl]
-        auswahl += _passend_zum_niveau(rest, niveau(user, thema), anzahl - len(auswahl))
+        auswahl += _passend_zum_niveau(faellig, stufe, anzahl - len(auswahl), gruppen)
+        gruppen |= {f.gruppe for f in auswahl if f.gruppe}
+    for f in rest:
+        if len(auswahl) >= anzahl:
+            break
+        if f not in auswahl and (not f.gruppe or f.gruppe not in gruppen):
+            auswahl.append(f)
+            if f.gruppe:
+                gruppen.add(f.gruppe)
+    random.shuffle(auswahl)
     return [f.id for f in auswahl]
 
 
 def tagesnugget(user, pruefung: str = "AP1") -> tuple[list[dict], str]:
-    """Das tägliche Lernnugget: eine kurze Lektion im dringendsten Thema, passende Übungen,
-    fällige Wiederholungen und ein paar neue Fragen aus anderen Themen."""
+    """Das tägliche Lernnugget: ein Abschnitt im dringendsten Thema wird erklärt,
+    danach kommen ausschließlich Fragen zu genau diesem Abschnitt."""
     quoten = themen_quoten(user, pruefung)
     themen = list(Thema.objects.filter(pruefung=pruefung, id__in=quoten))
     random.shuffle(themen)
     themen.sort(key=lambda t: -quoten[t.id] * random.uniform(0.7, 1.3))
-
-    items: list[dict] = []
-    titel = "Tägliches Lernnugget"
-    schwerpunkt = None
     for thema in themen:
         lektion = naechste_lektion(user, thema)
-        if lektion:
-            schwerpunkt = thema
-            titel = f"Lernnugget: {lektion.titel}"
-            items.append({"t": "lektion", "id": lektion.id})
-            items += [{"t": "frage", "id": i} for i in _neue_fragen(user, thema, 4, lektion)]
-            break
-    if schwerpunkt is None and themen:
-        schwerpunkt = themen[0]
-        items += [{"t": "frage", "id": i} for i in _neue_fragen(user, schwerpunkt, 4)]
+        if lektion and lektion.fragen.filter(aktiv=True).exists():
+            return lektion_items(user, lektion), f"Lernnugget: {lektion.titel}"
+    return [], "Lernnugget"
 
+
+def lektion_items(user, lektion, anzahl: int = 8) -> list[dict]:
+    return [{"t": "lektion", "id": lektion.id}] + [{"t": "frage", "id": i} for i in lektion_fragen(user, lektion, anzahl)]
+
+
+def wiederholung(user, anzahl: int = 20, pruefung: str = "AP1") -> list[dict]:
+    """Fällige Karten (verteilte Wiederholung), eine Variante pro Aufgabenvorlage."""
     heute = timezone.localdate()
-    vorhanden = {i["id"] for i in items if i["t"] == "frage"}
-    faellig = [
-        fid for fid in Karte.objects.filter(user=user, faellig_am__lte=heute, frage__aktiv=True, frage__thema__pruefung=pruefung)
-        .order_by("faellig_am", "box").values_list("frage_id", flat=True)[: settings.DAILY_REVIEW_LIMIT]
-        if fid not in vorhanden
-    ]
-    wiederholung = faellig[:8]
-    rest_neu = max(0, settings.DAILY_NEW_QUESTIONS - 4 - len(wiederholung) // 2)
-    andere = [t for t in themen if t != schwerpunkt]
-    neu = []
-    for thema in andere[:rest_neu]:
-        neu += _neue_fragen(user, thema, 1, ausser=vorhanden)
-    gemischt = [{"t": "frage", "id": i} for i in wiederholung + neu]
-    random.shuffle(gemischt)
-    return items + gemischt, titel
+    karten = (Karte.objects.filter(user=user, faellig_am__lte=heute, frage__aktiv=True, frage__thema__pruefung=pruefung)
+              .select_related("frage").order_by("faellig_am", "box"))
+    ids, gruppen = [], set()
+    for k in karten:
+        if len(ids) >= anzahl:
+            break
+        g = k.frage.gruppe
+        if g and g in gruppen:
+            continue
+        gruppen.add(g)
+        ids.append(k.frage_id)
+    random.shuffle(ids)
+    return [{"t": "frage", "id": i} for i in ids]
 
 
 def tagesfragen(user, pruefung: str = "AP1") -> list[int]:
@@ -164,13 +200,9 @@ def tagesfragen(user, pruefung: str = "AP1") -> list[int]:
 
 
 def themen_training(user, thema: Thema, anzahl: int = 10) -> list[dict]:
-    """Lektion (falls offen) plus Fragen passend zum Niveau; bekannte Fragen dürfen wiederkommen."""
-    items = []
-    lektion = naechste_lektion(user, thema)
-    if lektion:
-        items.append({"t": "lektion", "id": lektion.id})
+    """Gemischte Fragen aus dem ganzen Thema, passend zum Niveau, ohne doppelte Vorlagen."""
     fragen = _passend_zum_niveau(list(thema.fragen.filter(aktiv=True)), niveau(user, thema), anzahl)
-    return items + [{"t": "frage", "id": f.id} for f in fragen]
+    return [{"t": "frage", "id": f.id} for f in fragen]
 
 
 def simulation_fragen(anzahl: int = 40, pruefung: str = "AP1") -> list[int]:
@@ -181,7 +213,7 @@ def simulation_fragen(anzahl: int = 40, pruefung: str = "AP1") -> list[int]:
     for t in themen:
         n = max(1, round(anzahl * t.gewicht / summe))
         pool = list(t.fragen.filter(aktiv=True))
-        # gemischte Schwierigkeit, eher anspruchsvoll
+        # gemischte Schwierigkeit, eher anspruchsvoll, keine zwei Varianten derselben Vorlage
         ids += [f.id for f in _passend_zum_niveau(pool, 2, n)]
     random.shuffle(ids)
     return ids[:anzahl]

@@ -1,0 +1,6237 @@
+{
+ "fragen": [
+  {
+   "schluessel": "G-HW-RAIDKAP-001",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 0** wird aus **4 Festplatten** mit je **12 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 0 (Striping ohne Redundanz): 4 × 12 TB = 48 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 48,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-002",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 10** wird aus **4 Festplatten** mit je **2 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 10 (Spiegelung und Striping kombiniert): 4 × 2 TB ÷ 2 = 4 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-003",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 6** wird aus **7 Festplatten** mit je **4 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 6 (Striping mit doppelter Parität): (7 − 2) × 4 TB = 20 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 20,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-004",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 6** wird aus **5 Festplatten** mit je **2 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 6 (Striping mit doppelter Parität): (5 − 2) × 2 TB = 6 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 6,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-006",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 0** wird aus **2 Festplatten** mit je **8 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 0 (Striping ohne Redundanz): 2 × 8 TB = 16 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 16,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-007",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 0** wird aus **6 Festplatten** mit je **12 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 0 (Striping ohne Redundanz): 6 × 12 TB = 72 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 72,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-008",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 5** wird aus **7 Festplatten** mit je **500 GB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 5 (Striping mit verteilter Parität): (7 − 1) × 0,5 TB = 3 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-009",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 10** wird aus **4 Festplatten** mit je **8 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 10 (Spiegelung und Striping kombiniert): 4 × 8 TB ÷ 2 = 16 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 16,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-010",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 5** wird aus **7 Festplatten** mit je **4 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 5 (Striping mit verteilter Parität): (7 − 1) × 4 TB = 24 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 24,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-011",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 0** wird aus **7 Festplatten** mit je **500 GB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 0 (Striping ohne Redundanz): 7 × 0,5 TB = 3,5 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3.5,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-012",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 0** wird aus **2 Festplatten** mit je **4 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 0 (Striping ohne Redundanz): 2 × 4 TB = 8 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 8,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-013",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 10** wird aus **8 Festplatten** mit je **8 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 10 (Spiegelung und Striping kombiniert): 8 × 8 TB ÷ 2 = 32 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 32,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-015",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 5** wird aus **8 Festplatten** mit je **500 GB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 5 (Striping mit verteilter Parität): (8 − 1) × 0,5 TB = 3,5 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3.5,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-016",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 6** wird aus **7 Festplatten** mit je **8 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 6 (Striping mit doppelter Parität): (7 − 2) × 8 TB = 40 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 40,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-017",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 5** wird aus **5 Festplatten** mit je **1 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 5 (Striping mit verteilter Parität): (5 − 1) × 1 TB = 4 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-018",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 5** wird aus **8 Festplatten** mit je **4 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 5 (Striping mit verteilter Parität): (8 − 1) × 4 TB = 28 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 28,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-019",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 1** wird aus **2 Festplatten** mit je **2 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 1 (Spiegelung): Kapazität einer Platte = 2 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-020",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 6** wird aus **8 Festplatten** mit je **16 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 6 (Striping mit doppelter Parität): (8 − 2) × 16 TB = 96 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 96,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-022",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 5** wird aus **6 Festplatten** mit je **8 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 5 (Striping mit verteilter Parität): (6 − 1) × 8 TB = 40 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 40,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-023",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 0** wird aus **7 Festplatten** mit je **1 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 0 (Striping ohne Redundanz): 7 × 1 TB = 7 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 7,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDKAP-025",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDKAP",
+   "text": "Ein **RAID 1** wird aus **2 Festplatten** mit je **1 TB** gebaut. Wie viel **TB** Nutzkapazität stehen zur Verfügung?",
+   "erklaerung": "RAID 1 (Spiegelung): Kapazität einer Platte = 1 TB.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1,
+   "toleranz": 0.01,
+   "einheit": "TB"
+  },
+  {
+   "schluessel": "G-HW-RAIDANT-001",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDANT",
+   "text": "Wie viel **Prozent** der Bruttokapazität sind bei einem **RAID 0** aus **3 gleich großen Platten** nutzbar? (auf 1 Nachkommastelle)",
+   "erklaerung": "Nutzbar 12 TB von 12 TB = 100 %.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 100,
+   "toleranz": 0.1,
+   "einheit": "%"
+  },
+  {
+   "schluessel": "G-HW-RAIDANT-002",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDANT",
+   "text": "Wie viel **Prozent** der Bruttokapazität sind bei einem **RAID 10** aus **6 gleich großen Platten** nutzbar? (auf 1 Nachkommastelle)",
+   "erklaerung": "Nutzbar 3 TB von 6 TB = 50 %.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 50,
+   "toleranz": 0.1,
+   "einheit": "%"
+  },
+  {
+   "schluessel": "G-HW-RAIDANT-003",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDANT",
+   "text": "Wie viel **Prozent** der Bruttokapazität sind bei einem **RAID 1** aus **2 gleich großen Platten** nutzbar? (auf 1 Nachkommastelle)",
+   "erklaerung": "Nutzbar 4 TB von 8 TB = 50 %.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 50,
+   "toleranz": 0.1,
+   "einheit": "%"
+  },
+  {
+   "schluessel": "G-HW-RAIDANT-004",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDANT",
+   "text": "Wie viel **Prozent** der Bruttokapazität sind bei einem **RAID 6** aus **5 gleich großen Platten** nutzbar? (auf 1 Nachkommastelle)",
+   "erklaerung": "Nutzbar 3 TB von 5 TB = 60 %.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 60,
+   "toleranz": 0.1,
+   "einheit": "%"
+  },
+  {
+   "schluessel": "G-HW-RAIDANT-005",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDANT",
+   "text": "Wie viel **Prozent** der Bruttokapazität sind bei einem **RAID 10** aus **8 gleich großen Platten** nutzbar? (auf 1 Nachkommastelle)",
+   "erklaerung": "Nutzbar 8 TB von 16 TB = 50 %.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 50,
+   "toleranz": 0.1,
+   "einheit": "%"
+  },
+  {
+   "schluessel": "G-HW-RAIDANT-006",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDANT",
+   "text": "Wie viel **Prozent** der Bruttokapazität sind bei einem **RAID 6** aus **6 gleich großen Platten** nutzbar? (auf 1 Nachkommastelle)",
+   "erklaerung": "Nutzbar 32 TB von 48 TB = 66,7 %.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 66.7,
+   "toleranz": 0.1,
+   "einheit": "%"
+  },
+  {
+   "schluessel": "G-HW-RAIDANT-008",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDANT",
+   "text": "Wie viel **Prozent** der Bruttokapazität sind bei einem **RAID 6** aus **4 gleich großen Platten** nutzbar? (auf 1 Nachkommastelle)",
+   "erklaerung": "Nutzbar 16 TB von 32 TB = 50 %.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 50,
+   "toleranz": 0.1,
+   "einheit": "%"
+  },
+  {
+   "schluessel": "G-HW-RAIDMIN-001",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDMIN",
+   "text": "Wie viele Festplatten braucht ein **RAID 0** mindestens?",
+   "erklaerung": "Mindestanzahl: RAID 0 → 2, RAID 1 → 2, RAID 5 → 3, RAID 6 → 4, RAID 10 → 4.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": "Platten"
+  },
+  {
+   "schluessel": "G-HW-RAIDMIN-002",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDMIN",
+   "text": "Wie viele Festplatten braucht ein **RAID 1** mindestens?",
+   "erklaerung": "Mindestanzahl: RAID 0 → 2, RAID 1 → 2, RAID 5 → 3, RAID 6 → 4, RAID 10 → 4.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": "Platten"
+  },
+  {
+   "schluessel": "G-HW-RAIDMIN-003",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDMIN",
+   "text": "Wie viele Festplatten braucht ein **RAID 5** mindestens?",
+   "erklaerung": "Mindestanzahl: RAID 0 → 2, RAID 1 → 2, RAID 5 → 3, RAID 6 → 4, RAID 10 → 4.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3,
+   "toleranz": 0,
+   "einheit": "Platten"
+  },
+  {
+   "schluessel": "G-HW-RAIDMIN-004",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDMIN",
+   "text": "Wie viele Festplatten braucht ein **RAID 6** mindestens?",
+   "erklaerung": "Mindestanzahl: RAID 0 → 2, RAID 1 → 2, RAID 5 → 3, RAID 6 → 4, RAID 10 → 4.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4,
+   "toleranz": 0,
+   "einheit": "Platten"
+  },
+  {
+   "schluessel": "G-HW-RAIDMIN-005",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDMIN",
+   "text": "Wie viele Festplatten braucht ein **RAID 10** mindestens?",
+   "erklaerung": "Mindestanzahl: RAID 0 → 2, RAID 1 → 2, RAID 5 → 3, RAID 6 → 4, RAID 10 → 4.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4,
+   "toleranz": 0,
+   "einheit": "Platten"
+  },
+  {
+   "schluessel": "G-HW-RAIDAUS01-001",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUS01",
+   "text": "Wie viele Plattenausfälle verkraftet ein **RAID 0** ohne Datenverlust?",
+   "erklaerung": "RAID 0 → **keine – fällt eine Platte aus, sind alle Daten verloren**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "keine – fällt eine Platte aus, sind alle Daten verloren",
+     "richtig": true
+    },
+    {
+     "text": "eine Platte pro Spiegelpaar",
+     "richtig": false
+    },
+    {
+     "text": "genau eine beliebige Platte",
+     "richtig": false
+    },
+    {
+     "text": "eine Platte (von zwei)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUS01-002",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUS01",
+   "text": "Welches RAID verkraftet: keine – fällt eine Platte aus, sind alle Daten verloren?",
+   "erklaerung": "RAID 0 → **keine – fällt eine Platte aus, sind alle Daten verloren**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "RAID 0",
+     "richtig": true
+    },
+    {
+     "text": "RAID 1",
+     "richtig": false
+    },
+    {
+     "text": "RAID 5",
+     "richtig": false
+    },
+    {
+     "text": "RAID 6",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUS02-001",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUS02",
+   "text": "Wie viele Plattenausfälle verkraftet ein **RAID 1** ohne Datenverlust?",
+   "erklaerung": "RAID 1 → **eine Platte (von zwei)**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "eine Platte (von zwei)",
+     "richtig": true
+    },
+    {
+     "text": "genau eine beliebige Platte",
+     "richtig": false
+    },
+    {
+     "text": "zwei beliebige Platten",
+     "richtig": false
+    },
+    {
+     "text": "eine Platte pro Spiegelpaar",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUS02-002",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUS02",
+   "text": "Welches RAID verkraftet: eine Platte (von zwei)?",
+   "erklaerung": "RAID 1 → **eine Platte (von zwei)**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "RAID 1",
+     "richtig": true
+    },
+    {
+     "text": "RAID 10",
+     "richtig": false
+    },
+    {
+     "text": "RAID 6",
+     "richtig": false
+    },
+    {
+     "text": "RAID 5",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUS03-001",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUS03",
+   "text": "Wie viele Plattenausfälle verkraftet ein **RAID 5** ohne Datenverlust?",
+   "erklaerung": "RAID 5 → **genau eine beliebige Platte**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "genau eine beliebige Platte",
+     "richtig": true
+    },
+    {
+     "text": "eine Platte pro Spiegelpaar",
+     "richtig": false
+    },
+    {
+     "text": "zwei beliebige Platten",
+     "richtig": false
+    },
+    {
+     "text": "eine Platte (von zwei)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUS03-002",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUS03",
+   "text": "Welches RAID verkraftet: genau eine beliebige Platte?",
+   "erklaerung": "RAID 5 → **genau eine beliebige Platte**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "RAID 5",
+     "richtig": true
+    },
+    {
+     "text": "RAID 0",
+     "richtig": false
+    },
+    {
+     "text": "RAID 1",
+     "richtig": false
+    },
+    {
+     "text": "RAID 10",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUS04-001",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUS04",
+   "text": "Wie viele Plattenausfälle verkraftet ein **RAID 6** ohne Datenverlust?",
+   "erklaerung": "RAID 6 → **zwei beliebige Platten**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "zwei beliebige Platten",
+     "richtig": true
+    },
+    {
+     "text": "genau eine beliebige Platte",
+     "richtig": false
+    },
+    {
+     "text": "eine Platte pro Spiegelpaar",
+     "richtig": false
+    },
+    {
+     "text": "eine Platte (von zwei)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUS04-002",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUS04",
+   "text": "Welches RAID verkraftet: zwei beliebige Platten?",
+   "erklaerung": "RAID 6 → **zwei beliebige Platten**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "RAID 6",
+     "richtig": true
+    },
+    {
+     "text": "RAID 10",
+     "richtig": false
+    },
+    {
+     "text": "RAID 1",
+     "richtig": false
+    },
+    {
+     "text": "RAID 5",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUS05-001",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUS05",
+   "text": "Wie viele Plattenausfälle verkraftet ein **RAID 10** ohne Datenverlust?",
+   "erklaerung": "RAID 10 → **eine Platte pro Spiegelpaar**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "eine Platte pro Spiegelpaar",
+     "richtig": true
+    },
+    {
+     "text": "keine – fällt eine Platte aus, sind alle Daten verloren",
+     "richtig": false
+    },
+    {
+     "text": "zwei beliebige Platten",
+     "richtig": false
+    },
+    {
+     "text": "eine Platte (von zwei)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUS05-002",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUS05",
+   "text": "Welches RAID verkraftet: eine Platte pro Spiegelpaar?",
+   "erklaerung": "RAID 10 → **eine Platte pro Spiegelpaar**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "RAID 10",
+     "richtig": true
+    },
+    {
+     "text": "RAID 5",
+     "richtig": false
+    },
+    {
+     "text": "RAID 0",
+     "richtig": false
+    },
+    {
+     "text": "RAID 6",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDBES01-001",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDBES01",
+   "text": "Was beschreibt **RAID 0**?",
+   "erklaerung": "RAID 0 → **Striping ohne Redundanz, maximale Geschwindigkeit**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Striping ohne Redundanz, maximale Geschwindigkeit",
+     "richtig": true
+    },
+    {
+     "text": "Stripeset aus gespiegelten Plattenpaaren",
+     "richtig": false
+    },
+    {
+     "text": "Spiegelung: alle Daten liegen doppelt vor",
+     "richtig": false
+    },
+    {
+     "text": "verteilte Parität, Nutzkapazität (n − 1) Platten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDBES01-002",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDBES01",
+   "text": "Welches RAID-Level ist das: Striping ohne Redundanz, maximale Geschwindigkeit?",
+   "erklaerung": "RAID 0 → **Striping ohne Redundanz, maximale Geschwindigkeit**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "RAID 0",
+     "richtig": true
+    },
+    {
+     "text": "RAID 1",
+     "richtig": false
+    },
+    {
+     "text": "RAID 6",
+     "richtig": false
+    },
+    {
+     "text": "RAID 10",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDBES02-001",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDBES02",
+   "text": "Was beschreibt **RAID 1**?",
+   "erklaerung": "RAID 1 → **Spiegelung: alle Daten liegen doppelt vor**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Spiegelung: alle Daten liegen doppelt vor",
+     "richtig": true
+    },
+    {
+     "text": "verteilte Parität, Nutzkapazität (n − 1) Platten",
+     "richtig": false
+    },
+    {
+     "text": "Stripeset aus gespiegelten Plattenpaaren",
+     "richtig": false
+    },
+    {
+     "text": "doppelte Parität, Nutzkapazität (n − 2) Platten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDBES02-002",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDBES02",
+   "text": "Welches RAID-Level ist das: Spiegelung: alle Daten liegen doppelt vor?",
+   "erklaerung": "RAID 1 → **Spiegelung: alle Daten liegen doppelt vor**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "RAID 1",
+     "richtig": true
+    },
+    {
+     "text": "RAID 10",
+     "richtig": false
+    },
+    {
+     "text": "RAID 0",
+     "richtig": false
+    },
+    {
+     "text": "RAID 6",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDBES03-001",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDBES03",
+   "text": "Was beschreibt **RAID 5**?",
+   "erklaerung": "RAID 5 → **verteilte Parität, Nutzkapazität (n − 1) Platten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "verteilte Parität, Nutzkapazität (n − 1) Platten",
+     "richtig": true
+    },
+    {
+     "text": "doppelte Parität, Nutzkapazität (n − 2) Platten",
+     "richtig": false
+    },
+    {
+     "text": "Striping ohne Redundanz, maximale Geschwindigkeit",
+     "richtig": false
+    },
+    {
+     "text": "Stripeset aus gespiegelten Plattenpaaren",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDBES03-002",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDBES03",
+   "text": "Welches RAID-Level ist das: verteilte Parität, Nutzkapazität (n − 1) Platten?",
+   "erklaerung": "RAID 5 → **verteilte Parität, Nutzkapazität (n − 1) Platten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "RAID 5",
+     "richtig": true
+    },
+    {
+     "text": "RAID 0",
+     "richtig": false
+    },
+    {
+     "text": "RAID 6",
+     "richtig": false
+    },
+    {
+     "text": "RAID 1",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDBES04-001",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDBES04",
+   "text": "Was beschreibt **RAID 6**?",
+   "erklaerung": "RAID 6 → **doppelte Parität, Nutzkapazität (n − 2) Platten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "doppelte Parität, Nutzkapazität (n − 2) Platten",
+     "richtig": true
+    },
+    {
+     "text": "Striping ohne Redundanz, maximale Geschwindigkeit",
+     "richtig": false
+    },
+    {
+     "text": "Spiegelung: alle Daten liegen doppelt vor",
+     "richtig": false
+    },
+    {
+     "text": "Stripeset aus gespiegelten Plattenpaaren",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDBES04-002",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDBES04",
+   "text": "Welches RAID-Level ist das: doppelte Parität, Nutzkapazität (n − 2) Platten?",
+   "erklaerung": "RAID 6 → **doppelte Parität, Nutzkapazität (n − 2) Platten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "RAID 6",
+     "richtig": true
+    },
+    {
+     "text": "RAID 5",
+     "richtig": false
+    },
+    {
+     "text": "RAID 10",
+     "richtig": false
+    },
+    {
+     "text": "RAID 0",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDBES05-001",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDBES05",
+   "text": "Was beschreibt **RAID 10**?",
+   "erklaerung": "RAID 10 → **Stripeset aus gespiegelten Plattenpaaren**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Stripeset aus gespiegelten Plattenpaaren",
+     "richtig": true
+    },
+    {
+     "text": "doppelte Parität, Nutzkapazität (n − 2) Platten",
+     "richtig": false
+    },
+    {
+     "text": "Striping ohne Redundanz, maximale Geschwindigkeit",
+     "richtig": false
+    },
+    {
+     "text": "verteilte Parität, Nutzkapazität (n − 1) Platten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDBES05-002",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDBES05",
+   "text": "Welches RAID-Level ist das: Stripeset aus gespiegelten Plattenpaaren?",
+   "erklaerung": "RAID 10 → **Stripeset aus gespiegelten Plattenpaaren**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "RAID 10",
+     "richtig": true
+    },
+    {
+     "text": "RAID 1",
+     "richtig": false
+    },
+    {
+     "text": "RAID 0",
+     "richtig": false
+    },
+    {
+     "text": "RAID 5",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUSS-001",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUSS",
+   "text": "Welche Aussagen zu RAID treffen zu?",
+   "erklaerung": "Richtig sind: RAID 0 erhöht die Lese- und Schreibgeschwindigkeit.; Ein RAID ersetzt keine Datensicherung..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "RAID 0 erhöht die Lese- und Schreibgeschwindigkeit.",
+     "richtig": true
+    },
+    {
+     "text": "Ein RAID ersetzt keine Datensicherung.",
+     "richtig": true
+    },
+    {
+     "text": "RAID schützt vor versehentlichem Löschen.",
+     "richtig": false
+    },
+    {
+     "text": "RAID 0 schützt vor Datenverlust bei Plattenausfall.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUSS-002",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUSS",
+   "text": "Welche Aussagen zu RAID treffen zu?",
+   "erklaerung": "Richtig sind: Ein Hot-Spare springt automatisch für eine ausgefallene Platte ein.; RAID 0 erhöht die Lese- und Schreibgeschwindigkeit.; Bei RAID 5 wird die Parität über alle Platten verteilt..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Ein Hot-Spare springt automatisch für eine ausgefallene Platte ein.",
+     "richtig": true
+    },
+    {
+     "text": "RAID 0 erhöht die Lese- und Schreibgeschwindigkeit.",
+     "richtig": true
+    },
+    {
+     "text": "Bei RAID 5 wird die Parität über alle Platten verteilt.",
+     "richtig": true
+    },
+    {
+     "text": "RAID schützt vor versehentlichem Löschen.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUSS-003",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUSS",
+   "text": "Welche Aussagen zu RAID treffen zu?",
+   "erklaerung": "Richtig sind: Bei RAID 5 wird die Parität über alle Platten verteilt.; RAID 1 erhöht die Ausfallsicherheit..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Bei RAID 5 wird die Parität über alle Platten verteilt.",
+     "richtig": true
+    },
+    {
+     "text": "RAID 1 erhöht die Ausfallsicherheit.",
+     "richtig": true
+    },
+    {
+     "text": "RAID schützt vor versehentlichem Löschen.",
+     "richtig": false
+    },
+    {
+     "text": "Ein RAID 5 kann mit zwei Platten aufgebaut werden.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUSS-004",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUSS",
+   "text": "Welche Aussagen zu RAID treffen zu?",
+   "erklaerung": "Richtig sind: Ein Hot-Spare springt automatisch für eine ausgefallene Platte ein.; Ein RAID ersetzt keine Datensicherung.; RAID 1 erhöht die Ausfallsicherheit..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Ein Hot-Spare springt automatisch für eine ausgefallene Platte ein.",
+     "richtig": true
+    },
+    {
+     "text": "Ein RAID ersetzt keine Datensicherung.",
+     "richtig": true
+    },
+    {
+     "text": "RAID 1 erhöht die Ausfallsicherheit.",
+     "richtig": true
+    },
+    {
+     "text": "Ransomware kann einem RAID 6 nichts anhaben.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUSS-005",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUSS",
+   "text": "Welche Aussagen zu RAID treffen zu?",
+   "erklaerung": "Richtig sind: RAID 1 erhöht die Ausfallsicherheit.; RAID 0 erhöht die Lese- und Schreibgeschwindigkeit..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "RAID 1 erhöht die Ausfallsicherheit.",
+     "richtig": true
+    },
+    {
+     "text": "RAID 0 erhöht die Lese- und Schreibgeschwindigkeit.",
+     "richtig": true
+    },
+    {
+     "text": "RAID schützt vor versehentlichem Löschen.",
+     "richtig": false
+    },
+    {
+     "text": "RAID 1 verdoppelt die nutzbare Kapazität.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUSS-006",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUSS",
+   "text": "Welche Aussagen zu RAID treffen zu?",
+   "erklaerung": "Richtig sind: RAID 1 erhöht die Ausfallsicherheit..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "RAID 1 erhöht die Ausfallsicherheit.",
+     "richtig": true
+    },
+    {
+     "text": "RAID schützt vor versehentlichem Löschen.",
+     "richtig": false
+    },
+    {
+     "text": "Ransomware kann einem RAID 6 nichts anhaben.",
+     "richtig": false
+    },
+    {
+     "text": "RAID 0 schützt vor Datenverlust bei Plattenausfall.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUSS-007",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUSS",
+   "text": "Welche Aussagen zu RAID treffen zu?",
+   "erklaerung": "Richtig sind: Bei RAID 5 wird die Parität über alle Platten verteilt..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Bei RAID 5 wird die Parität über alle Platten verteilt.",
+     "richtig": true
+    },
+    {
+     "text": "Ransomware kann einem RAID 6 nichts anhaben.",
+     "richtig": false
+    },
+    {
+     "text": "Ein RAID 5 kann mit zwei Platten aufgebaut werden.",
+     "richtig": false
+    },
+    {
+     "text": "RAID 1 verdoppelt die nutzbare Kapazität.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUSS-008",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUSS",
+   "text": "Welche Aussagen zu RAID treffen zu?",
+   "erklaerung": "Richtig sind: Bei RAID 5 wird die Parität über alle Platten verteilt.; RAID 0 erhöht die Lese- und Schreibgeschwindigkeit.; RAID 1 erhöht die Ausfallsicherheit..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Bei RAID 5 wird die Parität über alle Platten verteilt.",
+     "richtig": true
+    },
+    {
+     "text": "RAID 0 erhöht die Lese- und Schreibgeschwindigkeit.",
+     "richtig": true
+    },
+    {
+     "text": "RAID 1 erhöht die Ausfallsicherheit.",
+     "richtig": true
+    },
+    {
+     "text": "Ein RAID 5 kann mit zwei Platten aufgebaut werden.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUSS-009",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUSS",
+   "text": "Welche Aussagen zu RAID treffen zu?",
+   "erklaerung": "Richtig sind: Bei RAID 5 wird die Parität über alle Platten verteilt..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Bei RAID 5 wird die Parität über alle Platten verteilt.",
+     "richtig": true
+    },
+    {
+     "text": "RAID 1 verdoppelt die nutzbare Kapazität.",
+     "richtig": false
+    },
+    {
+     "text": "Ransomware kann einem RAID 6 nichts anhaben.",
+     "richtig": false
+    },
+    {
+     "text": "RAID schützt vor versehentlichem Löschen.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAIDAUSS-010",
+   "thema": "hardware",
+   "lektion": "HW-L3",
+   "gruppe": "HW-RAIDAUSS",
+   "text": "Welche Aussagen zu RAID treffen zu?",
+   "erklaerung": "Richtig sind: Bei RAID 5 wird die Parität über alle Platten verteilt.; Ein RAID ersetzt keine Datensicherung..",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Bei RAID 5 wird die Parität über alle Platten verteilt.",
+     "richtig": true
+    },
+    {
+     "text": "Ein RAID ersetzt keine Datensicherung.",
+     "richtig": true
+    },
+    {
+     "text": "Ein RAID 5 kann mit zwei Platten aufgebaut werden.",
+     "richtig": false
+    },
+    {
+     "text": "RAID 1 verdoppelt die nutzbare Kapazität.",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-001",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein Bürorechner nimmt **60 W** auf und läuft **24 h am Tag** an **365 Tagen** im Jahr. Strompreis **0,28 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "60 W × 24 h × 365 = 525.600 Wh = 525,6 kWh; × 0,28 € = 147,17 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 147.17,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-002",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein NAS nimmt **30 W** auf und läuft **8 h am Tag** an **220 Tagen** im Jahr. Strompreis **0,3 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "30 W × 8 h × 220 = 52.800 Wh = 52,8 kWh; × 0,3 € = 15,84 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 15.84,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-003",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein Laserdrucker nimmt **35 W** auf und läuft **24 h am Tag** an **365 Tagen** im Jahr. Strompreis **0,4 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "35 W × 24 h × 365 = 306.600 Wh = 306,6 kWh; × 0,4 € = 122,64 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 122.64,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-004",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein Server nimmt **195 W** auf und läuft **12 h am Tag** an **250 Tagen** im Jahr. Strompreis **0,28 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "195 W × 12 h × 250 = 585.000 Wh = 585 kWh; × 0,28 € = 163,80 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 163.8,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-005",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein NAS nimmt **40 W** auf und läuft **12 h am Tag** an **250 Tagen** im Jahr. Strompreis **0,28 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "40 W × 12 h × 250 = 120.000 Wh = 120 kWh; × 0,28 € = 33,60 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 33.6,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-006",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein Notebook nimmt **40 W** auf und läuft **24 h am Tag** an **365 Tagen** im Jahr. Strompreis **0,3 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "40 W × 24 h × 365 = 350.400 Wh = 350,4 kWh; × 0,3 € = 105,12 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 105.12,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-007",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein Server nimmt **250 W** auf und läuft **24 h am Tag** an **365 Tagen** im Jahr. Strompreis **0,3 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "250 W × 24 h × 365 = 2.190.000 Wh = 2.190 kWh; × 0,3 € = 657,00 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 657,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-008",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein Bürorechner nimmt **60 W** auf und läuft **24 h am Tag** an **365 Tagen** im Jahr. Strompreis **0,35 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "60 W × 24 h × 365 = 525.600 Wh = 525,6 kWh; × 0,35 € = 183,96 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 183.96,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-009",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein Switch nimmt **35 W** auf und läuft **12 h am Tag** an **220 Tagen** im Jahr. Strompreis **0,4 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "35 W × 12 h × 220 = 92.400 Wh = 92,4 kWh; × 0,4 € = 36,96 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 36.96,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-010",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein Server nimmt **425 W** auf und läuft **24 h am Tag** an **365 Tagen** im Jahr. Strompreis **0,3 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "425 W × 24 h × 365 = 3.723.000 Wh = 3.723 kWh; × 0,3 € = 1.116,90 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1116.9,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-011",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein Bürorechner nimmt **50 W** auf und läuft **12 h am Tag** an **220 Tagen** im Jahr. Strompreis **0,35 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "50 W × 12 h × 220 = 132.000 Wh = 132 kWh; × 0,35 € = 46,20 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 46.2,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-012",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein NAS nimmt **30 W** auf und läuft **10 h am Tag** an **365 Tagen** im Jahr. Strompreis **0,38 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "30 W × 10 h × 365 = 109.500 Wh = 109,5 kWh; × 0,38 € = 41,61 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 41.61,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-013",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein NAS nimmt **40 W** auf und läuft **10 h am Tag** an **250 Tagen** im Jahr. Strompreis **0,32 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "40 W × 10 h × 250 = 100.000 Wh = 100 kWh; × 0,32 € = 32,00 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 32,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-014",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein Bürorechner nimmt **90 W** auf und läuft **12 h am Tag** an **250 Tagen** im Jahr. Strompreis **0,28 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "90 W × 12 h × 250 = 270.000 Wh = 270 kWh; × 0,28 € = 75,60 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 75.6,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-015",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein Switch nimmt **45 W** auf und läuft **10 h am Tag** an **250 Tagen** im Jahr. Strompreis **0,32 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "45 W × 10 h × 250 = 112.500 Wh = 112,5 kWh; × 0,32 € = 36,00 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 36,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-016",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein Server nimmt **355 W** auf und läuft **10 h am Tag** an **220 Tagen** im Jahr. Strompreis **0,28 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "355 W × 10 h × 220 = 781.000 Wh = 781 kWh; × 0,28 € = 218,68 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 218.68,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-017",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein Bürorechner nimmt **85 W** auf und läuft **12 h am Tag** an **220 Tagen** im Jahr. Strompreis **0,3 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "85 W × 12 h × 220 = 224.400 Wh = 224,4 kWh; × 0,3 € = 67,32 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 67.32,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-018",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein Monitor nimmt **28 W** auf und läuft **24 h am Tag** an **365 Tagen** im Jahr. Strompreis **0,35 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "28 W × 24 h × 365 = 245.280 Wh = 245,28 kWh; × 0,35 € = 85,85 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 85.85,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-019",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein Switch nimmt **35 W** auf und läuft **24 h am Tag** an **365 Tagen** im Jahr. Strompreis **0,28 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "35 W × 24 h × 365 = 306.600 Wh = 306,6 kWh; × 0,28 € = 85,85 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 85.85,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-STROMKOSTEN-020",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-STROMKOSTEN",
+   "text": "Ein Laserdrucker nimmt **465 W** auf und läuft **12 h am Tag** an **250 Tagen** im Jahr. Strompreis **0,32 €/kWh**. Wie hoch sind die jährlichen Stromkosten?",
+   "erklaerung": "465 W × 12 h × 250 = 1.395.000 Wh = 1.395 kWh; × 0,32 € = 446,40 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 446.4,
+   "toleranz": 0.02,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-KWH-001",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-KWH",
+   "text": "Ein Gerät mit **1200 W** läuft **10 Stunden**. Wie viele **kWh** verbraucht es?",
+   "erklaerung": "1200 W × 10 h = 12.000 Wh = 12 kWh.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 12,
+   "toleranz": 0.001,
+   "einheit": "kWh"
+  },
+  {
+   "schluessel": "G-HW-KWH-002",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-KWH",
+   "text": "Ein Gerät mit **35 W** läuft **10 Stunden**. Wie viele **kWh** verbraucht es?",
+   "erklaerung": "35 W × 10 h = 350 Wh = 0,35 kWh.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.35,
+   "toleranz": 0.001,
+   "einheit": "kWh"
+  },
+  {
+   "schluessel": "G-HW-KWH-003",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-KWH",
+   "text": "Ein Gerät mit **650 W** läuft **5 Stunden**. Wie viele **kWh** verbraucht es?",
+   "erklaerung": "650 W × 5 h = 3.250 Wh = 3,25 kWh.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3.25,
+   "toleranz": 0.001,
+   "einheit": "kWh"
+  },
+  {
+   "schluessel": "G-HW-KWH-004",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-KWH",
+   "text": "Ein Gerät mit **250 W** läuft **100 Stunden**. Wie viele **kWh** verbraucht es?",
+   "erklaerung": "250 W × 100 h = 25.000 Wh = 25 kWh.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 25,
+   "toleranz": 0.001,
+   "einheit": "kWh"
+  },
+  {
+   "schluessel": "G-HW-KWH-005",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-KWH",
+   "text": "Ein Gerät mit **100 W** läuft **10 Stunden**. Wie viele **kWh** verbraucht es?",
+   "erklaerung": "100 W × 10 h = 1.000 Wh = 1 kWh.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1,
+   "toleranz": 0.001,
+   "einheit": "kWh"
+  },
+  {
+   "schluessel": "G-HW-KWH-006",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-KWH",
+   "text": "Ein Gerät mit **150 W** läuft **5 Stunden**. Wie viele **kWh** verbraucht es?",
+   "erklaerung": "150 W × 5 h = 750 Wh = 0,75 kWh.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.75,
+   "toleranz": 0.001,
+   "einheit": "kWh"
+  },
+  {
+   "schluessel": "G-HW-KWH-007",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-KWH",
+   "text": "Ein Gerät mit **20 W** läuft **1 Stunden**. Wie viele **kWh** verbraucht es?",
+   "erklaerung": "20 W × 1 h = 20 Wh = 0,02 kWh.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.02,
+   "toleranz": 0.001,
+   "einheit": "kWh"
+  },
+  {
+   "schluessel": "G-HW-KWH-008",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-KWH",
+   "text": "Ein Gerät mit **20 W** läuft **2 Stunden**. Wie viele **kWh** verbraucht es?",
+   "erklaerung": "20 W × 2 h = 40 Wh = 0,04 kWh.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.04,
+   "toleranz": 0.001,
+   "einheit": "kWh"
+  },
+  {
+   "schluessel": "G-HW-KWH-009",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-KWH",
+   "text": "Ein Gerät mit **35 W** läuft **5 Stunden**. Wie viele **kWh** verbraucht es?",
+   "erklaerung": "35 W × 5 h = 175 Wh = 0,175 kWh.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.175,
+   "toleranz": 0.001,
+   "einheit": "kWh"
+  },
+  {
+   "schluessel": "G-HW-KWH-010",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-KWH",
+   "text": "Ein Gerät mit **250 W** läuft **10 Stunden**. Wie viele **kWh** verbraucht es?",
+   "erklaerung": "250 W × 10 h = 2.500 Wh = 2,5 kWh.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2.5,
+   "toleranz": 0.001,
+   "einheit": "kWh"
+  },
+  {
+   "schluessel": "G-HW-KWH-011",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-KWH",
+   "text": "Ein Gerät mit **400 W** läuft **2 Stunden**. Wie viele **kWh** verbraucht es?",
+   "erklaerung": "400 W × 2 h = 800 Wh = 0,8 kWh.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.8,
+   "toleranz": 0.001,
+   "einheit": "kWh"
+  },
+  {
+   "schluessel": "G-HW-KWH-012",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-KWH",
+   "text": "Ein Gerät mit **100 W** läuft **2 Stunden**. Wie viele **kWh** verbraucht es?",
+   "erklaerung": "100 W × 2 h = 200 Wh = 0,2 kWh.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.2,
+   "toleranz": 0.001,
+   "einheit": "kWh"
+  },
+  {
+   "schluessel": "G-HW-KWH-013",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-KWH",
+   "text": "Ein Gerät mit **60 W** läuft **10 Stunden**. Wie viele **kWh** verbraucht es?",
+   "erklaerung": "60 W × 10 h = 600 Wh = 0,6 kWh.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.6,
+   "toleranz": 0.001,
+   "einheit": "kWh"
+  },
+  {
+   "schluessel": "G-HW-KWH-014",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-KWH",
+   "text": "Ein Gerät mit **60 W** läuft **1 Stunden**. Wie viele **kWh** verbraucht es?",
+   "erklaerung": "60 W × 1 h = 60 Wh = 0,06 kWh.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 0.06,
+   "toleranz": 0.001,
+   "einheit": "kWh"
+  },
+  {
+   "schluessel": "G-HW-OHM-001",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-OHM",
+   "text": "Ein Netzteil liefert **12 W** bei **12 V**. Welche Stromstärke in **Ampere** fließt?",
+   "erklaerung": "I = P ÷ U = 12 W ÷ 12 V = 1 A.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1,
+   "toleranz": 0.01,
+   "einheit": "A"
+  },
+  {
+   "schluessel": "G-HW-OHM-002",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-OHM",
+   "text": "Ein Gerät wird mit **230 V** betrieben und nimmt **2 A** auf. Welche Leistung in **Watt** hat es?",
+   "erklaerung": "P = U × I = 230 V × 2 A = 460 W.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 460,
+   "toleranz": 0.01,
+   "einheit": "W"
+  },
+  {
+   "schluessel": "G-HW-OHM-003",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-OHM",
+   "text": "Ein Netzteil liefert **12,5 W** bei **5 V**. Welche Stromstärke in **Ampere** fließt?",
+   "erklaerung": "I = P ÷ U = 12,5 W ÷ 5 V = 2,5 A.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2.5,
+   "toleranz": 0.01,
+   "einheit": "A"
+  },
+  {
+   "schluessel": "G-HW-OHM-004",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-OHM",
+   "text": "Ein Netzteil liefert **1.495 W** bei **230 V**. Welche Stromstärke in **Ampere** fließt?",
+   "erklaerung": "I = P ÷ U = 1.495 W ÷ 230 V = 6,5 A.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 6.5,
+   "toleranz": 0.01,
+   "einheit": "A"
+  },
+  {
+   "schluessel": "G-HW-OHM-005",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-OHM",
+   "text": "Ein Gerät wird mit **12 V** betrieben und nimmt **3 A** auf. Welche Leistung in **Watt** hat es?",
+   "erklaerung": "P = U × I = 12 V × 3 A = 36 W.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 36,
+   "toleranz": 0.01,
+   "einheit": "W"
+  },
+  {
+   "schluessel": "G-HW-OHM-006",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-OHM",
+   "text": "Ein Gerät wird mit **12 V** betrieben und nimmt **1,5 A** auf. Welche Leistung in **Watt** hat es?",
+   "erklaerung": "P = U × I = 12 V × 1,5 A = 18 W.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 18,
+   "toleranz": 0.01,
+   "einheit": "W"
+  },
+  {
+   "schluessel": "G-HW-OHM-007",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-OHM",
+   "text": "Ein Netzteil liefert **50 W** bei **5 V**. Welche Stromstärke in **Ampere** fließt?",
+   "erklaerung": "I = P ÷ U = 50 W ÷ 5 V = 10 A.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 10,
+   "toleranz": 0.01,
+   "einheit": "A"
+  },
+  {
+   "schluessel": "G-HW-OHM-008",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-OHM",
+   "text": "Ein Netzteil liefert **36 W** bei **12 V**. Welche Stromstärke in **Ampere** fließt?",
+   "erklaerung": "I = P ÷ U = 36 W ÷ 12 V = 3 A.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3,
+   "toleranz": 0.01,
+   "einheit": "A"
+  },
+  {
+   "schluessel": "G-HW-OHM-010",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-OHM",
+   "text": "Ein Gerät wird mit **230 V** betrieben und nimmt **6,5 A** auf. Welche Leistung in **Watt** hat es?",
+   "erklaerung": "P = U × I = 230 V × 6,5 A = 1.495 W.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1495,
+   "toleranz": 0.01,
+   "einheit": "W"
+  },
+  {
+   "schluessel": "G-HW-OHM-012",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-OHM",
+   "text": "Ein Netzteil liefert **24 W** bei **12 V**. Welche Stromstärke in **Ampere** fließt?",
+   "erklaerung": "I = P ÷ U = 24 W ÷ 12 V = 2 A.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0.01,
+   "einheit": "A"
+  },
+  {
+   "schluessel": "G-HW-OHM-013",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-OHM",
+   "text": "Ein Netzteil liefert **18 W** bei **12 V**. Welche Stromstärke in **Ampere** fließt?",
+   "erklaerung": "I = P ÷ U = 18 W ÷ 12 V = 1,5 A.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1.5,
+   "toleranz": 0.01,
+   "einheit": "A"
+  },
+  {
+   "schluessel": "G-HW-OHM-014",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-OHM",
+   "text": "Ein Netzteil liefert **30 W** bei **12 V**. Welche Stromstärke in **Ampere** fließt?",
+   "erklaerung": "I = P ÷ U = 30 W ÷ 12 V = 2,5 A.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2.5,
+   "toleranz": 0.01,
+   "einheit": "A"
+  },
+  {
+   "schluessel": "G-HW-ERSPARNIS-001",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-ERSPARNIS",
+   "text": "**60 alte PCs** mit je **150 W** werden durch Geräte mit **40 W** ersetzt. Betrieb **8 h/Tag** an **250 Tagen**, **0,32 €/kWh**. Wie viel € werden pro Jahr gespart?",
+   "erklaerung": "Differenz 110 W × 60 Geräte × 8 h × 250 Tage = 13.200 kWh; × 0,32 € = 4.224,00 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4224,
+   "toleranz": 0.05,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-ERSPARNIS-002",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-ERSPARNIS",
+   "text": "**15 alte PCs** mit je **120 W** werden durch Geräte mit **80 W** ersetzt. Betrieb **8 h/Tag** an **230 Tagen**, **0,35 €/kWh**. Wie viel € werden pro Jahr gespart?",
+   "erklaerung": "Differenz 40 W × 15 Geräte × 8 h × 230 Tage = 1.104 kWh; × 0,35 € = 386,40 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 386.4,
+   "toleranz": 0.05,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-ERSPARNIS-003",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-ERSPARNIS",
+   "text": "**10 alte PCs** mit je **150 W** werden durch Geräte mit **40 W** ersetzt. Betrieb **8 h/Tag** an **220 Tagen**, **0,32 €/kWh**. Wie viel € werden pro Jahr gespart?",
+   "erklaerung": "Differenz 110 W × 10 Geräte × 8 h × 220 Tage = 1.936 kWh; × 0,32 € = 619,52 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 619.52,
+   "toleranz": 0.05,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-ERSPARNIS-004",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-ERSPARNIS",
+   "text": "**15 alte PCs** mit je **120 W** werden durch Geräte mit **40 W** ersetzt. Betrieb **10 h/Tag** an **250 Tagen**, **0,3 €/kWh**. Wie viel € werden pro Jahr gespart?",
+   "erklaerung": "Differenz 80 W × 15 Geräte × 10 h × 250 Tage = 3.000 kWh; × 0,3 € = 900,00 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 900,
+   "toleranz": 0.05,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-ERSPARNIS-005",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-ERSPARNIS",
+   "text": "**40 alte PCs** mit je **150 W** werden durch Geräte mit **80 W** ersetzt. Betrieb **8 h/Tag** an **230 Tagen**, **0,32 €/kWh**. Wie viel € werden pro Jahr gespart?",
+   "erklaerung": "Differenz 70 W × 40 Geräte × 8 h × 230 Tage = 5.152 kWh; × 0,32 € = 1.648,64 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1648.64,
+   "toleranz": 0.05,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-ERSPARNIS-006",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-ERSPARNIS",
+   "text": "**20 alte PCs** mit je **200 W** werden durch Geräte mit **60 W** ersetzt. Betrieb **8 h/Tag** an **220 Tagen**, **0,35 €/kWh**. Wie viel € werden pro Jahr gespart?",
+   "erklaerung": "Differenz 140 W × 20 Geräte × 8 h × 220 Tage = 4.928 kWh; × 0,35 € = 1.724,80 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1724.8,
+   "toleranz": 0.05,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-ERSPARNIS-007",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-ERSPARNIS",
+   "text": "**60 alte PCs** mit je **350 W** werden durch Geräte mit **80 W** ersetzt. Betrieb **10 h/Tag** an **250 Tagen**, **0,32 €/kWh**. Wie viel € werden pro Jahr gespart?",
+   "erklaerung": "Differenz 270 W × 60 Geräte × 10 h × 250 Tage = 40.500 kWh; × 0,32 € = 12.960,00 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 12960,
+   "toleranz": 0.05,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-ERSPARNIS-008",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-ERSPARNIS",
+   "text": "**40 alte PCs** mit je **120 W** werden durch Geräte mit **100 W** ersetzt. Betrieb **8 h/Tag** an **220 Tagen**, **0,3 €/kWh**. Wie viel € werden pro Jahr gespart?",
+   "erklaerung": "Differenz 20 W × 40 Geräte × 8 h × 220 Tage = 1.408 kWh; × 0,3 € = 422,40 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 422.4,
+   "toleranz": 0.05,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-ERSPARNIS-009",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-ERSPARNIS",
+   "text": "**25 alte PCs** mit je **350 W** werden durch Geräte mit **40 W** ersetzt. Betrieb **8 h/Tag** an **230 Tagen**, **0,35 €/kWh**. Wie viel € werden pro Jahr gespart?",
+   "erklaerung": "Differenz 310 W × 25 Geräte × 8 h × 230 Tage = 14.260 kWh; × 0,35 € = 4.991,00 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 4991,
+   "toleranz": 0.05,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-ERSPARNIS-010",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-ERSPARNIS",
+   "text": "**20 alte PCs** mit je **200 W** werden durch Geräte mit **100 W** ersetzt. Betrieb **8 h/Tag** an **230 Tagen**, **0,3 €/kWh**. Wie viel € werden pro Jahr gespart?",
+   "erklaerung": "Differenz 100 W × 20 Geräte × 8 h × 230 Tage = 3.680 kWh; × 0,3 € = 1.104,00 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1104,
+   "toleranz": 0.05,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-ERSPARNIS-011",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-ERSPARNIS",
+   "text": "**15 alte PCs** mit je **200 W** werden durch Geräte mit **40 W** ersetzt. Betrieb **10 h/Tag** an **230 Tagen**, **0,35 €/kWh**. Wie viel € werden pro Jahr gespart?",
+   "erklaerung": "Differenz 160 W × 15 Geräte × 10 h × 230 Tage = 5.520 kWh; × 0,35 € = 1.932,00 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1932,
+   "toleranz": 0.05,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-ERSPARNIS-012",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-ERSPARNIS",
+   "text": "**20 alte PCs** mit je **200 W** werden durch Geräte mit **40 W** ersetzt. Betrieb **8 h/Tag** an **250 Tagen**, **0,32 €/kWh**. Wie viel € werden pro Jahr gespart?",
+   "erklaerung": "Differenz 160 W × 20 Geräte × 8 h × 250 Tage = 6.400 kWh; × 0,32 € = 2.048,00 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2048,
+   "toleranz": 0.05,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-ERSPARNIS-013",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-ERSPARNIS",
+   "text": "**60 alte PCs** mit je **120 W** werden durch Geräte mit **100 W** ersetzt. Betrieb **10 h/Tag** an **230 Tagen**, **0,35 €/kWh**. Wie viel € werden pro Jahr gespart?",
+   "erklaerung": "Differenz 20 W × 60 Geräte × 10 h × 230 Tage = 2.760 kWh; × 0,35 € = 966,00 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 966,
+   "toleranz": 0.05,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-ERSPARNIS-014",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-ERSPARNIS",
+   "text": "**40 alte PCs** mit je **120 W** werden durch Geräte mit **40 W** ersetzt. Betrieb **10 h/Tag** an **220 Tagen**, **0,32 €/kWh**. Wie viel € werden pro Jahr gespart?",
+   "erklaerung": "Differenz 80 W × 40 Geräte × 10 h × 220 Tage = 7.040 kWh; × 0,32 € = 2.252,80 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2252.8,
+   "toleranz": 0.05,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-ERSPARNIS-015",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-ERSPARNIS",
+   "text": "**25 alte PCs** mit je **120 W** werden durch Geräte mit **60 W** ersetzt. Betrieb **10 h/Tag** an **250 Tagen**, **0,35 €/kWh**. Wie viel € werden pro Jahr gespart?",
+   "erklaerung": "Differenz 60 W × 25 Geräte × 10 h × 250 Tage = 3.750 kWh; × 0,35 € = 1.312,50 €.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1312.5,
+   "toleranz": 0.05,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-USV-001",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-USV",
+   "text": "Eine USV hat einen Energiespeicher von **450 Wh**. Davon sind nur **80 %** nutzbar. Die angeschlossenen Geräte nehmen **200 W** auf. Wie viele **Minuten** überbrückt sie? (auf 1 Nachkommastelle)",
+   "erklaerung": "450 Wh × 0,8 ÷ 200 W = 1,8 h × 60 = 108 min.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 108,
+   "toleranz": 0.1,
+   "einheit": "min"
+  },
+  {
+   "schluessel": "G-HW-USV-002",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-USV",
+   "text": "Eine USV hat einen Energiespeicher von **300 Wh**. Davon sind nur **90 %** nutzbar. Die angeschlossenen Geräte nehmen **600 W** auf. Wie viele **Minuten** überbrückt sie? (auf 1 Nachkommastelle)",
+   "erklaerung": "300 Wh × 0,9 ÷ 600 W = 0,45 h × 60 = 27 min.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 27,
+   "toleranz": 0.1,
+   "einheit": "min"
+  },
+  {
+   "schluessel": "G-HW-USV-003",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-USV",
+   "text": "Eine USV hat einen Energiespeicher von **900 Wh**. Davon sind nur **90 %** nutzbar. Die angeschlossenen Geräte nehmen **600 W** auf. Wie viele **Minuten** überbrückt sie? (auf 1 Nachkommastelle)",
+   "erklaerung": "900 Wh × 0,9 ÷ 600 W = 1,35 h × 60 = 81 min.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 81,
+   "toleranz": 0.1,
+   "einheit": "min"
+  },
+  {
+   "schluessel": "G-HW-USV-004",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-USV",
+   "text": "Eine USV hat einen Energiespeicher von **1500 Wh**. Davon sind nur **80 %** nutzbar. Die angeschlossenen Geräte nehmen **200 W** auf. Wie viele **Minuten** überbrückt sie? (auf 1 Nachkommastelle)",
+   "erklaerung": "1500 Wh × 0,8 ÷ 200 W = 6 h × 60 = 360 min.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 360,
+   "toleranz": 0.1,
+   "einheit": "min"
+  },
+  {
+   "schluessel": "G-HW-USV-005",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-USV",
+   "text": "Eine USV hat einen Energiespeicher von **900 Wh**. Die angeschlossenen Geräte nehmen **200 W** auf. Wie viele **Minuten** überbrückt sie? (auf 1 Nachkommastelle)",
+   "erklaerung": "900 Wh ÷ 200 W = 4,5 h × 60 = 270 min.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 270,
+   "toleranz": 0.1,
+   "einheit": "min"
+  },
+  {
+   "schluessel": "G-HW-USV-007",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-USV",
+   "text": "Eine USV hat einen Energiespeicher von **900 Wh**. Davon sind nur **90 %** nutzbar. Die angeschlossenen Geräte nehmen **200 W** auf. Wie viele **Minuten** überbrückt sie? (auf 1 Nachkommastelle)",
+   "erklaerung": "900 Wh × 0,9 ÷ 200 W = 4,05 h × 60 = 243 min.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 243,
+   "toleranz": 0.1,
+   "einheit": "min"
+  },
+  {
+   "schluessel": "G-HW-USV-008",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-USV",
+   "text": "Eine USV hat einen Energiespeicher von **600 Wh**. Davon sind nur **80 %** nutzbar. Die angeschlossenen Geräte nehmen **150 W** auf. Wie viele **Minuten** überbrückt sie? (auf 1 Nachkommastelle)",
+   "erklaerung": "600 Wh × 0,8 ÷ 150 W = 3,2 h × 60 = 192 min.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 192,
+   "toleranz": 0.1,
+   "einheit": "min"
+  },
+  {
+   "schluessel": "G-HW-USV-009",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-USV",
+   "text": "Eine USV hat einen Energiespeicher von **300 Wh**. Die angeschlossenen Geräte nehmen **600 W** auf. Wie viele **Minuten** überbrückt sie? (auf 1 Nachkommastelle)",
+   "erklaerung": "300 Wh ÷ 600 W = 0,5 h × 60 = 30 min.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 30,
+   "toleranz": 0.1,
+   "einheit": "min"
+  },
+  {
+   "schluessel": "G-HW-USV-010",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-USV",
+   "text": "Eine USV hat einen Energiespeicher von **450 Wh**. Die angeschlossenen Geräte nehmen **400 W** auf. Wie viele **Minuten** überbrückt sie? (auf 1 Nachkommastelle)",
+   "erklaerung": "450 Wh ÷ 400 W = 1,125 h × 60 = 67,5 min.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 67.5,
+   "toleranz": 0.1,
+   "einheit": "min"
+  },
+  {
+   "schluessel": "G-HW-USV-012",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-USV",
+   "text": "Eine USV hat einen Energiespeicher von **900 Wh**. Davon sind nur **80 %** nutzbar. Die angeschlossenen Geräte nehmen **450 W** auf. Wie viele **Minuten** überbrückt sie? (auf 1 Nachkommastelle)",
+   "erklaerung": "900 Wh × 0,8 ÷ 450 W = 1,6 h × 60 = 96 min.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 96,
+   "toleranz": 0.1,
+   "einheit": "min"
+  },
+  {
+   "schluessel": "G-HW-VA-001",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-VA",
+   "text": "Eine USV hat eine Scheinleistung von **1000 VA** und einen Leistungsfaktor von **0,8**. Wie viel Wirkleistung in **W** kann sie liefern?",
+   "erklaerung": "P = S × cos φ = 1000 VA × 0,8 = 800 W.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 800,
+   "toleranz": 0.01,
+   "einheit": "W"
+  },
+  {
+   "schluessel": "G-HW-VA-003",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-VA",
+   "text": "Eine USV hat eine Scheinleistung von **500 VA** und einen Leistungsfaktor von **0,7**. Wie viel Wirkleistung in **W** kann sie liefern?",
+   "erklaerung": "P = S × cos φ = 500 VA × 0,7 = 350 W.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 350,
+   "toleranz": 0.01,
+   "einheit": "W"
+  },
+  {
+   "schluessel": "G-HW-VA-004",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-VA",
+   "text": "Eine USV hat eine Scheinleistung von **500 VA** und einen Leistungsfaktor von **0,8**. Wie viel Wirkleistung in **W** kann sie liefern?",
+   "erklaerung": "P = S × cos φ = 500 VA × 0,8 = 400 W.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 400,
+   "toleranz": 0.01,
+   "einheit": "W"
+  },
+  {
+   "schluessel": "G-HW-VA-005",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-VA",
+   "text": "Eine USV hat eine Scheinleistung von **700 VA** und einen Leistungsfaktor von **0,9**. Wie viel Wirkleistung in **W** kann sie liefern?",
+   "erklaerung": "P = S × cos φ = 700 VA × 0,9 = 630 W.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 630,
+   "toleranz": 0.01,
+   "einheit": "W"
+  },
+  {
+   "schluessel": "G-HW-VA-007",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-VA",
+   "text": "Eine USV hat eine Scheinleistung von **500 VA** und einen Leistungsfaktor von **0,6**. Wie viel Wirkleistung in **W** kann sie liefern?",
+   "erklaerung": "P = S × cos φ = 500 VA × 0,6 = 300 W.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 300,
+   "toleranz": 0.01,
+   "einheit": "W"
+  },
+  {
+   "schluessel": "G-HW-VA-008",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-VA",
+   "text": "Eine USV hat eine Scheinleistung von **1500 VA** und einen Leistungsfaktor von **0,7**. Wie viel Wirkleistung in **W** kann sie liefern?",
+   "erklaerung": "P = S × cos φ = 1500 VA × 0,7 = 1.050 W.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1050,
+   "toleranz": 0.01,
+   "einheit": "W"
+  },
+  {
+   "schluessel": "G-HW-VA-009",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-VA",
+   "text": "Eine USV hat eine Scheinleistung von **2000 VA** und einen Leistungsfaktor von **0,6**. Wie viel Wirkleistung in **W** kann sie liefern?",
+   "erklaerung": "P = S × cos φ = 2000 VA × 0,6 = 1.200 W.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1200,
+   "toleranz": 0.01,
+   "einheit": "W"
+  },
+  {
+   "schluessel": "G-HW-VA-010",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-VA",
+   "text": "Eine USV hat eine Scheinleistung von **500 VA** und einen Leistungsfaktor von **0,9**. Wie viel Wirkleistung in **W** kann sie liefern?",
+   "erklaerung": "P = S × cos φ = 500 VA × 0,9 = 450 W.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 450,
+   "toleranz": 0.01,
+   "einheit": "W"
+  },
+  {
+   "schluessel": "G-HW-USVART01-001",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-USVART01",
+   "text": "Was kennzeichnet eine **Offline-/Standby-USV (VFD)**?",
+   "erklaerung": "Offline-/Standby-USV (VFD) → **schaltet erst bei Netzausfall auf Batterie um, günstig, kurze Umschaltzeit**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "schaltet erst bei Netzausfall auf Batterie um, günstig, kurze Umschaltzeit",
+     "richtig": true
+    },
+    {
+     "text": "versorgt die Last ständig über den Wechselrichter, keine Umschaltzeit",
+     "richtig": false
+    },
+    {
+     "text": "regelt zusätzlich Spannungsschwankungen über einen Transformator aus",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-USVART01-002",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-USVART01",
+   "text": "Welche USV-Art schaltet erst bei Netzausfall auf Batterie um, günstig, kurze Umschaltzeit?",
+   "erklaerung": "Offline-/Standby-USV (VFD) → **schaltet erst bei Netzausfall auf Batterie um, günstig, kurze Umschaltzeit**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Offline-/Standby-USV (VFD)",
+     "richtig": true
+    },
+    {
+     "text": "Online-USV (VFI)",
+     "richtig": false
+    },
+    {
+     "text": "Line-Interactive-USV (VI)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-USVART02-001",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-USVART02",
+   "text": "Was kennzeichnet eine **Line-Interactive-USV (VI)**?",
+   "erklaerung": "Line-Interactive-USV (VI) → **regelt zusätzlich Spannungsschwankungen über einen Transformator aus**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "regelt zusätzlich Spannungsschwankungen über einen Transformator aus",
+     "richtig": true
+    },
+    {
+     "text": "schaltet erst bei Netzausfall auf Batterie um, günstig, kurze Umschaltzeit",
+     "richtig": false
+    },
+    {
+     "text": "versorgt die Last ständig über den Wechselrichter, keine Umschaltzeit",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-USVART02-002",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-USVART02",
+   "text": "Welche USV-Art regelt zusätzlich Spannungsschwankungen über einen Transformator aus?",
+   "erklaerung": "Line-Interactive-USV (VI) → **regelt zusätzlich Spannungsschwankungen über einen Transformator aus**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Line-Interactive-USV (VI)",
+     "richtig": true
+    },
+    {
+     "text": "Online-USV (VFI)",
+     "richtig": false
+    },
+    {
+     "text": "Offline-/Standby-USV (VFD)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-USVART03-001",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-USVART03",
+   "text": "Was kennzeichnet eine **Online-USV (VFI)**?",
+   "erklaerung": "Online-USV (VFI) → **versorgt die Last ständig über den Wechselrichter, keine Umschaltzeit**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "versorgt die Last ständig über den Wechselrichter, keine Umschaltzeit",
+     "richtig": true
+    },
+    {
+     "text": "regelt zusätzlich Spannungsschwankungen über einen Transformator aus",
+     "richtig": false
+    },
+    {
+     "text": "schaltet erst bei Netzausfall auf Batterie um, günstig, kurze Umschaltzeit",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-USVART03-002",
+   "thema": "hardware",
+   "lektion": "HW-L4",
+   "gruppe": "HW-USVART03",
+   "text": "Welche USV-Art versorgt die Last ständig über den Wechselrichter, keine Umschaltzeit?",
+   "erklaerung": "Online-USV (VFI) → **versorgt die Last ständig über den Wechselrichter, keine Umschaltzeit**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Online-USV (VFI)",
+     "richtig": true
+    },
+    {
+     "text": "Offline-/Standby-USV (VFD)",
+     "richtig": false
+    },
+    {
+     "text": "Line-Interactive-USV (VI)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHRATE01-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHRATE01",
+   "text": "Welche maximale Brutto-Datenrate hat **USB 2.0**?",
+   "erklaerung": "USB 2.0 → **480 Mbit/s**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "480 Mbit/s",
+     "richtig": true
+    },
+    {
+     "text": "100 Mbit/s",
+     "richtig": false
+    },
+    {
+     "text": "10 Gbit/s",
+     "richtig": false
+    },
+    {
+     "text": "6 Gbit/s",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHRATE01-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHRATE01",
+   "text": "Welche Schnittstelle hat eine Datenrate von **480 Mbit/s**?",
+   "erklaerung": "USB 2.0 → **480 Mbit/s**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "USB 2.0",
+     "richtig": true
+    },
+    {
+     "text": "SATA III",
+     "richtig": false
+    },
+    {
+     "text": "USB 3.2 Gen 1 (früher USB 3.0)",
+     "richtig": false
+    },
+    {
+     "text": "Gigabit-Ethernet",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHRATE02-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHRATE02",
+   "text": "Welche maximale Brutto-Datenrate hat **USB 3.2 Gen 1 (früher USB 3.0)**?",
+   "erklaerung": "USB 3.2 Gen 1 (früher USB 3.0) → **5 Gbit/s**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "5 Gbit/s",
+     "richtig": true
+    },
+    {
+     "text": "1 Gbit/s",
+     "richtig": false
+    },
+    {
+     "text": "40 Gbit/s",
+     "richtig": false
+    },
+    {
+     "text": "20 Gbit/s",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHRATE02-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHRATE02",
+   "text": "Welche Schnittstelle hat eine Datenrate von **5 Gbit/s**?",
+   "erklaerung": "USB 3.2 Gen 1 (früher USB 3.0) → **5 Gbit/s**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "USB 3.2 Gen 1 (früher USB 3.0)",
+     "richtig": true
+    },
+    {
+     "text": "USB 2.0",
+     "richtig": false
+    },
+    {
+     "text": "SATA III",
+     "richtig": false
+    },
+    {
+     "text": "USB 3.2 Gen 2x2",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHRATE03-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHRATE03",
+   "text": "Welche maximale Brutto-Datenrate hat **USB 3.2 Gen 2**?",
+   "erklaerung": "USB 3.2 Gen 2 → **10 Gbit/s**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "10 Gbit/s",
+     "richtig": true
+    },
+    {
+     "text": "40 Gbit/s",
+     "richtig": false
+    },
+    {
+     "text": "5 Gbit/s",
+     "richtig": false
+    },
+    {
+     "text": "480 Mbit/s",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHRATE04-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHRATE04",
+   "text": "Welche maximale Brutto-Datenrate hat **USB 3.2 Gen 2x2**?",
+   "erklaerung": "USB 3.2 Gen 2x2 → **20 Gbit/s**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "20 Gbit/s",
+     "richtig": true
+    },
+    {
+     "text": "40 Gbit/s",
+     "richtig": false
+    },
+    {
+     "text": "480 Mbit/s",
+     "richtig": false
+    },
+    {
+     "text": "1 Gbit/s",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHRATE04-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHRATE04",
+   "text": "Welche Schnittstelle hat eine Datenrate von **20 Gbit/s**?",
+   "erklaerung": "USB 3.2 Gen 2x2 → **20 Gbit/s**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "USB 3.2 Gen 2x2",
+     "richtig": true
+    },
+    {
+     "text": "USB 3.2 Gen 2",
+     "richtig": false
+    },
+    {
+     "text": "10-Gigabit-Ethernet",
+     "richtig": false
+    },
+    {
+     "text": "USB 2.0",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHRATE05-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHRATE05",
+   "text": "Welche maximale Brutto-Datenrate hat **Thunderbolt 3/4 bzw. USB4 (40)**?",
+   "erklaerung": "Thunderbolt 3/4 bzw. USB4 (40) → **40 Gbit/s**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "40 Gbit/s",
+     "richtig": true
+    },
+    {
+     "text": "100 Mbit/s",
+     "richtig": false
+    },
+    {
+     "text": "1 Gbit/s",
+     "richtig": false
+    },
+    {
+     "text": "6 Gbit/s",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHRATE05-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHRATE05",
+   "text": "Welche Schnittstelle hat eine Datenrate von **40 Gbit/s**?",
+   "erklaerung": "Thunderbolt 3/4 bzw. USB4 (40) → **40 Gbit/s**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Thunderbolt 3/4 bzw. USB4 (40)",
+     "richtig": true
+    },
+    {
+     "text": "USB 2.0",
+     "richtig": false
+    },
+    {
+     "text": "SATA III",
+     "richtig": false
+    },
+    {
+     "text": "USB 3.2 Gen 2x2",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHRATE06-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHRATE06",
+   "text": "Welche maximale Brutto-Datenrate hat **SATA III**?",
+   "erklaerung": "SATA III → **6 Gbit/s**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "6 Gbit/s",
+     "richtig": true
+    },
+    {
+     "text": "20 Gbit/s",
+     "richtig": false
+    },
+    {
+     "text": "40 Gbit/s",
+     "richtig": false
+    },
+    {
+     "text": "10 Gbit/s",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHRATE06-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHRATE06",
+   "text": "Welche Schnittstelle hat eine Datenrate von **6 Gbit/s**?",
+   "erklaerung": "SATA III → **6 Gbit/s**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "SATA III",
+     "richtig": true
+    },
+    {
+     "text": "10-Gigabit-Ethernet",
+     "richtig": false
+    },
+    {
+     "text": "USB 3.2 Gen 2",
+     "richtig": false
+    },
+    {
+     "text": "USB 3.2 Gen 1 (früher USB 3.0)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHRATE07-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHRATE07",
+   "text": "Welche maximale Brutto-Datenrate hat **Gigabit-Ethernet**?",
+   "erklaerung": "Gigabit-Ethernet → **1 Gbit/s**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "1 Gbit/s",
+     "richtig": true
+    },
+    {
+     "text": "5 Gbit/s",
+     "richtig": false
+    },
+    {
+     "text": "10 Gbit/s",
+     "richtig": false
+    },
+    {
+     "text": "100 Mbit/s",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHRATE07-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHRATE07",
+   "text": "Welche Schnittstelle hat eine Datenrate von **1 Gbit/s**?",
+   "erklaerung": "Gigabit-Ethernet → **1 Gbit/s**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Gigabit-Ethernet",
+     "richtig": true
+    },
+    {
+     "text": "USB 2.0",
+     "richtig": false
+    },
+    {
+     "text": "10-Gigabit-Ethernet",
+     "richtig": false
+    },
+    {
+     "text": "Thunderbolt 3/4 bzw. USB4 (40)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHRATE08-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHRATE08",
+   "text": "Welche maximale Brutto-Datenrate hat **Fast Ethernet**?",
+   "erklaerung": "Fast Ethernet → **100 Mbit/s**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "100 Mbit/s",
+     "richtig": true
+    },
+    {
+     "text": "5 Gbit/s",
+     "richtig": false
+    },
+    {
+     "text": "480 Mbit/s",
+     "richtig": false
+    },
+    {
+     "text": "6 Gbit/s",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHRATE08-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHRATE08",
+   "text": "Welche Schnittstelle hat eine Datenrate von **100 Mbit/s**?",
+   "erklaerung": "Fast Ethernet → **100 Mbit/s**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Fast Ethernet",
+     "richtig": true
+    },
+    {
+     "text": "USB 3.2 Gen 1 (früher USB 3.0)",
+     "richtig": false
+    },
+    {
+     "text": "SATA III",
+     "richtig": false
+    },
+    {
+     "text": "USB 2.0",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHRATE09-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHRATE09",
+   "text": "Welche maximale Brutto-Datenrate hat **10-Gigabit-Ethernet**?",
+   "erklaerung": "10-Gigabit-Ethernet → **10 Gbit/s**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "10 Gbit/s",
+     "richtig": true
+    },
+    {
+     "text": "20 Gbit/s",
+     "richtig": false
+    },
+    {
+     "text": "100 Mbit/s",
+     "richtig": false
+    },
+    {
+     "text": "1 Gbit/s",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK01-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK01",
+   "text": "Was beschreibt **HDMI** am besten?",
+   "erklaerung": "HDMI → **überträgt digital Bild und Ton, typisch für Monitore, Beamer und TVs**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "überträgt digital Bild und Ton, typisch für Monitore, Beamer und TVs",
+     "richtig": true
+    },
+    {
+     "text": "Steckplatz für Grafik-, Netzwerk- und Erweiterungskarten",
+     "richtig": false
+    },
+    {
+     "text": "verdrehsicherer Stecker, kann Daten, Video und Strom (Power Delivery) übertragen",
+     "richtig": false
+    },
+    {
+     "text": "Steckplatz für sehr schnelle SSDs über PCI Express",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK01-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK01",
+   "text": "Welche Schnittstelle/Technik überträgt digital Bild und Ton, typisch für Monitore, Beamer und TVs?",
+   "erklaerung": "HDMI → **überträgt digital Bild und Ton, typisch für Monitore, Beamer und TVs**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "HDMI",
+     "richtig": true
+    },
+    {
+     "text": "LWL (Glasfaser)",
+     "richtig": false
+    },
+    {
+     "text": "Power over Ethernet (PoE)",
+     "richtig": false
+    },
+    {
+     "text": "M.2 (NVMe)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK02-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK02",
+   "text": "Was beschreibt **DisplayPort** am besten?",
+   "erklaerung": "DisplayPort → **digitale Monitorschnittstelle, unterstützt Daisy-Chaining mehrerer Monitore (MST)**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "digitale Monitorschnittstelle, unterstützt Daisy-Chaining mehrerer Monitore (MST)",
+     "richtig": true
+    },
+    {
+     "text": "Funk-Nahbereichsverbindung für Headsets, Mäuse und Tastaturen",
+     "richtig": false
+    },
+    {
+     "text": "Steckplatz für sehr schnelle SSDs über PCI Express",
+     "richtig": false
+    },
+    {
+     "text": "Steckplatz für Grafik-, Netzwerk- und Erweiterungskarten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK02-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK02",
+   "text": "Welche Schnittstelle/Technik digitale Monitorschnittstelle, unterstützt Daisy-Chaining mehrerer Monitore (MST)?",
+   "erklaerung": "DisplayPort → **digitale Monitorschnittstelle, unterstützt Daisy-Chaining mehrerer Monitore (MST)**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "DisplayPort",
+     "richtig": true
+    },
+    {
+     "text": "Bluetooth",
+     "richtig": false
+    },
+    {
+     "text": "Power over Ethernet (PoE)",
+     "richtig": false
+    },
+    {
+     "text": "USB-C",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK03-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK03",
+   "text": "Was beschreibt **USB-C** am besten?",
+   "erklaerung": "USB-C → **verdrehsicherer Stecker, kann Daten, Video und Strom (Power Delivery) übertragen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "verdrehsicherer Stecker, kann Daten, Video und Strom (Power Delivery) übertragen",
+     "richtig": true
+    },
+    {
+     "text": "analoge Bildschnittstelle, veraltet",
+     "richtig": false
+    },
+    {
+     "text": "überträgt Daten mit Licht, unempfindlich gegen elektromagnetische Störungen",
+     "richtig": false
+    },
+    {
+     "text": "Anschluss für 2,5\"/3,5\"-Festplatten und SSDs",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK03-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK03",
+   "text": "Welche Schnittstelle/Technik verdrehsicherer Stecker, kann Daten, Video und Strom (Power Delivery) übertragen?",
+   "erklaerung": "USB-C → **verdrehsicherer Stecker, kann Daten, Video und Strom (Power Delivery) übertragen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "USB-C",
+     "richtig": true
+    },
+    {
+     "text": "DisplayPort",
+     "richtig": false
+    },
+    {
+     "text": "RJ45",
+     "richtig": false
+    },
+    {
+     "text": "LWL (Glasfaser)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK04-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK04",
+   "text": "Was beschreibt **RJ45** am besten?",
+   "erklaerung": "RJ45 → **Stecker für Twisted-Pair-Netzwerkkabel**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Stecker für Twisted-Pair-Netzwerkkabel",
+     "richtig": true
+    },
+    {
+     "text": "überträgt Daten mit Licht, unempfindlich gegen elektromagnetische Störungen",
+     "richtig": false
+    },
+    {
+     "text": "Funk-Nahbereichsverbindung für Headsets, Mäuse und Tastaturen",
+     "richtig": false
+    },
+    {
+     "text": "analoge Bildschnittstelle, veraltet",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK04-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK04",
+   "text": "Welche Schnittstelle/Technik Stecker für Twisted-Pair-Netzwerkkabel?",
+   "erklaerung": "RJ45 → **Stecker für Twisted-Pair-Netzwerkkabel**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "RJ45",
+     "richtig": true
+    },
+    {
+     "text": "LWL (Glasfaser)",
+     "richtig": false
+    },
+    {
+     "text": "VGA",
+     "richtig": false
+    },
+    {
+     "text": "M.2 (NVMe)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK05-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK05",
+   "text": "Was beschreibt **M.2 (NVMe)** am besten?",
+   "erklaerung": "M.2 (NVMe) → **Steckplatz für sehr schnelle SSDs über PCI Express**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Steckplatz für sehr schnelle SSDs über PCI Express",
+     "richtig": true
+    },
+    {
+     "text": "versorgt Geräte wie Access Points über das Netzwerkkabel mit Strom",
+     "richtig": false
+    },
+    {
+     "text": "überträgt Daten mit Licht, unempfindlich gegen elektromagnetische Störungen",
+     "richtig": false
+    },
+    {
+     "text": "digitale Monitorschnittstelle, unterstützt Daisy-Chaining mehrerer Monitore (MST)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK05-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK05",
+   "text": "Welche Schnittstelle/Technik Steckplatz für sehr schnelle SSDs über PCI Express?",
+   "erklaerung": "M.2 (NVMe) → **Steckplatz für sehr schnelle SSDs über PCI Express**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "M.2 (NVMe)",
+     "richtig": true
+    },
+    {
+     "text": "LWL (Glasfaser)",
+     "richtig": false
+    },
+    {
+     "text": "PCI Express",
+     "richtig": false
+    },
+    {
+     "text": "VGA",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK06-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK06",
+   "text": "Was beschreibt **SATA** am besten?",
+   "erklaerung": "SATA → **Anschluss für 2,5\"/3,5\"-Festplatten und SSDs**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Anschluss für 2,5\"/3,5\"-Festplatten und SSDs",
+     "richtig": true
+    },
+    {
+     "text": "digitale Monitorschnittstelle, unterstützt Daisy-Chaining mehrerer Monitore (MST)",
+     "richtig": false
+    },
+    {
+     "text": "Stecker für Twisted-Pair-Netzwerkkabel",
+     "richtig": false
+    },
+    {
+     "text": "analoge Bildschnittstelle, veraltet",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK06-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK06",
+   "text": "Welche Schnittstelle/Technik Anschluss für 2,5\"/3,5\"-Festplatten und SSDs?",
+   "erklaerung": "SATA → **Anschluss für 2,5\"/3,5\"-Festplatten und SSDs**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "SATA",
+     "richtig": true
+    },
+    {
+     "text": "LWL (Glasfaser)",
+     "richtig": false
+    },
+    {
+     "text": "Power over Ethernet (PoE)",
+     "richtig": false
+    },
+    {
+     "text": "M.2 (NVMe)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK07-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK07",
+   "text": "Was beschreibt **PCI Express** am besten?",
+   "erklaerung": "PCI Express → **Steckplatz für Grafik-, Netzwerk- und Erweiterungskarten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Steckplatz für Grafik-, Netzwerk- und Erweiterungskarten",
+     "richtig": true
+    },
+    {
+     "text": "verdrehsicherer Stecker, kann Daten, Video und Strom (Power Delivery) übertragen",
+     "richtig": false
+    },
+    {
+     "text": "analoge Bildschnittstelle, veraltet",
+     "richtig": false
+    },
+    {
+     "text": "Stecker für Twisted-Pair-Netzwerkkabel",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK07-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK07",
+   "text": "Welche Schnittstelle/Technik Steckplatz für Grafik-, Netzwerk- und Erweiterungskarten?",
+   "erklaerung": "PCI Express → **Steckplatz für Grafik-, Netzwerk- und Erweiterungskarten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "PCI Express",
+     "richtig": true
+    },
+    {
+     "text": "M.2 (NVMe)",
+     "richtig": false
+    },
+    {
+     "text": "DisplayPort",
+     "richtig": false
+    },
+    {
+     "text": "Power over Ethernet (PoE)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK08-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK08",
+   "text": "Was beschreibt **VGA** am besten?",
+   "erklaerung": "VGA → **analoge Bildschnittstelle, veraltet**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "analoge Bildschnittstelle, veraltet",
+     "richtig": true
+    },
+    {
+     "text": "digitale Monitorschnittstelle, unterstützt Daisy-Chaining mehrerer Monitore (MST)",
+     "richtig": false
+    },
+    {
+     "text": "Steckplatz für Grafik-, Netzwerk- und Erweiterungskarten",
+     "richtig": false
+    },
+    {
+     "text": "verdrehsicherer Stecker, kann Daten, Video und Strom (Power Delivery) übertragen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK08-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK08",
+   "text": "Welche Schnittstelle/Technik analoge Bildschnittstelle, veraltet?",
+   "erklaerung": "VGA → **analoge Bildschnittstelle, veraltet**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "VGA",
+     "richtig": true
+    },
+    {
+     "text": "SATA",
+     "richtig": false
+    },
+    {
+     "text": "USB-C",
+     "richtig": false
+    },
+    {
+     "text": "M.2 (NVMe)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK09-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK09",
+   "text": "Was beschreibt **Bluetooth** am besten?",
+   "erklaerung": "Bluetooth → **Funk-Nahbereichsverbindung für Headsets, Mäuse und Tastaturen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Funk-Nahbereichsverbindung für Headsets, Mäuse und Tastaturen",
+     "richtig": true
+    },
+    {
+     "text": "Steckplatz für Grafik-, Netzwerk- und Erweiterungskarten",
+     "richtig": false
+    },
+    {
+     "text": "digitale Monitorschnittstelle, unterstützt Daisy-Chaining mehrerer Monitore (MST)",
+     "richtig": false
+    },
+    {
+     "text": "versorgt Geräte wie Access Points über das Netzwerkkabel mit Strom",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK09-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK09",
+   "text": "Welche Schnittstelle/Technik Funk-Nahbereichsverbindung für Headsets, Mäuse und Tastaturen?",
+   "erklaerung": "Bluetooth → **Funk-Nahbereichsverbindung für Headsets, Mäuse und Tastaturen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Bluetooth",
+     "richtig": true
+    },
+    {
+     "text": "HDMI",
+     "richtig": false
+    },
+    {
+     "text": "DisplayPort",
+     "richtig": false
+    },
+    {
+     "text": "LWL (Glasfaser)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK10-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK10",
+   "text": "Was beschreibt **LWL (Glasfaser)** am besten?",
+   "erklaerung": "LWL (Glasfaser) → **überträgt Daten mit Licht, unempfindlich gegen elektromagnetische Störungen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "überträgt Daten mit Licht, unempfindlich gegen elektromagnetische Störungen",
+     "richtig": true
+    },
+    {
+     "text": "verdrehsicherer Stecker, kann Daten, Video und Strom (Power Delivery) übertragen",
+     "richtig": false
+    },
+    {
+     "text": "überträgt digital Bild und Ton, typisch für Monitore, Beamer und TVs",
+     "richtig": false
+    },
+    {
+     "text": "analoge Bildschnittstelle, veraltet",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK10-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK10",
+   "text": "Welche Schnittstelle/Technik überträgt Daten mit Licht, unempfindlich gegen elektromagnetische Störungen?",
+   "erklaerung": "LWL (Glasfaser) → **überträgt Daten mit Licht, unempfindlich gegen elektromagnetische Störungen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "LWL (Glasfaser)",
+     "richtig": true
+    },
+    {
+     "text": "USB-C",
+     "richtig": false
+    },
+    {
+     "text": "HDMI",
+     "richtig": false
+    },
+    {
+     "text": "PCI Express",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK11-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK11",
+   "text": "Was beschreibt **Power over Ethernet (PoE)** am besten?",
+   "erklaerung": "Power over Ethernet (PoE) → **versorgt Geräte wie Access Points über das Netzwerkkabel mit Strom**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "versorgt Geräte wie Access Points über das Netzwerkkabel mit Strom",
+     "richtig": true
+    },
+    {
+     "text": "Anschluss für 2,5\"/3,5\"-Festplatten und SSDs",
+     "richtig": false
+    },
+    {
+     "text": "Funk-Nahbereichsverbindung für Headsets, Mäuse und Tastaturen",
+     "richtig": false
+    },
+    {
+     "text": "überträgt digital Bild und Ton, typisch für Monitore, Beamer und TVs",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SCHZWECK11-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-SCHZWECK11",
+   "text": "Welche Schnittstelle/Technik versorgt Geräte wie Access Points über das Netzwerkkabel mit Strom?",
+   "erklaerung": "Power over Ethernet (PoE) → **versorgt Geräte wie Access Points über das Netzwerkkabel mit Strom**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Power over Ethernet (PoE)",
+     "richtig": true
+    },
+    {
+     "text": "SATA",
+     "richtig": false
+    },
+    {
+     "text": "HDMI",
+     "richtig": false
+    },
+    {
+     "text": "USB-C",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KABEL01-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-KABEL01",
+   "text": "Welche Datenrate ist mit einem **Cat 5e**-Kabel typischerweise möglich?",
+   "erklaerung": "Cat 5e → **1 Gbit/s**.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "1 Gbit/s",
+     "richtig": true
+    },
+    {
+     "text": "25/40 Gbit/s bis 30 m",
+     "richtig": false
+    },
+    {
+     "text": "10 Gbit/s bis 100 m",
+     "richtig": false
+    },
+    {
+     "text": "1 Gbit/s (10 Gbit/s bis 55 m)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KABEL02-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-KABEL02",
+   "text": "Welche Datenrate ist mit einem **Cat 6**-Kabel typischerweise möglich?",
+   "erklaerung": "Cat 6 → **1 Gbit/s (10 Gbit/s bis 55 m)**.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "1 Gbit/s (10 Gbit/s bis 55 m)",
+     "richtig": true
+    },
+    {
+     "text": "10 Gbit/s bis 100 m",
+     "richtig": false
+    },
+    {
+     "text": "1 Gbit/s",
+     "richtig": false
+    },
+    {
+     "text": "25/40 Gbit/s bis 30 m",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KABEL03-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-KABEL03",
+   "text": "Welche Datenrate ist mit einem **Cat 6A**-Kabel typischerweise möglich?",
+   "erklaerung": "Cat 6A → **10 Gbit/s bis 100 m**.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "10 Gbit/s bis 100 m",
+     "richtig": true
+    },
+    {
+     "text": "1 Gbit/s (10 Gbit/s bis 55 m)",
+     "richtig": false
+    },
+    {
+     "text": "1 Gbit/s",
+     "richtig": false
+    },
+    {
+     "text": "25/40 Gbit/s bis 30 m",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KABEL04-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-KABEL04",
+   "text": "Welche Datenrate ist mit einem **Cat 8**-Kabel typischerweise möglich?",
+   "erklaerung": "Cat 8 → **25/40 Gbit/s bis 30 m**.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "25/40 Gbit/s bis 30 m",
+     "richtig": true
+    },
+    {
+     "text": "10 Gbit/s bis 100 m",
+     "richtig": false
+    },
+    {
+     "text": "1 Gbit/s (10 Gbit/s bis 55 m)",
+     "richtig": false
+    },
+    {
+     "text": "1 Gbit/s",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-LAENGE-001",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-LAENGE",
+   "text": "Wie viele Meter darf ein **Twisted-Pair-Kupferkabel (Ethernet)** maximal lang sein (Standardangabe)?",
+   "erklaerung": "Twisted Pair: 100 m pro Strecke (90 m fest + 10 m Patch). USB 2.0 passiv: 5 m.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 100,
+   "toleranz": 0,
+   "einheit": "m"
+  },
+  {
+   "schluessel": "G-HW-LAENGE-002",
+   "thema": "hardware",
+   "lektion": "HW-L1",
+   "gruppe": "HW-LAENGE",
+   "text": "Wie viele Meter darf ein **USB 2.0 passiv** maximal lang sein (Standardangabe)?",
+   "erklaerung": "Twisted Pair: 100 m pro Strecke (90 m fest + 10 m Patch). USB 2.0 passiv: 5 m.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 5,
+   "toleranz": 0,
+   "einheit": "m"
+  },
+  {
+   "schluessel": "G-HW-KOMP01-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP01",
+   "text": "Welche Aufgabe hat **CPU**?",
+   "erklaerung": "CPU → **führt Befehle aus und steuert die Verarbeitung**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "führt Befehle aus und steuert die Verarbeitung",
+     "richtig": true
+    },
+    {
+     "text": "Magnetspeicher mit rotierenden Scheiben und Schreib-Lese-Kopf",
+     "richtig": false
+    },
+    {
+     "text": "sehr schneller Zwischenspeicher direkt an der CPU",
+     "richtig": false
+    },
+    {
+     "text": "verbindet CPU mit Schnittstellen und Peripherie auf dem Mainboard",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP01-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP01",
+   "text": "Welche Komponente: führt Befehle aus und steuert die Verarbeitung?",
+   "erklaerung": "CPU → **führt Befehle aus und steuert die Verarbeitung**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "CPU",
+     "richtig": true
+    },
+    {
+     "text": "Chipsatz",
+     "richtig": false
+    },
+    {
+     "text": "GPU",
+     "richtig": false
+    },
+    {
+     "text": "ROM / Flash mit UEFI",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP02-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP02",
+   "text": "Welche Aufgabe hat **Arbeitsspeicher (RAM)**?",
+   "erklaerung": "Arbeitsspeicher (RAM) → **flüchtiger Speicher für laufende Programme und Daten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "flüchtiger Speicher für laufende Programme und Daten",
+     "richtig": true
+    },
+    {
+     "text": "sehr schneller Zwischenspeicher direkt an der CPU",
+     "richtig": false
+    },
+    {
+     "text": "enthält die Firmware zum Starten des Rechners",
+     "richtig": false
+    },
+    {
+     "text": "wandelt Wechselspannung in die Gleichspannungen für die Komponenten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP02-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP02",
+   "text": "Welche Komponente: flüchtiger Speicher für laufende Programme und Daten?",
+   "erklaerung": "Arbeitsspeicher (RAM) → **flüchtiger Speicher für laufende Programme und Daten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Arbeitsspeicher (RAM)",
+     "richtig": true
+    },
+    {
+     "text": "Netzteil",
+     "richtig": false
+    },
+    {
+     "text": "GPU",
+     "richtig": false
+    },
+    {
+     "text": "Chipsatz",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP03-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP03",
+   "text": "Welche Aufgabe hat **Cache**?",
+   "erklaerung": "Cache → **sehr schneller Zwischenspeicher direkt an der CPU**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "sehr schneller Zwischenspeicher direkt an der CPU",
+     "richtig": true
+    },
+    {
+     "text": "flüchtiger Speicher für laufende Programme und Daten",
+     "richtig": false
+    },
+    {
+     "text": "verbindet CPU mit Schnittstellen und Peripherie auf dem Mainboard",
+     "richtig": false
+    },
+    {
+     "text": "enthält die Firmware zum Starten des Rechners",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP03-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP03",
+   "text": "Welche Komponente: sehr schneller Zwischenspeicher direkt an der CPU?",
+   "erklaerung": "Cache → **sehr schneller Zwischenspeicher direkt an der CPU**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Cache",
+     "richtig": true
+    },
+    {
+     "text": "Arbeitsspeicher (RAM)",
+     "richtig": false
+    },
+    {
+     "text": "HDD",
+     "richtig": false
+    },
+    {
+     "text": "TPM",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP04-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP04",
+   "text": "Welche Aufgabe hat **ROM / Flash mit UEFI**?",
+   "erklaerung": "ROM / Flash mit UEFI → **enthält die Firmware zum Starten des Rechners**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "enthält die Firmware zum Starten des Rechners",
+     "richtig": true
+    },
+    {
+     "text": "nicht flüchtiger Speicher ohne bewegliche Teile",
+     "richtig": false
+    },
+    {
+     "text": "wandelt Wechselspannung in die Gleichspannungen für die Komponenten",
+     "richtig": false
+    },
+    {
+     "text": "berechnet Grafik, auch für parallele Berechnungen (KI) genutzt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP04-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP04",
+   "text": "Welche Komponente: enthält die Firmware zum Starten des Rechners?",
+   "erklaerung": "ROM / Flash mit UEFI → **enthält die Firmware zum Starten des Rechners**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "ROM / Flash mit UEFI",
+     "richtig": true
+    },
+    {
+     "text": "TPM",
+     "richtig": false
+    },
+    {
+     "text": "Netzteil",
+     "richtig": false
+    },
+    {
+     "text": "SSD",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP05-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP05",
+   "text": "Welche Aufgabe hat **GPU**?",
+   "erklaerung": "GPU → **berechnet Grafik, auch für parallele Berechnungen (KI) genutzt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "berechnet Grafik, auch für parallele Berechnungen (KI) genutzt",
+     "richtig": true
+    },
+    {
+     "text": "flüchtiger Speicher für laufende Programme und Daten",
+     "richtig": false
+    },
+    {
+     "text": "Sicherheitschip, speichert Schlüssel z. B. für BitLocker",
+     "richtig": false
+    },
+    {
+     "text": "enthält die Firmware zum Starten des Rechners",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP05-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP05",
+   "text": "Welche Komponente: berechnet Grafik, auch für parallele Berechnungen (KI) genutzt?",
+   "erklaerung": "GPU → **berechnet Grafik, auch für parallele Berechnungen (KI) genutzt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "GPU",
+     "richtig": true
+    },
+    {
+     "text": "TPM",
+     "richtig": false
+    },
+    {
+     "text": "SSD",
+     "richtig": false
+    },
+    {
+     "text": "Chipsatz",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP06-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP06",
+   "text": "Welche Aufgabe hat **SSD**?",
+   "erklaerung": "SSD → **nicht flüchtiger Speicher ohne bewegliche Teile**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "nicht flüchtiger Speicher ohne bewegliche Teile",
+     "richtig": true
+    },
+    {
+     "text": "führt Befehle aus und steuert die Verarbeitung",
+     "richtig": false
+    },
+    {
+     "text": "verbindet CPU mit Schnittstellen und Peripherie auf dem Mainboard",
+     "richtig": false
+    },
+    {
+     "text": "flüchtiger Speicher für laufende Programme und Daten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP06-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP06",
+   "text": "Welche Komponente: nicht flüchtiger Speicher ohne bewegliche Teile?",
+   "erklaerung": "SSD → **nicht flüchtiger Speicher ohne bewegliche Teile**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "SSD",
+     "richtig": true
+    },
+    {
+     "text": "Chipsatz",
+     "richtig": false
+    },
+    {
+     "text": "CPU",
+     "richtig": false
+    },
+    {
+     "text": "ROM / Flash mit UEFI",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP07-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP07",
+   "text": "Welche Aufgabe hat **HDD**?",
+   "erklaerung": "HDD → **Magnetspeicher mit rotierenden Scheiben und Schreib-Lese-Kopf**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Magnetspeicher mit rotierenden Scheiben und Schreib-Lese-Kopf",
+     "richtig": true
+    },
+    {
+     "text": "nicht flüchtiger Speicher ohne bewegliche Teile",
+     "richtig": false
+    },
+    {
+     "text": "flüchtiger Speicher für laufende Programme und Daten",
+     "richtig": false
+    },
+    {
+     "text": "wandelt Wechselspannung in die Gleichspannungen für die Komponenten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP07-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP07",
+   "text": "Welche Komponente: Magnetspeicher mit rotierenden Scheiben und Schreib-Lese-Kopf?",
+   "erklaerung": "HDD → **Magnetspeicher mit rotierenden Scheiben und Schreib-Lese-Kopf**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "HDD",
+     "richtig": true
+    },
+    {
+     "text": "Netzteil",
+     "richtig": false
+    },
+    {
+     "text": "GPU",
+     "richtig": false
+    },
+    {
+     "text": "TPM",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP08-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP08",
+   "text": "Welche Aufgabe hat **Chipsatz**?",
+   "erklaerung": "Chipsatz → **verbindet CPU mit Schnittstellen und Peripherie auf dem Mainboard**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "verbindet CPU mit Schnittstellen und Peripherie auf dem Mainboard",
+     "richtig": true
+    },
+    {
+     "text": "berechnet Grafik, auch für parallele Berechnungen (KI) genutzt",
+     "richtig": false
+    },
+    {
+     "text": "sehr schneller Zwischenspeicher direkt an der CPU",
+     "richtig": false
+    },
+    {
+     "text": "flüchtiger Speicher für laufende Programme und Daten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP08-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP08",
+   "text": "Welche Komponente: verbindet CPU mit Schnittstellen und Peripherie auf dem Mainboard?",
+   "erklaerung": "Chipsatz → **verbindet CPU mit Schnittstellen und Peripherie auf dem Mainboard**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Chipsatz",
+     "richtig": true
+    },
+    {
+     "text": "GPU",
+     "richtig": false
+    },
+    {
+     "text": "HDD",
+     "richtig": false
+    },
+    {
+     "text": "SSD",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP09-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP09",
+   "text": "Welche Aufgabe hat **Netzteil**?",
+   "erklaerung": "Netzteil → **wandelt Wechselspannung in die Gleichspannungen für die Komponenten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "wandelt Wechselspannung in die Gleichspannungen für die Komponenten",
+     "richtig": true
+    },
+    {
+     "text": "flüchtiger Speicher für laufende Programme und Daten",
+     "richtig": false
+    },
+    {
+     "text": "führt Befehle aus und steuert die Verarbeitung",
+     "richtig": false
+    },
+    {
+     "text": "berechnet Grafik, auch für parallele Berechnungen (KI) genutzt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP09-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP09",
+   "text": "Welche Komponente: wandelt Wechselspannung in die Gleichspannungen für die Komponenten?",
+   "erklaerung": "Netzteil → **wandelt Wechselspannung in die Gleichspannungen für die Komponenten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Netzteil",
+     "richtig": true
+    },
+    {
+     "text": "CPU",
+     "richtig": false
+    },
+    {
+     "text": "HDD",
+     "richtig": false
+    },
+    {
+     "text": "Cache",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP10-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP10",
+   "text": "Welche Aufgabe hat **TPM**?",
+   "erklaerung": "TPM → **Sicherheitschip, speichert Schlüssel z. B. für BitLocker**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Sicherheitschip, speichert Schlüssel z. B. für BitLocker",
+     "richtig": true
+    },
+    {
+     "text": "Magnetspeicher mit rotierenden Scheiben und Schreib-Lese-Kopf",
+     "richtig": false
+    },
+    {
+     "text": "enthält die Firmware zum Starten des Rechners",
+     "richtig": false
+    },
+    {
+     "text": "nicht flüchtiger Speicher ohne bewegliche Teile",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-KOMP10-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-KOMP10",
+   "text": "Welche Komponente: Sicherheitschip, speichert Schlüssel z. B. für BitLocker?",
+   "erklaerung": "TPM → **Sicherheitschip, speichert Schlüssel z. B. für BitLocker**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "TPM",
+     "richtig": true
+    },
+    {
+     "text": "SSD",
+     "richtig": false
+    },
+    {
+     "text": "Cache",
+     "richtig": false
+    },
+    {
+     "text": "ROM / Flash mit UEFI",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SPVGL01-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-SPVGL01",
+   "text": "Welche Speicherart passt? Kein Datenverlust bei Stromausfall",
+   "erklaerung": "Kein Datenverlust bei Stromausfall → **SSD und HDD, nicht RAM**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "SSD und HDD, nicht RAM",
+     "richtig": true
+    },
+    {
+     "text": "HDD",
+     "richtig": false
+    },
+    {
+     "text": "SSD",
+     "richtig": false
+    },
+    {
+     "text": "RAM",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SPVGL02-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-SPVGL02",
+   "text": "Welche Speicherart passt? Sehr kurze Zugriffszeit, unempfindlich gegen Erschütterung",
+   "erklaerung": "Sehr kurze Zugriffszeit, unempfindlich gegen Erschütterung → **SSD**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "SSD",
+     "richtig": true
+    },
+    {
+     "text": "HDD",
+     "richtig": false
+    },
+    {
+     "text": "SSD und HDD, nicht RAM",
+     "richtig": false
+    },
+    {
+     "text": "RAM",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SPVGL03-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-SPVGL03",
+   "text": "Welche Speicherart passt? Günstigster Preis pro Terabyte bei großen Kapazitäten",
+   "erklaerung": "Günstigster Preis pro Terabyte bei großen Kapazitäten → **HDD**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "HDD",
+     "richtig": true
+    },
+    {
+     "text": "RAM",
+     "richtig": false
+    },
+    {
+     "text": "SSD und HDD, nicht RAM",
+     "richtig": false
+    },
+    {
+     "text": "SSD",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SPVGL04-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-SPVGL04",
+   "text": "Welche Speicherart passt? Daten gehen beim Ausschalten verloren",
+   "erklaerung": "Daten gehen beim Ausschalten verloren → **RAM**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "RAM",
+     "richtig": true
+    },
+    {
+     "text": "SSD",
+     "richtig": false
+    },
+    {
+     "text": "HDD",
+     "richtig": false
+    },
+    {
+     "text": "SSD und HDD, nicht RAM",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR01-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR01",
+   "text": "Was bedeutet **Taktfrequenz**?",
+   "erklaerung": "Taktfrequenz → **Anzahl der Arbeitstakte pro Sekunde, angegeben in GHz**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Anzahl der Arbeitstakte pro Sekunde, angegeben in GHz",
+     "richtig": true
+    },
+    {
+     "text": "Nachfolger des BIOS, unterstützt Secure Boot und GPT-Laufwerke",
+     "richtig": false
+    },
+    {
+     "text": "Ein-/Ausgabeoperationen pro Sekunde eines Speichers",
+     "richtig": false
+    },
+    {
+     "text": "ein physischer Kern bearbeitet zwei Threads gleichzeitig",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR01-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR01",
+   "text": "Welcher Begriff passt: Anzahl der Arbeitstakte pro Sekunde, angegeben in GHz?",
+   "erklaerung": "Taktfrequenz → **Anzahl der Arbeitstakte pro Sekunde, angegeben in GHz**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Taktfrequenz",
+     "richtig": true
+    },
+    {
+     "text": "Mehrkernprozessor",
+     "richtig": false
+    },
+    {
+     "text": "UEFI",
+     "richtig": false
+    },
+    {
+     "text": "TDP",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR02-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR02",
+   "text": "Was bedeutet **Mehrkernprozessor**?",
+   "erklaerung": "Mehrkernprozessor → **mehrere Rechenkerne auf einem Chip für parallele Verarbeitung**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "mehrere Rechenkerne auf einem Chip für parallele Verarbeitung",
+     "richtig": true
+    },
+    {
+     "text": "startet nur signierte Bootloader",
+     "richtig": false
+    },
+    {
+     "text": "ein physischer Kern bearbeitet zwei Threads gleichzeitig",
+     "richtig": false
+    },
+    {
+     "text": "Nachfolger des BIOS, unterstützt Secure Boot und GPT-Laufwerke",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR02-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR02",
+   "text": "Welcher Begriff passt: mehrere Rechenkerne auf einem Chip für parallele Verarbeitung?",
+   "erklaerung": "Mehrkernprozessor → **mehrere Rechenkerne auf einem Chip für parallele Verarbeitung**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Mehrkernprozessor",
+     "richtig": true
+    },
+    {
+     "text": "IOPS",
+     "richtig": false
+    },
+    {
+     "text": "TDP",
+     "richtig": false
+    },
+    {
+     "text": "Secure Boot",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR03-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR03",
+   "text": "Was bedeutet **Hyper-Threading / SMT**?",
+   "erklaerung": "Hyper-Threading / SMT → **ein physischer Kern bearbeitet zwei Threads gleichzeitig**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "ein physischer Kern bearbeitet zwei Threads gleichzeitig",
+     "richtig": true
+    },
+    {
+     "text": "Wärmeleistung, die die Kühlung abführen können muss",
+     "richtig": false
+    },
+    {
+     "text": "zwei RAM-Module werden parallel angesprochen, höhere Bandbreite",
+     "richtig": false
+    },
+    {
+     "text": "mehrere Rechenkerne auf einem Chip für parallele Verarbeitung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR03-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR03",
+   "text": "Welcher Begriff passt: ein physischer Kern bearbeitet zwei Threads gleichzeitig?",
+   "erklaerung": "Hyper-Threading / SMT → **ein physischer Kern bearbeitet zwei Threads gleichzeitig**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Hyper-Threading / SMT",
+     "richtig": true
+    },
+    {
+     "text": "Secure Boot",
+     "richtig": false
+    },
+    {
+     "text": "Virtualisierung",
+     "richtig": false
+    },
+    {
+     "text": "ECC-RAM",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR04-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR04",
+   "text": "Was bedeutet **TDP**?",
+   "erklaerung": "TDP → **Wärmeleistung, die die Kühlung abführen können muss**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Wärmeleistung, die die Kühlung abführen können muss",
+     "richtig": true
+    },
+    {
+     "text": "ein physischer Kern bearbeitet zwei Threads gleichzeitig",
+     "richtig": false
+    },
+    {
+     "text": "zwei RAM-Module werden parallel angesprochen, höhere Bandbreite",
+     "richtig": false
+    },
+    {
+     "text": "mehrere Rechenkerne auf einem Chip für parallele Verarbeitung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR04-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR04",
+   "text": "Welcher Begriff passt: Wärmeleistung, die die Kühlung abführen können muss?",
+   "erklaerung": "TDP → **Wärmeleistung, die die Kühlung abführen können muss**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "TDP",
+     "richtig": true
+    },
+    {
+     "text": "Dual-Channel",
+     "richtig": false
+    },
+    {
+     "text": "Virtualisierung",
+     "richtig": false
+    },
+    {
+     "text": "ECC-RAM",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR05-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR05",
+   "text": "Was bedeutet **Dual-Channel**?",
+   "erklaerung": "Dual-Channel → **zwei RAM-Module werden parallel angesprochen, höhere Bandbreite**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "zwei RAM-Module werden parallel angesprochen, höhere Bandbreite",
+     "richtig": true
+    },
+    {
+     "text": "startet nur signierte Bootloader",
+     "richtig": false
+    },
+    {
+     "text": "mehrere virtuelle Maschinen laufen auf einer physischen Hardware",
+     "richtig": false
+    },
+    {
+     "text": "ein physischer Kern bearbeitet zwei Threads gleichzeitig",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR05-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR05",
+   "text": "Welcher Begriff passt: zwei RAM-Module werden parallel angesprochen, höhere Bandbreite?",
+   "erklaerung": "Dual-Channel → **zwei RAM-Module werden parallel angesprochen, höhere Bandbreite**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Dual-Channel",
+     "richtig": true
+    },
+    {
+     "text": "TDP",
+     "richtig": false
+    },
+    {
+     "text": "UEFI",
+     "richtig": false
+    },
+    {
+     "text": "Virtualisierung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR06-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR06",
+   "text": "Was bedeutet **ECC-RAM**?",
+   "erklaerung": "ECC-RAM → **erkennt und korrigiert Speicherfehler, typisch in Servern**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "erkennt und korrigiert Speicherfehler, typisch in Servern",
+     "richtig": true
+    },
+    {
+     "text": "startet nur signierte Bootloader",
+     "richtig": false
+    },
+    {
+     "text": "zwei RAM-Module werden parallel angesprochen, höhere Bandbreite",
+     "richtig": false
+    },
+    {
+     "text": "mehrere virtuelle Maschinen laufen auf einer physischen Hardware",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR06-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR06",
+   "text": "Welcher Begriff passt: erkennt und korrigiert Speicherfehler, typisch in Servern?",
+   "erklaerung": "ECC-RAM → **erkennt und korrigiert Speicherfehler, typisch in Servern**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "ECC-RAM",
+     "richtig": true
+    },
+    {
+     "text": "Virtualisierung",
+     "richtig": false
+    },
+    {
+     "text": "Hyper-Threading / SMT",
+     "richtig": false
+    },
+    {
+     "text": "Mehrkernprozessor",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR07-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR07",
+   "text": "Was bedeutet **Virtualisierung**?",
+   "erklaerung": "Virtualisierung → **mehrere virtuelle Maschinen laufen auf einer physischen Hardware**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "mehrere virtuelle Maschinen laufen auf einer physischen Hardware",
+     "richtig": true
+    },
+    {
+     "text": "Ein-/Ausgabeoperationen pro Sekunde eines Speichers",
+     "richtig": false
+    },
+    {
+     "text": "Nachfolger des BIOS, unterstützt Secure Boot und GPT-Laufwerke",
+     "richtig": false
+    },
+    {
+     "text": "mehrere Rechenkerne auf einem Chip für parallele Verarbeitung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR07-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR07",
+   "text": "Welcher Begriff passt: mehrere virtuelle Maschinen laufen auf einer physischen Hardware?",
+   "erklaerung": "Virtualisierung → **mehrere virtuelle Maschinen laufen auf einer physischen Hardware**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Virtualisierung",
+     "richtig": true
+    },
+    {
+     "text": "IOPS",
+     "richtig": false
+    },
+    {
+     "text": "UEFI",
+     "richtig": false
+    },
+    {
+     "text": "Dual-Channel",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR08-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR08",
+   "text": "Was bedeutet **IOPS**?",
+   "erklaerung": "IOPS → **Ein-/Ausgabeoperationen pro Sekunde eines Speichers**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ein-/Ausgabeoperationen pro Sekunde eines Speichers",
+     "richtig": true
+    },
+    {
+     "text": "ein physischer Kern bearbeitet zwei Threads gleichzeitig",
+     "richtig": false
+    },
+    {
+     "text": "mehrere virtuelle Maschinen laufen auf einer physischen Hardware",
+     "richtig": false
+    },
+    {
+     "text": "erkennt und korrigiert Speicherfehler, typisch in Servern",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR08-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR08",
+   "text": "Welcher Begriff passt: Ein-/Ausgabeoperationen pro Sekunde eines Speichers?",
+   "erklaerung": "IOPS → **Ein-/Ausgabeoperationen pro Sekunde eines Speichers**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "IOPS",
+     "richtig": true
+    },
+    {
+     "text": "Dual-Channel",
+     "richtig": false
+    },
+    {
+     "text": "ECC-RAM",
+     "richtig": false
+    },
+    {
+     "text": "Hyper-Threading / SMT",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR09-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR09",
+   "text": "Was bedeutet **UEFI**?",
+   "erklaerung": "UEFI → **Nachfolger des BIOS, unterstützt Secure Boot und GPT-Laufwerke**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Nachfolger des BIOS, unterstützt Secure Boot und GPT-Laufwerke",
+     "richtig": true
+    },
+    {
+     "text": "startet nur signierte Bootloader",
+     "richtig": false
+    },
+    {
+     "text": "mehrere virtuelle Maschinen laufen auf einer physischen Hardware",
+     "richtig": false
+    },
+    {
+     "text": "Ein-/Ausgabeoperationen pro Sekunde eines Speichers",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR09-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR09",
+   "text": "Welcher Begriff passt: Nachfolger des BIOS, unterstützt Secure Boot und GPT-Laufwerke?",
+   "erklaerung": "UEFI → **Nachfolger des BIOS, unterstützt Secure Boot und GPT-Laufwerke**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "UEFI",
+     "richtig": true
+    },
+    {
+     "text": "Secure Boot",
+     "richtig": false
+    },
+    {
+     "text": "Dual-Channel",
+     "richtig": false
+    },
+    {
+     "text": "Mehrkernprozessor",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR10-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR10",
+   "text": "Was bedeutet **Secure Boot**?",
+   "erklaerung": "Secure Boot → **startet nur signierte Bootloader**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "startet nur signierte Bootloader",
+     "richtig": true
+    },
+    {
+     "text": "Ein-/Ausgabeoperationen pro Sekunde eines Speichers",
+     "richtig": false
+    },
+    {
+     "text": "mehrere Rechenkerne auf einem Chip für parallele Verarbeitung",
+     "richtig": false
+    },
+    {
+     "text": "Nachfolger des BIOS, unterstützt Secure Boot und GPT-Laufwerke",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-BEGR10-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-BEGR10",
+   "text": "Welcher Begriff passt: startet nur signierte Bootloader?",
+   "erklaerung": "Secure Boot → **startet nur signierte Bootloader**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Secure Boot",
+     "richtig": true
+    },
+    {
+     "text": "ECC-RAM",
+     "richtig": false
+    },
+    {
+     "text": "TDP",
+     "richtig": false
+    },
+    {
+     "text": "Virtualisierung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-RAMBAND-001",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-RAMBAND",
+   "text": "RAM mit **3200 MT/s**, 64-Bit-Bus, **Dual-Channel**. Wie hoch ist die theoretische Bandbreite in **GB/s**? (auf 1 Nachkommastelle)",
+   "erklaerung": "3200 × 10⁶ × 8 Byte × 2 Kanäle = 51,2 GB/s.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 51.2,
+   "toleranz": 0.1,
+   "einheit": "GB/s"
+  },
+  {
+   "schluessel": "G-HW-RAMBAND-002",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-RAMBAND",
+   "text": "RAM mit **4800 MT/s**, 64-Bit-Bus, **Dual-Channel**. Wie hoch ist die theoretische Bandbreite in **GB/s**? (auf 1 Nachkommastelle)",
+   "erklaerung": "4800 × 10⁶ × 8 Byte × 2 Kanäle = 76,8 GB/s.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 76.8,
+   "toleranz": 0.1,
+   "einheit": "GB/s"
+  },
+  {
+   "schluessel": "G-HW-RAMBAND-003",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-RAMBAND",
+   "text": "RAM mit **3600 MT/s**, 64-Bit-Bus, **Dual-Channel**. Wie hoch ist die theoretische Bandbreite in **GB/s**? (auf 1 Nachkommastelle)",
+   "erklaerung": "3600 × 10⁶ × 8 Byte × 2 Kanäle = 57,6 GB/s.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 57.6,
+   "toleranz": 0.1,
+   "einheit": "GB/s"
+  },
+  {
+   "schluessel": "G-HW-RAMBAND-005",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-RAMBAND",
+   "text": "RAM mit **4800 MT/s**, 64-Bit-Bus, **Single-Channel**. Wie hoch ist die theoretische Bandbreite in **GB/s**? (auf 1 Nachkommastelle)",
+   "erklaerung": "4800 × 10⁶ × 8 Byte = 38,4 GB/s.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 38.4,
+   "toleranz": 0.1,
+   "einheit": "GB/s"
+  },
+  {
+   "schluessel": "G-HW-RAMBAND-006",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-RAMBAND",
+   "text": "RAM mit **2666 MT/s**, 64-Bit-Bus, **Single-Channel**. Wie hoch ist die theoretische Bandbreite in **GB/s**? (auf 1 Nachkommastelle)",
+   "erklaerung": "2666 × 10⁶ × 8 Byte = 21,3 GB/s.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 21.3,
+   "toleranz": 0.1,
+   "einheit": "GB/s"
+  },
+  {
+   "schluessel": "G-HW-RAMBAND-009",
+   "thema": "hardware",
+   "lektion": "HW-L2",
+   "gruppe": "HW-RAMBAND",
+   "text": "RAM mit **3600 MT/s**, 64-Bit-Bus, **Single-Channel**. Wie hoch ist die theoretische Bandbreite in **GB/s**? (auf 1 Nachkommastelle)",
+   "erklaerung": "3600 × 10⁶ × 8 Byte = 28,8 GB/s.",
+   "schwierigkeit": 3,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 28.8,
+   "toleranz": 0.1,
+   "einheit": "GB/s"
+  },
+  {
+   "schluessel": "G-HW-ERGO01-001",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-ERGO01",
+   "text": "Ergonomischer Bildschirmarbeitsplatz – was gilt für: **Bildschirm-Oberkante**?",
+   "erklaerung": "Bildschirm-Oberkante → **auf Augenhöhe oder leicht darunter**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "auf Augenhöhe oder leicht darunter",
+     "richtig": true
+    },
+    {
+     "text": "dunkle Schrift auf hellem Grund, flimmerfrei und entspiegelt",
+     "richtig": false
+    },
+    {
+     "text": "regelmäßige kurze Unterbrechungen bzw. Tätigkeitswechsel",
+     "richtig": false
+    },
+    {
+     "text": "stehen flach auf dem Boden oder einer Fußstütze",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-ERGO02-001",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-ERGO02",
+   "text": "Ergonomischer Bildschirmarbeitsplatz – was gilt für: **Sehabstand zum Monitor**?",
+   "erklaerung": "Sehabstand zum Monitor → **etwa 50–80 cm (Armlänge)**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "etwa 50–80 cm (Armlänge)",
+     "richtig": true
+    },
+    {
+     "text": "seitlich, Blickrichtung parallel zum Fenster",
+     "richtig": false
+    },
+    {
+     "text": "dunkle Schrift auf hellem Grund, flimmerfrei und entspiegelt",
+     "richtig": false
+    },
+    {
+     "text": "auf Augenhöhe oder leicht darunter",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-ERGO03-001",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-ERGO03",
+   "text": "Ergonomischer Bildschirmarbeitsplatz – was gilt für: **Monitor zum Fenster**?",
+   "erklaerung": "Monitor zum Fenster → **seitlich, Blickrichtung parallel zum Fenster**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "seitlich, Blickrichtung parallel zum Fenster",
+     "richtig": true
+    },
+    {
+     "text": "etwa 90° oder etwas mehr",
+     "richtig": false
+    },
+    {
+     "text": "stehen flach auf dem Boden oder einer Fußstütze",
+     "richtig": false
+    },
+    {
+     "text": "dunkle Schrift auf hellem Grund, flimmerfrei und entspiegelt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-ERGO04-001",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-ERGO04",
+   "text": "Ergonomischer Bildschirmarbeitsplatz – was gilt für: **Ellenbogenwinkel beim Tippen**?",
+   "erklaerung": "Ellenbogenwinkel beim Tippen → **etwa 90° oder etwas mehr**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "etwa 90° oder etwas mehr",
+     "richtig": true
+    },
+    {
+     "text": "dunkle Schrift auf hellem Grund, flimmerfrei und entspiegelt",
+     "richtig": false
+    },
+    {
+     "text": "seitlich, Blickrichtung parallel zum Fenster",
+     "richtig": false
+    },
+    {
+     "text": "stehen flach auf dem Boden oder einer Fußstütze",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-ERGO05-001",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-ERGO05",
+   "text": "Ergonomischer Bildschirmarbeitsplatz – was gilt für: **Füße**?",
+   "erklaerung": "Füße → **stehen flach auf dem Boden oder einer Fußstütze**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "stehen flach auf dem Boden oder einer Fußstütze",
+     "richtig": true
+    },
+    {
+     "text": "seitlich, Blickrichtung parallel zum Fenster",
+     "richtig": false
+    },
+    {
+     "text": "auf Augenhöhe oder leicht darunter",
+     "richtig": false
+    },
+    {
+     "text": "etwa 90° oder etwas mehr",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-ERGO06-001",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-ERGO06",
+   "text": "Ergonomischer Bildschirmarbeitsplatz – was gilt für: **Bildschirmpausen**?",
+   "erklaerung": "Bildschirmpausen → **regelmäßige kurze Unterbrechungen bzw. Tätigkeitswechsel**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "regelmäßige kurze Unterbrechungen bzw. Tätigkeitswechsel",
+     "richtig": true
+    },
+    {
+     "text": "stehen flach auf dem Boden oder einer Fußstütze",
+     "richtig": false
+    },
+    {
+     "text": "etwa 50–80 cm (Armlänge)",
+     "richtig": false
+    },
+    {
+     "text": "auf Augenhöhe oder leicht darunter",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-ERGO07-001",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-ERGO07",
+   "text": "Ergonomischer Bildschirmarbeitsplatz – was gilt für: **Darstellung**?",
+   "erklaerung": "Darstellung → **dunkle Schrift auf hellem Grund, flimmerfrei und entspiegelt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "dunkle Schrift auf hellem Grund, flimmerfrei und entspiegelt",
+     "richtig": true
+    },
+    {
+     "text": "auf Augenhöhe oder leicht darunter",
+     "richtig": false
+    },
+    {
+     "text": "etwa 90° oder etwas mehr",
+     "richtig": false
+    },
+    {
+     "text": "etwa 50–80 cm (Armlänge)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SIEGEL01-001",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-SIEGEL01",
+   "text": "Wofür steht **Blauer Engel**?",
+   "erklaerung": "Blauer Engel → **deutsches Umweltzeichen, u. a. für energiesparende und recyclinggerechte Geräte**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "deutsches Umweltzeichen, u. a. für energiesparende und recyclinggerechte Geräte",
+     "richtig": true
+    },
+    {
+     "text": "Hersteller erklärt die Einhaltung der EU-Vorschriften (kein Qualitäts- oder Umweltsiegel)",
+     "richtig": false
+    },
+    {
+     "text": "Nachhaltigkeitszertifikat für IT-Produkte inkl. sozialer Kriterien",
+     "richtig": false
+    },
+    {
+     "text": "Effizienzkennzeichnung für Netzteile",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SIEGEL01-002",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-SIEGEL01",
+   "text": "Welches Zeichen/Regelwerk: deutsches Umweltzeichen, u. a. für energiesparende und recyclinggerechte Geräte?",
+   "erklaerung": "Blauer Engel → **deutsches Umweltzeichen, u. a. für energiesparende und recyclinggerechte Geräte**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Blauer Engel",
+     "richtig": true
+    },
+    {
+     "text": "TCO Certified",
+     "richtig": false
+    },
+    {
+     "text": "EU-Energielabel",
+     "richtig": false
+    },
+    {
+     "text": "Energy Star",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SIEGEL02-001",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-SIEGEL02",
+   "text": "Wofür steht **Energy Star**?",
+   "erklaerung": "Energy Star → **Kennzeichen für energieeffiziente Bürogeräte**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Kennzeichen für energieeffiziente Bürogeräte",
+     "richtig": true
+    },
+    {
+     "text": "Hersteller erklärt die Einhaltung der EU-Vorschriften (kein Qualitäts- oder Umweltsiegel)",
+     "richtig": false
+    },
+    {
+     "text": "regelt Rücknahme und Entsorgung von Elektroaltgeräten",
+     "richtig": false
+    },
+    {
+     "text": "Nachhaltigkeitszertifikat für IT-Produkte inkl. sozialer Kriterien",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SIEGEL02-002",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-SIEGEL02",
+   "text": "Welches Zeichen/Regelwerk: Kennzeichen für energieeffiziente Bürogeräte?",
+   "erklaerung": "Energy Star → **Kennzeichen für energieeffiziente Bürogeräte**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Energy Star",
+     "richtig": true
+    },
+    {
+     "text": "TCO Certified",
+     "richtig": false
+    },
+    {
+     "text": "80 PLUS",
+     "richtig": false
+    },
+    {
+     "text": "WEEE / ElektroG",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SIEGEL03-001",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-SIEGEL03",
+   "text": "Wofür steht **TCO Certified**?",
+   "erklaerung": "TCO Certified → **Nachhaltigkeitszertifikat für IT-Produkte inkl. sozialer Kriterien**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Nachhaltigkeitszertifikat für IT-Produkte inkl. sozialer Kriterien",
+     "richtig": true
+    },
+    {
+     "text": "Hersteller erklärt die Einhaltung der EU-Vorschriften (kein Qualitäts- oder Umweltsiegel)",
+     "richtig": false
+    },
+    {
+     "text": "deutsches Umweltzeichen, u. a. für energiesparende und recyclinggerechte Geräte",
+     "richtig": false
+    },
+    {
+     "text": "Effizienzklassen A bis G, z. B. für Monitore",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SIEGEL03-002",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-SIEGEL03",
+   "text": "Welches Zeichen/Regelwerk: Nachhaltigkeitszertifikat für IT-Produkte inkl. sozialer Kriterien?",
+   "erklaerung": "TCO Certified → **Nachhaltigkeitszertifikat für IT-Produkte inkl. sozialer Kriterien**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "TCO Certified",
+     "richtig": true
+    },
+    {
+     "text": "EU-Energielabel",
+     "richtig": false
+    },
+    {
+     "text": "WEEE / ElektroG",
+     "richtig": false
+    },
+    {
+     "text": "80 PLUS",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SIEGEL04-001",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-SIEGEL04",
+   "text": "Wofür steht **EU-Energielabel**?",
+   "erklaerung": "EU-Energielabel → **Effizienzklassen A bis G, z. B. für Monitore**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Effizienzklassen A bis G, z. B. für Monitore",
+     "richtig": true
+    },
+    {
+     "text": "Effizienzkennzeichnung für Netzteile",
+     "richtig": false
+    },
+    {
+     "text": "deutsches Umweltzeichen, u. a. für energiesparende und recyclinggerechte Geräte",
+     "richtig": false
+    },
+    {
+     "text": "Hersteller erklärt die Einhaltung der EU-Vorschriften (kein Qualitäts- oder Umweltsiegel)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SIEGEL04-002",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-SIEGEL04",
+   "text": "Welches Zeichen/Regelwerk: Effizienzklassen A bis G, z. B. für Monitore?",
+   "erklaerung": "EU-Energielabel → **Effizienzklassen A bis G, z. B. für Monitore**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "EU-Energielabel",
+     "richtig": true
+    },
+    {
+     "text": "TCO Certified",
+     "richtig": false
+    },
+    {
+     "text": "80 PLUS",
+     "richtig": false
+    },
+    {
+     "text": "Energy Star",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SIEGEL05-001",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-SIEGEL05",
+   "text": "Wofür steht **CE-Kennzeichnung**?",
+   "erklaerung": "CE-Kennzeichnung → **Hersteller erklärt die Einhaltung der EU-Vorschriften (kein Qualitäts- oder Umweltsiegel)**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Hersteller erklärt die Einhaltung der EU-Vorschriften (kein Qualitäts- oder Umweltsiegel)",
+     "richtig": true
+    },
+    {
+     "text": "deutsches Umweltzeichen, u. a. für energiesparende und recyclinggerechte Geräte",
+     "richtig": false
+    },
+    {
+     "text": "Effizienzkennzeichnung für Netzteile",
+     "richtig": false
+    },
+    {
+     "text": "Kennzeichen für energieeffiziente Bürogeräte",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SIEGEL05-002",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-SIEGEL05",
+   "text": "Welches Zeichen/Regelwerk: Hersteller erklärt die Einhaltung der EU-Vorschriften (kein Qualitäts- oder Umweltsiegel)?",
+   "erklaerung": "CE-Kennzeichnung → **Hersteller erklärt die Einhaltung der EU-Vorschriften (kein Qualitäts- oder Umweltsiegel)**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "CE-Kennzeichnung",
+     "richtig": true
+    },
+    {
+     "text": "80 PLUS",
+     "richtig": false
+    },
+    {
+     "text": "WEEE / ElektroG",
+     "richtig": false
+    },
+    {
+     "text": "Energy Star",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SIEGEL06-001",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-SIEGEL06",
+   "text": "Wofür steht **80 PLUS**?",
+   "erklaerung": "80 PLUS → **Effizienzkennzeichnung für Netzteile**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Effizienzkennzeichnung für Netzteile",
+     "richtig": true
+    },
+    {
+     "text": "regelt Rücknahme und Entsorgung von Elektroaltgeräten",
+     "richtig": false
+    },
+    {
+     "text": "deutsches Umweltzeichen, u. a. für energiesparende und recyclinggerechte Geräte",
+     "richtig": false
+    },
+    {
+     "text": "Effizienzklassen A bis G, z. B. für Monitore",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SIEGEL06-002",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-SIEGEL06",
+   "text": "Welches Zeichen/Regelwerk: Effizienzkennzeichnung für Netzteile?",
+   "erklaerung": "80 PLUS → **Effizienzkennzeichnung für Netzteile**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "80 PLUS",
+     "richtig": true
+    },
+    {
+     "text": "TCO Certified",
+     "richtig": false
+    },
+    {
+     "text": "EU-Energielabel",
+     "richtig": false
+    },
+    {
+     "text": "Blauer Engel",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SIEGEL07-001",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-SIEGEL07",
+   "text": "Wofür steht **WEEE / ElektroG**?",
+   "erklaerung": "WEEE / ElektroG → **regelt Rücknahme und Entsorgung von Elektroaltgeräten**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "regelt Rücknahme und Entsorgung von Elektroaltgeräten",
+     "richtig": true
+    },
+    {
+     "text": "deutsches Umweltzeichen, u. a. für energiesparende und recyclinggerechte Geräte",
+     "richtig": false
+    },
+    {
+     "text": "Kennzeichen für energieeffiziente Bürogeräte",
+     "richtig": false
+    },
+    {
+     "text": "Effizienzkennzeichnung für Netzteile",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-SIEGEL07-002",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-SIEGEL07",
+   "text": "Welches Zeichen/Regelwerk: regelt Rücknahme und Entsorgung von Elektroaltgeräten?",
+   "erklaerung": "WEEE / ElektroG → **regelt Rücknahme und Entsorgung von Elektroaltgeräten**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "WEEE / ElektroG",
+     "richtig": true
+    },
+    {
+     "text": "80 PLUS",
+     "richtig": false
+    },
+    {
+     "text": "Blauer Engel",
+     "richtig": false
+    },
+    {
+     "text": "TCO Certified",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-GREEN-001",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-GREEN",
+   "text": "Welche Maßnahmen gehören zu Green IT?",
+   "erklaerung": "Richtig sind: Thin Clients statt leistungsstarker PCs einsetzen; Altgeräte fachgerecht recyceln.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Thin Clients statt leistungsstarker PCs einsetzen",
+     "richtig": true
+    },
+    {
+     "text": "Altgeräte fachgerecht recyceln",
+     "richtig": true
+    },
+    {
+     "text": "Altgeräte über den Hausmüll entsorgen",
+     "richtig": false
+    },
+    {
+     "text": "Server dauerhaft mit voller Last laufen lassen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-GREEN-002",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-GREEN",
+   "text": "Welche Maßnahmen gehören zu Green IT?",
+   "erklaerung": "Richtig sind: Drucke reduzieren und Duplexdruck nutzen; Energiesparmodi und automatisches Abschalten nutzen; Server virtualisieren und konsolidieren.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Drucke reduzieren und Duplexdruck nutzen",
+     "richtig": true
+    },
+    {
+     "text": "Energiesparmodi und automatisches Abschalten nutzen",
+     "richtig": true
+    },
+    {
+     "text": "Server virtualisieren und konsolidieren",
+     "richtig": true
+    },
+    {
+     "text": "Bildschirmschoner mit Animation statt Standby",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-GREEN-003",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-GREEN",
+   "text": "Welche Maßnahmen gehören zu Green IT?",
+   "erklaerung": "Richtig sind: Energiesparmodi und automatisches Abschalten nutzen; Thin Clients statt leistungsstarker PCs einsetzen; Drucke reduzieren und Duplexdruck nutzen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Energiesparmodi und automatisches Abschalten nutzen",
+     "richtig": true
+    },
+    {
+     "text": "Thin Clients statt leistungsstarker PCs einsetzen",
+     "richtig": true
+    },
+    {
+     "text": "Drucke reduzieren und Duplexdruck nutzen",
+     "richtig": true
+    },
+    {
+     "text": "Altgeräte über den Hausmüll entsorgen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-GREEN-004",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-GREEN",
+   "text": "Welche Maßnahmen gehören zu Green IT?",
+   "erklaerung": "Richtig sind: Geräte länger nutzen und reparieren; Energiesparmodi und automatisches Abschalten nutzen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Geräte länger nutzen und reparieren",
+     "richtig": true
+    },
+    {
+     "text": "Energiesparmodi und automatisches Abschalten nutzen",
+     "richtig": true
+    },
+    {
+     "text": "Altgeräte über den Hausmüll entsorgen",
+     "richtig": false
+    },
+    {
+     "text": "Bildschirmschoner mit Animation statt Standby",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-GREEN-005",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-GREEN",
+   "text": "Welche Maßnahmen gehören zu Green IT?",
+   "erklaerung": "Richtig sind: Drucke reduzieren und Duplexdruck nutzen; Server virtualisieren und konsolidieren.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Drucke reduzieren und Duplexdruck nutzen",
+     "richtig": true
+    },
+    {
+     "text": "Server virtualisieren und konsolidieren",
+     "richtig": true
+    },
+    {
+     "text": "Jedes Jahr alle Geräte ersetzen",
+     "richtig": false
+    },
+    {
+     "text": "Altgeräte über den Hausmüll entsorgen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-GREEN-006",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-GREEN",
+   "text": "Welche Maßnahmen gehören zu Green IT?",
+   "erklaerung": "Richtig sind: Thin Clients statt leistungsstarker PCs einsetzen; Drucke reduzieren und Duplexdruck nutzen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Thin Clients statt leistungsstarker PCs einsetzen",
+     "richtig": true
+    },
+    {
+     "text": "Drucke reduzieren und Duplexdruck nutzen",
+     "richtig": true
+    },
+    {
+     "text": "Altgeräte über den Hausmüll entsorgen",
+     "richtig": false
+    },
+    {
+     "text": "Server dauerhaft mit voller Last laufen lassen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-GREEN-007",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-GREEN",
+   "text": "Welche Maßnahmen gehören zu Green IT?",
+   "erklaerung": "Richtig sind: Altgeräte fachgerecht recyceln; Thin Clients statt leistungsstarker PCs einsetzen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Altgeräte fachgerecht recyceln",
+     "richtig": true
+    },
+    {
+     "text": "Thin Clients statt leistungsstarker PCs einsetzen",
+     "richtig": true
+    },
+    {
+     "text": "Altgeräte über den Hausmüll entsorgen",
+     "richtig": false
+    },
+    {
+     "text": "Jedes Jahr alle Geräte ersetzen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-GREEN-008",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-GREEN",
+   "text": "Welche Maßnahmen gehören zu Green IT?",
+   "erklaerung": "Richtig sind: Altgeräte fachgerecht recyceln; Geräte länger nutzen und reparieren; Energiesparmodi und automatisches Abschalten nutzen.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Altgeräte fachgerecht recyceln",
+     "richtig": true
+    },
+    {
+     "text": "Geräte länger nutzen und reparieren",
+     "richtig": true
+    },
+    {
+     "text": "Energiesparmodi und automatisches Abschalten nutzen",
+     "richtig": true
+    },
+    {
+     "text": "Jedes Jahr alle Geräte ersetzen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-GREEN-009",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-GREEN",
+   "text": "Welche Maßnahmen gehören zu Green IT?",
+   "erklaerung": "Richtig sind: Thin Clients statt leistungsstarker PCs einsetzen; Drucke reduzieren und Duplexdruck nutzen; Altgeräte fachgerecht recyceln.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Thin Clients statt leistungsstarker PCs einsetzen",
+     "richtig": true
+    },
+    {
+     "text": "Drucke reduzieren und Duplexdruck nutzen",
+     "richtig": true
+    },
+    {
+     "text": "Altgeräte fachgerecht recyceln",
+     "richtig": true
+    },
+    {
+     "text": "Server dauerhaft mit voller Last laufen lassen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-GREEN-010",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-GREEN",
+   "text": "Welche Maßnahmen gehören zu Green IT?",
+   "erklaerung": "Richtig sind: Thin Clients statt leistungsstarker PCs einsetzen; Server virtualisieren und konsolidieren.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "Thin Clients statt leistungsstarker PCs einsetzen",
+     "richtig": true
+    },
+    {
+     "text": "Server virtualisieren und konsolidieren",
+     "richtig": true
+    },
+    {
+     "text": "Server dauerhaft mit voller Last laufen lassen",
+     "richtig": false
+    },
+    {
+     "text": "Jedes Jahr alle Geräte ersetzen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-HW-TCO-001",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-TCO",
+   "text": "TCO-Rechnung: Anschaffung **1.000,00 €**, Strom **45,00 €/Jahr**, Wartung/Support **150,00 €/Jahr**, Nutzung **4 Jahre**. Wie hoch sind die Gesamtkosten?",
+   "erklaerung": "1.000,00 € + 4 × (45,00 € + 150,00 €) = 1.780,00 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1780,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-TCO-002",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-TCO",
+   "text": "TCO-Rechnung: Anschaffung **600,00 €**, Strom **120,00 €/Jahr**, Wartung/Support **100,00 €/Jahr**, Nutzung **4 Jahre**. Wie hoch sind die Gesamtkosten?",
+   "erklaerung": "600,00 € + 4 × (120,00 € + 100,00 €) = 1.480,00 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1480,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-TCO-003",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-TCO",
+   "text": "TCO-Rechnung: Anschaffung **1.000,00 €**, Strom **60,00 €/Jahr**, Wartung/Support **150,00 €/Jahr**, Nutzung **3 Jahre**. Wie hoch sind die Gesamtkosten?",
+   "erklaerung": "1.000,00 € + 3 × (60,00 € + 150,00 €) = 1.630,00 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1630,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-TCO-004",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-TCO",
+   "text": "TCO-Rechnung: Anschaffung **1.500,00 €**, Strom **30,00 €/Jahr**, Wartung/Support **80,00 €/Jahr**, Nutzung **3 Jahre**. Wie hoch sind die Gesamtkosten?",
+   "erklaerung": "1.500,00 € + 3 × (30,00 € + 80,00 €) = 1.830,00 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1830,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-TCO-005",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-TCO",
+   "text": "TCO-Rechnung: Anschaffung **800,00 €**, Strom **80,00 €/Jahr**, Wartung/Support **50,00 €/Jahr**, Nutzung **4 Jahre**. Wie hoch sind die Gesamtkosten?",
+   "erklaerung": "800,00 € + 4 × (80,00 € + 50,00 €) = 1.320,00 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1320,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-TCO-006",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-TCO",
+   "text": "TCO-Rechnung: Anschaffung **1.000,00 €**, Strom **60,00 €/Jahr**, Wartung/Support **100,00 €/Jahr**, Nutzung **5 Jahre**. Wie hoch sind die Gesamtkosten?",
+   "erklaerung": "1.000,00 € + 5 × (60,00 € + 100,00 €) = 1.800,00 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1800,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-TCO-007",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-TCO",
+   "text": "TCO-Rechnung: Anschaffung **1.500,00 €**, Strom **80,00 €/Jahr**, Wartung/Support **150,00 €/Jahr**, Nutzung **5 Jahre**. Wie hoch sind die Gesamtkosten?",
+   "erklaerung": "1.500,00 € + 5 × (80,00 € + 150,00 €) = 2.650,00 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2650,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-TCO-008",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-TCO",
+   "text": "TCO-Rechnung: Anschaffung **1.000,00 €**, Strom **80,00 €/Jahr**, Wartung/Support **80,00 €/Jahr**, Nutzung **3 Jahre**. Wie hoch sind die Gesamtkosten?",
+   "erklaerung": "1.000,00 € + 3 × (80,00 € + 80,00 €) = 1.480,00 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1480,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-TCO-009",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-TCO",
+   "text": "TCO-Rechnung: Anschaffung **800,00 €**, Strom **80,00 €/Jahr**, Wartung/Support **150,00 €/Jahr**, Nutzung **4 Jahre**. Wie hoch sind die Gesamtkosten?",
+   "erklaerung": "800,00 € + 4 × (80,00 € + 150,00 €) = 1.720,00 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1720,
+   "toleranz": 0.01,
+   "einheit": "€"
+  },
+  {
+   "schluessel": "G-HW-TCO-010",
+   "thema": "hardware",
+   "lektion": "HW-L5",
+   "gruppe": "HW-TCO",
+   "text": "TCO-Rechnung: Anschaffung **800,00 €**, Strom **60,00 €/Jahr**, Wartung/Support **50,00 €/Jahr**, Nutzung **4 Jahre**. Wie hoch sind die Gesamtkosten?",
+   "erklaerung": "800,00 € + 4 × (60,00 € + 50,00 €) = 1.240,00 €.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1240,
+   "toleranz": 0.01,
+   "einheit": "€"
+  }
+ ]
+}

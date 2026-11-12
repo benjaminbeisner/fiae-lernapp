@@ -35,7 +35,7 @@
   {% if s.beantwortet %}
     <div class="feedback {% if s.beantwortet.richtig %}ok{% else %}bad{% endif %}">
       <div class="titel">{% if s.beantwortet.richtig %}✔ Richtig! +10 XP{% else %}✘ Noch nicht ganz.{% endif %}</div>
-      {% if frage.typ == "zahl" %}<p>Lösung: <strong>{{ frage.loesung_zahl.normalize }} {{ frage.einheit }}</strong></p>{% endif %}
+      {% if frage.typ == "zahl" %}<p>Lösung: <strong>{{ frage.loesung_zahl|zahl_de }} {{ frage.einheit }}</strong></p>{% endif %}
       {% if frage.erklaerung %}{{ frage.erklaerung|lerntext }}{% endif %}
       {% if not s.beantwortet.richtig and frage.lektion %}
       <details class="nachlesen"><summary>📘 Nochmal erklärt: {{ frage.lektion.titel }}</summary>

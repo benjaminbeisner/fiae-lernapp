@@ -1,0 +1,4028 @@
+{
+ "fragen": [
+  {
+   "schluessel": "G-UML-SICHT01-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-SICHT01",
+   "text": "Welche Sichtbarkeit bedeutet das Zeichen `+` im Klassendiagramm?",
+   "erklaerung": "+ → **public – überall sichtbar**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "public – überall sichtbar",
+     "richtig": true
+    },
+    {
+     "text": "private – nur innerhalb der Klasse",
+     "richtig": false
+    },
+    {
+     "text": "protected – Klasse und Unterklassen",
+     "richtig": false
+    },
+    {
+     "text": "package – innerhalb des Pakets",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SICHT01-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-SICHT01",
+   "text": "Welches Zeichen steht für **public – überall sichtbar**?",
+   "erklaerung": "+ → **public – überall sichtbar**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "+",
+     "richtig": true
+    },
+    {
+     "text": "~",
+     "richtig": false
+    },
+    {
+     "text": "#",
+     "richtig": false
+    },
+    {
+     "text": "-",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SICHT02-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-SICHT02",
+   "text": "Welche Sichtbarkeit bedeutet das Zeichen `-` im Klassendiagramm?",
+   "erklaerung": "- → **private – nur innerhalb der Klasse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "private – nur innerhalb der Klasse",
+     "richtig": true
+    },
+    {
+     "text": "package – innerhalb des Pakets",
+     "richtig": false
+    },
+    {
+     "text": "protected – Klasse und Unterklassen",
+     "richtig": false
+    },
+    {
+     "text": "public – überall sichtbar",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SICHT02-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-SICHT02",
+   "text": "Welches Zeichen steht für **private – nur innerhalb der Klasse**?",
+   "erklaerung": "- → **private – nur innerhalb der Klasse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "-",
+     "richtig": true
+    },
+    {
+     "text": "+",
+     "richtig": false
+    },
+    {
+     "text": "#",
+     "richtig": false
+    },
+    {
+     "text": "~",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SICHT03-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-SICHT03",
+   "text": "Welche Sichtbarkeit bedeutet das Zeichen `#` im Klassendiagramm?",
+   "erklaerung": "# → **protected – Klasse und Unterklassen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "protected – Klasse und Unterklassen",
+     "richtig": true
+    },
+    {
+     "text": "private – nur innerhalb der Klasse",
+     "richtig": false
+    },
+    {
+     "text": "package – innerhalb des Pakets",
+     "richtig": false
+    },
+    {
+     "text": "public – überall sichtbar",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SICHT03-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-SICHT03",
+   "text": "Welches Zeichen steht für **protected – Klasse und Unterklassen**?",
+   "erklaerung": "# → **protected – Klasse und Unterklassen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "#",
+     "richtig": true
+    },
+    {
+     "text": "+",
+     "richtig": false
+    },
+    {
+     "text": "~",
+     "richtig": false
+    },
+    {
+     "text": "-",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SICHT04-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-SICHT04",
+   "text": "Welche Sichtbarkeit bedeutet das Zeichen `~` im Klassendiagramm?",
+   "erklaerung": "~ → **package – innerhalb des Pakets**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "package – innerhalb des Pakets",
+     "richtig": true
+    },
+    {
+     "text": "private – nur innerhalb der Klasse",
+     "richtig": false
+    },
+    {
+     "text": "protected – Klasse und Unterklassen",
+     "richtig": false
+    },
+    {
+     "text": "public – überall sichtbar",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SICHT04-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-SICHT04",
+   "text": "Welches Zeichen steht für **package – innerhalb des Pakets**?",
+   "erklaerung": "~ → **package – innerhalb des Pakets**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "~",
+     "richtig": true
+    },
+    {
+     "text": "-",
+     "richtig": false
+    },
+    {
+     "text": "#",
+     "richtig": false
+    },
+    {
+     "text": "+",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR01-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR01",
+   "text": "Was bedeutet **Klasse** in der Objektorientierung?",
+   "erklaerung": "Klasse → **Bauplan mit Attributen und Methoden**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Bauplan mit Attributen und Methoden",
+     "richtig": true
+    },
+    {
+     "text": "konkrete Instanz einer Klasse",
+     "richtig": false
+    },
+    {
+     "text": "legt Methoden fest, die implementierende Klassen bereitstellen müssen",
+     "richtig": false
+    },
+    {
+     "text": "Eigenschaft einer Klasse",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR01-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR01",
+   "text": "Welcher Begriff passt: Bauplan mit Attributen und Methoden?",
+   "erklaerung": "Klasse → **Bauplan mit Attributen und Methoden**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Klasse",
+     "richtig": true
+    },
+    {
+     "text": "Objekt",
+     "richtig": false
+    },
+    {
+     "text": "Polymorphie",
+     "richtig": false
+    },
+    {
+     "text": "Konstruktor",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR02-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR02",
+   "text": "Was bedeutet **Objekt** in der Objektorientierung?",
+   "erklaerung": "Objekt → **konkrete Instanz einer Klasse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "konkrete Instanz einer Klasse",
+     "richtig": true
+    },
+    {
+     "text": "Methode, die beim Erzeugen eines Objekts aufgerufen wird",
+     "richtig": false
+    },
+    {
+     "text": "Methoden zum Lesen bzw. Ändern privater Attribute",
+     "richtig": false
+    },
+    {
+     "text": "Verhalten bzw. Funktion einer Klasse",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR02-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR02",
+   "text": "Welcher Begriff passt: konkrete Instanz einer Klasse?",
+   "erklaerung": "Objekt → **konkrete Instanz einer Klasse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Objekt",
+     "richtig": true
+    },
+    {
+     "text": "Attribut",
+     "richtig": false
+    },
+    {
+     "text": "Polymorphie",
+     "richtig": false
+    },
+    {
+     "text": "Konstruktor",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR03-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR03",
+   "text": "Was bedeutet **Attribut** in der Objektorientierung?",
+   "erklaerung": "Attribut → **Eigenschaft einer Klasse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Eigenschaft einer Klasse",
+     "richtig": true
+    },
+    {
+     "text": "gehört zur Klasse, nicht zu einem einzelnen Objekt",
+     "richtig": false
+    },
+    {
+     "text": "Methode, die beim Erzeugen eines Objekts aufgerufen wird",
+     "richtig": false
+    },
+    {
+     "text": "Verhalten bzw. Funktion einer Klasse",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR03-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR03",
+   "text": "Welcher Begriff passt: Eigenschaft einer Klasse?",
+   "erklaerung": "Attribut → **Eigenschaft einer Klasse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Attribut",
+     "richtig": true
+    },
+    {
+     "text": "Polymorphie",
+     "richtig": false
+    },
+    {
+     "text": "statisches Attribut (unterstrichen)",
+     "richtig": false
+    },
+    {
+     "text": "Getter / Setter",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR04-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR04",
+   "text": "Was bedeutet **Methode / Operation** in der Objektorientierung?",
+   "erklaerung": "Methode / Operation → **Verhalten bzw. Funktion einer Klasse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Verhalten bzw. Funktion einer Klasse",
+     "richtig": true
+    },
+    {
+     "text": "gleicher Methodenaufruf führt je nach Objekttyp zu unterschiedlichem Verhalten",
+     "richtig": false
+    },
+    {
+     "text": "kann nicht direkt instanziiert werden",
+     "richtig": false
+    },
+    {
+     "text": "Eigenschaft einer Klasse",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR04-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR04",
+   "text": "Welcher Begriff passt: Verhalten bzw. Funktion einer Klasse?",
+   "erklaerung": "Methode / Operation → **Verhalten bzw. Funktion einer Klasse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Methode / Operation",
+     "richtig": true
+    },
+    {
+     "text": "Attribut",
+     "richtig": false
+    },
+    {
+     "text": "Konstruktor",
+     "richtig": false
+    },
+    {
+     "text": "Klasse",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR05-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR05",
+   "text": "Was bedeutet **Konstruktor** in der Objektorientierung?",
+   "erklaerung": "Konstruktor → **Methode, die beim Erzeugen eines Objekts aufgerufen wird**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Methode, die beim Erzeugen eines Objekts aufgerufen wird",
+     "richtig": true
+    },
+    {
+     "text": "Eigenschaft einer Klasse",
+     "richtig": false
+    },
+    {
+     "text": "Methoden zum Lesen bzw. Ändern privater Attribute",
+     "richtig": false
+    },
+    {
+     "text": "konkrete Instanz einer Klasse",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR05-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR05",
+   "text": "Welcher Begriff passt: Methode, die beim Erzeugen eines Objekts aufgerufen wird?",
+   "erklaerung": "Konstruktor → **Methode, die beim Erzeugen eines Objekts aufgerufen wird**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Konstruktor",
+     "richtig": true
+    },
+    {
+     "text": "Klasse",
+     "richtig": false
+    },
+    {
+     "text": "statisches Attribut (unterstrichen)",
+     "richtig": false
+    },
+    {
+     "text": "Objekt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR06-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR06",
+   "text": "Was bedeutet **Kapselung** in der Objektorientierung?",
+   "erklaerung": "Kapselung → **Attribute sind privat und nur über Methoden zugänglich**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Attribute sind privat und nur über Methoden zugänglich",
+     "richtig": true
+    },
+    {
+     "text": "gehört zur Klasse, nicht zu einem einzelnen Objekt",
+     "richtig": false
+    },
+    {
+     "text": "legt Methoden fest, die implementierende Klassen bereitstellen müssen",
+     "richtig": false
+    },
+    {
+     "text": "Eigenschaft einer Klasse",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR06-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR06",
+   "text": "Welcher Begriff passt: Attribute sind privat und nur über Methoden zugänglich?",
+   "erklaerung": "Kapselung → **Attribute sind privat und nur über Methoden zugänglich**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Kapselung",
+     "richtig": true
+    },
+    {
+     "text": "statisches Attribut (unterstrichen)",
+     "richtig": false
+    },
+    {
+     "text": "Interface",
+     "richtig": false
+    },
+    {
+     "text": "Konstruktor",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR07-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR07",
+   "text": "Was bedeutet **Getter / Setter** in der Objektorientierung?",
+   "erklaerung": "Getter / Setter → **Methoden zum Lesen bzw. Ändern privater Attribute**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Methoden zum Lesen bzw. Ändern privater Attribute",
+     "richtig": true
+    },
+    {
+     "text": "Bauplan mit Attributen und Methoden",
+     "richtig": false
+    },
+    {
+     "text": "legt Methoden fest, die implementierende Klassen bereitstellen müssen",
+     "richtig": false
+    },
+    {
+     "text": "Attribute sind privat und nur über Methoden zugänglich",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR07-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR07",
+   "text": "Welcher Begriff passt: Methoden zum Lesen bzw. Ändern privater Attribute?",
+   "erklaerung": "Getter / Setter → **Methoden zum Lesen bzw. Ändern privater Attribute**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Getter / Setter",
+     "richtig": true
+    },
+    {
+     "text": "Konstruktor",
+     "richtig": false
+    },
+    {
+     "text": "Überschreiben",
+     "richtig": false
+    },
+    {
+     "text": "Objekt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR08-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR08",
+   "text": "Was bedeutet **statisches Attribut (unterstrichen)** in der Objektorientierung?",
+   "erklaerung": "statisches Attribut (unterstrichen) → **gehört zur Klasse, nicht zu einem einzelnen Objekt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "gehört zur Klasse, nicht zu einem einzelnen Objekt",
+     "richtig": true
+    },
+    {
+     "text": "kann nicht direkt instanziiert werden",
+     "richtig": false
+    },
+    {
+     "text": "Eigenschaft einer Klasse",
+     "richtig": false
+    },
+    {
+     "text": "Methoden zum Lesen bzw. Ändern privater Attribute",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR08-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR08",
+   "text": "Welcher Begriff passt: gehört zur Klasse, nicht zu einem einzelnen Objekt?",
+   "erklaerung": "statisches Attribut (unterstrichen) → **gehört zur Klasse, nicht zu einem einzelnen Objekt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "statisches Attribut (unterstrichen)",
+     "richtig": true
+    },
+    {
+     "text": "Objekt",
+     "richtig": false
+    },
+    {
+     "text": "Methode / Operation",
+     "richtig": false
+    },
+    {
+     "text": "Polymorphie",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR09-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR09",
+   "text": "Was bedeutet **abstrakte Klasse (kursiv)** in der Objektorientierung?",
+   "erklaerung": "abstrakte Klasse (kursiv) → **kann nicht direkt instanziiert werden**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "kann nicht direkt instanziiert werden",
+     "richtig": true
+    },
+    {
+     "text": "Attribute sind privat und nur über Methoden zugänglich",
+     "richtig": false
+    },
+    {
+     "text": "Unterklasse ersetzt eine geerbte Methode durch eine eigene Implementierung",
+     "richtig": false
+    },
+    {
+     "text": "Eigenschaft einer Klasse",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR09-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR09",
+   "text": "Welcher Begriff passt: kann nicht direkt instanziiert werden?",
+   "erklaerung": "abstrakte Klasse (kursiv) → **kann nicht direkt instanziiert werden**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "abstrakte Klasse (kursiv)",
+     "richtig": true
+    },
+    {
+     "text": "Klasse",
+     "richtig": false
+    },
+    {
+     "text": "Konstruktor",
+     "richtig": false
+    },
+    {
+     "text": "Polymorphie",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR10-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR10",
+   "text": "Was bedeutet **Interface** in der Objektorientierung?",
+   "erklaerung": "Interface → **legt Methoden fest, die implementierende Klassen bereitstellen müssen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "legt Methoden fest, die implementierende Klassen bereitstellen müssen",
+     "richtig": true
+    },
+    {
+     "text": "Attribute sind privat und nur über Methoden zugänglich",
+     "richtig": false
+    },
+    {
+     "text": "Bauplan mit Attributen und Methoden",
+     "richtig": false
+    },
+    {
+     "text": "konkrete Instanz einer Klasse",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR10-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR10",
+   "text": "Welcher Begriff passt: legt Methoden fest, die implementierende Klassen bereitstellen müssen?",
+   "erklaerung": "Interface → **legt Methoden fest, die implementierende Klassen bereitstellen müssen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Interface",
+     "richtig": true
+    },
+    {
+     "text": "statisches Attribut (unterstrichen)",
+     "richtig": false
+    },
+    {
+     "text": "Überschreiben",
+     "richtig": false
+    },
+    {
+     "text": "Klasse",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR11-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR11",
+   "text": "Was bedeutet **Polymorphie** in der Objektorientierung?",
+   "erklaerung": "Polymorphie → **gleicher Methodenaufruf führt je nach Objekttyp zu unterschiedlichem Verhalten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "gleicher Methodenaufruf führt je nach Objekttyp zu unterschiedlichem Verhalten",
+     "richtig": true
+    },
+    {
+     "text": "Verhalten bzw. Funktion einer Klasse",
+     "richtig": false
+    },
+    {
+     "text": "konkrete Instanz einer Klasse",
+     "richtig": false
+    },
+    {
+     "text": "Unterklasse ersetzt eine geerbte Methode durch eine eigene Implementierung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR11-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR11",
+   "text": "Welcher Begriff passt: gleicher Methodenaufruf führt je nach Objekttyp zu unterschiedlichem Verhalten?",
+   "erklaerung": "Polymorphie → **gleicher Methodenaufruf führt je nach Objekttyp zu unterschiedlichem Verhalten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Polymorphie",
+     "richtig": true
+    },
+    {
+     "text": "Klasse",
+     "richtig": false
+    },
+    {
+     "text": "abstrakte Klasse (kursiv)",
+     "richtig": false
+    },
+    {
+     "text": "statisches Attribut (unterstrichen)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR12-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR12",
+   "text": "Was bedeutet **Überschreiben** in der Objektorientierung?",
+   "erklaerung": "Überschreiben → **Unterklasse ersetzt eine geerbte Methode durch eine eigene Implementierung**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Unterklasse ersetzt eine geerbte Methode durch eine eigene Implementierung",
+     "richtig": true
+    },
+    {
+     "text": "Attribute sind privat und nur über Methoden zugänglich",
+     "richtig": false
+    },
+    {
+     "text": "gehört zur Klasse, nicht zu einem einzelnen Objekt",
+     "richtig": false
+    },
+    {
+     "text": "legt Methoden fest, die implementierende Klassen bereitstellen müssen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEGR12-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-BEGR12",
+   "text": "Welcher Begriff passt: Unterklasse ersetzt eine geerbte Methode durch eine eigene Implementierung?",
+   "erklaerung": "Überschreiben → **Unterklasse ersetzt eine geerbte Methode durch eine eigene Implementierung**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Überschreiben",
+     "richtig": true
+    },
+    {
+     "text": "Attribut",
+     "richtig": false
+    },
+    {
+     "text": "Klasse",
+     "richtig": false
+    },
+    {
+     "text": "statisches Attribut (unterstrichen)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-KLATTR-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-KLATTR",
+   "text": "Klasse **Kunde**:\n\n```\nKunde\n------------------------------\n- kundenNr: int\n- name: String\n------------------------------\n+ getName(): String\n+ setName(n: String): void\n```\n\nWie viele Attribute hat die Klasse?",
+   "erklaerung": "Attribute stehen im mittleren Feld, Methoden im unteren.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-UML-KLMETH-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-KLMETH",
+   "text": "Klasse **Kunde**:\n\n```\nKunde\n------------------------------\n- kundenNr: int\n- name: String\n------------------------------\n+ getName(): String\n+ setName(n: String): void\n```\n\nWie viele Methoden hat die Klasse?",
+   "erklaerung": "Methoden erkennt man an den Klammern ().",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-UML-KLPRIV01-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-KLPRIV01",
+   "text": "Klasse **Kunde**:\n\n```\nKunde\n------------------------------\n- kundenNr: int\n- name: String\n------------------------------\n+ getName(): String\n+ setName(n: String): void\n```\n\nWelche Elemente sind **private**?",
+   "erklaerung": "Private Elemente sind mit - gekennzeichnet.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "kundenNr",
+     "richtig": true
+    },
+    {
+     "text": "name",
+     "richtig": true
+    },
+    {
+     "text": "getName",
+     "richtig": false
+    },
+    {
+     "text": "setName",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-KLRUECK-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-KLRUECK",
+   "text": "Klasse **Kunde**:\n\n```\nKunde\n------------------------------\n- kundenNr: int\n- name: String\n------------------------------\n+ getName(): String\n+ setName(n: String): void\n```\n\nWelchen Rückgabetyp hat `setName`?",
+   "erklaerung": "Der Rückgabetyp steht nach der Parameterklammer hinter dem Doppelpunkt; void = keine Rückgabe.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "void",
+     "richtig": true
+    },
+    {
+     "text": "int",
+     "richtig": false
+    },
+    {
+     "text": "double",
+     "richtig": false
+    },
+    {
+     "text": "String",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-KLATTR-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-KLATTR",
+   "text": "Klasse **Konto**:\n\n```\nKonto\n------------------------------\n- iban: String\n- saldo: double\n------------------------------\n+ einzahlen(betrag: double): void\n+ getSaldo(): double\n```\n\nWie viele Attribute hat die Klasse?",
+   "erklaerung": "Attribute stehen im mittleren Feld, Methoden im unteren.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-UML-KLMETH-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-KLMETH",
+   "text": "Klasse **Konto**:\n\n```\nKonto\n------------------------------\n- iban: String\n- saldo: double\n------------------------------\n+ einzahlen(betrag: double): void\n+ getSaldo(): double\n```\n\nWie viele Methoden hat die Klasse?",
+   "erklaerung": "Methoden erkennt man an den Klammern ().",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-UML-KLPRIV02-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-KLPRIV02",
+   "text": "Klasse **Konto**:\n\n```\nKonto\n------------------------------\n- iban: String\n- saldo: double\n------------------------------\n+ einzahlen(betrag: double): void\n+ getSaldo(): double\n```\n\nWelche Elemente sind **private**?",
+   "erklaerung": "Private Elemente sind mit - gekennzeichnet.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "iban",
+     "richtig": true
+    },
+    {
+     "text": "saldo",
+     "richtig": true
+    },
+    {
+     "text": "einzahlen",
+     "richtig": false
+    },
+    {
+     "text": "getSaldo",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-KLRUECK-002",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-KLRUECK",
+   "text": "Klasse **Konto**:\n\n```\nKonto\n------------------------------\n- iban: String\n- saldo: double\n------------------------------\n+ einzahlen(betrag: double): void\n+ getSaldo(): double\n```\n\nWelchen Rückgabetyp hat `getSaldo`?",
+   "erklaerung": "Der Rückgabetyp steht nach der Parameterklammer hinter dem Doppelpunkt; void = keine Rückgabe.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "double",
+     "richtig": true
+    },
+    {
+     "text": "void",
+     "richtig": false
+    },
+    {
+     "text": "int",
+     "richtig": false
+    },
+    {
+     "text": "String",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-KLATTR-003",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-KLATTR",
+   "text": "Klasse **Artikel**:\n\n```\nArtikel\n------------------------------\n- artNr: int\n- preis: double\n# bestand: int\n------------------------------\n+ berechneBrutto(): double\n```\n\nWie viele Attribute hat die Klasse?",
+   "erklaerung": "Attribute stehen im mittleren Feld, Methoden im unteren.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 3,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-UML-KLMETH-003",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-KLMETH",
+   "text": "Klasse **Artikel**:\n\n```\nArtikel\n------------------------------\n- artNr: int\n- preis: double\n# bestand: int\n------------------------------\n+ berechneBrutto(): double\n```\n\nWie viele Methoden hat die Klasse?",
+   "erklaerung": "Methoden erkennt man an den Klammern ().",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 1,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-UML-KLPRIV03-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-KLPRIV03",
+   "text": "Klasse **Artikel**:\n\n```\nArtikel\n------------------------------\n- artNr: int\n- preis: double\n# bestand: int\n------------------------------\n+ berechneBrutto(): double\n```\n\nWelche Elemente sind **private**?",
+   "erklaerung": "Private Elemente sind mit - gekennzeichnet.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "artNr",
+     "richtig": true
+    },
+    {
+     "text": "preis",
+     "richtig": true
+    },
+    {
+     "text": "bestand",
+     "richtig": false
+    },
+    {
+     "text": "berechneBrutto",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-KLRUECK-003",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-KLRUECK",
+   "text": "Klasse **Artikel**:\n\n```\nArtikel\n------------------------------\n- artNr: int\n- preis: double\n# bestand: int\n------------------------------\n+ berechneBrutto(): double\n```\n\nWelchen Rückgabetyp hat `berechneBrutto`?",
+   "erklaerung": "Der Rückgabetyp steht nach der Parameterklammer hinter dem Doppelpunkt; void = keine Rückgabe.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "double",
+     "richtig": true
+    },
+    {
+     "text": "void",
+     "richtig": false
+    },
+    {
+     "text": "int",
+     "richtig": false
+    },
+    {
+     "text": "String",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-KLATTR-004",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-KLATTR",
+   "text": "Klasse **Fahrzeug**:\n\n```\nFahrzeug\n------------------------------\n- kennzeichen: String\n- km: int\n------------------------------\n+ fahren(strecke: int): void\n~ pruefen(): boolean\n```\n\nWie viele Attribute hat die Klasse?",
+   "erklaerung": "Attribute stehen im mittleren Feld, Methoden im unteren.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-UML-KLMETH-004",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-KLMETH",
+   "text": "Klasse **Fahrzeug**:\n\n```\nFahrzeug\n------------------------------\n- kennzeichen: String\n- km: int\n------------------------------\n+ fahren(strecke: int): void\n~ pruefen(): boolean\n```\n\nWie viele Methoden hat die Klasse?",
+   "erklaerung": "Methoden erkennt man an den Klammern ().",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "zahl",
+   "loesung": 2,
+   "toleranz": 0,
+   "einheit": ""
+  },
+  {
+   "schluessel": "G-UML-KLPRIV04-001",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-KLPRIV04",
+   "text": "Klasse **Fahrzeug**:\n\n```\nFahrzeug\n------------------------------\n- kennzeichen: String\n- km: int\n------------------------------\n+ fahren(strecke: int): void\n~ pruefen(): boolean\n```\n\nWelche Elemente sind **private**?",
+   "erklaerung": "Private Elemente sind mit - gekennzeichnet.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "mehrfach",
+   "antworten": [
+    {
+     "text": "kennzeichen",
+     "richtig": true
+    },
+    {
+     "text": "km",
+     "richtig": true
+    },
+    {
+     "text": "fahren",
+     "richtig": false
+    },
+    {
+     "text": "pruefen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-KLRUECK-004",
+   "thema": "uml",
+   "lektion": "UML-L1",
+   "gruppe": "UML-KLRUECK",
+   "text": "Klasse **Fahrzeug**:\n\n```\nFahrzeug\n------------------------------\n- kennzeichen: String\n- km: int\n------------------------------\n+ fahren(strecke: int): void\n~ pruefen(): boolean\n```\n\nWelchen Rückgabetyp hat `pruefen`?",
+   "erklaerung": "Der Rückgabetyp steht nach der Parameterklammer hinter dem Doppelpunkt; void = keine Rückgabe.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "boolean",
+     "richtig": true
+    },
+    {
+     "text": "void",
+     "richtig": false
+    },
+    {
+     "text": "int",
+     "richtig": false
+    },
+    {
+     "text": "double",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZSYM01-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZSYM01",
+   "text": "Wie wird eine **Vererbung (Generalisierung)** im Klassendiagramm dargestellt?",
+   "erklaerung": "Vererbung (Generalisierung) → **durchgezogene Linie mit leerem Dreieck zur Oberklasse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "durchgezogene Linie mit leerem Dreieck zur Oberklasse",
+     "richtig": true
+    },
+    {
+     "text": "einfache durchgezogene Linie, ggf. mit Pfeil für die Navigationsrichtung",
+     "richtig": false
+    },
+    {
+     "text": "Linie mit leerer Raute am Ganzen",
+     "richtig": false
+    },
+    {
+     "text": "Linie mit gefüllter Raute am Ganzen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZSYM01-002",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZSYM01",
+   "text": "Welche Beziehung zeigt: durchgezogene Linie mit leerem Dreieck zur Oberklasse?",
+   "erklaerung": "Vererbung (Generalisierung) → **durchgezogene Linie mit leerem Dreieck zur Oberklasse**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Vererbung (Generalisierung)",
+     "richtig": true
+    },
+    {
+     "text": "Komposition",
+     "richtig": false
+    },
+    {
+     "text": "Realisierung (Interface)",
+     "richtig": false
+    },
+    {
+     "text": "Abhängigkeit",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZSYM02-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZSYM02",
+   "text": "Wie wird eine **Assoziation** im Klassendiagramm dargestellt?",
+   "erklaerung": "Assoziation → **einfache durchgezogene Linie, ggf. mit Pfeil für die Navigationsrichtung**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "einfache durchgezogene Linie, ggf. mit Pfeil für die Navigationsrichtung",
+     "richtig": true
+    },
+    {
+     "text": "Linie mit gefüllter Raute am Ganzen",
+     "richtig": false
+    },
+    {
+     "text": "gestrichelte Linie mit leerem Dreieck zum Interface",
+     "richtig": false
+    },
+    {
+     "text": "gestrichelte Linie mit offenem Pfeil",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZSYM02-002",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZSYM02",
+   "text": "Welche Beziehung zeigt: einfache durchgezogene Linie, ggf. mit Pfeil für die Navigationsrichtung?",
+   "erklaerung": "Assoziation → **einfache durchgezogene Linie, ggf. mit Pfeil für die Navigationsrichtung**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Assoziation",
+     "richtig": true
+    },
+    {
+     "text": "Aggregation",
+     "richtig": false
+    },
+    {
+     "text": "Realisierung (Interface)",
+     "richtig": false
+    },
+    {
+     "text": "Vererbung (Generalisierung)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZSYM03-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZSYM03",
+   "text": "Wie wird eine **Aggregation** im Klassendiagramm dargestellt?",
+   "erklaerung": "Aggregation → **Linie mit leerer Raute am Ganzen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Linie mit leerer Raute am Ganzen",
+     "richtig": true
+    },
+    {
+     "text": "Linie mit gefüllter Raute am Ganzen",
+     "richtig": false
+    },
+    {
+     "text": "gestrichelte Linie mit offenem Pfeil",
+     "richtig": false
+    },
+    {
+     "text": "gestrichelte Linie mit leerem Dreieck zum Interface",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZSYM03-002",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZSYM03",
+   "text": "Welche Beziehung zeigt: Linie mit leerer Raute am Ganzen?",
+   "erklaerung": "Aggregation → **Linie mit leerer Raute am Ganzen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Aggregation",
+     "richtig": true
+    },
+    {
+     "text": "Abhängigkeit",
+     "richtig": false
+    },
+    {
+     "text": "Komposition",
+     "richtig": false
+    },
+    {
+     "text": "Vererbung (Generalisierung)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZSYM04-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZSYM04",
+   "text": "Wie wird eine **Komposition** im Klassendiagramm dargestellt?",
+   "erklaerung": "Komposition → **Linie mit gefüllter Raute am Ganzen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Linie mit gefüllter Raute am Ganzen",
+     "richtig": true
+    },
+    {
+     "text": "gestrichelte Linie mit leerem Dreieck zum Interface",
+     "richtig": false
+    },
+    {
+     "text": "Linie mit leerer Raute am Ganzen",
+     "richtig": false
+    },
+    {
+     "text": "gestrichelte Linie mit offenem Pfeil",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZSYM04-002",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZSYM04",
+   "text": "Welche Beziehung zeigt: Linie mit gefüllter Raute am Ganzen?",
+   "erklaerung": "Komposition → **Linie mit gefüllter Raute am Ganzen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Komposition",
+     "richtig": true
+    },
+    {
+     "text": "Realisierung (Interface)",
+     "richtig": false
+    },
+    {
+     "text": "Assoziation",
+     "richtig": false
+    },
+    {
+     "text": "Abhängigkeit",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZSYM05-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZSYM05",
+   "text": "Wie wird eine **Realisierung (Interface)** im Klassendiagramm dargestellt?",
+   "erklaerung": "Realisierung (Interface) → **gestrichelte Linie mit leerem Dreieck zum Interface**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "gestrichelte Linie mit leerem Dreieck zum Interface",
+     "richtig": true
+    },
+    {
+     "text": "Linie mit gefüllter Raute am Ganzen",
+     "richtig": false
+    },
+    {
+     "text": "durchgezogene Linie mit leerem Dreieck zur Oberklasse",
+     "richtig": false
+    },
+    {
+     "text": "Linie mit leerer Raute am Ganzen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZSYM05-002",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZSYM05",
+   "text": "Welche Beziehung zeigt: gestrichelte Linie mit leerem Dreieck zum Interface?",
+   "erklaerung": "Realisierung (Interface) → **gestrichelte Linie mit leerem Dreieck zum Interface**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Realisierung (Interface)",
+     "richtig": true
+    },
+    {
+     "text": "Aggregation",
+     "richtig": false
+    },
+    {
+     "text": "Komposition",
+     "richtig": false
+    },
+    {
+     "text": "Abhängigkeit",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZSYM06-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZSYM06",
+   "text": "Wie wird eine **Abhängigkeit** im Klassendiagramm dargestellt?",
+   "erklaerung": "Abhängigkeit → **gestrichelte Linie mit offenem Pfeil**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "gestrichelte Linie mit offenem Pfeil",
+     "richtig": true
+    },
+    {
+     "text": "durchgezogene Linie mit leerem Dreieck zur Oberklasse",
+     "richtig": false
+    },
+    {
+     "text": "Linie mit gefüllter Raute am Ganzen",
+     "richtig": false
+    },
+    {
+     "text": "einfache durchgezogene Linie, ggf. mit Pfeil für die Navigationsrichtung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZSYM06-002",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZSYM06",
+   "text": "Welche Beziehung zeigt: gestrichelte Linie mit offenem Pfeil?",
+   "erklaerung": "Abhängigkeit → **gestrichelte Linie mit offenem Pfeil**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Abhängigkeit",
+     "richtig": true
+    },
+    {
+     "text": "Assoziation",
+     "richtig": false
+    },
+    {
+     "text": "Komposition",
+     "richtig": false
+    },
+    {
+     "text": "Vererbung (Generalisierung)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZBSP01-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZBSP01",
+   "text": "Welche Beziehung passt? Ein Auto ist ein Fahrzeug.",
+   "erklaerung": "Ein Auto ist ein Fahrzeug → **Vererbung (Generalisierung)**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Vererbung (Generalisierung)",
+     "richtig": true
+    },
+    {
+     "text": "Assoziation",
+     "richtig": false
+    },
+    {
+     "text": "Komposition",
+     "richtig": false
+    },
+    {
+     "text": "Realisierung (Interface)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZBSP02-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZBSP02",
+   "text": "Welche Beziehung passt? Ein Gebäude besteht aus Räumen; ohne Gebäude gibt es die Räume nicht.",
+   "erklaerung": "Ein Gebäude besteht aus Räumen; ohne Gebäude gibt es die Räume nicht → **Komposition**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Komposition",
+     "richtig": true
+    },
+    {
+     "text": "Aggregation",
+     "richtig": false
+    },
+    {
+     "text": "Vererbung (Generalisierung)",
+     "richtig": false
+    },
+    {
+     "text": "Assoziation",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZBSP03-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZBSP03",
+   "text": "Welche Beziehung passt? Eine Fußballmannschaft hat Spieler; Spieler existieren auch ohne die Mannschaft.",
+   "erklaerung": "Eine Fußballmannschaft hat Spieler; Spieler existieren auch ohne die Mannschaft → **Aggregation**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Aggregation",
+     "richtig": true
+    },
+    {
+     "text": "Komposition",
+     "richtig": false
+    },
+    {
+     "text": "Assoziation",
+     "richtig": false
+    },
+    {
+     "text": "Realisierung (Interface)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZBSP04-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZBSP04",
+   "text": "Welche Beziehung passt? Ein Kunde gibt Bestellungen auf.",
+   "erklaerung": "Ein Kunde gibt Bestellungen auf → **Assoziation**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Assoziation",
+     "richtig": true
+    },
+    {
+     "text": "Realisierung (Interface)",
+     "richtig": false
+    },
+    {
+     "text": "Vererbung (Generalisierung)",
+     "richtig": false
+    },
+    {
+     "text": "Aggregation",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZBSP05-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZBSP05",
+   "text": "Welche Beziehung passt? Ein Hund ist ein Tier.",
+   "erklaerung": "Ein Hund ist ein Tier → **Vererbung (Generalisierung)**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Vererbung (Generalisierung)",
+     "richtig": true
+    },
+    {
+     "text": "Realisierung (Interface)",
+     "richtig": false
+    },
+    {
+     "text": "Assoziation",
+     "richtig": false
+    },
+    {
+     "text": "Komposition",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZBSP06-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZBSP06",
+   "text": "Welche Beziehung passt? Eine Rechnung besteht aus Rechnungspositionen, die mit ihr gelöscht werden.",
+   "erklaerung": "Eine Rechnung besteht aus Rechnungspositionen, die mit ihr gelöscht werden → **Komposition**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Komposition",
+     "richtig": true
+    },
+    {
+     "text": "Realisierung (Interface)",
+     "richtig": false
+    },
+    {
+     "text": "Aggregation",
+     "richtig": false
+    },
+    {
+     "text": "Vererbung (Generalisierung)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZBSP07-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZBSP07",
+   "text": "Welche Beziehung passt? Ein Warenkorb enthält Artikel, die es auch unabhängig gibt.",
+   "erklaerung": "Ein Warenkorb enthält Artikel, die es auch unabhängig gibt → **Aggregation**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Aggregation",
+     "richtig": true
+    },
+    {
+     "text": "Vererbung (Generalisierung)",
+     "richtig": false
+    },
+    {
+     "text": "Assoziation",
+     "richtig": false
+    },
+    {
+     "text": "Realisierung (Interface)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZBSP08-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZBSP08",
+   "text": "Welche Beziehung passt? Ein Lehrer unterrichtet Schüler.",
+   "erklaerung": "Ein Lehrer unterrichtet Schüler → **Assoziation**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Assoziation",
+     "richtig": true
+    },
+    {
+     "text": "Vererbung (Generalisierung)",
+     "richtig": false
+    },
+    {
+     "text": "Realisierung (Interface)",
+     "richtig": false
+    },
+    {
+     "text": "Komposition",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZBSP09-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZBSP09",
+   "text": "Welche Beziehung passt? Die Klasse PdfExport implementiert das Interface Exportierbar.",
+   "erklaerung": "Die Klasse PdfExport implementiert das Interface Exportierbar → **Realisierung (Interface)**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Realisierung (Interface)",
+     "richtig": true
+    },
+    {
+     "text": "Assoziation",
+     "richtig": false
+    },
+    {
+     "text": "Vererbung (Generalisierung)",
+     "richtig": false
+    },
+    {
+     "text": "Aggregation",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZBSP10-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZBSP10",
+   "text": "Welche Beziehung passt? Ein Buch besteht aus Kapiteln, die ohne das Buch nicht existieren.",
+   "erklaerung": "Ein Buch besteht aus Kapiteln, die ohne das Buch nicht existieren → **Komposition**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Komposition",
+     "richtig": true
+    },
+    {
+     "text": "Assoziation",
+     "richtig": false
+    },
+    {
+     "text": "Aggregation",
+     "richtig": false
+    },
+    {
+     "text": "Realisierung (Interface)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZBSP11-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZBSP11",
+   "text": "Welche Beziehung passt? Ein Girokonto ist ein Konto.",
+   "erklaerung": "Ein Girokonto ist ein Konto → **Vererbung (Generalisierung)**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Vererbung (Generalisierung)",
+     "richtig": true
+    },
+    {
+     "text": "Aggregation",
+     "richtig": false
+    },
+    {
+     "text": "Assoziation",
+     "richtig": false
+    },
+    {
+     "text": "Realisierung (Interface)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-BEZBSP12-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-BEZBSP12",
+   "text": "Welche Beziehung passt? Eine Abteilung hat Mitarbeiter, die die Abteilung wechseln können.",
+   "erklaerung": "Eine Abteilung hat Mitarbeiter, die die Abteilung wechseln können → **Aggregation**.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Aggregation",
+     "richtig": true
+    },
+    {
+     "text": "Komposition",
+     "richtig": false
+    },
+    {
+     "text": "Vererbung (Generalisierung)",
+     "richtig": false
+    },
+    {
+     "text": "Assoziation",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-MULT-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-MULT",
+   "text": "Was bedeutet die Multiplizität `1` an einer Assoziation?",
+   "erklaerung": "1 = genau eins.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "genau eins",
+     "richtig": true
+    },
+    {
+     "text": "keins oder eins",
+     "richtig": false
+    },
+    {
+     "text": "zwei bis fünf",
+     "richtig": false
+    },
+    {
+     "text": "beliebig viele (auch keins)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-MULT-002",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-MULT",
+   "text": "Was bedeutet die Multiplizität `0..1` an einer Assoziation?",
+   "erklaerung": "0..1 = keins oder eins.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "keins oder eins",
+     "richtig": true
+    },
+    {
+     "text": "beliebig viele (auch keins)",
+     "richtig": false
+    },
+    {
+     "text": "zwei bis fünf",
+     "richtig": false
+    },
+    {
+     "text": "genau eins",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-MULT-003",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-MULT",
+   "text": "Was bedeutet die Multiplizität `*` an einer Assoziation?",
+   "erklaerung": "* = beliebig viele (auch keins).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "beliebig viele (auch keins)",
+     "richtig": true
+    },
+    {
+     "text": "mindestens eins",
+     "richtig": false
+    },
+    {
+     "text": "genau eins",
+     "richtig": false
+    },
+    {
+     "text": "zwei bis fünf",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-MULT-004",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-MULT",
+   "text": "Was bedeutet die Multiplizität `0..*` an einer Assoziation?",
+   "erklaerung": "0..* = beliebig viele (auch keins).",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "beliebig viele (auch keins)",
+     "richtig": true
+    },
+    {
+     "text": "mindestens eins",
+     "richtig": false
+    },
+    {
+     "text": "zwei bis fünf",
+     "richtig": false
+    },
+    {
+     "text": "genau eins",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-MULT-005",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-MULT",
+   "text": "Was bedeutet die Multiplizität `1..*` an einer Assoziation?",
+   "erklaerung": "1..* = mindestens eins.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "mindestens eins",
+     "richtig": true
+    },
+    {
+     "text": "zwei bis fünf",
+     "richtig": false
+    },
+    {
+     "text": "keins oder eins",
+     "richtig": false
+    },
+    {
+     "text": "genau eins",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-MULT-006",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-MULT",
+   "text": "Was bedeutet die Multiplizität `2..5` an einer Assoziation?",
+   "erklaerung": "2..5 = zwei bis fünf.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "zwei bis fünf",
+     "richtig": true
+    },
+    {
+     "text": "beliebig viele (auch keins)",
+     "richtig": false
+    },
+    {
+     "text": "keins oder eins",
+     "richtig": false
+    },
+    {
+     "text": "genau eins",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-MULTBSP-001",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-MULTBSP",
+   "text": "Ein Kunde hat beliebig viele Bestellungen, jede Bestellung gehört zu genau einem Kunden. Welche Multiplizität steht an der Seite Bestellung?",
+   "erklaerung": "Multiplizitäten werden an das Ende geschrieben, dessen Anzahl sie beschreiben.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "*",
+     "richtig": true
+    },
+    {
+     "text": "1",
+     "richtig": false
+    },
+    {
+     "text": "0..1",
+     "richtig": false
+    },
+    {
+     "text": "1..*",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-MULTBSP-002",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-MULTBSP",
+   "text": "Ein Mitarbeiter hat höchstens einen Dienstwagen. Multiplizität an der Seite Dienstwagen?",
+   "erklaerung": "Multiplizitäten werden an das Ende geschrieben, dessen Anzahl sie beschreiben.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "0..1",
+     "richtig": true
+    },
+    {
+     "text": "1",
+     "richtig": false
+    },
+    {
+     "text": "*",
+     "richtig": false
+    },
+    {
+     "text": "1..*",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-MULTBSP-003",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-MULTBSP",
+   "text": "Jede Bestellung enthält mindestens eine Position. Multiplizität an der Seite Position?",
+   "erklaerung": "Multiplizitäten werden an das Ende geschrieben, dessen Anzahl sie beschreiben.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "1..*",
+     "richtig": true
+    },
+    {
+     "text": "1",
+     "richtig": false
+    },
+    {
+     "text": "0..1",
+     "richtig": false
+    },
+    {
+     "text": "*",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-MULTBSP-004",
+   "thema": "uml",
+   "lektion": "UML-L2",
+   "gruppe": "UML-MULTBSP",
+   "text": "Ein Auto hat genau vier Räder. Multiplizität an der Seite Rad?",
+   "erklaerung": "Multiplizitäten werden an das Ende geschrieben, dessen Anzahl sie beschreiben.",
+   "schwierigkeit": 2,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "4",
+     "richtig": true
+    },
+    {
+     "text": "1",
+     "richtig": false
+    },
+    {
+     "text": "0..1",
+     "richtig": false
+    },
+    {
+     "text": "*",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-UC01-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-UC01",
+   "text": "Was bedeutet im Use-Case-Diagramm: **Akteur (Strichmännchen)**?",
+   "erklaerung": "Akteur (Strichmännchen) → **Person oder System außerhalb, das mit dem System interagiert**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Person oder System außerhalb, das mit dem System interagiert",
+     "richtig": true
+    },
+    {
+     "text": "der Anwendungsfall wird immer mit ausgeführt",
+     "richtig": false
+    },
+    {
+     "text": "Funktion, die das System für einen Akteur erbringt",
+     "richtig": false
+    },
+    {
+     "text": "der Anwendungsfall wird nur unter einer Bedingung ergänzt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-UC01-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-UC01",
+   "text": "Welches Element im Use-Case-Diagramm: Person oder System außerhalb, das mit dem System interagiert?",
+   "erklaerung": "Akteur (Strichmännchen) → **Person oder System außerhalb, das mit dem System interagiert**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Akteur (Strichmännchen)",
+     "richtig": true
+    },
+    {
+     "text": "Anwendungsfall (Ellipse)",
+     "richtig": false
+    },
+    {
+     "text": "«include»",
+     "richtig": false
+    },
+    {
+     "text": "Systemgrenze (Rechteck)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-UC02-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-UC02",
+   "text": "Was bedeutet im Use-Case-Diagramm: **Anwendungsfall (Ellipse)**?",
+   "erklaerung": "Anwendungsfall (Ellipse) → **Funktion, die das System für einen Akteur erbringt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Funktion, die das System für einen Akteur erbringt",
+     "richtig": true
+    },
+    {
+     "text": "der Anwendungsfall wird immer mit ausgeführt",
+     "richtig": false
+    },
+    {
+     "text": "Person oder System außerhalb, das mit dem System interagiert",
+     "richtig": false
+    },
+    {
+     "text": "trennt das System von seiner Umgebung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-UC02-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-UC02",
+   "text": "Welches Element im Use-Case-Diagramm: Funktion, die das System für einen Akteur erbringt?",
+   "erklaerung": "Anwendungsfall (Ellipse) → **Funktion, die das System für einen Akteur erbringt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Anwendungsfall (Ellipse)",
+     "richtig": true
+    },
+    {
+     "text": "«extend»",
+     "richtig": false
+    },
+    {
+     "text": "Akteur (Strichmännchen)",
+     "richtig": false
+    },
+    {
+     "text": "Systemgrenze (Rechteck)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-UC03-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-UC03",
+   "text": "Was bedeutet im Use-Case-Diagramm: **Systemgrenze (Rechteck)**?",
+   "erklaerung": "Systemgrenze (Rechteck) → **trennt das System von seiner Umgebung**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "trennt das System von seiner Umgebung",
+     "richtig": true
+    },
+    {
+     "text": "Person oder System außerhalb, das mit dem System interagiert",
+     "richtig": false
+    },
+    {
+     "text": "Funktion, die das System für einen Akteur erbringt",
+     "richtig": false
+    },
+    {
+     "text": "der Anwendungsfall wird nur unter einer Bedingung ergänzt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-UC03-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-UC03",
+   "text": "Welches Element im Use-Case-Diagramm: trennt das System von seiner Umgebung?",
+   "erklaerung": "Systemgrenze (Rechteck) → **trennt das System von seiner Umgebung**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Systemgrenze (Rechteck)",
+     "richtig": true
+    },
+    {
+     "text": "«extend»",
+     "richtig": false
+    },
+    {
+     "text": "Akteur (Strichmännchen)",
+     "richtig": false
+    },
+    {
+     "text": "Anwendungsfall (Ellipse)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-UC04-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-UC04",
+   "text": "Was bedeutet im Use-Case-Diagramm: **«include»**?",
+   "erklaerung": "«include» → **der Anwendungsfall wird immer mit ausgeführt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "der Anwendungsfall wird immer mit ausgeführt",
+     "richtig": true
+    },
+    {
+     "text": "der Anwendungsfall wird nur unter einer Bedingung ergänzt",
+     "richtig": false
+    },
+    {
+     "text": "Funktion, die das System für einen Akteur erbringt",
+     "richtig": false
+    },
+    {
+     "text": "trennt das System von seiner Umgebung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-UC04-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-UC04",
+   "text": "Welches Element im Use-Case-Diagramm: der Anwendungsfall wird immer mit ausgeführt?",
+   "erklaerung": "«include» → **der Anwendungsfall wird immer mit ausgeführt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "«include»",
+     "richtig": true
+    },
+    {
+     "text": "Systemgrenze (Rechteck)",
+     "richtig": false
+    },
+    {
+     "text": "Anwendungsfall (Ellipse)",
+     "richtig": false
+    },
+    {
+     "text": "«extend»",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-UC05-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-UC05",
+   "text": "Was bedeutet im Use-Case-Diagramm: **«extend»**?",
+   "erklaerung": "«extend» → **der Anwendungsfall wird nur unter einer Bedingung ergänzt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "der Anwendungsfall wird nur unter einer Bedingung ergänzt",
+     "richtig": true
+    },
+    {
+     "text": "trennt das System von seiner Umgebung",
+     "richtig": false
+    },
+    {
+     "text": "Funktion, die das System für einen Akteur erbringt",
+     "richtig": false
+    },
+    {
+     "text": "Person oder System außerhalb, das mit dem System interagiert",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-UC05-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-UC05",
+   "text": "Welches Element im Use-Case-Diagramm: der Anwendungsfall wird nur unter einer Bedingung ergänzt?",
+   "erklaerung": "«extend» → **der Anwendungsfall wird nur unter einer Bedingung ergänzt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "«extend»",
+     "richtig": true
+    },
+    {
+     "text": "Anwendungsfall (Ellipse)",
+     "richtig": false
+    },
+    {
+     "text": "Systemgrenze (Rechteck)",
+     "richtig": false
+    },
+    {
+     "text": "Akteur (Strichmännchen)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-AKT01-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-AKT01",
+   "text": "Was stellt im Aktivitätsdiagramm ein(e) **gefüllter Kreis** dar?",
+   "erklaerung": "gefüllter Kreis → **Startknoten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Startknoten",
+     "richtig": true
+    },
+    {
+     "text": "Verzweigung oder Zusammenführung",
+     "richtig": false
+    },
+    {
+     "text": "Guard – der Weg wird nur genommen, wenn die Bedingung gilt",
+     "richtig": false
+    },
+    {
+     "text": "Gabelung/Vereinigung paralleler Abläufe",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-AKT01-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-AKT01",
+   "text": "Wie wird im Aktivitätsdiagramm ein(e) **Startknoten** dargestellt?",
+   "erklaerung": "gefüllter Kreis → **Startknoten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "gefüllter Kreis",
+     "richtig": true
+    },
+    {
+     "text": "Kreis mit Kreuz",
+     "richtig": false
+    },
+    {
+     "text": "Raute",
+     "richtig": false
+    },
+    {
+     "text": "Schwimmbahn (Swimlane)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-AKT02-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-AKT02",
+   "text": "Was stellt im Aktivitätsdiagramm ein(e) **gefüllter Kreis mit Ring** dar?",
+   "erklaerung": "gefüllter Kreis mit Ring → **Endknoten (Aktivität endet)**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Endknoten (Aktivität endet)",
+     "richtig": true
+    },
+    {
+     "text": "Gabelung/Vereinigung paralleler Abläufe",
+     "richtig": false
+    },
+    {
+     "text": "Startknoten",
+     "richtig": false
+    },
+    {
+     "text": "Guard – der Weg wird nur genommen, wenn die Bedingung gilt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-AKT02-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-AKT02",
+   "text": "Wie wird im Aktivitätsdiagramm ein(e) **Endknoten (Aktivität endet)** dargestellt?",
+   "erklaerung": "gefüllter Kreis mit Ring → **Endknoten (Aktivität endet)**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "gefüllter Kreis mit Ring",
+     "richtig": true
+    },
+    {
+     "text": "gefüllter Kreis",
+     "richtig": false
+    },
+    {
+     "text": "dicker Balken",
+     "richtig": false
+    },
+    {
+     "text": "Kreis mit Kreuz",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-AKT03-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-AKT03",
+   "text": "Was stellt im Aktivitätsdiagramm ein(e) **Rechteck mit abgerundeten Ecken** dar?",
+   "erklaerung": "Rechteck mit abgerundeten Ecken → **Aktion**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Aktion",
+     "richtig": true
+    },
+    {
+     "text": "Gabelung/Vereinigung paralleler Abläufe",
+     "richtig": false
+    },
+    {
+     "text": "Guard – der Weg wird nur genommen, wenn die Bedingung gilt",
+     "richtig": false
+    },
+    {
+     "text": "Verzweigung oder Zusammenführung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-AKT03-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-AKT03",
+   "text": "Wie wird im Aktivitätsdiagramm ein(e) **Aktion** dargestellt?",
+   "erklaerung": "Rechteck mit abgerundeten Ecken → **Aktion**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Rechteck mit abgerundeten Ecken",
+     "richtig": true
+    },
+    {
+     "text": "dicker Balken",
+     "richtig": false
+    },
+    {
+     "text": "[Bedingung] an einer Kante",
+     "richtig": false
+    },
+    {
+     "text": "Raute",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-AKT04-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-AKT04",
+   "text": "Was stellt im Aktivitätsdiagramm ein(e) **Raute** dar?",
+   "erklaerung": "Raute → **Verzweigung oder Zusammenführung**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Verzweigung oder Zusammenführung",
+     "richtig": true
+    },
+    {
+     "text": "Ablaufende (nur dieser Fluss endet)",
+     "richtig": false
+    },
+    {
+     "text": "Gabelung/Vereinigung paralleler Abläufe",
+     "richtig": false
+    },
+    {
+     "text": "Startknoten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-AKT04-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-AKT04",
+   "text": "Wie wird im Aktivitätsdiagramm ein(e) **Verzweigung oder Zusammenführung** dargestellt?",
+   "erklaerung": "Raute → **Verzweigung oder Zusammenführung**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Raute",
+     "richtig": true
+    },
+    {
+     "text": "Kreis mit Kreuz",
+     "richtig": false
+    },
+    {
+     "text": "[Bedingung] an einer Kante",
+     "richtig": false
+    },
+    {
+     "text": "Rechteck mit abgerundeten Ecken",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-AKT05-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-AKT05",
+   "text": "Was stellt im Aktivitätsdiagramm ein(e) **dicker Balken** dar?",
+   "erklaerung": "dicker Balken → **Gabelung/Vereinigung paralleler Abläufe**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Gabelung/Vereinigung paralleler Abläufe",
+     "richtig": true
+    },
+    {
+     "text": "ordnet Aktionen einem Verantwortlichen zu",
+     "richtig": false
+    },
+    {
+     "text": "Ablaufende (nur dieser Fluss endet)",
+     "richtig": false
+    },
+    {
+     "text": "Verzweigung oder Zusammenführung",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-AKT05-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-AKT05",
+   "text": "Wie wird im Aktivitätsdiagramm ein(e) **Gabelung/Vereinigung paralleler Abläufe** dargestellt?",
+   "erklaerung": "dicker Balken → **Gabelung/Vereinigung paralleler Abläufe**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "dicker Balken",
+     "richtig": true
+    },
+    {
+     "text": "Kreis mit Kreuz",
+     "richtig": false
+    },
+    {
+     "text": "gefüllter Kreis mit Ring",
+     "richtig": false
+    },
+    {
+     "text": "Rechteck mit abgerundeten Ecken",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-AKT06-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-AKT06",
+   "text": "Was stellt im Aktivitätsdiagramm ein(e) **Kreis mit Kreuz** dar?",
+   "erklaerung": "Kreis mit Kreuz → **Ablaufende (nur dieser Fluss endet)**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ablaufende (nur dieser Fluss endet)",
+     "richtig": true
+    },
+    {
+     "text": "Aktion",
+     "richtig": false
+    },
+    {
+     "text": "Verzweigung oder Zusammenführung",
+     "richtig": false
+    },
+    {
+     "text": "Gabelung/Vereinigung paralleler Abläufe",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-AKT06-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-AKT06",
+   "text": "Wie wird im Aktivitätsdiagramm ein(e) **Ablaufende (nur dieser Fluss endet)** dargestellt?",
+   "erklaerung": "Kreis mit Kreuz → **Ablaufende (nur dieser Fluss endet)**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Kreis mit Kreuz",
+     "richtig": true
+    },
+    {
+     "text": "[Bedingung] an einer Kante",
+     "richtig": false
+    },
+    {
+     "text": "Rechteck mit abgerundeten Ecken",
+     "richtig": false
+    },
+    {
+     "text": "Schwimmbahn (Swimlane)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-AKT07-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-AKT07",
+   "text": "Was stellt im Aktivitätsdiagramm ein(e) **Schwimmbahn (Swimlane)** dar?",
+   "erklaerung": "Schwimmbahn (Swimlane) → **ordnet Aktionen einem Verantwortlichen zu**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "ordnet Aktionen einem Verantwortlichen zu",
+     "richtig": true
+    },
+    {
+     "text": "Gabelung/Vereinigung paralleler Abläufe",
+     "richtig": false
+    },
+    {
+     "text": "Verzweigung oder Zusammenführung",
+     "richtig": false
+    },
+    {
+     "text": "Endknoten (Aktivität endet)",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-AKT07-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-AKT07",
+   "text": "Wie wird im Aktivitätsdiagramm ein(e) **ordnet Aktionen einem Verantwortlichen zu** dargestellt?",
+   "erklaerung": "Schwimmbahn (Swimlane) → **ordnet Aktionen einem Verantwortlichen zu**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Schwimmbahn (Swimlane)",
+     "richtig": true
+    },
+    {
+     "text": "Raute",
+     "richtig": false
+    },
+    {
+     "text": "[Bedingung] an einer Kante",
+     "richtig": false
+    },
+    {
+     "text": "gefüllter Kreis mit Ring",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-AKT08-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-AKT08",
+   "text": "Was stellt im Aktivitätsdiagramm ein(e) **[Bedingung] an einer Kante** dar?",
+   "erklaerung": "[Bedingung] an einer Kante → **Guard – der Weg wird nur genommen, wenn die Bedingung gilt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Guard – der Weg wird nur genommen, wenn die Bedingung gilt",
+     "richtig": true
+    },
+    {
+     "text": "Ablaufende (nur dieser Fluss endet)",
+     "richtig": false
+    },
+    {
+     "text": "Aktion",
+     "richtig": false
+    },
+    {
+     "text": "ordnet Aktionen einem Verantwortlichen zu",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-AKT08-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-AKT08",
+   "text": "Wie wird im Aktivitätsdiagramm ein(e) **Guard – der Weg wird nur genommen, wenn die Bedingung gilt** dargestellt?",
+   "erklaerung": "[Bedingung] an einer Kante → **Guard – der Weg wird nur genommen, wenn die Bedingung gilt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "[Bedingung] an einer Kante",
+     "richtig": true
+    },
+    {
+     "text": "Schwimmbahn (Swimlane)",
+     "richtig": false
+    },
+    {
+     "text": "dicker Balken",
+     "richtig": false
+    },
+    {
+     "text": "Raute",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-DIA01-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-DIA01",
+   "text": "Was zeigt ein **Klassendiagramm**?",
+   "erklaerung": "Klassendiagramm → **statische Struktur: Klassen, Attribute, Methoden, Beziehungen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "statische Struktur: Klassen, Attribute, Methoden, Beziehungen",
+     "richtig": true
+    },
+    {
+     "text": "was das System aus Sicht der Akteure leistet",
+     "richtig": false
+    },
+    {
+     "text": "Zustände eines Objekts und die Übergänge zwischen ihnen",
+     "richtig": false
+    },
+    {
+     "text": "Aufbau aus Softwarekomponenten und Schnittstellen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-DIA01-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-DIA01",
+   "text": "Welches UML-Diagramm zeigt: statische Struktur: Klassen, Attribute, Methoden, Beziehungen?",
+   "erklaerung": "Klassendiagramm → **statische Struktur: Klassen, Attribute, Methoden, Beziehungen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Klassendiagramm",
+     "richtig": true
+    },
+    {
+     "text": "Verteilungsdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Use-Case-Diagramm",
+     "richtig": false
+    },
+    {
+     "text": "Objektdiagramm",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-DIA02-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-DIA02",
+   "text": "Was zeigt ein **Use-Case-Diagramm**?",
+   "erklaerung": "Use-Case-Diagramm → **was das System aus Sicht der Akteure leistet**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "was das System aus Sicht der Akteure leistet",
+     "richtig": true
+    },
+    {
+     "text": "Zustände eines Objekts und die Übergänge zwischen ihnen",
+     "richtig": false
+    },
+    {
+     "text": "Aufbau aus Softwarekomponenten und Schnittstellen",
+     "richtig": false
+    },
+    {
+     "text": "Verteilung von Software auf Hardware-Knoten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-DIA02-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-DIA02",
+   "text": "Welches UML-Diagramm zeigt: was das System aus Sicht der Akteure leistet?",
+   "erklaerung": "Use-Case-Diagramm → **was das System aus Sicht der Akteure leistet**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Use-Case-Diagramm",
+     "richtig": true
+    },
+    {
+     "text": "Objektdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Aktivitätsdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Komponentendiagramm",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-DIA03-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-DIA03",
+   "text": "Was zeigt ein **Aktivitätsdiagramm**?",
+   "erklaerung": "Aktivitätsdiagramm → **Ablauf eines Prozesses mit Verzweigungen und Parallelität**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Ablauf eines Prozesses mit Verzweigungen und Parallelität",
+     "richtig": true
+    },
+    {
+     "text": "was das System aus Sicht der Akteure leistet",
+     "richtig": false
+    },
+    {
+     "text": "Aufbau aus Softwarekomponenten und Schnittstellen",
+     "richtig": false
+    },
+    {
+     "text": "Momentaufnahme konkreter Objekte mit Attributwerten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-DIA03-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-DIA03",
+   "text": "Welches UML-Diagramm zeigt: Ablauf eines Prozesses mit Verzweigungen und Parallelität?",
+   "erklaerung": "Aktivitätsdiagramm → **Ablauf eines Prozesses mit Verzweigungen und Parallelität**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Aktivitätsdiagramm",
+     "richtig": true
+    },
+    {
+     "text": "Komponentendiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Verteilungsdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Zustandsdiagramm",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-DIA04-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-DIA04",
+   "text": "Was zeigt ein **Sequenzdiagramm**?",
+   "erklaerung": "Sequenzdiagramm → **zeitliche Abfolge von Nachrichten zwischen Objekten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "zeitliche Abfolge von Nachrichten zwischen Objekten",
+     "richtig": true
+    },
+    {
+     "text": "Verteilung von Software auf Hardware-Knoten",
+     "richtig": false
+    },
+    {
+     "text": "statische Struktur: Klassen, Attribute, Methoden, Beziehungen",
+     "richtig": false
+    },
+    {
+     "text": "Ablauf eines Prozesses mit Verzweigungen und Parallelität",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-DIA04-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-DIA04",
+   "text": "Welches UML-Diagramm zeigt: zeitliche Abfolge von Nachrichten zwischen Objekten?",
+   "erklaerung": "Sequenzdiagramm → **zeitliche Abfolge von Nachrichten zwischen Objekten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Sequenzdiagramm",
+     "richtig": true
+    },
+    {
+     "text": "Objektdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Komponentendiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Aktivitätsdiagramm",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-DIA05-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-DIA05",
+   "text": "Was zeigt ein **Zustandsdiagramm**?",
+   "erklaerung": "Zustandsdiagramm → **Zustände eines Objekts und die Übergänge zwischen ihnen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Zustände eines Objekts und die Übergänge zwischen ihnen",
+     "richtig": true
+    },
+    {
+     "text": "Momentaufnahme konkreter Objekte mit Attributwerten",
+     "richtig": false
+    },
+    {
+     "text": "Ablauf eines Prozesses mit Verzweigungen und Parallelität",
+     "richtig": false
+    },
+    {
+     "text": "zeitliche Abfolge von Nachrichten zwischen Objekten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-DIA05-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-DIA05",
+   "text": "Welches UML-Diagramm zeigt: Zustände eines Objekts und die Übergänge zwischen ihnen?",
+   "erklaerung": "Zustandsdiagramm → **Zustände eines Objekts und die Übergänge zwischen ihnen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Zustandsdiagramm",
+     "richtig": true
+    },
+    {
+     "text": "Verteilungsdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Aktivitätsdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Komponentendiagramm",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-DIA06-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-DIA06",
+   "text": "Was zeigt ein **Komponentendiagramm**?",
+   "erklaerung": "Komponentendiagramm → **Aufbau aus Softwarekomponenten und Schnittstellen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Aufbau aus Softwarekomponenten und Schnittstellen",
+     "richtig": true
+    },
+    {
+     "text": "Zustände eines Objekts und die Übergänge zwischen ihnen",
+     "richtig": false
+    },
+    {
+     "text": "Verteilung von Software auf Hardware-Knoten",
+     "richtig": false
+    },
+    {
+     "text": "zeitliche Abfolge von Nachrichten zwischen Objekten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-DIA06-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-DIA06",
+   "text": "Welches UML-Diagramm zeigt: Aufbau aus Softwarekomponenten und Schnittstellen?",
+   "erklaerung": "Komponentendiagramm → **Aufbau aus Softwarekomponenten und Schnittstellen**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Komponentendiagramm",
+     "richtig": true
+    },
+    {
+     "text": "Aktivitätsdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Klassendiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Verteilungsdiagramm",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-DIA07-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-DIA07",
+   "text": "Was zeigt ein **Verteilungsdiagramm**?",
+   "erklaerung": "Verteilungsdiagramm → **Verteilung von Software auf Hardware-Knoten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Verteilung von Software auf Hardware-Knoten",
+     "richtig": true
+    },
+    {
+     "text": "zeitliche Abfolge von Nachrichten zwischen Objekten",
+     "richtig": false
+    },
+    {
+     "text": "Ablauf eines Prozesses mit Verzweigungen und Parallelität",
+     "richtig": false
+    },
+    {
+     "text": "Aufbau aus Softwarekomponenten und Schnittstellen",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-DIA07-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-DIA07",
+   "text": "Welches UML-Diagramm zeigt: Verteilung von Software auf Hardware-Knoten?",
+   "erklaerung": "Verteilungsdiagramm → **Verteilung von Software auf Hardware-Knoten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Verteilungsdiagramm",
+     "richtig": true
+    },
+    {
+     "text": "Objektdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Sequenzdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Komponentendiagramm",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-DIA08-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-DIA08",
+   "text": "Was zeigt ein **Objektdiagramm**?",
+   "erklaerung": "Objektdiagramm → **Momentaufnahme konkreter Objekte mit Attributwerten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Momentaufnahme konkreter Objekte mit Attributwerten",
+     "richtig": true
+    },
+    {
+     "text": "Aufbau aus Softwarekomponenten und Schnittstellen",
+     "richtig": false
+    },
+    {
+     "text": "Zustände eines Objekts und die Übergänge zwischen ihnen",
+     "richtig": false
+    },
+    {
+     "text": "zeitliche Abfolge von Nachrichten zwischen Objekten",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-DIA08-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-DIA08",
+   "text": "Welches UML-Diagramm zeigt: Momentaufnahme konkreter Objekte mit Attributwerten?",
+   "erklaerung": "Objektdiagramm → **Momentaufnahme konkreter Objekte mit Attributwerten**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Objektdiagramm",
+     "richtig": true
+    },
+    {
+     "text": "Sequenzdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Verteilungsdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Aktivitätsdiagramm",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-ART01-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-ART01",
+   "text": "Ist das **Klassendiagramm** ein Struktur- oder ein Verhaltensdiagramm?",
+   "erklaerung": "Strukturdiagramme zeigen den Aufbau, Verhaltensdiagramme Abläufe und Interaktionen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Strukturdiagramm",
+     "richtig": true
+    },
+    {
+     "text": "Verhaltensdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Kein UML-Diagramm",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-ART02-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-ART02",
+   "text": "Ist das **Komponentendiagramm** ein Struktur- oder ein Verhaltensdiagramm?",
+   "erklaerung": "Strukturdiagramme zeigen den Aufbau, Verhaltensdiagramme Abläufe und Interaktionen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Strukturdiagramm",
+     "richtig": true
+    },
+    {
+     "text": "Verhaltensdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Kein UML-Diagramm",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-ART03-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-ART03",
+   "text": "Ist das **Objektdiagramm** ein Struktur- oder ein Verhaltensdiagramm?",
+   "erklaerung": "Strukturdiagramme zeigen den Aufbau, Verhaltensdiagramme Abläufe und Interaktionen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Strukturdiagramm",
+     "richtig": true
+    },
+    {
+     "text": "Verhaltensdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Kein UML-Diagramm",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-ART04-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-ART04",
+   "text": "Ist das **Verteilungsdiagramm** ein Struktur- oder ein Verhaltensdiagramm?",
+   "erklaerung": "Strukturdiagramme zeigen den Aufbau, Verhaltensdiagramme Abläufe und Interaktionen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Strukturdiagramm",
+     "richtig": true
+    },
+    {
+     "text": "Verhaltensdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Kein UML-Diagramm",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-ART05-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-ART05",
+   "text": "Ist das **Use-Case-Diagramm** ein Struktur- oder ein Verhaltensdiagramm?",
+   "erklaerung": "Strukturdiagramme zeigen den Aufbau, Verhaltensdiagramme Abläufe und Interaktionen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Verhaltensdiagramm",
+     "richtig": true
+    },
+    {
+     "text": "Strukturdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Kein UML-Diagramm",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-ART06-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-ART06",
+   "text": "Ist das **Aktivitätsdiagramm** ein Struktur- oder ein Verhaltensdiagramm?",
+   "erklaerung": "Strukturdiagramme zeigen den Aufbau, Verhaltensdiagramme Abläufe und Interaktionen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Verhaltensdiagramm",
+     "richtig": true
+    },
+    {
+     "text": "Strukturdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Kein UML-Diagramm",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-ART07-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-ART07",
+   "text": "Ist das **Sequenzdiagramm** ein Struktur- oder ein Verhaltensdiagramm?",
+   "erklaerung": "Strukturdiagramme zeigen den Aufbau, Verhaltensdiagramme Abläufe und Interaktionen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Verhaltensdiagramm",
+     "richtig": true
+    },
+    {
+     "text": "Strukturdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Kein UML-Diagramm",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-ART08-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-ART08",
+   "text": "Ist das **Zustandsdiagramm** ein Struktur- oder ein Verhaltensdiagramm?",
+   "erklaerung": "Strukturdiagramme zeigen den Aufbau, Verhaltensdiagramme Abläufe und Interaktionen.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Verhaltensdiagramm",
+     "richtig": true
+    },
+    {
+     "text": "Strukturdiagramm",
+     "richtig": false
+    },
+    {
+     "text": "Kein UML-Diagramm",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SEQ01-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-SEQ01",
+   "text": "Sequenzdiagramm: Wie wird ein(e) **Lebenslinie** dargestellt bzw. was bedeutet es?",
+   "erklaerung": "Lebenslinie → **gestrichelte senkrechte Linie unter einem Objekt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "gestrichelte senkrechte Linie unter einem Objekt",
+     "richtig": true
+    },
+    {
+     "text": "schmales Rechteck auf der Lebenslinie, solange das Objekt aktiv ist",
+     "richtig": false
+    },
+    {
+     "text": "Alternative: je nach Bedingung ein Zweig",
+     "richtig": false
+    },
+    {
+     "text": "Pfeil mit offener Spitze, Sender wartet nicht",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SEQ01-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-SEQ01",
+   "text": "Was ist im Sequenzdiagramm: gestrichelte senkrechte Linie unter einem Objekt?",
+   "erklaerung": "Lebenslinie → **gestrichelte senkrechte Linie unter einem Objekt**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Lebenslinie",
+     "richtig": true
+    },
+    {
+     "text": "alt-Fragment",
+     "richtig": false
+    },
+    {
+     "text": "asynchrone Nachricht",
+     "richtig": false
+    },
+    {
+     "text": "Aktivierungsbalken",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SEQ02-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-SEQ02",
+   "text": "Sequenzdiagramm: Wie wird ein(e) **synchrone Nachricht** dargestellt bzw. was bedeutet es?",
+   "erklaerung": "synchrone Nachricht → **durchgezogener Pfeil mit gefüllter Spitze, Sender wartet**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "durchgezogener Pfeil mit gefüllter Spitze, Sender wartet",
+     "richtig": true
+    },
+    {
+     "text": "gestrichelter Pfeil zurück zum Aufrufer",
+     "richtig": false
+    },
+    {
+     "text": "gestrichelte senkrechte Linie unter einem Objekt",
+     "richtig": false
+    },
+    {
+     "text": "schmales Rechteck auf der Lebenslinie, solange das Objekt aktiv ist",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SEQ02-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-SEQ02",
+   "text": "Was ist im Sequenzdiagramm: durchgezogener Pfeil mit gefüllter Spitze, Sender wartet?",
+   "erklaerung": "synchrone Nachricht → **durchgezogener Pfeil mit gefüllter Spitze, Sender wartet**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "synchrone Nachricht",
+     "richtig": true
+    },
+    {
+     "text": "Aktivierungsbalken",
+     "richtig": false
+    },
+    {
+     "text": "Antwortnachricht",
+     "richtig": false
+    },
+    {
+     "text": "asynchrone Nachricht",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SEQ03-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-SEQ03",
+   "text": "Sequenzdiagramm: Wie wird ein(e) **asynchrone Nachricht** dargestellt bzw. was bedeutet es?",
+   "erklaerung": "asynchrone Nachricht → **Pfeil mit offener Spitze, Sender wartet nicht**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Pfeil mit offener Spitze, Sender wartet nicht",
+     "richtig": true
+    },
+    {
+     "text": "gestrichelter Pfeil zurück zum Aufrufer",
+     "richtig": false
+    },
+    {
+     "text": "schmales Rechteck auf der Lebenslinie, solange das Objekt aktiv ist",
+     "richtig": false
+    },
+    {
+     "text": "gestrichelte senkrechte Linie unter einem Objekt",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SEQ03-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-SEQ03",
+   "text": "Was ist im Sequenzdiagramm: Pfeil mit offener Spitze, Sender wartet nicht?",
+   "erklaerung": "asynchrone Nachricht → **Pfeil mit offener Spitze, Sender wartet nicht**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "asynchrone Nachricht",
+     "richtig": true
+    },
+    {
+     "text": "alt-Fragment",
+     "richtig": false
+    },
+    {
+     "text": "Aktivierungsbalken",
+     "richtig": false
+    },
+    {
+     "text": "synchrone Nachricht",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SEQ04-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-SEQ04",
+   "text": "Sequenzdiagramm: Wie wird ein(e) **Antwortnachricht** dargestellt bzw. was bedeutet es?",
+   "erklaerung": "Antwortnachricht → **gestrichelter Pfeil zurück zum Aufrufer**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "gestrichelter Pfeil zurück zum Aufrufer",
+     "richtig": true
+    },
+    {
+     "text": "durchgezogener Pfeil mit gefüllter Spitze, Sender wartet",
+     "richtig": false
+    },
+    {
+     "text": "Pfeil mit offener Spitze, Sender wartet nicht",
+     "richtig": false
+    },
+    {
+     "text": "schmales Rechteck auf der Lebenslinie, solange das Objekt aktiv ist",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SEQ04-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-SEQ04",
+   "text": "Was ist im Sequenzdiagramm: gestrichelter Pfeil zurück zum Aufrufer?",
+   "erklaerung": "Antwortnachricht → **gestrichelter Pfeil zurück zum Aufrufer**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Antwortnachricht",
+     "richtig": true
+    },
+    {
+     "text": "asynchrone Nachricht",
+     "richtig": false
+    },
+    {
+     "text": "Lebenslinie",
+     "richtig": false
+    },
+    {
+     "text": "synchrone Nachricht",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SEQ05-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-SEQ05",
+   "text": "Sequenzdiagramm: Wie wird ein(e) **Aktivierungsbalken** dargestellt bzw. was bedeutet es?",
+   "erklaerung": "Aktivierungsbalken → **schmales Rechteck auf der Lebenslinie, solange das Objekt aktiv ist**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "schmales Rechteck auf der Lebenslinie, solange das Objekt aktiv ist",
+     "richtig": true
+    },
+    {
+     "text": "gestrichelter Pfeil zurück zum Aufrufer",
+     "richtig": false
+    },
+    {
+     "text": "durchgezogener Pfeil mit gefüllter Spitze, Sender wartet",
+     "richtig": false
+    },
+    {
+     "text": "Pfeil mit offener Spitze, Sender wartet nicht",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SEQ05-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-SEQ05",
+   "text": "Was ist im Sequenzdiagramm: schmales Rechteck auf der Lebenslinie, solange das Objekt aktiv ist?",
+   "erklaerung": "Aktivierungsbalken → **schmales Rechteck auf der Lebenslinie, solange das Objekt aktiv ist**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Aktivierungsbalken",
+     "richtig": true
+    },
+    {
+     "text": "Antwortnachricht",
+     "richtig": false
+    },
+    {
+     "text": "asynchrone Nachricht",
+     "richtig": false
+    },
+    {
+     "text": "synchrone Nachricht",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SEQ06-001",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-SEQ06",
+   "text": "Sequenzdiagramm: Wie wird ein(e) **alt-Fragment** dargestellt bzw. was bedeutet es?",
+   "erklaerung": "alt-Fragment → **Alternative: je nach Bedingung ein Zweig**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "Alternative: je nach Bedingung ein Zweig",
+     "richtig": true
+    },
+    {
+     "text": "Pfeil mit offener Spitze, Sender wartet nicht",
+     "richtig": false
+    },
+    {
+     "text": "durchgezogener Pfeil mit gefüllter Spitze, Sender wartet",
+     "richtig": false
+    },
+    {
+     "text": "schmales Rechteck auf der Lebenslinie, solange das Objekt aktiv ist",
+     "richtig": false
+    }
+   ]
+  },
+  {
+   "schluessel": "G-UML-SEQ06-002",
+   "thema": "uml",
+   "lektion": "UML-L3",
+   "gruppe": "UML-SEQ06",
+   "text": "Was ist im Sequenzdiagramm: Alternative: je nach Bedingung ein Zweig?",
+   "erklaerung": "alt-Fragment → **Alternative: je nach Bedingung ein Zweig**.",
+   "schwierigkeit": 1,
+   "einstufung": false,
+   "typ": "einfach",
+   "antworten": [
+    {
+     "text": "alt-Fragment",
+     "richtig": true
+    },
+    {
+     "text": "asynchrone Nachricht",
+     "richtig": false
+    },
+    {
+     "text": "Lebenslinie",
+     "richtig": false
+    },
+    {
+     "text": "synchrone Nachricht",
+     "richtig": false
+    }
+   ]
+  }
+ ]
+}
