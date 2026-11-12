@@ -178,3 +178,5 @@ form p:has(input[type=checkbox]) label { display: inline; }
   .chip .lang { display: none; }
 }
 .lektion-inhalt td:last-child, .frage-text td:last-child { white-space: nowrap; }
+.punkte-raster { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; }
+.punkte-raster input { width: 70px; padding: 8px; font-size: 1rem; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--text); }

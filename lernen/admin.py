@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Antwort, Frage, Karte, Thema, Versuch
+from .models import Antwort, Frage, Karte, PdfPruefung, Thema, Versuch
 
 
 class AntwortInline(admin.TabularInline):
@@ -33,3 +33,9 @@ class KarteAdmin(admin.ModelAdmin):
 class VersuchAdmin(admin.ModelAdmin):
     list_display = ("user", "frage", "quelle", "richtig", "zeitpunkt")
     list_filter = ("quelle", "richtig")
+
+
+@admin.register(PdfPruefung)
+class PdfPruefungAdmin(admin.ModelAdmin):
+    list_display = ("user", "nummer", "erstellt", "gesamt", "note")
+    list_filter = ("erstellt",)

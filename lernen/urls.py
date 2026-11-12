@@ -15,6 +15,9 @@ urlpatterns = [
     path("pruefung/", views.simulation_start, name="simulation_start"),
     path("pruefung/<int:pk>/", views.simulation, name="simulation"),
     path("pruefung/<int:pk>/ergebnis/", views.simulation_ergebnis, name="simulation_ergebnis"),
+    path("pruefung/pdf/neu/", views.pdf_pruefung_neu, name="pdf_pruefung_neu"),
+    path("pruefung/pdf/<int:pk>/", views.pdf_pruefung, name="pdf_pruefung"),
+    path("pruefung/pdf/<int:pk>/<str:art>.pdf", views.pdf_pruefung_datei, name="pdf_pruefung_datei"),
     path("rangliste/", views.rangliste, name="rangliste"),
     path("abzeichen/", views.abzeichen, name="abzeichen"),
 ]

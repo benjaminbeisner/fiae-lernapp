@@ -13,7 +13,7 @@ from django.views.decorators.http import require_POST
 from accounts.models import Profil
 
 from . import belohnung, logik
-from .models import Abzeichen, Frage, Karte, Lektion, LektionGelesen, Lernzeit, Simulation, Thema, Versuch
+from .models import Abzeichen, Frage, Karte, Lektion, LektionGelesen, Lernzeit, PdfPruefung, Simulation, Thema, Versuch
 
 SITZUNG = "lernsitzung"
 MAX_SEK_FRAGE = 180
@@ -245,7 +245,8 @@ def simulation_start(request):
         return redirect("simulation", pk=sim.pk)
     bisher = Simulation.objects.filter(user=request.user, abgegeben__isnull=False)[:10]
     return render(request, "lernen/simulation_start.html", {
-        "offen": offen, "bisher": bisher, "anzahl": SIM_FRAGEN, "minuten": SIM_MINUTEN})
+        "offen": offen, "bisher": bisher, "anzahl": SIM_FRAGEN, "minuten": SIM_MINUTEN,
+        "pdf_bisher": PdfPruefung.objects.filter(user=request.user)[:10]})
 
 
 @login_required
@@ -381,3 +382,56 @@ def abzeichen(request):
     return render(request, "lernen/abzeichen.html", {
         "liste": liste, "anzahl": len(erhalten), "level": level, "profil": profil, "farbthemen": themen,
         "xp_im_level": xp_im_level, "xp_level": xp_level})
+
+
+# ---------- Übungsprüfung als PDF ----------
+
+@login_required
+@require_POST
+def pdf_pruefung_neu(request):
+    benutzt = set(PdfPruefung.objects.values_list("seed", flat=True))
+    rng = random.SystemRandom()
+    seed = rng.randint(1, 999_999)
+    while seed in benutzt:
+        seed = rng.randint(1, 999_999)
+    pp = PdfPruefung.objects.create(user=request.user, seed=seed)
+    return redirect("pdf_pruefung", pk=pp.pk)
+
+
+@login_required
+def pdf_pruefung(request, pk):
+    pp = get_object_or_404(PdfPruefung, pk=pk, user=request.user)
+    if request.method == "POST":
+        try:
+            werte = [int(request.POST.get(f"a{i}", "")) for i in range(1, 5)]
+        except ValueError:
+            werte = None
+        if not werte or any(not 0 <= w <= 25 for w in werte):
+            messages.error(request, "Bitte für jede Aufgabe eine ganze Zahl von 0 bis 25 eintragen.")
+        else:
+            erstes_mal = pp.punkte is None
+            pp.punkte, pp.bewertet_am = werte, timezone.now()
+            pp.save()
+            if erstes_mal:
+                belohnung.xp_gutschreiben(request.user, belohnung.XP_SIMULATION)
+            messages.success(request, f"Gespeichert: {pp.gesamt} von 100 Punkten, Note {pp.note}.")
+            return redirect("pdf_pruefung", pk=pp.pk)
+    return render(request, "lernen/pdf_pruefung.html", {"pp": pp, "aufgaben": range(1, 5)})
+
+
+@login_required
+def pdf_pruefung_datei(request, pk, art):
+    from django.http import HttpResponse
+
+    from .pruefung import pdf, zusammenstellen
+
+    if art not in ("aufgaben", "loesung"):
+        from django.http import Http404
+        raise Http404
+    pp = get_object_or_404(PdfPruefung, pk=pk, user=request.user)
+    daten = zusammenstellen.pruefung(pp.seed)
+    inhalt = pdf.aufgaben_pdf(daten) if art == "aufgaben" else pdf.loesung_pdf(daten)
+    name = f"Uebungspruefung_AP1_{pp.nummer}{'_Loesung' if art == 'loesung' else ''}.pdf"
+    antwort = HttpResponse(inhalt, content_type="application/pdf")
+    antwort["Content-Disposition"] = f'attachment; filename="{name}"'
+    return antwort
