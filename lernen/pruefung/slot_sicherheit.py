@@ -1,5 +1,5 @@
 """Aufgabenbereich: IT-Sicherheit, Datenschutz, Kommunikation und Arbeitsorganisation."""
-from .bausteine_basis import F, R, T, TAB, Z, zahl
+from .bausteine_basis import F, K, N, R, T, TAB, W, Z, zahl
 
 
 def schutzziele(rng, k):
@@ -10,7 +10,8 @@ def schutzziele(rng, k):
     return {"thema": "sicherheit", "teile": [
         T("Nennen Sie die drei klassischen Schutzziele der Informationssicherheit.", 2, Z(2), "Vertraulichkeit, Integrität, Verfügbarkeit (alle drei: 2 P., zwei: 1 P.)."),
         T("Ordnen Sie den Maßnahmen das Schutzziel zu, das sie in erster Linie unterstützen.", 4, TAB(["Maßnahme", "Schutzziel"], [[a, None] for a, _ in m]),
-          "; ".join(f"{a}: {b}" for a, b in m) + "."),
+          "; ".join(f"{a}: {b}" for a, b in m) + ".",
+          erwartet=[K("authentizi", "integri") if "/" in b else K(b.lower()[:8]) for _, b in m]),
     ]}
 
 
@@ -26,7 +27,7 @@ def backup(rng, k):
             "teile": [
                 T(f"Am **{tag}morgen** fällt der Server aus. Nennen Sie die Sicherungen, die zurückgespielt werden müssen.", 2, Z(2), noetig + "."),
                 T(f"Berechnen Sie den Speicherplatz, den alle Sicherungen von Sonntag bis einschließlich {['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag'][n-1]} belegen.", 2, R(3),
-                  f"{voll} GB + " + (f"{n} × {aend} GB" if art == "inkrementell" else " + ".join(f"{aend*i} GB" for i in range(1, n + 1))) + f" = **{speicher} GB**."),
+                  f"{voll} GB + " + (f"{n} × {aend} GB" if art == "inkrementell" else " + ".join(f"{aend*i} GB" for i in range(1, n + 1))) + f" = **{speicher} GB**.", erwartet=[N(speicher)]),
                 T("Erläutern Sie die 3-2-1-Regel.", 2, Z(3), "3 Kopien der Daten, auf 2 unterschiedlichen Speichermedien, 1 Kopie außer Haus (offsite/offline)."),
             ]}
 
@@ -45,7 +46,7 @@ def verschluesselung(rng, k):
         T("Beschreiben Sie das Prinzip der hybriden Verschlüsselung und nennen Sie ein Beispiel für ihren Einsatz.", 3, Z(4),
           "Ein zufälliger symmetrischer Sitzungsschlüssel wird mit dem öffentlichen Schlüssel des Empfängers (asymmetrisch) ausgetauscht; die eigentlichen Daten werden schnell symmetrisch verschlüsselt. Beispiel: TLS/HTTPS, S/MIME, PGP."),
         T(f"**{n} Mitarbeitende** sollen paarweise vertraulich kommunizieren. Berechnen Sie die Anzahl der benötigten Schlüssel bei symmetrischer und bei asymmetrischer Verschlüsselung.", 2,
-          F("symmetrisch:", "asymmetrisch:"), f"symmetrisch n(n−1)/2 = {n*(n-1)//2}; asymmetrisch 2n = {2*n}."),
+          F("symmetrisch:", "asymmetrisch:"), f"symmetrisch n(n−1)/2 = {n*(n-1)//2}; asymmetrisch 2n = {2*n}.", erwartet=[N(n * (n - 1) // 2), N(2 * n)]),
     ]}
 
 
@@ -55,9 +56,12 @@ def dsgvo(rng, k):
                     ("Religionszugehörigkeit für die Lohnabrechnung", "besondere Kategorie (Art. 9)"), ("Raumtemperatur im Serverraum", "nicht personenbezogen")], 3)
     return {"thema": "sicherheit", "teile": [
         T("Ordnen Sie die Daten ein: nicht personenbezogen, personenbezogen oder besondere Kategorie (Art. 9 DSGVO).", 3, TAB(["Daten", "Einordnung"], [[a, None] for a, _ in d]),
-          "; ".join(f"{a}: {b}" for a, b in d) + "."),
+          "; ".join(f"{a}: {b}" for a, b in d) + ".",
+          erwartet=[K("besonder", "art. 9", "art 9", "sensib") if b.startswith("besondere") else
+                    (W("nicht personenbezogen", "nicht-personenbezogen", "nicht", "keine", "anonym") if b.startswith("nicht") else
+                     W("personenbezogen", "personenbezogene daten", "personenbezogene", "pb")) for _, b in d]),
         T("Nennen Sie zwei Rechte der betroffenen Person nach der DSGVO.", 2, Z(2), "z. B. Auskunft (Art. 15), Berichtigung (16), Löschung (17), Einschränkung (18), Datenübertragbarkeit (20), Widerspruch (21)."),
-        T("Innerhalb welcher Frist muss eine Datenpanne der Aufsichtsbehörde gemeldet werden?", 1, F("Frist:"), "72 Stunden nach Bekanntwerden."),
+        T("Innerhalb welcher Frist muss eine Datenpanne der Aufsichtsbehörde gemeldet werden?", 1, F("Frist:"), "72 Stunden nach Bekanntwerden.", erwartet=[N(72)]),
     ]}
 
 
@@ -67,7 +71,9 @@ def tom(rng, k):
                     ("Protokollierung von Änderungen", "Eingabekontrolle"), ("tägliche Datensicherung", "Verfügbarkeitskontrolle")], 4)
     return {"thema": "sicherheit", "teile": [
         T("Ordnen Sie die technischen und organisatorischen Maßnahmen (TOM) der passenden Kontrolle zu.", 4, TAB(["Maßnahme", "Kontrollart"], [[a, None] for a, _ in t]),
-          "; ".join(f"{a}: {b}" for a, b in t) + "."),
+          "; ".join(f"{a}: {b}" for a, b in t) + ".",
+          erwartet=[K({"Zutrittskontrolle": "zutritt", "Zugangskontrolle": "zugang", "Zugriffskontrolle": "zugriff", "Weitergabekontrolle": "weitergabe",
+                       "Eingabekontrolle": "eingabe", "Verfügbarkeitskontrolle": "verfuegbar"}[b]) for _, b in t]),
     ]}
 
 
@@ -84,7 +90,7 @@ def passwort(rng, k):
     return {"thema": "sicherheit", "teile": [
         T(f"Ein Passwort besteht aus genau **{l} Zeichen** aus einem Zeichenvorrat von **{z} Zeichen**. Ein Angreifer testet **{zahl(rate,0)} Passwörter pro Sekunde**. "
           "Berechnen Sie die Anzahl möglicher Passwörter und die maximale Dauer eines Brute-Force-Angriffs in Stunden.", 3, R(4),
-          f"{z}^{l} = {zahl(z**l,0)} Kombinationen; ÷ {zahl(rate,0)} = {zahl(z**l/rate)} s ÷ 3.600 = **{zahl(z**l/rate/3600)} h**."),
+          f"{z}^{l} = {zahl(z**l,0)} Kombinationen; ÷ {zahl(rate,0)} = {zahl(z**l/rate)} s ÷ 3.600 = **{zahl(z**l/rate/3600)} h**.", erwartet=[N(z ** l / rate / 3600, 0.01, 0.005)]),
         T("Nennen Sie zwei Maßnahmen gegen Brute-Force-Angriffe.", 2, Z(2), "Kontosperre/Verzögerung nach Fehlversuchen, lange Passwörter/Passphrasen, 2FA, Captcha, Überwachung der Anmeldeversuche."),
     ]}
 
@@ -101,8 +107,8 @@ def verfuegbarkeit(rng, k):
     p = rng.choice([99.5, 99.9, 99.95])
     h = 8760 * (100 - p) / 100
     return {"thema": "sicherheit", "teile": [
-        T(f"Der Dienstleister garantiert eine Verfügbarkeit von **{zahl(p)} %** pro Jahr (365 Tage). Berechnen Sie die maximal zulässige Ausfallzeit in Stunden und Minuten.", 3, R(3),
-          f"8.760 h × {zahl(100-p)} % = {zahl(h)} h = **{zahl(h*60,0)} min** (≈ {int(h)} h {round((h-int(h))*60)} min)."),
+        T(f"Der Dienstleister garantiert eine Verfügbarkeit von **{zahl(p)} %** pro Jahr (365 Tage). Berechnen Sie die maximal zulässige Ausfallzeit in Minuten (auf ganze Minuten).", 3, R(3),
+          f"8.760 h × {zahl(100-p)} % = {zahl(h)} h = **{zahl(h*60,0)} min** (≈ {int(h)} h {round((h-int(h))*60)} min).", erwartet=[N(round(h * 60), 1)]),
     ]}
 
 
@@ -127,7 +133,10 @@ def eisenhower(rng, k):
                     ("Firewall-Lizenz läuft heute ab", "A: sofort selbst erledigen"), ("Netzwerkdokumentation aktualisieren", "B: planen/terminieren")], 4)
     return {"thema": "kommunikation", "teile": [
         T("Ordnen Sie die Aufgaben nach dem Eisenhower-Prinzip ein und nennen Sie die jeweilige Handlung.", 4, TAB(["Aufgabe", "Einordnung/Handlung"], [[x, None] for x, _ in a]),
-          "; ".join(f"{x}: {y}" for x, y in a) + "."),
+          "; ".join(f"{x}: {y}" for x, y in a) + ".",
+          erwartet=[K("sofort", "selbst erledigen", "a:") if y.startswith("A") else K("plan", "termin", "b:") if y.startswith("B") else
+                    K("deleg", "c:", "abgeben") if y.startswith("C") else K("nicht bearbeiten", "papierkorb", "verwerf", "ignor", "eliminier", "streich", "d:", "weglassen")
+                    for _, y in a]),
     ]}
 
 

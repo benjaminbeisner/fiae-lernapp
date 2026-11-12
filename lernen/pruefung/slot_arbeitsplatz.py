@@ -1,5 +1,5 @@
 """Aufgabenbereich: IT-Arbeitsplatz, Hardware, Energie, Beschaffung und Wirtschaft."""
-from .bausteine_basis import CODE, F, R, T, TAB, Z, eur, zahl
+from .bausteine_basis import CODE, F, K, N, R, T, TAB, Z, eur, zahl
 
 
 def angebotsvergleich(rng, k):
@@ -23,7 +23,8 @@ def angebotsvergleich(rng, k):
                       [["Listeneinkaufspreis", None, None], ["− Rabatt = Zieleinkaufspreis", None, None],
                        ["− Skonto = Bareinkaufspreis", None, None], ["+ Bezugskosten = Bezugspreis", None, None]]),
                   f"A: {eur(ra[0])} → {eur(ra[1])} → {eur(ra[2])} → **{eur(ra[3])}**. B: {eur(rb[0])} → {eur(rb[1])} → {eur(rb[2])} → **{eur(rb[3])}**. "
-                  "Je richtig berechneter Zeile ca. 0,5 Punkte je Angebot, Folgefehler werden berücksichtigt.", daten=TAB(kopf, zeilen)),
+                  "Je richtig berechneter Zeile ca. 0,5 Punkte je Angebot, Folgefehler werden berücksichtigt.", daten=TAB(kopf, zeilen),
+                  erwartet=[N(ra[i], 0.05) if j == 0 else N(rb[i], 0.05) for i in range(4) for j in range(2)]),
                 T("Nennen Sie das günstigere Angebot und zwei weitere Kriterien, die neben dem Preis bei der Auswahl berücksichtigt werden sollten.", 3, Z(3),
                   f"Angebot {besser} ist günstiger (1 P.). Weitere Kriterien (je 1 P.), z. B. Lieferzeit, Garantie/Service, Zuverlässigkeit des Lieferanten, "
                   "Kompatibilität, Energieverbrauch, Zahlungsbedingungen."),
@@ -42,7 +43,8 @@ def nutzwert(rng, k):
                   TAB(["Kriterium", "Gewichtung", "Punkte X", "gewichtet X", "Punkte Y", "gewichtet Y"],
                       [[krit[i], f"{g[i]} %", str(p["X"][i]), None, str(p["Y"][i]), None] for i in range(3)] + [["Summe", "100 %", "", None, "", None]]),
                   "Gewichtete Punkte = Punkte × Gewichtung. " + "; ".join(f"{krit[i]}: X {zahl(p['X'][i]*g[i]/100)}, Y {zahl(p['Y'][i]*g[i]/100)}" for i in range(3))
-                  + f". Summe X = **{zahl(nw['X'])}**, Y = **{zahl(nw['Y'])}** → Produkt {sieger} empfehlen" + (" (Gleichstand: weitere Kriterien heranziehen)" if nw['X'] == nw['Y'] else "") + "."),
+                  + f". Summe X = **{zahl(nw['X'])}**, Y = **{zahl(nw['Y'])}** → Produkt {sieger} empfehlen" + (" (Gleichstand: weitere Kriterien heranziehen)" if nw['X'] == nw['Y'] else "") + ".",
+                  erwartet=[N(p[n][i] * g[i] / 100, 0.01) for i in range(3) for n in ("X", "Y")] + [N(nw["X"], 0.01), N(nw["Y"], 0.01)]),
                 T("Nennen Sie einen Vorteil und einen Nachteil der Nutzwertanalyse.", 2, Z(3),
                   "Vorteil: auch nicht-monetäre Kriterien werden vergleichbar, Entscheidung wird nachvollziehbar. Nachteil: Gewichtung und Punktvergabe sind subjektiv."),
             ]}
@@ -58,7 +60,7 @@ def energiekosten(rng, k):
             "teile": [
                 T("Berechnen Sie die jährliche Ersparnis an Stromkosten. Der Rechenweg ist anzugeben.", 4, R(5),
                   f"({alt} W − {neu} W) × {n} × {std} h × {tage} = {zahl((alt-neu)*n*std*tage)} Wh = {zahl((alt-neu)*n*std*tage/1000)} kWh; "
-                  f"× {zahl(preis)} EUR = **{eur(ers)}**."),
+                  f"× {zahl(preis)} EUR = **{eur(ers)}**.", erwartet=[N(ers, 0.05)]),
                 T("Nennen Sie zwei weitere Maßnahmen der Green IT am Arbeitsplatz.", 2, Z(3),
                   "z. B. Energiesparmodus/automatisches Abschalten, schaltbare Steckdosenleisten, Geräte mit Energielabel/Blauer Engel, Thin Clients, Duplexdruck, längere Nutzung/Reparatur, fachgerechtes Recycling."),
             ]}
@@ -72,7 +74,7 @@ def usv(rng, k):
             "teile": [
                 T(f"Die USV hat eine Batteriekapazität von **{wh} Wh**, davon sind **{int(wg*100)} %** nutzbar. Server und Switch nehmen zusammen **{last} W** auf. "
                   "Berechnen Sie die Überbrückungszeit in Minuten (auf eine Nachkommastelle).", 3, R(4),
-                  f"{wh} Wh × {zahl(wg)} = {zahl(wh*wg)} Wh; ÷ {last} W = {zahl(wh*wg/last,3)} h × 60 = **{zahl(m,1)} min**."),
+                  f"{wh} Wh × {zahl(wg)} = {zahl(wh*wg)} Wh; ÷ {last} W = {zahl(wh*wg/last,3)} h × 60 = **{zahl(m,1)} min**.", erwartet=[N(m, 0.1)]),
                 T("Beschreiben Sie den Unterschied zwischen einer Offline-USV (VFD) und einer Online-USV (VFI).", 3, Z(4),
                   "Offline/VFD: Last hängt im Normalbetrieb direkt am Netz, bei Ausfall wird mit kurzer Umschaltzeit auf Batterie umgeschaltet; günstig. "
                   "Online/VFI: Last wird ständig über Gleichrichter/Wechselrichter versorgt, keine Umschaltzeit, filtert Störungen; teurer, für kritische Server."),
@@ -85,7 +87,8 @@ def raid(rng, k):
             "teile": [
                 T("Ermitteln Sie die nutzbare Kapazität für die folgenden RAID-Level.", 3, TAB(["RAID-Level", "Nutzkapazität in TB", "Ausfallsicherheit (Anzahl Platten)"],
                   [["RAID 0", None, None], ["RAID 5", None, None], ["RAID 6", None, None]]),
-                  f"RAID 0: {n*g} TB, 0 Platten. RAID 5: {(n-1)*g} TB, 1 Platte. RAID 6: {(n-2)*g} TB, 2 Platten. Je Zeile 1 Punkt."),
+                  f"RAID 0: {n*g} TB, 0 Platten. RAID 5: {(n-1)*g} TB, 1 Platte. RAID 6: {(n-2)*g} TB, 2 Platten. Je Zeile 1 Punkt.",
+                  erwartet=[N(n * g), N(0), N((n - 1) * g), N(1), N((n - 2) * g), N(2)]),
                 T("Ein Kollege meint, durch das RAID sei keine Datensicherung mehr nötig. Nehmen Sie Stellung.", 2, Z(3),
                   "Falsch: RAID schützt nur vor Plattenausfall, nicht vor versehentlichem Löschen, Ransomware, Brand, Diebstahl oder logischen Fehlern. Backup bleibt nötig."),
             ]}
@@ -98,9 +101,11 @@ def schnittstellen(rng, k):
                   TAB(["Anforderung", "Schnittstelle"], [["Zwei Monitore hintereinander an einem Ausgang (Daisy Chain)", None],
                                                           ["Notebook laden, Bild und Daten über ein Kabel", None],
                                                           ["Kabelloses Headset im Nahbereich", None], ["Netzwerk mit 1 Gbit/s per Kabel", None]]),
-                  "DisplayPort (MST) bzw. Thunderbolt; USB-C mit Power Delivery/Thunderbolt; Bluetooth; RJ45/Gigabit-Ethernet. Je 1 Punkt."),
+                  "DisplayPort (MST) bzw. Thunderbolt; USB-C mit Power Delivery/Thunderbolt; Bluetooth; RJ45/Gigabit-Ethernet. Je 1 Punkt.",
+                  erwartet=[K("displayport", "dp", "thunderbolt"), K("usb-c", "usb c", "usbc", "thunderbolt", "usb4", "usb 4"), K("bluetooth", "bt"),
+                            K("rj45", "rj-45", "rj 45", "ethernet", "lan", "twisted")]),
                 T("Nennen Sie die maximale Brutto-Datenrate von USB 3.2 Gen 1 und von USB 2.0.", 2, F("USB 3.2 Gen 1:", "USB 2.0:"),
-                  "USB 3.2 Gen 1: 5 Gbit/s; USB 2.0: 480 Mbit/s."),
+                  "USB 3.2 Gen 1: 5 Gbit/s; USB 2.0: 480 Mbit/s.", erwartet=[N(5), N(480)]),
             ]}
 
 
@@ -117,11 +122,13 @@ def leasing(rng, k):
     return {"thema": "wirtschaft", "intro": f"Ein neuer Multifunktionsdrucker kostet **{eur(kauf)}**. Alternativ wird ein Leasing mit **{eur(rate)}** pro Monat über **{mon} Monate** angeboten.",
             "teile": [
                 T("Berechnen Sie die Differenz zwischen Leasing-Gesamtkosten und Kaufpreis.", 2, R(3),
-                  f"{mon} × {eur(rate)} = {eur(ges)}; − {eur(kauf)} = **{eur(ges-kauf)}**" + (" (Leasing teurer)." if ges > kauf else " (Leasing günstiger).")),
+                  f"{mon} × {eur(rate)} = {eur(ges)}; − {eur(kauf)} = **{eur(ges-kauf)}**" + (" (Leasing teurer)." if ges > kauf else " (Leasing günstiger)."),
+                  erwartet=[N(ges - kauf, 0.05)]),
                 T("Nennen Sie zwei Vorteile des Leasings gegenüber dem Kauf.", 2, Z(3),
                   "z. B. schont Liquidität/kein hoher Kapitaleinsatz, planbare Raten als Betriebsausgabe, Austausch gegen neue Geräte nach Laufzeit, Service oft enthalten."),
                 T(f"Bei einem Kauf wird linear über **5 Jahre** abgeschrieben. Berechnen Sie den jährlichen Abschreibungsbetrag und den Restbuchwert nach 2 Jahren.", 2,
-                  F("Abschreibung pro Jahr:", "Restbuchwert nach 2 Jahren:"), f"{eur(kauf)} ÷ 5 = **{eur(kauf/5)}**; Restbuchwert {eur(kauf)} − 2 × {eur(kauf/5)} = **{eur(kauf*3/5)}**."),
+                  F("Abschreibung pro Jahr:", "Restbuchwert nach 2 Jahren:"), f"{eur(kauf)} ÷ 5 = **{eur(kauf/5)}**; Restbuchwert {eur(kauf)} − 2 × {eur(kauf/5)} = **{eur(kauf*3/5)}**.",
+                  erwartet=[N(kauf / 5, 0.05), N(kauf * 3 / 5, 0.05)]),
             ]}
 
 
@@ -130,7 +137,8 @@ def vertragsarten(rng, k):
             "teile": [
                 T("Ordnen Sie beiden Leistungen die passende Vertragsart zu und begründen Sie kurz.", 4,
                   TAB(["Leistung", "Vertragsart", "Begründung"], [["Netzwerkdokumentation", None, None], ["Vor-Ort-Support", None, None]]),
-                  "(1) Werkvertrag: ein Ergebnis/Erfolg ist geschuldet, Abnahme. (2) Dienstvertrag: Tätigkeit ist geschuldet, kein bestimmter Erfolg. Je 2 Punkte."),
+                  "(1) Werkvertrag: ein Ergebnis/Erfolg ist geschuldet, Abnahme. (2) Dienstvertrag: Tätigkeit ist geschuldet, kein bestimmter Erfolg. Je 2 Punkte.",
+                  erwartet=[K("werkvertrag", "werk"), None, K("dienstvertrag", "dienst"), None]),
                 T("Die gelieferten Monitore haben Pixelfehler. Nennen Sie das Recht, das der Käufer zuerst geltend machen muss, und zwei Rechte, die danach möglich sind.", 3, Z(3),
                   "Zuerst Nacherfüllung (Nachbesserung oder Ersatzlieferung). Danach (bei Fehlschlagen): Rücktritt, Minderung, ggf. Schadensersatz."),
             ]}
@@ -142,7 +150,7 @@ def kamera_speicher(rng, k):
     return {"thema": "einheiten", "intro": f"Für das Lager werden **{n} Überwachungskameras** installiert. Jede Kamera erzeugt einen Videostrom von **{mbit} Mbit/s**.",
             "teile": [
                 T(f"Berechnen Sie den Speicherbedarf in **TB**, wenn die Aufnahmen aller Kameras **{std} Stunden** aufbewahrt werden (1 TB = 10¹² Byte, auf zwei Nachkommastellen). Der Rechenweg ist anzugeben.", 4, R(6),
-                  f"{mbit} Mbit/s × {n} × {zahl(std*3600)} s = {zahl(mbit*n*std*3600)} Mbit ÷ 8 = {zahl(mbit*n*std*3600/8)} MB = **{zahl(tb)} TB**."),
+                  f"{mbit} Mbit/s × {n} × {zahl(std*3600)} s = {zahl(mbit*n*std*3600)} Mbit ÷ 8 = {zahl(mbit*n*std*3600/8)} MB = **{zahl(tb)} TB**.", erwartet=[N(tb, 0.01)]),
                 T("Nennen Sie eine Vorgabe der DSGVO, die bei der Videoüberwachung beachtet werden muss.", 1, Z(2),
                   "z. B. Hinweisschild/Transparenz, Zweckbindung, Speicherbegrenzung/Löschfrist, Datenminimierung, Mitbestimmung Betriebsrat."),
             ]}
@@ -165,7 +173,8 @@ def tco(rng, k):
         T(f"Vergleichen Sie zwei Arbeitsplatzrechner über **{j} Jahre** anhand der Gesamtkosten (TCO).", 4,
           TAB(["", "Rechner 1", "Rechner 2"], [["Anschaffung", eur(a), eur(b[0])], ["Strom pro Jahr", eur(s), eur(b[1])],
                                                  ["Wartung pro Jahr", eur(w), eur(b[2])], [f"TCO über {j} Jahre", None, None]]),
-          f"Rechner 1: {eur(a)} + {j} × {eur(s+w)} = **{eur(ta)}**; Rechner 2: {eur(b[0])} + {j} × {eur(b[1]+b[2])} = **{eur(tb)}**. Je 2 Punkte."),
+          f"Rechner 1: {eur(a)} + {j} × {eur(s+w)} = **{eur(ta)}**; Rechner 2: {eur(b[0])} + {j} × {eur(b[1]+b[2])} = **{eur(tb)}**. Je 2 Punkte.",
+          erwartet=[N(ta, 0.05), N(tb, 0.05)]),
     ]}
 
 

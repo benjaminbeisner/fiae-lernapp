@@ -2,7 +2,7 @@
 import ipaddress
 
 from ..generator.projekt import netzplan, wege
-from .bausteine_basis import F, R, T, TAB, Z, zahl
+from .bausteine_basis import IP, F, K, N, PFAD, R, T, TAB, W, Z, zahl
 
 
 def ip_grundlagen(rng, k):
@@ -11,7 +11,8 @@ def ip_grundlagen(rng, k):
     net = ipaddress.IPv4Interface(f"{ip}/{p}").network
     return {"thema": "netzwerk", "intro": f"Ein neuer Drucker der {k['name']} erhält die IP-Adresse **{ip}/{p}**.",
             "teile": [T("Ermitteln Sie die folgenden Angaben.", 4, F("Subnetzmaske:", "Anzahl nutzbarer Hostadressen:", "Netzadresse:", "Broadcast-Adresse:"),
-                        f"Maske {net.netmask}; Hosts 2^{32-p} − 2 = {2**(32-p)-2}; Netz {net.network_address}; Broadcast {net.broadcast_address}. Je 1 Punkt.")]}
+                        f"Maske {net.netmask}; Hosts 2^{32-p} − 2 = {2**(32-p)-2}; Netz {net.network_address}; Broadcast {net.broadcast_address}. Je 1 Punkt.",
+                        erwartet=[IP(str(net.netmask), f"/{p}"), N(2 ** (32 - p) - 2), IP(str(net.network_address)), IP(str(net.broadcast_address))])]}
 
 
 def subnetting(rng, k):
@@ -21,18 +22,20 @@ def subnetting(rng, k):
     subs = list(basis.subnets(prefixlen_diff=bits))
     zeilen = []
     loes = []
+    erw = []
     for i in (0, 1, len(subs) - 1):
         s = subs[i]
         h = list(s.hosts())
+        erw += [IP(str(s.network_address)), IP(str(h[0])), IP(str(h[-1])), IP(str(s.broadcast_address))]
         zeilen.append([f"Subnetz {i+1}", None, None, None, None])
         loes.append(f"Subnetz {i+1}: {s.network_address}, {h[0]}, {h[-1]}, {s.broadcast_address}")
     abteil = ", ".join(["Verwaltung", "Lager", "Vertrieb", "Gäste-WLAN", "Server", "Technik", "Kasse", "Kameras"][:n])
     return {"thema": "netzwerk", "intro": f"Das Netz **{basis}** soll in **{n} gleich große Subnetze** für folgende Bereiche aufgeteilt werden: {abteil}.",
             "teile": [
                 T("Ermitteln Sie das neue Präfix und die Anzahl nutzbarer Hosts je Subnetz.", 2, F("Präfix:", "Hosts je Subnetz:"),
-                  f"{n} Subnetze → {bits} zusätzliche Bits → /{24+bits}; Hosts 2^{8-bits} − 2 = {2**(8-bits)-2}."),
+                  f"{n} Subnetze → {bits} zusätzliche Bits → /{24+bits}; Hosts 2^{8-bits} − 2 = {2**(8-bits)-2}.", erwartet=[N(24 + bits), N(2 ** (8 - bits) - 2)]),
                 T("Vervollständigen Sie die Tabelle.", 6, TAB(["", "Netzadresse", "erste Hostadresse", "letzte Hostadresse", "Broadcast"], zeilen),
-                  "; ".join(loes) + ". Je Zeile 2 Punkte."),
+                  "; ".join(loes) + ". Je Zeile 2 Punkte.", erwartet=erw),
             ]}
 
 
@@ -57,7 +60,7 @@ def ipv6(rng, k):
     return {"thema": "netzwerk", "intro": f"Die {k['name']} möchte künftig IPv6 einsetzen.",
             "teile": [
                 T("Kürzen Sie die folgenden Adressen so weit wie möglich.", 2, F(*[f"{a}:" for a in adr]),
-                  "; ".join(f"{a} → {ipaddress.IPv6Address(a).compressed}" for a in adr) + "."),
+                  "; ".join(f"{a} → {ipaddress.IPv6Address(a).compressed}" for a in adr) + ".", erwartet=[W(ipaddress.IPv6Address(a).compressed) for a in adr]),
                 T("Beschreiben Sie zwei Unterschiede zwischen IPv4 und IPv6.", 2, Z(4),
                   "z. B. 32 vs. 128 Bit Adresslänge, dezimal mit Punkten vs. hexadezimal mit Doppelpunkten, kein Broadcast bei IPv6 (Multicast), SLAAC-Autokonfiguration, NAT bei IPv6 nicht nötig, vereinfachter Header."),
             ]}
@@ -74,7 +77,7 @@ def osi(rng, k):
     el = rng.sample([("Switch", "2"), ("Router", "3"), ("HTTP", "7"), ("TCP", "4"), ("Hub", "1"), ("IP", "3"), ("MAC-Adresse", "2"), ("DNS", "7"), ("UDP", "4")], 4)
     return {"thema": "netzwerk", "teile": [
         T("Ordnen Sie die Begriffe der jeweiligen Schicht des OSI-Modells zu (Nummer der Schicht).", 4, TAB(["Begriff", "OSI-Schicht"], [[e[0], None] for e in el]),
-          "; ".join(f"{a}: Schicht {b}" for a, b in el) + ". Je 1 Punkt."),
+          "; ".join(f"{a}: Schicht {b}" for a, b in el) + ". Je 1 Punkt.", erwartet=[N(b) for _, b in el]),
     ]}
 
 
@@ -82,7 +85,7 @@ def ports(rng, k):
     p = rng.sample([("HTTPS", "443"), ("SSH", "22"), ("DNS", "53"), ("SMTP", "25"), ("RDP", "3389"), ("IMAPS", "993"), ("HTTP", "80")], 3)
     return {"thema": "netzwerk", "teile": [
         T("In der Firewall sollen Dienste freigegeben werden. Nennen Sie die Standard-Ports.", 3, TAB(["Dienst", "Port"], [[a, None] for a, _ in p]),
-          "; ".join(f"{a}: {b}" for a, b in p) + "."),
+          "; ".join(f"{a}: {b}" for a, b in p) + ".", erwartet=[N(b) for _, b in p]),
     ]}
 
 
@@ -104,9 +107,10 @@ def netzplan_aufgabe(rng, k):
     return {"thema": "projektmanagement", "intro": f"Für das Projekt „{k['projekt']}“ liegt folgende Vorgangsliste vor (Beginn Tag 0).",
             "teile": [
                 T("Vervollständigen Sie die Tabelle.", 6, TAB(["Vorgang", "FAZ", "FEZ", "SAZ", "SEZ", "GP"], [[x, None, None, None, None, None] for x in namen]),
-                  " | ".join(f"{x}: {faz[x]}, {fez[x]}, {saz[x]}, {sez[x]}, GP {gp[x]}" for x in namen) + ". Folgefehler berücksichtigen.", daten=kopf),
+                  " | ".join(f"{x}: {faz[x]}, {fez[x]}, {saz[x]}, {sez[x]}, GP {gp[x]}" for x in namen) + ". Folgefehler berücksichtigen.", daten=kopf,
+                  erwartet=[N(w) for x in namen for w in (faz[x], fez[x], saz[x], sez[x], gp[x])]),
                 T("Nennen Sie die Projektdauer und den kritischen Pfad.", 2, F("Projektdauer:", "Kritischer Pfad:"),
-                  f"Projektdauer {ende} Tage; kritischer Pfad: {' → '.join(krit[0])}."),
+                  f"Projektdauer {ende} Tage; kritischer Pfad: {' → '.join(krit[0])}.", erwartet=[N(ende), PFAD(*krit[0])]),
             ]}
 
 
@@ -123,7 +127,8 @@ def anforderungen(rng, k):
                     ("Die Oberfläche ist barrierefrei.", "nicht-funktional"), ("Ein Admin kann Konten sperren.", "funktional")], 4)
     return {"thema": "projektmanagement", "teile": [
         T("Kennzeichnen Sie die Anforderungen als funktional oder nicht-funktional.", 4, TAB(["Anforderung", "funktional / nicht-funktional"], [[x, None] for x, _ in a]),
-          "; ".join(f"{x} → {y}" for x, y in a) + "."),
+          "; ".join(f"{x} → {y}" for x, y in a) + ".",
+          erwartet=[W("funktional", "f", "fa") if y == "funktional" else W("nicht-funktional", "nicht funktional", "nichtfunktional", "nf", "nfa") for _, y in a]),
     ]}
 
 
@@ -154,7 +159,7 @@ def datenrate(rng, k):
     s = gb * 8000 / mbit
     return {"thema": "netzwerk", "teile": [
         T(f"Ein Software-Update mit **{gb} GB** wird über eine Leitung mit **{mbit} Mbit/s** verteilt. Berechnen Sie die Übertragungsdauer in Minuten (ohne Overhead, 1 GB = 1.000 MB).", 3, R(4),
-          f"{gb} GB × 8.000 = {zahl(gb*8000)} Mbit ÷ {mbit} = {zahl(s)} s ÷ 60 = **{zahl(s/60)} min**."),
+          f"{gb} GB × 8.000 = {zahl(gb*8000)} Mbit ÷ {mbit} = {zahl(s)} s ÷ 60 = **{zahl(s/60)} min**.", erwartet=[N(s / 60, 0.05)]),
     ]}
 
 

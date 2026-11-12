@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load lerntext %}
+{% block title %}Übungsprüfung {{ pp.nummer }} · FIAE-Lernapp{% endblock %}
+{% block content %}
+<form method="post" id="ap" class="ap" autocomplete="off" spellcheck="false">{% csrf_token %}
+<div class="timer" id="timer"><span>⏱️ Restzeit: <span id="rest">–</span></span><span class="muted small" id="status">Antworten werden automatisch gespeichert.</span></div>
+
+<div class="card ap-deckblatt">
+  <div class="ap-titel">Übungsprüfung AP1</div>
+  <div>Teil 1 der Abschlussprüfung · Einrichten eines IT-gestützten Arbeitsplatzes</div>
+  <div class="ap-meta"><strong>4 Aufgaben · {{ 90 }} Minuten · 100 Punkte</strong><span>Prüfungsnummer {{ pp.nummer }}</span></div>
+</div>
+<div class="card">
+  <p class="muted small" style="margin-top:0">Hilfsmittel: Taschenrechner. Zahlen kannst du mit Komma oder Punkt schreiben, Einheiten sind erlaubt.
+    Rechnungen, Tabellen und SQL korrigiert die App automatisch, Texte bewertest du nach der Abgabe selbst mit der Musterlösung.</p>
+  <p><strong>Die Aufgaben 1 bis 4 beziehen sich auf folgende Ausgangssituation:</strong></p>
+  {{ p.situation|lerntext }}
+</div>
+
+{% for a in aufgaben %}
+<div class="card ap-aufgabe" id="aufgabe{{ a.nr }}">
+  <h2 class="ap-kopf">{{ a.nr }}. Aufgabe <span class="muted">({{ a.punkte }} Punkte)</span></h2>
+  {% for b in a.bausteine %}
+    {% if b.intro %}<div class="ap-intro">{{ b.intro|lerntext }}</div>{% endif %}
+    {% for t in b.teile %}
+    <div class="ap-teil">
+      {% if t.daten_kopf %}{% include "lernen/_ap_tabelle.html" with kopf=t.daten_kopf zeilen=t.daten_zeilen %}{% endif %}
+      {% if t.teil.code %}<pre class="ap-code">{{ t.teil.code }}</pre>{% endif %}
+      <div class="ap-frage"><span class="ap-label">{{ t.label }}</span><div>{{ t.teil.text|lerntext }}</div><span class="punkte-tag">{{ t.teil.punkte }} P.</span></div>
+      {% if t.art == "tabelle" %}
+        <div class="table-wrap"><table class="ap-tab">
+          <thead><tr>{% for k in t.kopf %}<th>{{ k }}</th>{% endfor %}</tr></thead>
+          <tbody>{% for zeile in t.zeilen %}<tr>{% for z in zeile %}
+            <td>{% if z.eingabe %}<input type="text" name="{{ z.eingabe.key }}" value="{{ z.eingabe.wert }}" aria-label="{{ z.eingabe.label }}">{% else %}{{ z.text|lerntext }}{% endif %}</td>
+          {% endfor %}</tr>{% endfor %}</tbody>
+        </table></div>
+      {% else %}
+        {% for e in t.eingaben %}
+          {% if e.art == "text" %}
+            {% if e.label %}<div class="ap-feldlabel">{{ e.label }}</div>{% endif %}
+            <textarea name="{{ e.key }}" rows="{{ e.zeilen }}" class="ap-text">{{ e.wert }}</textarea>
+          {% elif e.art == "code" %}
+            <textarea name="{{ e.key }}" rows="{{ e.zeilen }}" class="ap-text ap-mono" spellcheck="false">{{ e.wert }}</textarea>
+          {% else %}
+            <label class="ap-feld"><span>{{ e.label }}</span><input type="text" name="{{ e.key }}" value="{{ e.wert }}"></label>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </div>
+    {% endfor %}
+  {% endfor %}
+</div>
+{% endfor %}
+
+<div class="card row">
+  <button class="btn secondary" name="aktion" value="speichern">Zwischenstand speichern</button>
+  <span class="spacer"></span>
+  <button class="btn gross" name="aktion" value="abgeben" onclick="return confirm('Prüfung jetzt abgeben? Danach kannst du nichts mehr ändern.')">Abgeben</button>
+</div>
+<input type="hidden" name="aktion" value="" id="auto-aktion" disabled>
+</form>
+<script>
+(function () {
+  var ende = Date.now() + {{ rest_sek }} * 1000, el = document.getElementById("rest"), box = document.getElementById("timer");
+  var form = document.getElementById("ap"), status = document.getElementById("status"), fertig = false, geaendert = false;
+  function abgeben() {
+    if (fertig) return; fertig = true;
+    var h = document.getElementById("auto-aktion"); h.disabled = false; h.value = "abgeben"; form.submit();
+  }
+  function tick() {
+    var s = Math.max(0, Math.round((ende - Date.now()) / 1000));
+    el.textContent = Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
+    if (s <= 600) box.classList.add("knapp");
+    if (s === 0) abgeben();
+  }
+  function speichern() {
+    if (!geaendert || fertig) return;
+    var d = new FormData(form); d.set("aktion", "autosave"); geaendert = false;
+    fetch(form.action || location.href, { method: "POST", body: d, credentials: "same-origin" })
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        if (j.abgegeben) { fertig = true; location.href = j.weiter; return; }
+        status.textContent = "Gespeichert um " + j.zeit + " Uhr";
+      })
+      .catch(function () { geaendert = true; status.textContent = "Speichern fehlgeschlagen – nächster Versuch in 30 s"; });
+  }
+  form.addEventListener("input", function () { geaendert = true; status.textContent = "Ungespeicherte Änderungen"; });
+  form.addEventListener("submit", function () { fertig = true; });
+  window.addEventListener("beforeunload", function (ev) { if (geaendert && !fertig) { ev.preventDefault(); ev.returnValue = ""; } });
+  tick(); setInterval(tick, 1000); setInterval(speichern, 30000);
+})();
+</script>
+{% endblock %}

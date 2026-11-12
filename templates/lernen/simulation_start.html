@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load lerntext %}
 {% block title %}Prüfungssimulation · FIAE-Lernapp{% endblock %}
 {% block content %}
 <div class="card">
@@ -18,22 +19,22 @@
 </div>
 <div class="card">
   <div style="font-size:48px">📄</div>
-  <h2 style="margin-top:0">Übungsprüfung als PDF – wie die echte AP1</h2>
+  <h2 style="margin-top:0">Übungsprüfung wie die echte AP1 – online oder als PDF</h2>
   <p>Deckblatt, Ausgangssituation, 4 Aufgaben mit je 25 Punkten, offene Fragen, Rechenkästchen und Tabellen. 90 Minuten.
      Jede Prüfung wird neu zusammengestellt, Rechenaufgaben bekommen neue Zahlen.</p>
   <ul>
     <li>Die PDF ist ausfüllbar (z. B. Edge, Firefox, Acrobat, Tablet) oder zum Ausdrucken.</li>
-    <li>Danach korrigierst du mit den Lösungshinweisen selbst und trägst deine Punkte hier ein.</li>
+    <li>Neu: direkt im Browser bearbeiten. Die App korrigiert alles mit eindeutiger Lösung automatisch, Texte bewertest du mit der Musterlösung.</li>
   </ul>
   <form method="post" action="{% url 'pdf_pruefung_neu' %}">{% csrf_token %}
-    <button class="btn gross" type="submit">Neue PDF-Prüfung erstellen</button>
+    <button class="btn gross" type="submit">Neue Übungsprüfung erstellen</button>
   </form>
   {% if pdf_bisher %}
   <div class="table-wrap" style="margin-top:16px">
     <table>
       <thead><tr><th>Erstellt</th><th>Nr.</th><th class="num">Punkte</th><th class="num">Note</th><th></th></tr></thead>
       <tbody>{% for p in pdf_bisher %}
-        <tr><td>{{ p.erstellt|date:"d.m.Y H:i" }}</td><td>{{ p.nummer }}</td><td class="num">{{ p.gesamt|default:"–" }}</td>
+        <tr><td>{{ p.erstellt|date:"d.m.Y H:i" }}</td><td>{{ p.nummer }}</td><td class="num">{% if p.gesamt is not None %}{{ p.gesamt|zahl_de }}{% else %}–{% endif %}</td>
         <td class="num">{{ p.note|default:"–" }}</td><td class="num"><a href="{% url 'pdf_pruefung' p.pk %}">Öffnen</a></td></tr>
       {% endfor %}</tbody>
     </table>

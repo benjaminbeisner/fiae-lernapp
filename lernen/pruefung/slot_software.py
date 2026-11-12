@@ -2,7 +2,7 @@
 import sqlite3
 
 from ..generator.datenbanken import KAT_VON
-from .bausteine_basis import CODE, F, R, T, TAB, Z, eur, zahl
+from .bausteine_basis import CODE, F, K, N, R, SQL, T, TAB, W, Z, ZAHLEN, eur, zahl
 
 
 def schreibtischtest(rng, k):
@@ -10,17 +10,18 @@ def schreibtischtest(rng, k):
     g = rng.randint(10, 30)
     code = (f"zahlen = {werte}\nsumme = 0\nanzahl = 0\nfür i von 0 bis 4\n    wenn zahlen[i] > {g} dann\n        summe = summe + zahlen[i]\n"
             f"        anzahl = anzahl + 1\n    ende wenn\nende für\nausgabe(summe, anzahl)")
-    zeilen, s, a, loes = [], 0, 0, []
+    zeilen, s, a, loes, erw = [], 0, 0, [], []
     for i, w in enumerate(werte):
         if w > g:
             s += w
             a += 1
+        erw += [N(w), N(s), N(a)]
         zeilen.append([str(i), None, None, None])
         loes.append(f"i={i}: {w}, summe {s}, anzahl {a}")
     return {"thema": "programmierung", "intro": "Gegeben ist folgender Pseudocode (Arrays beginnen bei Index 0):",
             "teile": [T("Führen Sie einen Schreibtischtest durch. Tragen Sie nach jedem Schleifendurchlauf die Werte ein.", 5,
-                        TAB(["i", "zahlen[i]", "summe", "anzahl"], zeilen), "; ".join(loes) + ". Je Zeile 1 Punkt.", code=code),
-                      T("Nennen Sie die Ausgabe des Programms.", 1, F("Ausgabe:"), f"{s}, {a}")]}
+                        TAB(["i", "zahlen[i]", "summe", "anzahl"], zeilen), "; ".join(loes) + ". Je Zeile 1 Punkt.", code=code, erwartet=erw),
+                      T("Nennen Sie die Ausgabe des Programms.", 1, F("Ausgabe:"), f"{s}, {a}", erwartet=[ZAHLEN(s, a)])]}
 
 
 def algorithmus_schreiben(rng, k):
@@ -50,17 +51,29 @@ def _artikel(rng):
     return db, z, tab
 
 
+def _artikel_sql(z):
+    """SQL-Skript, das die Tabelle für die automatische Korrektur erneut anlegt."""
+    def lit(v):
+        return "'" + v.replace("'", "''") + "'" if isinstance(v, str) else repr(v)
+    return ("CREATE TABLE artikel (artikel_id INT, bezeichnung TEXT, kategorie TEXT, preis REAL, bestand INT);\n"
+            + "\n".join(f"INSERT INTO artikel VALUES ({', '.join(lit(v) for v in r)});" for r in z))
+
+
 def sql_schreiben(rng, k):
     db, z, tab = _artikel(rng)
     kat = rng.choice(sorted({r[2] for r in z}))
+    s = _artikel_sql(z)
     return {"thema": "datenbanken", "intro": "Gegeben ist die Tabelle `artikel` des Warenwirtschaftssystems:",
             "teile": [
                 T(f"Schreiben Sie eine SQL-Abfrage, die Bezeichnung und Preis aller Artikel der Kategorie **{kat}** absteigend nach Preis ausgibt.", 3, ("code", 4),
-                  f"`SELECT bezeichnung, preis FROM artikel WHERE kategorie = '{kat}' ORDER BY preis DESC;`", daten=tab),
+                  f"`SELECT bezeichnung, preis FROM artikel WHERE kategorie = '{kat}' ORDER BY preis DESC;`", daten=tab,
+                  erwartet=[SQL(s, f"SELECT bezeichnung, preis FROM artikel WHERE kategorie = '{kat}' ORDER BY preis DESC", geordnet=True)]),
                 T("Schreiben Sie eine SQL-Abfrage, die je Kategorie die Anzahl der Artikel und den Gesamtbestand ausgibt.", 3, ("code", 4),
-                  "`SELECT kategorie, COUNT(*), SUM(bestand) FROM artikel GROUP BY kategorie;`"),
+                  "`SELECT kategorie, COUNT(*), SUM(bestand) FROM artikel GROUP BY kategorie;`",
+                  erwartet=[SQL(s, "SELECT kategorie, COUNT(*), SUM(bestand) FROM artikel GROUP BY kategorie")]),
                 T("Schreiben Sie eine SQL-Anweisung, die den Preis aller Artikel ohne Bestand um 10 % senkt.", 2, ("code", 3),
-                  "`UPDATE artikel SET preis = preis * 0.9 WHERE bestand = 0;`"),
+                  "`UPDATE artikel SET preis = preis * 0.9 WHERE bestand = 0;`",
+                  erwartet=[SQL(s, "UPDATE artikel SET preis = preis * 0.9 WHERE bestand = 0", pruef_sql="SELECT artikel_id, ROUND(preis, 4) FROM artikel")]),
             ]}
 
 
@@ -73,7 +86,8 @@ def sql_ergebnis(rng, k):
     w = [db.execute(q).fetchone()[0] or 0 for q in (q1, q2, q3)]
     return {"thema": "datenbanken", "intro": "Gegeben ist die Tabelle `artikel`:",
             "teile": [T("Geben Sie das Ergebnis der Abfragen an.", 4, TAB(["Abfrage", "Ergebnis"], [[q1, None], [q2, None], [q3, None]]),
-                        f"{w[0]}; {zahl(w[1])}; {zahl(w[2])} (NULL, falls keine Peripherie vorhanden, zählt als 0).", daten=tab)]}
+                        f"{w[0]}; {zahl(w[1])}; {zahl(w[2])} (NULL, falls keine Peripherie vorhanden, zählt als 0).", daten=tab,
+                        erwartet=[N(w[0]), N(w[1], 0.01), N(w[2], 0.01)])]}
 
 
 def erm(rng, k):
@@ -86,7 +100,7 @@ def erm(rng, k):
         loes = "Abteilung–Mitarbeiter 1:n; Mitarbeiter–Projekt m:n. Tabellen: abteilung(abt_id PK, …), mitarbeiter(ma_id PK, abt_id FK, …), projekt(projekt_id PK, …), mitarbeit(ma_id FK, projekt_id FK, stunden; PK aus beiden)."
     return {"thema": "datenbanken", "intro": text,
             "teile": [T("Nennen Sie die Kardinalitäten der beiden Beziehungen.", 2, F(f"{a} – {b}:" if a == "Kunde" else f"{b} – {a}:", f"{b} – {c}:" if a == "Kunde" else f"{a} – {c}:"),
-                        loes.split(" Tabellen")[0]),
+                        loes.split(" Tabellen")[0], erwartet=[W("1:n", "1:*", "n:1"), W("m:n", "n:m", "*:*", "m:m")]),
                       T("Überführen Sie das Modell in Tabellen. Kennzeichnen Sie Primär- (PK) und Fremdschlüssel (FK).", 5, Z(6), loes)]}
 
 
@@ -114,7 +128,9 @@ def uml_beziehungen(rng, k):
                     ("Ein Lkw ist ein Fahrzeug.", "Vererbung"), ("Ein Kunde gibt Bestellungen auf.", "Assoziation"),
                     ("Die Klasse PdfExport implementiert das Interface Export.", "Realisierung")], 4)
     return {"thema": "uml", "teile": [
-        T("Nennen Sie die passende Beziehungsart im Klassendiagramm.", 4, TAB(["Sachverhalt", "Beziehung"], [[x, None] for x, _ in b]), "; ".join(f"{x} → {y}" for x, y in b) + ".")]}
+        T("Nennen Sie die passende Beziehungsart im Klassendiagramm.", 4, TAB(["Sachverhalt", "Beziehung"], [[x, None] for x, _ in b]), "; ".join(f"{x} → {y}" for x, y in b) + ".",
+          erwartet=[K({"Komposition": "kompos", "Aggregation": "aggreg", "Assoziation": "assoz"}[y]) if y in ("Komposition", "Aggregation", "Assoziation")
+                    else K("vererb", "generalis", "spezialis") if y == "Vererbung" else K("realis", "implement") for _, y in b])]}
 
 
 def aktivitaet(rng, k):
@@ -135,7 +151,10 @@ def datentypen(rng, k):
     d = rng.sample([("Postleitzahl 01067", "String"), ("Anzahl Mitarbeitende", "Integer"), ("Nettopreis", "Float/Decimal"),
                     ("Newsletter abonniert ja/nein", "Boolean"), ("Geburtsdatum", "Date"), ("Telefonnummer", "String")], 4)
     return {"thema": "programmierung", "teile": [
-        T("Ordnen Sie den Werten einen geeigneten Datentyp zu.", 2, TAB(["Wert", "Datentyp"], [[a, None] for a, _ in d]), "; ".join(f"{a}: {b}" for a, b in d) + ". Je 0,5 Punkte."),
+        T("Ordnen Sie den Werten einen geeigneten Datentyp zu.", 2, TAB(["Wert", "Datentyp"], [[a, None] for a, _ in d]), "; ".join(f"{a}: {b}" for a, b in d) + ". Je 0,5 Punkte.",
+          erwartet=[{"String": K("string", "str", "text", "varchar", "char", "zeichenkette"), "Integer": K("int", "ganzzahl", "long", "short"),
+                     "Float/Decimal": K("float", "decimal", "double", "real", "gleitkomma", "kommazahl", "numeric"),
+                     "Boolean": K("bool", "wahrheitswert"), "Date": K("date", "datum")}[b] for _, b in d]),
     ]}
 
 

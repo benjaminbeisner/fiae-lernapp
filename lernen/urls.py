@@ -18,6 +18,8 @@ urlpatterns = [
     path("pruefung/pdf/neu/", views.pdf_pruefung_neu, name="pdf_pruefung_neu"),
     path("pruefung/pdf/<int:pk>/", views.pdf_pruefung, name="pdf_pruefung"),
     path("pruefung/pdf/<int:pk>/<str:art>.pdf", views.pdf_pruefung_datei, name="pdf_pruefung_datei"),
+    path("pruefung/pdf/<int:pk>/online/", views.pdf_online, name="pdf_online"),
+    path("pruefung/pdf/<int:pk>/korrektur/", views.pdf_korrektur, name="pdf_korrektur"),
     path("rangliste/", views.rangliste, name="rangliste"),
     path("abzeichen/", views.abzeichen, name="abzeichen"),
 ]
