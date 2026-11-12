@@ -203,6 +203,108 @@ class PdfPruefungTest(TestCase):
         self.assertEqual(self.client.get(reverse("pdf_pruefung", args=[pp.pk])).status_code, 404)
 
 
+class OnlinePruefungTest(TestCase):
+    def test_matcher(self):
+        from lernen.pruefung import korrektur as k
+        from lernen.pruefung.bausteine_basis import IP, K, N, PFAD, SQL, W, ZAHLEN
+        self.assertTrue(k.pruefen(N(1234.5, 0.05), "1.234,50 €"))
+        self.assertTrue(k.pruefen(N(1234.5, 0.05), "= 1234.5 EUR"))
+        self.assertFalse(k.pruefen(N(1234.5, 0.05), "1.243,50 €"))
+        self.assertTrue(k.pruefen(N(72), "72 Stunden"))
+        self.assertTrue(k.pruefen(IP("255.255.255.192", "/26"), " /26 "))
+        self.assertTrue(k.pruefen(W("nicht-funktional", "nf"), "Nicht-funktional."))
+        self.assertFalse(k.pruefen(W("funktional"), "nicht funktional"))
+        self.assertTrue(k.pruefen(K("verfuegbar"), "Verfügbarkeit"))
+        self.assertTrue(k.pruefen(ZAHLEN(57, 2), "57, 2"))
+        self.assertTrue(k.pruefen(PFAD("A", "C", "F"), "A → C → F"))
+        self.assertFalse(k.pruefen(N(5), ""))
+        tab = "CREATE TABLE artikel (id INT, kategorie TEXT, preis REAL, bestand INT);" \
+              "INSERT INTO artikel VALUES (1,'Netz',10.0,0),(2,'Netz',20.0,5),(3,'PC',30.0,0);"
+        q = SQL(tab, "SELECT kategorie, COUNT(*) FROM artikel GROUP BY kategorie")
+        self.assertTrue(k.pruefen(q, "select kategorie, count(id) from artikel group by kategorie;"))
+        self.assertFalse(k.pruefen(q, "SELECT kategorie FROM artikel"))
+        self.assertFalse(k.pruefen(q, "SELECT 1; DROP TABLE artikel"))
+        self.assertFalse(k.pruefen(q, "ATTACH DATABASE '/tmp/x.db' AS x"))
+        u = SQL(tab, "UPDATE artikel SET preis = preis * 0.9 WHERE bestand = 0", pruef_sql="SELECT id, ROUND(preis, 4) FROM artikel")
+        self.assertTrue(k.pruefen(u, "update artikel set preis = preis - preis * 0.1 where bestand < 1"))
+        self.assertFalse(k.pruefen(u, "UPDATE artikel SET preis = preis * 0.9"))
+        lang = SQL(tab, "SELECT 1")
+        self.assertFalse(k.pruefen(lang, "WITH RECURSIVE r(n) AS (SELECT 1 UNION ALL SELECT n+1 FROM r) SELECT count(*) FROM r"))
+
+    def test_volle_punkte_mit_musterantworten(self):
+        """Wer jede automatisch prüfbare Eingabe richtig hat und Freitext voll bewertet, erreicht 100 Punkte."""
+        from lernen.pruefung import korrektur as k
+        from lernen.pruefung import zusammenstellen
+        from lernen.pruefung.bausteine_basis import zahl
+        for seed in (3, 17, 42):
+            p = zusammenstellen.pruefung(seed)
+            antworten, selbst = {}, {}
+            for _, t in k.alle_teile(p):
+                for e in t["eingaben"]:
+                    erw = e["erwartet"]
+                    if erw is None:
+                        selbst[e["key"]] = True
+                        continue
+                    antworten[e["key"]] = {"zahl": lambda: zahl(erw[1], 4), "zahlen": lambda: " ".join(zahl(x) for x in erw[1]),
+                                           "pfad": lambda: "-".join(erw[1]), "sql": lambda: erw[2]}.get(erw[0], lambda: erw[1][0])()
+                if t["modus"] == "ganz":
+                    selbst[t["key"]] = t["teil"]["punkte"]
+            punkte, _, _ = k.bewerten(p, antworten, selbst)
+            self.assertEqual(punkte, [25, 25, 25, 25])
+            self.assertEqual(sum(k.bewerten(p, {}, {})[0]), 0)
+
+    def test_ablauf(self):
+        user = User.objects.create_user("online", password="x")
+        self.client.force_login(user)
+        self.client.post(reverse("pdf_pruefung_neu"))
+        pp = user.pdf_pruefungen.get()
+        url = reverse("pdf_online", args=[pp.pk])
+        self.assertRedirects(self.client.get(url), reverse("pdf_pruefung", args=[pp.pk]))
+        self.client.post(url, {"aktion": "starten"})
+        pp.refresh_from_db()
+        self.assertIsNotNone(pp.frist)
+        r = self.client.get(url)
+        self.assertContains(r, "Ausgangssituation")
+        self.assertContains(r, 'name="t1_0_0"')
+        r = self.client.post(url, {"aktion": "autosave", "t1_0_0": "Antwort", "boese": "x" * 10})
+        self.assertTrue(r.json()["ok"])
+        pp.refresh_from_db()
+        self.assertEqual(pp.antworten, {"t1_0_0": "Antwort"})
+        self.client.post(url, {"aktion": "abgeben", "t1_0_0": "Antwort"})
+        pp.refresh_from_db()
+        self.assertIsNotNone(pp.abgegeben)
+        self.assertRedirects(self.client.get(url), reverse("pdf_korrektur", args=[pp.pk]))
+        r = self.client.get(reverse("pdf_korrektur", args=[pp.pk]))
+        self.assertContains(r, "Musterlösung")
+        ganz = next(t for _, t in __import__("lernen.pruefung.korrektur", fromlist=["x"]).alle_teile(
+            __import__("lernen.pruefung.zusammenstellen", fromlist=["x"]).pruefung(pp.seed)) if t["modus"] == "ganz")
+        self.client.post(reverse("pdf_korrektur", args=[pp.pk]), {ganz["key"]: "99"})
+        pp.refresh_from_db()
+        self.assertEqual(pp.selbst, {ganz["key"]: ganz["teil"]["punkte"]})  # auf Maximum begrenzt
+        self.assertEqual(pp.gesamt, ganz["teil"]["punkte"])
+        self.assertIsNotNone(pp.bewertet_am)
+        andere = User.objects.create_user("andere2", password="x")
+        self.client.force_login(andere)
+        self.assertEqual(self.client.get(reverse("pdf_korrektur", args=[pp.pk])).status_code, 404)
+
+    def test_frist_abgelaufen(self):
+        user = User.objects.create_user("spaet", password="x")
+        self.client.force_login(user)
+        self.client.post(reverse("pdf_pruefung_neu"))
+        pp = user.pdf_pruefungen.get()
+        url = reverse("pdf_online", args=[pp.pk])
+        self.client.post(url, {"aktion": "starten"})
+        self.client.post(url, {"aktion": "autosave", "t1_0_0": "rechtzeitig"})
+        pp.refresh_from_db()
+        pp.frist = timezone.now() - timedelta(minutes=10)
+        pp.save()
+        r = self.client.post(url, {"aktion": "speichern", "t1_0_0": "zu spät"})
+        self.assertRedirects(r, reverse("pdf_korrektur", args=[pp.pk]))
+        pp.refresh_from_db()
+        self.assertEqual(pp.antworten, {"t1_0_0": "rechtzeitig"})
+        self.assertIsNotNone(pp.abgegeben)
+
+
 class RegistrierungTest(TestCase):
     def daten(self, code):
         return {"einladungscode": code, "username": "lena", "first_name": "Lena", "email": "lena@example.org",

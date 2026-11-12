@@ -6,6 +6,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Sum
 from django.shortcuts import get_object_or_404, redirect, render
+from django.urls import reverse
 from django.utils import timezone
 from django.utils.dateparse import parse_datetime
 from django.views.decorators.http import require_POST
@@ -13,6 +14,7 @@ from django.views.decorators.http import require_POST
 from accounts.models import Profil
 
 from . import belohnung, logik
+from .templatetags.lerntext import zahl_de
 from .models import Abzeichen, Frage, Karte, Lektion, LektionGelesen, Lernzeit, PdfPruefung, Simulation, Thema, Versuch
 
 SITZUNG = "lernsitzung"
@@ -435,3 +437,138 @@ def pdf_pruefung_datei(request, pk, art):
     antwort = HttpResponse(inhalt, content_type="application/pdf")
     antwort["Content-Disposition"] = f'attachment; filename="{name}"'
     return antwort
+
+
+# ---------- Übungsprüfung online bearbeiten ----------
+
+PDF_MINUTEN = 90
+PDF_KULANZ = timedelta(minutes=2)
+
+
+def _tabelle_zellen(e_liste, form):
+    """Tabelle der Antwortform mit eingesetzten Eingaben (für das Template)."""
+    ein = iter(e_liste)
+    return [[{"eingabe": next(ein)} if z is None else {"text": z} for z in zeile] for zeile in form[2]]
+
+
+def _online_daten(pp, korrektur=False):
+    from .pruefung import korrektur as kor
+    from .pruefung import zusammenstellen
+
+    p = zusammenstellen.pruefung(pp.seed)
+    aufgaben = kor.struktur(p)
+    for a in aufgaben:
+        for b in a["bausteine"]:
+            for t in b["teile"]:
+                form = t["teil"]["antwort"]
+                for e in t["eingaben"]:
+                    e["wert"] = pp.antworten.get(e["key"], "")
+                    if korrektur:
+                        e["ok"] = pp.auto.get(e["key"])
+                        e["selbst"] = bool(pp.selbst.get(e["key"]))
+                if t["art"] == "tabelle":
+                    t["kopf"] = form[1]
+                    t["zeilen"] = _tabelle_zellen(t["eingaben"], form)
+                if t["teil"].get("daten"):
+                    t["daten_kopf"], t["daten_zeilen"] = t["teil"]["daten"][1], t["teil"]["daten"][2]
+                if korrektur:
+                    t["braucht_selbst"] = kor.braucht_selbst(t, pp.auto)
+                    t["punkte"] = kor.punkte_teil(t, pp.auto, pp.selbst)
+                    if t["modus"] == "ganz" and t["braucht_selbst"]:
+                        gewaehlt = kor.halbe(float(pp.selbst.get(t["key"], 0) or 0))
+                        t["optionen"] = [{"wert": i / 2, "text": (f"{i // 2}" if i % 2 == 0 else f"{i / 2:.1f}".replace(".", ",")),
+                                          "gewaehlt": i / 2 == gewaehlt} for i in range(0, 2 * t["teil"]["punkte"] + 1)]
+    return p, aufgaben
+
+
+def _pdf_abgeben(pp):
+    from .pruefung import korrektur as kor
+    from .pruefung import zusammenstellen
+
+    p = zusammenstellen.pruefung(pp.seed)
+    pp.auto = kor.automatisch(p, pp.antworten)
+    pp.abgegeben = timezone.now()
+    pp.save(update_fields=["antworten", "auto", "abgegeben"])
+
+
+@login_required
+def pdf_online(request, pk):
+    from django.http import JsonResponse
+
+    from .pruefung import korrektur as kor
+    from .pruefung import zusammenstellen
+
+    pp = get_object_or_404(PdfPruefung, pk=pk, user=request.user)
+    if pp.abgegeben:
+        return redirect("pdf_korrektur", pk=pp.pk)
+    if request.method == "POST":
+        aktion = request.POST.get("aktion", "speichern")
+        if not pp.online_start:
+            if aktion != "starten":
+                return redirect("pdf_pruefung", pk=pp.pk)
+            pp.online_start = timezone.now()
+            pp.frist = pp.online_start + timedelta(minutes=PDF_MINUTEN)
+            pp.save(update_fields=["online_start", "frist"])
+            return redirect("pdf_online", pk=pp.pk)
+        jetzt = timezone.now()
+        if jetzt <= pp.frist + PDF_KULANZ:
+            erlaubt = kor.gueltige_schluessel(zusammenstellen.pruefung(pp.seed))
+            pp.antworten = {k: v[:kor.MAX_LAENGE] for k, v in request.POST.items() if k in erlaubt and v.strip()}
+        if aktion == "abgeben" or jetzt > pp.frist:
+            _pdf_abgeben(pp)
+            if aktion == "autosave":
+                return JsonResponse({"ok": True, "abgegeben": True, "weiter": reverse("pdf_korrektur", args=[pp.pk])})
+            return redirect("pdf_korrektur", pk=pp.pk)
+        pp.save(update_fields=["antworten"])
+        if aktion == "autosave":
+            return JsonResponse({"ok": True, "zeit": timezone.localtime(jetzt).strftime("%H:%M")})
+        messages.info(request, "Zwischenstand gespeichert.")
+        return redirect("pdf_online", pk=pp.pk)
+    if not pp.online_start:
+        return redirect("pdf_pruefung", pk=pp.pk)
+    if timezone.now() > pp.frist + PDF_KULANZ:
+        _pdf_abgeben(pp)
+        return redirect("pdf_korrektur", pk=pp.pk)
+    p, aufgaben = _online_daten(pp)
+    rest = max(0, int((pp.frist - timezone.now()).total_seconds()))
+    return render(request, "lernen/pdf_online.html", {"pp": pp, "p": p, "aufgaben": aufgaben, "rest_sek": rest})
+
+
+@login_required
+def pdf_korrektur(request, pk):
+    from .pruefung import korrektur as kor
+
+    pp = get_object_or_404(PdfPruefung, pk=pk, user=request.user)
+    if not pp.abgegeben:
+        return redirect("pdf_online" if pp.online_start else "pdf_pruefung", pk=pp.pk)
+    if request.method == "POST":
+        p, aufgaben = _online_daten(pp, korrektur=True)
+        selbst = {}
+        for _, t in kor.alle_teile(p):
+            if t["modus"] == "zellen":
+                for e in t["eingaben"]:
+                    if request.POST.get(e["key"]) == "1" and not pp.auto.get(e["key"]):
+                        selbst[e["key"]] = True
+            elif request.POST.get(t["key"]) not in (None, ""):
+                try:
+                    selbst[t["key"]] = min(max(kor.halbe(float(request.POST[t["key"]].replace(",", "."))), 0), t["teil"]["punkte"])
+                except ValueError:
+                    pass
+        erstes_mal = pp.punkte is None
+        pp.selbst = selbst
+        pp.punkte, _, _ = kor.bewerten(p, pp.antworten, selbst, auto=pp.auto)
+        pp.bewertet_am = timezone.now()
+        pp.save(update_fields=["selbst", "punkte", "bewertet_am"])
+        if erstes_mal:
+            belohnung.xp_gutschreiben(request.user, belohnung.XP_SIMULATION)
+            _neue_abzeichen_melden(request)
+        messages.success(request, f"Bewertung gespeichert: {zahl_de(pp.gesamt)} von 100 Punkten, Note {pp.note}.")
+        return redirect("pdf_korrektur", pk=pp.pk)
+    p, aufgaben = _online_daten(pp, korrektur=True)
+    vorlaeufig, _, _ = kor.bewerten(p, pp.antworten, pp.selbst, auto=pp.auto)
+    offen = sum(1 for a in aufgaben for b in a["bausteine"] for t in b["teile"] if t["braucht_selbst"])
+    for a, pkt in zip(aufgaben, vorlaeufig):
+        a["erreicht"] = pkt
+    return render(request, "lernen/pdf_korrektur.html", {
+        "pp": pp, "p": p, "aufgaben": aufgaben, "vorlaeufig": sum(vorlaeufig), "offen": offen,
+        "bearbeitet_min": max(1, round(((pp.abgegeben - pp.online_start).total_seconds()) / 60))})

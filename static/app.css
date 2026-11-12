@@ -180,3 +180,42 @@ form p:has(input[type=checkbox]) label { display: inline; }
 .lektion-inhalt td:last-child, .frage-text td:last-child { white-space: nowrap; }
 .punkte-raster { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; }
 .punkte-raster input { width: 70px; padding: 8px; font-size: 1rem; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--text); }
+
+/* Übungsprüfung online */
+.ap-deckblatt { background: var(--accent-soft); }
+.ap-titel { font-size: 1.7rem; font-weight: 800; letter-spacing: -.01em; }
+.ap-meta { display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; margin-top: 10px; }
+.ap-kopf { margin-top: 0; padding-bottom: 8px; border-bottom: 2px solid var(--text); }
+.ap-intro { margin: 18px 0 6px; }
+.ap-teil { margin: 14px 0 22px; }
+.ap-frage { display: grid; grid-template-columns: auto 1fr auto; gap: 8px; align-items: start; margin-bottom: 8px; }
+.ap-frage p { margin: 0 0 6px; }
+.ap-frage .punkte-tag { float: none; white-space: nowrap; }
+.ap-label { font-weight: 700; min-width: 2.2em; }
+.ap-code { font-size: 14px; }
+.ap .ap-text, .ap-feld input, .ap-tab input { width: 100%; box-sizing: border-box; font: inherit; color: var(--text); background: var(--card);
+  border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+.ap .ap-text { background-image: repeating-linear-gradient(transparent 0 27px, var(--line) 27px 28px); line-height: 28px; padding-top: 2px; resize: vertical; }
+.ap-mono, .ap .ap-mono { font-family: ui-monospace, "SF Mono", Consolas, monospace; font-size: 14px; background-image: none; line-height: 1.5; }
+.ap-text:focus, .ap-feld input:focus, .ap-tab input:focus { outline: 2px solid var(--accent); border-color: transparent; }
+form label.ap-feld, .ap-feld { font-weight: 500; display: grid; grid-template-columns: minmax(110px, max-content) 1fr; gap: 10px; align-items: center; margin: 6px 0; }
+.ap-feldlabel { font-weight: 600; font-size: 14px; margin: 6px 0 4px; }
+.ap-tab td { padding: 6px; }
+.ap-tab input { min-width: 80px; padding: 6px 8px; }
+.ap-daten { font-size: 14px; margin-bottom: 8px; }
+.ap-daten td p, .ap-tab td p { margin: 0; }
+.ap-vergleich { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; }
+.ap-vergleich.breit { grid-template-columns: minmax(0, 1fr); }
+@media (max-width: 760px) { .ap-vergleich { grid-template-columns: 1fr; } .ap-feld { grid-template-columns: 1fr; gap: 2px; } }
+.ap-antwort { white-space: pre-wrap; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; min-height: 2.4em; margin-bottom: 6px; }
+.ap-loesung { background: var(--ok-bg); border-radius: 10px; padding: 4px 12px; }
+.ap-loesung p { margin: 6px 0; }
+.ap-selbst { border-left: 4px solid var(--gold); padding-left: 12px; }
+form label.ap-bewerten { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; font-weight: 600; }
+.ap-bewerten select { width: auto; min-width: 80px; font: inherit; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--text); }
+.ap-ok { color: var(--ok); font-weight: 600; margin: 8px 0 0; }
+.ap-zelle { display: inline-flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+form label.ap-check { font-size: 12px; font-weight: 500; color: var(--muted); display: inline-flex; gap: 4px; align-items: center; white-space: nowrap; margin: 0; }
+.ap-check input { width: auto; margin: 0; }
+.ap-summe a, .ap-summe div { display: flex; flex-direction: column; align-items: center; padding: 10px; border: 1px solid var(--line); border-radius: 12px; text-decoration: none; color: var(--text); }
+.ap-summe strong { font-size: 1.5rem; }

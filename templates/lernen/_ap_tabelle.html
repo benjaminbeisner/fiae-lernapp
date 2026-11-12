@@ -1,0 +1,2 @@
+{% load lerntext %}<div class="table-wrap"><table class="ap-tab ap-daten"><thead><tr>{% for k in kopf %}<th>{{ k }}</th>{% endfor %}</tr></thead>
+<tbody>{% for zeile in zeilen %}<tr>{% for z in zeile %}<td>{{ z|default_if_none:""|lerntext }}</td>{% endfor %}</tr>{% endfor %}</tbody></table></div>

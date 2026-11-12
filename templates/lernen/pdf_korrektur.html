@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load lerntext %}
+{% block title %}Korrektur {{ pp.nummer }} · FIAE-Lernapp{% endblock %}
+{% block content %}
+<p><a href="{% url 'pdf_pruefung' pp.pk %}">← Übungsprüfung {{ pp.nummer }}</a></p>
+<div class="card">
+  <h1 style="margin-top:0">Korrektur · Nr. {{ pp.nummer }}</h1>
+  <p class="muted">Abgegeben am {{ pp.abgegeben|date:"d.m.Y H:i" }} nach {{ bearbeitet_min }} Minute{{ bearbeitet_min|pluralize:"n" }}.</p>
+  <div class="punkte-raster ap-summe">
+    {% for a in aufgaben %}<a href="#aufgabe{{ a.nr }}"><span class="muted small">{{ a.nr }}. Aufgabe</span><strong>{{ a.erreicht|zahl_de }}</strong><span class="muted small">/ 25</span></a>{% endfor %}
+    <div><span class="muted small">Gesamt</span><strong>{{ vorlaeufig|zahl_de }}</strong><span class="muted small">/ 100</span></div>
+  </div>
+  {% if pp.bewertet_am %}
+    <p style="font-size:1.15rem">Gespeichert: <strong>{{ pp.gesamt|zahl_de }} von 100 Punkten</strong> · Note <strong>{{ pp.note }}</strong> {% if pp.gesamt >= 50 %}✅{% endif %}</p>
+  {% endif %}
+  {% if offen %}
+    <p><strong>So geht's:</strong> ✅ und ❌ hat die App automatisch geprüft. Bei {{ offen }} Teilaufgabe{{ offen|pluralize:"n" }} vergleichst du deine Antwort mit der Musterlösung
+      und bewertest selbst: Häkchen setzen oder Punkte wählen. Andere fachlich richtige Antworten zählen auch. Danach unten speichern.</p>
+  {% endif %}
+</div>
+<form method="post">{% csrf_token %}
+{% for a in aufgaben %}
+<div class="card ap-aufgabe" id="aufgabe{{ a.nr }}">
+  <h2 class="ap-kopf">{{ a.nr }}. Aufgabe <span class="muted">({{ a.erreicht|zahl_de }} von {{ a.punkte }} Punkten)</span></h2>
+  {% for b in a.bausteine %}
+    {% if b.intro %}<div class="ap-intro">{{ b.intro|lerntext }}</div>{% endif %}
+    {% for t in b.teile %}
+    <div class="ap-teil{% if t.braucht_selbst %} ap-selbst{% endif %}">
+      {% if t.daten_kopf %}<details><summary class="muted small">Tabelle zur Aufgabe</summary>{% include "lernen/_ap_tabelle.html" with kopf=t.daten_kopf zeilen=t.daten_zeilen %}</details>{% endif %}
+      {% if t.teil.code %}<details><summary class="muted small">Code zur Aufgabe</summary><pre class="ap-code">{{ t.teil.code }}</pre></details>{% endif %}
+      <div class="ap-frage"><span class="ap-label">{{ t.label }}</span><div>{{ t.teil.text|lerntext }}</div><span class="punkte-tag">{{ t.punkte|zahl_de }} / {{ t.teil.punkte }} P.</span></div>
+      <div class="ap-vergleich{% if t.art == 'tabelle' %} breit{% endif %}">
+        <div>
+          <div class="ap-feldlabel">Deine Antwort</div>
+          {% if t.art == "tabelle" %}
+            <div class="table-wrap"><table class="ap-tab">
+              <thead><tr>{% for k in t.kopf %}<th>{{ k }}</th>{% endfor %}</tr></thead>
+              <tbody>{% for zeile in t.zeilen %}<tr>{% for z in zeile %}
+                <td>{% if z.eingabe %}{% include "lernen/_ap_zelle.html" with e=z.eingabe %}{% else %}{{ z.text|lerntext }}{% endif %}</td>
+              {% endfor %}</tr>{% endfor %}</tbody>
+            </table></div>
+          {% elif t.modus == "zellen" %}
+            {% for e in t.eingaben %}<div class="ap-feld"><span>{{ e.label }}</span>{% include "lernen/_ap_zelle.html" %}</div>{% endfor %}
+          {% else %}
+            {% for e in t.eingaben %}
+              {% if e.label %}<div class="muted small">{{ e.label }}</div>{% endif %}
+              <div class="ap-antwort{% if e.art == 'code' %} ap-mono{% endif %}">{% if e.wert %}{{ e.wert }}{% else %}<span class="muted">– keine Antwort –</span>{% endif %}{% if e.erwartet %} <span class="ap-mark">{% if e.ok %}✅{% else %}❌{% endif %}</span>{% endif %}</div>
+            {% endfor %}
+          {% endif %}
+        </div>
+        <div class="ap-loesung"><div class="ap-feldlabel">Musterlösung</div>{{ t.teil.loesung|lerntext }}</div>
+      </div>
+      {% if t.modus == "ganz" %}
+        {% if t.braucht_selbst %}
+        <label class="ap-bewerten">Deine Punkte für {{ t.label }}
+          <select name="{{ t.key }}">{% for o in t.optionen %}<option value="{{ o.wert }}" {% if o.gewaehlt %}selected{% endif %}>{{ o.text }}</option>{% endfor %}</select>
+          von {{ t.teil.punkte }}</label>
+        {% else %}<p class="ap-ok">Automatisch richtig: volle Punktzahl.</p>{% endif %}
+      {% endif %}
+    </div>
+    {% endfor %}
+  {% endfor %}
+</div>
+{% endfor %}
+<div class="card row">
+  <span class="muted">Du kannst die Bewertung später noch ändern.</span><span class="spacer"></span>
+  <button class="btn gross" type="submit">Bewertung speichern</button>
+</div>
+</form>
+{% endblock %}

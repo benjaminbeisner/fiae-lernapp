@@ -1,0 +1,4 @@
+<span class="ap-zelle"><span class="ap-wert">{% if e.wert %}{{ e.wert }}{% else %}<span class="muted">–</span>{% endif %}</span>
+{% if e.ok %}<span class="ap-mark" title="automatisch geprüft: richtig">✅</span>
+{% else %}{% if e.erwartet %}<span class="ap-mark" title="automatisch geprüft: nicht erkannt">❌</span>{% endif %}
+<label class="ap-check" title="{% if e.erwartet %}Falls deine Antwort doch stimmt{% else %}Selbst bewerten{% endif %}"><input type="checkbox" name="{{ e.key }}" value="1" {% if e.selbst %}checked{% endif %}>{% if e.erwartet %}doch richtig{% else %}richtig{% endif %}</label>{% endif %}</span>

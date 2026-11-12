@@ -226,6 +226,13 @@ class PdfPruefung(models.Model):
     erstellt = models.DateTimeField(auto_now_add=True)
     punkte = models.JSONField(null=True, blank=True, help_text="Punkte je Aufgabe, z. B. [20, 18, 22, 15]")
     bewertet_am = models.DateTimeField(null=True, blank=True)
+    # Online-Bearbeitung
+    online_start = models.DateTimeField(null=True, blank=True)
+    frist = models.DateTimeField(null=True, blank=True)
+    abgegeben = models.DateTimeField(null=True, blank=True)
+    antworten = models.JSONField(default=dict, blank=True)
+    selbst = models.JSONField(default=dict, blank=True, help_text="Selbstbewertung: Zellen (true) und Teilpunkte")
+    auto = models.JSONField(default=dict, blank=True, help_text="Ergebnis der automatischen Prüfung je Eingabe")
 
     class Meta:
         ordering = ["-erstellt"]
@@ -238,7 +245,18 @@ class PdfPruefung(models.Model):
 
     @property
     def gesamt(self):
-        return sum(self.punkte) if self.punkte else None
+        if not self.punkte:
+            return None
+        s = sum(self.punkte)
+        return int(s) if float(s).is_integer() else s
+
+    @property
+    def online(self):
+        return self.online_start is not None
+
+    @property
+    def laeuft(self):
+        return self.online and not self.abgegeben
 
     @property
     def note(self):
